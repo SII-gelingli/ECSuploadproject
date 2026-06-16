@@ -5,7 +5,7 @@
 ## 一键部署
 
 ```bash
-git clone git@github.com:SII-gelingli/ECSuploadproject.git
+git clone https://github.com/SII-gelingli/ECSuploadproject.git
 cd ECSuploadproject
 
 export ANTHROPIC_API_KEY=sk-你的key            # 必填
