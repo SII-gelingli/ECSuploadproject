@@ -1,0 +1,112 @@
+{
+  "doi": "10.1002_anie.202011657",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical CoCl2-catalyzed dehydrogenative diarylation and [2+2+2] cycloaddition of alkenes with indoles via radical-polar crossover to give 1,1-bis(indolyl)alkanes and dihydroindolocarbazoles",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "electrocatalysis_inner_sphere",
+    "radical_cation"
+  ],
+  "electrochemical_role": "anodic oxidation of indole to indolyl radical cation (A); cobalt-mediated alkene addition gives alkyl radical D which is further anodically oxidized to alkyl cation E; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "indole radical cation (A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "indolyl carbon-centered radical (B) after deprotonation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co-alkene complex (C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic alkyl radical with indolyl substituent (D)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic alkyl cation with indolyl substituent (E)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "indolyl cation intermediate F (after electrophilic alkylation of second indole)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "dihydro intermediate G en route to carbazole product",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TEMPO-derived terindolone 6aa (off-cycle trap product)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes indole 2a to a radical cation (A) which deprotonates to an indolyl C3-radical (B); Co catalyst delivers B across the alkene to give a benzylic radical (D), which is anodically oxidized to a benzylic cation (E); electrophilic Friedel-Crafts trapping by a second indole gives diarylation product 3, while intramolecular cyclization of the analogous intermediate F/G with further anodic oxidation furnishes the [2+2+2] carbazole 4; protons are reduced at the Pt cathode to H2.",
+  "rate_determining_step": "electrophilic alkylation of indole by the benzylic cation in the final indole-trapping step (small KIE kH/kD = 1.27)",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "diarylation product only trace; terindolone 6aa isolated in 27%, consistent with indolyl radical cation formation and electrophilic capture rather than HAT"
+    },
+    {
+      "name": "1-(1-cyclopropylvinyl)-4-methoxybenzene (1v)",
+      "smiles": "COc1ccc(C(=C)C2CC2)cc1",
+      "purpose": "radical_clock",
+      "observation": "ring-opened byproduct 4va (24%) formed alongside 3vaa (60%), indicating a carbon-centered radical intermediate"
+    },
+    {
+      "name": "3-cyclopropyl-1-methylindole (2s)",
+      "smiles": "Cn1cc(C2CC2)c2ccccc21",
+      "purpose": "radical_clock",
+      "observation": "no reaction and starting materials recovered; rules out direct generation of indolyl C-radical via cyclopropyl ring opening"
+    },
+    {
+      "name": "2-cyclopropyl-1-methylindole (2t)",
+      "smiles": "Cn1c(C2CC2)cc2ccccc21",
+      "purpose": "radical_clock",
+      "observation": "diarylation product 3att formed in 61% without ring-opening, supports electrophilic (cationic) trapping at indole"
+    },
+    {
+      "name": "3-deutero-1-methyl-1H-indole (2a-1D)",
+      "smiles": "[2H]c1cn(C)c2ccccc12",
+      "purpose": "KIE",
+      "observation": "small KIE kH/kD = 1.27, supports electrophilic aromatic substitution rather than HAT in final indole trapping"
+    },
+    {
+      "name": "3-iodo-1-methyl-1H-indole (2u)",
+      "smiles": "Cn1cc(I)c2ccccc21",
+      "purpose": "intermediate_trap",
+      "observation": "no reaction with TBAI or TBAPF6 electrolytes, indicating iodide oxidation pathway is not operative"
+    },
+    {
+      "name": "TBAI (nBu4NI)",
+      "smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[I-]",
+      "purpose": "redox_probe",
+      "observation": "iodide alone or I2 gave little effect; quaternary ammonium iodide salts crucial; constant-potential experiments show diarylation does not include oxidation of iodide"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "kinetic_order"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors disfavor a HAT pathway (small KIE) and disfavor iodide-mediated oxidation (no effect of I-/I2 alone, constant-potential control); nBu4NI acts as supporting electrolyte/mediator-like additive lowering anode potential through NaOTf/nBu4NI mixed electrolyte rather than as iodine redox shuttle. Switching to graphite/graphite cell and stronger current diverts the diarylation intermediate F via intramolecular electrophilic alkylation (G) into the [2+2+2] dihydroindolocarbazole product 4."
+}

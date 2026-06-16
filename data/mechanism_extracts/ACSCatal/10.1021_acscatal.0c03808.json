@@ -1,0 +1,95 @@
+{
+  "doi": "10.1021_acscatal.0c03808",
+  "journal": "ACSCatal",
+  "is_review": false,
+  "rxn_class_summary": "Visible-light/Ir-photosensitized energy-transfer dearomatization of indole-tethered O-methyl oximes leading divergently to indoline-fused azetidines via [2+2] cycloaddition or to benzindolizidines via 1,5-hydrogen atom transfer.",
+  "mechanism_family": [
+    "photoredox_combined",
+    "biradical",
+    "direct_SET"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Ir(dFppy)3 triplet photosensitizer (*PC)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Triplet diradical of indole-oxime substrate (3a-T1) after energy transfer, spin density at C2/C3 with elongated C2-C3 (1.51 Å)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cyclized triplet diradical INT1 (C2-N(oxime) bond formed, radicals on C3 and on oxime carbon)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Open-shelled singlet diradical INT1-OSS (after ISC via MECP1)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Indoline-fused azetidine (kinetic [2+2] product, e.g. 2a, 4f')",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Benzindolizidine (thermodynamic 1,5-HAT product, e.g. 4a, 4f)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Ir(dFppy)3 is excited by blue LEDs and transfers triplet energy to the indole-tethered oxime, generating a triplet diradical localized on the indole C2/C3; intramolecular C-N bond formation with the oxime gives a triplet 1,4-diradical that undergoes ISC (MECP1) to the open-shelled singlet diradical, which either closes by radical-radical combination (TS2, low barrier, kinetic [2+2] azetidine) or undergoes 1,5-HAT (TS3, higher barrier, thermodynamic benzindolizidine); for C3-alkyl substrates the [2+2] adduct is re-opened under light back to the diradical and funneled to the HAT product.",
+  "rate_determining_step": "For the divergence, the C-C bond-forming [2+2] closure proceeds via TS2 (41.6 kcal/mol, ΔG‡ ≈ 3.4 kcal/mol from INT1-OSS, kinetic product) while 1,5-HAT via TS3 (55.5 kcal/mol, ΔG‡ ≈ 17.3 kcal/mol) is the higher-barrier, thermodynamically controlled step; reversible visible-light-promoted C-N homolysis of the [2+2] adduct ultimately controls product distribution.",
+  "probe_reagents": [
+    {
+      "name": "Stern-Volmer quenching with substrate 1a vs indoline analogue 1a'",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "1a efficiently quenches Ir(dFppy)3* luminescence (Ksv = 54750), while 1a' does not (slope ≈ -250), indicating energy/electron transfer requires the indole chromophore."
+    },
+    {
+      "name": "Cyclic voltammetry of 1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Redox potentials inconsistent with photoredox SET; supports energy-transfer mechanism via triplet state."
+    },
+    {
+      "name": "Dark control / no photosensitizer control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "0% yield without light or without Ir(dFppy)3, confirming photosensitizer- and light-dependence."
+    },
+    {
+      "name": "Isolation of [2+2] adduct 4f' and time-course 1H NMR monitoring of 3f",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "4f' isolated and X-ray characterized (CCDC 2011330); under light it is reconsumed to regenerate 3f and accumulate 4f, demonstrating reversible [2+2] and irreversible 1,5-HAT."
+    },
+    {
+      "name": "4f' stability test in absence of light/Ir(dFppy)3",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "4f' is stable without light or photosensitizer, showing that C-N homolysis is a visible-light-promoted process."
+    },
+    {
+      "name": "DFT calculations at (U)B3LYP/6-31G(d,p)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Located T1 (3a-T1 53.0), TS1/TS1' (62.7/64.5), INT1 (38.4), MECP1 (42.2), INT1-OSS (38.2), TS2 (41.6, [2+2]) and TS3 (55.5, 1,5-HAT); supports kinetic vs thermodynamic divergence."
+    }
+  ],
+  "evidence_types_used": [
+    "UV_vis",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "DFT",
+    "isolation_of_intermediate",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two competing pathways from the same open-shelled singlet diradical INT1-OSS: [2+2] cycloaddition (kinetic, favored for R'=H/Me without C3-alkyl, gives indoline-fused azetidines) vs 1,5-HAT (thermodynamic, requires C3-alkyl substituent providing the transferable C-H, gives benzindolizidines). Selectivity is switched by substrate substitution (C3-H vs C3-alkyl) and by reaction time / dilution; the [2+2] adduct is a kinetically formed but photochemically reversible intermediate that funnels to the HAT product. Mechanism proceeds via energy transfer (triplet sensitization), not photoredox SET, as supported by Stern-Volmer and CV. Bridged indene-fused substrate 3o gives only [2+2] product (4o') because the geometry precludes 1,5-HAT."
+}

@@ -1,0 +1,88 @@
+{
+  "doi": "10.1002_anie.202304434_sup_1",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical [3+2] cycloaddition of styrenes with nitromethane to form 4,5-dihydroisoxazole N-oxides (oximes) via in situ generation of a 1,2,5-oxadiazole 2-oxide intermediate",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (n-Bu4NI) to I2/I., which mediates HAT from deprotonated nitromethane (CH2=NO2-, intermediate II) to generate fulminate-like HC≡N+-O- (intermediate III); cathode regenerates iodide and produces H2",
+  "key_intermediates": [
+    {
+      "name": "nitromethane anion / aci-nitromethane (CH2=NO2-, Intermediate II)",
+      "smiles": "[CH2-][N+](=O)[O-]",
+      "role": "reactive"
+    },
+    {
+      "name": "fulminate-type nitrile oxide HC≡N+-O- (Intermediate III)",
+      "smiles": "[C-]#[N+][O-]",
+      "role": "reactive"
+    },
+    {
+      "name": "1,2,5-oxadiazole 2-oxide (Intermediate IV, furoxan)",
+      "smiles": "C1=NO[N+](=C1)[O-]",
+      "role": "reactive"
+    },
+    {
+      "name": "iodine radical / I2 (anodic mediator)",
+      "smiles": "[I][I]",
+      "role": "transient"
+    },
+    {
+      "name": "styrene-furoxan [3+2] adduct V (concerted TS)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "4,5-dihydroisoxazole oxime product 2a (VI)",
+      "smiles": "O/N=C1/CC(c2ccccc2)ON1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes iodide to I./I2, which abstracts H from the t-BuOK-deprotonated nitromethane (II) via HAT to give the nitrile-oxide-like intermediate III; two molecules of III undergo self [3+2] cycloaddition to furoxan IV, which then performs a [3+2] cycloaddition with styrene to afford the dihydroisoxazole N-oxide product. Cathode reduces protons to H2 and regenerates I-.",
+  "rate_determining_step": "HAT from intermediate II (aci-nitromethane) by iodine radical to form nitrile oxide III (inverse KIE ~0.74 observed, consistent with sp3→sp rehybridization at the HAT step)",
+  "probe_reagents": [
+    {
+      "name": "styrene-d8",
+      "smiles": "[2H]C(=C([2H])[2H])c1c([2H])c([2H])c([2H])c([2H])c1[2H]",
+      "purpose": "isotope_label",
+      "observation": "2a-d8 isolated in 87-91% yield; deuterium fully retained in product, confirming styrene is incorporated intact via [3+2]"
+    },
+    {
+      "name": "CD3NO2 / CH3NO2 competition",
+      "smiles": "[2H]C([2H])([2H])[N+](=O)[O-]",
+      "purpose": "KIE",
+      "observation": "kH/kD = 0.74 (avg of 4 runs: 0.72, 0.75, 0.72, 0.75), inverse secondary KIE consistent with C-H/D cleavage at nitromethane and sp3→sp rehybridization"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C(c1ccccc1)c1ccccc1)",
+      "purpose": "radical_trap",
+      "observation": "Dihydroisoxazole product 4e isolated in 60%; a 1,1-diphenyl-2-CF3 alkene byproduct detected by HRMS, indicating .CF3 radical (from CF3CO2-) is generated and trapped"
+    },
+    {
+      "name": "litmus paper / limewater headspace test",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Litmus turns red and limewater becomes turbid over time, indicating CO2 evolution (from Kolbe-type decarboxylation of CF3CO2-) and acidic gas release"
+    },
+    {
+      "name": "HRMS detection of furoxan IV",
+      "smiles": "C1=NO[N+](=C1)[O-]",
+      "purpose": "intermediate_trap",
+      "observation": "ESI-HRMS m/z (M+Na)+ calcd 109.0008, obsd 109.0009, confirming 1,2,5-oxadiazole 2-oxide IV is present in the reaction mixture; trapping with styrene after electrolysis gave 2a in 25-30% yield"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "DFT",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "strong",
+  "notes": "DFT compared three HAT pathways from II to III: by I. (ΔH‡ = 51.3 kJ/mol, most favorable), by I2 (94.8 kJ/mol), and by .CF3 (79.1 kJ/mol), supporting iodine-radical-mediated HAT as the operative pathway. Self [3+2] of two III to furoxan IV has ΔH‡ ≈ 112 kJ/mol; subsequent [3+2] of IV with styrene has ΔH‡ ≈ 109 kJ/mol. Alternative direct nitrile-oxide + alkene [3+2] without furoxan intermediate is disfavored relative to the observed pathway through IV. CF3CO2Na acts as electrolyte and undergoes some Kolbe decarboxylation (CO2 + .CF3 observed) but .CF3 is not the dominant HAT agent."
+}

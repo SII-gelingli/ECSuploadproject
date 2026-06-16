@@ -1,0 +1,86 @@
+{
+  "doi": "10.1002_adsc.202201155",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Cobalt-catalyzed electrochemical C-H/N-H annulation of 8-aminoquinoline benzamides with alkenes to give dihydroisoquinolinone derivatives",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation regenerates the active Co(III) catalyst from Co(I)/Co(II); cathode reduces protons to H2. The electrode shuttles electrons via the cobalt catalyst rather than directly oxidizing substrate.",
+  "key_intermediates": [
+    {
+      "name": "Co(II)-amide complex coordinated to 8-aminoquinoline benzamide [Co(II)-A]",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Co(III)-amide complex [Co(III)-A] after anodic oxidation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cobaltacycle from BIES C-H activation [Co(III)-B]",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Alkene-coordinated Co(III) complex [Co(III)-C]",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Seven-membered cobaltacycle from 1,2-migratory insertion [Co(III)-D]",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(I) species released after reductive elimination",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Co(II) binds the benzamide N-H, is anodically oxidized to Co(III), then performs BIES C-H metalation; alkene coordinates and migratory insertion gives a 7-membered cobaltacycle that reductively eliminates product and Co(I), which is reoxidized at the anode while protons are reduced at the cathode to H2.",
+  "rate_determining_step": "C-H activation step (BIES-type concerted metalation-deprotonation), supported by KIE = 1.2 and highly unsymmetrical transition state",
+  "probe_reagents": [
+    {
+      "name": "CD3OD (H/D exchange)",
+      "smiles": "[2H]OC([2H])([2H])[2H]",
+      "purpose": "isotope_label",
+      "observation": "<5% D incorporation in recovered 1a and in product 3aa, indicating C-H metalation is likely irreversible"
+    },
+    {
+      "name": "[D5]-1a deuterated benzamide",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "kH/kD = 1.2, suggesting C-H cleavage is involved but with a highly unsymmetrical TS"
+    },
+    {
+      "name": "Competition between 1b (Me) and 1h (CF3) benzamides",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "3ba:3ha = 1.7:1, electron-rich amide reacts faster, consistent with BIES pathway"
+    },
+    {
+      "name": "Three-component coupling with benzoyl chloride 9 + 8-aminoquinoline 10 + styrene 2a",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Only 15% of 3aa obtained, indicating covalently pre-installed quinoline directing group is essential"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, Co(acac)2, NaOPiv mixtures",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peaks at 1.11 V and 1.61 V appear only with 1a+Co+NaOPiv, supporting formation/oxidation of a Co(III)-amide intermediate rather than direct substrate oxidation (1a alone at 1.66 V; 2a at 1.94 V)"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "cyclic_voltammetry",
+    "kinetic_order",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors derivatize product 3aa (Pd/C-H2 to 4; LiAlH4 to 5) to demonstrate synthetic utility. The covalently bound 8-aminoquinoline directing group is mechanistically essential — a stepwise three-component variant fails (15%). No quenching of CV signal by alkene 2a argues against alkene oxidation as a productive step."
+}

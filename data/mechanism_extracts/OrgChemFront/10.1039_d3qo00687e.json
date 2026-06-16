@@ -1,0 +1,92 @@
+{
+  "doi": "10.1039_d3qo00687e",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Iodide-mediated electrochemical intramolecular cyclization of N-pentenylamines (and their HCl salts) to 3-chloropiperidines under undivided-cell conditions with TBAI as redox mediator and chloride source",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (I-) to iodine radical/I2 (mediator); the alkyl radical formed after iodine-radical addition to the alkene is further oxidized at the anode to a carbocation that cyclizes; protons are reduced to H2 at the Ni cathode",
+  "key_intermediates": [
+    {
+      "name": "iodine radical (I•)",
+      "smiles": "[I]",
+      "role": "reactive"
+    },
+    {
+      "name": "beta-iodo carbon-centered alkyl radical from anti-Markovnikov I• addition to the pentenylamine alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "beta-iodo carbocation (after anode oxidation of the alkyl radical)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "iodomethyl-pyrrolidinium (cyclized aziridinium-like / pyrrolidinium intermediate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "aziridinium intermediate (after deprotonation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "3-chloropiperidine product (after Cl- attack and ring expansion of aziridinium)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, iodide is oxidized to iodine radicals which add to the pendant alkene of the protonated pentenylamine; the resulting C-radical is further oxidized at the anode to a carbocation, which cyclizes via the amine to an iodomethyl-pyrrolidinium/aziridinium that is opened by chloride to deliver the 3-chloropiperidine, while protons are reduced to H2 at the Ni cathode and iodide is regenerated.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Yield dropped from 82% to 23% upon addition of 1 equiv TEMPO, consistent with a radical intermediate"
+    },
+    {
+      "name": "I2 / NEt3 (stoichiometric, no current)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Only 31% yield obtained, ruling out simple electrophilic iodination of the alkene / iodoamine pathway as the operative mechanism"
+    },
+    {
+      "name": "LiClO4 (replacing TBAI as electrolyte)",
+      "smiles": "[Li+].[O-]Cl(=O)(=O)=O",
+      "purpose": "redox_probe",
+      "observation": "No conversion, confirming iodide is required as electrochemical mediator"
+    },
+    {
+      "name": "Exclusion of visible light",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No decrease in yield in the dark (82%), excluding a TBAI3 photolysis pathway"
+    },
+    {
+      "name": "No-current control",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "0% conversion without applied potential, confirming the transformation is electrochemical"
+    },
+    {
+      "name": "Cyclopropyl-bearing substrate (2n)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Cyclopropyl group tolerated (69% yield, no ring opening), indicating the reaction does not proceed via an aminyl (N-centered) radical"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "radical_clock",
+    "on/off_light_or_current",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly rule out (i) electrophilic iodination of the alkene followed by cyclization, (ii) direct oxidation of amine to an aminyl radical (supported by cyclopropyl probe and prior CV by Yin), and (iii) a TBAI3 photolysis pathway. Direct anodic oxidation of substrate (without iodide mediation) cannot be fully excluded but is disfavored by the LiClO4 control. Proposed cyclization goes through an iodomethyl-pyrrolidinium → aziridinium → ring expansion by Cl- to give the 3-chloropiperidine."
+}

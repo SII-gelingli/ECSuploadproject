@@ -1,0 +1,54 @@
+{
+  "doi": "10.1021_acs.orglett.1c03461_sup_1",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical thiol-ene type hydrothiolation/coupling of styrenes with arylthiols mediated by PhB(OH)2 proceeding through thiyl radical addition to the alkene.",
+  "mechanism_family": [
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of arylthiolate/thiol to generate an aryl thiyl radical (ArS•) that adds to the styrene; PhB(OH)2 acts as a hydroxyl/proton shuttle generating a HO-B(Ph)(NMe2)-type byproduct.",
+  "key_intermediates": [
+    {
+      "name": "aryl thiyl radical (ArS•, Ar = p-tolyl)",
+      "smiles": "[S]c1ccc(C)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbon radical from styrene + ArS• addition",
+      "smiles": "[CH](c1ccccc1)CSc2ccc(C)cc2",
+      "role": "transient"
+    },
+    {
+      "name": "TEMPO-trapped adduct 3n' (TEMPO-O-CH(Ph)-CH2-S-C6H4-Me)",
+      "smiles": "CC1(C)CCCC(C)(C)N1OC(c1ccccc1)CSc2ccc(C)cc2",
+      "role": "intermediate_trap"
+    },
+    {
+      "name": "byproduct IV: HO-B(Ph)(NMe2) (dimethylamino(hydroxy)phenylborane)",
+      "smiles": "OB(c1ccccc1)N(C)C",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the anode, ArSH (or ArS-) is oxidized to a thiyl radical ArS•, which adds to the styrene to form a benzylic C-radical; in the productive cycle this radical is reduced/protonated to give the hydrothiolation product, while in the TEMPO probe experiment it is trapped as adduct 3n'. PhB(OH)2 mediates proton/hydroxyl transfer, ending up as the aminoborinic byproduct IV detected by MS.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3n suppressed (0% yield); TEMPO-trapped adduct 3n' (C24H33NOS, [M+H]+ calcd 384.2356, found 384.2367) detected by ESI-HRMS, confirming a benzylic C-radical intermediate after thiyl radical addition."
+    },
+    {
+      "name": "PhB(OH)2 (byproduct capture)",
+      "smiles": "OB(O)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Putative byproduct IV (HO-B(Ph)NMe2, exact mass 149.1012; [M+H]+ 150.1085 found 150.1046) detected by EI-MS and ESI-HRMS, supporting involvement of the boronic acid as a hydroxyl/amine shuttle."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Only the radical/byproduct trapping portion of the SI was provided; full catalytic cycle and ordering of SET steps are inferred from the TEMPO suppression (radical pathway) and MS identification of the boron-containing byproduct IV. No KIE, CV, or DFT data shown on this page."
+}

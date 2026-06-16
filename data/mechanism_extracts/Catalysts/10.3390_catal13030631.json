@@ -1,0 +1,68 @@
+{
+  "doi": "10.3390_catal13030631",
+  "journal": "Catalysts",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical thiocyanation/cyclization cascade of N-(2-alkenylaryl)amides with NH4SCN to give 4-thiocyanatomethyl-4H-benzo[d][1,3]oxazines",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of thiocyanate anion to thiocyanate radical (via (SCN)2), which adds to the alkene; the resulting C-radical is further oxidized at the anode to a carbocation; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "thiocyanate radical (SCN•) / (SCN)2",
+      "smiles": "[S]C#N",
+      "role": "reactive"
+    },
+    {
+      "name": "C-centered benzylic radical from SCN• addition to alkene (intermediate I)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbocation after SET oxidation (intermediate II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "protonated oxazine intermediate after intramolecular O-attack (intermediate III)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "4-methyl-2-phenyl-4-(thiocyanatomethyl)-4H-benzo[d][1,3]oxazine (3a)",
+      "smiles": "N#CSCC1(C)c2ccccc2N=C(c2ccccc2)O1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes SCN- to SCN• (through (SCN)2); SCN• adds to the alkene of 1a to give C-radical I, which is further oxidized at the anode (SET) to carbocation II; intramolecular nucleophilic attack of the amide oxygen and deprotonation deliver oxazine 3a, while protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Only trace 3a formed, indicating a radical pathway"
+    },
+    {
+      "name": "1,1-diphenylethylene",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "SCN-DPE adduct 3a' detected by GC-MS, confirming SCN radical intermediate"
+    },
+    {
+      "name": "cyclic voltammetry of 1a and NH4SCN with/without H2SO4",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Eox(2) = 1.48 V vs Eox(1a) = 2.27 V; SCN- is preferentially oxidized; with acid, secondary oxidation of SCN species (to (SCN)3-/(SCN)2-) is observed"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Acid (H2SO4) is essential — without it CV shows no 1a oxidation and yield drops sharply; acid promotes secondary oxidation of SCN species, analogous to halide (SCN-/(SCN)3-/(SCN)2-) behavior. Mechanism is the only one proposed; no DFT or KIE reported."
+}

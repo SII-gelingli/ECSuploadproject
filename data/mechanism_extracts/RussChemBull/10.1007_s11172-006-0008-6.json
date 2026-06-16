@@ -1,0 +1,88 @@
+{
+  "doi": "10.1007_s11172-006-0008-6",
+  "journal": "RussChemBull",
+  "is_review": false,
+  "rxn_class_summary": "Electrocatalytic cyclopropanation of arylidene- or alkylidenemalononitriles with dialkyl malonates in alcoholic NaBr/NaI to give 3-substituted 2,2-dicyanocyclopropane-1,1-dicarboxylates.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "anion_initiated",
+    "electrocatalysis_outer_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation of halide (Br- or I-) to molecular halogen (Hal2) which serves as the chemical mediator; cathodic reduction of alcohol generates alkoxide base that deprotonates the malonate CH-acid. Substrate itself is not directly oxidized at the electrode.",
+  "key_intermediates": [
+    {
+      "name": "molecular halogen Hal2 (Br2 or I2) generated at anode",
+      "smiles": "BrBr",
+      "role": "reactive"
+    },
+    {
+      "name": "alkoxide ion (MeO- or EtO-) generated at cathode",
+      "smiles": "[O-]C",
+      "role": "reactive"
+    },
+    {
+      "name": "dialkyl malonate carbanion (CH(COOR)2-)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Michael adduct anion A (anion of 2-substituted propane-1,1,3,3-tetracarbonitrile/dicarboxylate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-halo Michael adduct (haloalkylated malonate-dinitrile)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "bromomalonate anion (alternative route, Scheme 5)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "intermediate anion B from malononitrile + arylidenemalonate (Scheme 7)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "cyclic tetraester 6 (side product from malonate + arylidenemalonate)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "dimethyl 3,3-dicyano-2-phenylpropane-1,1-dicarboxylate (4, open-chain Michael adduct detected at low charge)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, halide is oxidized to Hal2 (2 Hal- - 2e -> Hal2); at the cathode, alcohol is reduced to alkoxide and H2. Alkoxide deprotonates dialkyl malonate to its carbanion, which undergoes Michael addition to the arylidene/alkylidenemalononitrile to give anion A; A is halogenated by Hal2 and then closes the cyclopropane ring via intramolecular SN2 with displacement of Hal- on action of alkoxide.",
+  "rate_determining_step": "Deprotonation of the CH-acid and/or Michael addition of the malonate anion to the activated olefin (NaBr preferred over NaI because bromomalonate is a stronger CH-acid and adds faster).",
+  "probe_reagents": [
+    {
+      "name": "reduced charge (0.7 F mol-1) electrolysis",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Open-chain Michael adduct 4 (dimethyl 3,3-dicyano-2-phenylpropane-1,1-dicarboxylate) detected by 1H NMR in 25% along with cyclopropane 3a (32%), supporting stepwise Michael then halogenation/ring-closure."
+    },
+    {
+      "name": "NaI vs NaBr mediator comparison",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "NaBr gives higher yields than NaI for malonate substrates (e.g. 75 vs 63%), opposite to tetracarboxylate ring closure; attributed to faster bromomalonate formation/deprotonation and faster Michael addition."
+    },
+    {
+      "name": "temperature variation (-20 to +20 C)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "0 C optimal for malonate + alkylidenemalononitrile; raising T causes oligomerization and lower yields."
+    }
+  ],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "kinetic_order"
+  ],
+  "evidence_strength": "medium",
+  "notes": "An alternative/parallel route (Scheme 5) is proposed in which malonate is first brominated at the anode to bromomalonate, deprotonated to bromomalonate anion, then adds to the activated olefin followed by base-induced ring closure; this rationalizes why NaBr outperforms NaI here (opposite trend to the tetracarboxylate cyclization, ref 18). A side pathway via malononitrile-anion route (Schemes 6-8) gives lower yields owing to oligomerization of malononitrile and formation of cyclic tetraester 6 from CH(COOMe)2- + arylidenemalonate."
+}

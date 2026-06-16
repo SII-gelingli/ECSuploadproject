@@ -1,0 +1,44 @@
+{
+  "doi": "10.1002_anie.202218533_sup_3",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical Co-catalyzed enantioselective C-H activation forming an isolable chiral cobaltacycle intermediate via anodic oxidation",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation (RVC anode, CPE @ 1.5 V vs Ag+/Ag) oxidizes Co(II) to higher-valent Co(III)/Co species enabling C-H metalation and formation of the cobaltacycle",
+  "key_intermediates": [
+    {
+      "name": "Chiral cobaltacycle (RC)-Co-1 with Salox ligand, benzamide substrate, and quinoline coordination",
+      "smiles": null,
+      "role": "stoichiometric_intermediate"
+    },
+    {
+      "name": "Co(II)/Salox/benzamide pre-complex",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "High-valent Co(III) species after anodic oxidation",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Co(OAc)2 coordinates with the (R)-Salox ligand L1-7 and benzamide 1a; anodic oxidation at the RVC electrode oxidizes Co(II) to Co(III), which enables concerted metalation-deprotonation (CMD) of the ortho C-H bond (assisted by pivalate) to generate the isolable five-membered chiral cobaltacycle (RC)-Co-1. Protons are reduced at the Pt cathode.",
+  "rate_determining_step": "C-H metalation (CMD) at the high-valent Co center",
+  "probe_reagents": [
+    {
+      "name": "Isolation of cobaltacycle (RC)-Co-1",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Cobaltacycle isolated in 28% yield (50.3 mg) as dark yellow solid, characterized by 1H/13C NMR and HRMS ([M+Na]+ calcd 622.1511, found 622.1507), confirming chiral C-H metalated Co species"
+    }
+  ],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Only the synthesis/characterization of the chiral cobaltacycle intermediate via constant potential electrolysis is shown on this page; subsequent mechanistic experiments (catalytic competence, KIE, DFT) may appear elsewhere in the SI but are not present here. NaOPiv serves as the carboxylate base assisting CMD."
+}

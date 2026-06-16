@@ -1,0 +1,71 @@
+{
+  "doi": "10.1055_s-0030-1260794",
+  "journal": "Synthesis",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical aryl radical cyclization-carboxylation (ERCC) of 2-allyloxybromobenzenes with CO2 using methyl 4-tert-butylbenzoate as an electron-transfer mediator and a sacrificial Mg anode to give 2,3-dihydrobenzofuran-3-ylacetic acids",
+  "mechanism_family": [
+    "mediator_cathodic",
+    "radical_cathodic",
+    "sacrificial_anode"
+  ],
+  "electrochemical_role": "Cathodic one-electron reduction of methyl 4-tert-butylbenzoate (4) at Pt cathode generates its radical anion, which selectively transfers one electron to the aryl bromide to produce an aryl radical (avoiding two-electron reduction to the aryl anion); Mg anode is sacrificially oxidized to Mg2+",
+  "key_intermediates": [
+    {
+      "name": "radical anion of methyl 4-tert-butylbenzoate (mediator 4 reduced form)",
+      "smiles": "[O-]C(=O)c1ccc(C(C)(C)C)cc1",
+      "role": "transient"
+    },
+    {
+      "name": "aryl radical from 2-allyloxybromobenzene after Br- loss",
+      "smiles": "[c]1ccccc1OCC=C",
+      "role": "reactive"
+    },
+    {
+      "name": "2,3-dihydrobenzofuran-3-yl carbon radical (after 5-exo-trig cyclization)",
+      "smiles": "[CH]1COc2ccccc21",
+      "role": "reactive"
+    },
+    {
+      "name": "2,3-dihydrobenzofuran-3-yl carbanion (after second e- transfer)",
+      "smiles": "[CH-]1COc2ccccc21",
+      "role": "reactive"
+    },
+    {
+      "name": "carboxylate after CO2 capture",
+      "smiles": "[O-]C(=O)CC1COc2ccccc21",
+      "role": "transient"
+    },
+    {
+      "name": "Mg carboxylate (mono- or bis-)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "aryl anion (off-pathway, direct 2e- reduction without mediator)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the Pt cathode, mediator 4 is reduced to its radical anion, which transfers one electron to the aryl bromide to expel Br- and form an aryl radical; the aryl radical undergoes 5-exo-trig cyclization onto the pendant allyl group, the resulting alkyl radical is further reduced at the cathode to a carbanion, which is trapped by CO2 to give a carboxylate (stabilized by Mg2+ from the sacrificial Mg anode).",
+  "rate_determining_step": "mediated single-electron transfer from the radical anion of 4 to the aryl bromide (generation of aryl radical)",
+  "probe_reagents": [
+    {
+      "name": "methyl 4-tert-butylbenzoate (mediator 4)",
+      "smiles": "COC(=O)c1ccc(C(C)(C)C)cc1",
+      "purpose": "redox_probe",
+      "observation": "CV alone in DMF shows reversible reduction at -2.9 V vs Ag/Ag+; addition of 0.5 equiv 1a increases reduction peak current and decreases oxidation peak; with 1.0 equiv 1a the oxidation peak disappears, consistent with catalytic mediator behavior generating aryl radicals from ArBr"
+    },
+    {
+      "name": "2-allyloxybromobenzene (1a)",
+      "smiles": "BrC1=CC=CC=C1OCC=C",
+      "purpose": "redox_probe",
+      "observation": "Irreversible reduction at -3.2 V vs Ag/Ag+ in DMF (direct reduction much harder than mediated pathway)"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Without mediator 4, direct two-electron cathodic reduction of ArBr competes to give an aryl anion that is carboxylated before cyclization, leading to benzoic acid byproducts. With alkyne substrate 15, β-selective overcarboxylation of the initially formed α,β-unsaturated acid gives dicarboxylic acid 16 as the sole product. The Mg sacrificial anode is essential to prevent anodic oxidation of carbanion/carboxylate intermediates and to stabilize them as Mg carboxylates."
+}

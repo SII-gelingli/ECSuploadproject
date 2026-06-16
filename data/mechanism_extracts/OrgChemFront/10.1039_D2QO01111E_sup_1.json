@@ -1,0 +1,97 @@
+{
+  "doi": "10.1039_D2QO01111E_sup_1",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical chlorosulfinylation of styrenes with arenethiols giving β-chloro sulfoxides via radical/radical-polar crossover and in situ sulfide-to-sulfoxide oxidation",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of arenethiol/thiolate to thiyl radical (and further to disulfide/sulfide oxidation to sulfoxide); thiyl radical adds to styrene to give a β-thio C-radical that is oxidized to a benzylic cation and trapped by chloride",
+  "key_intermediates": [
+    {
+      "name": "diaryl disulfide (Int1)",
+      "smiles": "[H]C1=CC(=CC=C1SSC2=CC=C(F)C=C2)F",
+      "role": "transient"
+    },
+    {
+      "name": "β-hydrosulfide / phenethyl aryl sulfide (Int2)",
+      "smiles": "Fc1ccc(SCCc2ccccc2)cc1",
+      "role": "transient"
+    },
+    {
+      "name": "β-hydroxylsulfide (Int3)",
+      "smiles": "Fc1ccc(SCC(O)c2ccccc2)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "β-chlorosulfide (Int4)",
+      "smiles": "Fc1ccc(SCC(Cl)c2ccccc2)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "β-acetoxysulfide (Int5)",
+      "smiles": "Fc1ccc(SCC(OC(C)=O)c2ccccc2)cc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "β-hydroxylsulfoxide (Int6)",
+      "smiles": "Fc1ccc(S(=O)CC(O)c2ccccc2)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "aryl thiyl radical (ArS•)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-thio benzylic radical",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-thio benzylic cation",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes ArSH to ArS• (and ArSSAr); ArS• adds to styrene to give a β-thio benzylic radical, which is further oxidized at the anode to a benzylic cation and trapped by Cl- to deliver the β-chlorosulfide; subsequent anodic oxidation of the sulfide to the sulfoxide (with O incorporation from H2O) furnishes the β-chloro sulfoxide product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "H2 18O labeling",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "Product 3 shows 18O incorporation (O16/O18 = 95:5 from a 90:10 H2 16O/H2 18O feed), indicating the sulfoxide oxygen originates from water"
+    },
+    {
+      "name": "(1-(2-phenylcyclopropyl)vinyl)benzene (radical clock 56)",
+      "smiles": "C(=C)(c1ccccc1)C1CC1c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 57 obtained in 10% yield (dr 2:1), consistent with a carbon-centered radical intermediate"
+    },
+    {
+      "name": "time-course sampling with 19F NMR (4-fluorothiophenol)",
+      "smiles": "Fc1ccc(S)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Detection and kinetic profiling of Int1-Int6 (disulfide, β-hydrosulfide, β-hydroxylsulfide, β-chlorosulfide, β-acetoxysulfide, β-hydroxylsulfoxide) as transient intermediates during electrolysis"
+    },
+    {
+      "name": "HCl additive control (sulfide → sulfoxide)",
+      "smiles": "Cl",
+      "purpose": "other",
+      "observation": "Electrolysis of a model sulfide gives sulfoxide in 11% without HCl vs 31% with HCl in 1,4-dioxane, indicating HCl promotes the S→S=O oxidation step"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "isotope_label",
+    "intermediate_trap_other",
+    "kinetic_order",
+    "cyclic_voltammetry",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "strong",
+  "notes": "18O labeling confirms water (not O2 or AcOH) as the sulfoxide oxygen source. Time-resolved 19F NMR sampling reveals a cascade: ArSH → ArSSAr → β-thioether → β-functionalized (OH/Cl/OAc) sulfides → β-hydroxysulfoxide → final β-chloro sulfoxide. Radical clock supports a discrete C-radical, while Cl-/OH/OAc trapping points to a benzylic cation (radical-polar crossover). Cyclic voltammetry (Section 6.6) further supports anodic oxidation of the thiol/sulfide."
+}

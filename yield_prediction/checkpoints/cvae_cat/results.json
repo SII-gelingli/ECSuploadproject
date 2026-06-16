@@ -1,0 +1,41 @@
+{
+  "model": "CategoricalCVAE+Catalyst",
+  "best_epoch": 92,
+  "test_acc": {
+    "anode": 71.1645101663586,
+    "cathode": 67.65249537892791,
+    "cell_type": 84.93530499075786,
+    "electrolyte": 30.96118299445471,
+    "solvent": 61.460258780036966,
+    "reagent": 62.47689463955638,
+    "catalyst": 82.53234750462107
+  },
+  "test_top3_acc": {
+    "anode": 96.02587800369686,
+    "cathode": 96.5804066543438,
+    "cell_type": 98.98336414048059,
+    "electrolyte": 56.839186691312385,
+    "solvent": 84.4731977818854,
+    "reagent": 84.84288354898337,
+    "catalyst": 96.21072088724584
+  },
+  "avg_test_acc": 65.88328492210192,
+  "avg_test_top3_acc": 87.7079482439926,
+  "num_params": 4406324,
+  "training_time": "0:10:03.129646",
+  "args": {
+    "data_dir": "data",
+    "output_dir": "checkpoints/cvae_cat",
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "epochs": 100,
+    "warmup_epochs": 20,
+    "beta_max": 0.1,
+    "patience": 20,
+    "hidden_dim": 256,
+    "latent_dim": 64,
+    "dropout": 0.2,
+    "device": "cuda"
+  }
+}

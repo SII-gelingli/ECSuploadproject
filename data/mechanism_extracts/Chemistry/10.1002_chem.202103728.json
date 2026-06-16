@@ -1,0 +1,111 @@
+{
+  "doi": "10.1002_chem.202103728",
+  "journal": "Chemistry",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical synthesis of substituted isoxazolines via mediator-assisted (chloride/HFIP) coupling of aldoximes with electron-deficient alkenes, proceeding through a stepwise radical pathway rather than a concerted 1,3-dipolar [3+2] cycloaddition.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_anodic",
+    "radical_cation"
+  ],
+  "electrochemical_role": "Anodic oxidation of chloride to chlorine radical (mediator) which performs HAT on the aldoxime O-H/C-H to generate a hydroxyimoyl/oximyl radical; a secondary pathway involves direct anodic oxidation of the oxime to its radical cation (HFIP-stabilised), followed by Cl-mediated HAT; cathode reduces an anionic cyclic intermediate (and H+ to H2) to deliver the isoxazoline.",
+  "key_intermediates": [
+    {
+      "name": "chlorine radical (Cl•) from anodic oxidation of Cl-",
+      "smiles": "[Cl]",
+      "role": "transient"
+    },
+    {
+      "name": "hydroxyimoyl/oximyl radical (R-C(•)=N-OH)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "HFIP-stabilised oxime radical cation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "C-centered radical adduct after addition to acrylate (β-radical α to ester)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "anionic cyclised intermediate prior to cathodic reduction",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "free nitrile oxide (R-C≡N+-O-) — proposed in original hypothesis but disfavoured by DFT (~182 kcal/mol N-chlorination barrier)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "furoxan dimer of nitrile oxide",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "isoxazoline product (3,5-disubstituted, anti-diastereomer kinetic)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, chloride is oxidised to Cl• (rate-determining), which abstracts an H atom from the aldoxime to give a hydroxyimoyl radical; this radical adds (SRN2-like) to the Michael acceptor forming a C–C bond, then undergoes 5-exo-tet cyclisation onto the oxime O, and finally cathodic reduction (with H+ → ½H2) furnishes the neutral isoxazoline. A parallel minor pathway: direct anodic oxidation of the oxime to a (HFIP-stabilised) radical cation, then Cl-mediated HAT, addition, cyclisation and cathodic reduction.",
+  "rate_determining_step": "Anodic oxidation of chloride to chlorine radical (slow, surface-limited; rationalises absence of observable KIE despite a calculated HAT KIE ~5).",
+  "probe_reagents": [
+    {
+      "name": "deuterated aldoxime [D1]15a",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "Small/negligible KIE 1.0–1.5 by independent rates; [D1]15a gave 17a in 70% vs 78% for 15a — consistent with C–H cleavage not being globally rate-limiting (RDS is Cl- oxidation)."
+    },
+    {
+      "name": "dimethyl fumarate (E-alkene)",
+      "smiles": "COC(=O)/C=C/C(=O)OC",
+      "purpose": "other",
+      "observation": "Stereoselective (not stereospecific) formation of anti-isoxazoline; anti forms first, syn appears later — supports stepwise (not concerted [3+2]) mechanism."
+    },
+    {
+      "name": "dimethyl maleate (Z-alkene)",
+      "smiles": "COC(=O)/C=C\\C(=O)OC",
+      "purpose": "other",
+      "observation": "Also gives predominantly anti-diastereomer; loss of stereospecificity rules out concerted cycloaddition."
+    },
+    {
+      "name": "Et4NOTs (halide-free electrolyte, no Cl-)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction still proceeds but yield drops from 78% to 24%, implicating direct oxime oxidation as a minor parallel pathway and Cl- as a key mediator."
+    },
+    {
+      "name": "HFIP omission control",
+      "smiles": "OC(C(F)(F)F)C(F)(F)F",
+      "purpose": "other",
+      "observation": "Yield drops to 36% (vs 78%); HFIP stabilises the radical cation intermediate (supported by DFT)."
+    },
+    {
+      "name": "ferrocene (Fc/Fc+ internal reference)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Used to reference CV; Et4NCl gives reversible couple E1/2 = 0.734 V; oxime shows three irreversible single-electron oxidations; acrylate inactive in window."
+    },
+    {
+      "name": "stirrer-speed variation",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Rate independent of stirring above 200 rpm — consistent with diffusion-limited but not mass-transport-limited at electrode."
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "cyclic_voltammetry",
+    "DFT",
+    "kinetic_order",
+    "product_isotope_distribution",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors initially hypothesised a classical pathway via electrophilic chlorination of oxime → nitrile oxide → concerted [3+2] cycloaddition (Scheme 2, route B / Scheme 8 path B). Combined CV, KIE, diastereochemistry (loss of stereospecificity from E/Z alkenes), kinetic time-course, COPASI microkinetic modelling, and DFT (M06-2X/Def2TZVP//6-31+G(d,p), SMD MeCN) instead support a stepwise open-shell radical (SRN2-like) mechanism: barriers for [3+2] are ~2.5× higher, and N-chlorination/E2 to nitrile oxide is prohibitively high (~182 kcal/mol). Regioselectivity for 3,5- over 3,4-isoxazoline is governed by distortion (Boys-Bernardi counterpoise) at the SRN2 TS. The syn-diastereomer arises via post-cyclisation epimerisation of the kinetic anti product. Limitation noted by authors: O–H proton-transfer steps were not modelled by DFT."
+}

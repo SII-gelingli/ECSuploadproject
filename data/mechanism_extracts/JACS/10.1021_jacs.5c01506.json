@@ -1,0 +1,89 @@
+{
+  "doi": "10.1021_jacs.5c01506",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Photoexcited Gd(III)-catalyzed enantioselective dearomative [2π+2σ] cycloaddition of naphthalenes with bicyclo[1.1.0]butanes to give chiral tricyclic BCHs",
+  "mechanism_family": [
+    "photoredox_combined",
+    "biradical",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Gd(III)-naphthalene bidentate complex (acylpyridine-coordinated, ground state)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Excited S1 singlet Gd-bound naphthalene complex (1*I)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Excited T1 triplet Gd-bound naphthalene complex (3*I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Triplet 1,4-biradical from radical addition of 3*I to BCB 2a (intermediate II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Closed-shell cyclized Gd-bound dearomatized complex (IV)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Gd(III) chelates the acylpyridine directing group of the naphthalene and red-shifts its absorption; visible-light excitation gives the singlet S1 complex, which undergoes ISC to a triplet that adds across the central C–C σ-bond of the BCB to form a triplet 1,4-biradical, followed by a second ISC and radical recombination to close the cyclobutane and deliver the dearomatized product after ligand exchange with fresh naphthalene.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "3 equiv suppressed formation of 3a (trace yield), consistent with radical intermediates"
+    },
+    {
+      "name": "O2",
+      "smiles": "O=O",
+      "purpose": "radical_trap",
+      "observation": "1 atm O2 reduced 3a to trace, supporting triplet/radical involvement"
+    },
+    {
+      "name": "hexa-2,4-diene",
+      "smiles": "C/C=C/C=C/C",
+      "purpose": "intermediate_trap",
+      "observation": "0.5 equiv → 70% yield; 1 equiv → 52% yield; triplet quencher diminishes yield, supporting triplet naphthalene intermediate"
+    },
+    {
+      "name": "acetyl-naphthalene 10 (R=Me)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction without the 2-acylpyridine bidentate DG, confirming necessity of bidentate Gd coordination"
+    },
+    {
+      "name": "benzoyl-naphthalene 11 (R=Ph)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction, confirming bidentate DG required"
+    },
+    {
+      "name": "enantioenriched ligand L1 (variable ee)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Linear correlation (slope 0.962, R^2=0.9968) between ee of L1 and ee of 3a, indicating a single Gd/L1 species delivers enantioinduction (no nonlinear effect)"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "UV_vis",
+    "on/off_light_or_current",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Light on/off experiments show reaction halts in the dark, consistent with a photocatalytic (not radical-chain) regime. UV-vis shows that only the Gd(III)+L1+naphthalene+BCB combination absorbs significantly in the visible region, supporting selective excitation of the Gd-bound naphthalene complex rather than free BCB or naphthalene. Linear effect study argues against aggregated Gd species. A singlet-only pathway is disfavored because triplet quenchers (O2, TEMPO, hexa-2,4-diene) strongly suppress the reaction; the authors propose ISC to a triplet biradical followed by a second ISC before ring closure."
+}

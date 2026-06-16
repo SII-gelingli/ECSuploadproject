@@ -1,0 +1,108 @@
+{
+  "doi": "10.1002_anie.202313830",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Cobalt-catalyzed electroreductive alkyl-alkyl bond formation by addition of unactivated primary, secondary, and tertiary alkyl chlorides to conjugated olefins (Michael acceptors) in an undivided cell with a sacrificial Zn anode.",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "radical_cathodic",
+    "radical_polar_crossover",
+    "sacrificial_anode",
+    "mediator_cathodic"
+  ],
+  "electrochemical_role": "Cathodic reduction of Co(II)(salen) to Co(I) at -1.7 V vs Fc/Fc+, which activates the alkyl chloride (by SN2 or XAA depending on substrate/electrolyte); second cathodic event at -2.1 V reduces either Co(III)(alkyl) intermediate or the alkyl-radical-derived adduct to an enolate; Zn (or stainless steel/Co) serves as sacrificial anode.",
+  "key_intermediates": [
+    {
+      "name": "Co(II)(salen) complex Co(L1) (resting catalyst A)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Reduced [Co(I)(L1)]- (nucleophilic Co species, B); isolated as [Na+][Co(I)(L2)]-, X-ray characterized",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(III)(alkyl) intermediate (C, complex 5, e.g. Co(L1)(n-octyl)) formed via SN2 with 1° RCl",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Putative [Co(I)Cl(L1)]2- chloride-coordinated super-reduced species mediating XAA with 2°/3° RCl",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Alkyl radical (R•, 1°, 2°, or 3°)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-Carbonyl radical adduct after radical addition to acrylate",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Enolate (after cathodic reduction of α-carbonyl radical)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Polyacrylate oligomer (off-pathway in absence of proton source)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode reduces Co(II)(L1) to nucleophilic Co(I), which activates R-Cl by SN2 (1° RCl, or 2°/3° in non-coordinating electrolyte) to give Co(III)(alkyl) that homolyzes to R•, or directly by halogen-atom abstraction (2°/3° RCl in LiCl) to give R• plus Co(III)-Cl. The R• adds to the conjugated alkene; the resulting α-EWG radical is reduced at the cathode (or by Co(I)) to an enolate that is protonated by n-BuOH to give product, while the Zn anode supplies the balancing oxidation.",
+  "rate_determining_step": "C–Cl bond activation by Co(I) (SN2 vs XAA depending on substrate class and electrolyte); for 1° alkyl chlorides, subsequent Co–C bond homolysis of the stable Co(III)(alkyl) is the kinetically limiting step.",
+  "probe_reagents": [
+    {
+      "name": "5-chloropent-1-ene (radical clock)",
+      "smiles": "ClCCCC=C",
+      "purpose": "radical_clock",
+      "observation": "Cyclized:uncyclized = 51%:12%, consistent with free alkyl radical intermediate after C–Cl activation."
+    },
+    {
+      "name": "D2O (in place of n-BuOH proton source)",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "65% yield with 95% D incorporation at the α-carbonyl position, supporting enolate protonation as the final step."
+    },
+    {
+      "name": "Isolated Co(III)(alkyl) complex 5 (Co(L1)(n-C6H13))",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Stoichiometric reaction with butyl acrylate gives only 28% of coupling product plus oligomers; CV shows reduction at -2.1 V in KPF6 but stable in LiCl, supporting SN2-derived Co(III)-alkyl pathway for 1° RCl."
+    },
+    {
+      "name": "[Na+][Co(I)(L2)]- (chemically reduced Co(I))",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "Isolated and X-ray characterized; reacts immediately with 2-chlorooctane (color change Co(I) green → Co(III) red, full RCl consumption) — confirms Co(I) as the C–Cl activator."
+    },
+    {
+      "name": "CV of Co(L1) ± RCl in KPF6 vs LiCl",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "In KPF6, 2° RCl gives ECE behavior with second wave at -2.1 V (Co(III)-alkyl reduction); in LiCl, only one catalytic-looking wave at -1.7 V with no Co(III)-alkyl wave, diagnostic of XAA pathway for 2°/3° RCl."
+    },
+    {
+      "name": "UV-Vis of [Co(I)]- with added LiCl",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No detectable change in E1/2 or speciation, so any chloride-bound super-reduced [Co(I)Cl]2- is invoked only as a minor but highly reactive species."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "UV_vis",
+    "EPR",
+    "isolation_of_intermediate",
+    "kinetic_order"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two mechanistic pathways for C–Cl activation operate in parallel and are substrate/electrolyte dependent: (i) SN2 by Co(I) giving a Co(III)(alkyl) that homolyzes (operative for 1° RCl in any electrolyte and for 2° RCl in non-coordinating PF6-/BF4-), and (ii) halogen atom abstraction (XAA) by Co(I) (or a chloride-bound [Co(I)Cl]2-) giving R• directly (operative for 3° RCl in all electrolytes and for 2° RCl in LiCl). The XAA pathway bypasses the slow Co–C homolysis step and gives higher yields, which guided ligand design (Co(L1) for 2°, Co(L3) for radical-clock substrates, Co(L5) for 3° RCl). A Zn-only (no current) background reaction contributes ~46% yield but is greatly enhanced by electrolysis with LiCl; acidic proton sources (HFIP) decompose catalyst, while n-BuOH or H2O prevent acrylate oligomerization by protonating the enolate."
+}

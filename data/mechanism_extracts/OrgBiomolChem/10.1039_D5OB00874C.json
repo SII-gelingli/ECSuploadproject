@@ -1,0 +1,87 @@
+{
+  "doi": "10.1039_D5OB00874C",
+  "journal": "OrgBiomolChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical amidochlorination of alkenes with amides using DCE as the chlorine source to give 2-chloroalkylamines under undivided cell conditions",
+  "mechanism_family": [
+    "paired_electrolysis",
+    "mediator_cathodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Cathodic reduction of DCE generates chloride anion (and ethylene) with concomitant H2 evolution; anodic oxidation of chloride to Cl2/Cl+ which chlorinates the alkene to a chloronium ion intermediate",
+  "key_intermediates": [
+    {
+      "name": "chloride anion (from cathodic cleavage of DCE)",
+      "smiles": "[Cl-]",
+      "role": "reactive"
+    },
+    {
+      "name": "2-chloroethyl radical (transient from DCE single-electron reduction)",
+      "smiles": "[CH2]CCl",
+      "role": "transient"
+    },
+    {
+      "name": "molecular chlorine / Cl+ generated at anode",
+      "smiles": "ClCl",
+      "role": "reactive"
+    },
+    {
+      "name": "chloronium ion of styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "2-chloroalkylamide product (3aa)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the cathode, DCE accepts electrons stepwise to release two chloride anions and ethylene while protons are reduced to H2; at the anode, chloride is oxidized (−2e−) to Cl2, which adds to the alkene to form a chloronium ion that is opened by the amide nitrogen to give the 2-chloroalkylamide.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "AgNO3 (chloride trapping)",
+      "smiles": "[Ag+].[O-][N+](=O)[O-]",
+      "purpose": "intermediate_trap",
+      "observation": "White AgCl precipitate formed under standard conditions, confirming chloride anion is generated during electrolysis"
+    },
+    {
+      "name": "Cyclic voltammetry with DCE, styrene (1a), benzamide (2a), nBu4NCl",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Chloride anion shows oxidation peak at ~1.5 V vs Ag/AgCl; styrene and benzamide show no oxidation; DCE shows reduction at ~−1.5 V vs Ag/AgCl, indicating chloride is easily oxidized at the anode and DCE easily reduced at the cathode"
+    },
+    {
+      "name": "Control without current",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product formed, confirming electrochemistry is essential"
+    },
+    {
+      "name": "Solvent switch to CH3CN or CH3OH",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product detected, supporting DCE as the chlorine source"
+    },
+    {
+      "name": "Air vs N2 atmosphere",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Yield drops from 85% to 74% under air, indicating mild sensitivity to O2 but not radical-chain dependent"
+    },
+    {
+      "name": "Downstream cyclization with CH3COONa",
+      "smiles": "CC(=O)[O-].[Na+]",
+      "purpose": "other",
+      "observation": "3aa converts to oxazolines 4a/5a (40%/40%), consistent with a 2-chloroalkylamide structure (also confirmed by X-ray of 3aba)"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors favor an ionic (chloronium) pathway rather than a radical chain: anodic Cl− oxidation to Cl2 followed by alkene chloriranium formation and amide opening. The 1:1 regioisomeric ratio (3aaa:3aab) observed in optimization is consistent with attack on a symmetric/loose chloronium-like intermediate. DCE acts both as solvent and as sacrificial chlorine source via 2e− cathodic cleavage to 2 Cl− + ethylene."
+}

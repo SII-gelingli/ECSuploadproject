@@ -1,0 +1,89 @@
+{
+  "doi": "10.1021_acs.joc.3c02777",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical trifluoromethylation/cyclization cascade of N-cyanamide alkenes with CF3SO2Na to construct trifluoromethylated nonaromatic fused azaheterobicyclic cyclic amidines.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2- (Langlois reagent anion) to generate CF3 radical via loss of SO2; final benzhydryl radical intermediate is also oxidized at the anode to a benzhydryl cation that aromatizes by deprotonation.",
+  "key_intermediates": [
+    {
+      "name": "CF3SO2 radical (sulfonyl radical from anodic SET on CF3SO2-)",
+      "smiles": "[O]S(=O)C(F)(F)F",
+      "role": "transient"
+    },
+    {
+      "name": "CF3 radical (after SO2 extrusion)",
+      "smiles": "[C](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Ia: carbon-centered radical from CF3 addition to alkene of N-cyanamide 1b",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "IIa: iminyl radical from intramolecular cyclization onto cyano group",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "IIIa: benzhydryl (diphenylmethyl) radical after cyclization onto electron-deficient alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "IVa: benzhydryl cation from anodic oxidation of IIIa",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Benzophenone (overoxidation byproduct from 3b)",
+      "smiles": "O=C(c1ccccc1)c1ccccc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "Compound 13 (acyl-pyrrolidinone hydroxylation byproduct)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- to CF3SO2 radical, which loses SO2 to give CF3 radical; CF3 radical adds to the styryl alkene of the N-cyanamide (Ia), which undergoes intramolecular cyclization onto the cyano group to give an iminyl radical (IIa), then radical cyclization onto the diphenyl alkene affords benzhydryl radical IIIa. The anode further oxidizes IIIa to benzhydryl cation IVa, and loss of H+ delivers the aromatic imidazoline 3b; H+ is reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3b drops to 24%; reaction partly suppressed, indicating radical intermediates."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "No 3b detected (nd); reaction fully suppressed, supporting radical pathway."
+    },
+    {
+      "name": "Prolonged reaction time control (overoxidation probe)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "After 4.5 h: trace 3b, 17% of byproduct 13, and 40% benzophenone, indicating anodic overoxidation of 3b."
+    },
+    {
+      "name": "Cyclic voltammetry of 1b, 2a, 3b and mixtures",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No oxidation peak for 1b in the window; 2a oxidizes at 1.53 V and 3b at 1.62 V (vs SCE), consistent with CF3SO2- being the species oxidized and with overoxidation of 3b."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Overoxidation of product 3b at the anode accounts for benzophenone and byproduct 13 formation at prolonged times. Substrates with acyclic internal alkene give hydrotrifluoromethylation product 5h' instead of cyclization; phenyl-substituted linker analogue gives 5b' because the benzyl radical is directly oxidized at the anode rather than cyclizing onto the cyano group, consistent with the radical-polar crossover step in the proposed cycle."
+}

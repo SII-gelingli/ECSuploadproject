@@ -1,0 +1,50 @@
+{
+  "doi": "10.1002_adsc.202200847_sup_1",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical transformation of styrene-type substrates studied by cyclic voltammetry to identify anodic oxidation potentials of substrate, mediator, and intermediates.",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation: substrates 1a, 4a, 7a, 9a and the mediator Et4NOTs are oxidized at the anode; CV identifies oxidation onsets (1a: 1.14 V; 4a: 1.49 V; 7a: 1.22 V with shifts upon addition of Et4NOTs and H2SO4; 9a: 1.53 V) and cathodic features for 1a (-0.46, -0.90 V) and 4a (-2.06 V).",
+  "key_intermediates": [
+    {
+      "name": "substrate-derived radical cation (from anodic SET on styrene/arene substrate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tosyloxyl/oxidized mediator species from Et4NOTs",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "The anode performs single-electron oxidation of the styrenyl substrate (and/or the OTs mediator), generating a radical cation/oxidized mediator that propagates the reaction; CV peaks indicate accessible oxidation events at ~1.1–1.5 V vs SCE, with reductive features for some substrates at negative potentials.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "2,4,6-collidine",
+      "smiles": "Cc1cc(C)nc(C)c1",
+      "purpose": "redox_probe",
+      "observation": "CV of 1a + 2,4,6-collidine shows altered oxidation/reduction features (oxidation onset ~1.14 V; reductive peaks at -0.46 and -0.90 V), consistent with base-assisted oxidation of 1a."
+    },
+    {
+      "name": "Et4NOTs",
+      "smiles": "CC[N+](CC)(CC)CC.Cc1ccc(S(=O)(=O)[O-])cc1",
+      "purpose": "redox_probe",
+      "observation": "Addition to 7a shifts/enhances anodic features (1.07, 1.22, 1.39, 1.89 V), indicating mediator oxidation and interaction with substrate."
+    },
+    {
+      "name": "H2SO4",
+      "smiles": "OS(=O)(=O)O",
+      "purpose": "redox_probe",
+      "observation": "Further addition to 7a + Et4NOTs modifies the CV response, suggesting protonation affects redox behavior."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Only cyclic voltammetry data (Figure S1) is provided on this page; CVs were recorded in 0.1 M Bu4NPF6 in anhydrous DCE (for 1a) or MeCN (for 4a, 7a, 9a) with glassy carbon working, Pt counter, and 3 M KCl Ag/AgCl reference electrodes at 100 mV/s, with potentials converted to SCE by subtracting 0.04 V. No radical traps, KIE, DFT, or isolated intermediates are presented on the supplied page."
+}

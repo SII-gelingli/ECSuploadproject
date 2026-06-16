@@ -1,0 +1,55 @@
+{
+  "doi": "10.1039_D2CC03922B_sup_1",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical cyclization of 1,6-enynes with sulfonimides to construct benzofuran derivatives bearing aminomethyl groups",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of sulfonimide (or its anion) to generate a nitrogen-centered sulfonamidyl radical that adds to the enyne",
+  "key_intermediates": [
+    {
+      "name": "sulfonamidyl N-centered radical (from PhSO2-NH-SO2Ph)",
+      "smiles": "O=S(=O)(N[S](=O)(=O)c1ccccc1)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "vinyl/alkenyl radical from N-radical addition to alkene of 1,6-enyne",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclized aryl/vinyl radical after intramolecular addition onto alkyne",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzofuranyl cation (post oxidation/methanol trap precursor)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the sulfonimide anion (generated with nBu4NOAc base) to a N-centered radical, which adds to the terminal alkene of the 1,6-enyne; the resulting C-radical cyclizes onto the tethered alkyne, and the vinyl radical is further oxidized to a cation that is trapped by methanol to give the dimethyl ketal/benzofuran product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3a not detected (0% yield) under standard conditions with TEMPO added, consistent with a radical intermediate"
+    },
+    {
+      "name": "no-current control",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Without electric current, product 3a was not formed (0% yield), confirming the electrochemical nature of the transformation"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Page also shows downstream synthetic applications: Ti(OiPr)4/Mg/Me3SiCl mediated N-S bond cleavage of 3a to monosulfonamide 5a (78%), and H2SO4-promoted hydrolysis/rearrangement of ketal 4a to ketone 6a (70%). These are derivatization steps, not part of the catalytic cycle."
+}

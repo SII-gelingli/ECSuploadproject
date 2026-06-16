@@ -1,0 +1,77 @@
+{
+  "doi": "10.1002_anie.202501424",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical amino-oxygenation cyclization of aryl alkenes with sulfonamide-tethered alcohol bisnucleophiles to form saturated 6-, 7-, and 8-membered N/O-heterocycles (morpholines, 1,4-oxazepanes, 1,4-oxazocanes).",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "radical_cation",
+    "cation_initiated",
+    "anion_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of the aryl alkene to an alkene radical cation; cathodic reduction of protons to H2; no redox mediator and undivided cell.",
+  "key_intermediates": [
+    {
+      "name": "N-centered sulfonamide anion (I) from DBU deprotonation of N-(2-hydroxyethyl)benzenesulfonamide 1a",
+      "smiles": "[O-]CC[N-]S(=O)(=O)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Aryl alkene radical cation (II) from anodic oxidation of 2b (alpha-methylstyrene)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Carbon-centered radical III from N-anion addition to radical cation II",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Carbocation IV from further anodic oxidation of radical III",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cyclized morpholine product 4ab after intramolecular O-attack and deprotonation",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "DBU deprotonates the sulfonamide to give an N-centered anion (I); the anode oxidizes the aryl alkene (2b) to an alkene radical cation (II); I attacks II to give carbon-centered radical III with high regioselectivity; III is oxidized at the anode to cation IV; the tethered hydroxyl of 1a closes onto IV with proton release to form the saturated N/O-heterocycle, while H2 evolves at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "HFIP (added cosolvent / oxidation probe)",
+      "smiles": "OC(C(F)(F)F)C(F)(F)F",
+      "purpose": "redox_probe",
+      "observation": "HFIP lowers oxidation potential of alkene 2b; with DBU+HFIP the DBU-induced lowering of sulfonamide oxidation is diminished, suggesting alkene is preferentially oxidized."
+    },
+    {
+      "name": "DBU (base)",
+      "smiles": "C1CCC2=NCCCN2CC1",
+      "purpose": "other",
+      "observation": "Effectively reduces onset oxidation potential of sulfonamide 1a (CV), consistent with deprotonation to N-anion."
+    },
+    {
+      "name": "Na2CO3 (base in SWV control)",
+      "smiles": "[Na+].[Na+].[O-]C([O-])=O",
+      "purpose": "other",
+      "observation": "Base significantly facilitates formation of intermediate III from I + II coupling without electrode SET."
+    },
+    {
+      "name": "1a + 2b mixing (SWV coupling test)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Adding 1a to 2b under SWV decreases the 2b oxidation current, indicating chemical coupling between N-anion I and radical cation II rather than independent SET."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Key mechanistic support comes from CV/SWV (Figure 4) showing onset potentials 1a 2.21 V, 2b 1.46 V, 6b 1.67 V (vs Ag/AgCl) — alkene is oxidized preferentially — plus in situ EC-APCI-MS (Figure 5) detecting protonated intermediate III ([M+H]+ m/z 333.1393) and product 4ab ([M+H]+ m/z 332.1315) with real-time EIC profiles showing III rising then declining as 4ab forms. An alternative sulfonamide-N-radical addition pathway (oxidation of 1a first) is ruled out because HFIP/DBU experiments and lower potential of 2b indicate the alkene radical cation, not the N-radical, is the key oxidized species."
+}

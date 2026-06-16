@@ -1,0 +1,73 @@
+{
+  "doi": "10.1021_acs.orglett.5c00005",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical bromide-mediated aminooxygenation of N-vinylbenzamides with pyrazoles to give 2-aryl-4,5-dihydrooxazoles bearing a pyrazolyl group",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "carbocation"
+  ],
+  "electrochemical_role": "Anodic oxidation of Br- to Br2 (bromide acts as redox mediator); Br2 then reacts with the enamide N-H to generate an N-Br intermediate which homolyzes/ionizes to N-centered radical and ultimately a carbocation; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "N-bromo enamide (intermediate A)",
+      "smiles": "O=C(N(Br)C=C)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "vinyl-stabilized N-centered radical (intermediate C, from homolysis of N-Br)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-carbon radical/iminyl resonance form (intermediate B)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "N-acyl iminium / carbocation (intermediate D)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized oxocarbenium/oxazolinium (intermediate E/F)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "molecular bromine (Br2) / tribromide (Br3-)",
+      "smiles": "BrBr",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Br- is anodically oxidized (2e-) to Br2, which brominates the enamide N-H to give N-Br intermediate A; loss of Br- and a further 1e- anodic oxidation generates an N-acyliminium cation D that cyclizes to oxazolinium E/F; pyrazole adds to the cation and deprotonation furnishes product 3, while the cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Product 3 yield dropped to 37%; radical adduct 46 and hydrolysates 47 and 48 detected by HRMS, consistent with N-centered/vinyl radical intermediate C"
+    },
+    {
+      "name": "pyrazole (carbocation trap)",
+      "smiles": "c1cc[nH]n1",
+      "purpose": "intermediate_trap",
+      "observation": "Carbocation-trapped product 49 plus hydrolysates 47 and 50 detected by HRMS in absence of nBu4NBF4, supporting cation D"
+    },
+    {
+      "name": "cyclic voltammetry of nBu4NBr / 1 / 2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Br- oxidizes at 0.36 and 0.80 V; substrate 1 and pyrazole 2 show no oxidation peaks 0-0.80 V; catalytic current observed when 1 is added to nBu4NBr, supporting Br- as the mediator"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors invoke both radical (C/B) and cationic (D/E/F) intermediates connected by further anodic oxidation (radical-polar crossover). HRMS-detected adducts are the principal evidence; no DFT, KIE, or EPR reported. Trace benzamide observed during scale-up also pointed toward involvement of C/D."
+}

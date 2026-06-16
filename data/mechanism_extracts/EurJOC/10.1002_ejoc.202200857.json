@@ -1,0 +1,80 @@
+{
+  "doi": "10.1002_ejoc.202200857",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,2-dibromination of terpenes and alkenes using NaBr as bromide source in an undivided cell with glassy carbon electrodes",
+  "mechanism_family": [
+    "mediator_anodic",
+    "paired_electrolysis",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic 2-electron oxidation of bromide to Br2 (in equilibrium with tribromide Br3-); cathodic reduction of water to H2 (and hypobromite formation in undivided cell)",
+  "key_intermediates": [
+    {
+      "name": "bromide anion",
+      "smiles": "[Br-]",
+      "role": "reactive"
+    },
+    {
+      "name": "tribromide",
+      "smiles": "[Br-][Br][Br-]",
+      "role": "resting_state"
+    },
+    {
+      "name": "molecular bromine",
+      "smiles": "BrBr",
+      "role": "reactive"
+    },
+    {
+      "name": "bromonium ion (cyclic, from alkene + Br+)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "hypobromite",
+      "smiles": "[O-]Br",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, 2 Br- is oxidized (2 e-) to Br2, which equilibrates with Br3-; Br2 reacts with the alkene to form a bromonium ion that is opened by Br- to give the 1,2-dibromide. The cathode reduces 2 H2O (2 e-) to H2 and hydroxide, balancing charge.",
+  "rate_determining_step": "Anodic generation of Br2 from bromide (slow, controlled in-situ release accounts for high selectivity)",
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of NaBr",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Two oxidation events observed: Br- to Br2/Br3- equilibrium, then Br3- to Br2"
+    },
+    {
+      "name": "pH monitoring (divided vs undivided cell)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Cathodic chamber pH rises from 6 to 14 in divided cell (OH-/H2 evolution); undivided cell pH remains constant, consistent with hypobromite formation"
+    },
+    {
+      "name": "X-ray crystallography of 2b",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Confirmed (1R,2R,4S,8S)-tetrabromide diastereomer, supporting stereospecific anti-addition via bromonium intermediates"
+    },
+    {
+      "name": "Br2 control (conventional)",
+      "smiles": "BrBr",
+      "purpose": "other",
+      "observation": "Br2 gives 22% 2a and 13% 2b (poor selectivity vs 54% / 0% for electrochemical)"
+    },
+    {
+      "name": "DMSO/HBr control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Gave 39% 2a and 10% 2b; lower selectivity than electrochemical method"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Selectivity rationalized by slow, controlled in-situ generation of Br2 at the anode versus bulk Br2 addition. Electron-withdrawing groups on alkene reduce reactivity at that position, directing bromination to more nucleophilic alkenes in polyenes (e.g. terminal alkene of carvone/perillaldehyde). Cathodic lability of C-Br bonds required a divided PTFE cell for tetrabromination of limonene to 2b. Hypobromite is invoked as a side species in undivided cells based on constant pH."
+}

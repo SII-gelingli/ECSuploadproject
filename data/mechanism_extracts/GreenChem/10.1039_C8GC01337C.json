@@ -1,0 +1,57 @@
+{
+  "doi": "10.1039_C8GC01337C",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative oxysulfuration of alkenes with thiophenols and oxygen nucleophiles (water/alcohols/carboxylic acids) to give β-hydroxy sulfides, β-alkoxy sulfides, and thio-substituted γ-lactones.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of thiophenol to aryl sulfur radical, and a second anodic oxidation of the resulting benzylic C-radical to a carbocation; cathode reduces protons to H2 and regenerates aryl sulfide anion.",
+  "key_intermediates": [
+    {
+      "name": "aryl sulfur radical (ArS•)",
+      "smiles": "[S]c1ccc(Cl)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "β-thioether benzylic carbon radical (B)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-thioether benzylic carbocation (C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "aryl sulfide anion (ArS−, D)",
+      "smiles": "[S-]c1ccc(Cl)cc1",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, ArSH is oxidized by SET to ArS•, which adds to the alkene to give a benzylic radical B; B is further oxidized at the anode to benzylic cation C, which is trapped by the O-nucleophile (H2O, ROH, or carboxylate) to deliver the oxysulfuration product and a proton. At the cathode, protons are reduced to H2 while ArSH/ArS− is regenerated.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1,1-diphenylethylene (toluylene, 49)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Trapping product 50 isolated in 72% yield, consistent with involvement of radical intermediates (ArS• adding to alkene)."
+    },
+    {
+      "name": "cyclic voltammetry of 4-chlorothiophenol (34)",
+      "smiles": "Sc1ccc(Cl)cc1",
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak at 1.99 V and reduction peak at -1.33 V in MeCN; both fall within the applied cell potential, supporting thiophenol involvement in both anodic and cathodic processes."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Lower yields for styrenes (secondary benzyl radical) vs α-methylstyrenes (tertiary benzyl radical) are taken as additional evidence for a radical pathway. The mechanism is presented as a paired electrolysis: anodic oxidation generates ArS• and the cation, while cathodic proton reduction releases H2 and regenerates ArSH via ArS−."
+}

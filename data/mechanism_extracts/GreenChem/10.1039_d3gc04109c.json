@@ -1,0 +1,119 @@
+{
+  "doi": "10.1039_d3gc04109c",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Photoelectrocatalytic nickel-catalyzed three-component carboacylation/silanoylation of alkenes using acyl chlorides and unactivated C(sp3)-H donors or hydrosilanes via Fe-mediated LMCT chlorine radical HAT",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_polar_crossover",
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation regenerates [FeIIICl4]- from [FeIICl3]- (reduced after LMCT/HAT); cathodic reduction of Ni(II) acyl intermediate F to Ni(I) species G enables turnover of the nickel cycle",
+  "key_intermediates": [
+    {
+      "name": "[FeIIICl4]- (A)",
+      "smiles": "[Cl-].[Cl-].[Cl-].[Cl-].[Fe+3]",
+      "role": "resting_state"
+    },
+    {
+      "name": "photoexcited *[FeIIICl4]- (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[FeIICl3]- (C) after LMCT loss of Cl radical",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "chlorine radical (Cl•)",
+      "smiles": "[Cl]",
+      "role": "reactive"
+    },
+    {
+      "name": "cyclohexyl / C(sp3) carbon-centered radical (D)",
+      "smiles": "[CH]1CCCCC1",
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(II)-acyl-Cl complex (F)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(I)-acyl complex (G)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "secondary alkyl radical after radical addition to acrylate (E)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(III) alkyl-acyl intermediate (H)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(I) catalyst (I)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "TEMPO-cyclohexyl adduct (47)",
+      "smiles": "O(C1CCCCC1)N1C(C)(C)CCCC1(C)C",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Visible light excites [FeIIICl4]- which undergoes LMCT to release Cl• and [FeIICl3]-; Cl• abstracts a C(sp3)-H (or Si-H) to give a carbon (or silyl) radical D, while anodic oxidation of [FeIICl3]- with Cl- regenerates [FeIIICl4]-. In parallel, Ni(I) oxidatively adds to acyl chloride to give Ni(III)-acyl F, which is cathodically reduced to Ni(II)-acyl G; D adds to the alkene to give secondary radical E, which is captured by G to form Ni(III) alkyl-acyl H that reductively eliminates the ketone and regenerates Ni(I).",
+  "rate_determining_step": "Not the C-H cleavage step (KIE kH/kD = 1.15); turnover-limiting step not explicitly assigned",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction fully suppressed with 3 equiv TEMPO; cyclohexyl-TEMPO adduct 47 detected by GCMS, supporting cyclohexyl radical intermediate"
+    },
+    {
+      "name": "TBABClO4 (replace LiCl electrolyte)",
+      "smiles": "[O-]Cl(=O)(=O)=O.CCCC[N+](CCCC)(CCCC)CCCC",
+      "purpose": "other",
+      "observation": "No product formed, showing LiCl/chloride is essential for in situ [FeCl4]- formation"
+    },
+    {
+      "name": "Cyclohexyl chloride (in place of cyclohexane)",
+      "smiles": "ClC1CCCCC1",
+      "purpose": "intermediate_trap",
+      "observation": "No target product, ruling out alkyl chloride as a key intermediate"
+    },
+    {
+      "name": "Ni(COD)2",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only trace product, suggesting Ni(0) is not in the main catalytic cycle"
+    },
+    {
+      "name": "Preformed Ni(II) complex 48 (NiBr2·dtbbpy analog)",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "Stoichiometric: no product without photocatalyst; catalytic (10 mol%) gave 55% yield, supporting Ni(II) complex as a competent catalyst"
+    },
+    {
+      "name": "[D]-cyclohexane (d12-cyclohexane)",
+      "smiles": "[2H]C1([2H])C([2H])([2H])C([2H])([2H])C([2H])([2H])C([2H])([2H])C1([2H])[2H]",
+      "purpose": "KIE",
+      "observation": "Parallel KIE kH/kD = 1.15, indicating C-H cleavage is not turnover-determining"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "intermediate_trap_TEMPO",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Dual catalytic cycle (Fe photoredox/LMCT + Ni cross-coupling) coupled to electrochemistry: anode regenerates Fe(III), cathode reduces Ni(III) to Ni(II)/Ni(I). CV data: Ni(II)/Ni(I) at -1.38 V and Ni(I)/Ni(0) at -1.88 V vs Fc/Fc+; Fe(II)/Fe(III) at -0.09 V vs Fc/Fc+. Hydrosilane variant proceeds analogously with Si-H HAT by Cl• to give silyl radical, then addition to alkene and Ni-mediated acylation."
+}

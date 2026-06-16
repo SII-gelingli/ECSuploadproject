@@ -1,0 +1,183 @@
+{
+  "doi": "10.1021_jacs.4c08945",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Cu/bpy-catalyzed three-component carboamination of alkenes with α-halo carbonyls and aryl amines proceeding via an ATRA intermediate and a Lewis-acid-assisted oxocarbenium intermediate",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "electrocatalysis_inner_sphere",
+    "cation_initiated"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "[Cu^I(dtbbpy)2]+ active catalyst (from reduction of [Cu^II(dtbbpy)2](OTf)2, 27)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-ester carbon-centered radical (13) from reduction of α-bromoester by Cu(I)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic radical adduct 14 (from radical addition to alkene)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ATRA adduct (α,α-disubstituted γ-bromoester, 14a/31/35)",
+      "smiles": "CCOC(=O)C(C)(C)CC(Br)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "[Cu^II]–Br complex",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Lewis-acid (Cu)-coordinated benzylic bromide (45) en route to SN2 cyclization",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "oxocarbenium intermediate (15/33) — 5-membered cyclic acyloxonium",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "free benzylic carbocation (30)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "cyclic acetal radical (32) from 5-endo-trig cyclization",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "N-centered aminyl radical (•NHMePh / [•NHMePh]+) from inner-sphere reduction of Cu(II)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "γ-aminoester carboamination product 16 (C1 attack) or γ-iminolactone 17 (C4 attack) or γ-lactone (C5 attack)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "N-methylaniline (with K3PO4) reduces [Cu^II(dtbbpy)2]2+ to [Cu^I] via inner-sphere SET, generating an aminyl radical that dimerizes to hydrazine; [Cu^I] then reduces the α-bromoester to give a C-radical and [Cu^II]–Br, the radical adds to the alkene, and [Cu^II] returns Br to form the ATRA adduct; Cu acts as a Lewis acid on the C–Br bond to assist intramolecular SN2 by the ester carbonyl, generating the oxocarbenium (closing the Cu cycle) which is then opened by the amine nucleophile.",
+  "rate_determining_step": "Oxocarbenium (33) formation via Cu-assisted intramolecular SN2 of the ATRA adduct (mech 2′); for electron-rich vinyl arenes, ATRA formation can become rate-limiting.",
+  "probe_reagents": [
+    {
+      "name": "Hammett series of para-substituted styrenes (OMe, tBu, Me, H, Cl, CO2Me, CF3)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Nonlinear Hammett plot: ρ = −0.2 for electron-rich (ATRA rate-limiting) and ρ = −1.2 for electron-neutral/deficient arenes (oxocarbenium formation rate-limiting); excludes free carbocation (Mechanism A would require ρ ≈ −5 to −6)."
+    },
+    {
+      "name": "Hammett study on uncatalyzed amination of ATRA adducts",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "ρ = −3.1, consistent with SN2 cyclization to charged oxocarbenium (mech 2), not SN1."
+    },
+    {
+      "name": "Thorpe-Ingold probe: α,α-dimethyl (35) vs α-methyl (43) ATRA adducts",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "kMe2/kH = 2.6 (uncatalyzed) and 9.2 (Cu-catalyzed); supports cyclization at/before RDS, rules out mech 1′ (free cation)."
+    },
+    {
+      "name": "Enantiomerically enriched ATRA adduct 37* (92% ee)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Uncatalyzed amination is stereospecific (90% ee product), supporting SN2; Cu-catalyzed amination gives racemic product with full epimerization of starting material, indicating reversible Cu(I)-mediated reduction to benzylic radical."
+    },
+    {
+      "name": "p-MeO-styrene (38)",
+      "smiles": "COc1ccc(C=C)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "7% carboarylation product 40 observed (Friedel–Crafts/EAS on aniline), indicating partial SN1/asynchronous SN2 character with electron-rich styrenes."
+    },
+    {
+      "name": "Crossover with p-CF3-styrene (36) added to 37",
+      "smiles": null,
+      "purpose": "crossover",
+      "observation": "Formation of di-insertion adduct 47 and tri-insertion 48 (by LCMS), confirming reversible C–Br homolysis of ATRA adduct."
+    },
+    {
+      "name": "Zn(OTf)2 (nonredox Lewis acid)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Accelerates SN2 cyclization (kZn/kbackground = 337 for 53a); reaction remains stereospecific (>95% ee retained from 37*), supporting Lewis-acid-assisted SN2 (mech 2′) and excluding mech 3′/4′ as dominant for benzylic systems."
+    },
+    {
+      "name": "EPR of [Cu^II(dtbbpy)2]2+ and intermediates",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Axially symmetric Cu(II) signal shifts to rhombic upon N-methylaniline addition (ligation), then a second isotropic signal localized on N appears (aniline-derived radical); supports inner-sphere reduction of Cu(II) by aniline."
+    },
+    {
+      "name": "UV–vis monitoring of Cu(II) precatalyst 27 with K3PO4 + N-methylaniline",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Loss of 750 nm band and appearance of MLCT at 432 nm consistent with reduction to [Cu^I(dtbbpy)2]+."
+    },
+    {
+      "name": "HRMS detection of hydrazine (PhMeN–NMePh)",
+      "smiles": "CN(Nc1ccccc1)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Hydrazine detected stoichiometrically and catalytically, confirming dimerization of aminyl radical formed upon Cu(II) reduction."
+    },
+    {
+      "name": "DFT calculations",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "ATRA adduct 35 is 19.5 kcal/mol downhill from 26 + styrene; ΔG‡ = 20.1 kcal/mol for background SN2 cyclization to 33; clamshell conformation of α,α-dimethyl radical favored by 1.34 kcal/mol; cyclic acetal radical 32 is 23.4–23.8 kcal/mol uphill (eliminating mech 4′); free cation 30 is 7.2 kcal/mol less stable than oxocarbenium 33."
+    },
+    {
+      "name": "Kinetic order determination",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "rate = kobs[26]^1[19]^1[27]^1[24]^0.4; fractional order in amine implies multiple operative pathways."
+    },
+    {
+      "name": "Independent synthesis and time-course tracking of ATRA adduct 35",
+      "smiles": null,
+      "purpose": "isolation_of_intermediate",
+      "observation": "ATRA adduct builds up then is consumed as carboamination product 1 grows in, confirming it as a kinetically competent on-cycle intermediate."
+    },
+    {
+      "name": "Cl3CBr (radical precursor lacking carbonyl)",
+      "smiles": "BrC(Cl)(Cl)Cl",
+      "purpose": "other",
+      "observation": "Does not give carboamination, supporting the requirement of an ester carbonyl for oxocarbenium formation."
+    },
+    {
+      "name": "Evans chiral auxiliary halide 23",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Olefin-electronics-dependent dr (1.3:1 OMe, 3:1 H, 8:1 CF3; ρ = 0.8 on log dr); consistent with dynamic kinetic transformation governed by competing benzylic-radical racemization vs. oxocarbenium formation."
+    },
+    {
+      "name": "α-bromoisobutyrate 18 + styrene + N-methyl-p-toluidine",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "γ-lactone 22 (84%) plus t-butyl/N-alkyl byproducts detected by GCMS, supporting oxocarbenium intermediate (SN1/E1 at C5)."
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "kinetic_order",
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "UV_vis",
+    "EPR",
+    "DFT",
+    "crossover",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Three mechanisms were considered for oxocarbenium formation: (A) oxidation of benzylic radical 29 to free cation 30 then cyclization — ruled out by modest Hammett ρ and DFT (cation 7.2 kcal/mol less stable than oxocarbenium); (B/favored) atom transfer to ATRA adduct 31 followed by Lewis-acid (Cu)-assisted intramolecular SN2 (mech 2′) — supported by Hammett, Thorpe–Ingold, Zn(OTf)2 surrogate, stereospecificity, and DFT; (C) 5-endo-trig radical cyclization to cyclic acetal radical 32 then oxidation (mech 3′/4′) — eliminated by high DFT energy of 32 and TS 51 (37 kcal/mol). Product selectivity at C1 (γ-aminoester) vs C4 (iminolactone) vs C5 (lactone) of oxocarbenium 15 is controlled by amine class and styrene electronics: N-alkyl anilines and e-deficient primary anilines → carboamination (Pathway A); e-rich primary anilines with e-neutral/deficient or unactivated alkenes → iminolactone (Pathway B); secondary amines with unactivated alkenes → lactone (Pathway C). Lewis-acid co-catalysts (Zn(OTf)2) and neopentyl α-bromoesters extend scope to α-olefins."
+}

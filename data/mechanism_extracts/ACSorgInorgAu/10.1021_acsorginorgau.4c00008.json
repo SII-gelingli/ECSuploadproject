@@ -1,0 +1,53 @@
+{
+  "doi": "10.1021_acsorginorgau.4c00008",
+  "journal": "ACSorgInorgAu",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical selenocyclization of N-allyl benzamides and unsaturated oximes with diphenyl diselenide to give selenofunctionalized oxazolines and isoxazolines under continuous flow",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Cathodic reduction of PhSeSePh generates PhSe radical (A) and PhSe anion (B); the selenide is then anodically oxidized to a phenylselenyl cation (PhSe+) that acts as the electrophile toward the alkene",
+  "key_intermediates": [
+    {
+      "name": "phenylselenyl radical (A)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenide anion (B)",
+      "smiles": "[Se-]c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl cation (PhSe+)",
+      "smiles": "[Se+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "seleniranium / β-selenyl carbocation intermediate from alkene addition (C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "selenofunctionalized oxazoline product (5a)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces PhSeSePh to a PhSe radical and PhSe anion; the anion is anodically oxidized to PhSe+, which adds to the alkene of the N-allyl benzamide to form a cationic intermediate C; intramolecular nucleophilic cyclization by the amide oxygen and loss of H+ furnishes the oxazoline, while H+ is reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclopropyl-substituted substrate 5y (radical clock)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "No ring-opening products observed, excluding involvement of a free phenylselenyl radical in productive C–Se bond formation and supporting an ionic (PhSe+) pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism is proposed by analogy to prior electrochemical selenylations (refs 26, 27). Although PhSe radicals are necessarily generated at the electrode, the cyclopropyl probe excludes their direct involvement, favoring an electrophilic PhSe+ mechanism. Sulfur version (Ph2S2 → SPh-oxazoline 9a) is demonstrated and presumably follows an analogous pathway."
+}

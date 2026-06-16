@@ -1,0 +1,61 @@
+{
+  "doi": "10.1039_c9gc02665g",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative tandem cyclization of olefinic carbonyls (1,3-dicarbonyls and N-allylamides) with diselenides to form seleno-dihydrofurans and seleno-oxazolines, constructing C-Se and C-O bonds simultaneously",
+  "mechanism_family": [
+    "radical_anodic",
+    "paired_electrolysis",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Cathode reduces diaryl diselenide to a [RSeSeR]•- radical anion that fragments into ArSe• and ArSe-; the selenyl radical adds to the alkene, and the resulting C-radical is oxidized at the anode to a carbocation that is trapped intramolecularly by the enol oxygen",
+  "key_intermediates": [
+    {
+      "name": "diphenyl diselenide radical anion [PhSeSePh]•-",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl radical PhSe•",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenide anion PhSe-",
+      "smiles": "[Se-]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl C-radical from PhSe• addition to alkenyl carbonyl (intermediate II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl carbocation after anodic oxidation of II",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the cathode, ArSeSeAr accepts one electron to form a radical anion that dissociates into ArSe• and ArSe-; ArSe• adds across the alkene of the olefinic carbonyl giving a β-selenyl C-radical, which is oxidized at the anode to a cation, then intramolecular O-attack by the enol oxygen and deprotonation deliver the dihydrofuran (or oxazoline). Protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Addition of 0.6 mmol (2 equiv) TEMPO suppressed the reaction; only trace 3ba detected, supporting radical intermediates"
+    },
+    {
+      "name": "diphenyl diselenide (CV study)",
+      "smiles": "[Se](c1ccccc1)[Se]c1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "Cyclic voltammetry showed oxidation at +1.8 V and reduction at -1.5 V vs Ag/AgCl, indicating PhSeSePh can participate in both anodic and cathodic processes"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors propose two pathways: path (a, favored) involves cathodic reduction of PhSeSePh to PhSe• which adds to the alkene, followed by anodic oxidation of the resulting C-radical; path (b) cannot be fully ruled out — direct anodic oxidation of 1b first to an enol/α-carbonyl radical that is then attacked by PhSe•/PhSeSePh. H2 evolution at the cathode is invoked to balance the redox."
+}

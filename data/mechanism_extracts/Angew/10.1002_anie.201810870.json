@@ -1,0 +1,65 @@
+{
+  "doi": "10.1002_anie.201810870",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical regioselective oxidative dimerization of 4-hydroxystilbenes (phenylpropenoids) to quinone methide dimers (QMDs) via anodic phenol oxidation and phenoxyl radical coupling",
+  "mechanism_family": [
+    "radical_anodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the 4-hydroxystilbene phenol (with 2,6-lutidine as proton acceptor) generates a phenoxyl radical (delocalized form 2a-2c); 2,6-lutidine deprotonates the phenol/phenol radical cation to facilitate oxidation at 0.6 V vs Ag/AgCl",
+  "key_intermediates": [
+    {
+      "name": "phenoxyl radical (resonance forms 2a/2b/2c spread onto C3 and C8')",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "quinone methide dimer (QMD) from C8-C8' or C3-C8' radical-radical coupling",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "peroxyl-adduct radical (RTA addition product to QMD exocyclic alkene, aromatizes to stabilized phenoxyl)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode removes one electron from the 4-hydroxystilbene (assisted by 2,6-lutidine deprotonation) to give a delocalized phenoxyl radical; two such radicals couple regioselectively at C8-C8' or C3-C8' to furnish the quinone methide dimer, which is the isolated product and serves as a radical-trapping antioxidant by direct addition of peroxyl radicals to its exocyclic C=C followed by aromatization.",
+  "rate_determining_step": "anodic phenol oxidation / phenoxyl radical generation prior to radical-radical coupling (not explicitly assigned)",
+  "probe_reagents": [
+    {
+      "name": "CD3OD (deuterated methanol) exchange test on QMD",
+      "smiles": "[2H]OC([2H])([2H])[2H]",
+      "purpose": "H/D_labeling",
+      "observation": "no deuterium incorporation into QMD, ruling out tautomerization (mechanism 2) to a phenolic form"
+    },
+    {
+      "name": "PBD-BODIPY (co-autoxidation signal carrier)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "inhibited autoxidation kinetics gave k_inh = 2-3 x 10^6 M^-1 s^-1 and n ~1.3-1.7 for QMDs, far exceeding parent phenols"
+    },
+    {
+      "name": "AIBN initiator / 1-hexadecene co-autoxidation",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "established RTA inhibition rate constants and stoichiometries for QMDs vs quadrangularin A analogues"
+    },
+    {
+      "name": "Truncated unsubstituted QMD model (CBS-QB3 computations)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "predicted HAT from C-H k ≈ 6 M^-1 s^-1 (excludes mechanism 1); ΔH = -31.5 kcal/mol for peroxyl addition to exocyclic C=C with computed k matching experimental 4 x 10^6 M^-1 s^-1 (supports direct-addition mechanism 4)"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "DFT",
+    "kinetic_order",
+    "isolation_of_intermediate",
+    "UV_vis"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Four mechanistic possibilities for the antioxidant activity of QMDs were evaluated (Figure 4E): (1) HAT via C-H, (2) tautomerization then HAT via O-H, (3) homolysis/recombination of the QMD, and (4) direct addition of peroxyl radical to the exocyclic C=C with aromatization. Mechanisms 1-3 are excluded by k_inh magnitude, lack of D-incorporation in CD3OD, and Keq (1.8 x 10^-10 M) for dissociation respectively. Mechanism 4 (direct peroxyl addition followed by aromatization to a stabilized, O2-unreactive phenoxyl radical) is favored and supported by DFT (CBS-QB3) thermochemistry and rate constant agreement. On the synthesis side, regiocontrol between C8-C8' (e.g. quadrangularin A) and C3-C8' (e.g. hierochin D) coupling arises from radical spin-density distribution on the phenoxyl intermediate."
+}

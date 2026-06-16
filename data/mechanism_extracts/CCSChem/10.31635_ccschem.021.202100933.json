@@ -1,0 +1,74 @@
+{
+  "doi": "10.31635_ccschem.021.202100933",
+  "journal": "CCSChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical mediator-assisted [4+2] annulation of anethole derivatives with α-methylstyrenes to form polysubstituted dihydronaphthalenes via radical cation intermediates",
+  "mechanism_family": [
+    "radical_cation",
+    "mediator_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of (4-BrPh)3N mediator to its aminium radical cation, which then performs single-electron oxidation of the electron-rich anethole (2a) to generate an alkene radical cation; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "tris(4-bromophenyl)aminium radical cation (mediator)",
+      "smiles": "[N+]([c]1ccc(Br)cc1)([c]2ccc(Br)cc2)[c]3ccc(Br)cc3",
+      "role": "reactive"
+    },
+    {
+      "name": "anethole-derived alkene radical cation (I)",
+      "smiles": "COc1ccc(cc1)[CH][CH+]C",
+      "role": "reactive"
+    },
+    {
+      "name": "distonic benzylic cation / cyclized carbocation (II)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "arenium (Wheland) intermediate (III)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "dihydronaphthalene radical (IV) after deprotonation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "DMPO-trapped carbon radical adduct",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes (4-BrPh)3N to its aminium radical cation, which single-electron oxidizes anethole to alkene radical cation I; nucleophilic addition of α-methylstyrene 1a yields distonic cation II, which undergoes intramolecular Friedel–Crafts-type cyclization to arenium III; deprotonation gives radical IV that loses one more electron/proton to deliver dihydronaphthalene 3aa, while H+ is reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "DMPO (5,5-dimethyl-1-pyrroline N-oxide)",
+      "smiles": "CC1(C)CCC=[N+]1[O-]",
+      "purpose": "radical_trap",
+      "observation": "EPR signals of mixed DMPO-carbon-radical adducts (g=2.0063, AN=15.20 G, AH=21.50 G; second set AN=14.87 G, AH1=AH2=19.62 G) consistent with carbon-radical intermediates"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, 2a, (4-BrPh)3N",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Eox(2a)=1.41 V < Eox(1a)=1.91 V and Eox((4-BrPh)3N)=1.20 V, indicating mediator is oxidized first and selectively oxidizes anethole 2a"
+    },
+    {
+      "name": "no-current control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product formed without electricity (Entry 12), confirming electrochemical initiation"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "EPR",
+    "intermediate_trap_other",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Electron-deficient styrenes fail because they cannot be oxidized to a radical cation, supporting the radical-cation initiation pathway. β-methylstyrene gives only the dehydrogenated (fully aromatized) product, indicating IV/3aa is prone to overoxidation. X-ray structures of several products corroborate connectivity and stereochemistry of the proposed cyclization."
+}

@@ -1,0 +1,129 @@
+{
+  "doi": "10.1039_d3sc05946d",
+  "journal": "ChemSci",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical four-component domino [1+2+1+1] cycloaddition of aldehydes, styrenes, tert-butyl nitrite, and H2O to give 3,5-disubstituted isoxazoles",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of bromide (from n-Bu4NBr electrolyte) to Br radical, which serves as a HAT mediator to abstract the aldehyde C-H and generate an acyl radical; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "bromine radical (Br•) from anodic oxidation of Br-",
+      "smiles": "[Br]",
+      "role": "transient"
+    },
+    {
+      "name": "acyl radical A from aldehyde HAT",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tert-butoxy radical II from TBN homolysis",
+      "smiles": "[O]C(C)(C)C",
+      "role": "transient"
+    },
+    {
+      "name": "N=O radical III from TBN homolysis",
+      "smiles": "[N]=O",
+      "role": "reactive"
+    },
+    {
+      "name": "N=O radical IV generated in situ from TBN + H2O via HNO2",
+      "smiles": "[N]=O",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical B from acyl radical addition to styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-carbonyl nitroso adduct C",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-carbonyl ketoxime intermediate D (isolated/probed as 11)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized hydroxyisoxazoline E",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "isoxazole F (3,5-disubstituted)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Br- to Br•, which abstracts the aldehyde C-H to form an acyl radical that adds to styrene; the resulting C-radical combines with an N=O radical (from TBN homolysis and/or TBN+H2O→HNO2→N=O) to give a β-carbonyl nitroso/oxime intermediate that cyclodehydrates (TFA-assisted) to the isoxazole, while the cathode evolves H2.",
+  "rate_determining_step": "Step involving alkene 2 and TBN 3 (first-order in [alkene] and [TBN], zero-order in aldehyde), consistent with radical addition/N=O trapping being rate-limiting",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Yield drops to 3%, indicating radical intermediates"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed (trace); BHT-N=O adduct 6 isolated and confirmed by HR-MS, supporting N=O radical"
+    },
+    {
+      "name": "D2O (replacing H2O)",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "Product m/z shifts 246→247; 88% D incorporation at C4 of isoxazole, showing H at C4 comes from water"
+    },
+    {
+      "name": "DMF-d7",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "No D incorporation (m/z 246), excluding DMF as H source"
+    },
+    {
+      "name": "H2-18O",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "m/z 246→248 (100%), showing isoxazole O partly originates from H2O (in addition to TBN)"
+    },
+    {
+      "name": "1,3-diketone 10 (presumed intermediate)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Subjected to standard conditions: no isoxazole formed, excluding 1,3-dicarbonyl pathway"
+    },
+    {
+      "name": "β-carbonyl ketoxime 11",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "Gave isoxazole 7 in 91% yield, supporting ketoxime D as on-cycle intermediate"
+    },
+    {
+      "name": "Substituted benzaldehyde competition (1a/1b, 1a/1c)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Electron-deficient aldehydes react faster (Hammett-type trend)"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "product_isotope_distribution",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "kinetic_order",
+    "crossover"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two parallel sources of N=O are proposed: direct TBN homolysis (pathway III) and TBN + H2O → HNO2 → N=O (pathway IV); 18O-labeling shows both TBN and water contribute the ring O. CV shows that mixing 1a+2a+3 lowers the oxidation potential of 1a from 0.99 V to 0.73 V vs SCE, supporting anodic involvement. α-Methylstyrene fails (steric effect); no reaction without current."
+}

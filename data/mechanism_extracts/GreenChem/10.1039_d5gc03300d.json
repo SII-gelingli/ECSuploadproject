@@ -1,0 +1,89 @@
+{
+  "doi": "10.1039_d5gc03300d",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative synthesis of tetralones from styrenes (olefins) and water using a platinum nanoparticle anode, proceeding via radical cation intermediate and intramolecular Friedel-Crafts annulation",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_polar_crossover",
+    "direct_SET",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of styrene to a styryl radical cation; second anodic oxidation of a benzylic radical to a benzylic carbocation; cathodic reduction of protons to H2",
+  "key_intermediates": [
+    {
+      "name": "styrene radical cation (A)",
+      "smiles": "[CH2]=[CH][c]1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "distal 1,4-radical cation from styrene dimerization (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Wheland-type cyclohexadienyl radical cation from Friedel-Crafts annulation (C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "tetralinyl benzylic radical after deprotonation (D)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tetralinyl benzylic carbocation (E)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tetralin-1-ol intermediate (F, 3a')",
+      "smiles": "OC1CCC(c2ccccc2)c3ccccc13",
+      "role": "transient"
+    },
+    {
+      "name": "tetralone product (3a/3b)",
+      "smiles": "O=C1CCC(c2ccccc2)c3ccccc13",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes styrene by SET to a radical cation, which couples with a second styrene to give a distal 1,4-radical cation; intramolecular Friedel-Crafts annulation and -H+ yields a benzylic radical, which is further oxidized at the anode to a carbocation that is trapped by water; subsequent oxidation/deprotonation gives the tetralone, while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": "Initial anodic single-electron oxidation of the styrene to its radical cation (consistent with measured oxidation potential ~1.96 V vs SHE and DFT 1.922 V)",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction significantly inhibited; TEMPO-adduct 3v detected by HRMS, supporting a radical intermediate"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Radical addition product 3x detected by HRMS, indicating a styryl/benzylic radical species"
+    },
+    {
+      "name": "tetralin-1-ol intermediate 3a'",
+      "smiles": "OC1CCC(c2ccccc2)c3ccccc13",
+      "purpose": "intermediate_trap",
+      "observation": "Isolated in 17% yield at half reaction time; resubjection under standard conditions delivered tetralone 3a in 95% yield, confirming it as on-pathway"
+    },
+    {
+      "name": "H2(18)O",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "18O is incorporated into product 3a'' (HRMS), proving the carbonyl oxygen comes from water, not O2"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "H/D_labeling",
+    "DFT"
+  ],
+  "evidence_strength": "strong",
+  "notes": "CV shows two oxidative overpotentials (+1.74 V and +2.17 V vs Ag/AgCl), consistent with sequential SET steps (styrene -> radical cation; benzylic radical D -> carbocation E). DFT computes substrate oxidation potential (1.922 V vs SHE) closely matching the experimental 1.964 V, and shows the A->D pathway is energetically downhill with a low barrier (TS1 at +3.38 kcal/mol). Substrates with strong electron-withdrawing groups, beta-methylstyrene, pyridine, and thiophene fail, consistent with the requirement to form a stabilized styryl radical cation on an electron-rich arene."
+}

@@ -1,0 +1,51 @@
+{
+  "doi": "10.1039_D3QO00599B_sup_1",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical fluoroazotion of gem-difluoroalkenes with pyrazoles and Et3N·3HF to give trifluoromethyl-substituted N-alkylated pyrazoles",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_cation"
+  ],
+  "electrochemical_role": "Anodic oxidation of the gem-difluorostyrene 1a to a radical cation, which is then attacked by fluoride (from Et3N·3HF) and pyrazole nucleophile",
+  "key_intermediates": [
+    {
+      "name": "gem-difluorostyrene radical cation of 1a",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic α-fluoro carbocation/radical after F- addition",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-OOH, α-OMe, α-F peroxide adduct (compound 13) from O2/MeOH trapping",
+      "smiles": "OOC(OC)(F)c1ccc(-c2ccccc2)cc1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "The anode oxidizes the gem-difluorostyrene to a radical cation; fluoride from Et3N·3HF adds to give a benzylic radical/cation that is further oxidized and trapped by the pyrazole N-H nucleophile, while protons are reduced at the Pt cathode to H2.",
+  "rate_determining_step": "Anodic single-electron oxidation of the gem-difluorostyrene",
+  "probe_reagents": [
+    {
+      "name": "MeOH/O2 (radical trapping)",
+      "smiles": "CO",
+      "purpose": "radical_trap",
+      "observation": "GC-MS detected peroxide adduct 13 (C15H14F2O3, exact mass 280.0911), consistent with a benzylic radical intermediate trapped by O2 and MeOH"
+    },
+    {
+      "name": "4-vinylbiphenyl (non-fluorinated styrene control)",
+      "smiles": "C=Cc1ccc(-c2ccccc2)cc1",
+      "purpose": "redox_probe",
+      "observation": "Easily oxidized under the conditions (lower oxidation potential by CV) but gave only messy mixtures with no fluorination product, indicating the gem-difluoro group is essential for selectivity"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "redox_probe variant"
+  ],
+  "evidence_strength": "medium",
+  "notes": "CV of 1a, Et3N·3HF and product 3a recorded in nBu4NBF4/HFIP-PhCF3 shows 1a is oxidized within the operating window; control with normal styrene (4-vinylbiphenyl) demonstrates that the CF2 group is required to stabilize/direct the radical-cation intermediate. Optimization shows DCM/HFIP or PhCF3/HFIP mixed solvent and graphite(+)/Pt(-) electrodes are critical; no electricity gives 0% yield, confirming electrochemical initiation."
+}

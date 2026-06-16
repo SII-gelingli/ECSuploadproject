@@ -1,0 +1,108 @@
+{
+  "doi": "10.1038_s41467-026-68437-w",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical cobalt-catalyzed asymmetric hydroacylation of 1,6-enynes with biaryl dialdehydes by a desymmetrization strategy, constructing remote dual stereocenters (central/axial, central/planar chirality).",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "mediator_cathodic"
+  ],
+  "electrochemical_role": "Cathodic reduction of [(S,S)-BDPP]Co(II)Br2 precatalyst to a low-valent chiral Co(I) active species (E1/2 Co(II)/Co(I) = -0.56 V by CV); current is required for catalyst turn-on/regeneration.",
+  "key_intermediates": [
+    {
+      "name": "Chiral Co(I)-BDPP active catalyst (Int-I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(III) metallacycle from enantioselective oxidative cyclization of 1,6-enyne (Int-II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(III) cobaltacycle after migratory insertion of dialdehyde C-H/C=O (Int-III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(III)-alkyl/acyl species prior to β-hydride elimination (Int-IV)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Diene byproduct 10 from enyne + EtOH (cobaltacycle protonation product)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode reduces Co(II)Br2/BDPP to Co(I), which oxidatively cyclizes the 1,6-enyne to a Co(III) metallacycle (sets first stereocenter); migratory insertion of the prochiral dialdehyde sets the second stereocenter, then β-hydride elimination and C-C reductive elimination release the ketone product and regenerate Co(I).",
+  "rate_determining_step": "Not C-H cleavage of the aldehyde (kH/kD ≈ 1.0); turnover-limiting step is proposed to be the oxidative cyclization / migratory insertion stage rather than aldehyde C-H activation.",
+  "probe_reagents": [
+    {
+      "name": "D-1a (90% D-labeled dialdehyde)",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "Product D-3a obtained with 90% D incorporation, confirming aldehyde C-H is transferred to the alkene carbon of the product."
+    },
+    {
+      "name": "D-1a + 1c crossover mixture",
+      "smiles": null,
+      "purpose": "crossover",
+      "observation": "Deuterium incorporated exclusively into D-3a (from D-1a), no crossover to 3q; rules out intermolecular ligand-to-ligand hydrogen transfer (intramolecular pathway)."
+    },
+    {
+      "name": "1a + D-1a parallel KIE",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "kH/kD ≈ 1.0, indicating C-H cleavage of the aldehyde is not rate-limiting."
+    },
+    {
+      "name": "Ethanol (proton source) with enyne 2a",
+      "smiles": "CCO",
+      "purpose": "intermediate_trap",
+      "observation": "Affords diene 10 (31%, 38% e.e.), trapping the cobaltacycle and supporting an oxidative cyclization pathway."
+    },
+    {
+      "name": "Truncated substrates 11 (no alkene) and 12 (no alkyne)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "No hydroacylation products formed, indicating both π-components are needed for oxidative cyclization (consistent with cobaltacycle Int-II)."
+    },
+    {
+      "name": "Cyclic voltammetry of [(S,S)-BDPP]CoBr2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Co(II)/Co(I) couple at -0.56 V supports cathodic generation of low-valent Co(I) under the applied current."
+    },
+    {
+      "name": "Control without current",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product; electricity is essential, consistent with electrocatalytic Co(I) generation."
+    },
+    {
+      "name": "X-ray diffraction of 3a and 9a",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Confirms absolute configuration of axial/planar-central chirality products."
+    },
+    {
+      "name": "DFT rotational barrier of C-C axis in 3a",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "32.7 kcal/mol barrier (t1/2 ≈ 112 years), confirming atropostability."
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "crossover",
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "DFT",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "strong",
+  "notes": "An alternative ligand-to-ligand hydrogen transfer (LLHT) pathway was explicitly excluded by the crossover experiment. The catalyst exerts dual stereocontrol in two distinct elementary steps: oxidative cyclization sets the central stereocenter on the pyrrolidine, while migratory insertion into the prochiral dialdehyde sets the remote C-C axial / C-O axial / [2.2]paracyclophane planar / ferrocene planar chirality (desymmetrization). The proposal closely parallels Lautens's Co-catalyzed hydroacylation cycle."
+}

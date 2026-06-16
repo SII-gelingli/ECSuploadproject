@@ -1,0 +1,52 @@
+{
+  "doi": "10.1055_a-2508-9744",
+  "journal": "Synthesis",
+  "is_review": false,
+  "rxn_class_summary": "Aggregation-induced electrochemical boronation–dihydroxylation of alkenes using water-soluble boronic acids as hydroxyl source in full aqueous media without transition-metal catalyst",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "anion_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of the lipophilic alkene aggregated at the hydrophobic electrode surface to generate a carbon-centered radical (then cation after second oxidation); the hydroxyboronate anion (R-B(OH)3-) supplies the hydroxyl via C-O bond formation at the aggregation layer",
+  "key_intermediates": [
+    {
+      "name": "alkene aggregated layer at lipophilic anode",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "anodic carbon radical from alkene one-electron oxidation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "hydroxyboronate anion R-B(OH)3- (nucleophilic hydroxyl donor)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-boronate-alkyl radical after first C-O bond formation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-boronate carbocation after second oxidation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclic boronate ester product (1,2-diol boronate)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Alkene aggregates at the anode where surface tension drives concentration; anode performs single-electron oxidation of the alkene to a radical, which is captured by the hydroxyboronate anion to form the first C-O bond; a second anodic oxidation gives a cation that is trapped by a second hydroxyl from boronate, yielding the cyclic boronate/diol product which diffuses into the aqueous phase.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism is presented as a proposed aggregation model (Scheme 2) emphasizing the well-defined diffusion regime: lipophilic alkene aggregates at the anode while hydrophilic boronic acid is shielded by water; the anionic product gains aqueous solubility and diffuses away, regenerating the aggregation site. Only the mechanism-introduction pages were provided, so no probe experiments (TEMPO, KIE, CV, DFT) are documented here even if performed later in the paper."
+}

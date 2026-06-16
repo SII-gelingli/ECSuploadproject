@@ -1,0 +1,80 @@
+{
+  "doi": "10.1039_d2gc03879j",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Telescoped electrocatalytic coupling of aromatic alkenes with NH3 and CO2 (or CS2) via an iodide-mediated N-H aziridination followed by CO2/CS2 ring expansion to give 2-oxazolidinones (or 2-thiazolidinethiones).",
+  "mechanism_family": [
+    "mediator_anodic",
+    "electrocatalysis_outer_sphere",
+    "anion_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide generates an electrophilic NH2I species (from NH3) that mediates N-H aziridination of the styrene; H2 is evolved at the cathode. Iodide is regenerated and reused in the subsequent (non-electrochemical) ring expansion step.",
+  "key_intermediates": [
+    {
+      "name": "NH2I (electrochemically generated iodoamine mediator)",
+      "smiles": "NI",
+      "role": "reactive"
+    },
+    {
+      "name": "vicinal iodoamine (beta-iodo-beta-phenylethylamine)",
+      "smiles": "NCC(I)c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "2-phenyl N-H aziridine",
+      "smiles": "C1(c2ccccc2)CN1",
+      "role": "reactive"
+    },
+    {
+      "name": "zwitterionic aziridinium carbamate adduct (aziridine N + CO2)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ring-opened iodo-carbamate (iodide attack at benzylic carbon)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "5-phenyl-2-oxazolidinone (product)",
+      "smiles": "O=C1OC(c2ccccc2)CN1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, iodide is oxidized and combines with NH3 to give NH2I, which adds across the styrene to form a vicinal iodoamine; base-assisted cyclization releases iodide and gives the N-H aziridine, while protons are reduced to H2 at the cathode. In the second (thermal) cycle, the aziridine nitrogen attacks CO2 to form a carbamate zwitterion; iodide opens the ring regioselectively at the benzylic carbon, and ring closure expels iodide to deliver the 2-oxazolidinone, regenerating the iodide mediator.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "LiI (variable loading: 0, 0.2, 2 equiv)",
+      "smiles": "[Li+].[I-]",
+      "purpose": "redox_probe",
+      "observation": "CO2 insertion yield drops from 92% (2 equiv LiI) to 9% (no halide) despite full aziridine consumption; higher LiI suppresses oligomerization and improves regioselectivity (2a:3a up to 18:1)."
+    },
+    {
+      "name": "LiBr",
+      "smiles": "[Li+].[Br-]",
+      "purpose": "redox_probe",
+      "observation": "Similar trend to LiI but less pronounced, confirming halide mediator role; iodide is the better halide."
+    },
+    {
+      "name": "trans-beta-methylstyrene",
+      "smiles": "C/C=C/c1ccccc1",
+      "purpose": "other",
+      "observation": "Gives cis/trans product mixture (59:41 cis-major), indicating loss of stereochemistry consistent with an SN1-like ring-opening at the benzylic carbon."
+    },
+    {
+      "name": "Telescoped vs. salt-removed control",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Removing salts after aziridination and re-adding controlled LiI amounts shows iodide is required for efficient ring expansion (double use of catalyst confirmed)."
+    }
+  ],
+  "evidence_types_used": [
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "kinetic_order",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Regioselectivity for the 5-aryl isomer is rationalized by benzylic-cation stabilization favoring iodide attack at the more hindered benzylic carbon (SN1-like), supported by partial racemization with trans-beta-methylstyrene. An analogous mechanism is proposed for CS2 to give 2-thiazolidinethiones. Parasitic pathways (oligomerization/copolymerization of aziridine with CO2) compete when iodide is low."
+}

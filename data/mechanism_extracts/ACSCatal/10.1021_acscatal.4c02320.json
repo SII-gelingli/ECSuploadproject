@@ -1,0 +1,53 @@
+{
+  "doi": "10.1021_acscatal.4c02320",
+  "journal": "ACSCatal",
+  "is_review": false,
+  "rxn_class_summary": "Photoelectrochemical carboamidation of styrenes with unactivated alkanes via TBADT HAT, radical addition, oxidative radical-polar crossover, and Ritter-type amidation",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_polar_crossover",
+    "mediator_anodic",
+    "carbocation"
+  ],
+  "electrochemical_role": "Anode reoxidizes the reduced TBADT (H+[W10O32]5-/2H+[W10O32]6-) back to [W10O32]4- and oxidizes the benzylic radical intermediate to a benzyl cation (oxidative radical polar crossover); cathode evolves H2",
+  "key_intermediates": [
+    {
+      "name": "photoexcited TBADT (*W10O32 4-)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical R1• from HAT on alkane",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical adduct (intermediate 4)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl cation (intermediate 5)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "reduced TBADT H+[W10O32]5- / 2H+[W10O32]6-",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "nitrilium ion from R2CN trapping benzyl cation",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Photoexcited TBADT abstracts a C-H from the alkane to give an alkyl radical that adds to the styrene, forming a benzylic radical; the anode (assisted by trace wO) oxidizes this radical to a benzyl cation (oxidative RPC), which is trapped by R2CN (Ritter) and hydrolyzed to the amide. The reduced TBADT is reoxidized at the anode while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Cell potential was deliberately kept below the styrene oxidation potential to suppress direct anodic SET of the alkene, ensuring the HAT-initiated pathway dominates over previously reported styrene radical-cation pathways (e.g., Lambert's TAC+ chemistry). Mechanism shown is the proposal in Figure 1c; additional probe/control experiments likely appear later in the paper but are not in the provided page."
+}

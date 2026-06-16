@@ -1,0 +1,47 @@
+{
+  "doi": "10.1016_j.mencom.2019.07.010",
+  "journal": "MendeleevCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical synthesis of functionalized cyclopropanes (tetracyanocyclopropanes and dimethyl 2,2-dicyano-3-arylcyclopropane-1,1-dicarboxylates) from alkylidenemalononitriles and CH-acids using pyridinium bromide (PyHBr) as a redox mediator",
+  "mechanism_family": [
+    "mediator_anodic",
+    "anion_initiated",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of bromide (from PyHBr) to Br2 acts as the mediator that brominates the CH-acid anion; cathodic reduction of pyridinium cation (PyH+) generates H2 and regenerates free pyridine that deprotonates the CH-acid",
+  "key_intermediates": [
+    {
+      "name": "bromide anion / Br2 (anodically generated)",
+      "smiles": "BrBr",
+      "role": "reactive"
+    },
+    {
+      "name": "free pyridine (from cathodic reduction of PyH+)",
+      "smiles": "c1ccncc1",
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-bromo CH-acid (intermediate A, CHBr-acid)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "pyridinium ylide B (Py+-C(-)(X)(X) from intermediate A and pyridine)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Michael adduct of ylide B with alkylidenemalononitrile leading to cyclopropane via intramolecular displacement of pyridine",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, Br- is oxidized to Br2; at the cathode, PyH+ is reduced to free pyridine and H2. Pyridine deprotonates the CH-acid, the resulting carbanion is brominated by Br2 to give an alpha-bromo CH-acid (A); pyridine displaces bromide to form pyridinium ylide B, which performs Michael addition to the alkylidenemalononitrile followed by intramolecular SN2 expelling pyridine to close the cyclopropane.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism proposed by analogy with prior chemical synthesis of cyclopropanes from pyridinium ylides and benzylidenemalononitriles (ref 13). No radical traps, KIE, CV, or DFT reported; supporting observations are bromine coloration at the anode and H2 evolution at the cathode. PyHBr acts as both bromide source and proton shuttle/mediator, and the reaction is run in undivided cell with graphite anode/iron cathode in MeCN."
+}

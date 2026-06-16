@@ -1,0 +1,93 @@
+{
+  "doi": "10.1039_d4cc05092d",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Asymmetric electrocatalytic cyclopropanation of alpha,beta-unsaturated aldehydes with malonates via iminium ion organocatalysis and anodically generated electrophilic iodine",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated",
+    "electrocatalysis_outer_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (Et4NI) to electrophilic iodine species (I+/I2) which iodinates the enamine intermediate; cathode reduces protons (from HFIP) to H2 as counter half-reaction",
+  "key_intermediates": [
+    {
+      "name": "iminium ion from cinnamaldehyde and diarylprolinol-TMS catalyst I (i)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "enamine after Michael addition of malonate to iminium (ii)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-iodinated iminium ion (iii)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclopropane-bound iminium ion (iv)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Michael adduct aldehyde 4a (hydrolysis product of enamine ii)",
+      "smiles": "O=CC(c1ccccc1)CC(C(=O)OC)C(=O)OC",
+      "role": "off_pathway"
+    },
+    {
+      "name": "retro-Michael byproduct 5a (alpha,beta-unsaturated malonate)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "electrophilic iodine species (I+ / I2) generated at anode",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes iodide (2 e-) to an electrophilic I+ species; the enamine (formed by Michael addition of malonate onto the chiral iminium) is iodinated to give an alpha-iodo iminium that undergoes intramolecular malonate alkylation (ring closure) releasing I-; hydrolysis of the resulting iminium gives the cyclopropane and regenerates the aminocatalyst. Cathode reduces protons (from HFIP) to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Only minor suppression of 3a (36% yield); TEMPO-adduct 6 observed (25% NMR yield); ambiguous since TEMPO can be oxidized to N-oxoammonium and react in polar fashion"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Cyclopropane 3a still formed (38% NMR), only 4% of 4a; no quenching of putative enamine radical cation -> argues for polar pathway"
+    },
+    {
+      "name": "pre-synthesized Michael adduct 4a",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Under standard electrolysis 4a gave 43% 3a + 17% 5a; without aminocatalyst 4a gave 23% 3a (94% ee) confirming ring closure can proceed via enamine/iodination pathway"
+    },
+    {
+      "name": "molecular I2 / NIS (no electricity)",
+      "smiles": "II",
+      "purpose": "redox_probe",
+      "observation": "No conversion and catalyst I decomposed, showing that controlled electrocatalytic generation of I+ is essential to protect the aminocatalyst from Grob fragmentation"
+    },
+    {
+      "name": "cyclic voltammetry of components",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Iodide oxidizes at +0.19 and +0.38 V; enamine (II from 4a + cat I) oxidizes at +0.27 V; iodide is the lowest-potential and preferred species oxidized at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors favor a polar (iminium/enamine + electrophilic iodination) mechanism over a SET/radical cation pathway; an alternative enamine radical-cation route was considered (since enamine Eox = +0.27 V is below iodide's second oxidation) but BHT trapping and ring closure from isolated 4a without catalyst support the polar pathway. A radical pathway via TEMPO oxidation to N-oxoammonium adding to the enamine is mentioned in ESI Scheme S2. Side product 5a arises from base-induced retro-Michael of iminium iv."
+}

@@ -1,0 +1,135 @@
+{
+  "doi": "10.1021_jacs.1c01487",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Nickel-electrocatalyzed single-electron reduction/activation of alkyl iodides to generate carbon-centered radicals, where ligand-controlled metal-ligand cooperativity dictates outer-sphere vs inner-sphere electron transfer and thus downstream radical selectivity (e.g., cyclization vs dimerization of a 5-hexenyl iodide).",
+  "mechanism_family": [
+    "electrocatalysis_outer_sphere",
+    "electrocatalysis_inner_sphere",
+    "mediator_cathodic",
+    "radical_cathodic"
+  ],
+  "electrochemical_role": "Cathodic two-electron reduction of [Ni(tpyPY2Me)]2+ ([Ni-1]2+) to spin-delocalized [Ni-1], which acts as an OSET mediator to reduce alkyl iodide RI to R• + I-; alternatively, one-electron cathodic reduction of [Ni(PY5Me2)]2+ ([Ni-2]2+) to metal-localized [Ni-2]+, which activates RI via ISET (halogen atom abstraction) to form [(Ni-2)(I)]+ and R•.",
+  "key_intermediates": [
+    {
+      "name": "[Ni(tpyPY2Me)]2+ ([Ni-1]2+), Ni(II) resting state with redox-active polypyridyl ligand",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "[Ni-1]+, one-electron reduced species with spin delocalized over Ni and tpyPY2Me ligand (π*+dz2)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "[Ni-1], doubly reduced spin-delocalized species (triplet, ligand-based π*), active OSET reductant",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[(Ni-1)(R)] alkyl-Ni adduct formed by radical rebound, sequesters R•",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[Ni(PY5Me2)]2+ ([Ni-2]2+), Ni(II) resting state with redox-innocent pentapyridine ligand",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "[Ni-2]+, one-electron reduced Ni(I), metal-localized dz2 spin, ISET activator",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[(Ni-2)(I)]+, Ni(III)-iodide formed by halogen atom abstraction from RI",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Primary alkyl radical R• (e.g., 5-hexenyl radical from substrate 11)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cyclized cyclopentylmethyl radical (radical clock product)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Dimer 15 (off-pathway radical-radical coupling product)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "For [Ni-1]2+: cathode delivers two sequential electrons to give spin-delocalized [Ni-1], which transfers an electron to RI by dissociative OSET, releasing R• and I-; R• rapidly rebounds onto [Ni-1]+ to form [(Ni-1)(R)], sequestering the radical and enabling selective onward chemistry. For [Ni-2]2+: cathode delivers one electron to give metal-localized [Ni-2]+, which abstracts I• from RI in an inner-sphere step to give [(Ni-2)(I)]+ plus a free R• at high concentration, leading to indiscriminate substrate activation and dimerization.",
+  "rate_determining_step": "Homogeneous single-electron transfer from reduced Ni species to alkyl iodide (step k1: dissociative OSET cleavage of R-I for [Ni-1]; halogen atom abstraction step for [Ni-2]+).",
+  "probe_reagents": [
+    {
+      "name": "Dimethyl 2-butyl-(iodomethyl)malonate (3, activated primary RI)",
+      "smiles": "CCCCC(C(=O)OC)(C(=O)OC)CI",
+      "purpose": "redox_probe",
+      "observation": "Activated by [Ni-1] at -1.94 V (0.58 V positive of direct reduction); k1 ~700 M-1 s-1; log k1–E1/2 plot linear with Ar•- mediators, consistent with OSET."
+    },
+    {
+      "name": "Cyclohexyl iodide (CyI, secondary RI)",
+      "smiles": "IC1CCCCC1",
+      "purpose": "redox_probe",
+      "observation": "Activated ~5-fold slower than 3 by [Ni-1]; k1 matches reported value for 2-iodobutane; log k1–E1/2 linear, consistent with OSET. With [Ni-2]+, activated ~100-fold faster than by analogous Ar•- (inconsistent with OSET, supporting ISET)."
+    },
+    {
+      "name": "Organic radical-anion mediators 4–10 (e.g., aromatic nitriles, fluoranthene, anthracene derivatives)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Span ~400 mV in E1/2; log k1 vs E1/2 is linear for RI activation, defining the OSET Hush–Marcus baseline that [Ni-1] follows but [Ni-2]+ deviates from by ~10–100×."
+    },
+    {
+      "name": "5-Hexenyl iodide substrate 11 (radical clock)",
+      "smiles": "C=CCCCC(I)(C(=O)OC)C(=O)OC",
+      "purpose": "radical_clock",
+      "observation": "Under [Ni-1]2+ catalysis (-2.03 V, 1 F/mol): 31% cyclized H-quenched 13 and 17% iodocyclized 14, indicating discrete radical intermediate; under [Ni-2]2+ (-1.91 V): 12% 13 and 38% dimer 15, indicating higher free-radical concentration and dimerization."
+    },
+    {
+      "name": "CyI as exogenous halogen atom donor (selectivity probe)",
+      "smiles": "IC1CCCCC1",
+      "purpose": "intermediate_trap",
+      "observation": "Added to [Ni-1]2+/11 electrolysis: 75% iodocyclized 14 with only 1 F/mol, demonstrating selective activation of 11 over CyI and trapping of cyclized radical by I• transfer. With [Ni-2]2+/11+CyI: indiscriminate activation, 3 F/mol consumed, complex product mixture."
+    },
+    {
+      "name": "NaOTf (counterion / coordination probe)",
+      "smiles": "[Na+].[O-]S(=O)(=O)C(F)(F)F",
+      "purpose": "intermediate_trap",
+      "observation": "Addition to [Ni-1]2+/11 electrolysis switches selectivity to 46% dimer 15, supporting that OTf- blocks [(Ni-1)(R)] formation and releases free R•, implicating Ni-R rebound in controlling selectivity."
+    },
+    {
+      "name": "Pre-electrogenerated [Ni-1] then add 11 with no applied bias (e-[Ni-1] control)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "<4% cyclized products, ruling out non-Faradaic ATR chain pathway and confirming electrocatalytic turnover."
+    },
+    {
+      "name": "Independently synthesized [Ni(PY5Me2)(I)]+",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "Exhibits E1/2 = -1.75 V and supports catalysis from this entry point, giving the same dimerization-favoring product distribution as [Ni-2]2+; confirms [(Ni-2)(I)]+ as a catalytically viable intermediate in the ISET cycle."
+    },
+    {
+      "name": "Ar 8 (organic radical anion comparison reductant)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "CPE of 11 with 8 gives exclusive dimer 15, showing that absent Ni-R rebound, free-radical fate is dimerization."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "radical_clock",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "kinetic_order",
+    "DFT",
+    "EPR",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two divergent mechanisms are explicitly contrasted in one paper. Favored pictures: (i) [Ni-1] (tpyPY2Me) activates RI by dissociative OSET with subsequent radical rebound to give [(Ni-1)(R)], controlled radical release; (ii) [Ni-2]+ (PY5Me2) activates RI by ISET halogen atom abstraction to give [(Ni-2)(I)]+ and free R•. Alternative OSET pathway without radical rebound for [Ni-1] is ruled out by saturation of catalytic current with [RI] and by OTf--induced switch to dimerization. SN2-type activation for [Ni-1] is ruled out by agreement of k1 with Hush–Marcus OSET line for organic Ar•- mediators. DFT (ωB97X-D) shows [Ni-1]+ has mixed π*+dz2 SOMO (35% Ni), [Ni-1] is a triplet with ligand-based π* electron (spin delocalized), while [Ni-2]+ has a purely dz2 metal-localized SOMO, rationalizing ISET vs OSET selectivity through metal–ligand cooperativity."
+}

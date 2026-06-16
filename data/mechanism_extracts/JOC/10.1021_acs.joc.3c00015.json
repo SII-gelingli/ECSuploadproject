@@ -1,0 +1,55 @@
+{
+  "doi": "10.1021_acs.joc.3c00015",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intramolecular amino- and oxysulfonylation of alkenes with sodium sulfinates affording sulfonylated O- and N-heterocycles (THFs, THPs, oxepanes, pyrrolidines, piperidines, δ-valerolactones)",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of sodium sulfinate (RSO2Na) at the carbon anode generates a sulfonyl radical; subsequent anodic oxidation of the benzylic radical intermediate generates a benzylic carbocation; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "sulfonyl radical (RSO2•)",
+      "smiles": "[O]S(=O)c1ccc(C)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbon-centered radical after sulfonyl addition to alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbocation after second anodic oxidation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized sulfonylated heterocycle (final product)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes sulfinate to sulfonyl radical, which adds to the alkene to give a benzylic radical; the anode further oxidizes this radical to a benzylic cation, which is trapped intramolecularly by the pendant O- or N-nucleophile; protons are reduced at the Pt cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Reaction of S1 strongly inhibited; P1 formed in only 30% yield and a DPE-sulfonyl adduct (P70) detected by GC-MS, supporting sulfonyl radical intermediate"
+    },
+    {
+      "name": "cyclic voltammetry of S1, S47, S63 vs p-tolylsulfinate",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peaks of unsaturated alcohol S1 (~1.60 V), N-tosyl amine S47 (~1.65 V), and carboxylic acid S63 (~1.50 V) are higher than p-tolylsulfinate (~1.2 V), indicating sulfinate is oxidized first under electrolysis"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "DPE was used as a radical trap (analogous role to TEMPO/BHT) rather than a typical persistent radical scavenger. Mechanism is supported by CV ordering of oxidation potentials and trapping evidence; no DFT, KIE, or isotope labeling reported. The benzylic cation pathway (radical–polar crossover) is favored over a direct radical cyclization."
+}

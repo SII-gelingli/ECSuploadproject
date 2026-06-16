@@ -1,0 +1,121 @@
+{
+  "doi": "10.1039_d0gc03890c",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical anti-Markovnikov hydroboration of styrenes with HBpin in CH3CN/THF using DIEA, proceeding via a radical pathway with CH3CN as the primary hydrogen donor to the benzyl position",
+  "mechanism_family": [
+    "radical_anodic",
+    "paired_electrolysis",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of DIEA to an N-centered radical cation, which then oxidizes CH3CN and HBpin to their radical cations; the resulting Bpin radical adds to styrene and the benzyl radical/boronate alkyl intermediate is reduced at the cathode, where H+ is also reduced to H2",
+  "key_intermediates": [
+    {
+      "name": "DIEA N-centered radical cation (A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "CH3CN radical cation (B)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "HBpin radical cation (C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyanomethyl radical •CH2CN (D)",
+      "smiles": "[CH2]C#N",
+      "role": "reactive"
+    },
+    {
+      "name": "boryl radical •Bpin (E)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl carbon-centered radical PhCH•CH2Bpin (F)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "boronate alkyl anion intermediate (G)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkyl-galvinoxyl adduct 8",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "alkyl-TEMPO adduct 9",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "DMPO-CH2CN spin adduct 10",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes DIEA to a radical cation, which abstracts electrons from CH3CN and HBpin, generating •CH2CN and •Bpin after deprotonation by THF/DIEA. The boryl radical adds to styrene to give a benzyl radical, which is reduced at the cathode to a boronate alkyl anion that is protonated by H+ to deliver the product, with concomitant cathodic H2 evolution.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product yield decreased from 72% to 8% with increasing TEMPO loading; alkyl-TEMPO adduct 9 (m/z 387.3053/388.3030) isolated, confirming benzyl C-radical"
+    },
+    {
+      "name": "Galvinoxyl free radical",
+      "smiles": null,
+      "purpose": "radical_trap",
+      "observation": "No product formed with 1 equiv; alkyl-galvinoxyl adduct 8 (m/z 548.4141/549.4119) detected by MS, confirming Bpin radical"
+    },
+    {
+      "name": "DMPO",
+      "smiles": "CC1(C)C=C[N+]([O-])=C1",
+      "purpose": "radical_trap",
+      "observation": "EPR signal (g=2.0052, A_N=14.47 G, A_H=20.82 G) and MS detection of DMPO-CH2CN adduct 10 confirmed •CH2CN"
+    },
+    {
+      "name": "THF-d8 / CD3CN",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "No D incorporation with CH3CN/THF-d8 (THF not H source); with CD3CN/THF gave d1-3a:3a = 84:16 with D at benzyl position, identifying CH3CN as primary H donor"
+    },
+    {
+      "name": "d1-HBpin (DBpin)",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "DBpin + styrene gave d1-3a:3a = 16:84, indicating HBpin contributes only minor H at benzyl site"
+    },
+    {
+      "name": "d8-styrene",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "d8-styrene + HBpin gave d8-3a (65%), confirming Bpin originates from HBpin"
+    },
+    {
+      "name": "H2 evolution monitoring",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "H2 bubbles detected by GC; rate decays to zero at ~180 min matching reaction time; substrate-free runs show CH3CN+DIEA generate large H2, while THF is not a H+ source"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "EPR",
+    "isolation_of_intermediate",
+    "product_isotope_distribution",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors note that direct quantitative detection of free Bpin radical was not possible; it may be stabilized by DIEA/THF. The lifetime/migration of the persistent benzyl radical F between electrodes is acknowledged as an open question. THF likely assists proton transfer to substrate ([THF]2H+) rather than serving as H source. With 2-vinylnaphthalene and excess HBpin (4.4 equiv), diboronate ester 7r forms selectively (71%), suggesting the benzyl radical can be further borylated rather than reduced/protonated when an extended π-system stabilizes it."
+}

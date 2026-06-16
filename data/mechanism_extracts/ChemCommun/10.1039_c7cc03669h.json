@@ -1,0 +1,97 @@
+{
+  "doi": "10.1039_c7cc03669h",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical synthesis of 3-alkyl phthalides via anodic oxidation of 2-vinylbenzoic acids in the presence of aliphatic carboxylic acids as alkyl radical precursors (Kolbe-type co-electrolysis).",
+  "mechanism_family": [
+    "radical_anodic",
+    "paired_electrolysis",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of the aromatic carboxylate (2-vinylbenzoate) to an aroyloxy radical and concurrent Kolbe decarboxylation of the aliphatic carboxylate to an alkyl radical; cathodic reduction of the cyclized benzylic radical to an anion that is protonated to give the non-alkylated lactone byproduct.",
+  "key_intermediates": [
+    {
+      "name": "aroyloxy (benzoyloxy) radical from 2-vinylbenzoate (9)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized benzylic/3-phthalidyl C-centered radical (10)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical from Kolbe decarboxylation of aliphatic acid (11a, e.g. ethyl radical 5a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "aliphatic carboxylate (11)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "3-phthalidyl carbanion (12) from cathodic reduction of 10",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ethyl benzoate (6), recombination byproduct of aroyloxy radical 4a + ethyl radical 5a",
+      "smiles": "CCOC(=O)c1ccccc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "non-alkylated phthalide (3) from H-atom abstraction or protonation of 12",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the 2-vinylbenzoate to an aroyloxy radical that undergoes 5-exo-trig cyclization onto the pendant alkene, giving a benzylic C-radical; this radical is trapped by an alkyl radical produced by simultaneous Kolbe decarboxylation of the aliphatic co-acid, or is alternatively reduced at the cathode to a carbanion that protonates to the unalkylated lactone.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "benzoic acid alone (no co-acid)",
+      "smiles": "OC(=O)c1ccccc1",
+      "purpose": "other",
+      "observation": "Quantitative recovery of starting acid; no oxidation observed, suggesting aromatic carboxylates are not directly oxidized under standard Kolbe conditions."
+    },
+    {
+      "name": "heptanoic acid alone in MeOH",
+      "smiles": "CCCCCCC(=O)O",
+      "purpose": "intermediate_trap",
+      "observation": "Electrolysis gave dodecane (Kolbe dimer) with no methoxyhexane, indicating alkyl radical (not cation) intermediates."
+    },
+    {
+      "name": "ethyl cinnamate (7)",
+      "smiles": "CCOC(=O)/C=C/c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Fully recovered after 30 min electrolysis, ruling out direct anodic oxidation of the styryl olefin to a radical cation captured by carboxylate."
+    },
+    {
+      "name": "N,N-diallyl 2-vinylbenzamide (1g) with excess AcOH",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Double 5-exo-trig cyclization product 8a was detected by 1H NMR alongside non-cyclized 8b/8c, supporting a radical cyclization mechanism."
+    },
+    {
+      "name": "secondary/tertiary aliphatic co-acids",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only the non-alkylated phthalide 3 was obtained, consistent with overoxidation of secondary/tertiary radicals to carbocations under Kolbe conditions and H-atom abstraction by radical 10."
+    },
+    {
+      "name": "allyl ester substrate (2j)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Remained untouched due to preferred s-cis conformation preventing intramolecular cyclization."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "radical_clock",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two pathways are considered for forming the aroyloxy radical: (I) direct anodic oxidation of the aromatic carboxylate (disfavored, since benzoic acid alone is fully recovered) and (II) a redox/SET mechanism in which the Kolbe-generated alkyl radical oxidizes the aromatic carboxylate (favored, pathway 2 in Scheme 4). An alkyl carbocation route capturing benzoate is excluded by the heptanoic acid control (dodecane, no methoxyhexane). Ester byproduct 6 (ethyl benzoate) arises from radical-radical recombination of 4a and 5a. The non-alkylated phthalide 3 arises either by HAT from solvent/medium by radical 10 or by cathodic reduction of 10 to anion 12 followed by protonation."
+}

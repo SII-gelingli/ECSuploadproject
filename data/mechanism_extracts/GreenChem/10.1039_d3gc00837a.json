@@ -1,0 +1,71 @@
+{
+  "doi": "10.1039_d3gc00837a",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical regioselective 1,2-aminoselenation and oxyselenation of alkenes (arylalkenes, 1-aryl-1,3-dienes, and non-activated aliphatic alkenes) using diselenides with N–H nucleophiles (e.g., saccharin) or carboxylic acids in an undivided cell with C anode / Ni cathode.",
+  "mechanism_family": [
+    "radical_anodic",
+    "cation_initiated",
+    "radical_polar_crossover",
+    "radical_cation"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the diaryl diselenide (R'SeSeR') generates a diselenide radical cation that dissociates into an electrophilic selenium cation (R'Se+) and a selenium radical (R'Se•); cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "diselenide radical cation [R'SeSeR']•+ (A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "selenium cation R'Se+ (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "selenium radical R'Se• (C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclic seleniranium (selenonium) ion intermediate D",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-selenyl carbocation E (from NuH addition / ring opening)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-selenyl carbon radical H (path II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-selenyl carbocation I (from anodic oxidation of H)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "selenolate/selenide anion R'Se− (G)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Path I (favored, ionic): anode oxidizes R'SeSeR' to its radical cation, which fragments to R'Se+ and R'Se•; R'Se+ adds to the alkene to give a cyclic seleniranium ion that is opened by the N- or O-nucleophile with deprotonation to deliver the 1,2-difunctionalized product, while protons are reduced to H2 at the Ni cathode. Path II (radical, not excluded): R'Se• adds to the alkene to give a β-selenyl C-radical, which is anodically oxidized to the corresponding carbocation and then trapped by the nucleophile.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "single-crystal X-ray of products 5y and 7m / 4d'",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "X-ray structures confirmed regio- and stereochemistry of the 1,2-aminoselenation/oxyselenation products"
+    }
+  ],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Authors propose two concurrent pathways: a favored ionic seleniranium pathway (Path I) and a non-excluded radical pathway (Path II) via R'Se•-addition followed by anodic oxidation of the C-radical to a cation. Mechanistic probe experiment details are relegated to the ESI and not shown explicitly on the main-text pages; no TEMPO/BHT trapping, KIE, CV, EPR, or DFT data are presented here. Reaction tolerates strongly deactivated substrates (e.g., -NO2) and works on non-activated aliphatic alkenes; scaled to gram scale and applied to late-stage modification of bioactive molecules (estrone, probenecid, ibuprofen, ciprofibrate, etc.). Conditions: C(+)/Ni(−), Et4NBr in CH3CN, 10 mA, r.t., 2 h, undivided cell."
+}

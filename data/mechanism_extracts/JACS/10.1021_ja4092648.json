@@ -1,0 +1,85 @@
+{
+  "doi": "10.1021_ja4092648",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Low-temperature electrochemical generation of DMSO-stabilized halogen (Br+, I+) and chalcogen (ArS+, ArSe+) cation pools that add across alkenes/dienes/allenes to give α-halo or α-chalcogeno carbonyl compounds (and cyclized N-heterocycles from tethered tosylamides) after triethylamine treatment",
+  "mechanism_family": [
+    "cation_initiated",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of Bu4NBr, Bu4NI, ArSSAr, or ArSeSeAr at -78 °C in the presence of DMSO generates DMSO-coordinated cation pools (X+/DMSO); these electrophilic cations then react with alkenes (no further electron transfer at the electrode during C-C bond formation)",
+  "key_intermediates": [
+    {
+      "name": "DMSO-stabilized Br+ cation (1-Br)",
+      "smiles": "[Br+].CS(=O)C",
+      "role": "reactive"
+    },
+    {
+      "name": "DMSO-stabilized I+ cation (1-I)",
+      "smiles": "[I+].CS(=O)C",
+      "role": "reactive"
+    },
+    {
+      "name": "DMSO-stabilized ArS+ cation (1-S, Ar=4-FC6H4)",
+      "smiles": "[S+](c1ccc(F)cc1).CS(=O)C",
+      "role": "reactive"
+    },
+    {
+      "name": "DMSO-stabilized ArSe+ cation (1-Se, Ar=Ph)",
+      "smiles": "[Se+](c1ccccc1).CS(=O)C",
+      "role": "reactive"
+    },
+    {
+      "name": "three-membered ring bromonium/halonium ion from X+ + alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-bromo alkoxysulfonium ion (3a-Br)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-bromo ketone product (4a-Br) after Et3N",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At -78 °C the anode oxidizes the halide or dichalcogenide to a cationic X+ that is stabilized by one or two DMSO molecules, forming a persistent cation pool; this electrophilic X+ then adds to an alkene to give a three-membered halonium/chalcogenonium ion, DMSO opens it (anti, back-side attack) to give a β-functionalized alkoxysulfonium ion, and triethylamine-induced Swern–Moffatt-type elimination delivers the α-halo or α-chalcogeno carbonyl product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "methanol quench of alkoxysulfonium intermediate (E)- and (Z)-1-phenyl-1-propene (2d)",
+      "smiles": "CO",
+      "purpose": "intermediate_trap",
+      "observation": "(E)-2d gave 5d-Br (72%) and (Z)-2d gave the diastereomer 5d'-Br (75%); anti stereochemistry indicates back-side attack of DMSO on the bromonium ion"
+    },
+    {
+      "name": "thermal-stability assay of X+/DMSO solutions (warming then cooling, reaction with 2b)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Relative stability order Br+ < I+ < PhS+ < PhSe+, correlating inversely with electronegativity of X"
+    },
+    {
+      "name": "Br2 used in place of electrogenerated 1-Br",
+      "smiles": "BrBr",
+      "purpose": "intermediate_trap",
+      "observation": "Br2/DMSO also delivers α-bromo ketones (entry 6), supporting Br+/DMSO as the active species"
+    },
+    {
+      "name": "NBO/DFT analysis of three-membered ring onium ions",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Charge on benzylic carbon increases Se < S < I < Br, rationalizing why DMSO attacks the benzylic carbon for Br but the terminal/other carbon for Se, explaining regiochemical switch between 1-Br and 1-Se with 2d"
+    }
+  ],
+  "evidence_types_used": [
+    "DFT",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "H/D_labeling"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Regioselectivity with unsymmetrical alkenes (e.g., 1-phenyl-1-propene 2d) inverts between Br+ (attack at benzylic C → 4d-Br) and Se+ (attack at internal C → 4d'-Se), attributed to electronegativity-driven charge distribution on the halonium/chalcogenonium intermediate (supported by NBO/DFT). 1,3-Dienes undergo selective 1,2-addition at the internal carbon (no 1,4-product), and allenes react at the terminal carbon. Tethered tosylamide alkenes (2g) and 1,6-dienes (2h) give cyclized pyrrolidines/piperidines as single diastereomers, indicating that the cation-pool intermediates also initiate alkene cyclization. The Swern–Moffatt-like final step destroys alkene stereochemistry in the carbonyl product, but the MeOH-trapping experiment preserves and reveals the anti-addition stereochemistry of the X+/DMSO step."
+}

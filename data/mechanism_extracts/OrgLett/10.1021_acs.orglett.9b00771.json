@@ -1,0 +1,48 @@
+{
+  "doi": "10.1021_acs.orglett.9b00771",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical three-component 1,2-bromoesterification of alkenes with carboxylic acids and N-bromosuccinimide via TEMPO-mediated anodic oxidation forming a bromonium intermediate.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of TEMPO to TEMPO+ which activates NBS toward Br+ transfer to the alkene; cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "TEMPO+ oxoammonium cation (mediator)",
+      "smiles": "CC1(C)CCCC(C)(C)[N+]1=O",
+      "role": "reactive"
+    },
+    {
+      "name": "TEMPO nitroxyl radical (resting mediator)",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "role": "resting_state"
+    },
+    {
+      "name": "Cyclic bromonium ion of alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-bromoalkyl ester product",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "TEMPO is oxidized at the anode to TEMPO+, which activates NBS to deliver Br+ to the alkene, generating a cyclic bromonium ion; carboxylic acid opens the bromonium and deprotonation gives the β-bromo ester, while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "other",
+      "observation": "Used as a 50 mol% redox mediator/initiator; oxidized at the anode to TEMPO+ which activates NBS."
+    }
+  ],
+  "evidence_types_used": [
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism is proposed without explicit radical trapping, CV, KIE, or DFT studies; TEMPO is invoked as a redox mediator rather than a radical trap. Pathway is cationic (bromonium) rather than radical, despite the electrochemical oxidative conditions."
+}

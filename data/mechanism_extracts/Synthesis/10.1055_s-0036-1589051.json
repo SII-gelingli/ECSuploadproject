@@ -1,0 +1,67 @@
+{
+  "doi": "10.1055_s-0036-1589051",
+  "journal": "Synthesis",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical synthesis of β-hydroxysulfones from α-methylstyrenes and sodium sulfinates via iodide-mediated anodic generation of sulfonyl iodide, sulfonyl radical addition, and oxidation/hydration of a benzylic cation",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "radical_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (I-) to I2 at the glassy carbon electrode; I2 then reacts with sulfinate (TolSO2Na, 5a) to give the sulfonyl iodide mediator (TolSO2I, intermediate I), which homolyzes to a sulfonyl radical that adds to the styrene; the resulting benzylic radical is further oxidized (loss of e-) at the anode to a tertiary benzylic carbocation",
+  "key_intermediates": [
+    {
+      "name": "p-toluenesulfonyl iodide (TolSO2I, intermediate I)",
+      "smiles": "Cc1ccc(S(=O)(=O)I)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "p-toluenesulfonyl radical",
+      "smiles": "Cc1ccc(S(=O)(=O)[O])cc1",
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbon radical from sulfonyl addition to α-methylstyrene (intermediate II)",
+      "smiles": "Cc1ccc(S(=O)(=O)CC([CH3])([CH2])c2ccccc2)cc1",
+      "role": "transient"
+    },
+    {
+      "name": "tertiary benzylic carbocation (intermediate III)",
+      "smiles": "Cc1ccc(S(=O)(=O)CC(C)([C+])c2ccccc2)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "iodine (I2)",
+      "smiles": "II",
+      "role": "reactive"
+    },
+    {
+      "name": "iodide (I-)",
+      "smiles": "[I-]",
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "Anode oxidizes I- to I2; I2 reacts with sulfinate to give TolSO2I, which homolyzes into a sulfonyl radical (adding to the alkene) and an iodine radical (regenerating I2 catalytic cycle). The resulting benzylic radical loses a second electron at the anode to form a tertiary carbocation, which is trapped by water to deliver the β-hydroxysulfone.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "electron-rich styrene 7d (3,4-dimethoxy substituted)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Tolerates dehydration; isolated as allyl sulfone 9 in 91% yield, consistent with intermediate carbocation III that can eliminate when stabilized"
+    },
+    {
+      "name": "simple styrene 10",
+      "smiles": "C=Cc1ccccc1",
+      "purpose": "other",
+      "observation": "Gave β-hydroxysulfone 11 in 90% yield, supporting general applicability of the proposed cation/hydration pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "weak",
+  "notes": "The mechanism is presented as 'possible' (Scheme 4) and supported indirectly by product distributions: electron-rich substrates give the allyl sulfone via dehydration of the carbocation III, consistent with a cation intermediate. No radical traps (TEMPO/BHT), KIE, CV, or DFT data are reported on these mechanism pages. X-ray crystallography was used to confirm product structure, not mechanism."
+}

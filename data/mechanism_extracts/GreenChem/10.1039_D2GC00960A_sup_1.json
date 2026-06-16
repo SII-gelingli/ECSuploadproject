@@ -1,0 +1,50 @@
+{
+  "doi": "10.1039_D2GC00960A_sup_1",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical trifluoromethylation/cyclization of N-allyl sulfonamides with CF3SO2Na proceeding via a CF3 radical addition pathway",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2- (Langlois reagent) generates CF3 radical (via loss of SO2) that adds to the allyl alkene of the N-allyl sulfonamide",
+  "key_intermediates": [
+    {
+      "name": "CF3 radical",
+      "smiles": "[CH](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl C-radical from CF3 addition to allyl group",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "BHT-CF3 adduct (1,3-di-tert-butyl-5-methyl-2-(trifluoromethoxy)benzene-type trapped species, 6)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- to CF3SO2 radical, which extrudes SO2 to give CF3 radical; CF3 radical adds to the terminal alkene of the N-allyl sulfonamide, generating a carbon radical that undergoes further cyclization/functionalization to product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "CC1=CC(=C(C(=C1)C(C)(C)C)O)C(C)(C)C",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed (no desired product); BHT-CF3 adduct 6 detected by GC-MS, supporting CF3 radical intermediate"
+    },
+    {
+      "name": "Crossover experiment with two distinct N-allyl sulfonamides (methyl ester thiophene vs chlorothiophene 4-oxopentanamide)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only homo-products 3i (68%) and 3z4 (62%) formed; no crossover products, indicating intramolecular cyclization rather than intermolecular radical exchange"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "crossover"
+  ],
+  "evidence_strength": "medium",
+  "notes": "BHT trap confirms CF3 radical involvement; crossover experiment confirms intramolecular nature of the cyclization step (the radical addition/cyclization sequence occurs within a single substrate without intermolecular scrambling)."
+}

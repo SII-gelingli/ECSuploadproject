@@ -1,0 +1,70 @@
+{
+  "doi": "10.1002_chem.201404078",
+  "journal": "Chemistry",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intramolecular aminooxygenation of unactivated alkenes using tethered carbamates/amides as nitrogen sources and TEMPO as the oxygen trap, giving trans-1,2-aminoalkoxyamines.",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "nitrene"
+  ],
+  "electrochemical_role": "Anodic oxidation: TEMPO is oxidized at the RVC anode to the oxoammonium cation, which oxidizes the carbamate/amide N-H to generate a nitrogen-centered radical (with H2O/base accepting the proton); cathode reduces water/H+ to H2.",
+  "key_intermediates": [
+    {
+      "name": "TEMPO oxoammonium cation (mediator, generated at anode)",
+      "smiles": "C[C]1(C)CCC[C](C)(C)[N+]1=O",
+      "role": "reactive"
+    },
+    {
+      "name": "N-centered amidyl/carbamoyl radical from substrate",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical after 5-exo-trig cyclization onto tethered alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TEMPO (nitroxyl radical, trap and pre-mediator)",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "role": "reactive"
+    },
+    {
+      "name": "trans-aminoalkoxyamine product (e.g. 2a, oxazolidinone-TEMPO adduct)",
+      "smiles": null,
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "At the RVC anode, TEMPO is oxidized to its oxoammonium salt, which abstracts/oxidizes the carbamate or amide N-H (with base/H2O removing the proton) to give a nitrogen-centered radical; this N-radical undergoes 5-exo-trig cyclization onto the tethered unactivated alkene to give a carbon-centered radical, which is trapped by a second equivalent of TEMPO to afford the trans-aminooxygenation product. The cathode evolves H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "intermediate_trap",
+      "observation": "Trapped the cyclized carbon radical, delivering the alkoxyamine product as a single trans-diastereomer (e.g. 2a in 70% yield)."
+    },
+    {
+      "name": "cyclopropyl/allyl radical-clock substrate 9 (cinnamyl-type carbamate)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Electrolysis of 9 gave ring-opened/rearranged TEMPO adduct 10 (52%), consistent with a discrete C-centered radical intermediate."
+    },
+    {
+      "name": "preformed TEMPO oxoammonium tetrafluoroborate (11)",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "With Cs2CO3 as base and 11 (2 equiv) the aminooxygenation product 2a was obtained in 62% yield without electrolysis, supporting oxoammonium as the active oxidant/mediator; no reaction without base or with Na2CO3."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "X-ray structures of 2h and 2q confirm trans-diastereoselectivity of the cyclization. The N-radical generation is proposed to proceed via the TEMPO/oxoammonium redox couple acting as an anodic mediator rather than direct SET oxidation of the carbamate N-H; the stoichiometric experiment with oxoammonium salt 11 supports this mediator pathway. Direct anodic oxidation of the N-H substrate cannot be fully excluded as a minor pathway."
+}

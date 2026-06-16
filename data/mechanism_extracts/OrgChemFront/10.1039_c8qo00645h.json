@@ -1,0 +1,104 @@
+{
+  "doi": "10.1039_c8qo00645h",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Bromide-mediated electrochemical trifluoromethylation/cyclization of N-arylacrylamides with CF3SO2Na (Langlois' reagent) to give CF3-substituted oxindoles.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "paired_electrolysis",
+    "radical_anodic",
+    "radical_cathodic"
+  ],
+  "electrochemical_role": "Anode oxidizes Br- to Br2 (mediator, easier to oxidize than CF3SO2Na); cathode reduces the in situ formed CF3SO2Br (4) / CF3SO2OBr (5) to regenerate Br- and release a CF3SO2 radical that fragments to CF3 radical.",
+  "key_intermediates": [
+    {
+      "name": "molecular bromine (Br2) from anodic oxidation of Br-",
+      "smiles": "BrBr",
+      "role": "reactive"
+    },
+    {
+      "name": "CF3SO2Br (intermediate 4)",
+      "smiles": "O=S(=O)(Br)C(F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "sulfonyl hypobromite CF3SO2OBr (intermediate 5, in equilibrium with 4)",
+      "smiles": "O=S(=O)(OBr)C(F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "CF3SO2 oxygen-centered radical (6)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "CF3SO2 sulfur-centered radical (7)",
+      "smiles": "[O]S(=O)C(F)(F)F",
+      "role": "transient"
+    },
+    {
+      "name": "CF3 radical",
+      "smiles": "[C](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical from CF3 addition to acrylamide (8)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexadienyl radical / dihydrooxindole intermediate (9)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Br- is oxidized at the anode to Br2, which reacts with CF3SO2Na to give CF3SO2Br (4)/CF3SO2OBr (5); cathodic single-electron reduction of 4/5 regenerates Br- and produces a CF3SO2 radical that loses SO2 to give CF3 radical. CF3 adds to the acrylamide, the resulting C-radical undergoes intramolecular aryl cyclization, and the cyclohexadienyl intermediate is rearomatized by anodic oxidation/deprotonation to the oxindole.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Only trace of 3a under standard conditions with 3.0 equiv BHT, supporting a radical pathway."
+    },
+    {
+      "name": "Br2 (stoichiometric)",
+      "smiles": "BrBr",
+      "purpose": "intermediate_trap",
+      "observation": "1a + CF3SO2Na with 1.2 equiv Br2 in CH3CN at 75 °C gave only trace product (no electrolysis), showing Br2 alone is insufficient."
+    },
+    {
+      "name": "CF3SO2Br (4, isolated/used stoichiometrically)",
+      "smiles": "O=S(=O)(Br)C(F)(F)F",
+      "purpose": "stoichiometric_intermediate",
+      "observation": "Thermal reaction of 1a with 4 in CH3CN/75 °C gave 3a in 44%; under standard electrolysis with 4, 72% was obtained, confirming 4 as a key intermediate."
+    },
+    {
+      "name": "divided-cell test (anodic compartment)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only 10% of 3a in the anodic compartment vs 14 (undivided) showing the cathode is required for CF3 radical formation."
+    },
+    {
+      "name": "divided-cell test (cathodic compartment with 4)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "1a + 4 in the cathodic compartment gave 3a in 38%, confirming cathodic reduction of 4 generates CF3 radical."
+    },
+    {
+      "name": "cyclic voltammetry of n-Bu4NBr, CF3SO2Na, CF3SO2Br",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Br- oxidations at 0.85 and 1.11 V vs Ag/AgNO3 (lower than CF3SO2Na at 1.39 V); catalytic current with CF3SO2Na and a new reduction peak at ~0.48 V matching CF3SO2Br reduction."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors emphasize that bromide mediation keeps the steady-state CF3 radical concentration low, suppressing decomposition. Both the O-centered (6, from 5) and S-centered (7, from 4) CF3SO2 radicals are proposed to converge to CF3 radical via SO2 loss; the two are presented as parallel branches rather than competing mechanisms. N-H acrylamide (3f), N-acetyl (3g), and p-NO2 (3k) substrates failed, suggesting electronic/steric limits on the radical cyclization/oxidation step."
+}

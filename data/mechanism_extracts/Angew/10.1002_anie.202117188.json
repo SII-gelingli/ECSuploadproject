@@ -1,0 +1,80 @@
+{
+  "doi": "10.1002_anie.202117188",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Rhodium(III)-catalyzed electrooxidative C8–H alkenylation of 1-naphthols (and hydroxyquinolines) with styrenes under anodic conditions",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anode reoxidizes the reduced Rh(II) species (and Rh(III)→Rh(IV) en route to reductive elimination), generating H2 at the cathode; electricity acts beyond a simple sacrificial oxidant, with current-dependent rate indicating turnover-limiting electron transfer",
+  "key_intermediates": [
+    {
+      "name": "Cp*Rh(OPiv)2 / L-Rh(OPiv) active catalyst (species A precursor)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Five-membered peri-cyclorhodated naphtholate rhodacycle A (Cp*Rh(III) bound via O and C8)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Styrene π-coordinated Rh(III) complex B",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Seven-membered alkyl–Rh(IV) rhodacycle C (after migratory insertion and anodic oxidation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cp*Rh(II) species D (post β-H elimination, prior to anodic reoxidation)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Rh(III) carboxylate performs concerted metalation–deprotonation at C8 of deprotonated 1-naphthol to form a rhodacycle; after styrene coordination and migratory insertion, anodic oxidation lifts Rh(III) to Rh(IV), enabling facile reductive elimination/β-H elimination to release the alkenylated product and Rh(II), which is reoxidized at the anode while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": "Turnover-limiting single-electron transfer (anodic oxidation of the Rh intermediate), supported by strong current dependence and negligible KIE",
+  "probe_reagents": [
+    {
+      "name": "D2O co-solvent (H/D exchange on 1-naphthol 1a)",
+      "smiles": "[2H]O[2H]",
+      "purpose": "H/D_labeling",
+      "observation": "Reversible C8 and C2 H/D scrambling with Rh catalyst (no alkene); only C2 scrambling without Rh; with alkene 2a, irreversible C–C bond formation and selective C8 functionalization"
+    },
+    {
+      "name": "Deuterated 1-naphthol (KIE study with 2e)",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "kH/kD ≈ 1.1, indicating C–H metalation is fast and not rate-limiting"
+    },
+    {
+      "name": "Competition alkenes 2a (Me) vs 2m (CF3)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "3aa:3am = 1.00:2.33, electron-poor alkene preferred"
+    },
+    {
+      "name": "Variable current (CCE = 2, 4, 6 mA)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Reaction rate scales strongly with current (ρ = 0.074, 0.102, 0.183), consistent with turnover-limiting ET"
+    },
+    {
+      "name": "Stoichiometric Rh(III) (50 mol%) with 1a + 2l, no current",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "Product 3al obtained in only 40% yield, showing electricity has a role beyond sacrificial oxidation"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "kinetic_order",
+    "stoichiometric_intermediate",
+    "DFT"
+  ],
+  "evidence_strength": "strong",
+  "notes": "DFT (PW6B95-D4/def2-TZVP+SMD(i-PrOH)//PBE0-D3BJ/def2-SVP) compared Rh(III)/Rh(I) vs Rh(IV)/Rh(II) reductive elimination manifolds; the Rh(IV/II) pathway is preferred by 2.1 kcal/mol and gives a more stable Rh(II) intermediate (17.7 kcal/mol). The alternative Rh(III)/Rh(I) RE pathway is disfavored. Substrate 1d gave oxa-Michael and oxidative C–H/O–H cyclization products (pyranoquinolines 6) instead of alkenylation, indicating a competing cyclization pathway with hydroxyquinolines."
+}

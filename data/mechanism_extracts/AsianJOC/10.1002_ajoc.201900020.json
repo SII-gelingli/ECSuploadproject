@@ -1,0 +1,37 @@
+{
+  "doi": "10.1002_ajoc.201900020",
+  "journal": "AsianJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical fluoroalkynylation of aryl alkenes using fluoride ions and alkynyltrifluoroborate salts to give propargylic fluorides",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "radical_cation",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of the aryl alkene to a radical cation; cathodic reduction of HF to H2 and F-",
+  "key_intermediates": [
+    {
+      "name": "alkene radical cation (I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical from alkynyltrifluoroborate addition (II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation (III) after second SET oxidation",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode performs one-electron oxidation of the aryl alkene to a radical cation (I), which is trapped by the alkynyltrifluoroborate to give a C-centered radical (II); a second anodic SET oxidizes II to benzylic carbocation III, which is selectively captured by fluoride (delivered from cathodic reduction of HF) rather than by the bulky organotrifluoroborate, giving the propargylic fluoride.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "none"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism proposed by analogy to the authors' previous work (ref 12); no radical traps, CV, KIE, or DFT reported in this communication. Selectivity for F- vs organotrifluoroborate attack on cation III is rationalized by steric demand. A minor side product (1,2-difluoroethane-1,1-diyl)dibenzene (9:1 with 20) suggests competing difluorination via the same cation intermediate."
+}

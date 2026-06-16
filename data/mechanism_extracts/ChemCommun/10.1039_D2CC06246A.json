@@ -1,0 +1,68 @@
+{
+  "doi": "10.1039_D2CC06246A",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical anti-Markovnikov azidoacetamidation of styrenes with TMSN3 and MeCN to give vicinal azidoacetamides via a β-azido Ritter intermediate",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "radical_cation",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of the styrene to a radical cation, followed by a second anodic oxidation of the β-azido benzylic radical to a benzyl cation",
+  "key_intermediates": [
+    {
+      "name": "styrene radical cation (A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-azido benzylic C-centered radical (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-azido benzyl cation (C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-azido nitrilium / Ritter intermediate (D)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-azido benzyl alcohol from water trapping (E)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "The anode oxidizes styrene to a radical cation, which is trapped by TMSN3 to give a β-azido benzylic radical; a second anodic oxidation generates a benzyl cation that is intercepted by MeCN to form a Ritter nitrilium, and hydrolysis delivers the vicinal azidoacetamide. Protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "vinylcyclopropane radical clock (substrate 30)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring-opened allyl-azide/acetamide product 31 obtained in 17% (4.4:1), consistent with a carbon radical intermediate"
+    },
+    {
+      "name": "chemical oxidants (NFSI, TBHP, CAN, m-CPBA, DDQ, PhI(OAc)2, AgNO3)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "None reproduced the anodic reaction (product n.d. except trace); only the anode gave 56% of 10, supporting a specifically electrochemical oxidation pathway"
+    },
+    {
+      "name": "cyclic voltammetry of styrene, TMSN3, and product 3",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Styrene Ep/2 = 1.92 V is oxidized preferentially over TMSN3 (no oxidation peak); product 3 (Ep/2 = 0.95 V) is more easily oxidized than starting material, explaining overoxidation/lower yields"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "A competing pathway diverts the benzyl cation (C) to a β-azido alcohol (E) via water trapping instead of MeCN; this is the main off-pathway side product. The CV result (alkene oxidized, not azide) contradicts the authors' earlier HFIP-mediated azidotetrazolation work where TMSN3 was oxidized first, indicating a switch from azide-radical addition to alkene-radical-cation initiation under these conditions."
+}

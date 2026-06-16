@@ -1,0 +1,107 @@
+{
+  "doi": "10.1002_anie.202207059",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical mediator-induced intermolecular selective (3+2) annulation of allylmalonates with alkynes/alkenes to give cyclopentene/cyclopentane derivatives via radical intermediates",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of mediator (I- to I• or Cp2Fe to Cp2Fe+); the oxidized mediator then performs SET on deprotonated allylmalonate to generate a C-centered radical, while H2/methoxide or water is generated at the cathode",
+  "key_intermediates": [
+    {
+      "name": "iodine radical (I•) or ferrocenium (Cp2Fe+) mediator",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "malonyl carbon radical A from allylmalonate after deprotonation/SET",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkenyl/vinyl radical B from addition of A to phenylacetylene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclopentenyl carbon radical C (5-exo cyclization product)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclohexenyl radical D (6-endo cyclization product, thermodynamic)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "dimethyl 2-allyl-2-iodomalonate 1a-I (putative ionic intermediate)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes I- to I• (or Cp2Fe to Cp2Fe+); the oxidized mediator removes an electron from the base-deprotonated allylmalonate to form malonyl radical A, which adds to the alkyne to give vinyl radical B, undergoes kinetically favored 5-exo-trig cyclization onto the pendant alkene to give cyclopentenyl radical C, which is trapped by I• (path a, NaI system) or abstracts H from solvent/1,4-CHD (path b, Cp2Fe system); the cathode reduces protons/methanol to H2 and methoxide.",
+  "rate_determining_step": "Addition of malonyl radical A to phenylacetylene to give vinyl radical B (DFT barrier 14.6 kcal/mol); regioselectivity is set by the kinetically preferred 5-exo-trig cyclization TS-2 vs higher-barrier 6-endo TS-3",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction almost completely inhibited in both NaI and Cp2Fe systems; trace TEMPO adduct detected by GC-MS"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited; no adduct detected"
+    },
+    {
+      "name": "N-iodosuccinimide (NIS)",
+      "smiles": "O=C1CCC(=O)N1I",
+      "purpose": "intermediate_trap",
+      "observation": "No product 7 formed with or without electricity, ruling out I+ as the active species"
+    },
+    {
+      "name": "I2",
+      "smiles": "II",
+      "purpose": "intermediate_trap",
+      "observation": "No product 7 formed with or without electricity, ruling out molecular I2"
+    },
+    {
+      "name": "dimethyl 2-allyl-2-iodomalonate (1a-I)",
+      "smiles": "C=CCC(I)(C(=O)OC)C(=O)OC",
+      "purpose": "intermediate_trap",
+      "observation": "No annulation under standard conditions; only 14% yield when added to anode in divided cell, ruling out 1a-I as a key intermediate"
+    },
+    {
+      "name": "ethyl 2-((phenylsulfonyl)methyl)acrylate",
+      "smiles": "C=C(C(=O)OCC)CS(=O)(=O)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Trapped alkyl radical C addition product detected by HRMS in Cp2Fe system"
+    },
+    {
+      "name": "2-methylthiophene",
+      "smiles": "Cc1ccc(s1)",
+      "purpose": "intermediate_trap",
+      "observation": "Trapped radical C arylation product detected by HRMS"
+    },
+    {
+      "name": "1a-D (deuterated allylmalonate)",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "Only non-deuterated product 75 detected; 75-D not observed, indicating the exocyclic methyl H comes from solvent/1,4-CHD rather than from 1a"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "H/D_labeling",
+    "cyclic_voltammetry",
+    "EPR",
+    "DFT",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two mediator systems give complementary products: NaI affords iodo-cyclopentenes (path a, I• traps radical C); Cp2Fe with 1,4-CHD as H-source affords protodemetalated cyclopentenes (path b, HAT from 1,4-CHD/solvent). DFT shows the 6-endo TS-3 leads to thermodynamically more stable D but has a 5.8 kcal/mol higher barrier than 5-exo TS-2, so selectivity is kinetic. CV confirms catalytic current of mediator + 1a + base. EPR signal (g=2.0073, AαN=14.30 G, AβH=23.60 G) supports a trapped carbon radical."
+}

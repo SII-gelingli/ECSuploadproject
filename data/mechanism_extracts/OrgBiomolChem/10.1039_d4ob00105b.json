@@ -1,0 +1,99 @@
+{
+  "doi": "10.1039_d4ob00105b",
+  "journal": "OrgBiomolChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical anti-Markovnikov hydroxyselenylation of aryl allyl ethers/allyl benzoates with diaryl diselenides to give β-hydroxy selenides under additive-free constant-current electrolysis",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of diphenyl diselenide (PhSeSePh) at graphite anode to generate phenylselenyl radical and phenylselenyl cation via a diselenide radical cation; cathode (Pt) reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "diphenyl diselenide radical cation [PhSe-SePh]•+ (I)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl radical PhSe• (II)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenyl cation PhSe+ (III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-(phenylselanyl) carbon radical adduct (IV) from PhSe• addition to allyl ether",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-(phenylselanyl) benzylic/secondary carbocation (V) after one-electron anodic oxidation of IV",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-hydroxy selenide product 3 after water addition to V",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes PhSeSePh to a diselenide radical cation that fragments into PhSe• and PhSe+; PhSe• adds to the terminal alkene of the allyl ether generating a carbon radical, which is further anodically oxidized to a carbocation; water (present in CH3CN, ~10 equiv by Karl Fischer) attacks the cation to deliver the β-hydroxy selenide while protons are reduced at the Pt cathode to H2.",
+  "rate_determining_step": "Anodic oxidation of diphenyl diselenide (Ep ≈ 1.40 V vs Ag/AgCl, lower than substrate at 1.75 V) initiates the cycle and is implicated as the triggering step",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3 obtained in only 20% yield; TEMPO–PhSe adduct 59 ([M+H]+ = 314.1004) and TEMPO-trapped selenylated alkyl adduct 60 ([M+H]+ = 462.1906) detected by HRMS, supporting Se- and C-centered radical intermediates"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "3 formed in 35%; BHT-trapped product 61 ([M+H]+ = 525.2287) detected by HRMS"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Only trace 3; PhSe-DPE radical adduct 62 ([M+H]+ = 337.0473) detected, confirming PhSe•"
+    },
+    {
+      "name": "PhSeCl",
+      "smiles": "Cl[Se]c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Gave product 3 in 30%, consistent with PhSe+ as a competent intermediate"
+    },
+    {
+      "name": "diphenyl disulfide (PhSSPh)",
+      "smiles": "S(Sc1ccccc1)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "No sulfur analogue 65 formed (0%), indicating S-S does not behave like Se-Se under these conditions"
+    },
+    {
+      "name": "O2 (balloon)",
+      "smiles": "O=O",
+      "purpose": "other",
+      "observation": "Reaction still produced 3 in 95% with no α-seleno carbonyl byproduct, ruling out molecular O2 as the oxygen source"
+    },
+    {
+      "name": "H2O (Karl Fischer titration)",
+      "smiles": "O",
+      "purpose": "isotope_label",
+      "observation": "~10 equiv water detected in CH3CN, identified as the source of the hydroxyl group in 3"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Cyclic voltammetry shows 2a (PhSeSePh) oxidizes at 1.40 V while 1a oxidizes at 1.75 V, supporting that the diselenide—not the alkene—is oxidized first (distinct from a substrate-radical-cation pathway). PhSeCl serves as a competent PhSe+ surrogate giving 3 in 30%, supporting cation pathway V→3, while PhSSPh fails, indicating Se-specific reactivity. Water (adventitious from CH3CN) is the verified O source rather than O2."
+}

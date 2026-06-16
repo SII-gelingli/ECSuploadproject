@@ -1,0 +1,97 @@
+{
+  "doi": "10.1039_d5gc02319j",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical Fe-catalyzed three-component radical difunctionalization of olefins with hydrazine carboxylates and heteroarenes (quinoxalin-2(1H)-ones) to give beta-heteroarylated esters",
+  "mechanism_family": [
+    "radical_anodic",
+    "electrocatalysis_inner_sphere",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anode oxidizes Fe(II) to Fe(III); Fe(III) mediator oxidizes hydrazine carboxylate (3a) to generate a methoxycarbonyl radical (with loss of N2 and H+); cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "methoxycarbonyl radical (from hydrazine carboxylate after -N2, -H+)",
+      "smiles": "[CH]([O])OC",
+      "role": "reactive"
+    },
+    {
+      "name": "Fe(III) catalyst (oxidized form, mediator)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Fe(II) catalyst (resting/reduced form)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "alkyl C-radical B (methoxycarbonyl radical addition adduct on 1-pentene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "N-centered radical adduct C (after C-radical addition to quinoxalinone 2a)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TEMPO-trapped methoxycarbonyl adduct (78)",
+      "smiles": "CC1(C)CCCC(C)(C)N1OC(=O)OC",
+      "role": "off_pathway"
+    },
+    {
+      "name": "DPE-trapped diphenyl alkene adduct (79)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "TEMPO-trapped alkyl radical adduct (80)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the anode Fe(II) is oxidized to Fe(III), which oxidizes hydrazine carboxylate 3a to a methoxycarbonyl radical (releasing N2 and H+); this radical adds to the olefin to give alkyl radical B, which adds to quinoxalinone 2a to give N-radical C; Fe(III) then oxidizes C and deprotonation rearomatizes to product 4, while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": "Oxidation of methoxycarbonyl-radical addition adduct B over TS_B-C (DFT barrier ~6.90 kcal/mol from B; initial olefin addition TS_A-B at ~12.81 kcal/mol is highest)",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction fully inhibited; TEMPO-methoxycarbonyl adduct 78 and TEMPO-alkyl adduct 80 detected by HRMS, confirming methoxycarbonyl and C-centered radicals"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction inhibited, supporting radical mechanism"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Reaction inhibited; DPE-radical adduct 79 detected by HRMS"
+    },
+    {
+      "name": "Fe(OAc)2 / substrates CV",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "E1/2(ox) Fe(OAc)2 = 1.0 V vs AgCl, lower than olefin (2.15 V), heteroarene (1.92 V) and hydrazine carboxylate (1.2 V); Fe(III)/Fe(II) reduction (-0.52 V) is less negative than 3a reduction (-0.65 V), so Fe(III) can oxidize 3a"
+    },
+    {
+      "name": "DTBP / AIBN / BPO (thermal oxidants)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Ineffective under heating, showing electrocatalysis is essential rather than a simple radical initiator"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "DFT"
+  ],
+  "evidence_strength": "strong",
+  "notes": "DFT profile (Fig. 5c) supports stepwise radical addition: A (methoxycarbonyl radical + olefin) -> B (-9.69 kcal/mol) -> C (-12.28) -> 4 (-60.24); proton reduction to H2 at cathode closes the redox balance. Control with common thermal radical initiators failed, highlighting the unique role of the electrochemical Fe(III)/Fe(II) cycle."
+}

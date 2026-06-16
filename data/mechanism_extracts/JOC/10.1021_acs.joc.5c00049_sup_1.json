@@ -1,0 +1,44 @@
+{
+  "doi": "10.1021_acs.joc.5c00049_sup_1",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical bromocyclization of N-tosyl alkynyl alkenes mediated by an aryl iodide catalyst to form bromo-substituted pyrrolidine/heterocyclic products.",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of [C2MPr]Br (ammonium bromide electrolyte) occurs first (Eox ≈ 1.21 V) to generate Br radical species; the aryl iodide (p-Tol-I) likely acts as a redox mediator. Cathode reduces protons/solvent.",
+  "key_intermediates": [
+    {
+      "name": "bromine radical (Br•) from anodic oxidation of bromide",
+      "smiles": "[Br]",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical from Br• addition to alkene/alkyne of substrate 1a",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "hypervalent aryl-iodine species from p-Tol-I oxidation (proposed mediator)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes bromide (and/or aryl iodide mediator) to generate a Br-centered radical, which adds to the alkyne/alkene of substrate 1a; the resulting carbon radical undergoes intramolecular cyclization and is terminated by a second bromine atom transfer to give the dibrominated heterocycle.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Addition of 10 equiv DPE under standard conditions completely suppressed formation of product 2a (N.R.), consistent with a free-radical pathway."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "CV shows oxidation of [C2MPr]Br (~1.21 V) is easier than that of 4-iodotoluene (~2.09 V) and substrate 1a, indicating bromide is oxidized first at the anode; the aryl iodide may still act as a redox mediator under turnover conditions. Radical trapping with DPE is suggestive but, as the authors note, inconclusive on its own."
+}

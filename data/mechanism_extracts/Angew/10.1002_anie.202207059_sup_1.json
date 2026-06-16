@@ -1,0 +1,62 @@
+{
+  "doi": "10.1002_anie.202207059_sup_1",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical iodo-carbocyclization of dimethyl 2-allylmalonate with ethynylbenzene to give an iodo-substituted cyclopentene bearing a phenyl group, mediated by an electrogenerated iodine species in a divided cell.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (from NaI or NIS) to an electrophilic/radical iodine species that initiates radical addition to the alkyne; the cathode reduces protons/HOAc, not the iodomalonate intermediate (as shown by the divided-cell control with NIS giving no product).",
+  "key_intermediates": [
+    {
+      "name": "α-carbon radical of dimethyl 2-allylmalonate (malonyl radical)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "vinyl radical from iodine-radical addition to phenylacetylene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "iodomalonate (putative)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "cyclopentene product bearing CH2I and Ph",
+      "smiles": "COC(=O)C1(C(=O)OC)CC(CI)C(=C1)c1ccccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes iodide to I• (or I+), which adds to phenylacetylene to generate a vinyl radical; intramolecular/intermolecular radical cyclization with the allylmalonate forms a carbocyclic C-radical that abstracts/couples with iodine to give the iodo-cyclopentene; cathode reduces HOAc/protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Added as control to test radical intermediacy in the divided-cell reaction."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Added as control to test radical intermediacy."
+    },
+    {
+      "name": "NIS (as putative iodomalonate precursor in divided cell)",
+      "smiles": "O=C1CCC(=O)N1I",
+      "purpose": "intermediate_trap",
+      "observation": "In divided cell with NIS instead of NaI, no target product was detected, indicating reduction of an iodomalonate intermediate at the cathode is NOT on the productive pathway."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Divided-cell experiment with NIS gave no product (n.d.), while the analogous divided-cell run with NaI gave 14% yield, supporting an anodic iodide-oxidation pathway rather than cathodic reduction of an iodomalonate. Page also documents the H-type divided cell apparatus (Figure S1)."
+}

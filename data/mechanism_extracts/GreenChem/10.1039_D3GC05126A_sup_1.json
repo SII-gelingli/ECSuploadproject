@@ -1,0 +1,45 @@
+{
+  "doi": "10.1039_D3GC05126A_sup_1",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical epoxidation of styrenes and aliphatic alkenes using (TMP)MnCl catalyst with H2O as oxygen source under constant current electrolysis",
+  "mechanism_family": [
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation of Mn(III) catalyst to a high-valent Mn-oxo species using H2O as the oxygen atom source; the Mn-oxo then transfers oxygen to the alkene",
+  "key_intermediates": [
+    {
+      "name": "(TMP)Mn(III)Cl precatalyst",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "high-valent Mn-oxo (Mn(V)=O or Mn(IV)=O) species derived from H2O",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "styrene oxide product/epoxide-bound Mn",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, the (TMP)Mn(III) catalyst is oxidized in the presence of H2O (and pyridine base) to generate a high-valent Mn-oxo intermediate; this electrophilic oxo transfers its oxygen atom to the alkene to give the epoxide, regenerating the lower-valent Mn for re-oxidation at the anode. Protons are reduced at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "H2-18O (isotope-labeled water)",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "GC-MS analysis of epoxide product from electrolysis with H2-18O confirms that the oxygen atom incorporated into the epoxide originates from water (Figure S1)"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "isotope_label",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Only the isotope-labeling page is shown here; full mechanistic picture (e.g., CV, radical traps, DFT) may appear elsewhere in the SI. The scale-up (3 mmol, 71% yield) confirms practicality. Pyridine likely serves as an axial ligand/base assisting Mn-oxo formation."
+}

@@ -1,0 +1,66 @@
+{
+  "doi": "10.1002_adsc.202401522",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical catalyst-free radical 1,2-alkylarylation of allylic alcohols with malonate-type C–H nucleophiles bearing two or three EWGs, via umpolung of the C–H nucleophile to an electrophilic carbon radical followed by neophyl-type aryl migration.",
+  "mechanism_family": [
+    "radical_anodic",
+    "paired_electrolysis",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of the deprotonated malonate carbanion to a tertiary carbon radical; cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "malonate-derived carbanion (38) from base deprotonation of 2a",
+      "smiles": "CCOC(=O)[C-](C(=O)OCC)C(=O)OCC",
+      "role": "reactive"
+    },
+    {
+      "name": "tertiary electrophilic carbon radical (39) after anodic SET",
+      "smiles": "CCOC(=O)[C](C(=O)OCC)C(=O)OCC",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic/homoallylic C-radical adduct (40) from radical addition of 39 to allylic alcohol 1a",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "spirocyclohexadienyl radical (41) from intramolecular aryl ipso-cyclization (neophyl rearrangement)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "rearranged tertiary carbon radical / α-hydroxy benzyl-type species (42) after aryl migration",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ketone product 3 after electron-proton transfer (oxidation of 42)",
+      "smiles": "CCOC(=O)C(C(=O)OCC)(C(=O)OCC)CC(=O)c1ccccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Na2CO3 deprotonates the triester 2a to carbanion 38, which is oxidized at the graphite anode (single electron) to tertiary C-radical 39; 39 adds to allylic alcohol 1a giving radical 40, which undergoes ipso-radical cyclization onto the aryl group to spirocyclohexadienyl radical 41, ring-opens via aryl 1,2-migration to 42, and a final anodic electron-proton transfer delivers ketone 3 while the Ni-foam cathode reduces 2H+ to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of 1a vs 2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No oxidation peak for allylic alcohol 1a within the CV window; 2a shows clear oxidation around 1.1 V vs Ag/AgNO3, supporting preferential anodic oxidation of the malonate component."
+    },
+    {
+      "name": "electron-poor vs electron-rich aryl migration selectivity (products 22–25)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Preferential migration of more electron-poor aryl groups is consistent with a radical (neophyl-type) rearrangement mechanism rather than a cationic one."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "No TEMPO/BHT trapping, KIE, or DFT reported on these pages; mechanistic support rests on CV (selective oxidation of malonate) and the aryl-migration electronic trend characteristic of radical neophyl rearrangement. 2-Arylmalonates failed, suggesting steric/electronic limits on carbanion oxidation or radical addition. Cathodic H2 evolution makes this effectively a paired electrolysis."
+}

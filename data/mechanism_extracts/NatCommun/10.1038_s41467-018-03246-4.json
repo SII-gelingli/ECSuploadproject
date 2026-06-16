@@ -1,0 +1,81 @@
+{
+  "doi": "10.1038_s41467-018-03246-4",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Cobalt-catalyzed electrooxidative dehydrogenative C-H/N-H [4+2] annulation of aromatic/vinyl amides with ethylene or ethyne to give dihydroisoquinolinones/isoquinolinones",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of substrate-coordinated Co(II) complex to Co(III) (and later Co(I) to Co(II)) regenerates the active high-valent cobalt catalyst, replacing a chemical oxidant",
+  "key_intermediates": [
+    {
+      "name": "Co(II)-amide complex (bidentate N,N-coordinated, 8-aminoquinoline directing group) - complex A",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Co(III)-amide complex B formed by anodic oxidation of A",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cyclic Co(III) metallacycle C after C-H activation (CMD with pivalate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(III) alkyl intermediate D after ethylene insertion",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Co(I) species after reductive elimination, reoxidized at anode to Co(II)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Co(II) binds the bidentate amide with pivalate assistance; the anode oxidizes this Co(II) complex to Co(III), which performs intramolecular C-H activation (CMD with pivalate); ethylene/ethyne insertion followed by C-N reductive elimination releases product and Co(I), which is re-oxidized at the anode to Co(II); protons are reduced at the cathode to H2.",
+  "rate_determining_step": "Electrochemical oxidation of the coordinated Co(II) complex to Co(III) (C-H cleavage is kinetically relevant but not rate-determining; only secondary KIE in parallel experiments)",
+  "probe_reagents": [
+    {
+      "name": "[D5]-1a (pentadeuterio benzamide) intermolecular competition",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "3aa:[D4]-3aa = 3.5:1 in intermolecular competition, indicating C-H cleavage is kinetically relevant"
+    },
+    {
+      "name": "[D5]-1a parallel reactions",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "kH/kD = 1.4 (small, secondary); C-H cleavage is a slow step but not rate-determining"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, Co(acac)2, and mixture",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "1a oxidation at 1.47 V; Co(acac)2 at 1.12 and 1.53 V; Co(acac)2+1a shows stronger peak at 1.13 V indicating Co(II) is oxidized first; potential-controlled electrolysis at 1.13 V gave 3aa in 70% yield"
+    },
+    {
+      "name": "Kinetic order studies (variation of [1a], [NaOPiv], [Co], current)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Rate independent of [1a], [NaOPiv], and [Co]; rate depends on current, indicating electrochemical oxidation is rate-limiting"
+    },
+    {
+      "name": "GC headspace analysis",
+      "smiles": "[HH]",
+      "purpose": "other",
+      "observation": "Large amount of H2 detected, confirming cathodic proton reduction"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "cyclic_voltammetry",
+    "kinetic_order",
+    "redox_probe"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors invoke prior EXAFS evidence (ref 31) that anodic oxidation of Co(acac)2 generates Co(III). Pivalate (HOPiv/NaOPiv) acts as CMD base for C-H activation. 8-Aminoquinoline (Q) bidentate directing group is essential. Induction period observed in most runs. Cathodic half-reaction is H2 evolution."
+}

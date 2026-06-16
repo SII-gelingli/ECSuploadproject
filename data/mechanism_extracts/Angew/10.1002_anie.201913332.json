@@ -1,0 +1,76 @@
+{
+  "doi": "10.1002_anie.201913332",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical four-component 1,2-difunctionalization of arylalkenes with carboxylic acids, acetonitrile, and alcohols to give functionalized imides via in situ O-acyl isoamide formation and Mumm rearrangement",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_polar_crossover",
+    "paired_electrolysis",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of styrene to a radical cation initiates the cascade; cathodic reduction of methanol and benzoic acid generates methoxide and carboxylate nucleophiles plus H2",
+  "key_intermediates": [
+    {
+      "name": "styrene radical cation A",
+      "smiles": "[CH2][CH+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "beta-methoxy benzyl radical B",
+      "smiles": "COC[C](c1ccccc1)",
+      "role": "transient"
+    },
+    {
+      "name": "beta-methoxy benzyl cation C",
+      "smiles": "COC[CH+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "nitrilium ion D (Ritter-type) from MeCN trapping",
+      "smiles": "COCC(c1ccccc1)[N+]#CC",
+      "role": "reactive"
+    },
+    {
+      "name": "O-acyl isoamide E (acyloxy imidate)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "imide product F/3aa (after Mumm rearrangement)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes styrene to radical cation A; methoxide (from cathodic reduction of MeOH) adds to give benzyl radical B, which is further oxidized at the anode to cation C; MeCN traps C as nitrilium D, which is captured by carboxylate (from cathodic reduction of ArCOOH) to form O-acyl isoamide E that undergoes 1,3-(O->N) Mumm rearrangement to the imide.",
+  "rate_determining_step": "Not the methoxy or acetonitrile incorporation step (excluded by KIE experiments); likely initial anodic oxidation of styrene",
+  "probe_reagents": [
+    {
+      "name": "CD3OD",
+      "smiles": "[2H]C([2H])([2H])O[2H]",
+      "purpose": "KIE",
+      "observation": "Parallel reaction with CH3OH/CD3OD (1:1) gave 3ao/d3-3ao = 1:1, indicating methoxy incorporation is not rate-determining"
+    },
+    {
+      "name": "CD3CN",
+      "smiles": "[2H]C([2H])([2H])C#N",
+      "purpose": "KIE",
+      "observation": "Parallel reaction with CH3CN/CD3CN (1:1) gave 3ao/d3-3ao = 1:1, indicating MeCN incorporation is not rate-determining"
+    },
+    {
+      "name": "18O-labeled 4-chlorobenzoic acid",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "18O is incorporated into the imide oxygen of [18O]-3ak, confirming the acyl-O-to-N migration (Mumm rearrangement) pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "isotope_label",
+    "cyclic_voltammetry",
+    "KIE",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "CV showed styrene has the lowest oxidation potential (1.60 V vs SCE), supporting direct anodic oxidation of the alkene rather than the acid or alcohol as the initiating event. The key novelty is electrochemical generation of an otherwise unstable O-acyl isoamide intermediate that spontaneously undergoes Mumm 1,3-acyl O->N migration."
+}

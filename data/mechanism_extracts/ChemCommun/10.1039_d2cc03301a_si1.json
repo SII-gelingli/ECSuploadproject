@@ -1,0 +1,50 @@
+{
+  "doi": "10.1039_d2cc03301a_si1",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical cyclization of N-aryl acrylamides with polyhalomethanes (e.g., BrCHCl2, CH2I2) to give 3,3-disubstituted oxindoles bearing haloalkyl groups",
+  "mechanism_family": [
+    "radical_cathodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic reduction of the polyhalomethane (e.g., Br-CHCl2) generates a haloalkyl radical (·CHCl2) via C-Br bond cleavage; this radical adds to the acrylamide alkene, and the resulting C-centered radical cyclizes onto the arene to form the oxindole after rearomatization",
+  "key_intermediates": [
+    {
+      "name": "dichloromethyl radical (·CHCl2)",
+      "smiles": "[CH](Cl)Cl",
+      "role": "reactive"
+    },
+    {
+      "name": "tertiary C-radical from radical addition to acrylamide alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexadienyl radical after ipso/ortho cyclization onto arene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "3,3-disubstituted oxindole product (e.g., compound 3)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces the C-X bond of the polyhalomethane to release a haloalkyl radical; this radical adds across the acrylamide C=C, the resulting α-amido carbon radical undergoes intramolecular homolytic aromatic substitution onto the N-aryl ring, and anodic oxidation/deprotonation rearomatizes the cyclohexadienyl radical to deliver the oxindole.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction yield drops from 78% to <2% in the presence of 5 equiv TEMPO, consistent with a radical pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "isolation_of_intermediate",
+    "H/D_labeling"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Radical trapping with TEMPO essentially shuts down the reaction, supporting radical intermediates. Cyclization products bearing CH2I (compound 39) and CHCl2 (compound 3) were isolated, and a deuterated analogue (compound 48) was prepared en route to deuterated Lansai B, providing isotope-labeling support for the proposed radical addition/cyclization sequence."
+}

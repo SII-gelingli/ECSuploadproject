@@ -1,0 +1,100 @@
+{
+  "doi": "10.1039_d1sc00760b",
+  "journal": "ChemSci",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical syn-diformyloxylation (protected syn-1,2-diol formation) of vinylarenes using DMF as the oxygen/formyl source and TFA as a co-nucleophile under undivided-cell anodic oxidation.",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_polar_crossover",
+    "direct_SET",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the vinylarene to a benzylic-stabilized alkene radical cation (Eox ~1.15-1.75 V vs SCE); a second anodic SET oxidizes the β-DMF-adduct radical to a benzylic carbocation. TFA/TFA- couple at the cathode produces H2 and regenerates TFA.",
+  "key_intermediates": [
+    {
+      "name": "alkene radical cation (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-(N,N-dimethyl-iminium-oxy) benzylic radical (C) from nucleophilic addition of DMF oxygen to radical cation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation (D) formed by second anodic SET oxidation of C",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "trifluoroacetoxy-iminium adduct (E/F, isolable) — major path via TFA- capture of D",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "stereoinverted carbocation/iminium intermediate (G) leading to syn-product via DMF attack with stereoinversion",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-trifluoroacetoxy iminium F (isolable on-pathway intermediate)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "anti-product H' (minor path, direct DMF attack on D)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the vinylarene to a radical cation; the carbonyl oxygen of DMF adds to the benzylic position giving an α-iminium-oxy carbon radical, which is oxidized again at the anode to a benzylic cation. Trifluoroacetate captures this cation (major path) to give an isolable α-OCOCF3 iminium that undergoes SN1-like ionization and stereoinverted nucleophilic attack by a second DMF, followed by hydrolysis with H2(18)O to deliver the syn-diformate; TFA is regenerated and protons are reduced at the Pt cathode to H2.",
+  "rate_determining_step": "Initial anodic single-electron oxidation of the vinylarene to its radical cation (alkene Eox 1.15–1.75 V; thermodynamically more accessible than DMF oxidation at 2.1 V).",
+  "probe_reagents": [
+    {
+      "name": "DMF-d7",
+      "smiles": "[2H]C(=O)N([2H])([2H])C([2H])([2H])[2H]",
+      "purpose": "isotope_label",
+      "observation": "Both formyl groups in the product are >99% deuterated, confirming that both O-CHO units originate from DMF, not from formic acid or water."
+    },
+    {
+      "name": "formic acid-d2 (DCOOD)",
+      "smiles": "[2H]C(=O)O[2H]",
+      "purpose": "isotope_label",
+      "observation": "No deuterium incorporation in product formyl groups, ruling out hydrolytically generated HCOOH as the formyl source."
+    },
+    {
+      "name": "H2(18)O",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "Doubly 18O-labeled diformate (>69%) is obtained; hydrolysis to diol removes the 18O label, showing the formyloxy oxygens (and thus the diol oxygens) originate from DMF and are only delivered via hydrolytic workup of the iminium intermediates."
+    },
+    {
+      "name": "(2-phenylcyclopropyl)-substituted vinyl (radical clock, 30)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring-opened diformyloxylation product 31 (49%) is obtained, implicating a benzylic radical intermediate."
+    },
+    {
+      "name": "cis- vs trans-β-methylstyrene (35)",
+      "smiles": "C/C=C/c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Both isomers give predominantly syn-diformate but with different dr (trans-35: 10:1; cis-35: 1:3 favoring 19'), showing partial memory of olefin geometry and supporting a stepwise cation/iminium pathway with stereoinversion at the second nucleophilic attack."
+    },
+    {
+      "name": "cyclic voltammetry of styrene 1 ± TFA ± DMF",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Styrene oxidation feature at Ep/2 ≈ 1.7 V vs SCE; DMF oxidation only at 2.1 V; no anodic shift with TFA/DMF additives, confirming direct anodic oxidation of the alkene rather than mediation through DMF."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "cyclic_voltammetry",
+    "product_isotope_distribution",
+    "isolation_of_intermediate",
+    "crossover"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two competing pathways from the benzylic cation D are proposed: a minor 'direct' path where DMF attacks D to give the anti-product H', and a major path where trifluoroacetate first traps D to form isolable α-OCOCF3 iminium F, which then ionizes and is attacked by DMF with stereoinversion to give the syn-product H. The unusual syn-selectivity (and its partial dependence on starting alkene geometry) is rationalized by this TFA-mediated SN1-with-inversion sequence rather than by a concerted cyclic intermediate as in Woodward/Prévost/OsO4 chemistry. With a 1,3-diene (32), mono-oxidation gives a 3-OCOCF3 allylic intermediate (33) which can be converted to the diformate 34 by treatment with DMF/H2O, further supporting F-type intermediates."
+}

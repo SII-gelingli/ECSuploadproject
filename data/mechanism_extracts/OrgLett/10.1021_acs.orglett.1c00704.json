@@ -1,0 +1,83 @@
+{
+  "doi": "10.1021_acs.orglett.1c00704",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,2-dichlorination of aromatic compounds and alpha,beta-unsaturated substrates using Cl3CCN as the chlorine source via paired electrolysis",
+  "mechanism_family": [
+    "paired_electrolysis",
+    "radical_cathodic",
+    "anion_initiated"
+  ],
+  "electrochemical_role": "Paired electrolysis: cathodic reduction of Cl3CCN releases a chloride anion and a neutral radical A, which is further reduced to dichloroacetonitrile anion B; at the anode, chloride (from cathode and/or from TEAC supporting electrolyte) is oxidized to molecular Cl2, which then chlorinates the substrate",
+  "key_intermediates": [
+    {
+      "name": "neutral dichloroacetonitrile radical (Cl2C*CN, intermediate A)",
+      "smiles": "[CH](Cl)(Cl)C#N",
+      "role": "transient"
+    },
+    {
+      "name": "dichloroacetonitrile anion (Cl2C(-)CN, intermediate B)",
+      "smiles": "[C-](Cl)(Cl)C#N",
+      "role": "reactive"
+    },
+    {
+      "name": "dichloroacetonitrile (Cl2CHCN, C)",
+      "smiles": "ClC(Cl)C#N",
+      "role": "transient"
+    },
+    {
+      "name": "chloroacetonitrile (ClCH2CN, D)",
+      "smiles": "ClCC#N",
+      "role": "off_pathway"
+    },
+    {
+      "name": "molecular chlorine (Cl2) generated at the anode",
+      "smiles": "ClCl",
+      "role": "reactive"
+    },
+    {
+      "name": "chloronium-like / electrophilic chlorination intermediate on aromatic (1 -> 2)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "beta-chloro carbocation/chloronium on alkene (intermediate 3)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tetraethylammonium dichloroacetonitrile salt (Et4N+ Cl2CCN-)",
+      "smiles": null,
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "At the cathode, Cl3CCN accepts an electron to release Cl- and radical A, which gains a second electron to form the dichloroacetonitrile anion B; simultaneously, at the anode, chloride (from B-derived release and from TEAC) is oxidized to Cl2, which then electrophilically chlorinates the arene or alpha,beta-unsaturated substrate to give the 1,2-dichloride product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "N-allyl-N-(2-propenyl)-p-toluenesulfonamide probe 5 (chloride vs chloride-radical probe)",
+      "smiles": "Cc1ccc(cc1)S(=O)(=O)N(CC=C)CC=C",
+      "purpose": "intermediate_trap",
+      "observation": "Tetrachlorinated open-chain product 6 isolated in 76% yield (consistent with Cl2/Cl+); the cyclized pyrrolidine product 7 (diagnostic of Cl radical) was not detected, supporting chlorine (Cl2) rather than Cl* as the active species"
+    },
+    {
+      "name": "KI-starch test (atmosphere on 1 mol scale of 1b)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Positive KI-starch response confirmed the presence of Cl2 in the reaction"
+    },
+    {
+      "name": "Cyclic voltammetry of reaction mixtures (acetyl aniline 1b and cinnamide 3a with Et4NCl / Cl3CCN)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Both mixtures share peaks at ca. -1.7 V vs SCE (reduction of Cl3CCN) and +1.8 V vs SCE (oxidation of chloride), and scans starting from either polarity give identical patterns, indicating a single dominant pathway involving cathodic reduction of Cl3CCN and anodic oxidation of Cl-"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly distinguish chlorine (Cl2) from chlorine radical using the diallylsulfonamide probe 5: trapping a Cl* would have given cyclized pyrrolidine 7, but only the open tetrachloride 6 formed, arguing against a radical-chain Cl* pathway. For alpha,beta-unsaturated substrates, 1 equiv TEAC is required because no proton is generated to recycle Cl-; the Et4N+ pairs with anion B. The chlorination step itself is described as independent of the electrochemical process (electrophilic addition of in situ Cl2), so the role of electrolysis is on-demand Cl2 generation from Cl3CCN."
+}

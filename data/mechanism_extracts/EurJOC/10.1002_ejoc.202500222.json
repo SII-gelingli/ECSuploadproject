@@ -1,0 +1,58 @@
+{
+  "doi": "10.1002_ejoc.202500222",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical cyclization of O-tethered aryl iodides (alkenyl ethers) with terephthalonitrile to access chromanes/isochromanes bearing arylated quaternary carbons, using a Mg anode and carbon cloth cathode.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "direct_SET",
+    "sacrificial_anode",
+    "radical_anion"
+  ],
+  "electrochemical_role": "Cathode reduces terephthalonitrile to its radical anion, which then mediates single-electron reduction of the aryl C–I bond to generate an aryl radical; Mg anode is sacrificially oxidized to Mg(II).",
+  "key_intermediates": [
+    {
+      "name": "terephthalonitrile radical anion (I)",
+      "smiles": "[O-]... ",
+      "role": "reactive"
+    },
+    {
+      "name": "aryl radical from C–I cleavage of O-tethered iodoarene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "exocyclic tertiary C-radical (II) after 5- or 6-exo-trig cyclization onto the tethered alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "radical-radical coupling adduct / cyclohexadienyl anion that rearomatizes by loss of CN-",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Cathode delivers one electron to terephthalonitrile to give its radical anion, which transfers an electron to the aryl iodide (the iodide has a more negative reduction potential), cleaving C–I to give an aryl radical; 5- or 6-exo-trig cyclization onto the pendant alkene forms an exocyclic alkyl radical that couples with a second terephthalonitrile radical anion, then rearomatizes by extrusion of cyanide to give the ipso-arylated product. Mg anode is sacrificially oxidized to Mg(2+).",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "TEMPO adduct 9 of the exocyclic alkyl radical detected by HRMS (<5%); TEMPO adducts 10/11 of terephthalonitrile-derived radical species also detected (<5%); reaction suppressed, supporting both aryl/alkyl C-radical and arene radical-anion intermediates."
+    },
+    {
+      "name": "Cyclic voltammetry of 2a, 1a, 4a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "E_red(2a) = -1.61 V vs Ag/AgCl, less negative than aryl iodobenzene (E_red ≈ -2.5 V), indicating preferential cathodic reduction of terephthalonitrile; reduction peak of 2a grows with increasing [1a], consistent with mediated SET from 2a•- to 1a."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Net transformation is an ipso-cyanide substitution on terephthalonitrile (loss of CN-) coupled to intramolecular aryl-radical cyclization. Selectivity for 5- vs 6-exo-trig set by tether length (m, n). Mg(II) released from the sacrificial anode likely stabilizes the cyclohexadienyl anion and/or cyanide leaving group. No DFT or KIE reported."
+}

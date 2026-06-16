@@ -1,0 +1,61 @@
+{
+  "doi": "10.1021_acs.orglett.9b00361",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Catalyst-free direct electrochemical tri- and difluoroalkylation/cyclization of N-aryl acrylamides with sodium sulfinates (CF3SO2Na, CF2HSO2Na) to access fluoroalkylated oxindoles and 3,4-dihydroquinolin-2(1H)-ones.",
+  "mechanism_family": [
+    "radical_anodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the sulfinate anion (CF3SO2- or CF2HSO2-) generates a sulfonyl radical that fragments (loss of SO2) to the fluoroalkyl radical; concurrent cathodic reduction of protons releases H2.",
+  "key_intermediates": [
+    {
+      "name": "CF3SO2• (sulfonyl radical from anodic oxidation of triflinate)",
+      "smiles": "[O]S(=O)C(F)(F)F",
+      "role": "transient"
+    },
+    {
+      "name": "CF3• fluoroalkyl radical (after desulfurative loss of SO2)",
+      "smiles": "[C](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon-centered radical 9 from CF3• addition to acrylamide alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cyclohexadienyl (aryl) radical 10 after intramolecular ipso-cyclization onto arene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Oxindole product 3 after anodic oxidation/rearomatization of 10 and deprotonation",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the sulfinate to a sulfonyl radical that loses SO2 to give CF3• (or CF2H•); the fluoroalkyl radical adds to the acrylamide alkene, the resulting C-radical cyclizes intramolecularly onto the N-aryl ring to a cyclohexadienyl radical, which is further oxidized at the anode and deprotonated to rearomatize, while protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction of 1a fully suppressed with only trace product; BHT–CF3 adduct 8 isolated and fully characterized, supporting CF3• and the radical intermediate 9."
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, 2a, 2b, and BHT",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Triflinate 2a shows lower oxidation potential than difluoromethanesulfinate 2b; acrylamide 1a is harder to oxidize than the sulfinates, consistent with anodic oxidation of sulfinate as the initiating SET step."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "isolation_of_intermediate",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly favor a SET-based radical manifold initiated by anodic oxidation of the sulfinate over any direct alkene oxidation, supported by CV showing sulfinates are oxidized at lower potential than the acrylamide substrate. The same mechanism is invoked for both CF3 and CF2H series and extends to N-arylcinnamamides giving dihydroquinolinones (no rearomatization step needed in that case)."
+}

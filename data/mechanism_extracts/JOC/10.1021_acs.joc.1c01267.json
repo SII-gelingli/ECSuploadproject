@@ -1,0 +1,80 @@
+{
+  "doi": "10.1021_acs.joc.1c01267",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical selenylation/cyclization of N-aryl acrylamides (and related alkenes) with diphenyl diselenide to access SePh-functionalized oxindoles and isobenzofuran-imines",
+  "mechanism_family": [
+    "cation_initiated",
+    "direct_SET",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of PhSeSePh (two sequential SET events) generates phenylselenium cation (PhSe+) and phenylselenium radical (PhSe•); cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "phenylselenium cation (PhSe+)",
+      "smiles": "[Se+](c1ccccc1)",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenium radical (PhSe•)",
+      "smiles": "[Se](c1ccccc1)",
+      "role": "transient"
+    },
+    {
+      "name": "seleniranium ion C (three-membered Se+ adduct on alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic/tertiary carbocation D after ring-opening with SePh on CH2",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Wheland-type oxocarbenium/iminium intermediate E from intramolecular nucleophilic attack by carbonyl/amide oxygen",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "selenylated oxindole/isobenzofuran-imine product (3a/5a)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "PhSeSePh is oxidized at the anode in two SET steps to PhSe• and PhSe+; PhSe+ adds across the alkene of the N-aryl acrylamide to form a seleniranium ion, which is opened by the pendant carbonyl/amide oxygen (intramolecular nucleophilic cyclization) to give a cationic intermediate; deprotonation furnishes the product while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Selenylation product 3a still obtained in excellent yield, suggesting the major pathway is not radical"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Did not suppress formation of 3a, consistent with a non-radical (ionic) pathway"
+    },
+    {
+      "name": "PhSeCl",
+      "smiles": "Cl[Se]c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Provided 3a in 43% yield under non-electrochemical conditions, supporting involvement of an electrophilic PhSe+ species (but does not fully exclude a radical pathway)"
+    },
+    {
+      "name": "PhSSPh",
+      "smiles": "S(Sc1ccccc1)c1ccccc1",
+      "purpose": "other",
+      "observation": "Analogous sulfurized product 9 formed in 45% yield under standard electrochemical conditions, indicating generality of the electrophilic chalcogen pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "CV showed PhSeSePh oxidizes at 1.416 V and 1.757 V (vs Ag/AgCl), both below substrate 1a (2.101 V), supporting preferential anodic oxidation of the diselenide rather than the alkene. The authors favor an ionic (seleniranium) pathway initiated by anodically generated PhSe+, but explicitly note that a radical pathway involving PhSe• addition cannot be ruled out for other substrate classes (e.g., acrylamides 4 leading to oxindoles 5)."
+}

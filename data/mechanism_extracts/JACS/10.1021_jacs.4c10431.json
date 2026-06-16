@@ -1,0 +1,115 @@
+{
+  "doi": "10.1021_jacs.4c10431",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical TEMPO-mediated dioxygenation of aryl-substituted allenes to give vinyl-TEMPO allylic alcohols (and minor diene), enabling trifunctionalization of the allene framework",
+  "mechanism_family": [
+    "mediator_anodic",
+    "electrocatalysis_outer_sphere",
+    "radical_cation",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of TEMPO to TEMPO+, which acts as an outer-sphere single-electron mediator to oxidize the allene to a vinyl radical cation (INT1); cathode generates -OH (and 1/2 H2) that hydroxylates the resulting TEMPO-allyl cation INT2",
+  "key_intermediates": [
+    {
+      "name": "TEMPO+ (oxoammonium, anodically generated mediator)",
+      "smiles": "C[C+]1(C)CCCC(C)(C)N1[O]",
+      "role": "reactive"
+    },
+    {
+      "name": "Allene vinyl/allyl radical cation INT1 (from 1, Ph-substituted)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TEMPO-trapped allyl cation INT2 (alpha-(TEMPO-oxy) allyl cation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Allylic alcohol vinyl-TEMPO product 2",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Diene vinyl-TEMPO 3 (deprotonation product, minor)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "Cathodically generated hydroxide / H2",
+      "smiles": "[OH-]",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "TEMPO is oxidized at the anode to TEMPO+, which outer-sphere oxidizes the allene to vinyl radical cation INT1; TEMPO radical traps INT1 to give the allyl cation INT2, which is hydroxylated at the benzylic carbon by cathodically generated -OH (with base) to yield allylic alcohol 2, while a competing deprotonation by lutidine/base gives diene 3.",
+  "rate_determining_step": "TEMPO+-mediated outer-sphere SET oxidation of the allene to INT1 (substrate-dependent; selectivity between 2 vs 3 controlled at the TS where TS_OH-benzyl is 2.4 kcal/mol below TS_diene)",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "intermediate_trap",
+      "observation": "Serves as mediator and radical trap; vinyl-TEMPO adduct (INT2-derived products 2 and 3) isolated, demonstrating trapping of vinyl radical/cation"
+    },
+    {
+      "name": "TEMPO+ (oxoammonium salt, preoxidized TEMPO)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Substitution of TEMPO+ for TEMPO without electrolysis gave product, confirming TEMPO+ is the active oxidant rather than direct anodic allene oxidation"
+    },
+    {
+      "name": "Acetamido-TEMPO / Bobbitt's salt (ACT+ BF4-)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Higher-oxidation-potential mediator enabled reaction of electron-poor allene 5f to give 11 in 28%, supporting mediated SET mechanism sensitive to substrate oxidation potential"
+    },
+    {
+      "name": "Hammett series of para-substituted allenes (5a-g, 12a-c)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Yields track with allene oxidation potential: electron-rich allenes (lower E_ox) react; electron-poor allenes fail, consistent with rate-limiting SET to substrate"
+    },
+    {
+      "name": "Cyclic voltammetry of 1, TEMPO, and mixture",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No new oxidation peak for 1+TEMPO mixture (no EDA complex); TEMPO+ reduction wave diminishes when potential is sufficient to oxidize 1, indicating TEMPO+ consumption by allene (outer-sphere ET)"
+    },
+    {
+      "name": "Constant-potential electrolysis at 1.0 V",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Only recovered SM after 1.25 h; 51% of 2 after 16 h, confirming TEMPO/TEMPO+ mediation rather than direct allene oxidation"
+    },
+    {
+      "name": "ReactNMR (operando 1H NMR)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Allylic alcohol 2 forms within 5 min; diene 3 appears only after 7 min, consistent with computed lower barrier for hydroxylation vs deprotonation"
+    },
+    {
+      "name": "Competition: allene 1 vs alpha-methylstyrene vs phenylpropyne",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only allene 1 reacted (52% of 2), reflecting its lowest oxidation potential (1.29 vs 1.43 vs 1.64 V) and supporting SET-controlled selectivity"
+    },
+    {
+      "name": "DFT (omegaB97XD/cc-pVTZ // M06-2X/def2-TZVP, SMD)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "TS_OH-benzyl 11.3 vs TS_diene 13.7 kcal/mol; NPA charge at C3 = 0.37 vs C1 = 0.21 explains hydroxylation regioselectivity at benzylic carbon"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_TEMPO",
+    "stoichiometric_intermediate",
+    "DFT",
+    "kinetic_order",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two pathways for INT2 access were considered: (A) direct anodic oxidation of allene to INT1 then TEMPO trap, and (B) TEMPO-mediated oxidation via outer- or inner-sphere ET. CV (no shift on mixing 1+TEMPO; loss of TEMPO+ reduction wave only when 1 can be oxidized), TEMPO+ stoichiometric competence, and constant-potential studies favor the outer-sphere TEMPO+-mediated pathway (Scheme 2B, outer-sphere). Direct oxidation (Scheme 2A) and inner-sphere EDA pathway are disfavored. Chemoselectivity between allylic alcohol 2 (Path A, hydroxylation by cathodic -OH) and diene 3 (Path B, deprotonation by lutidine/base) is set kinetically (ΔΔG‡ = 2.4 kcal/mol). Over-oxidation of 2 by a second TEMPO equivalent gives ketone 4 at higher T. Postfunctionalization of 2 with electrophiles (NBS, NIS, Selectfluor, I2, TFA, BF3·OEt2, TEMPO+) achieves allene trifunctionalization."
+}

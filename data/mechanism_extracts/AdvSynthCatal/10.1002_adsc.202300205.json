@@ -1,0 +1,69 @@
+{
+  "doi": "10.1002_adsc.202300205",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative difluoroethylation/cyclization of alkenyl carboxylic acids, alcohols, and amides with sodium difluoroethylsulfinate (NaSO2CF2Me) to give difluoroethylated lactones, dihydroisobenzofurans, and iminoisobenzofurans.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of the difluoroethylsulfinate anion (MeCF2SO2-) generates MeCF2 radical via loss of SO2; subsequent radical adduct is further oxidized at the anode to a carbocation that is trapped by the intramolecular nucleophile; cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "MeCF2 radical (1,1-difluoroethyl radical) from anodic oxidation of MeCF2SO2- and loss of SO2",
+      "smiles": "[CH2]C(F)(F)C",
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic C-radical intermediate A from MeCF2 addition to alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Benzylic carbocation intermediate B from anodic oxidation of A",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Difluoroethylated lactone/dihydroisobenzofuran/iminoisobenzofuran product after nucleophilic cyclization",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode first oxidizes MeCF2SO2- (lower oxidation potential than substrate, confirmed by CV) to release SO2 and generate MeCF2 radical, which adds to the alkene to give benzylic radical A; A is oxidized again at the anode to carbocation B, which undergoes intramolecular nucleophilic cyclization by the pendant CO2H/OH/CONHPh group, while the cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT (2,6-di-tert-butyl-4-methylphenol)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction inhibited, supporting a free radical pathway."
+    },
+    {
+      "name": "1,1-Diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3a decreased to 13%; radical trapping adduct 12a isolated, confirming MeCF2 radical."
+    },
+    {
+      "name": "Difluoroethyl sulfone (alternative MeCF2 source)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction proceeded poorly; sulfone reduction not compatible with the electrochemically driven CF2Me radical cyclization."
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, 2, and 1a+2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "NaSO2CF2Me (2) oxidized at ~0.70 V vs. 1.3 V for substrate 1a, indicating sulfinate is oxidized first; current increase in 1:1 mixture; controlled-potential electrolysis at 0.70 V sufficient to drive reaction."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Method also extends to cyclopropyldifluoromethylation using sodium cyclopropyldifluoromethylsulfinate (75–80% for benzoxazines). Sulfone-based MeCF2 precursor is ineffective, suggesting the sulfinate-specific anodic oxidation is essential. No KIE or DFT data reported."
+}

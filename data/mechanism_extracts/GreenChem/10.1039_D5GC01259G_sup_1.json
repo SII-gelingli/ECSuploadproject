@@ -1,0 +1,92 @@
+{
+  "doi": "10.1039_D5GC01259G_sup_1",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical amidoselenation of alkenes (e.g., cyclohexene) with diphenyl diselenide and acetonitrile to give trans-1,2-selenyl-amido (acetamide) products via a seleniranium/Ritter-type cation pathway",
+  "mechanism_family": [
+    "radical_anodic",
+    "cation_initiated",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of PhSeSePh (or PhSe•) generates an electrophilic PhSe+ species that adds to the alkene to form a seleniranium ion; acetonitrile then performs Ritter-type nucleophilic capture",
+  "key_intermediates": [
+    {
+      "name": "phenylselenyl radical (PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "IM1: alkene–PhSe• adduct / pre-seleniranium complex",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "1IM2: cationic seleniranium ion (singlet, after SET oxidation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "3IM2: triplet seleniranium-like species",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "IM3: nitrilium ion from MeCN attack on seleniranium",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "IM4: water-added nitrilium (hydration intermediate)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "IM5: trans-1,2-selenyl-amido adduct (pre-tautomer)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "3n: trans-N-(2-(phenylselanyl)cyclohexyl)acetamide product",
+      "smiles": "CC(=O)NC1CCCCC1[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "IM6: allylbenzene–PhSe+ seleniranium (branching point for Markovnikov vs anti-Markovnikov)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "IM7: anti-Markovnikov nitrilium adduct",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "IM8: Markovnikov nitrilium adduct",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes PhSeSePh to PhSe• / PhSe+; PhSe+ adds to the alkene forming a seleniranium cation (IM1 → 1IM2), which is opened by acetonitrile to give a nitrilium ion (IM3); water addition and tautomerization (via TS4/TS5) deliver the trans-β-selenyl acetamide product.",
+  "rate_determining_step": "Structural transition IM1 → 1IM2 (formation of the cationic seleniranium via single-electron oxidation), as supported by ADCH charge analysis and DFT",
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3n dropped from 92% to 55% (0.2 mmol) and 20% (0.4 mmol), indicating involvement of radical intermediates"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed to trace yield, consistent with a radical (PhSe•) intermediate"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "DFT"
+  ],
+  "evidence_strength": "strong",
+  "notes": "DFT (PBE0(D3BJ)/Def2SVP, SMD/MeCN) maps both singlet (1IM2) and triplet (3IM2) seleniranium pathways; singlet cationic pathway is favored. For allylbenzene, anti-Markovnikov TS6 (16.45 kcal/mol) is slightly higher than Markovnikov TS7 (15.95 kcal/mol), and IM7 (–6.45) is more stable than IM8 (–4.63), rationalizing regioselectivity. ADCH atomic charge analysis on IM1→1IM2 for cyclopentene/cyclohexene/cycloheptene explains substrate-dependent yields: cyclohexene's negative C2 charge (–0.1664) best enables SET oxidation to the seleniranium cation, while cyclopentene's positive C2 charge blocks the conversion."
+}

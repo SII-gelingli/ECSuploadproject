@@ -1,0 +1,112 @@
+{
+  "doi": "10.1038_s41467-023-42106-8",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Metal-free electrochemical dihydroxylation of unactivated alkenes using Et4NI/NH4I as iodide mediators and water as the oxygen source, proceeding via in-situ generated iodine and an epoxide intermediate",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "electrocatalysis_outer_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (I-) to iodine radical/I2, which acts as the alkene-activating mediator; anode also oxidizes Et3N (generated from Et4N+ decomposition) to an α-aminoalkyl radical that abstracts iodine from an alkyl iodide intermediate; cathode evolves H2",
+  "key_intermediates": [
+    {
+      "name": "iodine (I2) generated from anodic oxidation of I-",
+      "smiles": "II",
+      "role": "reactive"
+    },
+    {
+      "name": "iodonium intermediate (Int-I) from alkene + I2",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-iodo alcohol (Int-II / compound 4) from water addition to iodonium",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-aminoalkyl radical from electrooxidation of Et3N",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-hydroxy carbon radical (Int-III) after I-atom abstraction",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "epoxide intermediate (Int-IV / compound 3i) from intramolecular cyclization/ring closure",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "vicinal diol product (2a)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes I- to I• which dimerizes to I2; I2 forms an iodonium with the alkene that is opened by H2O to give a β-iodo alcohol (4). In parallel, the anode oxidizes Et3N (from Et4N+) to an α-aminoalkyl radical that abstracts the C-I of 4, giving a carbon radical that loses an electron and cyclizes to an epoxide (3i); H2O then opens the epoxide to the diol (2a), while the cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "H2 18-O (isotope labeling)",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "Product 2a incorporates 18O in both hydroxyl groups (HRMS m/z 299.1392 vs calc 299.1390), showing both OH groups come from water"
+    },
+    {
+      "name": "I2 (stoichiometric, no electricity)",
+      "smiles": "II",
+      "purpose": "intermediate_trap",
+      "observation": "Reaction of 1a with I2 in the dark without current gave iodo-alcohols 4 (21%) and 4' (9%), supporting I2 as the alkene-activating mediator"
+    },
+    {
+      "name": "isolated β-iodo alcohol 4 (stoichiometric intermediate)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Under condition A, 4 gave 2a in 82%; without electricity 4 was recovered (93%), confirming 4 as a key on-cycle intermediate requiring current"
+    },
+    {
+      "name": "isolated epoxide 3i (stoichiometric intermediate)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "3i gave 2a in 85% under condition A; without electricity 3i was recovered (95%), confirming epoxide as downstream intermediate"
+    },
+    {
+      "name": "Omission of Et4NI; use NH4I/TFA only",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No 2a formed and 4 recovered (92%), indicating Et4N+ (source of Et3N) is required to convert 4 onward"
+    },
+    {
+      "name": "Et3N added to 4 with current",
+      "smiles": "CCN(CC)CC",
+      "purpose": "intermediate_trap",
+      "observation": "2a obtained in 27% with current; no product without electricity, confirming electrooxidation of tertiary amine to α-aminoalkyl radical is required for C-I activation"
+    },
+    {
+      "name": "Et4NBF4 (non-iodide electrolyte) with 4 under current",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Time-course showed 4 decreasing, 3i rising then falling, 2a increasing — demonstrating sequential 4 → 3i → 2a conversion"
+    },
+    {
+      "name": "Cyclic voltammetry of Et4NI at variable scan rates",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Linear ip vs v^1/2 plots (R2 = 0.9753, 0.9983) indicate diffusion-controlled oxidation of iodide"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "kinetic_order"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Both hydroxyl oxygens of the diol originate from water (18O labeling). The mechanism invokes a dual mediator system: iodide for alkene activation and in-situ-generated Et3N (from Et4N+ decomposition) for halogen atom transfer via an α-aminoalkyl radical. The epoxide (Int-IV) and an iodo-cyclic oxocarbenium-type Int-III are proposed to be in equilibrium, with water opening to give the diol. GC-MS detection of Et3N supports the amine-mediator hypothesis."
+}

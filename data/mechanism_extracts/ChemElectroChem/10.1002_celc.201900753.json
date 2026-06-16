@@ -1,0 +1,87 @@
+{
+  "doi": "10.1002_celc.201900753",
+  "journal": "ChemElectroChem",
+  "is_review": false,
+  "rxn_class_summary": "HFIP-promoted electrochemical oxidative [3+2] annulation of 1,3-dicarbonyl compounds with alkenes to give 2,3-dihydrofurans with H2 evolution",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "anion_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of the in situ generated 1,3-dicarbonyl enolate (e.g., sodium acetylacetonate) to an electrophilic C-centered radical; subsequent second anodic oxidation of the benzylic radical adduct to a benzylic cation; H2 evolved at the Pt cathode",
+  "key_intermediates": [
+    {
+      "name": "acetylacetonate anion (I)",
+      "smiles": "CC(=O)[CH-]C(C)=O",
+      "role": "reactive"
+    },
+    {
+      "name": "electrophilic α-C-centered radical of acetylacetone (II)",
+      "smiles": "CC(=O)[CH]C(C)=O",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical after addition to styrene (III)",
+      "smiles": "CC(=O)C(C(C)=O)C[CH]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic cation (IV)",
+      "smiles": "CC(=O)C(C(C)=O)C[CH+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "HFIP-stabilized cationic adduct (V)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "enol tautomer (VI) prior to intramolecular O-cyclization",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Base (NaOAc) deprotonates the 1,3-dicarbonyl to its enolate, which is anodically oxidized to an electrophilic α-C-radical; this radical adds to the styrene to give a benzylic radical that is further oxidized at the anode to a benzylic cation, stabilized by an HFIP cluster, which tautomerizes and undergoes intramolecular nucleophilic O-attack by the enol oxygen to close the dihydrofuran, while protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "DMPO (spin trap)",
+      "smiles": "CC1(C)CCC=[N+]1[O-]",
+      "purpose": "radical_trap",
+      "observation": "EPR signal (g=2.0063, AN=14.56, AH=22.44) consistent with trapping of an electrophilic C-centered radical"
+    },
+    {
+      "name": "sodium acetylacetonate (2a')",
+      "smiles": "CC(=O)[CH-]C(C)=O.[Na+]",
+      "purpose": "intermediate_trap",
+      "observation": "Used as substrate instead of acetylacetone gave 3a in 81% GC yield, supporting enolate as the species oxidized at the anode"
+    },
+    {
+      "name": "DMSO (as co-solvent in place of HFIP)",
+      "smiles": "CS(C)=O",
+      "purpose": "intermediate_trap",
+      "observation": "Replacing HFIP with DMSO still gave 3a in 35% GC yield, supporting stabilization of a cationic intermediate by coordinating solvent"
+    },
+    {
+      "name": "acetylacetone vs sodium acetylacetonate (CV)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Ep = 2.75 V (acetylacetone) vs 1.14 V (Na-acetylacetonate) vs Ag/AgCl; styrene Ep = 2.61 V — only the enolate is oxidizable under operating potential"
+    },
+    {
+      "name": "controlled-potential electrolysis",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Reaction proceeds only when working electrode potential >0.7 V, matching the ~0.75 V onset oxidation of the acetylacetonate anion"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "EPR",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors emphasize HFIP acts as a 'stabilizer' for the cationic intermediate IV via H-bonded cluster; DMSO control experiment supports cation stabilization as a general role. No product is obtained without electricity, without NaOAc base, or without HFIP, indicating all three (anodic oxidation, enolate formation, and cation stabilization) are required. Alternative pathway via direct oxidation of styrene radical cation is ruled out by CV (styrene oxidation potential too high relative to operating conditions)."
+}

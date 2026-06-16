@@ -1,0 +1,62 @@
+{
+  "doi": "10.1002_ajoc.202300485",
+  "journal": "AsianJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative sulfenocyclization of unsaturated carboxylic acids with diaryl disulfides to give thio-substituted lactones",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of diphenyl disulfide (PhSSPh) to generate a thiyl radical (PhS•) and a sulfenyl cation (PhS+); cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "thiyl radical PhS• (A)",
+      "smiles": "[S]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "sulfenyl cation PhS+ (B)",
+      "smiles": "[S+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "thiiranium/sulfonium adduct of alkene with carboxylic acid (C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "γ-lactone product 3aa",
+      "smiles": "O=C1OC(C)(c2ccccc2)CC1CSc1ccccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "PhSSPh is preferentially oxidized at the anode (CV: oxidation peak of 2a at 1.86 V, lower than 1a at 2.37 V) to give PhS• and PhS+; the electrophilic PhS+ adds to the alkene of the unsaturated carboxylic acid to form a sulfonium intermediate, which undergoes intramolecular nucleophilic attack by the carboxylate followed by deprotonation to give the lactone, while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction inhibited; product yield reduced to 30%, indicating a radical intermediate"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction inhibited; product yield reduced to 27%, consistent with radical pathway"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, 2a, and mixture",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak of 2a at 1.86 V vs Ag/AgCl, lower than 1a (2.37 V), showing disulfide is preferentially oxidized at anode"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "The mechanism is proposed as a radical/cationic crossover initiated by anodic oxidation of the disulfide rather than the alkene-COOH substrate, supported by CV. Method extends to δ-lactones (from δ,ε-unsaturated acids) and tellurated γ-lactones using PhTeTePh."
+}

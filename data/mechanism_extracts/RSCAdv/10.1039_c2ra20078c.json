@@ -1,0 +1,79 @@
+{
+  "doi": "10.1039_c2ra20078c",
+  "journal": "RSCAdv",
+  "is_review": false,
+  "rxn_class_summary": "Electrocatalytic Michael-initiated ring closure (MIRC) of N,N'-dialkylbarbituric acids with benzylidenemalononitriles or benzylidenecyanoacetates in methanol/NaBr (or NaI) to give spirocyclopropylbarbiturates (4,6,8-trioxo-5,7-diazaspiro[2.5]octanes)",
+  "mechanism_family": [
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere",
+    "anion_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of halide mediator (Br- or I-) to molecular halogen (Hal2), which halogenates the Michael adduct at the barbiturate C5 position; methoxide generated at the cathode (from MeOH reduction) deprotonates the substrate and the halogenated intermediate to drive Michael addition and intramolecular SN2 ring closure",
+  "key_intermediates": [
+    {
+      "name": "barbiturate C5 anion A (deprotonated N,N'-dialkylbarbituric acid)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Michael adduct anion B (unstable, undergoes retro-Michael)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Michael adduct anion C (deprotonated at malononitrile/cyanoacetate carbon)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "5-halo-Michael adduct (alpha-halogenated barbiturate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "conjugated barbiturate anion D (after methoxide deprotonation of halogenated adduct)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "spirocyclopropylbarbiturate 3 (product after intramolecular ring closure with halide expulsion)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the graphite anode, halide (Br-/I-) is oxidized to Hal2; at the iron cathode, MeOH is reduced to generate MeO- and H2. MeO- deprotonates the barbituric acid to give C5-anion A which undergoes Michael addition to the arylidene; the resulting adduct C is halogenated by Hal2 at C5, then MeO- deprotonates the alpha-CN/COOR carbon to form anion D which performs intramolecular SN2 displacement of the halide, closing the cyclopropane and regenerating halide for the mediator cycle.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "low-charge electrolysis (0.1 F/mol)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Detected retro-Michael products (barbituric acid and benzylidenemalononitrile) and dihydropyrano[2,3-d]pyrimidine from intramolecular cyclization of adduct B, confirming Michael adduct C as a key intermediate"
+    },
+    {
+      "name": "single-crystal X-ray of product 3q",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Confirmed (E)-configuration of aryl and carbomethoxy substituents on the cyclopropane ring, supporting stereoselective intramolecular SN2 ring closure from anion D"
+    },
+    {
+      "name": "NaI vs NaBr mediator screen",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "NaI less efficient than NaBr (50% vs 57% at 0 C); supports halide-mediated (inner-sphere) mechanism via in situ Hal2"
+    },
+    {
+      "name": "current density / electricity passed variation",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No improvement above 2 F/mol; consistent with catalytic halide mediator turnover (2 e- per cyclopropanation)"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Stereoselective formation of single (E)-diastereomer attributed to steric repulsion between aryl and carboalkoxy groups during the intramolecular SN2 cyclization from anion D, which dictates the conformation placing those groups on opposite faces of the forming cyclopropane. The mediator could in principle act via outer-sphere SET, but the authors invoke discrete Hal2 formation and ionic alpha-halogenation (inner-sphere/ionic mediator pathway). Off-pathway: at low charge, adduct B can undergo retro-Michael or 6-endo O-cyclization to a dihydropyrano[2,3-d]pyrimidine."
+}

@@ -1,0 +1,69 @@
+{
+  "doi": "10.1002_adsc.201801173",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,2-dimethoxylation of olefins via anodic oxidation through a cation-initiated (ionic-like) pathway, with divergence to semipinacol-rearranged acetals for less-stabilized carbocations",
+  "mechanism_family": [
+    "radical_cation",
+    "cation_initiated",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the alkene to a radical cation; a second anodic oxidation of the β-methoxy carbon radical generates the key carbocation, while H2 is evolved at the cathode from MeOH reduction",
+  "key_intermediates": [
+    {
+      "name": "alkene radical cation (i1)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-methoxy carbon-centered radical (i2) from MeOH addition to radical cation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-methoxy carbocation (i3) after second anodic oxidation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "rearranged carbocation (i4) from 1,2-shift (semipinacol pathway)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,2-dimethoxylated product (path I) / acetal product (path II)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the alkene (1) by SET to a radical cation i1, which is attacked by MeOH to give a β-methoxy C-radical i2; a second anodic SET gives carbocation i3, which is trapped by a second MeOH (path I, stabilized cations) or undergoes 1,2-aryl/alkyl migration to i4 before MeOH trapping (path II); protons reduced at cathode to H2.",
+  "rate_determining_step": "Not the nucleophilic addition of MeOH (excluded by KIE studies); most likely the initial anodic oxidation of the alkene",
+  "probe_reagents": [
+    {
+      "name": "radical-clock substrate 1aa (cyclopropyl-substituted alkene)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Reaction proceeded smoothly to 2aa without any ring-opening/ring-expansion products, arguing against a long-lived C-radical and supporting an ionic-like pathway"
+    },
+    {
+      "name": "deuterated MeOH (KIE experiment)",
+      "smiles": "[2H]OC",
+      "purpose": "KIE",
+      "observation": "KIE indicated that nucleophilic addition of MeOH is not the rate-determining step"
+    },
+    {
+      "name": "MeOH / 1a / 1al cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No oxidation peak for MeOH in the operating window; clear oxidation peaks for olefins 1a and 1al, showing alkene is oxidized preferentially and excluding methoxyl radical generation"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "radical_clock",
+    "cyclic_voltammetry",
+    "H/D_labeling"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two divergent pathways from the same cationic intermediate i3: path I direct MeOH trapping for stabilized (tri/diaryl) cations giving 1,2-dimethoxylation; path II semipinacol 1,2-migration for less stable (1,2-disubstituted) cations giving acetal products (Scheme 3). Authors explicitly exclude a methoxyl-radical pathway based on CV. A radical-cation intermediate is retained at the start, so a brief radical-polar crossover step is involved, but overall the productive C–O bond formation is described as ionic/cation-initiated."
+}

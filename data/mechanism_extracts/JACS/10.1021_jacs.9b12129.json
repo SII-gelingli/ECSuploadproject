@@ -1,0 +1,47 @@
+{
+  "doi": "10.1021_jacs.9b12129",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Visible-light photosensitized intramolecular [2+2] cycloaddition of N-allylcarboxamide-tethered indoles (and related heterocycles) to give cyclobutane-pyrrolidinone-fused tetracyclic scaffolds via dearomative energy transfer",
+  "mechanism_family": [
+    "photoredox_combined",
+    "biradical",
+    "concerted"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "triplet photosensitizer (PS*) generated via ISC after hv absorption",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "triplet excited-state substrate 4* (diradical) formed by energy transfer from PS*",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "INT-A: 1,4-diradical from 5-exo-trig attack of C2 radical onto tethered olefin (favored pathway)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "INT-B: 1,4-diradical from 7-endo-trig attack of C3 radical onto tethered olefin (disfavored)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "tetracyclic cyclobutane-pyrrolidinone product 1",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Visible light excites the photosensitizer to its singlet then triplet state via ISC; triplet-triplet energy transfer (~60 kcal/mol) to the indole substrate 4 generates a triplet diradical 4*, which undergoes stepwise intramolecular C-C bond formation (preferentially 5-exo-trig at C2 to give INT-A) followed by radical-radical combination to close the cyclobutane and deliver tetracyclic 1.",
+  "rate_determining_step": "Stepwise C-C bond formation from triplet diradical 4* via 5-exo-trig closure (lower activation energy than 7-endo-trig) is energetically favored per DFT",
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "DFT"
+  ],
+  "evidence_strength": "medium",
+  "notes": "DFT shows triplet-singlet (T1-S0) free energy gap of the substrate must be below the PS triplet energy (<60 kcal/mol) for productive energy transfer; C2-tethered carboxamide substrates qualify (delta-G 58.2-58.7 kcal/mol for indoles IV-VI; indenes VII/VIII and benzofuran IX also viable at 53.7-58.5 kcal/mol), whereas unsubstituted indole (65.0 kcal/mol) is unreactive. Alternative 7-endo-trig pathway via INT-B is calculated but disfavored relative to 5-exo-trig via INT-A."
+}

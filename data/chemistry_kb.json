@@ -1,0 +1,727 @@
+{
+  "electrode_prep": {
+    "Platinum": "用 0.05μm 氧化铝浆料在抛光布上抛光电极表面，依次用去离子水、丙酮、反应溶剂淋洗，氮气吹干。",
+    "Carbon": "用 400 目砂纸轻磨电极表面，溶剂淋洗，晾干或氮气吹干。",
+    "Graphite": "用 400 目砂纸轻磨电极表面去除表面氧化层，溶剂淋洗，晾干。",
+    "Glassy Carbon": "用 0.05μm 氧化铝浆料抛光至镜面，去离子水超声清洗 5 分钟，溶剂淋洗后晾干。",
+    "RVC": "丙酮浸泡 10 分钟后溶剂淋洗，不要打磨（多孔结构），氮气吹干。",
+    "Nickel": "10% HCl 浸泡 30 秒去除表面氧化层，水洗，溶剂淋洗，迅速使用。",
+    "Stainless Steel": "400 目砂纸打磨，丙酮超声 5 分钟，溶剂淋洗。",
+    "Copper": "稀 HNO₃ (5%) 浸泡 30 秒去除氧化层，水洗，溶剂淋洗，迅速使用。",
+    "Zinc": "10% HCl 浸泡 30 秒去除氧化层，水洗后立即使用。用作牺牲阳极时尤其注意清洁。",
+    "Magnesium": "细砂纸轻磨去除氧化层，溶剂淋洗后立即使用。暴露在空气中会迅速重新氧化。",
+    "Boron-doped Diamond": "阳极极化预处理（3V，0.1M H₂SO₄，10 min），去离子水淋洗。",
+    "Gold": "王水浸泡 30 秒，水洗，0.05μm 氧化铝抛光，水洗后溶剂淋洗。",
+    "Silver": "稀 HNO₃ 浸泡去除氧化层，水洗后溶剂淋洗。",
+    "Lead": "细砂纸打磨去除 PbO 层，溶剂淋洗。",
+    "Iron": "稀 HCl 浸泡去除铁锈，水洗后迅速使用。",
+    "Aluminum": "10% NaOH 浸泡 30 秒去除氧化铝层，水洗后迅速使用。",
+    "Niobium": "溶剂淋洗，通常不需要特殊预处理。",
+    "Titanium": "10% H₂SO₄ 浸泡 5 分钟，水洗后溶剂淋洗。"
+  },
+
+  "electrode_properties": {
+    "Platinum": {
+      "type": "noble_metal",
+      "oxidation_potential": "高 (>2.0 V vs SCE)",
+      "reduction_potential": "高 (< -2.0 V vs SCE)",
+      "best_for": ["氧化反应", "氢化反应", "精密电化学"],
+      "avoid": ["含卤素的氧化反应（会腐蚀）"],
+      "cost": "高",
+      "reusability": "优秀，可反复使用"
+    },
+    "Carbon": {
+      "type": "carbon",
+      "oxidation_potential": "中等 (~1.5 V vs SCE)",
+      "reduction_potential": "中等 (~-1.5 V vs SCE)",
+      "best_for": ["一般氧化反应", "成本敏感实验"],
+      "avoid": ["强氧化条件下长时间反应"],
+      "cost": "低",
+      "reusability": "一般，表面会逐渐氧化"
+    },
+    "Graphite": {
+      "type": "carbon",
+      "oxidation_potential": "中等 (~1.8 V vs SCE)",
+      "reduction_potential": "中等 (~-1.5 V vs SCE)",
+      "best_for": ["大规模电解", "工业应用", "烯烃氧化"],
+      "avoid": ["精密小规模实验"],
+      "cost": "低",
+      "reusability": "良好"
+    },
+    "Glassy Carbon": {
+      "type": "carbon",
+      "oxidation_potential": "较高 (~2.0 V vs SCE)",
+      "reduction_potential": "较高 (~-2.0 V vs SCE)",
+      "best_for": ["分析电化学", "精密合成", "宽电位窗口反应"],
+      "avoid": ["机械应力大的环境"],
+      "cost": "中等",
+      "reusability": "优秀"
+    },
+    "RVC": {
+      "type": "carbon",
+      "oxidation_potential": "中等",
+      "reduction_potential": "中等",
+      "best_for": ["大电流密度", "流动体系", "高表面积需求"],
+      "avoid": ["高压环境（多孔结构易碎）"],
+      "cost": "中等",
+      "reusability": "良好"
+    },
+    "Nickel": {
+      "type": "transition_metal",
+      "oxidation_potential": "低 (~0.8 V vs SCE)",
+      "reduction_potential": "中等 (~-1.2 V vs SCE)",
+      "best_for": ["阴极还原", "Kolbe 电解", "碱性条件"],
+      "avoid": ["强酸性条件", "阳极氧化"],
+      "cost": "低",
+      "reusability": "中等"
+    },
+    "Copper": {
+      "type": "transition_metal",
+      "oxidation_potential": "低 (~0.5 V vs SCE)",
+      "reduction_potential": "中等 (~-1.0 V vs SCE)",
+      "best_for": ["Cu 介导反应", "某些偶联反应"],
+      "avoid": ["强氧化条件"],
+      "cost": "低",
+      "reusability": "差（易氧化）"
+    },
+    "Zinc": {
+      "type": "sacrificial",
+      "oxidation_potential": "负 (~-0.76 V vs SHE)",
+      "reduction_potential": "N/A（牺牲阳极）",
+      "best_for": ["牺牲阳极", "还原反应", "无外加电压体系"],
+      "avoid": ["酸性条件（溶解过快）"],
+      "cost": "低",
+      "reusability": "一次性"
+    },
+    "Magnesium": {
+      "type": "sacrificial",
+      "oxidation_potential": "负 (~-2.37 V vs SHE)",
+      "reduction_potential": "N/A（牺牲阳极）",
+      "best_for": ["强还原条件", "牺牲阳极", "有机金属生成"],
+      "avoid": ["水和质子性溶剂"],
+      "cost": "低",
+      "reusability": "一次性"
+    },
+    "Boron-doped Diamond": {
+      "type": "special",
+      "oxidation_potential": "极高 (>2.5 V vs SCE)",
+      "reduction_potential": "极高 (<-2.5 V vs SCE)",
+      "best_for": ["高氧化电位反应", "难氧化底物", "电化学水处理"],
+      "avoid": ["成本敏感实验"],
+      "cost": "极高",
+      "reusability": "优秀"
+    },
+    "Gold": {
+      "type": "noble_metal",
+      "oxidation_potential": "高 (~1.8 V vs SCE)",
+      "reduction_potential": "高 (~-1.5 V vs SCE)",
+      "best_for": ["精密分析", "生物电化学", "某些特定催化"],
+      "avoid": ["含卤素强氧化条件"],
+      "cost": "极高",
+      "reusability": "优秀"
+    },
+    "Iron": {
+      "type": "sacrificial",
+      "oxidation_potential": "负 (~-0.44 V vs SHE)",
+      "reduction_potential": "N/A",
+      "best_for": ["某些还原反应", "成本敏感大规模"],
+      "avoid": ["氧化条件"],
+      "cost": "极低",
+      "reusability": "一次性"
+    }
+  },
+
+  "electrolyte_detailed": {
+    "nBu4NBF4": {
+      "name": "四丁基四氟硼酸铵",
+      "formula": "nBu₄N⁺BF₄⁻",
+      "solubility": {"MeCN": "高", "DCM": "高", "DMF": "高", "THF": "中"},
+      "conductivity": "良好",
+      "electrochemical_window": "宽 (-3.0 to +2.5 V vs SCE in MeCN)",
+      "best_for": ["通用有机电化学", "非水体系", "烯烃双官能化"],
+      "typical_conc": "0.1 M",
+      "notes": "最常用的有机电解质，稳定性好"
+    },
+    "nBu4NPF6": {
+      "name": "四丁基六氟磷酸铵",
+      "formula": "nBu₄N⁺PF₆⁻",
+      "solubility": {"MeCN": "高", "DCM": "高", "DMF": "高"},
+      "conductivity": "良好",
+      "electrochemical_window": "极宽 (-3.5 to +3.0 V vs SCE in MeCN)",
+      "best_for": ["高电位氧化", "精密电化学", "CV 测量"],
+      "typical_conc": "0.1 M",
+      "notes": "电化学窗口比 BF4 更宽，但成本更高"
+    },
+    "nBu4NClO4": {
+      "name": "四丁基高氯酸铵",
+      "formula": "nBu₄N⁺ClO₄⁻",
+      "solubility": {"MeCN": "高", "DCM": "中", "DMF": "高"},
+      "conductivity": "良好",
+      "electrochemical_window": "宽",
+      "best_for": ["传统有机电化学"],
+      "typical_conc": "0.1 M",
+      "notes": "⚠️ 高氯酸盐有爆炸风险，现已较少使用，建议用 BF4/PF6 替代"
+    },
+    "LiClO4": {
+      "name": "高氯酸锂",
+      "formula": "LiClO₄",
+      "solubility": {"MeCN": "高", "THF": "高", "DME": "高"},
+      "conductivity": "中等",
+      "electrochemical_window": "宽",
+      "best_for": ["锂盐体系", "某些特定反应"],
+      "typical_conc": "0.5-1.0 M",
+      "notes": "⚠️ 有爆炸风险，小心使用"
+    },
+    "Et4NBr": {
+      "name": "四乙基溴化铵",
+      "formula": "Et₄N⁺Br⁻",
+      "solubility": {"MeCN": "高", "MeOH": "高", "H2O": "高"},
+      "conductivity": "良好",
+      "electrochemical_window": "受限于 Br⁻ 氧化 (~+0.8 V)",
+      "best_for": ["溴化反应", "卤代烯烃合成", "含溴双官能化"],
+      "typical_conc": "0.1-0.3 M",
+      "notes": "Br⁻ 可作为溴源参与反应"
+    },
+    "NH4I": {
+      "name": "碘化铵",
+      "formula": "NH₄I",
+      "solubility": {"MeCN": "中", "MeOH": "高", "H2O": "高"},
+      "conductivity": "中等",
+      "electrochemical_window": "受限于 I⁻ 氧化 (~+0.3 V)",
+      "best_for": ["碘化反应", "碘代烯烃合成"],
+      "typical_conc": "1-2 equiv",
+      "notes": "I⁻ 作为碘源"
+    },
+    "NaOAc": {
+      "name": "乙酸钠",
+      "formula": "NaOAc",
+      "solubility": {"AcOH": "高", "MeOH": "中", "H2O": "高"},
+      "conductivity": "中等",
+      "electrochemical_window": "中等",
+      "best_for": ["乙酰氧基化反应", "Pd 催化电化学"],
+      "typical_conc": "0.5-2.0 equiv",
+      "notes": "常与 AcOH 共用作为溶剂/电解质体系"
+    },
+    "Et3N·3HF": {
+      "name": "三乙胺三氢氟酸盐",
+      "formula": "Et₃N·3HF (Olah's reagent)",
+      "solubility": {"MeCN": "高", "DCM": "高"},
+      "conductivity": "良好",
+      "electrochemical_window": "中等",
+      "best_for": ["氟化反应", "氟代烯烃合成", "含氟双官能化"],
+      "typical_conc": "3-5 equiv",
+      "notes": "⚠️ 含 HF，强腐蚀性！必须使用 HDPE/PTFE 容器，禁止接触玻璃。戴双层手套和面罩。备好葡萄糖酸钙凝胶。"
+    },
+    "HFIP": {
+      "name": "六氟异丙醇",
+      "formula": "(CF₃)₂CHOH",
+      "solubility": "作为溶剂使用",
+      "conductivity": "自身导电性差，需加电解质",
+      "electrochemical_window": "宽",
+      "best_for": ["阳离子稳定化", "高活性中间体反应", "C-H 活化"],
+      "typical_conc": "作为溶剂或共溶剂",
+      "notes": "强氢键供体，可稳定阳离子中间体，常用于氧化反应"
+    }
+  },
+
+  "solvent_electrochemical": {
+    "CC#N": {
+      "name": "乙腈 (MeCN)",
+      "electrochemical_window": "-2.8 to +2.4 V vs SCE",
+      "dielectric_constant": 37.5,
+      "boiling_point": "82°C",
+      "best_for": ["通用有机电化学", "阳离子中间体反应"],
+      "limitations": ["亲核性差", "不适合强碱性条件"],
+      "hazards": "有毒 (TLV 40 ppm)，易燃。在通风橱中操作。",
+      "drying": "CaH₂ 回流蒸馏或分子筛干燥"
+    },
+    "ClCCl": {
+      "name": "二氯甲烷 (DCM)",
+      "electrochemical_window": "-1.8 to +1.8 V vs SCE",
+      "dielectric_constant": 8.9,
+      "boiling_point": "40°C",
+      "best_for": ["低温反应", "卤代反应"],
+      "limitations": ["介电常数低，需高浓度电解质", "电化学窗口较窄"],
+      "hazards": "有毒，疑似致癌物，易挥发。全程通风橱操作。",
+      "drying": "CaH₂ 蒸馏"
+    },
+    "C(=O)N(C)C": {
+      "name": "N,N-二甲基甲酰胺 (DMF)",
+      "electrochemical_window": "-2.5 to +1.5 V vs SCE",
+      "dielectric_constant": 36.7,
+      "boiling_point": "153°C",
+      "best_for": ["阴极还原", "极性底物溶解"],
+      "limitations": ["氧化电位较低", "分解产生二甲胺"],
+      "hazards": "生殖毒性（欧盟 CMR），经皮肤吸收。戴手套，通风橱操作。",
+      "drying": "分子筛或减压蒸馏"
+    },
+    "CS(C)=O": {
+      "name": "二甲基亚砜 (DMSO)",
+      "electrochemical_window": "-2.0 to +0.8 V vs SCE",
+      "dielectric_constant": 46.7,
+      "boiling_point": "189°C",
+      "best_for": ["极性反应", "金属催化反应"],
+      "limitations": ["氧化电位很低", "可被氧化为 DMSO₂"],
+      "hazards": "低毒，但可携带其他化学品穿透皮肤。注意与反应物的接触。",
+      "drying": "减压蒸馏或分子筛"
+    },
+    "CO": {
+      "name": "甲醇 (MeOH)",
+      "electrochemical_window": "-2.0 to +1.2 V vs SCE",
+      "dielectric_constant": 32.7,
+      "boiling_point": "65°C",
+      "best_for": ["甲氧基化反应", "质子性环境", "某些还原"],
+      "limitations": ["亲核性强", "可参与反应"],
+      "hazards": "有毒（经口/经吸入），可致失明。通风橱操作。",
+      "drying": "Mg/I₂ 回流蒸馏或分子筛"
+    },
+    "CCO": {
+      "name": "乙醇 (EtOH)",
+      "electrochemical_window": "-2.0 to +1.0 V vs SCE",
+      "dielectric_constant": 24.5,
+      "boiling_point": "78°C",
+      "best_for": ["乙氧基化反应", "绿色化学"],
+      "limitations": ["亲核性强"],
+      "hazards": "易燃。远离明火。",
+      "drying": "Mg/I₂ 回流蒸馏"
+    },
+    "O": {
+      "name": "水 (H₂O)",
+      "electrochemical_window": "-0.8 to +1.2 V vs SCE (受 pH 影响)",
+      "dielectric_constant": 80.1,
+      "boiling_point": "100°C",
+      "best_for": ["绿色化学", "水溶性底物", "生物相容性反应"],
+      "limitations": ["电化学窗口窄", "会与活泼金属反应"],
+      "hazards": "与电化学装置同时使用时注意防漏电。",
+      "drying": "N/A"
+    },
+    "C1CCOC1": {
+      "name": "四氢呋喃 (THF)",
+      "electrochemical_window": "-3.0 to +1.5 V vs SCE",
+      "dielectric_constant": 7.6,
+      "boiling_point": "66°C",
+      "best_for": ["阴极还原", "格氏反应电化学版", "锂盐体系"],
+      "limitations": ["介电常数低", "形成过氧化物"],
+      "hazards": "易燃，可形成爆炸性过氧化物。检查过氧化物后使用。",
+      "drying": "Na/二苯甲酮蒸馏"
+    },
+    "OC(C(F)(F)F)C(F)(F)F": {
+      "name": "六氟异丙醇 (HFIP)",
+      "electrochemical_window": "-1.0 to +2.5 V vs SCE",
+      "dielectric_constant": 16.7,
+      "boiling_point": "59°C",
+      "best_for": ["阳离子稳定化", "高活性中间体", "C-H 活化"],
+      "limitations": ["价格昂贵", "强酸性"],
+      "hazards": "刺激性，腐蚀性。通风橱操作，戴手套。",
+      "drying": "分子筛"
+    }
+  },
+
+  "solvent_safety": {
+    "CC#N": {"name": "乙腈 (MeCN)", "hazards": "有毒 (TLV 40 ppm)，易燃。在通风橱中操作。"},
+    "ClCCl": {"name": "二氯甲烷 (DCM)", "hazards": "有毒，疑似致癌物，易挥发。全程通风橱操作。"},
+    "C(=O)N(C)C": {"name": "DMF", "hazards": "生殖毒性（欧盟 CMR），经皮肤吸收。戴手套，通风橱操作。"},
+    "CS(C)=O": {"name": "DMSO", "hazards": "低毒，但可携带其他化学品穿透皮肤。注意与反应物的接触。"},
+    "CO": {"name": "甲醇 (MeOH)", "hazards": "有毒（经口/经吸入），可致失明。通风橱操作。"},
+    "CCO": {"name": "乙醇 (EtOH)", "hazards": "易燃。远离明火。"},
+    "O": {"name": "水 (H₂O)", "hazards": "与电化学装置同时使用时注意防漏电。"},
+    "OC(C(F)(F)F)": {"name": "三氟乙醇 (TFE)", "hazards": "刺激性，对眼睛和呼吸道有害。通风橱操作。"},
+    "C(Cl)(Cl)Cl": {"name": "氯仿", "hazards": "有毒，疑似致癌物。全程通风橱操作。"}
+  },
+
+  "electrolyte_safety": {
+    "Et3N_3HF": {"name": "三乙胺三氢氟酸盐 (Olah's reagent)", "hazards": "含 HF，强腐蚀性。必须使用 HDPE/PTFE 容器，禁止接触玻璃。戴双层手套和面罩。备好葡萄糖酸钙凝胶（急救用）。"},
+    "HClO4": {"name": "高氯酸", "hazards": "强氧化剂，与有机物可能爆炸。严格控制用量。"},
+    "H2SO4": {"name": "硫酸", "hazards": "强腐蚀性。缓慢加入水中（不要反过来），注意放热。"}
+  },
+
+  "alkene_difunctionalization_guide": {
+    "azidooxygenation": {
+      "name": "叠氮-氧化双官能化",
+      "description": "在烯烃上同时引入叠氮基和含氧官能团",
+      "typical_conditions": {
+        "anode": ["Pt", "Graphite", "Carbon"],
+        "cathode": ["Pt", "Stainless Steel"],
+        "electrolyte": "nBu4NBF4 或 LiClO4",
+        "solvent": "MeCN 或 MeCN/H2O",
+        "azide_source": "NaN3 或 TMSN3",
+        "current_density": "5-15 mA/cm²",
+        "cell_type": "undivided"
+      },
+      "mechanism_notes": "阳极氧化生成叠氮自由基，与烯烃加成后进一步氧化或捕获",
+      "tips": ["控制电流密度避免过度氧化", "NaN3 需注意安全", "水的加入有助于羟基化"]
+    },
+    "aminooxygenation": {
+      "name": "胺-氧化双官能化",
+      "description": "烯烃上引入胺基和含氧官能团",
+      "typical_conditions": {
+        "anode": ["Pt", "Carbon", "Graphite"],
+        "cathode": ["Pt", "Ni"],
+        "electrolyte": "nBu4NBF4",
+        "solvent": "MeCN 或 MeCN/H2O",
+        "amine_source": "脂肪胺或芳香胺",
+        "current_density": "5-10 mA/cm²",
+        "cell_type": "undivided"
+      },
+      "mechanism_notes": "胺在阳极氧化生成氮自由基，与烯烃加成",
+      "tips": ["胺的氧化电位需低于溶剂", "可能需要过量胺"]
+    },
+    "carboamination": {
+      "name": "碳-胺双官能化",
+      "description": "同时形成 C-C 和 C-N 键",
+      "typical_conditions": {
+        "anode": ["RVC", "Graphite", "Carbon"],
+        "cathode": ["Ni", "Stainless Steel"],
+        "electrolyte": "nBu4NBF4 或 LiBr",
+        "solvent": "DMF 或 MeCN",
+        "current_density": "3-10 mA/cm²",
+        "cell_type": "undivided 或 divided"
+      },
+      "mechanism_notes": "通常涉及自由基中间体或金属催化",
+      "tips": ["碳源和胺源需匹配", "考虑使用催化剂"]
+    },
+    "dihalogenation": {
+      "name": "双卤化",
+      "description": "在烯烃上引入两个卤素原子",
+      "typical_conditions": {
+        "anode": ["Pt", "Carbon"],
+        "cathode": ["Pt", "Carbon"],
+        "electrolyte": "卤化物盐 (如 Et4NBr, NaCl, NH4I)",
+        "solvent": "MeCN, DCM, 或 MeOH",
+        "current_density": "5-20 mA/cm²",
+        "cell_type": "undivided"
+      },
+      "mechanism_notes": "阳极氧化卤离子生成卤素或卤素阳离子",
+      "tips": ["控制温度避免副反应", "不同卤素需不同电位"]
+    },
+    "fluorination": {
+      "name": "氟化",
+      "description": "向烯烃引入氟原子",
+      "typical_conditions": {
+        "anode": ["Pt", "BDD"],
+        "cathode": ["Pt", "Carbon"],
+        "electrolyte": "Et3N·3HF (⚠️ 危险！)",
+        "solvent": "MeCN 或 DCM",
+        "current_density": "5-15 mA/cm²",
+        "cell_type": "undivided (PTFE 容器)"
+      },
+      "mechanism_notes": "HF 体系中的阳极氟化",
+      "tips": ["⚠️ 必须使用 PTFE/HDPE 容器", "全程做好 HF 防护", "备好急救措施"]
+    },
+    "hydroalkoxylation": {
+      "name": "加氢烷氧基化",
+      "description": "H 和烷氧基跨烯烃加成",
+      "typical_conditions": {
+        "anode": ["Carbon", "Graphite"],
+        "cathode": ["Pt", "Ni", "Carbon"],
+        "electrolyte": "nBu4NBF4 或 NaOMe",
+        "solvent": "MeOH 或 EtOH (作为烷氧基源)",
+        "current_density": "3-10 mA/cm²",
+        "cell_type": "undivided"
+      },
+      "mechanism_notes": "阴极产生的氢和阳极/溶剂提供的烷氧基",
+      "tips": ["醇既是溶剂又是试剂", "控制质子源"]
+    },
+    "oxyamination": {
+      "name": "氧-胺双官能化",
+      "description": "同时引入含氧官能团和胺基",
+      "typical_conditions": {
+        "anode": ["Pt", "Carbon"],
+        "cathode": ["Pt", "Ni"],
+        "electrolyte": "nBu4NBF4",
+        "solvent": "MeCN/H2O 或 MeCN",
+        "current_density": "5-10 mA/cm²",
+        "cell_type": "undivided 或 divided"
+      },
+      "mechanism_notes": "与氨基氧化机理类似，N-O 键形成或分别引入",
+      "tips": ["控制胺的氧化程度", "水含量影响产物分布"]
+    },
+    "selenosulfonation": {
+      "name": "硒-磺酰化",
+      "description": "同时引入硒和磺酰基",
+      "typical_conditions": {
+        "anode": ["Pt", "Carbon"],
+        "cathode": ["Pt"],
+        "electrolyte": "nBu4NBF4",
+        "solvent": "MeCN 或 DCM",
+        "selenium_source": "(PhSe)2 或 PhSeSePh",
+        "sulfonyl_source": "ArSO2Na",
+        "current_density": "5-10 mA/cm²",
+        "cell_type": "undivided"
+      },
+      "mechanism_notes": "二硒化物阳极氧化生成硒正离子",
+      "tips": ["控制两种试剂配比", "注意硒化物毒性"]
+    },
+    "sulfenoamination": {
+      "name": "硫-胺双官能化",
+      "description": "引入硫基和胺基",
+      "typical_conditions": {
+        "anode": ["Pt", "Carbon"],
+        "cathode": ["Pt", "Ni"],
+        "electrolyte": "nBu4NBF4",
+        "solvent": "MeCN",
+        "sulfur_source": "硫醚或二硫化物",
+        "current_density": "5-10 mA/cm²",
+        "cell_type": "undivided"
+      },
+      "mechanism_notes": "硫源阳极氧化生成硫正离子中间体",
+      "tips": ["硫醚类化合物有异味，通风操作"]
+    }
+  },
+
+  "cell_assembly": {
+    "undivided": {
+      "description": "非分隔池，阳极和阴极在同一溶液中",
+      "procedure": "在干净的反应瓶/ElectraSyn 中依次加入：①电解质 + 溶剂，搅拌溶解；②底物（最后加入或用注射器缓慢加入）；③插入阳极和阴极，电极间距约 0.5–1.0 cm，浸入液面以下；④连接电源，设定电流/电位，开始反应。",
+      "advantages": ["装置简单", "电阻低", "适合大多数反应"],
+      "disadvantages": ["阴极产物可能被阳极再氧化", "不适合敏感反应"],
+      "best_for": ["大多数烯烃双官能化", "牺牲阳极反应", "简单氧化还原"]
+    },
+    "divided": {
+      "description": "分隔池，阳极和阴极被隔膜分开",
+      "procedure": "组装 H-cell（隔膜：玻璃砂芯或 Nafion 膜）。两室分别加入电解质 + 溶剂（等体积）。底物加入工作电极室（通常为阳极室）。两室分别插入电极。确保隔膜完好，电解质液面等高以避免渗透压驱动液体转移。",
+      "advantages": ["阴阳极产物分离", "避免产物相互反应", "可独立控制条件"],
+      "disadvantages": ["电阻较高", "装置复杂", "溶剂用量大"],
+      "best_for": ["敏感产物", "需要分离阴阳极产物", "机理研究"]
+    },
+    "flow": {
+      "description": "流动电化学池",
+      "procedure": "组装流通池（微流控反应器）。连接泵、管路和电化学池。预先配制电解液（电解质 + 溶剂 + 底物），设定流速。注意流速与电流密度的匹配（停留时间 ≈ 所需电荷量 / (I × 电极面积 / 流速)）。",
+      "advantages": ["连续生产", "传质好", "温度控制精确", "适合放大"],
+      "disadvantages": ["设备成本高", "需要优化流速"],
+      "best_for": ["工业放大", "高效传质", "连续生产"]
+    },
+    "sealed": {
+      "description": "密封电化学池，惰性气氛保护",
+      "procedure": "在密封电化学池中操作（如 Schlenk 技术）。氮气或氩气保护下加入溶剂和底物。适用于氧气/水敏感反应。",
+      "advantages": ["排除氧气和水", "适合敏感反应"],
+      "disadvantages": ["操作复杂", "气体产生时需排气"],
+      "best_for": ["氧敏感反应", "水敏感反应", "空气敏感催化剂"]
+    }
+  },
+
+  "troubleshooting": {
+    "no_reaction": {
+      "symptoms": "通电后无明显变化，底物回收",
+      "possible_causes": [
+        "电解质未溶解或浓度过低",
+        "电极未浸入溶液",
+        "电路接触不良",
+        "电流/电压设置过低",
+        "底物氧化/还原电位超出溶剂窗口"
+      ],
+      "solutions": [
+        "检查电解质是否完全溶解，增加浓度",
+        "确保电极完全浸入液面以下",
+        "检查线路连接和电极夹持",
+        "逐步提高电流或电压",
+        "测量底物 CV，确认电位范围"
+      ]
+    },
+    "low_yield": {
+      "symptoms": "反应发生但产率低",
+      "possible_causes": [
+        "反应未完成（电荷量不足）",
+        "产物在电极上进一步反应",
+        "副反应消耗底物",
+        "产物不稳定",
+        "电流效率低"
+      ],
+      "solutions": [
+        "延长反应时间或增加电荷量",
+        "降低电流密度",
+        "使用分隔池",
+        "降低温度",
+        "优化电解质和溶剂组合"
+      ]
+    },
+    "electrode_fouling": {
+      "symptoms": "电流逐渐下降，电极表面变色或有沉积物",
+      "possible_causes": [
+        "聚合物沉积",
+        "产物吸附",
+        "电解质分解"
+      ],
+      "solutions": [
+        "定期更换或清洗电极",
+        "降低底物浓度",
+        "添加抑制聚合的添加剂",
+        "使用脉冲电解"
+      ]
+    },
+    "overoxidation": {
+      "symptoms": "产物进一步氧化，得到过度氧化产物",
+      "possible_causes": [
+        "电流密度过高",
+        "电极电位过高",
+        "反应时间过长"
+      ],
+      "solutions": [
+        "降低电流密度",
+        "使用恒电位模式",
+        "缩短反应时间",
+        "使用分隔池保护产物"
+      ]
+    },
+    "gas_evolution": {
+      "symptoms": "大量气泡产生",
+      "possible_causes": [
+        "水分解产生 H2/O2",
+        "溶剂分解",
+        "电流过大"
+      ],
+      "solutions": [
+        "使用更干燥的溶剂",
+        "降低电流",
+        "检查电位是否超出溶剂窗口"
+      ]
+    },
+    "poor_selectivity": {
+      "symptoms": "产物混合物，区域选择性差",
+      "possible_causes": [
+        "反应条件不优化",
+        "多个活性位点",
+        "自由基重组无选择性"
+      ],
+      "solutions": [
+        "调整电流密度",
+        "改变温度",
+        "添加催化剂控制选择性",
+        "改变电极材料"
+      ]
+    }
+  },
+
+  "scale_up_guide": {
+    "general_principles": [
+      "电流密度 (mA/cm²) 保持恒定，而非电流值",
+      "增大电极面积而非简单增加电流",
+      "注意散热，大规模反应热效应显著",
+      "考虑使用流动体系提高传质效率",
+      "电解质成本在大规模时变得重要"
+    ],
+    "electrode_scaling": {
+      "description": "电极面积与反应规模成正比",
+      "formula": "放大后电极面积 = 原面积 × (放大倍数)",
+      "example": "1 mmol (1 cm²) → 10 mmol (10 cm²)",
+      "tips": ["保持电极间距恒定", "考虑电极形状（板状 vs 网状）", "RVC 或石墨毡可提供大表面积"]
+    },
+    "current_calculation": {
+      "description": "根据法拉第定律计算所需电荷量",
+      "formula": "Q (C) = n × F × mol (n = 电子转移数, F = 96485 C/mol)",
+      "formula_practical": "Q (mAh) = n × 26.8 × mmol",
+      "example": "2电子反应, 1 mmol底物: Q = 2 × 26.8 × 1 = 53.6 mAh",
+      "tips": ["实际需要 1.2-2.0 倍理论电荷量", "电流效率通常 50-90%"]
+    },
+    "time_estimation": {
+      "formula": "t (h) = Q (mAh) / I (mA)",
+      "example": "53.6 mAh @ 10 mA = 5.36 h",
+      "tips": ["可通过增加电极面积和电流密度缩短时间", "注意不要超过最佳电流密度"]
+    },
+    "heat_management": [
+      "大规模反应使用水浴或冰浴控温",
+      "流动体系有更好的散热",
+      "监测反应温度",
+      "高电流反应考虑分段进行"
+    ],
+    "flow_cell_advantages": [
+      "传质效率高",
+      "温度控制精确",
+      "连续生产",
+      "容易放大",
+      "电极面积/体积比大"
+    ]
+  },
+
+  "faraday_efficiency": {
+    "definition": "实际产物摩尔数与理论电荷量（根据法拉第定律）的比值",
+    "formula": "FE (%) = (实际产物mol × n × F) / (通过电荷Q) × 100%",
+    "typical_values": {
+      "excellent": "> 90%",
+      "good": "70-90%",
+      "moderate": "50-70%",
+      "low": "< 50%"
+    },
+    "factors_affecting": [
+      "副反应消耗电荷",
+      "产物进一步反应",
+      "溶剂/电解质分解",
+      "电极过程效率"
+    ],
+    "improvement_tips": [
+      "优化电流密度",
+      "使用分隔池",
+      "选择合适的电极材料",
+      "控制反应时间"
+    ]
+  },
+
+  "general_safety": [
+    "电化学实验涉及电源，注意防触电。检查线路绝缘，手湿时不触碰电极。",
+    "高电流运行时电极和溶液可能发热，注意散热或使用冰浴。",
+    "产氢/产氧反应会释放气体，保持反应体系通风，避免在密闭容器中积压可燃气体。",
+    "牺牲阳极（Mg、Zn、Al）会产生金属盐和气体，反应后废液需按金属废液处理。",
+    "使用 HF 类试剂（如 Et3N·3HF）必须全程做好防护，备好葡萄糖酸钙凝胶急救。",
+    "叠氮化物有爆炸风险，避免接触重金属和酸，反应完后用碱液处理废液。",
+    "有机溶剂易燃，远离明火和热源，全程通风橱操作。",
+    "高氯酸盐与有机物混合有爆炸风险，尽量使用 BF4 或 PF6 替代。"
+  ],
+
+  "workup_general": "反应结束后：①断开电源，取出电极；②用溶剂淋洗电极表面，收集淋洗液；③旋蒸浓缩（注意溶剂沸点和电解质残留）；④柱层析纯化（推荐硅胶柱，石油醚/乙酸乙酯梯度洗脱）；⑤NMR 和质谱表征产物。",
+
+  "workup_specific": {
+    "aqueous_workup": "反应液倒入分液漏斗，加水和有机溶剂（如 EtOAc、DCM）萃取。有机层用饱和 NaCl 洗涤，Na₂SO₄ 干燥，旋蒸浓缩。",
+    "sensitive_product": "低温旋蒸（<30°C），避免光照，快速柱层析。",
+    "metal_removal": "使用螯合剂（如 EDTA 水溶液）洗涤，或过硅藻土/Celite 过滤。",
+    "electrolyte_removal": "nBu4N 盐可通过柱层析除去（石油醚/乙酸乙酯体系），或用水/盐水洗涤有机相。"
+  },
+
+  "cv_interpretation": {
+    "description": "循环伏安法 (CV) 用于测定底物/产物的氧化还原电位",
+    "key_parameters": {
+      "Epa": "阳极峰电位 (氧化电位)",
+      "Epc": "阴极峰电位 (还原电位)",
+      "E1/2": "半波电位 = (Epa + Epc) / 2",
+      "ΔEp": "峰电位差 = Epa - Epc (可逆过程约 59/n mV)"
+    },
+    "practical_use": [
+      "确定底物的氧化/还原电位",
+      "判断反应是否在溶剂电化学窗口内",
+      "比较不同条件下的电极过程",
+      "估算合适的操作电位"
+    ],
+    "tips": [
+      "测量前除氧（N2 鼓泡 10-15 min）",
+      "使用三电极体系（工作电极、对电极、参比电极）",
+      "扫描速率通常 50-100 mV/s",
+      "多次扫描检查重现性"
+    ]
+  },
+
+  "reference_electrodes": {
+    "SCE": {
+      "name": "饱和甘汞电极",
+      "potential_vs_SHE": "+0.241 V",
+      "use_in": "水溶液和某些有机溶剂",
+      "notes": "含汞，需妥善处理"
+    },
+    "Ag/AgCl": {
+      "name": "银/氯化银电极",
+      "potential_vs_SHE": "+0.197 V (饱和 KCl)",
+      "use_in": "水溶液",
+      "notes": "常用，稳定"
+    },
+    "Ag/Ag+": {
+      "name": "银/银离子电极",
+      "potential_vs_SHE": "取决于 Ag⁺ 浓度",
+      "use_in": "非水有机溶剂",
+      "notes": "有机电化学常用，需定期校准"
+    },
+    "Fc/Fc+": {
+      "name": "二茂铁/二茂铁正离子",
+      "potential_vs_SHE": "+0.40 V (溶剂依赖)",
+      "use_in": "有机溶剂（作为内标）",
+      "notes": "IUPAC 推荐的有机溶剂参比标准"
+    }
+  }
+}

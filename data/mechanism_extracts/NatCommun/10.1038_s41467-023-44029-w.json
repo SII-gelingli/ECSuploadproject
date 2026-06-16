@@ -1,0 +1,133 @@
+{
+  "doi": "10.1038_s41467-023-44029-w",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electroreductive 1,2-hydroxy fluorosulfonylation of alkenes with FSO2Cl and O2 (air) to deliver beta-hydroxy sulfonyl fluorides via radical chain involving FSO2 radical, peroxy radical, and reduction by B2(OH)4/Et3SiH.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "sacrificial_anode",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Cathodic reduction of FSO2Cl at Zn cathode generates FSO2 radical (and Cl-); the low local FSO2Cl concentration at the cathode suppresses Cl-atom transfer and favors O2 interception of the benzylic radical. Aluminum sacrificial anode supports the circuit.",
+  "key_intermediates": [
+    {
+      "name": "FSO2 radical (fluorosulfonyl radical)",
+      "smiles": "[O]S(=O)F",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-radical I (PhCH•CH2SO2F)",
+      "smiles": "[CH](c1ccccc1)CS(=O)(=O)F",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl peroxy radical II (PhCH(OO•)CH2SO2F)",
+      "smiles": "[O]OC(c1ccccc1)CS(=O)(=O)F",
+      "role": "reactive"
+    },
+    {
+      "name": "hydroperoxide III (PhCH(OOH)CH2SO2F)",
+      "smiles": "OOC(c1ccccc1)CS(=O)(=O)F",
+      "role": "transient"
+    },
+    {
+      "name": "borate-bound alkoxide intermediate IV/VI (B(OH)2-O-CHR-CH2SO2F)",
+      "smiles": "OB(O)OC(c1ccccc1)CS(=O)(=O)F",
+      "role": "transient"
+    },
+    {
+      "name": "triethylsilyl radical (Et3Si•)",
+      "smiles": "[Si](CC)(CC)CC",
+      "role": "reactive"
+    },
+    {
+      "name": "Et3SiCl (from XAT with FSO2Cl)",
+      "smiles": "Cl[Si](CC)(CC)CC",
+      "role": "off_pathway"
+    },
+    {
+      "name": "hexaethyldisilane (Et3Si-SiEt3, from Et3Si• homocoupling)",
+      "smiles": "CC[Si](CC)(CC)[Si](CC)(CC)CC",
+      "role": "off_pathway"
+    },
+    {
+      "name": "B(OH)3 (released after hydrolysis/reduction)",
+      "smiles": "OB(O)O",
+      "role": "off_pathway"
+    },
+    {
+      "name": "beta-keto sulfonyl fluoride 4 (Russell fragmentation byproduct)",
+      "smiles": "O=C(c1ccccc1)CS(=O)(=O)F",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the Zn cathode, FSO2Cl is reduced to FSO2• (and Cl-); FSO2• adds to styrene to give benzylic radical I, which is trapped by O2 to peroxy radical II; HAT from Et3SiH gives hydroperoxide III, which is reduced by B2(OH)4 through borate intermediate IV/VI and hydrolyzed to the beta-hydroxy sulfonyl fluoride, while Et3Si• regenerates FSO2• via halogen-atom transfer with FSO2Cl to sustain the chain.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited, supporting a radical pathway."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE, 58)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Trapping of FSO2• afforded adduct 59 in 10% yield, supporting FSO2 radical generation."
+    },
+    {
+      "name": "beta-keto sulfonyl fluoride 4 (resubjection)",
+      "smiles": "O=C(c1ccccc1)CS(=O)(=O)F",
+      "purpose": "intermediate_trap",
+      "observation": "Compound 4 was not reduced to 3 under standard conditions; products 3 and 4 arise via divergent pathways."
+    },
+    {
+      "name": "constant potential electrolysis",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Optimal at E_cathode = -0.1 V (87%); more reductive potentials (-0.5, -1.0 V) gave lower yields, indicating mild reduction is needed."
+    },
+    {
+      "name": "N2 atmosphere control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Under N2, no product formed and styrene was recovered, confirming O2 is essential."
+    },
+    {
+      "name": "cyclic voltammetry of Et3SiH and B2(OH)4",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Neither Et3SiH nor B2(OH)4 is directly involved in the electrochemical step (no redox features)."
+    },
+    {
+      "name": "11B NMR detection of B(OH)3",
+      "smiles": "OB(O)O",
+      "purpose": "intermediate_trap",
+      "observation": "B(OH)3 detected, consistent with B2(OH)4 reducing the hydroperoxide via borate intermediate."
+    },
+    {
+      "name": "HRMS-ESI detection of (Et3Si)2",
+      "smiles": "CC[Si](CC)(CC)[Si](CC)(CC)CC",
+      "purpose": "intermediate_trap",
+      "observation": "Hexaethyldisilane detected, supporting Et3Si• as chain carrier (and competing homocoupling)."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Competing pathways outlined in Fig. 5c (right): in the absence of Et3SiH/B2(OH)4, peroxy radical II undergoes Russell fragmentation to give beta-keto sulfonyl fluoride 4 plus 3; an alternative cathodic reduction of an alkoxy radical to alkoxide is also drawn. A separate EDA-complex (styrene·FSO2Cl) pathway under daylight without electricity also gives product (78%) but with limited scope. Constant cell voltage (not constant current) is required to maintain low local [FSO2Cl] and avoid over-reduction."
+}

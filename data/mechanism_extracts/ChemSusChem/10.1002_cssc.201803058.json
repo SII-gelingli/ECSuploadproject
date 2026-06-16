@@ -1,0 +1,71 @@
+{
+  "doi": "10.1002_cssc.201803058",
+  "journal": "ChemSusChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical difluoromethylation of acrylamides using CF2HSO2NHNHBoc, giving alkene hydroxydifluoromethylation with secondary N-aryl acrylamides and olefinic C-H difluoromethylation with tertiary acrylamides.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of the sulfonyl hydrazide reagent (CF2HSO2NHNHBoc, 1) generates a diazene intermediate that decomposes to release SO2, N2, CO2, tBu• and the key •CF2H radical; a second anodic oxidation converts the carbon radical adduct to a carbocation; cathode evolves H2.",
+  "key_intermediates": [
+    {
+      "name": "diazene from sulfonyl hydrazide oxidation (I, CF2HSO2N=NBoc)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "difluoromethyl radical (•CF2H)",
+      "smiles": "[CH](F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "α-carbonyl benzylic C-radical from CF2H addition to acrylamide (I-adduct)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-carbonyl benzylic carbocation II",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-amido carbocation IIIA (secondary amide case)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "aza-oxyallyl cation IV (equilibrium tautomer of IIIA)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-amido carbocation IIIB (tertiary amide case)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes sulfonyl hydrazide 1 (2e−, −2H+) to diazene I, which fragments to •CF2H; the radical adds to the acrylamide β-carbon, the resulting α-carbonyl C-radical is oxidized at the anode to carbocation II/III, which either is trapped by H2O (secondary amides, via aza-oxyallyl cation IV → α-hydroxy amide) or undergoes Z-selective proton elimination (tertiary amides → olefinic C-H difluoromethylation product); protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "H2-18O (18O-labeled water as cosolvent)",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "[18O]-3 obtained in 40% yield with 79% 18O incorporation, confirming the hydroxyl oxygen in the alkene difunctionalization product originates from H2O."
+    },
+    {
+      "name": "tertiary N,N-diisopropyl acrylamide 31 (substrate probe)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Under alkene-difunctionalization conditions, tertiary acrylamide 31 gave only C-H functionalization product 25 (63%) with no hydroxylated product, demonstrating that amide N-substitution controls cation fate (H2O addition vs proton elimination)."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "isotope_label",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Divergence between alkene difunctionalization (secondary N-aryl amides) and C-H functionalization (tertiary amides) is rationalized by equilibrium of α-amido cation IIIA with aza-oxyallyl cation IV, which favors nucleophilic addition of water over proton loss. The Z-selectivity in the C-H functionalization pathway is rationalized by proton elimination via conformer IIIB1 (favored) rather than the sterically encumbered IIIB2. No radical traps (TEMPO/BHT), CV, EPR, or DFT reported."
+}

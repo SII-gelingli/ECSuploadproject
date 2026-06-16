@@ -1,0 +1,91 @@
+{
+  "doi": "10.1002_ange.202403461",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Photoinduced dearomative [2+2] cycloaddition of quinolines/isoquinolines/phenanthrenes with alkenes enabled by borate complex formation, affording fused 2D/3D 6-6-4-6 frameworks bearing cyclobutane rings.",
+  "mechanism_family": [
+    "biradical",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "anionic N-borate complex INT-A/INT-B (1,2-dihydroquinoline lithium borate, IM1-B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "excited singlet borate complex 1IM1-B* (1II*)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "excited triplet borate complex 3IM2-B* (3III*) — 1,2-dihydroquinoline-derived triplet diradical",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "triplet biradical 3IM3-B* (after C3–C alkene bond formation, benzyl radicals at C4 of DHQ and on stilbene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "closed-shell cyclobutane-fused dihydroquinoline IM4-B (V, product precursor)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "lithiated (non-borate) intermediate 3IM2-Li* → rearomatized 3IM5-Li* (off-pathway, yields by-product VI)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "INT-C (isoquinoline-derived borate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "INT-D (phenanthrene-derived borate)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Deprotonation/addition of nBuLi and HB(pin) (or B(eg)) onto the heteroarene generates an anionic N-borate complex; UV/visible photoexcitation gives a singlet excited state that undergoes ISC to a longer-lived triplet diradical, which adds stepwise to the alkene to form a triplet 1,4-biradical that closes via a minimum-energy crossing point (S0/T1 MECP) to the cyclobutane-fused dearomatized product, which is acylated (AcCl) to deliver the isolated product.",
+  "rate_determining_step": "Triplet C–C bond formation at the C3 position of the dihydroquinoline borate with the stilbene alkene via 3TS2_3-B* (ΔG‡ = 5.3 kcal/mol); the competing rearomatization via 3TS2_5-B* (13.3 kcal/mol) is suppressed by borate formation.",
+  "probe_reagents": [
+    {
+      "name": "transient absorption spectroscopy (ns laser, 355 nm)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Absorption at ~500 nm with ~10 ns lifetime for both INT-A and INT-B, assigned to excited singlet states; rules out a borate-induced change in triplet lifetime."
+    },
+    {
+      "name": "N–H / N–Ac analogues (vs N–Li/N–B(pin) borates)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Only borate (or lithiated) substrates undergo photoexcitation to the productive excited state; neutral N–H/N–Ac substrates do not enter the pathway, and lithiated-only gives rearomatized by-product 5a/6a instead of cycloaddition product 3aa."
+    },
+    {
+      "name": "control without HB(pin) for isoquinoline 12",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "No [2+2] cycloaddition product detected without HB(pin), confirming the borate INT-C is required."
+    },
+    {
+      "name": "X-ray crystallography (CCDC 2332939) of product 17",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Confirms the dearomative cyclobutane-fused 2D/3D framework structure and diastereochemistry."
+    }
+  ],
+  "evidence_types_used": [
+    "DFT",
+    "UV_vis",
+    "on/off_light_or_current",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two excited-state pathways were compared computationally: (favored) borate triplet 3IM2-B* → 3TS2_3-B* (5.3) → 3IM3-B* → MECP → IM4-B (cycloadduct, −55.1 kcal/mol); (alternative/off-pathway) borate rearomatization via 3TS2_5-B* (13.3 kcal/mol) giving 3IM5-B*, and lithiated 3IM2-Li* pathway in which 3TS2_5-Li* (7.9) is lower than 3TS2_3-Li* (14.8), explaining why the N–Li intermediate gives only rearomatized by-product. A singlet TS 3TS3_4-B* (39.9 kcal/mol) is ruled out in favor of an S0/T1 MECP for ring closure. Diastereoselectivity is rationalized by approach-direction TS energies (5.3 vs 6.1/7.1/16.6 kcal/mol). Cycloaddition occurs ~10^7 times faster than rearomatization, while rearomatization is ~10^5 times slower for the borate vs the lithiated intermediate."
+}

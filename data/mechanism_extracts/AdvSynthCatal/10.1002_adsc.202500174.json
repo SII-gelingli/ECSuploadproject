@@ -1,0 +1,60 @@
+{
+  "doi": "10.1002_adsc.202500174",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical-polar crossover (RPC) coupling of ortho-vinyl benzamides with C-H acidic malonate-type esters to assemble multi-ester functionalized benzoxazines and iminoisobenzofurans.",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "radical_anodic",
+    "anion_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation: base (tBuOK) deprotonates the C-H acidic ester to a stabilized carbanion, which is oxidized at the graphite anode to an electrophilic C-centered radical; after radical addition to the alkene, the resulting benzylic radical is further oxidized at the anode to a benzylic carbocation (RPC). Cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "malonate carbanion (deprotonated triethyl methanetricarboxylate)",
+      "smiles": "[CH-](C(=O)OCC)(C(=O)OCC)C(=O)OCC",
+      "role": "transient"
+    },
+    {
+      "name": "electrophilic malonyl C-radical (after anodic SET)",
+      "smiles": "[C](C(=O)OCC)(C(=O)OCC)C(=O)OCC",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-radical adduct from radical addition to o-vinyl benzamide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation after second anodic oxidation (RPC)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "amide O-cyclized product (benzoxazine / iminoisobenzofuran)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "tBuOK deprotonates the malonate ester; the carbanion is oxidized at the anode to an electrophilic radical, which adds to the styrenyl alkene of the o-vinyl benzamide to give a benzylic radical; this radical is oxidized again at the anode to a benzylic cation (radical-polar crossover), which is trapped intramolecularly by the amide oxygen (after amide tautomerization) to give the O-heterocycle, while the cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of substrate 1 (o-vinyl benzamide)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No oxidation observed between 0 and 1.30 V vs SCE, indicating alkene 1 is not directly oxidized."
+    },
+    {
+      "name": "cyclic voltammetry of substrate 2 (C-H acidic ester)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Shows oxidation in the accessible window; anodic oxidation of the deprotonated C-H nucleophile is strongly preferred, supporting the RPC pathway with 2 as the species oxidized at the anode."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism is supported primarily by CV comparison of the two substrates plus literature precedent; no radical trap (TEMPO/BHT), KIE, or DFT experiments are reported on these pages. The amide acts as a tethered O-nucleophile, with amide isomerization (imidic acid tautomer) invoked to enable O-attack on the benzylic cation; depending on the N-substituent the product is a benzoxazine or an iminoisobenzofuran."
+}

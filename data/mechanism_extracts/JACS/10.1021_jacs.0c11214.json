@@ -1,0 +1,84 @@
+{
+  "doi": "10.1021_jacs.0c11214",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical reductive coupling of unactivated olefins with ketones to form tertiary homoallylic/saturated alcohols via cathodically generated ketyl radicals at a Sn cathode with a sacrificial Zn anode",
+  "mechanism_family": [
+    "radical_cathodic",
+    "sacrificial_anode",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Cathodic one-electron reduction of the ketone at a Sn cathode generates a strongly surface-adsorbed ketyl radical that adds to the olefin; a second cathodic reduction of the resulting C-radical to a carbanion is enabled by Zn2+ (from sacrificial Zn anode) acting as a thermodynamic sink and via ZnBr2 coordination to the ketone",
+  "key_intermediates": [
+    {
+      "name": "Sn-adsorbed ketyl radical from ketone",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-hydroxy carbon-centered radical (after addition to olefin)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-hydroxy carbanion (dianion after second reduction)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ZnBr2-coordinated ketone (lower-potential reducible species)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the Sn cathode the ketone undergoes one-electron reduction to a strongly adsorbed ketyl radical (E), which adds to the unactivated olefin (C); a second one-electron reduction of the resulting C-radical (second E), facilitated by Zn2+ from the sacrificial Zn anode, yields a carbanion that is protonated on workup (second C) — an overall ECEC sequence.",
+  "rate_determining_step": "Electrochemical reduction of the ketone (current-limited; kinetics zero-order in all components except current)",
+  "probe_reagents": [
+    {
+      "name": "α-substituted ketone 60 (R = H or TBS)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Elimination of the α-substituent observed (product 62, 48%), consistent with a ketyl radical intermediate"
+    },
+    {
+      "name": "Allyl alcohol 64",
+      "smiles": "OCC=C",
+      "purpose": "intermediate_trap",
+      "observation": "Bis-addition adduct 65 (50%) formed, suggesting carbanion intermediate where ZnBr2 assists departure of OH and regenerates an olefin"
+    },
+    {
+      "name": "Acetone-d6",
+      "smiles": "[2H]C([2H])([2H])C(=O)C([2H])([2H])[2H]",
+      "purpose": "isotope_label",
+      "observation": "80% D incorporation at the highlighted position of product 67-d (74%), supporting a carbanion intermediate protonated on workup"
+    },
+    {
+      "name": "d7-DMF (with non-deuterated acetone)",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "0% D incorporation in product 68 (72%), ruling out DMF as the proton source"
+    },
+    {
+      "name": "Kinetic order analysis",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Zero-order in all components except current — reduction is purely electrochemical/current-limited"
+    },
+    {
+      "name": "Acetophenone (CV/SWV probe)",
+      "smiles": "CC(=O)c1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "Pre-peaks observed on Sn (not on GC) indicate strong adsorption of ketyl radical to Sn; addition of olefin 61 causes anodic shift in cathodic peak (EC behavior); SWV with ZnBr2 reveals three reduction peaks, the third assigned to ZnBr2-coordinated ketone, supporting ECEC"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "kinetic_order",
+    "product_isotope_distribution",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "The Sn cathode is critical: strong adsorption of the ketyl radical (evidenced by CV pre-peaks absent on GC) modulates its reactivity, enabling coupling with unactivated olefins rather than typical nucleophilic ketyl behavior. The role of the sacrificial Zn anode is dual: avoids competing anodic oxidation and supplies Zn2+/ZnBr2 that coordinates the ketone, lowering the second reduction potential to make the ECEC pathway feasible. Limitation: α-substituted ketones undergo elimination rather than productive coupling."
+}

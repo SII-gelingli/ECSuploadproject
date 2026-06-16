@@ -1,0 +1,88 @@
+{
+  "doi": "10.1002_adsc.202200470",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical synthesis of iodohydrins (and ethers) from alkenes using ammonium iodide as a non-toxic iodine source via an acetonitrile-stabilized iodonium intermediate.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated",
+    "carbocation"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (I-) to iodine radical and then to a CH3CN-stabilized I+ (iodonium-like) species; cathodic reduction of H+ to H2",
+  "key_intermediates": [
+    {
+      "name": "iodine radical (from first anodic oxidation of I-)",
+      "smiles": "[I]",
+      "role": "transient"
+    },
+    {
+      "name": "acetonitrile-stabilized iodonium (CH3CNI+) equivalent to I+",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkene-derived iodonium ion (intermediate A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "open carbocation (from iodonium ring-opening, invoked for norbornene rearrangement)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "molecular iodine I2 (possible in situ)",
+      "smiles": "II",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the anode, I- is oxidized in two successive one-electron steps to give an acetonitrile-stabilized I+ species, which adds to the alkene to form an iodonium ion; Markovnikov nucleophilic attack by water (or alcohol) delivers the iodohydrin/ether, while 2H+ are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "molecular iodine (I2) in place of NH4I",
+      "smiles": "II",
+      "purpose": "intermediate_trap",
+      "observation": "Gave the iodohydrin in moderate yield (36%), lower than with NH4I, indicating in-situ I2 cannot be ruled out but is less productive than CH3CN-stabilized I+"
+    },
+    {
+      "name": "norborn-2-ene (radical clock / cation probe)",
+      "smiles": "C1CC2CC1C=C2",
+      "purpose": "radical_clock",
+      "observation": "Gave rearranged products 39 and 40 in 64:36 ratio, consistent with a cationic (iodonium/carbocation) intermediate rather than a radical pathway"
+    },
+    {
+      "name": "current interruption (45 min then 24 h without current)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No additional product formed, ruling out post-electrolysis chemistry from cathodically released metal salts"
+    },
+    {
+      "name": "NH4Br control",
+      "smiles": "[NH4+].[Br-]",
+      "purpose": "redox_probe",
+      "observation": "Formed bromohydrin; CV showed similar oxidation waves to NH4I"
+    },
+    {
+      "name": "NH4Cl control",
+      "smiles": "[NH4+].[Cl-]",
+      "purpose": "redox_probe",
+      "observation": "No reaction; CV showed oxidation at higher potential, explaining non-reactivity"
+    },
+    {
+      "name": "styrene CV alone and with NH4I",
+      "smiles": "C=Cc1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "No oxidation/reduction of styrene up to +1.2 V; adding NH4I gave no current increase, ruling out direct styrene oxidation / iodine-mediated styrene oxidation"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "radical_clock",
+    "intermediate_trap_other",
+    "on/off_light_or_current",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors cannot fully exclude direct reaction of in-situ generated I2 with alkene, but argue CH3CN-stabilized I+ pathway is dominant based on lower yield with I2 and CV data. Stereochemistry of product 15 and norbornene rearrangement (39/40) support an iodonium/carbocation pathway rather than a radical mechanism."
+}

@@ -1,0 +1,101 @@
+{
+  "doi": "10.1021_acs.orglett.9b03306",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intermolecular [2+1+n] annulation of alkenes with diazo compounds and tert-butyl nitrite to give isoxazolines (with styrenes) or 5,6-dihydro-4H-1,2-oxazines (with allylbenzenes), where diazo compounds serve as radical acceptors",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "radical_anodic",
+    "radical_cathodic",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Cathodic reduction of tBuONO generates an electron-rich nitroso radical (·NO) and tert-butoxide; the resulting C-centered benzylic radical is oxidized at the anode to a benzylic cation (radical-polar crossover); paired electrolysis with H2 evolution avoided by using tBuONO as sacrificial species",
+  "key_intermediates": [
+    {
+      "name": "nitroso radical (·NO) from homolysis/heterolysis of tBuONO",
+      "smiles": "[N]=O",
+      "role": "reactive"
+    },
+    {
+      "name": "tert-butoxy radical",
+      "smiles": "CC(C)(C)[O]",
+      "role": "transient"
+    },
+    {
+      "name": "tert-butoxide anion (from cathodic reduction)",
+      "smiles": "CC(C)(C)[O-]",
+      "role": "transient"
+    },
+    {
+      "name": "α-oxime-ester C-radical I (·NO addition to diazo with N2 loss)",
+      "smiles": "O=NC([CH])C(=O)OCC",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical II from addition of I to styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic cation III after anodic oxidation of II",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "oxime tautomer IV (cation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical V (from addition of I to allylbenzene)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "more-stable benzyl radical VI after 1,2-aryl migration",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "nitrile oxide 6 (alternative anodic oxidation product of I, not observed)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode reduces tBuONO to give ·NO and tBuO-/tBuO·; ·NO adds to the diazo compound with loss of N2 to give an α-acyl C-radical (I), which adds to the alkene to give a benzylic/alkyl radical (II or V); for allylbenzenes, 1,2-aryl migration gives the more stable benzyl radical VI; anodic oxidation of the C-radical to a cation, tautomerization to the oxime, and intramolecular O-attack/dehydration closes the isoxazoline or 1,2-oxazine ring.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "H-type divided cell experiment",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Product 3a still formed in 45% GC yield in divided cell (vs 75% undivided), indicating tBuONO undergoes homolytic cleavage independently and confirming both anodic and cathodic events contribute"
+    },
+    {
+      "name": "Cyclic voltammetry of tBuONO with/without HFIP",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "HFIP lowers reduction potential of tBuONO to -0.78 V vs Ag/AgCl, rationalizing why HFIP facilitates nitroso radical generation"
+    },
+    {
+      "name": "allylbenzene substrates (radical clock / migration probe)",
+      "smiles": "C=CCc1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "1,2-aryl migration observed to give 5,6-dihydro-4H-1,2-oxazines (R2=H, alkyl), proving radical pathway rather than 1,3-dipolar cycloaddition (which would give isoxazoline 7, not observed)"
+    },
+    {
+      "name": "absence of nitrile oxide [3+2] product 7",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Only [2+1+3] product 5 formed, not the cycloaddition product 7 expected from nitrile oxide 6, ruling out anodic oxidation of I to nitrile oxide / 1,3-dipolar cycloaddition pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "radical_clock",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly rule out the alternative 1,3-dipolar cycloaddition pathway (anodic oxidation of radical I to nitrile oxide 6 followed by [3+2] with alkene) on the basis that allylbenzenes give 1,2-oxazines via aryl migration rather than the cycloaddition product 7. HFIP additive critical for lowering tBuONO reduction potential. Paired electrolysis: anode oxidizes benzylic radical, cathode reduces tBuONO — no sacrificial H2 evolution needed."
+}

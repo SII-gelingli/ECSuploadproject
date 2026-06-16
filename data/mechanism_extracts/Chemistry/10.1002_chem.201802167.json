@@ -1,0 +1,94 @@
+{
+  "doi": "10.1002_chem.201802167",
+  "journal": "Chemistry",
+  "is_review": false,
+  "rxn_class_summary": "Electrocatalytic radical chlorotrifluoromethylative ene-yne cyclization of 1,6-enynes to chlorotrifluoromethylated pyrrolidines using anodically coupled electrolysis with Mn catalysis",
+  "mechanism_family": [
+    "radical_anodic",
+    "paired_electrolysis",
+    "electrocatalysis_inner_sphere",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Two parallel anodic oxidations on the carbon anode: (A) single-electron oxidation of CF3SO2- (from CF3SO2Na) with loss of SO2 to generate CF3 radical, and (B) single-electron oxidation of [Mn(II)]-Cl (formed from Mn(OTf)2 + MgCl2) to a persistent [Mn(III)]-Cl species that serves as a Cl-atom transfer reagent",
+  "key_intermediates": [
+    {
+      "name": "CF3 radical (transient free radical)",
+      "smiles": "[C](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "[Mn(III)]-Cl persistent radical / Cl-atom transfer complex",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[Mn(II)]-Cl resting-state complex",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "sp3 carbon-centered radical I after CF3 addition to alkene of 1,6-enyne",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkenyl (vinyl) radical II/IV after 5-exo-dig cyclization onto alkyne",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alpha-aryl sp-hybridized alkenyl radical III (stereodetermining)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- (-SO2) to CF3 radical, which adds regioselectively to the alkene of the 1,6-enyne to give a tertiary C-radical; this radical undergoes 5-exo-dig cyclization onto the tethered alkyne to give an alkenyl radical that is captured by anodically generated [Mn(III)]-Cl via Cl atom transfer, releasing [Mn(II)]-Cl which is re-oxidized at the anode; protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": "Cl-atom transfer from [Mn(III)]-Cl to the alkenyl radical (stereodetermining; under Curtin-Hammett control for alpha-alkyl alkenyl radicals)",
+  "probe_reagents": [
+    {
+      "name": "no Mn catalyst control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "no desired pyrrolidine formed (entry 5/6), demonstrating essential role of Mn"
+    },
+    {
+      "name": "no electrical current control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "<5% product, confirming electrochemical oxidation required"
+    },
+    {
+      "name": "2,2'-bipyridine ligand",
+      "smiles": "c1ccc(-c2ccccn2)nc1",
+      "purpose": "other",
+      "observation": "adding 20 mol% bpy increased Z/E from 5.1:1 to >19:1, supporting steric control at Mn during Cl transfer"
+    },
+    {
+      "name": "KBr substitution for MgCl2",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "bromotrifluoromethylated pyrrolidine 19 obtained as single geometric isomer, consistent with analogous [Mn]-Br atom transfer"
+    },
+    {
+      "name": "X-ray of product 7",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "confirmed Z-configuration of alkene, supporting stereochemical model"
+    },
+    {
+      "name": "cyclic voltammetry of CF3SO2Na and Mn(OTf)2/MgCl2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Eox(CF3SO2-) = 0.81 V and Eox([Mn(II)]-Cl) = 0.75 V vs Fc+/0; [Mn(III)/Mn(II)]-Cl couple reversible, indicating persistence of Mn-Cl species"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "on/off_light_or_current",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Stereoselectivity rationalized by Curtin-Hammett model: for alpha-aryl alkenyl radicals (sp-hybridized due to conjugation), steric shielding by quaternary C directs [Mn(III)]-Cl approach from less congested face, giving Z-selectivity; for alpha-alkyl alkenyl radicals (sp2), pro-(Z) and pro-(E) rotamers interconvert and competing kinetics/thermodynamics erode selectivity. Side pathways noted for substrates 20 (direct alkene/alkyne difunctionalization) and 21 (labile alpha-O C-H abstraction by CF3 radical giving CF3H). 1,7-enyne extension to piperidine 12 shows lower E/Z selectivity due to ring conformational flexibility during Cl transfer."
+}

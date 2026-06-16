@@ -1,0 +1,89 @@
+{
+  "doi": "10.1039_D5OB00694E",
+  "journal": "OrgBiomolChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical trifluoromethylation/cyclization of beta,gamma-alkenyl oximes with CF3SO2Na to give CF3-substituted isoxazolines",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of CF3SO2- (Langlois reagent) to generate CF3 radical (with loss of SO2); second anodic oxidation of the C-centered radical adduct to a carbocation that cyclizes; cathodic proton reduction to H2 balances charge",
+  "key_intermediates": [
+    {
+      "name": "CF3SO2 radical (A) from anodic oxidation of CF3SO2-",
+      "smiles": "[O]S(=O)C(F)(F)F",
+      "role": "transient"
+    },
+    {
+      "name": "CF3 radical (B) after loss of SO2",
+      "smiles": "[C](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "C-centered radical adduct on alkenyl oxime (C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Carbocation intermediate (D) after second anodic oxidation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "CF3-substituted isoxazoline product 3aa",
+      "smiles": "O1N=C(c2ccccc2)CC1(c1ccccc1)CC(F)(F)F",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- by one electron to give CF3SO2 radical, which loses SO2 to form CF3 radical; CF3 radical adds to the alkene of the beta,gamma-alkenyl oxime to give a carbon radical, which is further oxidized at the anode to a carbocation that undergoes intramolecular O-cyclization by the oxime hydroxyl to deliver the isoxazoline; protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "2.0 equiv almost completely suppressed formation of 3aa, indicating a radical pathway"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "2.0 equiv suppressed the reaction (trace 3aa), supporting radical intermediates"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C(c1ccccc1)c1ccccc1)",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3aa dropped to <10%; CF3-DPE adduct 7 isolated in 55%, providing strong evidence for a free CF3 radical"
+    },
+    {
+      "name": "Cyclopropyl-bearing alkenyl oxime 8",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Neither cyclic nitrone 9 nor ring-opened product 10 was observed (inconclusive radical clock)"
+    },
+    {
+      "name": "CF3SO2Na (2a) CV",
+      "smiles": "[Na+].[O-]S(=O)C(F)(F)F",
+      "purpose": "redox_probe",
+      "observation": "Irreversible oxidation peak at 1.701 V, consistent with anodic generation of CF3 radical"
+    },
+    {
+      "name": "Alkenyl oxime 1a CV",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak at 2.243 V (higher than 2a); mixture 1a+2a shows onset at 1.947 V with increased current, suggesting CF3SO2- is oxidized first"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "radical_clock",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Radical clock with cyclopropyl substrate 8 was inconclusive (no nitrone 9 nor ring-opened 10 detected). Mechanism proposes radical-polar crossover (radical addition then anodic oxidation to cation) rather than direct radical cyclization; alternative all-radical cyclization pathway is not explicitly ruled out."
+}

@@ -1,0 +1,74 @@
+{
+  "doi": "10.1039_d0sc01078b",
+  "journal": "ChemSci",
+  "is_review": false,
+  "rxn_class_summary": "Electrooxidative [3+2] annulation of phenols with electron-deficient alkenes (cinnamates) to give C3-functionalized 2-aryl-2,3-dihydrobenzofurans under undivided-cell conditions with cathodic H2 evolution.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the electron-rich phenol generates a phenoxyl/aryl radical (I); a later anodic oxidation of the post-addition benzylic radical to a stabilized benzylic cation enables intramolecular O-cyclization; cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "phenoxyl/aryl C-radical from anodic oxidation of phenol 1 (radical I, drawn as ortho-C-radical / phenoxyl resonance form)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Int-a-I: adduct radical from α-addition of aryl radical I to cinnamate 2a (favored)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Int-a-II: dienone/keto tautomer after rearomatization, still C-radical α to ester",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation α to CO2Et formed by SET oxidation of Int-a-II (stabilized by p-methoxyphenyl)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Int-b-I / Int-b-II: β-addition counterparts (disfavored pathway)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "Dimer 5 from radical I self-coupling (observed when 2a is absent or with electron-rich 1o)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes phenol 1 by SET to give aryl/phenoxyl radical I; I adds regioselectively to the α-carbon of cinnamate 2a yielding a benzylic C-radical (Int-a-I→Int-a-II after rearomatization); a second anodic SET oxidizes this radical to a benzylic cation that is trapped intramolecularly by the phenolic OH to close the 2,3-dihydrobenzofuran ring, while the cathode reduces protons to H2.",
+  "rate_determining_step": "Regioselective α-addition of aryl radical I to the electron-deficient alkene (TS-a-I, ΔG‡ = +24.0 kcal/mol; β-addition TS-b-I = +30.4 kcal/mol).",
+  "probe_reagents": [
+    {
+      "name": "electron-rich phenol 1o (control substrate, no alkene partner / outcompetes addition)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "In absence of efficient trapping by 2a, 1o dimerizes to give 5 in 87% yield with >95% recovery of 2a, evidencing anodic generation of aryl radical I."
+    },
+    {
+      "name": "DFT (U)M06-2X(D3)/6-311+G(d,p)//(U)B3LYP-D3/6-31G(d) in CF3CH2OH/CH2Cl2",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "α-addition TS (+24.0) lower than β (+30.4); Int-a-II (-0.6) more stable than Int-b-II (+3.8), rationalizing exclusive α-regioselectivity."
+    },
+    {
+      "name": "X-ray crystallography of 3ac",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Confirms 2,3-trans stereochemistry of the dihydrobenzofuran product."
+    }
+  ],
+  "evidence_types_used": [
+    "DFT",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly compare α- vs β-radical-addition pathways with DFT; α-pathway is both kinetically and thermodynamically favored due to stabilization of the resulting radical/cation by the p-methoxyphenyl group of the cinnamate. The dimerization experiment with 1o supports anodic generation of a phenol-derived radical but does not directly rule out a phenoxenium (2e) pathway; no TEMPO/BHT trapping or KIE reported. HFIP cosolvent likely stabilizes cationic intermediates in the radical-polar crossover step."
+}

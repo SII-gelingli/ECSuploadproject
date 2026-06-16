@@ -1,0 +1,85 @@
+{
+  "doi": "10.1055_a-2025-1822",
+  "journal": "Synthesis",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,2-bromo-alkoxylation of alkenes using CH2Br2 as bromine source and alcohol as alkoxy source/solvent in an undivided cell to afford β-bromoethers",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of Br- (released from CH2Br2 C-X cleavage) to Br• radical, which adds to the alkene; the resulting C-radical is further oxidized at the anode to a benzylic carbocation; at the cathode, protons are reduced to H• (H2 evolution) and +CH2Br is reduced to give CH3Br",
+  "key_intermediates": [
+    {
+      "name": "bromine radical (Br•)",
+      "smiles": "[Br]",
+      "role": "reactive"
+    },
+    {
+      "name": "+CH2Br bromomethyl cation from CH2Br2 C-X cleavage",
+      "smiles": "[CH2+]Br",
+      "role": "transient"
+    },
+    {
+      "name": "benzylic C-centered radical from Br• addition to alkene (II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation from anodic oxidation of II (III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl oxonium salt from ROH attack on carbocation (IV)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "hydrogen radical H• from cathodic reduction of H+",
+      "smiles": "[H]",
+      "role": "transient"
+    },
+    {
+      "name": "CH3Br byproduct from H•/+CH2Br combination at cathode",
+      "smiles": "CBr",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "C-X bond cleavage of CH2Br2 releases Br- and +CH2Br; anodic oxidation of Br- gives Br• which adds to the alkene to form a benzylic radical; a second anodic oxidation converts this radical to a benzylic carbocation that is trapped by ROH to give an oxonium, which deprotonates to the β-bromoether. At the cathode, H+ is reduced to H• (giving H2) and +CH2Br is reduced to CH3Br.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT (2,6-di-tert-butyl-4-methylphenol)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield of 1a drastically diminished to 45%; BHT-Br adduct detected by GC-MS (m/z = 299), supporting a free-radical (Br•) intermediate"
+    },
+    {
+      "name": "1,1-diphenylethylene (substrate)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "CV oxidation peak at 2.48 V vs Ag/AgCl, higher than CH2Br2 (1.93 V), indicating CH2Br2/Br- is oxidized preferentially"
+    },
+    {
+      "name": "CH2Br2",
+      "smiles": "BrCBr",
+      "purpose": "redox_probe",
+      "observation": "CV oxidation peak at 1.93 V vs Ag/AgCl, assigned to Br- → Br• oxidation"
+    },
+    {
+      "name": "no-current control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product formation without applied current, confirming electrochemical nature"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Cathodic chemistry (H• generation and +CH2Br reduction to CH3Br) is proposed in parallel with the anodic catalytic cycle, making this effectively a paired electrolysis. iPrOH and tBuOH failed as coupling partners, suggesting steric limits on the oxonium/nucleophilic addition step. No KIE or DFT studies were performed."
+}

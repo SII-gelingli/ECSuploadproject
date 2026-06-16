@@ -1,0 +1,57 @@
+{
+  "doi": "10.1039_D3GC02701E_sup_1",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical methoxylation/dimerization of styrenes with methanol via anodic oxidation proceeding through a radical-cation/radical intermediate",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "anodic oxidation of styrene to a styryl radical cation (onset ~+1.713 V vs Ag/AgCl), which is intercepted by methanol to give a benzylic carbon radical that couples to deliver the 1,4-dimethoxy product",
+  "key_intermediates": [
+    {
+      "name": "styrene radical cation",
+      "smiles": "[CH2]=[CH+]c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "β-methoxy benzylic carbon radical (III)",
+      "smiles": "COC(c1ccccc1)C[CH2]",
+      "role": "reactive"
+    },
+    {
+      "name": "1,4-dimethoxy-1,4-diphenylbutane-type product (2)",
+      "smiles": "COC(c1ccccc1)CCC(OC)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "BHT-trapped radical adduct (V)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "The anode performs single-electron oxidation of styrene (Eonset ≈ +1.713 V) to give a styryl radical cation; methanol adds to the radical cation generating a β-methoxy benzylic carbon radical, which is intercepted (radical coupling/further oxidation) en route to the dimethoxylated coupling product.",
+  "rate_determining_step": "anodic SET oxidation of the styrene to its radical cation",
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Product 2 was not detected (N.D.); BHT-trapped adduct V containing the β-methoxy benzylic fragment was detected by HRMS, supporting a carbon-radical intermediate"
+    },
+    {
+      "name": "styrene (1)",
+      "smiles": "C=Cc1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "CV showed an oxidation onset at +1.713 V vs Ag/AgCl, consistent with direct anodic oxidation of styrene"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_BHT",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism inferred from CV (Figure S3) and BHT trapping (Scheme S1) shown in the SI. The BHT adduct corresponds to the β-methoxy benzylic radical, indicating MeOH addition occurs before the radical-coupling step; no KIE, DFT, or EPR evidence is presented on these pages."
+}

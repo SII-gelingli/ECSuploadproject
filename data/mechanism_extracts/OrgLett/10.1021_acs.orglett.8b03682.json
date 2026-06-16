@@ -1,0 +1,60 @@
+{
+  "doi": "10.1021_acs.orglett.8b03682",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical fluorocyclization of N-allylcarboxamides to 5-fluoromethyl-2-oxazolines mediated by anodically generated hypervalent aryl-iodine(III) species using Et3N·5HF as fluoride source",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic 2-electron oxidation of 4-methyliodobenzene (ArI) to a hypervalent ArI(III)/iodonium-type mediator that activates the alkene; HF provides fluoride and the cathode reduces protons",
+  "key_intermediates": [
+    {
+      "name": "anodically oxidized 4-methyliodobenzene (ArI cation/ArIF2-type hypervalent iodine(III) mediator)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkene-coordinated iodonium (three-membered iodiranium) intermediate 4a from attack of allyl C=C on ArI(III)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "5-(λ3-iodanyl)methyl oxazoline 4b formed by intramolecular ring-opening by the amide carbonyl oxygen",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "4-methyliodobenzene (ArI) released after SN2 displacement by fluoride",
+      "smiles": "Cc1ccc(I)cc1",
+      "role": "resting_state"
+    },
+    {
+      "name": "5-fluoromethyl-2-aryl-2-oxazoline product 2a",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "ArI is oxidized at the anode (2e-) to a hypervalent I(III) species that electrophilically activates the allyl alkene of the N-allylcarboxamide, forming an iodiranium; intramolecular attack by the amide carbonyl oxygen gives an iodanyl-methyl oxazoline, which undergoes SN2 displacement by fluoride (from Et3N·5HF) to release the fluoromethyl oxazoline and regenerate ArI.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "4-tert-butyliodobenzene mediator",
+      "smiles": "CC(C)(C)c1ccc(I)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "mediator recovered quantitatively after electrolysis, supporting catalytic ArI/ArI(III) cycle"
+    },
+    {
+      "name": "ex-cell electrolysis protocol",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "pre-generated ArI(III) reagent (ex-cell) converted 1h to 2h cleanly, avoiding side reactions seen in-cell — supports a discrete ArI(III) mediator pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "In-cell electrolysis of 2-phenyl substrate 1h gave intramolecular coupling side product; ex-cell (pre-generated ArI(III)) gave cleaner oxazoline 2h, indicating that direct anodic oxidation of substrate is a competing pathway suppressed when the hypervalent iodine mediator is used as a discrete reagent."
+}

@@ -1,0 +1,100 @@
+{
+  "doi": "10.1002_anie.202012209",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Anode-material-tuned electrochemical oxidative [4+2] annulation or dioxygenation of olefins with hydroxamic acids to give 3,4-dihydro-1H-benzo[c][1,2]oxazines or 1,2-dioxygenated alkenes",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "radical_cation"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of hydroxamic acid (and deprotonation) generates an O-centered amidoxyl radical; electrode material (RVC vs C felt) dictates whether the intermediate C-radical is further oxidized to a cation (RVC, annulation) or trapped by a second amidoxyl radical (C felt, dioxygenation). For indole substrates, both hydroxamic acid and indole are simultaneously anodically oxidized to amidoxyl radical and indole radical cation respectively.",
+  "key_intermediates": [
+    {
+      "name": "amidoxyl (O-centered nitrogen) radical I (PhN(CO2Et)O•)",
+      "smiles": "[O]N(C(=O)OCC)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "C-centered radical II from amidoxyl addition to olefin",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic/alkyl carbocation III (after further anodic oxidation on RVC)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "indole radical cation IV (for N-pivaloyl indole substrates)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "radical-radical-coupling cation V (amidoxyl + indole radical cation)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "MNP-trapped aminoxyl adduct Rc (spin-trap nitroxide of C-radical)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode performs single-electron oxidation of the hydroxamic acid; after -H+ the resulting amidoxyl O-radical adds to the olefin to give a C-radical. On RVC the C-radical is further oxidized at the anode to a carbocation that undergoes intramolecular electrophilic substitution (IES) onto the N-aryl ring giving the benzo[c][1,2]oxazine; on C felt, the C-radical is instead intercepted by a second amidoxyl radical giving the 1,2-dioxygenated product. Cathode reduces protons to H2.",
+  "rate_determining_step": "Not the C-H cleavage of the phenyl moiety of the hydroxamic acid (KIE ≈ 1.0 with styrene); likely the amidoxyl radical addition / anodic oxidation step",
+  "probe_reagents": [
+    {
+      "name": "a1-D5 (deuterated hydroxamic acid) competition KIE with styrene b1",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "KIE = 1.0; phenyl C-H cleavage of hydroxamic acid is not rate-determining"
+    },
+    {
+      "name": "a1-D5 competition KIE with norbornene b22",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "KIE = 1.08"
+    },
+    {
+      "name": "a1-D5 competition KIE with N-pivaloyl indole b24",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "KIE = 1.17"
+    },
+    {
+      "name": "2-methyl-2-nitrosopropane (MNP)",
+      "smiles": "CC(C)(C)N=O",
+      "purpose": "radical_trap",
+      "observation": "Spin-trapped a transient C-centered radical giving sextuple EPR signal of aminoxyl Rc (aN=15.31 G, aHβ=3.46 G, g=2.0060), confirming amidoxyl addition onto styrene"
+    },
+    {
+      "name": "Cyclic voltammetry of a1, b1, b22, b24",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "a1 oxidized at 1.32 V; b1 and b22 not oxidized within 2 V (only a1 oxidized); b24 oxidized at 1.58 V (both a1 and b24 oxidized simultaneously); reductive peak of amidoxyl radical at 0.78 V disappears upon adding b1 or b24, indicating interception by olefin/indole"
+    },
+    {
+      "name": "Constant-potential electrolysis at +1.32 V (a1 + b1, undivided RVC/Pt cell)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Gave annulation product c1 (35%) and dioxygenation product d1 (20%), confirming both pathways branch from the same C-radical"
+    },
+    {
+      "name": "EPR of electrolyzed a1",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Triplet signal (aN=8.03 G, g=2.0058) assigned to metastable amidoxyl radical; signal decreases on adding styrene"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "EPR",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Anode-material selectivity is rationalized as easier further oxidation of the C-radical to cation on RVC than on C felt; on C felt the C-radical instead couples with a second amidoxyl radical. For indole substrate b24, because its oxidation potential is close to that of a1, a radical-radical-coupling (RCC) pathway between amidoxyl radical and indole radical cation V is proposed rather than (or in addition to) amidoxyl radical addition followed by oxidation. Indole was unsuitable for dioxygenation. The MNP spin-adduct Rc is an off-pathway diagnostic species, not a productive intermediate."
+}

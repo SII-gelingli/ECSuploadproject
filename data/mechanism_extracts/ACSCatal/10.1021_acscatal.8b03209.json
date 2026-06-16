@@ -1,0 +1,84 @@
+{
+  "doi": "10.1021_acscatal.8b03209",
+  "journal": "ACSCatal",
+  "is_review": false,
+  "rxn_class_summary": "Mn-catalyzed electrochemical chloroalkylation of alkenes using malononitriles/cyanoacetates and NaCl via anodically coupled electrolysis forming vicinal C-C and C-Cl bonds",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Two parallel anodic oxidations mediated by Mn: (i) Mn(III) oxidizes the malononitrile (with H+/e- transfer assisted by acetate) to a transient C-centered radical, and (ii) Mn(II) oxidizes Cl- to generate a persistent [Mn(III)]-Cl chlorine-atom-transfer species; cathode reduces HOAc to H2 and OAc-",
+  "key_intermediates": [
+    {
+      "name": "C-centered radical from benzyl malononitrile (IV)",
+      "smiles": "[CH](C#N)(C#N)Cc1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "[Mn(III)]-Cl persistent chlorine-atom-transfer species (II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-radical adduct after IV addition to alkene (V)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "chlorinated malononitrile 45 (alpha-chloro-benzylmalononitrile)",
+      "smiles": "ClC(C#N)(C#N)Cc1ccccc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "Mn(III)(bpy)(OAc)n(MeCN)m active catalyst",
+      "smiles": null,
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "At the anode, Mn(II)(bpy)/OAc is oxidized to Mn(III), which in parallel oxidizes the deprotonated malononitrile to a transient free C-radical IV and oxidizes Cl- to a persistent [Mn(III)]-Cl. IV adds to the alkene to form transient radical V, which abstracts Cl from [Mn(III)]-Cl (atom transfer) to deliver the chloroalkylation product; HOAc is reduced to H2 at the Pt cathode generating OAc- that returns to the anodic compartment as ligand/base.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclopropyl-substituted alkene 36",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring-opening occurred after first C-C bond formation to give product 37 in 79%, confirming C-centered radical intermediate"
+    },
+    {
+      "name": "chlorinated malononitrile 45",
+      "smiles": "ClC(C#N)(C#N)Cc1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Formed in 53% without alkene; using 45 in place of 2 gave predominantly dichloride 4 (61%) with only 32% 3, ruling out Kharasch-type pathway"
+    },
+    {
+      "name": "divided-cell electrolysis with NaOAc in anodic chamber",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Restored chloroalkylation reactivity (76% at N=1.0), excluding cathode-assisted radical formation (alt. path 2)"
+    },
+    {
+      "name": "NaCN vs NaCl competition",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Only chloroalkylation product (82%) observed; no cyanoalkylation, excluding free carbocation intermediate that would react with more nucleophilic CN-"
+    },
+    {
+      "name": "Cyclic voltammetry / DPV of Mn(OTf)2/bpy with HOAc/NaOAc/Cl-/2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "New anodic wave at ~500 mV indicates Mn(II)/Mn(III) facilitated by OAc ligand; current enhancement on adding Cl- assigned to [Mn(II)]-Cl oxidation to [Mn(III)]-Cl"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "intermediate_trap_other",
+    "crossover"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two alternative pathways considered and excluded: (1) Kharasch-type Mn-catalyzed radical addition of pre-formed alpha-chloromalononitrile 45 to the alkene (ruled out by product distribution when 45 is used in place of 2, and by the no-current control); (2) cathode-assisted reduction of 45 to radical IV (ruled out by divided-cell experiment). A radical-polar crossover pathway via benzylic cation V+ and Cl- attack was also considered but disfavored by lack of acetoxylation/Ritter products and by NaCN/NaCl competition giving exclusive C-Cl product. Selectivity is rationalized by the persistent radical effect: transient IV adds fast to alkene; persistent [Mn(III)]-Cl then cross-couples with transient V."
+}

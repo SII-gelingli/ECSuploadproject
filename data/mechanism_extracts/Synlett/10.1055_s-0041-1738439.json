@@ -1,0 +1,69 @@
+{
+  "doi": "10.1055_s-0041-1738439",
+  "journal": "Synlett",
+  "is_review": false,
+  "rxn_class_summary": "Nickel-catalyzed electrochemical reductive cyclizative carboxylation of alkene-tethered carbamoyl chlorides with atmospheric CO2 to give 2-oxoindolin-3-ylacetic acids and 2-oxotetrahydroquinoline-4-carboxylic acids",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "sacrificial_anode",
+    "mediator_cathodic"
+  ],
+  "electrochemical_role": "Cathodic reduction of NiCl2(bpp) to Ni(0), which performs oxidative addition into the C(acyl)-Cl bond; further single-electron cathodic reductions turn over the Ni catalyst across the cycle. Mg sacrificial anode balances charge.",
+  "key_intermediates": [
+    {
+      "name": "Ni(0)(bpp) active catalyst",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(II)-acyl chloride intermediate A from oxidative addition of carbamoyl chloride 1a",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(I)-acyl intermediate B (from SET reduction of A, path a)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(II) cyclized alkyl intermediates C/C' (intramolecular alkene migratory insertion, path b)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(I) cyclized alkyl intermediates D/D' after SET reduction",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni-carboxylate intermediates E/E' after CO2 insertion into Ni-C bond",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "2-oxoindolin-3-ylacetic acid 2a (product after acidic workup)",
+      "smiles": "O=C(O)CC1(C)C(=O)N(Cc2ccccc2)c2ccccc21",
+      "role": "reactive"
+    },
+    {
+      "name": "1-benzyl-4-methyl-2-oxo-tetrahydroquinoline-4-carboxylic acid 3a (product)",
+      "smiles": "O=C(O)C1(C)CC(=O)N(Cc2ccccc2)c2ccccc21",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces NiCl2(bpp) to Ni(0); Ni(0) does oxidative addition into the carbamoyl C-Cl bond of 1 to give Ni(II) acyl A. A is reduced at the cathode (path a: SET first to Ni(I) B, then alkene cyclization to D/D'; path b: alkene cyclization first to Ni(II) C/C', then SET to D/D'). CO2 inserts into the Ni-C bond to give carboxylate E/E'; a final cathodic reduction releases Ni(0) and, after aqueous workup, the carboxylic acid product. Mg anode is sacrificially oxidized.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "Cyclic voltammetry of NiCl2(bpp), 1a, and CO2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "NiCl2(bpp) shows two reversible reductive peaks at -1.71 V and -2.31 V (Ni(II)->Ni(I)->Ni(0)); adding 1a produces strong catalytic current near -2.50 V indicating oxidative addition with in situ Ni(0); saturating with CO2 further increases the reductive current, consistent with carboxylation turnover."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Two cyclization pathways are proposed and considered competitive: path a (SET reduction of Ni(II) acyl A to Ni(I) B before alkene migratory insertion) and path b (alkene insertion first to give Ni(II) C/C', then SET to D/D'). The paper does not designate one as strictly favored; both converge on D/D' prior to CO2 insertion. Substrate scope shows ortho/meta/para electronic effects and poor performance with aryl chloride/bromide substituents on the arene (competing reactivity), and 1n (bromo on indoline-forming arene) gives no carboxylation product, consistent with competing Ni insertion into the Ar-Br bond."
+}

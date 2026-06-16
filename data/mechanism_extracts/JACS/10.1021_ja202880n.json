@@ -1,0 +1,79 @@
+{
+  "doi": "10.1021_ja202880n",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Integrated electrochemical-chemical oxidation of diarylmethanes, methylarenes, and aryl-substituted alkenes to carbonyl compounds (ketones, aldehydes, 1,2-diketones, and cyclized ketones) via anodically generated carbocations trapped by DMSO to form alkoxysulfonium ions, followed by Et3N-mediated Kornblum-type elimination.",
+  "mechanism_family": [
+    "carbocation",
+    "radical_cation",
+    "cation_initiated",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation generates either a diarylcarbenium ion (cation pool, Method A, in CD2Cl2 at -78 °C) or a radical cation of an electron-rich arene/alkene (Method B, in DMSO/CD2Cl2) that is trapped in situ by DMSO to form an alkoxysulfonium ion; substrate is preferentially oxidized over DMSO because of its lower oxidation potential.",
+  "key_intermediates": [
+    {
+      "name": "diarylcarbenium ion (e.g., bis(4-fluorophenyl)methyl cation, 2)",
+      "smiles": "[CH+](c1ccc(F)cc1)c1ccc(F)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "alkoxysulfonium ion from diarylmethane (3)",
+      "smiles": "C[S+](C)OC(c1ccc(F)cc1)c1ccc(F)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "4-methoxybenzyl-type alkoxysulfonium ion (8, in situ trapped, d6-DMSO)",
+      "smiles": "COc1ccc(C[O+]=S(C)C)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "dialkoxysulfonium ion from stilbene (13) — bis-DMSO adduct of stilbene dication equivalent",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized alkoxysulfonium ion from alkene bearing pendant nucleophile (e.g., 24 from tosylamide-tethered styrene 23)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "radical cation of styrene/diene precursor (proposed for cyclization substrates, e.g., 32•+)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "distonic radical cation after intramolecular alkene cyclization",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode removes one or two electrons from the substrate to give a benzylic/diarylcarbenium cation (or, for activated arenes/alkenes, a radical cation that is further oxidized after nucleophilic capture); DMSO traps the cationic carbon as an alkoxysulfonium ion, which Et3N then deprotonates to expel Me2S and yield the carbonyl product (Kornblum-type collapse).",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "low-temperature 1H NMR characterization of cationic intermediates 2, 3, 8, 13, 24",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Distinctive downfield H_a signals (e.g., 9.99 ppm for diarylcarbenium 2; 6.58 ppm for alkoxysulfonium 3; 5.17 ppm for 8; 5.93 ppm for 13; 6.13/3.68 ppm for cyclized 24) confirm accumulation of the proposed carbocation and alkoxysulfonium intermediates."
+    },
+    {
+      "name": "rotating disk electrode (RDE) voltammetry of substrates",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Eox values (e.g., 1.96 V for 1, 1.38 V for 7, 1.16 V for diene 32 vs 1.54 V for monoene 40) rationalize choice between Method A vs B and support rapid cation-radical cyclization for tethered dienes."
+    },
+    {
+      "name": "comparison of Eox(32)=1.16 V vs Eox(40)=1.54 V (intramolecular vs single alkene)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Lower oxidation potential of the diene indicates that the initial radical cation undergoes rapid intramolecular cyclization onto the second alkene before further oxidation."
+    }
+  ],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two operationally distinct modes: (A) 'cation pool' generation of stable diarylcarbenium at -78 °C in CD2Cl2 followed by DMSO addition, used when substrate Eox > Eox(DMSO)=1.76 V; (B) in situ DMSO trapping during electrolysis, used when substrate Eox < 1.76 V (e.g., 4-methoxytoluene, stilbenes, tethered alkenes), which also avoids accumulation of unstable cations (e.g., 4-methoxybenzyl cation). For cyclization substrates, the favored mechanism (Figure 4) is anodic one-electron oxidation to a radical cation, rapid intramolecular addition onto a second alkene/nucleophile to give a distonic radical cation, then a second anodic oxidation and DMSO trapping to give the cyclic alkoxysulfonium; Et3N then gives the cyclic ketone. The DMSO/Et3N step is mechanistically the Swern/Kornblum-type collapse of an alkoxysulfonium."
+}

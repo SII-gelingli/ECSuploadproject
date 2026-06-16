@@ -1,0 +1,82 @@
+{
+  "doi": "10.1039_d2ob00254j",
+  "journal": "OrgBiomolChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical diselenylation/cyclization of o-divinylbenzenes with diaryl diselenides to give 1,3-diselenyl-1,3-dihydroisobenzofurans",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of diphenyl diselenide to a radical cation that fragments into PhSe• and PhSe+; subsequent anodic oxidations of benzylic radicals to cations; cathodic reduction of protons to H2",
+  "key_intermediates": [
+    {
+      "name": "PhSeSePh radical cation",
+      "smiles": "[Se+](c1ccccc1)([Se]c2ccccc2)",
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl radical (PhSe•) I",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenyl cation (PhSe+)",
+      "smiles": "[Se+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-radical II from PhSe• addition to one vinyl group",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation III (after anodic oxidation of II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic alcohol intermediate IV (after H2O attack and deprotonation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "C-radical V from PhSe• addition to remaining vinyl",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic cation VI (after anodic oxidation of V)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes PhSeSePh to a radical cation that fragments into PhSe• and PhSe+; PhSe• adds to one alkene of the o-divinylbenzene to give benzylic radical II, which is anodically oxidized to cation III and trapped by H2O to give alcohol IV; PhSe• then adds to the second alkene giving radical V, which is again anodically oxidized to cation VI and intramolecularly trapped by the pendant hydroxyl to close the dihydroisobenzofuran; protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "H2 18O labeling",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "18O incorporated into the dihydroisobenzofuran oxygen, indicating the ring oxygen originates from water"
+    },
+    {
+      "name": "cyclic voltammetry of 1a and 2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "PhSeSePh (2a) is oxidized at a significantly lower potential than substrate 1a, supporting initial anodic oxidation of the diselenide"
+    },
+    {
+      "name": "N2 atmosphere control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction proceeds smoothly under N2, indicating O2 is not required as oxidant"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors did not explicitly run radical-trap (TEMPO/BHT) experiments in the shown text; mechanism invokes sequential radical addition / anodic oxidation / nucleophilic trapping cycles (radical-polar crossover). X-ray structure of 3aa (CCDC 2143795) confirms product connectivity and diastereochemistry."
+}

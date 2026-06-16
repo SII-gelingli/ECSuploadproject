@@ -1,0 +1,91 @@
+{
+  "doi": "10.1021_jacs.3c09875",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Dual NHC/photoredox-catalyzed three-component coupling of imides, pyrocarbonates, and styrenes to form sterically congested beta-2,2-amino esters via imidyl-radical addition and radical-radical cross-coupling with an NHC-stabilized alkoxycarbonyl radical.",
+  "mechanism_family": [
+    "photoredox_combined",
+    "carbene",
+    "radical_radical_coupling"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "imide anion (deprotonated N-Boc benzamide) I",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "nitrogen-centered imidyl radical II",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-radical III from imidyl addition to styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ester azolium IV (NHC + pyrocarbonate adduct)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "NHC-stabilized alkoxycarbonyl (Breslow-type) radical V",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkoxide adduct VI (radical-radical coupling product before NHC release)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "free N-heterocyclic carbene (from Az-1 deprotonation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "PC-1 excited state (4CzIPN-type photocatalyst)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "K2CO3 deprotonates Az-1 to give free NHC, which adds to diethyl pyrocarbonate to form ester azolium IV; excited PC-1* reduces IV to the NHC-stabilized alkoxycarbonyl radical V, generating PC-1 radical cation, which then oxidizes the imide anion (or performs PCET on the imide) to deliver imidyl radical II. II adds to styrene to give benzylic radical III, which couples with V; collapse of alkoxide VI releases the free NHC and the beta-2,2-amino ester product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product formation suppressed (0% of 4a); TEMPO-alkoxycarbonyl adduct 7 detected by ESI-HRMS, supporting an NHC-stabilized alkoxycarbonyl radical intermediate."
+    },
+    {
+      "name": "control: no NHC / no photocatalyst / no light / no base",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Each omission gives 0% yield, indicating all four components are essential."
+    },
+    {
+      "name": "Stern-Volmer quencher screen (1a, 2a, 3a, 1a+K2CO3, ester azolium IV)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "2a and 3a do not quench PC-1*; 1a and 1a+K2CO3 give only minor quenching; ester azolium IV quenches strongly, consistent with oxidative quenching of PC-1* by IV."
+    },
+    {
+      "name": "cyclic voltammetry of imide 1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Confirms base-enabled oxidation of imide 1a is accessible, but does not uniquely define the photoredox step."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "UV_vis",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors favor oxidative quenching (PC-1* reduces ester azolium IV first, then PC-1 radical cation generates imidyl radical from imide anion via SET or directly from neutral imide via PCET). A reductive quenching pathway (PC-1* oxidizes 1a first) cannot be fully excluded given the small Stern-Volmer quenching observed with 1a. An alternative pathway in which radical III is reduced to a benzylic anion that then attacks pyrocarbonate 2 was considered but disfavored based on reported reduction potentials of benzylic radicals versus 4CzIPN (PC-1). Robustness data show sensitivity to O2 and water, consistent with radical intermediates."
+}

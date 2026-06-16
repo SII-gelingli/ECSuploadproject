@@ -1,0 +1,68 @@
+{
+  "doi": "10.1002_ejoc.202300927",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical bromide-mediated sulfoximido-selenylation of unsaturated sulfoximines with diselenides to give cyclic sulfoximidoyl heterocycles bearing -SeR groups",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_anodic",
+    "radical_cation"
+  ],
+  "electrochemical_role": "Anodic oxidation of Br- to Br3+ which then oxidizes PhSeSePh to a selenium radical/radical cation; bromide acts as redox mediator",
+  "key_intermediates": [
+    {
+      "name": "PhSe radical and/or PhSe cation from anodic oxidation of PhSeSePh",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Br3+ (anodically generated brominating/oxidizing species)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Carbon-centered radical/cation adduct I from PhSe addition to alkene of unsaturated sulfoximine",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Further oxidized intermediate II (carbocation) or aziridinium-type III after deprotonation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cyclized sulfoximidoyl heterocycle 3a",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Br- to Br3+, which oxidizes PhSeSePh to PhSe radical/cation; this adds to the alkene of the unsaturated sulfoximine generating intermediate I, which is further oxidized to a cation (II) and then trapped by intramolecular nucleophilic attack of the sulfoximine N followed by deprotonation to give the cyclic product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3a still formed in 35% yield; only partial suppression, suggesting radical pathway may not be dominant"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Product 3a formed in 67% yield; little suppression observed"
+    },
+    {
+      "name": "nBu4NBr (cyclic voltammetry)",
+      "smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[Br-]",
+      "purpose": "redox_probe",
+      "observation": "Lower oxidation peak and obvious catalytic current observed, confirming Br- acts as redox mediator"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors propose two pathways in Scheme 4: (A) anodic oxidation pathway via Br3+ mediator generating PhSe radical/cation, favored and discussed first; (B) alternative cathodic reduction of PhSeSePh to give PhSe- + PhSe radical, supported by prior literature. The incomplete suppression by TEMPO/BHT led authors to suggest a radical process may not be the main pathway, implying the cationic (path a via radical cation) route may dominate."
+}

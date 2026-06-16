@@ -1,0 +1,140 @@
+{
+  "doi": "10.1038_s41467-024-52248-y",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Enantioselective photoelectrocatalytic three-component alkylarylation of olefins with aliphatic C(sp3)-H bonds and aryl halides via paired Fe/Ni dual catalysis in an undivided cell",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_cathodic",
+    "paired_electrolysis",
+    "photoredox_combined",
+    "electrocatalysis_inner_sphere",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anode oxidizes Fe(II) to Fe(III) generating [FeIIICl4]- which under light undergoes LMCT to release a chlorine radical for HAT on the alkane; cathode reduces Ni(II) precatalyst to Ni(I) to initiate the Ni cross-coupling cycle and reduce Ni(III) back to Ni(I)",
+  "key_intermediates": [
+    {
+      "name": "[FeIIICl4]- (ground state)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "photoexcited *[FeIIICl4]-",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[FeIICl3]-",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "chlorine radical",
+      "smiles": "[Cl]",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical (from C(sp3)-H HAT)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl-addition C-radical onto acrylate (radical F)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(I)-L* species G",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(III)(aryl) species H",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "aryl-Ni(II)-L* species I",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(III)(aryl)(alkyl) species J",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(I)-L* species K (post reductive elimination)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode Fe(II) is oxidized to Fe(III) ([FeIIICl4]-), which upon photoexcitation undergoes LMCT to release Cl• that abstracts H from the alkane to give an alkyl radical; this radical adds to the acrylate to form a secondary C-radical that is captured by an aryl-Ni(II) (formed from cathodic reduction of Ni(II) to Ni(I) followed by oxidative addition with ArX) to give Ni(III)(aryl)(alkyl), which reductively eliminates the product and the Ni(I) is regenerated via further cathodic reduction.",
+  "rate_determining_step": "Electron transfer at the electrodes (first-order dependence of rate on current)",
+  "probe_reagents": [
+    {
+      "name": "1-methylnaphthalene (no Ni catalyst)",
+      "smiles": "Cc1cccc2ccccc12",
+      "purpose": "intermediate_trap",
+      "observation": "1-chloromethylnaphthalene 34 isolated in 27% yield, confirming an electrophilic Cl radical generated via LMCT activates C(sp3)-H by HAT"
+    },
+    {
+      "name": "chlorocycloheptane + cyclohexane co-addition",
+      "smiles": "ClC1CCCCCC1",
+      "purpose": "intermediate_trap",
+      "observation": "Only product 1 (from cyclohexane) was observed; product 17 from alkyl chloride not detected, excluding alkyl chlorides as intermediates"
+    },
+    {
+      "name": "stoichiometric Ar-Ni(II)-Br complex (Ac-C6H4-Ni(II)-Br with L1)",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "Reacted with cyclohexane and tert-butyl acrylate under FeCl3/light to give product 1 in 31% yield, 91% ee — supports aryl-Ni(II) as a productive intermediate"
+    },
+    {
+      "name": "electrode potential monitoring",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Anode held at ~+0.28 V vs Ag/AgCl (Fe(II)/Fe(III)); cathode at ~-0.83 V vs Ag/AgCl, sufficient to reduce ArNi(III) to ArNi(II) but not ArNi(II) to ArNi(I)"
+    },
+    {
+      "name": "nonlinear effects with scalemic L1",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Nonlinear relationship between ee of product 1 and ee of L1, suggesting ≥2 chiral BiIm ligands involved in the enantio-determining step"
+    },
+    {
+      "name": "ee vs time monitoring",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Product ee constant throughout reaction — rules out product deracemization, stereoconvergent mechanism"
+    },
+    {
+      "name": "current-dependence kinetics",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "First-order dependence of rate on current (y=0.192x+3.06, R2=0.98), indicating electron transfer at electrodes is rate-determining"
+    },
+    {
+      "name": "control without FeCl3 or Ni(NO3)2",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product detected — both catalysts required"
+    },
+    {
+      "name": "control without electricity or light",
+      "smiles": null,
+      "purpose": "on/off_light_or_current",
+      "observation": "No product detected — both inputs required"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "on/off_light_or_current",
+    "kinetic_order",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Paired electrolysis: anodic Fe(II)/Fe(III) photo-LMCT cycle generates Cl• for HAT while cathodic Ni(II)→Ni(I) initiates Ni cross-coupling; chiral BiIm ligand L1 (R=sBu, Ar=3,5-tBu2-C6H3) on Ni controls enantioselectivity. Nonlinear effects suggest two ligands operative in the stereo-determining step. Aryl chlorides also viable when cathode potential is tuned (-2.0 V vs Ag/AgCl, constant-potential electrolysis with KBr additive)."
+}

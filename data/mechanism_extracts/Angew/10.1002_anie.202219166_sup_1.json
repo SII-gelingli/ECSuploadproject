@@ -1,0 +1,58 @@
+{
+  "doi": "10.1002_anie.202219166_sup_1",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical reaction of 1,4-dicyanobenzene with aryl iodides and alkenes (e.g., styrenes) via radical intermediates generated under Zn anode / RVC cathode conditions in CH3CN with BnNMe3Cl electrolyte.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "sacrificial_anode",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic reduction generates aryl radical from aryl iodide (and/or radical anion of 1,4-dicyanobenzene); Zn serves as sacrificial anode",
+  "key_intermediates": [
+    {
+      "name": "phenyl radical from iodobenzene 2aa",
+      "smiles": "[c]1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "radical anion of 1,4-dicyanobenzene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzyl/alkyl C-radical adduct after radical addition to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "DMPO-phenyl spin adduct (nitroxide)",
+      "smiles": "O=[N+]([O-])C1(C)CCC(c2ccccc2)N1",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Cathode reduces aryl iodide (assisted by mediator/radical anion of 1,4-dicyanobenzene) to generate an aryl (phenyl) radical, which adds to the alkene; the Zn anode is oxidized as the sacrificial counter-electrode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "(1-(2-phenylcyclopropyl)vinyl)benzene (8)",
+      "smiles": "C(=C)(c1ccccc1)C1CC1c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 9 isolated in 56%, consistent with radical addition followed by cyclopropane ring opening"
+    },
+    {
+      "name": "DMPO",
+      "smiles": "O=[N+]1([O-])CCCC1(C)C",
+      "purpose": "radical_trap",
+      "observation": "EPR spectrum of DMPO adduct observed (g = 2.0072–2.0073, A_N = 14.40 G, A_H = 20.90 G); HRMS m/z 190.12202 matches DMPO–phenyl adduct C12H16NO (calcd 190.12264), supporting phenyl radical"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "EPR",
+    "intermediate_trap_other",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Radical clock with phenylcyclopropyl vinyl substrate gives ring-opened diene product, confirming a carbon-centered radical intermediate. EPR/DMPO trapping with and without added 4-methylstyrene gives the same signal, and HRMS identifies the trapped species as a phenyl radical derived from iodobenzene."
+}

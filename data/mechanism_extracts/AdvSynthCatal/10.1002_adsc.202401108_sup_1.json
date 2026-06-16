@@ -1,0 +1,50 @@
+{
+  "doi": "10.1002_adsc.202401108_sup_1",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical iodo-trifluoroethoxylation of terminal alkenes using an aryl iodide as iodine source and TFE as nucleophile/solvent",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of the aryl iodide (2-iodo-1,3-dimethoxy-5-methylbenzene) generates an electrophilic/radical iodine species that adds across the alkene; TFE then traps the resulting cation/intermediate",
+  "key_intermediates": [
+    {
+      "name": "aryl iodide-derived I-centered radical or iodonium",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-iodo carbon radical or iodiranium ion from alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TFE-trapped β-iodo ether product 3a",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the electron-rich aryl iodide to release an electrophilic iodine equivalent that adds to the alkene; TFE acts as the oxygen nucleophile to capture the resulting cationic/radical intermediate and deliver the β-iodo trifluoroethyl ether.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Under standard electrolysis with 2.5 equiv BHT, yield of 3a dropped to 19% and 73% of alkene 2a was recovered, consistent with a radical intermediate"
+    },
+    {
+      "name": "N-iodosuccinimide (NIS)",
+      "smiles": "O=C1CCC(=O)N1I",
+      "purpose": "intermediate_trap",
+      "observation": "Replacing the aryl iodide with NIS under non-electrochemical conditions (DCM/TFE, rt, 25 h, no current) gave 3a in 58% yield (2:1), supporting that an electrophilic I+ source can drive the iodo-etherification independent of electricity"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "The NIS control suggests an I+ / iodiranium (ionic) pathway is viable, while BHT suppression supports a radical component — consistent with a radical/polar crossover mechanism in which anodic oxidation of ArI generates an iodine radical that adds to the alkene, followed by oxidation to a cation trapped by TFE."
+}

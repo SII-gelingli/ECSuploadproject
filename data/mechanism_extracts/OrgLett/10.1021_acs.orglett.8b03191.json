@@ -1,0 +1,90 @@
+{
+  "doi": "10.1021_acs.orglett.8b03191",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intermolecular sulfonylation/heteroarylation of alkenes (benzothiazole-substituted tertiary homoallylic alcohols) with sulfinic acids via distal heteroaryl ipso-migration, forming new C–C and C–S bonds.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of sulfinate anion (from deprotonation of sulfinic acid) to a sulfonyl radical; cathode reduces protons to H2; a second anodic SET oxidizes a ketyl radical intermediate to a carbocation.",
+  "key_intermediates": [
+    {
+      "name": "sulfinate anion (I)",
+      "smiles": "[O-]S(=O)c1ccc(C)cc1",
+      "role": "transient"
+    },
+    {
+      "name": "oxygen-centered sulfonyl radical (II)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "S-centered sulfonyl radical (III), resonance form of II",
+      "smiles": "O=[S](=O)c1ccc(C)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon radical from sulfonyl addition to alkene (IV)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "spiro N-radical (V) from intramolecular ipso-cyclization onto benzothiazole",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ring-opened ketyl (C-centered/O-radical) intermediate (VI)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbocation intermediate (VII) after anodic SET oxidation of VI",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Sulfinic acid is deprotonated and the sulfinate is anodically oxidized (SET) to a sulfonyl radical, which adds across the alkene to give a C-radical; intramolecular ipso-addition onto the benzothiazole forms a spiro N-radical that undergoes C–C bond cleavage/ring-opening to a ketyl radical, which is anodically oxidized to a cation, then deprotonated to give the migrated ketone product. Protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely suppressed (3a 0%), starting material 1a almost fully recovered — supports radical pathway."
+    },
+    {
+      "name": "Sodium p-tolylsulfinate (4)",
+      "smiles": "[Na+].[O-]S(=O)c1ccc(C)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Gave 3a in 65% yield, similar to sulfinic acid, supporting deprotonation/sulfinate as the active species."
+    },
+    {
+      "name": "p-toluenesulfinic acid alone (no tertiary alcohol)",
+      "smiles": "Cc1ccc(S(=O)O)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Homocoupling to 4,4'-dimethyldiphenyl disulfone (5) in 70% yield, indicating sulfonyl radical generation under electrolysis."
+    },
+    {
+      "name": "No-current control",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No product 3a formed, confirming the transformation is electrochemically driven."
+    },
+    {
+      "name": "Chain-length variation (1u–1x, n=0,1,3,4)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only n=2 (1,4-mig.) and n=3 (1,5-mig.) gave product; 3-, 4-, and 7-membered cyclic TS were ineffective, supporting 5-/6-membered cyclic intramolecular migration via spirocyclic N-radical."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "on/off_light_or_current",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "X-ray structure of 3a (CCDC 1867118) confirms regiochemistry. Sulfonyl radicals II (O-centered) and III (S-centered) are described as resonance structures; S-centered form adds to alkene. Mechanism is intramolecular heteroaryl ipso-migration (Truce–Smiles-type) rather than intermolecular; supported by chain-length scan showing strict preference for 5-/6-membered spirocyclization."
+}

@@ -1,0 +1,136 @@
+{
+  "doi": "10.1002_adsc.202200847",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intramolecular cyclization of 2-alkenyl-substituted arenes (benzoic acids, benzamides, phenols, anilines) to give phthalides, isoindolinones, benzofurans, and indoles via anodic oxidation of the alkene to a radical cation followed by heteroatom cyclization.",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of the styrenyl alkene to a radical cation that is intercepted by a tethered nucleophile (CO2-, CONHR, OH, NHTs); for 2-alkenylbenzoic acid 1a a prior cathodic reduction generates the carboxylate (Int-1a) with H2 evolution before anodic oxidation.",
+  "key_intermediates": [
+    {
+      "name": "carboxylate from cathodic deprotonation of 1a (Int-1a)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkene radical cation of 2-alkenylbenzoate (Int-1b)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical from 5-exo cyclization (Int-1c)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical from 6-endo cyclization (Int-1c')",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic cation (Int-1d) trapped by methoxide to give phthalide 2a",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "radical cation of 2-alkenylbenzamide 4a (Int-4a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "isoindoline C-radical (Int-4b) after cyclization/deprotonation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "radical cation of 2-styrylphenol 7a (Int-7a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "dihydrobenzofuran C-radical (Int-7b)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tosyloxy-trapped benzylic radical (Int-7d)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tosyloxy-substituted dihydrobenzofuran cation (Int-7e/Int-7f)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "radical cation of N-Ts 2-alkenylaniline 9a (Int-9a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "indoline C-radical (Int-9b) and cation (Int-9c)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "For the phthalide manifold, the cathode first reduces the carboxylic acid (H2 evolution) to its carboxylate, which is then anodically oxidized at the alkene to a radical cation; 5-exo (or 6-endo in HFIP) O-cyclization gives a benzylic radical that is further oxidized at the anode to a cation and trapped by MeOH/methoxide. For benzamide, phenol, and N-Ts aniline substrates, direct anodic oxidation of the styrene gives a radical cation, intramolecular N- or O-attack with loss of H+ affords a cyclic C-radical, which is oxidized again to a cation (or in the benzamide case undergoes HAT with MeCN) and loses H+ to give the aromatic isoindolinone/benzofuran/indole; in the benzofuran case tosylate is incorporated then β-eliminated.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "All four reactions inhibited; no TEMPO adduct detected by MS."
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Reactions inhibited; trace product only; no BHT adduct detected."
+    },
+    {
+      "name": "acetonitrile-d3",
+      "smiles": "[2H]C([2H])([2H])C#N",
+      "purpose": "H/D_labeling",
+      "observation": "50% D incorporation into the CH2 of isoindolinone 5a, supporting HAT from MeCN to Int-4b."
+    },
+    {
+      "name": "(E)-stilbene",
+      "smiles": "C(=C/c1ccccc1)\\c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Gives vic-bis(tosyloxy)stilbene 12 in 23% under standard conditions with Et4NOTs, supporting tosylate trapping of an alkene radical cation."
+    },
+    {
+      "name": "Koser reagent (PhI(OH)OTs, 13)",
+      "smiles": "O=S(=O)(O[I](O)c1ccccc1)c1ccc(C)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Stoichiometric addition to 7a (no current) afforded 2-phenylbenzofuran 8a in 31%, mimicking the proposed tosyloxy-cation intermediate."
+    },
+    {
+      "name": "2,4,6-collidine",
+      "smiles": "Cc1cc(C)nc(C)c1",
+      "purpose": "redox_probe",
+      "observation": "Non-oxidizable base; addition to 1a generates a new oxidation wave at 1.10 V vs SCE, indicating that the deprotonated carboxylate is the species being anodically oxidized."
+    },
+    {
+      "name": "current off (no electrolysis)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction without electric current, confirming the electrochemical origin of the radical intermediates."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Selectivity between 5-exo (phthalide 2a, in MeOH) and 6-endo (isochromanone 3a, in HFIP) cyclization of Int-1b is unexplained; both Path A and Path B are retained as possibilities. For benzofuran formation, Path B (tosylate-assisted) is favored over Path A (direct cyclization of Int-7a) because Et4NOTs dramatically raises yield (12% → 62%) and stilbene/Koser control experiments support OTs incorporation, but Path A cannot be excluded. The unexpected formation of isoindolin-1-one 5h in DMSO (a poor H-atom donor) suggests an alternative non-HAT pathway in that case. Chemoselectivity between C–N and C–O bond formation for 2-alkenylbenzamides in MeOH (giving iminoisobenzofurans 6) vs MeCN (giving isoindolinones 5) is not yet explained."
+}

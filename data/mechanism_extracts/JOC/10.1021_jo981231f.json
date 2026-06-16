@@ -1,0 +1,91 @@
+{
+  "doi": "10.1021_jo981231f",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electroreductive hydrocoupling of chiral 3-trans-cinnamoyloxazolidinones to give cyclized hydrodimers (trans-3,4-diaryl cyclopentanones) with diastereo- and enantiocontrol governed by supporting electrolyte.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_anion",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic one-electron reduction of the α,β-unsaturated cinnamoyloxazolidinone to a Z-enolate-type anion radical, which dimerizes; choice of supporting electrolyte (Et4NOTs vs LiClO4) determines whether the naked or Li-chelated radical anion couples.",
+  "key_intermediates": [
+    {
+      "name": "syn-Z enolate-type anion radical (conformer A, naked)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "anti-Z Li-chelated enolate-type anion radical (conformer B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "C-C coupled bis-anion / bis-enolate dimer",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclized hydrodimer (Dieckmann product, 2a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "s-cis anion radical from cis-cinnamoyl substrate 8",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phenylpropioloyl-derived allenyl/vinyl radical anion (from 9)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "non-cyclized diene diester dimer 10",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode delivers one electron to the cinnamoyloxazolidinone giving a Z-enolate-type β-carbon radical anion; two such radical anions couple C–C at their β-carbons (Si/Si from naked conformer A → R,R; Re/Re from Li-chelated conformer B → S,S), and the resulting bis-enolate undergoes intramolecular Dieckmann condensation to the cyclopentanone hydrodimer.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cis-cinnamoyloxazolidinone 8 (geometric isomer probe)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Gave the same R,R-selective dimer 2a as trans-1a, indicating fast s-cis→s-trans isomerization of the radical anion before coupling."
+    },
+    {
+      "name": "3-phenylpropioloyloxazolidinone 9 (alkyne analog)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Also afforded cyclized dimer 2a (45%, same de) plus non-cyclized diene 10 (15%), supporting in situ generation of 1a-type radical anion."
+    },
+    {
+      "name": "LiClO4 vs Et4NOTs (counterion probe)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Et4NOTs gives R,R-dimer (87:13); LiClO4 inverts to S,S-dimer (up to 11:89), consistent with Li-chelated conformation B coupling on the Re face."
+    },
+    {
+      "name": "ortho/meta/para aryl-substituted 1 (steric/electronic probe)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Ortho substitution hinders coupling and erodes de (esp. α-naphthyl 1j), consistent with steric control at the coupling face."
+    },
+    {
+      "name": "cinnamoyloxazolidinethione 11a / thiazolidinethione 11b",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Gave trans-3,4-diphenylcyclopentanone 5 directly via hydrolysis/decarboxylation under electrolysis with similar stereoselectivity."
+    }
+  ],
+  "evidence_types_used": [
+    "DFT",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors previously invoked an E-enolate-type anion radical (A') but here revise to Z-enolate conformers A (naked, syn-Z) and B (Li-chelated, anti-Z) based on PM3/AM1 + COSMO semiempirical calculations (Table 3, Scheme 4): naked anion radical favors C (syn-Z, A) while lithiated favors F (anti-Z, B), explaining electrolyte-dependent inversion of stereochemistry. Alternative rationales for diastereoselectivity in the Dieckmann step (cathode-surface templating or water-templating between two radical anions, ref 9) are noted but not adopted here; steric interaction between oxazolidinone substituents is preferred."
+}

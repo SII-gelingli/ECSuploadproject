@@ -1,0 +1,83 @@
+{
+  "doi": "10.1039_d4qo01354a",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative three-component tandem synthesis of selenyl imidazo[2,1-b]thiazinones from diaryl diselenides, acryloyl chlorides, and 2-mercaptobenzimidazoles/2-mercaptoimidazoles.",
+  "mechanism_family": [
+    "radical_anodic",
+    "cation_initiated",
+    "anion_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of diaryl diselenide (PhSeSePh) to a selenium-centered cationic radical that fragments into a selenium cation (PhSe+) and a selenium radical (PhSe•); cathode reduces H+ to H2.",
+  "key_intermediates": [
+    {
+      "name": "diselenide cationic radical [PhSeSePh]•+ (A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenium cation PhSe+ (B)",
+      "smiles": "[Se+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenium radical PhSe• (C)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "N-acyl benzimidazole-thiolate adduct from 2a + 3a (D)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized imidazo[2,1-b]thiazinone enolate/carbanion intermediate (E)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes PhSeSePh to a radical cation that splits into PhSe+ and PhSe•; base-mediated condensation of acryloyl chloride with 2-mercaptobenzimidazole gives acyl-thioether D, which undergoes intramolecular cyclization to carbanion E; E is trapped by PhSe+ to give the selenylated product, while PhSe• auto-couples to regenerate diselenide and H+ is reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction proceeded with only slight yield decrease (80%), suggesting non-radical main pathway."
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Product still formed in 70% yield; radical pathway not dominant."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Product obtained in 67% yield; radical trapping ineffective at suppressing reaction."
+    },
+    {
+      "name": "PhSeCl (in place of PhSeSePh, no electricity)",
+      "smiles": "Cl[Se]c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Afforded 4a in 80% yield without current, supporting in situ generation of selenium cation."
+    },
+    {
+      "name": "D2O (replacing diselenide)",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "Deuterated product 6-d obtained in 95% yield with 96% D-incorporation, supporting a carbanion intermediate E."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Radical trapping experiments (TEMPO/BHT/DPE) did not suppress the reaction, leading the authors to favor an ionic (cation/anion) pathway over a radical chain; CV showed oxidation of 1a at 1.327 V supporting anodic activation of the diselenide. An alternative full-radical pathway (PhSe• addition) is implicitly disfavored but cannot be entirely excluded."
+}

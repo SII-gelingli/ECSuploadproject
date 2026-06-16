@@ -1,0 +1,73 @@
+{
+  "doi": "10.1021_jo026183k",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electroreductive stereoselective hydrocoupling (homocoupling) of aryl-substituted methyl cinnamates to all-trans cyclized hydrodimers (cyclopentanone-carboxylates) via Dieckmann condensation, enabling asymmetric synthesis of dl-3,4-diarylhydrodimers.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_anion"
+  ],
+  "electrochemical_role": "Cathodic one-electron reduction of the cinnamate C=C to a substrate-centered anion radical (radical anion), which undergoes homocoupling; performed in an undivided cell at constant current with Pb cathode/Pt anode in MeCN/Et4NOTs.",
+  "key_intermediates": [
+    {
+      "name": "cinnamate anion radical (one-electron reduced methyl cinnamate)",
+      "smiles": "[CH]([O-])=C(OC)C([H])c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "dl-dianion of 3,4-diaryladipate (homocoupled diester dianion)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "open-chain dl-3,4-diaryladipate diester",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "all-trans 2-oxo-3,4-diarylcyclopentanecarboxylate (cyclized hydrodimer 2)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "meso-3,4-diaryladipate diester (meso-3, minor open-chain product not cyclized by base)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "methyl phenylpropionate (4a, over-reduction monomer byproduct)",
+      "smiles": "O=C(OC)CCc1ccccc1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode delivers one electron to the cinnamate to give a β-aryl-stabilized ester anion radical; two such radical anions homocouple C-β to C-β to form a dl-favored 3,4-diaryladipate dianion, which undergoes intramolecular Dieckmann condensation to the all-trans cyclopentanone-carboxylate hydrodimer.",
+  "rate_determining_step": "Stereodetermining step is the C–C homocoupling of two anion radicals; the relative energies of the two diastereomeric coupling transition states (dl vs meso) set the high dl-selectivity.",
+  "probe_reagents": [
+    {
+      "name": "methyl cis-cinnamate (cis-1a)",
+      "smiles": "O=C(OC)/C=C\\c1ccccc1",
+      "purpose": "other",
+      "observation": "Gave same dl/meso = 92/8 stereoselectivity as trans-1a, indicating a common (planar) anion-radical intermediate independent of olefin geometry."
+    },
+    {
+      "name": "cumarin (coumarin, rigid cyclic cinnamate analogue)",
+      "smiles": "O=C1OC2=CC=CC=C2C=C1",
+      "purpose": "other",
+      "observation": "Electroreduction gave hydrodimer 9 in 66% with reversed (meso-preferred, 50% de) selectivity, attributed to the rigid cyclic constraint; supports that acyclic conformational freedom of the anion radical controls dl-selectivity."
+    },
+    {
+      "name": "chiral auxiliary [(1R)-exo]-3-exo-(diphenylmethyl)borneol cinnamate (14a)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "DFT/semiempirical optimization (UHF/AM1, UB3LYP/3-21G*, UB3LYP/6-31G*) of its anion radical shows conformer A more stable than B by 3.1–6.0 kcal/mol; Re face is shielded by the CHPh2 group, so homocoupling at Si face gives (R,R)-15a, rationalizing the observed 87–95% ee."
+    }
+  ],
+  "evidence_types_used": [
+    "DFT",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly reject earlier hypotheses invoking unusual interactions between anion radicals and the cathode surface or templating by water (Utley, Nielsen); they argue PM3/AM1 transition-state calculations on the bare anion-radical homocoupling already reproduce dl-preference for cinnamates and meso-preference for coumarin, so no special surface/water templating is required. Dieckmann cyclization to 2 requires sufficiently basic electrolyte conditions; under undivided-cell constant current, meso open-chain diester (meso-3) is not cyclized, accounting for the small (<10%) meso byproduct. Over-reduction to methyl phenylpropionate (4a) is a minor competing pathway."
+}

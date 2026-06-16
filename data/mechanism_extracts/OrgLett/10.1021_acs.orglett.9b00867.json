@@ -1,0 +1,61 @@
+{
+  "doi": "10.1021_acs.orglett.9b00867",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative 1,2-difunctionalization of alkenes (styrenes) with formyloxylation coupled to chlorination, bromination, or trifluoromethylation",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation of the halide/sulfinate anion (Br-, Cl-, or CF3SO2- giving CF3•) to a halogen/CF3 radical, which adds to the alkene; Cu(I) co-catalyst is also redox-active",
+  "key_intermediates": [
+    {
+      "name": "halogen or CF3 radical (X• or CF3•) from anodic oxidation of X- / CF3SO2-",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbon radical from X•/CF3• addition to styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation after further oxidation of C-radical",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "formate (HCOO-) nucleophile trapping the benzylic cation to give formyloxy product",
+      "smiles": "[H]C(=O)[O-]",
+      "role": "reactive"
+    },
+    {
+      "name": "Cu(I)/Cu(II) redox mediator",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Halide or trifluoromethanesulfinate is first oxidized at the anode to X• (or CF3•), which adds to the styrene to give a benzylic C-radical; this radical is further oxidized (anode/Cu) to a benzylic cation that is trapped by formate (from HCOOH/H2O) to install the OCHO group, while protons are reduced at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "radical trapping experiments (see SI Scheme 2)",
+      "smiles": null,
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed/intercepted, supporting involvement of radical intermediates"
+    },
+    {
+      "name": "cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Indicates Br-, Cl-, or CF3SO2- (without Cu(I)) is oxidized first at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Diastereoselective trans-addition on cyclic alkenes suggests a stepwise radical/cation mechanism rather than concerted. Minor β-chlorinated side products from electron-rich styrenes are attributed to over-oxidation/elimination stabilized by push-pull conjugation. Detailed mechanism schemes are in the Supporting Information (Scheme 3)."
+}

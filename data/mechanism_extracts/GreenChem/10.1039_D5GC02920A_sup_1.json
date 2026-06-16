@@ -1,0 +1,55 @@
+{
+  "doi": "10.1039_D5GC02920A_sup_1",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical imino-trifluoromethylation of styrenes with CF3SO2Na and benzophenone imine to give beta-CF3 alpha-imino products",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2- (Langlois reagent) generates CF3 radical via SO2 extrusion; CF3 radical adds to styrene to give a benzylic radical that is further oxidized to a benzylic cation, which is trapped by benzophenone imine",
+  "key_intermediates": [
+    {
+      "name": "CF3 radical",
+      "smiles": "[CH](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical (after CF3 addition to 4-methoxystyrene)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic cation (p-methoxybenzyl-CH2CF3 cation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "imino-trifluoromethylated adduct 5a",
+      "smiles": "COc1ccc(C(CC(F)(F)F)N=C(c2ccccc2)c2ccccc2)cc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- to CF3SO2 radical which loses SO2 to give CF3 radical; CF3 radical adds to the styrene terminal carbon producing a benzylic radical, which is further oxidized at the anode to a benzylic cation; benzophenone imine traps the cation, with TBD/HFIP assisting deprotonation to yield the N-diphenylmethylene amine product 5a.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 5a was not detected, indicating involvement of radical intermediates"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Product 5a was not detected, supporting a radical pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Derivatization of 5a with PPTS in THF/H2O hydrolyzed the diphenylmethylene imine to give the primary amine 6 (3,3,3-trifluoro-1-(4-methoxyphenyl)propan-1-aminium tosylate, 82%), confirming the imine connectivity. Only TEMPO/BHT trapping data are shown on these pages; no CV, KIE, or DFT evidence reported here."
+}

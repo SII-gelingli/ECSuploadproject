@@ -1,0 +1,21 @@
+{
+  "total_reactions": 10635,
+  "train_size": 8508,
+  "val_size": 1063,
+  "test_size": 1064,
+  "feature_dims": {
+    "reaction_fp": 6144,
+    "solvent_fp": 2048,
+    "electrolyte_fp": 2048,
+    "total": 10246
+  },
+  "num_classes": {
+    "anode": 23,
+    "cathode": 23,
+    "cell_type": 5,
+    "electrolyte": 547,
+    "solvent": 113,
+    "reagent": 460,
+    "catalyst": 373
+  }
+}

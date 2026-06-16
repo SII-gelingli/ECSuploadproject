@@ -1,0 +1,100 @@
+{
+  "doi": "10.1021_jacs.2c08951",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrophotocatalytic regiodivergent 1,2-aminooxygenation of aryl olefins to oxazolines using water or urethane as the first nucleophile and acetonitrile as the second (Ritter-type) nucleophile",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "photoredox_combined",
+    "radical_cation",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of trisaminocyclopropenium (TAC) catalyst to its radical dication, which upon photoexcitation becomes a strongly oxidizing species (E*red = 3.3 V vs SCE) that performs SET oxidation of the aryl alkene to a radical cation",
+  "key_intermediates": [
+    {
+      "name": "TAC radical cation (catalyst, one-electron oxidized form)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Photoexcited TAC radical dication (*TAC2+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Alkene radical cation (from aryl olefin 63)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "beta-hydroxy benzylic radical (65, after water addition)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "beta-carbamate benzylic radical (70, after urethane addition)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Benzylic carbocation (66, after second oxidation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Nitrilium ion from acetonitrile trapping (67)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Oxazoline product 68 (from water pathway, Ritter cyclization)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Oxazoline product 71 (from urethane pathway, carbamate O cyclization)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,2-Diol 69 (off-pathway when excess water present)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes TAC+ to TAC2+•, which is photoexcited to a super-oxidant that performs SET on the aryl alkene to give a radical cation; nucleophilic addition of water (or urethane) yields a benzylic radical that is further oxidized (by TAC2+• or the anode) to a benzylic cation; acetonitrile traps it as a nitrilium that cyclizes via the pendant hydroxyl (or carbamate carbonyl) to the oxazoline, with H2 evolved at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "excess water (stoichiometry probe)",
+      "smiles": "O",
+      "purpose": "other",
+      "observation": "Large excess of water diverts the reaction to 1,2-diol 69 and produces benzaldehyde, indicating water can outcompete MeCN as the second nucleophile; minimizing water restores selectivity for oxazoline 68"
+    },
+    {
+      "name": "methyl carbamate (alternative nucleophile)",
+      "smiles": "COC(=O)N",
+      "purpose": "intermediate_trap",
+      "observation": "Replaces water in the first nucleophilic addition step, giving the methyl analogue of 11 and supporting the radical-cation trapping step"
+    },
+    {
+      "name": "urethane (ethyl carbamate)",
+      "smiles": "CCOC(=O)N",
+      "purpose": "intermediate_trap",
+      "observation": "Outcompetes acetonitrile in the first addition, leading to regiodivergent oxazoline 71 via carbamate-oxygen cyclization, consistent with the proposed cation/radical-cation intermediates"
+    },
+    {
+      "name": "cyclic olefin substrate",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Gave substantial diamination byproduct alongside oxazoline, indicating competing pathways for constrained substrates"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Regiodivergence is controlled simply by choice of first nucleophile (water vs urethane); both pathways share initial alkene radical-cation generation by photoexcited TAC dication. With cyclic olefins a competing diamination pathway is observed. Excess water diverts to diol/benzaldehyde, showing the second nucleophilic addition is the selectivity-determining step. No KIE, radical-trap (TEMPO/BHT), or DFT data are reported on these pages."
+}

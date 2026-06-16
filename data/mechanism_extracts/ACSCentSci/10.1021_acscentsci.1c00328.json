@@ -1,0 +1,58 @@
+{
+  "doi": "10.1021_acscentsci.1c00328",
+  "journal": "ACSCentSci",
+  "is_review": false,
+  "rxn_class_summary": "Development of a high-throughput electrochemistry platform (HTe-Chem) demonstrated on reductive ketone-olefin coupling, oxidative phenolic C-H/C-H coupling, and reductive coupling of iminium chlorides with cyanopyridines to give hindered primary amines.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "paired_electrolysis",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Cathodic reduction generates ketyl radicals (from ketone 14) and α-amino radicals (from iminium chlorides 21a-d) plus cyanopyridine radical anions (22-27); in the Waldvogel oxidative C-H/C-H case, anodic ECE oxidation of phenol 17 generates a p-quinone methide that pairs with cathodically generated hexafluoroisopropoxide.",
+  "key_intermediates": [
+    {
+      "name": "ketyl radical from cyclodecanone 14",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "C-centered radical after ketyl addition to allylbenzene 15",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "p-quinone methide electrophile from phenol 17 (ECE oxidation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "hexafluoroisopropoxide nucleophile",
+      "smiles": "[O-]C(C(F)(F)F)C(F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl hexafluoroisopropyl ether 20",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-amino radical from cathodic reduction of iminium chloride 21",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyanopyridine radical anion (proton-coupled cathodic reduction of 22-27)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "In the ketone-olefin coupling, the cathode reduces ketone 14 to a ketyl radical (ECEC) which adds to alkene 15; the resulting C-radical is further reduced and protonated to give 16. In the cyanopyridine coupling, the cathode independently generates an α-amino radical and a cyanopyridine radical anion that couple, then lose H+/CN- to deliver the hindered amine. In the Waldvogel paired electrolysis, the anode oxidizes phenol 17 (ECE) to a p-quinone methide while HFIP is deprotonated/reduced to hexafluoroisopropoxide; the two intermediates combine to give 20, which then undergoes TFA-promoted SN with arene 18 to give 19.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanisms are taken from the cited original reports (Baran/Minteer 2020 ref 49; Waldvogel 2018 ref 50; Lehnherr/Rovis 2019 ref 15) rather than newly probed here; this paper's focus is translating those reactions to the HTe-Chem high-throughput platform and screening electrode/current parameters. The benzyl hexafluoroisopropyl ether 20 is isolated as a key intermediate in the Waldvogel pathway, supporting the paired-electrolysis ECE proposal. Lower current densities (0.5 mA, 2 F) were found optimal in the amine coupling to suppress diamine side-products, consistent with the radical-radical coupling pathway."
+}

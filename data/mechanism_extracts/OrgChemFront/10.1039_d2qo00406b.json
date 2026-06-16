@@ -1,0 +1,73 @@
+{
+  "doi": "10.1039_d2qo00406b",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative selenocyclization of olefinic amides with diselenides to give 3-(selenomethyl)iminoisobenzofurans via a radical cascade, constructing C-Se and C-O bonds in one step",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of diphenyl diselenide (PhSeSePh) to a radical cation that fragments into a PhSe• radical and PhSe+ cation; the alkyl radical formed after cyclization is further oxidized at the anode to a carbocation; protons are reduced at the Pt cathode to H2 (and PhSe+ is reduced back to PhSe- at cathode).",
+  "key_intermediates": [
+    {
+      "name": "diphenyl diselenide radical cation A",
+      "smiles": "[Se+]([Se]c1ccccc1)c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl radical B (PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenyl cation C (PhSe+)",
+      "smiles": "[Se+]c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "carbon-centered alkyl radical D after SePh addition to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic/tertiary carbocation E after radical cyclization and anodic oxidation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "iminoisobenzofuran product (3a)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes PhSeSePh (Eox ≈ 2.0 V, lower than substrate 1a at 2.2 V) to a radical cation that splits into PhSe• and PhSe+; PhSe• adds across the C=C of the olefinic amide to give an alkyl radical, which cyclizes onto the amide oxygen; the resulting radical is oxidized at the anode to a carbocation that deprotonates to product, while protons are reduced to H2 at the Pt cathode and PhSe+ is reduced back to PhSe- for turnover.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "With 2.0 equiv TEMPO, no selenocyclization product (3a) was obtained — only trace; indicates radical intermediates"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "DPE-SePh adduct detected by GC-MS; 3a still formed in 45% yield, supporting a PhSe• radical intermediate"
+    },
+    {
+      "name": "cyclic voltammetry of 1a and 2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak of PhSeSePh (2a) at 2.0 V vs 1a at 2.2 V, indicating diselenide is preferentially oxidized at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors favor anodic oxidation of the diselenide (not the alkene) based on CV. An alternative would be direct oxidation of the olefinic amide to a radical cation followed by PhSe- attack, but CV data argue against this. Acid hydrolysis of imine product 3a gives the isobenzofuranone 4a; ester and 2-vinylbenzyl alcohol substrates also undergo analogous selenocyclization to give furan/lactone products."
+}

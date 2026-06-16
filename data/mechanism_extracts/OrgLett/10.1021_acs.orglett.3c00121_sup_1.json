@@ -1,0 +1,81 @@
+{
+  "doi": "10.1021_acs.orglett.3c00121_sup_1",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical [2+1] cyclopropanation (with diazo compounds) and [2+2] cycloaddition (with styrenes) of alkenes proceeding via anodically generated alkene radical cations",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the electron-rich alkene to an alkene radical cation; subsequent cathodic reduction of a downstream radical cation closes the cycle (paired electrolysis in undivided cell)",
+  "key_intermediates": [
+    {
+      "name": "alkene radical cation B (from anodic oxidation of styrene/anethole A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "distonic radical cation D from addition of diazo compound C to B (retains N2)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "1,3-distonic radical cation E after N2 extrusion (precursor to cyclopropane)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclopropane product F (after cathodic reduction of E)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "acyclic radical cation H from addition of styrene G to B ([2+2] pathway)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclobutane product I (after cathodic reduction of H)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "proton-migrated ring-opened byproduct (allylic ester, <6%)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the electron-rich alkene A to radical cation B; B is intercepted by a nucleophile (diazo compound for [2+1], styrene for [2+2]) to give a new radical cation (D→E after N2 loss, or H); cathodic reduction then delivers the neutral cyclopropane F or cyclobutane I.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Complete suppression of both [2+1] and [2+2] reactions (0% yield) when added at the start, supporting a radical (radical cation) intermediate"
+    },
+    {
+      "name": "E- vs Z-stilbene (cis/trans olefin probe)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Both E- and Z-stilbene give exclusively trans-cyclopropane (E: 82%, Z: 67% yield), consistent with a freely rotating open-chain radical cation intermediate rather than concerted cycloaddition; trans-olefin reacts faster"
+    },
+    {
+      "name": "Divided (H-cell) vs undivided cell",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "[2+1] drops to <10% in H-cell (vs 79% undivided) — requires cathodic reduction step; [2+2] gives 19% in H-cell (vs 78% undivided), suggesting a partial radical-chain contribution for [2+2]"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "stoichiometric_intermediate",
+    "on/off_light_or_current",
+    "product_isotope_distribution",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Stereochemical scrambling (E/Z → same trans-cyclopropane) is taken as evidence for a stepwise radical-cation mechanism rather than a concerted [2+1]/[2+2]. Authors explicitly do not exclude a radical-chain pathway in which radical cations E/H are reduced by another molecule of alkene A instead of at the cathode; the chain contribution appears more significant for the [2+2] (H-cell yield 19%) than for the [2+1] (H-cell yield <10%). A minor proton-migrated (ring-opened α,β-unsaturated ester) byproduct (<6%) is observed in the [2+1] reaction, consistent with deprotonation of the 1,3-distonic radical cation E competing with cyclization/reduction."
+}

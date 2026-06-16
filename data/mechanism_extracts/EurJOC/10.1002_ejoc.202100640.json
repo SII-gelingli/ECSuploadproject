@@ -1,0 +1,75 @@
+{
+  "doi": "10.1002_ejoc.202100640",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical bromide-mediated oxybromination of allylic oximes to form 2-bromomethyl-2-isoxazolines using DMSO as oxygen-free mediator partner",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of bromide (Br-) to bromine/tribromide (Br3-), which serves as the active brominating mediator; cathode reduces water to H2 and generates hydroxide that deprotonates the oxime",
+  "key_intermediates": [
+    {
+      "name": "bromine radical (Br•)",
+      "smiles": "[Br]",
+      "role": "transient"
+    },
+    {
+      "name": "molecular bromine Br2",
+      "smiles": "BrBr",
+      "role": "transient"
+    },
+    {
+      "name": "tribromide anion Br3-",
+      "smiles": "Br[Br-]Br",
+      "role": "reactive"
+    },
+    {
+      "name": "bromo-dimethylsulfonium / bromosulfoxonium intermediate A (DMSO-Br+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "open-chain bromonium-DMSO adduct B from alkene addition",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "bromonium intermediate C of allylic oxime",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "2-bromomethyl-2-isoxazoline product 2a (5-exo-trig)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "6-endo-trig by-product 3a (1,2-oxazine)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode performs 1e- oxidation of Br- to Br•, which dimerizes to Br2 and is sequestered by Br- as Br3-; Br3- brominates DMSO to electrophile A, which transfers Br+ to the alkene of the allylic oxime to give bromonium/sulfonium adduct B (major) or bromonium C (minor); intramolecular oxa-cyclization by the oxime hydroxyl (5-exo-trig) delivers the isoxazoline, while the cathode reduces H2O to H2 and OH- to deprotonate the oxime.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction fully suppressed (0% of 2a) with 3 equiv TEMPO, implying involvement of a radical species in the catalytic cycle"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Bromine-trapped adduct 5 (Ph2C=CHBr / bromo-DPE) detected by GCMS, supporting participation of a bromine radical"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two cyclization pathways are proposed from intermediate A: major pathway goes through DMSO-bromonium adduct B and then ring-closes to 2a; minor pathway invokes a free bromonium C from the oxime which can either close 5-exo-trig (path a → 2a) or 6-endo-trig (path b → by-product 3a, 1,2-oxazine). DMSO acts as Br+ shuttle; in-situ generated hydroxide at the cathode serves as base for oxime deprotonation."
+}

@@ -1,0 +1,99 @@
+{
+  "doi": "10.1021_acs.joc.1c01946",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intramolecular fluoroarylation of allyl aryl ethers to 3-fluorochromanes via an anodically generated difluoro-aryl-λ3-iodane mediator (ex-cell protocol)",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation (2e-) of aryl iodide (tolyl iodide, 2) in HF:amine/CH2Cl2 generates difluoro-λ3-aryl iodane 4; cathode reduces protons to H2. The iodane (generated ex-cell) then activates the pendant alkene of substrate 1 toward intramolecular Friedel-Crafts-type cyclization with fluoride delivery.",
+  "key_intermediates": [
+    {
+      "name": "difluoro-λ3-tolyl iodane (ArIF2, mediator 4)",
+      "smiles": "Cc1ccc(I(F)F)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "iodonium-activated alkene adduct (5) from alkene + ArIF2",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "arenium/Wheland-type cyclized cation bearing β-iodane (6)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "3-fluorochromane product (3)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "arene radical cation (from electron-rich substrate 1r, off-pathway SET)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "1,2-difluorination side product (7)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the anode, ArI (2) is oxidized by 2e- (losing nothing initially; ligand exchange with fluoride from HF:amine) to give ArIF2 (4); protons are reduced at the cathode to H2. ArIF2 then electrophilically activates the alkene of 1 to form iodonium intermediate 5, which undergoes intramolecular SEAr by the tethered aryl ether to give arenium 6; rearomatization with loss of H+ and fluoride delivery (with extrusion of ArI) furnishes 3-fluorochromane 3.",
+  "rate_determining_step": "Intramolecular nucleophilic attack of the aromatic ring onto the iodane-activated alkene (intermediate 5); this step is outcompeted by fluoride attack (giving difluorination 7) when the arene is electron-poor (σp+m > 0.75) and is bypassed by direct SET on the arene when σp+m ≤ 0.",
+  "probe_reagents": [
+    {
+      "name": "iodotoluene (2)",
+      "smiles": "Cc1ccc(I)cc1",
+      "purpose": "redox_probe",
+      "observation": "CV in 5.6 HF:amine/DCM shows two oxidation features (peak currents linear with v^0.5) assigned to sequential 1e- oxidations at iodine to form ArIF2 (4); peaks merge at low [HF]"
+    },
+    {
+      "name": "electron-rich substrate 1r (no EWG on arene)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Solution turns deep blue on addition of 4; UV/vis red-shift matches that produced by NOBF4, indicating SET to give an arene radical cation; oxidation peak of 1r disappears upon addition of NOBF4, PIFA, or 4 — consistent with SET deactivating the arene"
+    },
+    {
+      "name": "NOBF4",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Single-electron oxidant that reproduces the UV/vis red shift seen with 4, supporting SET pathway for electron-rich arenes"
+    },
+    {
+      "name": "PIFA (PhI(OCOCF3)2)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Consumes the oxidation feature of 1r in CV, confirming arene oxidation as the competing pathway"
+    },
+    {
+      "name": "Hammett series (substrate scope with varied σp+m)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Yield of fluoroarylation 3 is high for 0 < σp+m < 0.75; difluorination 7 dominates for σp+m > 0.75; SET/no reaction for σp+m ≤ 0 — correlates product distribution with Epa/2 (1.2–1.8 V optimal)"
+    },
+    {
+      "name": "internal alkene substrate 1p",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Largely unreactive, consistent with iodane activation of terminal/β-substituted alkenes"
+    },
+    {
+      "name": "homoallyl substrate 1q",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Gives 6-exo product preferentially over 7-endo, consistent with cation/iodonium-controlled cyclization regiochemistry"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "UV_vis",
+    "stoichiometric_intermediate",
+    "kinetic_order",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two competing off-pathway regimes are explicitly mapped: (i) for very electron-poor arenes (σp+m > 0.75), intermolecular fluoride attack on iodonium 5 outcompetes intramolecular SEAr, giving 1,2-difluoride 7; (ii) for very electron-rich arenes (σp+m ≤ 0), direct SET from the arene to 4 generates an unreactive arene radical cation. An 'ex-cell' protocol (pre-generate 4, then add substrate) is essential — in-cell and divided-cell variants give <5% product, attributed to substrate/intermediate decomposition under direct electrolysis. No KIE, radical trap (TEMPO/BHT), or DFT data reported on these pages."
+}

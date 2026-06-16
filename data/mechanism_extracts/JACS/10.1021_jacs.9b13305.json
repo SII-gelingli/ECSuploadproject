@@ -1,0 +1,86 @@
+{
+  "doi": "10.1021_jacs.9b13305",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical hydrocarboxylation of aryl alkenes (styrenes) with CO2 to give β-aryl carboxylic acids, including formation of all-carbon quaternary centers from β,β-disubstituted alkenes",
+  "mechanism_family": [
+    "radical_cathodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic reduction of the surface-adsorbed styrene to a radical anion; subsequent CO2 addition and a second cathodic electron transfer give a carbanion that is protonated by water",
+  "key_intermediates": [
+    {
+      "name": "surface-adsorbed styrene radical anion (benzylic radical anion)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-carboxylate benzylic radical (after CO2 addition to radical anion)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbanion (after second electron transfer, dissociated from electrode)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ring-opened homoallyl/benzyl radical from cyclopropane clock 1u",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "reduced alkene byproduct (e.g., deuterated ethylbenzene, ~10%)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "decarboxylated oxindole product 2ac' (over-reaction)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the cathode, the aryl alkene adsorbs and accepts one electron to form a benzylic radical anion; CO2 adds to the benzylic position to give a carboxylated benzylic radical, which is reduced by a second electron and protonated by trace water (or D2O) to deliver the β-carboxylic acid.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclopropane radical clock (substrate 1k, 1o)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "No ring opening observed (k_open ~6.1e4 s-1 < k_closure 5.4e6 s-1); benzylic radical reversibly closes, consistent with short-lived benzylic radical"
+    },
+    {
+      "name": "phenyl-substituted cyclopropane clock 1u",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Irreversible ring opening (k ~2e8 s-1) gives ring-opened acid 2u (5:1 vs 2u'); without CO2, ring-opened reduced product 6' dominates (16:1 vs 6), supporting a radical intermediate"
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "No TEMPO adduct isolated; no carboxylation or reduction observed (inconclusive trapping)"
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": ">95% D incorporation at the benzylic position of [D]2a, plus ~10% deuterated ethylbenzene; confirms protonation by water at benzylic carbanion"
+    },
+    {
+      "name": "cyclic voltammetry of 4-CF3-styrene 1e",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Reduction onset unchanged upon CO2 saturation, but cathodic current drops from -149 to -65 µA, indicating surface-adsorbed radical anion that is intercepted by CO2 rather than polymerizing"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two mechanistic routes were considered (Table 3): route (a) direct reduction of CO2 to CO2•– which adds to the alkene, vs route (b) reduction of the surface-adsorbed alkene to a radical anion that then reacts with CO2. The authors favor route (b) based on CV data showing alkene reduction and current attenuation under CO2, but note that the biased potential prevents fully ruling out direct CO2 reduction (route a). Unactivated cyclopropane substrates (1k, 1o) do not ring-open because benzylic radical ring-closure outcompetes opening — this is consistent with but does not by itself prove a radical intermediate; the phenyl-cyclopropane 1u clock provides the decisive radical evidence."
+}

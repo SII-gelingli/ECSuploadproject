@@ -1,0 +1,62 @@
+{
+  "doi": "10.1002_ajoc.201300017",
+  "journal": "AsianJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemically initiated catalytic dithiolation (addition of ArSSAr) to alkenes and alkynes via a cationic chain mechanism mediated by an arylbis(arylthio)sulfonium ion ArS(ArSSAr)+.",
+  "mechanism_family": [
+    "cation_initiated",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of ArSSAr at -78 °C generates and accumulates a catalytic 'cation pool' of ArS(ArSSAr)+ (1), which then initiates a non-electrochemical cation chain with the alkene and additional ArSSAr.",
+  "key_intermediates": [
+    {
+      "name": "arylbis(arylthio)sulfonium ion ArS(ArSSAr)+ (1), chain carrier / initiator",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "thiiranium ion A from ArS+ transfer to alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-arylthio sulfonium ion B (open-chain sulfonium after ArSSAr attack on A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "1,2-bis(arylthio)alkane product C",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode removes one electron from ArSSAr to build up a catalytic pool of ArS(ArSSAr)+ (1); 1 transfers ArS+ to the alkene forming thiiranium A, which is opened by another ArSSAr to give sulfonium B, which fragments to dithiolated product C and regenerates 1, propagating a cation chain without further electron transfer.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "Bu4NB(C6F5)4 vs Bu4NBF4 (counteranion probe)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Yields drop sharply with BF4- (≤26%) vs B(C6F5)4- (71-79%); less nucleophilic/less stabilizing B(C6F5)4- keeps cations A and B electrophilic enough for ArSSAr attack, supporting cationic chain."
+    },
+    {
+      "name": "Catalytic electricity (0.06 F/mol) experiment",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Substoichiometric charge (ca. 6 mol% of 1 generated) still drives full conversion, consistent with a chain process with 1 as chain carrier."
+    },
+    {
+      "name": "Et3N quench",
+      "smiles": "CCN(CC)CC",
+      "purpose": "intermediate_trap",
+      "observation": "Added to quench cationic intermediates and terminate the reaction."
+    }
+  ],
+  "evidence_types_used": [
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism builds on prior stoichiometric ArS(ArSSAr)+ 'cation pool' chemistry (thiiranium intermediates trapped by hard/soft nucleophiles). No radical traps, KIE, CV, or DFT reported on these pages; mechanistic support comes from catalytic-charge experiment, counteranion effect, and anti-selective addition consistent with thiiranium opening. Alternative pathways (e.g., radical chain) are not explicitly excluded."
+}

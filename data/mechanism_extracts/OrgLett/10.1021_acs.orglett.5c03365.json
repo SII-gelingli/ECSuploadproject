@@ -1,0 +1,61 @@
+{
+  "doi": "10.1021_acs.orglett.5c03365",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "NaBr-mediated electrochemical anti-Markovnikov hydration of aryl alkenes to β-aryl ethanols via an aryl epoxide intermediate",
+  "mechanism_family": [
+    "mediator_anodic",
+    "paired_electrolysis",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of Br- to Br2/[Br]+ which acts as mediator to brominate the alkene; cathodic reduction of H2O generates OH-/H2 and later reduces the aryl epoxide to the anti-Markovnikov alcohol",
+  "key_intermediates": [
+    {
+      "name": "bromonium ion ([Br]+ / HBrO)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclic aryl bromonium ion",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-bromoalcohol (aryl)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "aryl epoxide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic ketyl/α-oxy radical (after cathodic 1e- reduction of epoxide)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "During constant-current electrolysis, anode oxidizes 2 Br- to Br2 which disproportionates with H2O to [Br]+/HBr; [Br]+ adds to the aryl alkene to form a cyclic bromonium that is opened by water to give a β-bromoalcohol, which is converted to an aryl epoxide by OH- (generated at the cathode from water reduction). Under constant-voltage electrolysis, the aryl epoxide is cathodically reduced (1e-, then protonation, then 1e-) to deliver the anti-Markovnikov β-aryl ethanol.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "aliphatic alkene (1al) control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Yielded only the epoxide 4al (60%) with no anti-Markovnikov alcohol, indicating aryl group is required for cathodic epoxide reduction"
+    },
+    {
+      "name": "isolated aryl epoxide intermediate",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Epoxide isolated and shown to be reduced to the β-aryl ethanol product, supporting it as an on-cycle intermediate"
+    }
+  ],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism is sequential paired electrolysis carried out in two stages (constant-current then constant-voltage). Alternative direct hydration pathways via benzylic carbocation or radical-polar crossover are ruled out implicitly by the requirement of the aryl epoxide intermediate; aliphatic substrates stop at the epoxide stage because their epoxides are not reducible under the cathodic conditions."
+}

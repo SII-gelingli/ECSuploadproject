@@ -1,0 +1,86 @@
+{
+  "doi": "10.1021_acs.orglett.8b04041",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative radical selenylation/1,2-carbon migration of alkenylcyclobutanols with diselenides to give beta-selenyl cyclopentanones, which undergo Dowd-Beckwith ring expansion to cyclohexanones.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of diaryl diselenide to a diselenide radical cation that fragments to a selenyl radical (and selenyl cation); a further anodic oxidation converts the carbon-radical adduct to a carbocation that undergoes semipinacol 1,2-alkyl migration. Cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "diphenyl diselenide radical cation (I)",
+      "smiles": "[c1ccccc1[Se][Se]c1ccccc1]_radcat",
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl radical (II)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenyl cation (III)",
+      "smiles": "[Se+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical from PhSe addition to alkenylcyclobutanol (IV)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tertiary benzylic carbocation on cyclobutanol (V)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkoxy/oxocarbenium from PhSe+ addition (VI)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "beta-selenyl cyclopentanone (3a)",
+      "smiles": "O=C1CCCC1(c1ccccc1)C[Se]c1ccccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes PhSeSePh to a radical cation that cleaves to PhSe• and PhSe+; PhSe• adds to the vinyl group of the alkenylcyclobutanol forming a benzylic C-radical, which is further oxidized at the anode to a carbocation; 1,2-alkyl migration (semipinacol ring expansion of the cyclobutanol) gives the beta-selenyl cyclopentanone, while the cathode reduces H+ to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product formation suppressed to trace, supporting a radical intermediate"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Yield reduced to 62%, consistent with partial radical involvement"
+    },
+    {
+      "name": "1,1-diphenylethene",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Yield reduced to 57%, consistent with a radical pathway"
+    },
+    {
+      "name": "no current control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction without applied current, confirming electrochemical initiation"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors propose two competing pathways: favored path a involves PhSe• radical addition to the alkene followed by anodic oxidation to a cation and semipinacol 1,2-migration; alternative path b invokes nucleophilic attack of the alkenylcyclobutanol on PhSe+ (cation III) followed by 1,2-carbon migration, which could not be ruled out. CV showed oxidation peaks of 1a at 1.74 V and PhSeSePh (2a) at 1.33 V, consistent with diselenide being oxidized first. A subsequent radical-initiated Dowd-Beckwith ring expansion (Bu3SnH/AIBN) converts the beta-selenyl cyclopentanones to cyclohexanones."
+}

@@ -1,0 +1,78 @@
+{
+  "doi": "10.1021_acs.orglett.2c02976_sup_1",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Nickel-catalyzed electrochemical three-component 1,2-dicarbofunctionalization of styrenes with aryl iodides and 3-iodooxetane via a radical pathway",
+  "mechanism_family": [
+    "radical_cathodic",
+    "electrocatalysis_inner_sphere",
+    "sacrificial_anode"
+  ],
+  "electrochemical_role": "Cathodic reduction generates Ni(0)Ln from Ni(II); the iron anode is sacrificially oxidized (Fe -> Fe(n+) + ne-); alkyl iodide (3-iodooxetane) undergoes SET to form alkyl radical that adds to styrene",
+  "key_intermediates": [
+    {
+      "name": "Ni(0)Ln (A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ar(1)-Ni(II)-I (B), oxidative addition complex",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Alkyl radical from 3-iodooxetane (C)",
+      "smiles": "[CH2]1COC1",
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic radical after styrene addition (D)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ar(1)-Ni(III)(I)(CH(Ar2)CH2-alkyl) (E)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(I)-I (F), post-reductive-elimination species",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(II)-I (G) reduced back to Ni(0) at cathode",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "TEMPO-oxetane adduct (7)",
+      "smiles": "CC1(C)CCCC(C)(C)N1OC1COC1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode reduces Ni(II) to Ni(0), which oxidatively adds ArI to give Ar-Ni(II)-I; this Ni species reduces the alkyl iodide via SET to release an alkyl radical that adds to styrene, generating a benzylic radical that recombines with Ar-Ni(II) to give a Ni(III) intermediate undergoing reductive elimination; the iron anode is sacrificially oxidized to balance charge.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Target product 4a fully suppressed (0%); TEMPO-oxetanyl adduct 7 isolated in 13% with full system and 31% with only 3a, confirming alkyl radical formation and suggesting Ni(I) generation by disproportionation"
+    },
+    {
+      "name": "DMPO",
+      "smiles": "CC1(C)CC=[N+]([O-])C1",
+      "purpose": "radical_trap",
+      "observation": "Used as spin trap for EPR detection of radical intermediates from 1a and 2a under electrolysis"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "EPR",
+    "stoichiometric_intermediate",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Stoichiometric reaction without electric current using Ni(cod)2 still afforded product 4a (10%) and isomer 4a' (40%), supporting feasibility of the Ni(0)/Ni(II)/Ni(III) cycle independent of continuous current. TEMPO trapping with only 3a indicates Ni(I) may form via disproportionation pathway alongside the main cycle."
+}

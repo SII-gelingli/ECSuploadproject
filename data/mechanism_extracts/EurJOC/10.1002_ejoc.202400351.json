@@ -1,0 +1,43 @@
+{
+  "doi": "10.1002_ejoc.202400351",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,2-dihalogenation (F, Cl, Br) of gem-difluoroalkenes using HX (HF, HCl, HBr) as halide source to deliver CF2X-CHX-R type products including 18F-labeled tracers",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of halide (X-) from HX to halogen radical/halogen species which adds to the gem-difluoroalkene; the resulting carbon radical/cation is trapped by a second halide",
+  "key_intermediates": [
+    {
+      "name": "halide-derived halogen radical (X•) from anodic oxidation of HX",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-fluorinated carbon radical from X• addition to gem-difluoroalkene (CF2X-C•(H)-R)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-fluorinated carbocation after further oxidation (CF2X-C+(H)-R)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes X- (from HX) to a halogen radical that adds to the terminal CF2=CHR alkene to give a CF2X-substituted carbon radical; this radical is further oxidized at the anode to a carbocation and trapped by a second halide to yield the vicinal dihalide.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "K[18F]F-K222 (Kryptofix-complexed [18F]fluoride)",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "Enables 18F-labeling of the dihalogenated product, supporting halide incorporation pathway and giving 18F-labeled tracers"
+    }
+  ],
+  "evidence_types_used": [
+    "isotope_label"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Only the introductory/abstract page was provided; the detailed mechanistic scheme (radical traps, CV, DFT) is not shown here. Mechanism inferred from Scheme 1b (HX + electrolysis, classification as Method III electrochemical dihalogenation) and analogy to prior electrochemical olefin dihalogenations cited in the introduction."
+}

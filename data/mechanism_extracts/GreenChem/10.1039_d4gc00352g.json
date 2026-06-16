@@ -1,0 +1,131 @@
+{
+  "doi": "10.1039_d4gc00352g",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Photoelectrocatalytic dehydrogenative carbocyclization of unactivated alkene-tethered quinazolin-4-ones with diethyl malonate to give polycyclic pyrroloquinazolinones, with H2 as the sole byproduct.",
+  "mechanism_family": [
+    "radical_anodic",
+    "photoredox_combined",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic PCET oxidation of base-activated diethyl malonate to the malonate radical; cathodic reduction of protons to H2; the Ir(ppy)3 oxidative quenching photocatalytic cycle anchors and oxidizes the cyclized carbon radical intermediate (IrIII* oxidizes C to nitranion D, regenerated IrII reduced back to IrIII at the anode/by anodic events).",
+  "key_intermediates": [
+    {
+      "name": "malonate radical (deprotonated diethyl malonate, one-electron oxidized) - intermediate A",
+      "smiles": "CCOC(=O)[CH]C(=O)OCC",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical B from addition of malonate radical onto tethered alkene of 1a",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "N-centered (amidinyl) cyclized radical C after intramolecular radical trapping by amidine N",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "nitranion intermediate D (from SET oxidation of C by excited IrIII*)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "tetrahydropyrroloquinazolinone E (protonated D, detected by HRMS)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "pyrroloquinazolinone product 3a (after anodic oxidation of E)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ir(ppy)3 photocatalyst (IrIII / IrIII* / IrII cycle)",
+      "smiles": null,
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "Base-activated diethyl malonate undergoes anodic PCET to give a malonate radical, which adds to the tethered alkene of 1a to form alkyl radical B; intramolecular cyclization onto the amidine N gives radical C, which is oxidized by photoexcited IrIII* to nitranion D (closing the oxidative-quenching photocycle, with IrII reoxidized to IrIII). Protonation of D yields E, anodically oxidized/deprotonated to product 3a, while protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed (0% 3a), consistent with radical intermediates"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed (0% 3a)"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Malonate-DPE adduct 5 isolated in 66%, indicating involvement of malonate radical"
+    },
+    {
+      "name": "p-dinitrobenzene (pDNB)",
+      "smiles": "O=[N+]([O-])c1ccc(cc1)[N+]([O-])=O",
+      "purpose": "redox_probe",
+      "observation": "SET inhibitor suppressed the reaction"
+    },
+    {
+      "name": "CuCl2",
+      "smiles": "[Cu](Cl)Cl",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed"
+    },
+    {
+      "name": "CCl4",
+      "smiles": "ClC(Cl)(Cl)Cl",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed"
+    },
+    {
+      "name": "Pre-generated IrIV / IrCl4 (stoichiometric oxidant, no current)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "No 3a formed, ruling out a discrete IrIV oxidant pathway (path c)"
+    },
+    {
+      "name": "UVA irradiation without PC",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No beneficial effect (35-38% vs 36% dark), excluding triplet energy transfer sensitization of 1b (path d)"
+    },
+    {
+      "name": "On/off light and current experiments",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction halts when either light or current is off, ruling out a radical chain"
+    },
+    {
+      "name": "Hydrogen detection",
+      "smiles": "[H][H]",
+      "purpose": "other",
+      "observation": "H2 confirmed at cathode, consistent with proposed cathodic proton reduction"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, 2a, 3a, Ir(ppy)3",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "E_p/2 values established: 2a-base 0.83 V, 1a 1.92 V, 3a -0.72 V vs SCE; IrIII* reduction potential 0.31 V; supports anodic malonate oxidation and unfavorable SET from C to IrIII* being thermodynamically uphill only when product 3a (-1.85 V vs SCE for IrII/IrIII)."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly disfavor alternative paths: (path a) merged electrolysis + reductive quenching Ir cycle - excluded by Stern-Volmer (2a does not quench IrIII*) and failure of stoichiometric Ir(ppy)3 photooxidant without current; (path b) IrIV electron-shuttle - excluded by failure of electrogenerated IrIV and IrCl4 to drive the reaction without current; (path c) excited IrIV oxidative pathway and (path d) triplet sensitization of quinazolinone 1b - excluded by UVA experiments without PC; (path e) reductive-quenching SET from C to IrIII* - excluded as thermodynamically unfavorable. Favored mechanism is the oxidative-quenching photocatalytic cycle (paths f/g) that anchors and rapidly oxidizes the anodically generated radical intermediate C. Hydrogen evolution at cathode maintains electron balance."
+}

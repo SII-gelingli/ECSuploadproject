@@ -1,0 +1,111 @@
+{
+  "doi": "10.1039_D2CC00761D_sup_1",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical [3+2] cycloaddition of N-sulfonyl cyclopropylamines with alkenes/alkynes (cinnamates) to give aminocyclopentane/cyclopentene products via ring-opening of an aminyl radical, mediated by ferrocene.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of Cp2Fe to Cp2Fe+ which oxidizes the deprotonated sulfonamide anion (A) to an N-centered aminyl radical (B); the distal alkyl radical adduct is reduced at the cathode to a carbanion that cyclizes/protonates.",
+  "key_intermediates": [
+    {
+      "name": "Sulfonamide anion (A) from K2CO3 deprotonation of N-sulfonylcyclopropylamine",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "N-centered aminyl radical (B) on cyclopropylamine",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ring-opened distal carbon radical / N-sulfonyl iminyl-tethered alkyl radical (C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Alkene/alkyne radical adduct (D) after addition to cinnamate (Michael acceptor)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cathodically reduced carbanion (E')",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "5-exo cyclized cyclopentene carbanion (F/G) bearing N-Ts iminyl/amide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cyclic N-sulfonyl imine intermediate III (detected by HRMS)",
+      "smiles": null,
+      "role": "stoichiometric_intermediate"
+    },
+    {
+      "name": "Hydrolysis product IV: tosylsulfonamide + aldehyde V (confirmed by 1H NMR)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "K2CO3 deprotonates the N-H sulfonamide; ferrocene is oxidized at the anode to Cp2Fe+ which single-electron oxidizes the sulfonamide anion to an N-centered radical that undergoes cyclopropane ring-opening to a distal C-radical; this radical adds to the cinnamate, the resulting α-ester radical is reduced at the cathode to a carbanion which undergoes 5-exo cyclization onto the N-sulfonyl imine and protonation to give the trans-aminocyclopentane.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Complete shutdown of reaction, supporting a radical pathway"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Complete shutdown of reaction, supporting a radical pathway"
+    },
+    {
+      "name": "N-acetyl cyclopropylamine (vs N-tosyl)",
+      "smiles": "CC(=O)NC1CC1",
+      "purpose": "other",
+      "observation": "No reaction; tosyl (electron-withdrawing/stabilizing) group required, acetyl detrimental"
+    },
+    {
+      "name": "Divided cell experiment",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "~70% starting material recovered; indicates no chain propagation"
+    },
+    {
+      "name": "(3-bromoprop-1-en-2-yl)benzene (2o) intermediate trap",
+      "smiles": "BrCC(=C)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "HRMS detects cyclic N-sulfonyl imine III; hydrolysis gives tosylsulfonamide IV (NMR) + aldehyde V, consistent with an anionic 5-exo cyclization pathway"
+    },
+    {
+      "name": "Cyclic voltammetry (Cp2Fe, 1a, 2a, K2CO3 combinations)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Establishes Cp2Fe as the redox mediator oxidizing the sulfonamide anion rather than direct substrate oxidation"
+    },
+    {
+      "name": "Time-based electrolysis",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Monitoring substrate/product evolution over time"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors propose two mechanisms: (favored, H) anionic 5-exo cyclization pathway via cathodic reduction of the radical adduct to a carbanion that cyclizes onto the N-sulfonyl imine (supported by HRMS detection of imine III and isolation of IV/V); (alternate, I) all-radical pathway where the alkene radical adduct cyclizes to a C-centered radical (J) which is cathodically reduced to a carbanion (K) and protonated. NOESY confirms trans diastereoselectivity, rationalized by steric repulsion between N-sulfonyl imine and ester in the chair-like transition state (Aggarwal model). Divided cell shows no radical chain propagation, consistent with stoichiometric mediator turnover."
+}

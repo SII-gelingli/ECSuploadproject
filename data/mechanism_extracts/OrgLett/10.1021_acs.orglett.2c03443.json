@@ -1,0 +1,55 @@
+{
+  "doi": "10.1021_acs.orglett.2c03443",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical reductive functionalization of alkenes with CDCl3 as a one-carbon deuteration block, giving either deuterated cyclopropanes or hydrochloromethylation (CDCl2H/CDCl2 addition) products depending on conditions.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic single-electron reduction of CDCl3 cleaves a C-Cl bond to generate a CDCl2 radical (preserving the C-D bond); after addition to the alkene, the resulting C-radical is further reduced at the cathode to a carbanion (radical-polar crossover) that either displaces chloride intramolecularly to form a cyclopropane or is protonated to give the hydrochloromethylation product.",
+  "key_intermediates": [
+    {
+      "name": "CDCl2 radical (dichloromethyl-d radical from cathodic reduction of CDCl3)",
+      "smiles": "[C]([2H])(Cl)Cl",
+      "role": "reactive"
+    },
+    {
+      "name": "β-CDCl2 alkyl radical from radical addition to alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-CDCl2 alkyl carbanion (after second cathodic SET)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Deuterated cyclopropane product (intramolecular SN2 closure)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Hydrochloromethylation product R-CD(Cl2)-CH(H)-R' (carbanion protonation)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces CDCl3 by SET with C-Cl cleavage to give Cl- and a CDCl2 radical; this radical adds to the alkene, the resulting carbon radical is reduced by a second cathodic SET to a carbanion, which either expels a chloride intramolecularly to close a cyclopropane or is protonated by the medium to give the hydrochloromethylation product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "deuterochloroform (CDCl3) as D-source",
+      "smiles": "[2H]C(Cl)(Cl)Cl",
+      "purpose": "isotope_label",
+      "observation": "Deuterium incorporation typically 93-99% in products, indicating selective C-Cl cleavage with retention of C-D bond and no significant H/D scrambling."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Base-free conditions are emphasized to avoid the classical dichlorocarbene (CCl2) pathway that would scramble D and lead to dichlorocyclopropanes; the weaker C-D vs C-H BDE in the CDCl2 radical (~84 vs 95 kcal/mol) makes selective C-Cl cleavage non-trivial, and the electrochemical radical/radical-polar-crossover design is invoked to bypass this. Chemoselectivity between cyclopropanation and hydrochloromethylation is governed by the reaction conditions (proton availability vs intramolecular chloride displacement). Full mechanistic details (CV, DFT, radical traps) are likely on later pages not included here."
+}

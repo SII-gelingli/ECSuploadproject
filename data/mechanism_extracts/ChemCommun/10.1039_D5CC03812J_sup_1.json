@@ -1,0 +1,85 @@
+{
+  "doi": "10.1039_D5CC03812J_sup_1",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Photoelectrochemical radical tandem cyclization of N-aryl acrylamides with alkyl bromides using (TMS)3SiOH as halogen-atom transfer (XAT) reagent to access 3,3-disubstituted oxindoles bearing a CF3 group.",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation regenerates the excited-state photocatalyst (PQ); the photocatalyst oxidizes (TMS)3SiOH to (TMS)3SiO•, which rearranges to a silyl radical (TMS)2(TMSO)Si• that performs XAT on the alkyl bromide to generate the key alkyl radical.",
+  "key_intermediates": [
+    {
+      "name": "(TMS)3SiO• (silanol-derived O-radical)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "(TMS)2(TMSO)Si• (rearranged silyl radical, XAT reagent)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical (from R-Br via XAT)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbon radical after addition to acrylamide alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclohexadienyl radical from intramolecular aryl cyclization",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TEMPO–CH2CH2OH adduct 61",
+      "smiles": "OCCON1C(C)(C)CCCC1(C)C",
+      "role": "off_pathway"
+    },
+    {
+      "name": "silyl-trapped oxindole 67 (in absence of R-Br)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Visible-light-excited PQ* oxidizes (TMS)3SiOH to give (TMS)3SiO•, which rearranges to a silyl radical that abstracts Br from R-Br (XAT) to generate an alkyl radical; this radical adds to the acrylamide alkene, the resulting C-radical cyclizes onto the arene, and rearomatization/oxidation delivers the oxindole while the reduced PQ is reoxidized at the anode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited; TEMPO–(2-hydroxyethyl) adduct 61 (C11H24NO2+, m/z 202.1803) detected by HRMS, indicating intermediacy of the alkyl radical derived from 2-bromoethanol."
+    },
+    {
+      "name": "(bromomethyl)cyclopropane (63)",
+      "smiles": "BrCC1CC1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened cyclization product 64 obtained in 48% yield, confirming a freely diffusing alkyl radical."
+    },
+    {
+      "name": "6-bromohex-1-ene (65)",
+      "smiles": "BrCCCCC=C",
+      "purpose": "radical_clock",
+      "observation": "Radical dicyclization product 66 (with cyclopentylmethyl pendant) obtained in 51% yield, consistent with 5-exo-trig cyclization of the hexenyl radical."
+    },
+    {
+      "name": "(TMS)3SiOH (no R-Br control)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "In the absence of alkyl bromide, silyl-incorporated oxindole 67 was isolated in 37% yield, supporting formation of (TMS)3SiO• and its rearrangement to a silyl radical that adds to the acrylamide."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "The silyl-trapping experiment in the absence of R-Br (product 67) is key evidence for the proposed Brook-type rearrangement of (TMS)3SiO• to (TMS)2(TMSO)Si• as the active XAT reagent. No DFT, CV, or KIE data presented on these pages."
+}

@@ -1,0 +1,52 @@
+{
+  "doi": "10.1016_j.tet.2008.12.068",
+  "journal": "Tetrahedron",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical fluoro-selenenylation of α,β-unsaturated esters and related electron-deficient olefins using PhSeSePh and Et3N·5HF as fluoride source in an undivided cell to give vicinal β-fluoro-α-phenylselenyl (and regioisomeric α-fluoro-β-phenylselenyl) esters.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of PhSeSePh in the presence of fluoride generates an electrophilic [PhSeF] species, which adds to the olefin to form a seleniranium (episelenonium) cation that is opened by fluoride.",
+  "key_intermediates": [
+    {
+      "name": "Electrophilic phenylselenenyl fluoride [PhSeF]",
+      "smiles": "F[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Seleniranium (episelenonium) ion from acrylate (1a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-PhSe-stabilized β-carbocation intermediate (more stable for 1a, leading to 2a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-PhSe / α-carbocation intermediate A (minor for 1a, leading to 3a)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Seleniranium ion from crotonate (1c) opened to α-cation stabilized by α-PhSe (intermediate B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Seleniranium from methacrylate (1b) opened to β-cation stabilized by α-methyl (more stable, leading to 3b)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, PhSeSePh is oxidized in the presence of F− (from Et3N·5HF) to give an electrophilic [PhSeF] equivalent; this adds to the α,β-unsaturated ester to form a seleniranium ion, which is opened regioselectively by F− at the carbon best able to stabilize positive charge (α-PhSe stabilization or α-alkyl stabilization), delivering the vicinal F/SePh adduct.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "product_isotope_distribution",
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Regiochemistry is rationalized by relative stability of the cationic intermediate arising from seleniranium opening: with simple acrylate (1a) α-PhSe stabilization dominates giving 2a as major (β-F, α-SePh); with α-methyl substrates (methacrylate 1b) the tertiary β-carbocation stabilized by the α-methyl is favored, inverting regioselectivity toward 3b (α-F, β-SePh); crotonate (1c) gives exclusively 2c. No radical traps, CV, or DFT reported in these pages; mechanism is inferred from product distributions and substituent effects."
+}

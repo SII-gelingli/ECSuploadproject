@@ -1,0 +1,74 @@
+{
+  "doi": "10.1021_acs.joc.5c00401",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical azidohydroxylation and azidoazidation (diazidation) of α-trifluoromethyl alkenes with TMSN3 via a radical-polar crossover mechanism affording β-CF3 azido alcohols or 1,2-diazides.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of azide (from TMSN3) to azidyl radical; subsequent second anodic oxidation of the β-CF3 alkyl radical adduct to a benzylic/α-CF3 carbocation. Cathode reduces HOAc to H2 and acetate.",
+  "key_intermediates": [
+    {
+      "name": "azidyl radical (N3•)",
+      "smiles": "[N-]=[N+]=[N]",
+      "role": "reactive"
+    },
+    {
+      "name": "α-trifluoromethyl β-azido carbon radical (intermediate B)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-trifluoromethyl β-azido benzylic carbocation (intermediate C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "azidohydroxylation product 3 (β-azido CF3 alcohol)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,2-diazide product 4",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, TMSN3 is oxidized by SET to an azidyl radical, which adds to the electron-poor α-CF3 alkene to give a benzylic C-radical; a second anodic oxidation converts this radical to a stabilized α-CF3 benzylic cation, which is trapped by H2O (path 1) to give the azido alcohol or by TMSN3/azide (path 2) to give the 1,2-diazide. The cathode reduces HOAc to H2 and acetate.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Trapping adduct 3a' detected by HRMS, supporting involvement of an azidyl/C-radical."
+    },
+    {
+      "name": "methanol (as solvent)",
+      "smiles": "CO",
+      "purpose": "intermediate_trap",
+      "observation": "Azidomethoxylation product 4i obtained in 42% yield, supporting a carbocation intermediate trapped by MeOH."
+    },
+    {
+      "name": "TMSN3 (CV)",
+      "smiles": "C[Si](C)(C)N=[N+]=[N-]",
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak at +0.93 V vs Ag+/Ag, lower than alkene 1a (+2.10 V), indicating TMSN3 is preferentially oxidized at the anode."
+    },
+    {
+      "name": "trifluoromethyl alkene 1a (CV)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak at +2.10 V vs Ag+/Ag, higher than TMSN3, ruling out direct alkene oxidation as initiation."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Chemodivergence between azidohydroxylation (3) and diazidation (4) is controlled by electrode (Ni vs Pt cathode; graphite rod vs graphite felt anode) and solvent (DMSO/HOAc vs MeCN/HOAc); MeOH solvent diverts the cation to azidomethoxylation product, consistent with a radical-polar crossover via a carbocation rather than a closed-shell radical pathway."
+}

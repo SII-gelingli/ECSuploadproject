@@ -1,0 +1,83 @@
+{
+  "doi": "10.1002_anie.202500203_sup_1",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electroreductive Ni-catalyzed cyclopropanation of alkenes using dichloromethane as a carbene precursor (with a related β-methylation side pathway)",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "carbene",
+    "radical_cathodic"
+  ],
+  "electrochemical_role": "Cathodic reduction of Ni(II)/iPr-PyBOX to Ni(0), which mediates the reduction/activation of dichloromethane to generate a Ni-carbene species; olefin coordination further facilitates DCM reduction",
+  "key_intermediates": [
+    {
+      "name": "Ni(0)-iPr-PyBOX complex",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni-carbene (from CH2Cl2 activation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(II)-alkene complex (6a-bound)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cyclopropane product (e.g., 29b) – not on-cycle intermediate for methylation",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode reduces Ni(II)(iPr-PyBOX) to Ni(0); the Ni(0) complex reduces/activates CH2Cl2 to form a Ni-carbene, whose addition across the alkene delivers the cyclopropane; binding of the olefin lowers the DCM reduction onset, enabling catalyst turnover.",
+  "rate_determining_step": "Ni-mediated reduction/activation of dichloromethane (onset shifted from -2.48 V to -1.91 V vs Fc/Fc+ in presence of Ni and olefin)",
+  "probe_reagents": [
+    {
+      "name": "CD2Cl2 (d2-dichloromethane)",
+      "smiles": "[2H]C([2H])(Cl)Cl",
+      "purpose": "isotope_label",
+      "observation": "β-methylation of 25a gives CD2H-incorporated product (48% qNMR), confirming the methylene of DCM is transferred into the methyl product"
+    },
+    {
+      "name": "Cyclopropane substrate 29b (stability test)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "29b recovered in 61% with 0% methylation product 1c, showing cyclopropane is not an intermediate to the methylated product (off-cycle pathway)"
+    },
+    {
+      "name": "On/off current experiment (substrate 8b)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Yield increases only while current is on and plateaus when off across 3 cycles, indicating continuous electrolysis is required (no radical chain)"
+    },
+    {
+      "name": "Dichlorodiphenylmethane (CV probe)",
+      "smiles": "ClC(Cl)(c1ccccc1)c1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "Irreversible cathodic peak at -2.34 V vs Fc/Fc+; direct reduction to tetraphenylethylene unlikely, supporting Ni-carbene homocoupling pathway"
+    },
+    {
+      "name": "Cyclic voltammetry of Ni/iPr-PyBOX ± DCM ± olefin 6a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "DCM reduction onset shifts from -2.48 V (no Ni) to -2.00 V (with Ni) to -1.91 V (with Ni and 6a), supporting Ni-mediated reduction of DCM enhanced by olefin binding"
+    },
+    {
+      "name": "(S)-iPr-PyBOX chiral ligand",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "44% ee in product 1b, indicating a chiral Ni complex is involved in the stereodetermining C-C bond formation"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two product manifolds are observed: on-cycle cyclopropanation via a Ni-carbene from CH2Cl2 + alkene, and an off-cycle β-methylation pathway that does NOT proceed through the cyclopropane intermediate (shown by stability of 29b under reaction conditions). CD2Cl2 labeling confirms DCM-derived CH2 is incorporated into both the cyclopropane and methyl products. CV data support that the olefin assists regeneration/turnover of the active Ni species for DCM activation. Alternative direct cathodic reduction of a dichloro intermediate to a free carbenoid is disfavored by CV of dichlorodiphenylmethane."
+}

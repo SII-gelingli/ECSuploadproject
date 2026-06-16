@@ -1,0 +1,31 @@
+{
+  "model": "MultiTaskYieldModel",
+  "test_metrics": {
+    "mae": 13.230712890625,
+    "rmse": 18.585142135620117,
+    "r2": 0.329526424407959,
+    "accuracy": 0.9565619230270386,
+    "failed_precision": 0.41269840614764436,
+    "failed_recall": 0.7222222021604945,
+    "failed_f1": 0.5252520518318523,
+    "tp": 26,
+    "fp": 37,
+    "fn": 10,
+    "tn": 1009
+  },
+  "best_epoch": 7,
+  "args": {
+    "data_dir": "/inspire/hdd/global_user/gelingli-253114010248/WDproject2/condition_agent/yield_prediction/data",
+    "output_dir": "/inspire/hdd/global_user/gelingli-253114010248/WDproject2/condition_agent/yield_prediction/checkpoints/multitask",
+    "batch_size": 64,
+    "lr": 0.001,
+    "epochs": 100,
+    "patience": 20,
+    "hidden_dim": 256,
+    "regression_weight": 1.0,
+    "classification_weight": 3.0,
+    "failure_threshold": 5.0,
+    "use_weighted_sampler": true,
+    "device": "cuda"
+  }
+}

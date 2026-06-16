@@ -1,0 +1,68 @@
+{
+  "doi": "10.1021_jacs.2c05126_sup_1",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical Cu-catalyzed 1,2-diazidation of alkenes with TMSN3, probed here by radical-clock (vinylcyclopropane ring-opening, 1,6-diene cyclization) and carbocation-trapping experiments.",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "electrocatalysis_inner_sphere",
+    "carbocation"
+  ],
+  "electrochemical_role": "Anodic oxidation regenerates Cu(II)/Cu(III)-N3, which delivers an azidyl radical to the alkene; the resulting carbon radical is further oxidized to a carbocation (or trapped by a second Cu-N3) to install the second azide.",
+  "key_intermediates": [
+    {
+      "name": "β-azido carbon radical from N3 addition to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ring-opened homoallyl/allyl carbon radical from vinylcyclopropane (radical clock)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclized pyrrolidinyl carbon radical from 1,6-diene (radical clock)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-azido tertiary carbocation (from methallyl benzamide substrate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cu(II)/Cu(III)-azide species",
+      "smiles": null,
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "Cu-azide delivers an N3 radical to the alkene to give a β-azido C-radical; for substrates that can stabilize a cation, this radical is further oxidized (anodically or by Cu(III)) to a carbocation that is trapped by azide, while less-stabilized radicals couple directly with a second Cu-N3.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "(1-phenyl-2-vinylcyclopropane) 41",
+      "smiles": "C(=C)C1CC1c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened 1,5-diazidopent-3-en-1-ylbenzene (42) isolated in 15% (E/Z 5:1), confirming a free carbon radical intermediate."
+    },
+    {
+      "name": "N-allyl-N-(2-methylallyl)tosylamide 44",
+      "smiles": "C=CCN(S(=O)(=O)c1ccc(C)cc1)CC(=C)C",
+      "purpose": "radical_clock",
+      "observation": "5-exo-trig cyclization gives 3,4-bis(azidomethyl)-3-methyl-1-tosylpyrrolidine (45) in 21%, dr 2:1, supporting a radical cyclization prior to second azidation."
+    },
+    {
+      "name": "N-(2-methylallyl)benzamide 47",
+      "smiles": "O=C(NCC(=C)C)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Affords N-(2,3-diazido-2-methylpropyl)benzamide (48) in 59% without amide-cyclization product, consistent with a tertiary β-azido carbocation rapidly trapped by azide rather than by the pendant amide."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_other",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Pages shown are SI mechanistic probes (sections b 'Radical clock experiments' and c 'Investigation of carbocation intermediates'). Both a radical and a carbocation pathway are operative: most substrates proceed through radical-polar crossover, while non-stabilized radicals likely undergo direct Cu-mediated azidation without going through a cation."
+}

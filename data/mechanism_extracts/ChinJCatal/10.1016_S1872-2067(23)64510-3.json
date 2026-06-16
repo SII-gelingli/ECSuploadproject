@@ -1,0 +1,124 @@
+{
+  "doi": "10.1016_S1872-2067(23)64510-3",
+  "journal": "ChinJCatal",
+  "is_review": false,
+  "rxn_class_summary": "Cp2Fe-mediated electrochemical regioselective ortho-(4+2) cyclization and ipso-(3+2) spirocyclization of benzylic malonates with alkenes and alkynes to give tetrahydronaphthalenes and spirocarbocycles",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "electrocatalysis_outer_sphere",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of Cp2Fe to Cp2Fe+ mediator, which oxidizes the deprotonated malonate anion via single-electron transfer to generate a malonyl C-radical; cathode reduces MeOH to MeO- and H2",
+  "key_intermediates": [
+    {
+      "name": "Cp2Fe+ (ferrocenium) mediator",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "malonate anion (deprotonated benzylic malonate)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic malonyl C-centered radical (I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical adduct II (from addition to alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "vinyl radical adduct III (from addition to alkyne)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclohexadienyl radical IV (after ortho-(4+2) cyclization onto aryl)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "spirocyclic cyclohexadienyl radical V (after ipso-(3+2) cyclization)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "spirocyclic cation VI (after SET oxidation of V)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "dimethoxy spirocyclic intermediate VII (MeO- trapping of VI)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Cp2Fe to Cp2Fe+ while cathode reduces MeOH to MeO- + H2; MeO- deprotonates the benzylic malonate, and Cp2Fe+ oxidizes the anion by SET to a malonyl radical that adds to alkene/alkyne. The resulting alkyl radical undergoes ortho-(4+2) cyclization (giving cyclohexadienyl radical, then anodic oxidation/deprotonation to product), whereas the vinyl radical undergoes ipso-(3+2) spirocyclization followed by SET oxidation to a cation that is captured by MeO-/H2O to give the dienone.",
+  "rate_determining_step": "SET oxidation/radical addition step: TS-1 (18.8 kcal/mol) for alkene pathway and TS-4 (17.1 kcal/mol) for alkyne pathway are the highest barriers; cyclization regiochemistry controlled by TS-3 vs TS-2 (alkyl, ortho favored by 2.0 kcal/mol) and TS-5 vs TS-6 (vinyl, ipso favored by 5.7 kcal/mol)",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely suppressed with 2.0 equiv, supporting radical pathway"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely suppressed with 2.0 equiv"
+    },
+    {
+      "name": "2-methylthiophene",
+      "smiles": "Cc1ccc(s1)",
+      "purpose": "intermediate_trap",
+      "observation": "Captured the malonyl radical giving 5-thiophenyl adduct in 39% yield, confirming carbon radical"
+    },
+    {
+      "name": "H2-18O",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "18O exclusively incorporated into carbonyl of spiro product 22 (18O:16O > 20:1), indicating carbonyl O comes from water, not methoxy/MeOH"
+    },
+    {
+      "name": "Cp2FePF6 (stoichiometric)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "As stoichiometric chemical oxidant, gave spiro 22 in 15% yield, supporting Cp2Fe+ as active oxidant"
+    },
+    {
+      "name": "no electricity control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product formed without current"
+    },
+    {
+      "name": "no Cp2Fe control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product formed without ferrocene mediator"
+    },
+    {
+      "name": "absence of alkene/alkyne",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Homo-coupling dimer of malonate formed in 33% yield, consistent with malonyl radical"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "H/D_labeling",
+    "cyclic_voltammetry",
+    "DFT",
+    "stoichiometric_intermediate",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Regiodivergence is substrate-controlled: alkyl (sp3) radical from alkene addition prefers ortho-(4+2) cyclization (interaction energy dominant, ΔΔEint = -10.2), while vinyl (sp2) radical from alkyne addition prefers ipso-(3+2) spirocyclization (distortion energy dominant). 7-Cl-dimethoxy intermediate (product 28) was isolated rather than the oxo-product, providing evidence for the cation VI / dimethoxy VII pathway prior to hydrolysis to dienone. Cp2Fe acts as outer-sphere SET mediator, confirmed by CV showing catalytic current only with Cp2Fe + 1a + NaOMe."
+}

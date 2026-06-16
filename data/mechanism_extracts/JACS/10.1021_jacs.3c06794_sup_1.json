@@ -1,0 +1,58 @@
+{
+  "doi": "10.1021_jacs.3c06794_sup_1",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,2-dialkylation of alkenes with a tertiary alkyl bromide (tBuBr) and a primary alkyl bromide via radical addition/cathodic reduction to a carbanion, followed by SN2 alkylation.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_polar_crossover",
+    "sacrificial_anode"
+  ],
+  "electrochemical_role": "Cathodic reduction generates a tert-butyl radical from tBuBr; after radical addition to the alkene, the resulting benzylic/stabilized C-radical is further reduced at the cathode to a carbanion, which then undergoes SN2 with the primary alkyl bromide. Mg sacrificial anode balances charge.",
+  "key_intermediates": [
+    {
+      "name": "tert-butyl radical from cathodic reduction of tBuBr",
+      "smiles": "[CH0]([CH3])([CH3])[CH3]",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic/stabilized C-radical after tBu addition to alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic/stabilized carbanion (from second cathodic reduction)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ring-opened homoallyl radical from cyclopropane radical clock 59",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Cathode reduces tBuBr to tBu radical, which adds to the alkene; the resulting stabilized C-radical is reduced again at the cathode to a carbanion that performs SN2 on the primary alkyl bromide. The Mg anode is sacrificially oxidized to balance charge.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "(2-phenylcyclopropyl)ethylene radical clock 59",
+      "smiles": "C(=C)C1CC1c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 60 (1-chloro-9,9-dimethyldec-6-en-4-yl)benzene isolated in 18% (7:1 E/Z), confirming a carbon radical intermediate after tBu addition."
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "intermediate_trap",
+      "observation": "Product 61 obtained in 8% yield with 82% D incorporation at the benzylic position, consistent with a carbanion intermediate quenched by D2O."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "H/D_labeling",
+    "product_isotope_distribution",
+    "DFT"
+  ],
+  "evidence_strength": "strong",
+  "notes": "DFT (M06-2X/6-311+G(d,p), SMD(DME)) supports exergonic, mostly irreversible tBu• addition to π-conjugated alkenes (ΔG‡ ≈ 10.4–12.6 kcal/mol) and an SN2 mechanism for the second C–C bond formation with the primary alkyl bromide; the radical/anion-stabilizing nature of group Z dictates reactivity, with vinyl silanes/phosphines/sulfides being less reactive."
+}

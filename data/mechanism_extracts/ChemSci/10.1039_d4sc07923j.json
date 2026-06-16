@@ -1,0 +1,90 @@
+{
+  "doi": "10.1039_d4sc07923j",
+  "journal": "ChemSci",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemically driven allylation of unactivated primary/secondary/tertiary alkyl bromides with allylic carbonates to form C(sp3)–C(sp3) bonds via radical–polar crossover, without transition-metal catalysts",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "radical_cathodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic single-electron reduction of alkyl bromide generates alkyl radical; a second cathodic reduction of the benzylic radical intermediate generates a carbanion that undergoes β-elimination of carbonate",
+  "key_intermediates": [
+    {
+      "name": "alkyl radical from R-Br reduction",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tertiary benzylic radical from addition to allylic carbonate",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbanion after second cathodic reduction",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "allylated alkane product after β-elimination of OCOOEt",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces alkyl bromide to an alkyl radical, which adds to the allylic carbonate's alkene to give a stabilized tertiary benzylic radical; this radical is further reduced at the cathode to a carbanion that undergoes β-elimination of the ethyl carbonate to deliver the allylated product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "DPE-trapped alkyl radical adducts 8 (36%), 9 (47%), 10 (61%) isolated, confirming alkyl radical intermediates"
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "TEMPO–alkyl adducts 11 (21%) and 12 (18%) observed; 13 (tBu) not detected; reaction suppressed"
+    },
+    {
+      "name": "(bromomethyl)cyclopropane (2d)",
+      "smiles": "BrCC1CC1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened allylated product 14 obtained in 55%, indicating primary alkyl radical intermediate"
+    },
+    {
+      "name": "ethyl 2-bromo-2-cyclopropylacetate (2e)",
+      "smiles": "CCOC(=O)C(Br)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "Desired product 15 in trace; ring-opened by-product 15a in 45%, supporting secondary alkyl radical formation"
+    },
+    {
+      "name": "allyl-tethered bromotetrahydrofuran substrates (2f, 2g)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "5-exo radical cyclization products 16 (67%) and 17 (31%) isolated, confirming alkyl radical intermediacy"
+    },
+    {
+      "name": "competition between 1°, 2°, 3° alkyl bromides",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Tertiary (3a, 59%) > secondary (5a, 17%) > primary (4a, 8%), consistent with ease of C–Br reduction / radical stability"
+    },
+    {
+      "name": "cyclic voltammetry of alkyl bromides and allylic carbonate",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Ep/2: tBu-Br −2.52 V, iPr-Br −2.66 V, 3-PhPrBr −2.70 V; allylic carbonate 1a −2.40, −2.74 V vs SCE, showing alkyl bromides are reduced under conditions"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "kinetic_order",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly ruled out cathodic reduction of the allylic carbonate to release an allyl radical (not observed). FeXn is shown at the anode in the proposed scheme, suggesting sacrificial Fe anode chemistry, though it is not emphasized mechanistically. TBAB serves as supporting electrolyte in DMA at 4 mA, r.t."
+}

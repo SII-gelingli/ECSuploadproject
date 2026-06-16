@@ -1,0 +1,81 @@
+{
+  "doi": "10.1021_acs.orglett.4c03922",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical regio- and stereoselective 1,4-carboalkoxylation of 1,3-dienes with Meldrum's acid-type 1,3-dioxan-4,6-diones and alcohols to give (E)-polyfunctionalized allyl ethers",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "radical_anodic",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Paired electrolysis in undivided cell: cathodic reduction of R5OH generates alkoxide (with H2 release); anodic oxidation of deprotonated Meldrum's acid enolate (Eox = 0.44 V vs SCE in DMF) generates an electron-poor C-radical that adds to the diene, followed by a second anodic oxidation of the resulting allyl radical to an allyl cation",
+  "key_intermediates": [
+    {
+      "name": "Meldrum's acid-derived enolate (10)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Electron-poor C-centered radical from Meldrum's acid (11)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Allyl radical adduct on diene (12)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Allyl cation (13) trapped by alkoxide/methanol",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Alkoxide (R5O-) from cathodic reduction of alcohol",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "BHT-radical adduct 9 (detected by HRMS, [M+H]+ = 379.2250)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode reduces the alcohol to alkoxide + H2; the alkoxide deprotonates Meldrum's acid to give enolate 10, which is anodically oxidized to electron-poor radical 11. Radical 11 adds to the less hindered terminus of the 1,3-diene to give allyl radical 12, which is further oxidized at the anode to allyl cation 13; the alkoxide traps 13 at the 1,4-position to deliver the (E)-allyl ether product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction inhibited, consistent with radical intermediates"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction inhibited; BHT-Meldrum's adduct 9 detected by HRMS only when current was applied (with or without diene), supporting anodic generation of radical 11"
+    },
+    {
+      "name": "On/off current control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction without power supply, even in the presence of MeONa; current is required"
+    },
+    {
+      "name": "Cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Eox(enolate-MA) = 0.44 V vs SCE; Eox(diene 2a) = 1.81 V and Eox(diene 2d) = 1.16 V vs SCE in DMF — enolate is far easier to oxidize than the dienes, supporting initial anodic oxidation of the enolate rather than the diene"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "1,4-regioselectivity (vs the more common 1,2-mode in radical carbooxygenations) is rationalized by an interplay between the EWG character and steric hindrance of the 1,3-dioxan-4,6-dione moiety disfavoring addition at C2, plus a proposed H-bonding directing event from the boat conformation of Meldrum's acid steering alcohol delivery to C4 of cation 11/13. Authors explicitly state further mechanistic studies are underway."
+}

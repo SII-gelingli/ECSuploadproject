@@ -1,0 +1,95 @@
+{
+  "doi": "10.1002_anie.202425634",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical cyclopropanation of unactivated alkenes with active methylene compounds (malonates) using ferrocene as a redox mediator",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of ferrocene (Cp2Fe to Cp2Fe+) which then oxidizes the malonate (deprotonated by cathodically generated OH-) to the alpha-carbonyl radical; cathode reduces water/protons to generate H2 and OH- base in situ",
+  "key_intermediates": [
+    {
+      "name": "ferrocenium (Cp2Fe+) oxidative mediator",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alpha-carbonyl (malonyl) radical A from 1b",
+      "smiles": "CCOC(=O)[CH]C(=O)OCC",
+      "role": "reactive"
+    },
+    {
+      "name": "secondary alkyl radical adduct B (anti-Markovnikov C-radical from alkene addition)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "beta-iodo-substituted intermediate 96",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "hydroxide (cathodically generated base)",
+      "smiles": "[OH-]",
+      "role": "reactive"
+    },
+    {
+      "name": "iodide / iodine (I- to I. via anodic oxidation)",
+      "smiles": "[I-]",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Cp2Fe to Cp2Fe+, which oxidizes the malonate (deprotonated by cathodically generated OH-) to alpha-carbonyl radical A; A adds anti-Markovnikov to the alkene to give alkyl radical B, which is trapped by iodide (from anodic I-/I. cycle) to give beta-iodide 96; intramolecular SN2 closure by the malonyl carbanion expels iodide to yield the cyclopropane. Cathode reduces water to H2 + OH-.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Cyclopropane 1 not formed; TEMPO adducts 91 (malonyl-TEMPO) and 92 (alkyl-TEMPO from radical addition to alkene) detected by HRMS; 91 isolated in 88% yield in absence of alkene"
+    },
+    {
+      "name": "PBN (N-tert-butyl-alpha-phenylnitrone)",
+      "smiles": "CC(C)(C)/N(=C\\c1ccccc1)[O-]",
+      "purpose": "radical_trap",
+      "observation": "EPR signal (g=2.00525, aN=15.21 G, aH=4.88 G) consistent with carbon-radical spin adduct; PBN-carbon adduct 95 confirmed by HRMS"
+    },
+    {
+      "name": "1-methylcyclohex-1-ene (46a)",
+      "smiles": "CC1=CCCCC1",
+      "purpose": "intermediate_trap",
+      "observation": "Sterically hindered substrate allowed isolation of beta-iodo intermediate 97 (28%) along with cyclopropane (32%); 97 could be converted to cyclopropane, confirming iodo-intermediate"
+    },
+    {
+      "name": "ferrocene (Cp2Fe)",
+      "smiles": "[Fe+2].[cH-]1cccc1.[cH-]1cccc1",
+      "purpose": "redox_probe",
+      "observation": "CV: Fc oxidation at E1/2 = +0.57 V vs Ag/Ag+; addition of 1b alone gave no change, but with NaOMe base anodic current increased dramatically and cathodic peak disappeared, indicating catalytic oxidation of deprotonated 1b by Cp2Fe+"
+    },
+    {
+      "name": "no-current control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No cyclopropanation product without electricity, confirming electrochemical requirement"
+    },
+    {
+      "name": "absence-of-alkene control",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Dimer 93 and oxidative dehydrogenation product 94 of 1b formed (73% combined, 93:94 = 0.19:1), consistent with malonyl radical intermediate"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "EPR",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "DFT"
+  ],
+  "evidence_strength": "strong",
+  "notes": "DFT (delta G‡ = 7.3 kcal/mol) supports rapid conversion of beta-iodo intermediate 96 to cyclopropane, explaining why 96 is hard to isolate except with hindered alkenes. Regioselectivity at terminal alkenes (and internal in 89a) is rationalized by formation of the more stable secondary/tertiary C-radical adduct B. Base is generated in situ at the cathode (OH-, pH 8-9), avoiding need for added base."
+}

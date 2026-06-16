@@ -1,0 +1,60 @@
+{
+  "doi": "10.1021_jacs.3c08839_sup_1",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Decarboxylative coupling of aliphatic carboxylic acids with allylic/vinyl electrophiles proceeding through an alkyl radical intermediate",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "anodic oxidation/decarboxylation of carboxylate to generate alkyl radical",
+  "key_intermediates": [
+    {
+      "name": "alkyl radical from decarboxylation of 2-cyclopropylacetic acid (cyclopropylcarbinyl)",
+      "smiles": "[CH2]C1CC1",
+      "role": "transient"
+    },
+    {
+      "name": "ring-opened homoallyl radical from cyclopropylcarbinyl rearrangement",
+      "smiles": "[CH2]CCC=C",
+      "role": "reactive"
+    },
+    {
+      "name": "hex-5-enyl radical from decarboxylation of hept-6-enoic acid",
+      "smiles": "[CH2]CCCC=C",
+      "role": "transient"
+    },
+    {
+      "name": "cyclopentylmethyl radical from 5-exo-trig cyclization",
+      "smiles": "[CH2]C1CCCC1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Carboxylic acid is deprotonated and anodically oxidized to release CO2 and an alkyl radical; the alkyl radical undergoes characteristic radical rearrangement (cyclopropyl ring opening or 5-exo-trig cyclization) before coupling with the allylic/vinyl electrophile partner.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "2-cyclopropylacetic acid (radical clock)",
+      "smiles": "OC(=O)CC1CC1",
+      "purpose": "radical_clock",
+      "observation": "ring-opened product 64 isolated in 57% yield, consistent with cyclopropylcarbinyl radical intermediate"
+    },
+    {
+      "name": "hept-6-enoic acid (radical clock)",
+      "smiles": "OC(=O)CCCCC=C",
+      "purpose": "radical_clock",
+      "observation": "5-exo-trig cyclization product 66 with (E)-4-bromobut-3-en-1-yl benzoate dominates over direct coupling 67 (66:67 = 15:1), 67% combined yield"
+    },
+    {
+      "name": "hept-6-enoic acid with allylic tosylate S18",
+      "smiles": "OC(=O)CCCCC=C",
+      "purpose": "radical_clock",
+      "observation": "cyclization product S19 isolated in 52% yield, confirming radical intermediate with tosylate electrophile"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Only radical clock probes shown on this page (Section 5.1); the high ratio of cyclized to uncyclized product (15:1) indicates a relatively long-lived/free alkyl radical rather than a tightly bound metal-alkyl species."
+}

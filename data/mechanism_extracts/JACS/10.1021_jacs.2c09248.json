@@ -1,0 +1,105 @@
+{
+  "doi": "10.1021_jacs.2c09248",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Visible-light triplet energy transfer enabled intermolecular [2π+2σ] cycloaddition of aryl/heteroaryl ketoesters (benzoylformate esters) with bicyclobutanes (BCBs) to directly assemble polysubstituted 2-oxabicyclo[2.1.1]hexanes via a biradical/aryl-migration cascade",
+  "mechanism_family": [
+    "biradical",
+    "photoredox_combined",
+    "concerted"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Triplet excited benzoylformate ester (1,2-diradical, species A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,5-diradical from addition of excited ketoester onto BCB (species B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Closed-shell oxa-bicyclic intermediate after ISC and radical-radical coupling (species C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Backbone C-H abstracted carbon radical (species D)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Bridged aryl-migration transition state / cyclohexadienyl-type intermediate (species E)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Stabilized α-ester benzyl-type radical after aryl migration (species F)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Norrish type II product (off-pathway, from o-Me substrate 3r)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Ir-F photocatalyst is excited by visible light and transfers triplet energy to the benzoylformate ester, generating a 1,2-(C,O)-diradical (A); this triplet diradical adds across the central C–C σ-bond of the BCB to give the most stabilized 1,5-diradical (B), which after ISC closes by radical–radical coupling to the 2-oxa-BCH (C). A second excited ketoester then abstracts the backbone C–H to give radical D, which undergoes aryl 1,2-migration through cyclohexadienyl intermediate E to the more stable benzyl radical F, finally quenched by HAT from an H-donor.",
+  "rate_determining_step": "Addition of the triplet excited benzoylformate ester onto the BCB to form the 1,5-diradical B is the regioselectivity-determining (and likely rate-determining) step",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed; TEMPO-adducts detected by ESI-HRMS, supporting a stepwise radical pathway"
+    },
+    {
+      "name": "Styrene (alternative radical acceptor in place of ketoester)",
+      "smiles": "C=Cc1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Under 365 nm or standard conditions with BCB 2a, no cycloadduct detected, indicating BCBs do not initiate the radical pathway"
+    },
+    {
+      "name": "Direct 365 nm UV excitation (no photocatalyst)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction of 1a + 2a still gave 3a in 50% yield, consistent with sensitization of the ketoester triplet"
+    },
+    {
+      "name": "o-Methyl benzoylformate ester (substrate probe for Norrish II)",
+      "smiles": "COC(=O)C(=O)c1ccccc1C",
+      "purpose": "other",
+      "observation": "Gave Norrish type II product 7 (39%) rather than cycloadduct 3r (n.d.), demonstrating accessible triplet ketone biradical reactivity"
+    },
+    {
+      "name": "Stern–Volmer quenching with 1a and 2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Both substrates quench excited *[IrF] at similar rates"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a and 2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Redox potentials outside the range of *[IrF], ruling out single-electron transfer"
+    },
+    {
+      "name": "UV/vis of 1a + 2a mixture",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No evidence for EDA complex formation, supporting energy-transfer mechanism"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "UV_vis",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "crossover"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors favor an energy-transfer (triplet sensitization) mechanism over single-electron transfer or EDA-complex pathways, based on Stern–Volmer, CV and UV/vis data. Regioselectivity is rationalized by formation of the most stabilized 1,5-diradical B and by the aryl-migration step that yields the more stabilized benzyl radical F; a reversible HAT step accounts for selective C–H abstraction at the backbone position. Substrate scope (only disubstituted BCBs; o-Me ketoester gives Norrish II 7) and X-ray structures (3a, 3h, 3q, 3v, 3z, 6) support the proposed connectivity. Mechanism explicitly noted by the authors as 'remains to be elucidated'."
+}

@@ -1,0 +1,67 @@
+{
+  "doi": "10.1021_acsomega.2c06689",
+  "journal": "ACSOmega",
+  "is_review": false,
+  "rxn_class_summary": "Transition-metal-free oxidative decarboxylative radical difluoroarylmethylation/cyclization of N-methacryloyl-2-arylbenzimidazoles with α,α-difluoroarylacetic acids to give difluoroarylmethyl-substituted benzimidazo[2,1-a]isoquinolin-6(5H)-ones",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "α,α-difluorobenzyl radical (A) from decarboxylation of α,α-difluorophenylacetic acid by persulfate",
+      "smiles": "[CH]([F])([F])c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "tertiary C-radical B from addition of A to the methacryloyl alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexadienyl radical C from intramolecular ipso/ortho cyclization onto the 2-aryl ring",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Wheland-type arenium cation D after SET oxidation of C",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "sulfate radical anion SO4•- (from thermolysis of S2O8 2-)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Persulfate thermally homolyzes to SO4•-, which oxidatively decarboxylates the α,α-difluoroarylacetic acid to a difluorobenzyl radical A; A adds across the methacrylamide alkene to give tertiary radical B, which undergoes intramolecular homolytic aromatic substitution onto the 2-aryl benzimidazole to form cyclohexadienyl radical C; SET oxidation of C by another SO4•-/S2O8 2- gives arenium cation D, and rearomatization by loss of H+ delivers the product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3aa not formed; TEMPO–CF2Ar adduct 4 detected by LC-MS, supporting a radical pathway"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed; desired product 3aa not observed"
+    },
+    {
+      "name": "Phenylacetic acid (2r) in place of α,α-difluorophenylacetic acid",
+      "smiles": "OC(=O)Cc1ccccc1",
+      "purpose": "other",
+      "observation": "Decarboxylative coupling still proceeds to give 3ar in 68% yield, indicating the CF2 group has little influence on the transformation"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism is proposed by analogy to prior persulfate-mediated decarboxylative radical cyclizations; no DFT, KIE, EPR, or CV evidence is reported. X-ray crystallography of product 3ea confirms regiochemistry but does not directly probe the mechanism."
+}

@@ -1,0 +1,85 @@
+{
+  "doi": "molecules-29-00973-v2",
+  "journal": "molecules-29-00973-v2",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical 1,2-difluoroalkylation/cyclization of N-methacryloyl-2-arylbenzimidazoles (and 2-arylindoles) with sodium difluoroalkylsulfinates to give CF2Me-substituted benzimidazo/indolo[2,1-a]isoquinolinones.",
+  "mechanism_family": [
+    "radical_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of MeCF2SO2Na to a sulfonyl radical (which loses SO2 to give the MeCF2 radical) initiates the cascade; the anode also oxidizes the post-cyclization aryl/cyclohexadienyl radical B to aryl cation C. Cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "MeCF2SO2 sulfonyl radical (from anodic SET of sulfinate)",
+      "smiles": "[O]S(=O)C(F)(F)C",
+      "role": "transient"
+    },
+    {
+      "name": "MeCF2 difluoroalkyl radical (after SO2 extrusion)",
+      "smiles": "[C](F)(F)C",
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon-centered radical A (after MeCF2 addition to acrylamide alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cyclohexadienyl/aryl radical B (after intramolecular cyclization onto arene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Aryl cation C (after second anodic oxidation of B)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "BHT–CF2Me radical adduct",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "1,1-diphenylethylene–CF2Me radical adduct",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes MeCF2SO2– to its sulfonyl radical, which loses SO2 to give the MeCF2 radical; this adds to the acrylamide C=C to form C-radical A, which cyclizes intramolecularly onto the 2-aryl ring to give aryl radical B; B is oxidized at the anode to aryl cation C, which deprotonates (rearomatizes) to product 3. Cathodic reduction of H+ gives H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT (2,6-di-tert-butyl-4-methylphenol)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Product formation fully suppressed; BHT–CF2Me adduct detected by HRMS, indicating a free MeCF2 radical."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Product yield dropped to 16%; DPE–CF2Me radical adduct detected by HRMS, supporting a radical pathway."
+    },
+    {
+      "name": "Substrates 1a and 2a (CV experiment)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peaks at 1.47 V (1a) and 0.67 V (2a) vs Ag/AgNO3, indicating sulfinate 2a is more easily oxidized than 1a, consistent with anodic initiation at the sulfinate."
+    },
+    {
+      "name": "No electricity control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product detected, confirming the reaction is electrochemically driven."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "X-ray structures of 3m (CCDC 2303467) and 5i (CCDC 2307007) confirm product connectivity. Mechanism is proposed as a radical cyclization with terminal anodic oxidation/deprotonation (radical–cation crossover at the arene) rather than HAT-based rearomatization; cathode serves only for proton reduction. Scope tolerates halides, esters, nitriles, methoxy, naphthyl and thienyl arenes, and extends to cyclopropyl-CF2 sulfinate."
+}

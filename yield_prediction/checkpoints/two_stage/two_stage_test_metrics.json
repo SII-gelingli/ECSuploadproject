@@ -1,0 +1,225 @@
+{
+  "test_size": 3071,
+  "joint_top1": 0.0134,
+  "stage1": {
+    "anode": {
+      "n": 3071,
+      "top1": 0.3035,
+      "top3": 0.5904,
+      "top5": 0.7457,
+      "top1_non_absent": 0.3105,
+      "top3_non_absent": 0.5914,
+      "top5_non_absent": 0.7526,
+      "n_non_absent": 2866,
+      "absent_actual": 205,
+      "absent_predicted": 188,
+      "absent_correct": 42,
+      "absent_precision": 0.2234,
+      "absent_recall": 0.2049
+    },
+    "cathode": {
+      "n": 3071,
+      "top1": 0.4738,
+      "top3": 0.6952,
+      "top5": 0.7717,
+      "top1_non_absent": 0.51,
+      "top3_non_absent": 0.7457,
+      "top5_non_absent": 0.81,
+      "n_non_absent": 2800,
+      "absent_actual": 271,
+      "absent_predicted": 174,
+      "absent_correct": 27,
+      "absent_precision": 0.1552,
+      "absent_recall": 0.0996
+    },
+    "cell_type": {
+      "n": 3071,
+      "top1": 0.7587,
+      "top3": 0.9961,
+      "top5": 0.0,
+      "top1_non_absent": 0.8814,
+      "top3_non_absent": 0.9952,
+      "top5_non_absent": 0.0,
+      "n_non_absent": 2521,
+      "absent_actual": 550,
+      "absent_predicted": 372,
+      "absent_correct": 108,
+      "absent_precision": 0.2903,
+      "absent_recall": 0.1964
+    },
+    "solvent": {
+      "n": 3071,
+      "top1": 0.3715,
+      "top3": 0.5187,
+      "top5": 0.5373,
+      "top1_non_absent": 0.3839,
+      "top3_non_absent": 0.53,
+      "top5_non_absent": 0.5479,
+      "n_non_absent": 2962,
+      "absent_actual": 109,
+      "absent_predicted": 156,
+      "absent_correct": 4,
+      "absent_precision": 0.0256,
+      "absent_recall": 0.0367
+    },
+    "electrolyte": {
+      "n": 3071,
+      "top1": 0.2592,
+      "top3": 0.4139,
+      "top5": 0.4757,
+      "top1_non_absent": 0.2375,
+      "top3_non_absent": 0.3547,
+      "top5_non_absent": 0.416,
+      "n_non_absent": 2577,
+      "absent_actual": 494,
+      "absent_predicted": 809,
+      "absent_correct": 184,
+      "absent_precision": 0.2274,
+      "absent_recall": 0.3725
+    },
+    "catalyst": {
+      "n": 3071,
+      "top1": 0.647,
+      "top3": 0.7138,
+      "top5": 0.7314,
+      "top1_non_absent": 0.0482,
+      "top3_non_absent": 0.0942,
+      "top5_non_absent": 0.121,
+      "n_non_absent": 934,
+      "absent_actual": 2137,
+      "absent_predicted": 2592,
+      "absent_correct": 1942,
+      "absent_precision": 0.7492,
+      "absent_recall": 0.9088
+    },
+    "reagent": {
+      "n": 3071,
+      "top1": 0.3465,
+      "top3": 0.4663,
+      "top5": 0.4904,
+      "top1_non_absent": 0.1061,
+      "top3_non_absent": 0.1792,
+      "top5_non_absent": 0.2091,
+      "n_non_absent": 1875,
+      "absent_actual": 1196,
+      "absent_predicted": 1876,
+      "absent_correct": 865,
+      "absent_precision": 0.4611,
+      "absent_recall": 0.7232
+    },
+    "ligand": {
+      "n": 3071,
+      "top1": 0.9818,
+      "top3": 0.9906,
+      "top5": 0.9928,
+      "top1_non_absent": 0.0,
+      "top3_non_absent": 0.4821,
+      "top5_non_absent": 0.6071,
+      "n_non_absent": 56,
+      "absent_actual": 3015,
+      "absent_predicted": 3071,
+      "absent_correct": 3015,
+      "absent_precision": 0.9818,
+      "absent_recall": 1.0
+    },
+    "additive": {
+      "n": 3071,
+      "top1": 0.9769,
+      "top3": 0.9847,
+      "top5": 0.9866,
+      "top1_non_absent": 0.0,
+      "top3_non_absent": 0.1897,
+      "top5_non_absent": 0.2931,
+      "n_non_absent": 58,
+      "absent_actual": 3013,
+      "absent_predicted": 3058,
+      "absent_correct": 3000,
+      "absent_precision": 0.981,
+      "absent_recall": 0.9957
+    }
+  },
+  "stage2": {
+    "catalyst_equiv": {
+      "n": 271,
+      "mae": 0.0881,
+      "rmse": 0.1375,
+      "r2": -0.3383,
+      "within_tol_pct": 56.46,
+      "tolerance": 0.05
+    },
+    "reagent_equiv": {
+      "n": 410,
+      "mae": 1.3378,
+      "rmse": 2.7309,
+      "r2": -0.1478,
+      "within_tol_pct": 16.34,
+      "tolerance": 0.3
+    },
+    "ligand_equiv": {
+      "n": 46,
+      "mae": 0.0801,
+      "rmse": 0.0829,
+      "r2": -16.4761,
+      "within_tol_pct": 19.57,
+      "tolerance": 0.05
+    },
+    "additive_equiv": {
+      "n": 47,
+      "mae": 1.2736,
+      "rmse": 2.4543,
+      "r2": -0.028,
+      "within_tol_pct": 4.26,
+      "tolerance": 0.3
+    },
+    "electrolyte_M": {
+      "n": 799,
+      "mae": 0.0254,
+      "rmse": 0.0349,
+      "r2": -0.2965,
+      "within_tol_pct": 83.6,
+      "tolerance": 0.05
+    },
+    "current_mA": {
+      "n": 2712,
+      "mae": 6.0928,
+      "rmse": 11.9504,
+      "r2": -1.562,
+      "within_tol_pct": 30.75,
+      "tolerance": 0.2
+    },
+    "current_density": {
+      "n": 207,
+      "mae": 8.9572,
+      "rmse": 11.7654,
+      "r2": -0.0238,
+      "within_tol_pct": 1.93,
+      "tolerance": 0.2
+    },
+    "potential_V": {
+      "n": 178,
+      "mae": 1.3227,
+      "rmse": 2.0161,
+      "r2": -0.4494,
+      "within_tol_pct": 17.42,
+      "tolerance": 0.2
+    },
+    "temperature_C": {
+      "n": 1192,
+      "mae": 12.551,
+      "rmse": 17.7049,
+      "r2": -0.378,
+      "within_tol_pct": 39.51,
+      "tolerance": 5.0
+    },
+    "time_h": {
+      "n": 1300,
+      "mae": 3.3428,
+      "rmse": 5.8317,
+      "r2": 0.136,
+      "within_tol_pct": 30.77,
+      "tolerance": 0.25
+    }
+  },
+  "stage1_ckpt_epoch": 78,
+  "stage2_ckpt_epoch": 5
+}

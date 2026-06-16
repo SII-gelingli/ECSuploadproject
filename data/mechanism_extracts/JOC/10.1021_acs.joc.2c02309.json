@@ -1,0 +1,80 @@
+{
+  "doi": "10.1021_acs.joc.2c02309",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical PhI/TsOH-catalyzed oxidative cyclization of N-allylamides to dihydrooxazoles (and α-tosyloxylation of ketones) via an electrogenerated hypervalent iodine(III) Koser's reagent",
+  "mechanism_family": [
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic 2e- oxidation of PhI (iodobenzene) in HFIP generates a hypervalent iodine(III) species [PhI(OCH(CF3)2)2] that acts as the active oxidant; iodine cycles between I(I) and I(III) at the anode",
+  "key_intermediates": [
+    {
+      "name": "PhI(OCH(CF3)2)2 (anodically generated hypervalent iodine(III) bis-HFIP-oxy species)",
+      "smiles": "FC(F)(F)C(O[I](OC(C(F)(F)F)C(F)(F)F)c1ccccc1)C(F)(F)F",
+      "role": "transient"
+    },
+    {
+      "name": "Koser's reagent PhI(OH)(OTs) after ligand exchange with TsOH·H2O",
+      "smiles": "Cc1ccc(S(=O)(=O)O[I](O)c2ccccc2)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Iodonium-activated alkene adduct (III): tosyloxy-iodane bound to alkene with amide oxygen poised for cyclization",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cyclized dihydrooxazolyl-λ3-iodane (IV): 2-phenyl-4,5-dihydrooxazol-5-ylmethyl-PhI(OH)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "PhI (iodobenzene catalyst, I(I) resting state)",
+      "smiles": "Ic1ccccc1",
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "Anode removes 2e- from PhI in HFIP to form a PhI(III) bis-alkoxide; ligand exchange with TsOH·H2O gives Koser's reagent, which electrophilically activates the allyl double bond of the N-allylamide; the amide oxygen performs intramolecular 5-exo cyclization onto the iodonium-activated carbon, and reductive elimination from the resulting C-I(III) intermediate delivers OTs to the methylene and regenerates PhI.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "control without acid (TsOH·H2O omitted)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction; starting material recovered, showing acid is required to form/stabilize Koser-type I(III) species"
+    },
+    {
+      "name": "control without PhI catalyst or without electricity",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction in α-tosyloxylation; confirms iodoarene mediator and anodic current are both essential"
+    },
+    {
+      "name": "TfOH as acid",
+      "smiles": "OS(=O)(=O)C(F)(F)F",
+      "purpose": "other",
+      "observation": "No product formed (entry 1), attributed to instability of generated PhI(III) species"
+    },
+    {
+      "name": "BF3·Et2O as acid",
+      "smiles": "B(F)(F)F.CCOCC",
+      "purpose": "other",
+      "observation": "Degradation of starting material, no desired product (entry 2)"
+    },
+    {
+      "name": "Gram-scale and catalyst recovery experiment",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "PhI recovered after 10 mmol scale-up (87% yield of 2a), supporting catalytic I(I)/I(III) turnover"
+    }
+  ],
+  "evidence_types_used": [
+    "on/off_light_or_current",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism (Scheme 4) is proposed by analogy to established PhI/Koser's-reagent chemistry and prior electrochemical hypervalent-iodine reports; no radical traps, KIE, EPR, CV, or DFT presented. The same catalytic system also performs α-tosyloxylation of ketones (Scheme 3) and 6-exo cyclization of homoallyl amides to dihydro-2H-pyrans, consistent with a generalized electrogenerated ArI(III) oxidant rather than a substrate-specific pathway. HFIP is implicated both as solvent stabilizing the cationic I(III) intermediate and as the initial alkoxide ligand on iodine."
+}

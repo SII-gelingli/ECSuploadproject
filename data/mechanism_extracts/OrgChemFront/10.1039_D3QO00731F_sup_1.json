@@ -1,0 +1,52 @@
+{
+  "doi": "10.1039_D3QO00731F_sup_1",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical-radical coupling of N-aryl acrylamides with sodium difluoromethanesulfinate (CF2HSO2Na) to form difluoromethylated benzoxazine/related heterocycles (compound 3) via anodic substrate oxidation and cathodic CF2H radical generation.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_cathodic",
+    "paired_electrolysis",
+    "radical_cation"
+  ],
+  "electrochemical_role": "Paired electrolysis: anodic (Pt) oxidation of the N-aryl acrylamide 1 to a radical cation (Int-1), which cyclizes to a carbon-centered radical (Int-2); CF2HSO2Na is oxidized/decomposed at the carbon cathode (per scheme depiction) to release CF2H radical, with concomitant H+ reduction to H2.",
+  "key_intermediates": [
+    {
+      "name": "N-aryl acrylamide radical cation (Int-1)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized benzoxazine-type C-centered radical (Int-2)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "difluoromethyl radical (CF2H•)",
+      "smiles": "[CH]F.F",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, substrate 1 is oxidized by single-electron transfer to radical cation Int-1, which undergoes intramolecular cyclization (loss of H+) to give C-radical Int-2; in parallel, CF2HSO2Na delivers a CF2H• radical (with SO2 extrusion) while protons are reduced to H2 at the cathode; Int-2 and CF2H• then undergo radical-radical coupling to give product 3.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1a + 2a + TFA mixture (CV)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Cyclic voltammetry shows a distinct oxidation wave around ~1.2-1.5 V vs Ag/AgCl for the 1a+2a+TFA combination that is absent or weaker for individual components, supporting anodic oxidation of the substrate under the reaction conditions."
+    },
+    {
+      "name": "Control electrolysis probing intermediates 7 and 8",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Under the constant-current electrolysis (6 mA, RT, 6.5 h, Pt cathode/graphite anode), neither compound 7 nor compound 8 could be detected by HRMS, ruling out these species as on-pathway intermediates."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Scheme S2 depicts the favored radical-radical coupling pathway. Note that in the drawn scheme CF2HSO2Na appears at the cathode side and substrate 1 at the anode side; mechanistically the more typical assignment is anodic oxidation of the sulfinate to CF2H• and anodic oxidation of 1 to Int-1, with cathodic H+ reduction to H2 — the figure's electrode labeling may be schematic rather than literal. Alternative ionic (Int-2 oxidation to cation then trapped by CF2H-anion) pathway is not explicitly supported and is disfavored relative to the radical-radical coupling depicted."
+}

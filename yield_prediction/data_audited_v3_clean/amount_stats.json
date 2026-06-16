@@ -1,0 +1,112 @@
+{
+  "catalyst_equiv": {
+    "n": 3513,
+    "raw_mean": 0.23499862849712372,
+    "raw_std": 0.4679487645626068,
+    "raw_min": 9.999999747378752e-05,
+    "raw_max": 3.0,
+    "transform": "log",
+    "offset": 0.1,
+    "norm_mean": -1.468569278717041,
+    "norm_std": 0.6960251431329346
+  },
+  "reagent_equiv": {
+    "n": 3504,
+    "raw_mean": 3.0210933685302734,
+    "raw_std": 5.500571250915527,
+    "raw_min": 0.00019999999494757503,
+    "raw_max": 115.0,
+    "transform": "log",
+    "offset": 0.1,
+    "norm_mean": 0.4593181610107422,
+    "norm_std": 1.1219359736306762
+  },
+  "ligand_equiv": {
+    "n": 782,
+    "raw_mean": 0.1268094778060913,
+    "raw_std": 0.04827278107404709,
+    "raw_min": 0.05000000074505806,
+    "raw_max": 0.6000000238418579,
+    "transform": "log",
+    "offset": 0.1,
+    "norm_mean": -1.5034831762313843,
+    "norm_std": 0.19487501190734863
+  },
+  "additive_equiv": {
+    "n": 169,
+    "raw_mean": 1.1820709705352783,
+    "raw_std": 0.910749614238739,
+    "raw_min": 0.05000000074505806,
+    "raw_max": 5.0,
+    "transform": "log",
+    "offset": 0.1,
+    "norm_mean": -0.08737432956695557,
+    "norm_std": 0.8998561601502991
+  },
+  "electrolyte_M": {
+    "n": 6058,
+    "raw_mean": 0.5462506413459778,
+    "raw_std": 2.730424404144287,
+    "raw_min": 1.4999999621068127e-05,
+    "raw_max": 25.0,
+    "transform": "log",
+    "offset": 0.01,
+    "norm_mean": -3.2576377391815186,
+    "norm_std": 1.6930409769876098
+  },
+  "current_mA": {
+    "n": 15499,
+    "raw_mean": 15.518186569213867,
+    "raw_std": 104.36946868896484,
+    "raw_min": 0.1899999976158142,
+    "raw_max": 8000.0,
+    "transform": "log",
+    "offset": 0.1,
+    "norm_mean": 1.9929856061935425,
+    "norm_std": 0.9470276932580567
+  },
+  "current_density": {
+    "n": 2177,
+    "raw_mean": 14.42963695526123,
+    "raw_std": 23.4566593170166,
+    "raw_min": 0.10000000149011612,
+    "raw_max": 270.0,
+    "transform": "log",
+    "offset": 0.1,
+    "norm_mean": 2.0246353149414062,
+    "norm_std": 1.1075530152185058
+  },
+  "potential_V": {
+    "n": 2036,
+    "raw_mean": 2.732440948486328,
+    "raw_std": 1.8763507604599,
+    "raw_min": -5.0,
+    "raw_max": 8.0,
+    "transform": "identity",
+    "offset": null,
+    "norm_mean": 2.732440948486328,
+    "norm_std": 1.8763507704598998
+  },
+  "temperature_C": {
+    "n": 10110,
+    "raw_mean": 28.975914001464844,
+    "raw_std": 15.688572883605957,
+    "raw_min": -40.0,
+    "raw_max": 120.0,
+    "transform": "temperature",
+    "offset": null,
+    "norm_mean": 0.13253049552440643,
+    "norm_std": 0.5229524474008179
+  },
+  "time_h": {
+    "n": 8669,
+    "raw_mean": 6.499367713928223,
+    "raw_std": 5.445830821990967,
+    "raw_min": 0.01666666753590107,
+    "raw_max": 70.0,
+    "transform": "log",
+    "offset": 0.1,
+    "norm_mean": 1.5857218503952026,
+    "norm_std": 0.8096283178193665
+  }
+}

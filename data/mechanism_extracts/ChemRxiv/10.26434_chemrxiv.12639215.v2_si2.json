@@ -1,0 +1,119 @@
+{
+  "doi": "10.26434_chemrxiv.12639215.v2_si2",
+  "journal": "ChemRxiv",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical halogen-atom transfer (e-Shuttle) that transfers Br2 or Cl2 from a vicinal dihaloalkane donor to an alkene acceptor, regenerating an alkene from the donor and producing a 1,2-dihalide on the acceptor.",
+  "mechanism_family": [
+    "paired_electrolysis",
+    "mediator_cathodic",
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Paired electrolysis: cathodic 2e- reduction of the vicinal dihaloalkane donor releases 2 X- and the alkene byproduct; the halide is then oxidized back to X+ equivalent at the anode (directly for Br2; via a Mn2+/Mn3+ mediator for Cl2) which halogenates the acceptor alkene.",
+  "key_intermediates": [
+    {
+      "name": "vicinal dibromoalkane donor (e.g., 1,2-dibromoethane)",
+      "smiles": "BrCCBr",
+      "role": "reactive"
+    },
+    {
+      "name": "bromide anion released by cathodic reduction",
+      "smiles": "[Br-]",
+      "role": "transient"
+    },
+    {
+      "name": "ethylene (byproduct alkene from donor)",
+      "smiles": "C=C",
+      "role": "transient"
+    },
+    {
+      "name": "electrophilic Br+ equivalent generated at anode",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "bromiranium ion from alkene + Br+",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "1,2-dibromide product on acceptor alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "vicinal dichloroalkane donor (e.g., 1,2-DCE, 1,1,1,2-tetrachloroethane, lindane)",
+      "smiles": "ClCCCl",
+      "role": "reactive"
+    },
+    {
+      "name": "Mn2+-Cl (resting Mn(II) chloride mediator)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Mn3+-Cl (oxidized Mn(III) chloride mediator that delivers Cl to alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,2-dichloride product on acceptor alkene",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the cathode, the vicinal dihaloalkane donor accepts 2 electrons and fragments to an alkene plus 2 X- (E2-type reductive dehalogenation). For Br2 shuttle, Br- is oxidized at the anode to a Br+ equivalent (bromiranium) that adds across the acceptor alkene to give the 1,2-dibromide; for Cl2 shuttle, Cl- is captured by Mn2+ and the Mn2+-Cl is anodically oxidized to Mn3+-Cl, which transfers Cl2 to the alkene to give the 1,2-dichloride.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1,2-dibromoethane (donor)",
+      "smiles": "BrCCBr",
+      "purpose": "intermediate_trap",
+      "observation": "Used as Br2 donor; absence of HBr elimination products supports a 2e- reductive debromination releasing ethylene rather than HX elimination."
+    },
+    {
+      "name": "2,3-dibromobutane (donor)",
+      "smiles": "CC(Br)C(Br)C",
+      "purpose": "intermediate_trap",
+      "observation": "Donor releases 2-butene cleanly, again ruling out HX elimination pathway."
+    },
+    {
+      "name": "1,1,1,2-tetrachloroethane (donor)",
+      "smiles": "ClCC(Cl)(Cl)Cl",
+      "purpose": "intermediate_trap",
+      "observation": "Acts as Cl2 donor without producing HCl-elimination byproducts."
+    },
+    {
+      "name": "1,2-dichloroethane (DCE, donor)",
+      "smiles": "ClCCCl",
+      "purpose": "intermediate_trap",
+      "observation": "Serves as Cl2 donor, releasing ethylene; consistent with reductive dechlorination."
+    },
+    {
+      "name": "Lindane (gamma-hexachlorocyclohexane, donor)",
+      "smiles": "C1(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C1Cl",
+      "purpose": "intermediate_trap",
+      "observation": "Stepwise Cl2 transfer ultimately yields benzene, confirmed by crude NMR and GC, supporting sequential reductive dechlorination releasing alkene intermediates."
+    },
+    {
+      "name": "Cyclic voltammetry of Br2 shuttle components",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "CV demonstrates the redox couple responsible for Br- oxidation / dibromide reduction supporting the proposed paired electrochemistry."
+    },
+    {
+      "name": "Representative intramolecular Br2 transfer experiment",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "An intramolecular variant confirms net Br2 transfer from donor to acceptor alkene."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly rule out an HX-elimination pathway (Section 6) by showing donors lacking acidic beta-H or known to favor elimination still cleanly release alkenes and transfer X2. The Cl2 cycle requires a Mn2+/Mn3+ mediator at the anode because chloride oxidation is otherwise too anodic, whereas the Br2 cycle proceeds without a metal mediator via direct anodic Br- oxidation. Lindane remediation is demonstrated as a practical application of sequential Cl2 transfer to benzene."
+}

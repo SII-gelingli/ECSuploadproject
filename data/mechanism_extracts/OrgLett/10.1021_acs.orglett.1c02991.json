@@ -1,0 +1,62 @@
+{
+  "doi": "10.1021_acs.orglett.1c02991",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical chemoselective oxo-azidation or oxo-hydroxyphthalimidation of styrenes using O2 as the oxygen source, with TMSN3 or NHPI as the second functional group source.",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_polar_crossover",
+    "mediator_anodic",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "For oxo-azidation: anodic oxidation of styrene generates a styrene radical cation that is attacked by azide. For oxo-hydroxyphthalimidation: NHPI is deprotonated and anodically oxidized to phthalimide N-oxyl (PINO) radical, which adds to styrene as a mediator-type pathway.",
+  "key_intermediates": [
+    {
+      "name": "styrene radical cation (Ar-CH=CH2 +•)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-azido benzylic carbon radical",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-azido benzylic peroxyl radical (after O2 trap)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phthalimide N-oxyl radical (PINO)",
+      "smiles": "O=C1N(O[O])C(=O)c2ccccc12",
+      "role": "reactive"
+    },
+    {
+      "name": "α-ONPhth benzylic carbon radical",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Oxo-azidation: anode oxidizes styrene (Ep = 1.66 V vs Ag/AgCl) to its radical cation, which is attacked by N3- to give an α-azido benzylic radical that is trapped by O2 and converted to the α-azido aryl ketone. Oxo-hydroxyphthalimidation: NHPI is deprotonated then anodically oxidized to PINO, which undergoes radical addition to styrene; the resulting carbon radical is trapped by O2 to furnish the α-hydroxyphthalimide ketone.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of styrene 1c, TMSN3, NHPI (and NHPI + NaOMe / 2,6-lutidine)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Styrene 1c shows oxidation peak at Ep = 1.66 V vs Ag/AgCl; TMSN3 and neat NHPI show no oxidation in this window, excluding generation of azide radical and indicating styrene is oxidized first in the azidation case. In the presence of NaOMe or 2,6-lutidine, NHPI becomes more easily oxidized than styrene, supporting PINO formation as the initiating step in the hydroxyphthalimidation."
+    },
+    {
+      "name": "control experiments (see SI)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Support the divergent mechanism (radical cation pathway for azidation vs PINO-mediator pathway for hydroxyphthalimidation); cyclic styrene and phenylpropene fail, consistent with requirement for terminal aryl-substituted alkene."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two divergent mechanisms are proposed for the same overall oxo-difunctionalization platform: (i) substrate-initiated radical cation pathway with nucleophilic azide for TMSN3, and (ii) mediator-initiated PINO radical pathway for NHPI. Molecular O2 is incorporated as the ketone oxygen in both cases. No DFT, KIE, EPR, or TEMPO trapping reported in the main text; mechanism is supported mainly by CV and additive (NaOMe / 2,6-lutidine) experiments referencing Stephenson's prior work on PINO."
+}

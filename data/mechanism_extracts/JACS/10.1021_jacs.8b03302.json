@@ -1,0 +1,81 @@
+{
+  "doi": "10.1021_jacs.8b03302",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Visible-light photocatalytic dearomative cascade of 1-naphthol arenes bearing tethered alkenes, giving either [2+2] cycloadducts or benzocyclobutene products via catalyst-controlled sequential triplet energy transfer",
+  "mechanism_family": [
+    "photoredox_combined",
+    "biradical",
+    "concerted"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Ir(III) triplet excited state photocatalyst (3*Ir(III), T1)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Triplet naphthol substrate 1a* (energy-transfer activated arene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Dearomatized [2+2] cycloadduct styrene 2a (cyclobutane-fused dearomatized intermediate/product)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Triplet styrene 2a* (second EnT-activated intermediate, selective with PC III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,n-Diradical intermediate 4 from vinylcyclobutane C-C bond homolysis",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Benzocyclobutene product 3a (after ISC and radical-radical recombination)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Blue-light excites Ir(III) photocatalyst to its triplet state, which transfers triplet energy to naphthol 1a giving 1a*; intramolecular [2+2] cycloaddition with the pendant alkene yields styrene 2a. With PC III (higher ET), a second EnT to 2a generates triplet 2a*, which undergoes vinylcyclobutane ring-opening to diradical 4 that ISCs and recombines to benzocyclobutene 3a.",
+  "rate_determining_step": "Second energy transfer from 3*Ir(III) to styrene 2a (slow with PC II, fast with PC III), governing divergence between 2a and 3a",
+  "probe_reagents": [
+    {
+      "name": "Stern-Volmer quencher 1a (naphthol substrate)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Both PC II and PC III are efficiently quenched by 1a (linear S-V), supporting EnT activation of 1a"
+    },
+    {
+      "name": "Stern-Volmer quencher 2a (styrene intermediate)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Only PC III is effectively quenched by 2a; PC II shows poor quenching, rationalizing catalyst-controlled divergence"
+    },
+    {
+      "name": "Thermal (dark) control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction in absence of light/photocatalyst, precluding a thermal nonphotocatalytic pathway"
+    },
+    {
+      "name": "Reaction monitoring by 1H NMR",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "With PC II, 1a converts cleanly to 2a; with PC III, 2a forms transiently then converts to 3a, consistent with sequential EnT"
+    }
+  ],
+  "evidence_types_used": [
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "kinetic_order",
+    "DFT",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "DFT-computed triplet energies (ET) and redox potentials of 1a (ET=59.8 kcal/mol) and 2a (ET=55.9 kcal/mol) combined with catalyst ET values (PC I 57.8, PC II 49.2, PC III 60.1 kcal/mol) rationalize catalyst-selective EnT. Crystal structures of 2a and 3a confirm connectivity/stereochemistry. The benzocyclobutene-forming step is proposed via a triplet vinylcyclobutane rearrangement (biradical 4) followed by ISC; an alternative concerted di-π-methane-like pathway is not explicitly invoked. No reaction without a carbonyl EWG on the naphthol, presumably needed to lower arene triplet energy."
+}

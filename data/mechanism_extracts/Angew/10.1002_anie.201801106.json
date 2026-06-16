@@ -1,0 +1,76 @@
+{
+  "doi": "10.1002_anie.201801106",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical aziridination of triaryl-substituted alkenes using hexafluoroisopropanol sulfamate (HfsNH2) as a nucleophilic nitrogen source, proceeding via stepwise anodic oxidations and two C-N bond formations",
+  "mechanism_family": [
+    "radical_cation",
+    "cation_initiated",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the alkene to a carbon radical cation; a second anodic oxidation of the neutral C-centered radical (after sulfamate addition/deprotonation) to a carbocation; cathodic reduction of protons (assisted by lutidine/LiClO4/MeCN) releases H2",
+  "key_intermediates": [
+    {
+      "name": "alkene radical cation (A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "neutral β-sulfamyl C-centered radical (B) after nucleophilic addition of HfsNH2 and deprotonation by lutidine",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-sulfamyl carbocation (C) from second anodic oxidation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "aziridine product from intramolecular C-N ring closure",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ritter-type nitrilium / dihydroimidazole (7a, 7b-7d) from MeCN trapping of cation (off-cycle trap)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the triarylalkene to a carbon radical cation (A); sulfamate nitrogen attacks and lutidine deprotonates to give a neutral β-amido C-radical (B); a second anodic SET oxidizes B to a carbocation (C), which undergoes intramolecular nucleophilic ring closure by the sulfamate nitrogen to deliver the aziridine, while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "(E)- and (Z)-stilbene (6a)",
+      "smiles": "C(/c1ccccc1)=C/c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Cation generated under the conditions is trapped by MeCN solvent to give the same trans-dihydroimidazole (Ritter-type) 7a in 50%/47% from E/Z isomers, supporting a planar carbocation intermediate"
+    },
+    {
+      "name": "4-Br, 4-Cl, 4-F stilbenes (6b-6d)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Also give MeCN-trapped dihydroimidazoles 7b-7d (37-44%), confirming generality of carbocation intermediate"
+    },
+    {
+      "name": "cyclic voltammetry of 1a, 2a, lutidine, LiClO4",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation wave at ~+2.0 V vs SCE matches the oxidation potential of alkene 1a alone, indicating SET to anode occurs from the alkene, not from sulfamate"
+    },
+    {
+      "name": "CuI / Rh2(OAc)4",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Nitrene-pathway metal catalysts gave no or only trace aziridine, arguing against a nitrene mechanism"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly contrast their alkene-activation pathway with the conventional nitrene/nitrogen-radical pathway (Scheme 1a vs 1b); the failure of CuI and Rh2(OAc)4 nitrene catalysts and the trapping of a planar carbocation (loss of E/Z stereochemistry in stilbene→7a) disfavor a nitrene mechanism. LiClO4-activated 2,6-lutidine or MeCN are proposed to participate in cathodic discharge."
+}

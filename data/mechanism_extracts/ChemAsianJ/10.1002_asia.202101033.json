@@ -1,0 +1,112 @@
+{
+  "doi": "10.1002_asia.202101033",
+  "journal": "ChemAsianJ",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative selenocyclization of cinnamyl thioether benzimidazoles with diaryl diselenides to give trans-dihydro-benzoimidazo[1,3]thiazines via an anodic ionic (seleniranium) pathway",
+  "mechanism_family": [
+    "cation_initiated",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of diphenyl diselenide (PhSeSePh) to its radical cation, which fragments into PhSe+ (electrophile) and PhSe•; cathode reduces protons to H2 to balance charge",
+  "key_intermediates": [
+    {
+      "name": "diphenyl diselenide radical cation (A)",
+      "smiles": "[Se+]([Se]c1ccccc1)c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl cation (B)",
+      "smiles": "[Se+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenyl radical (C)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "selenolate (E)",
+      "smiles": "[Se-]c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "bridged seleniranium ion intermediate (F) on cinnamyl thioether",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical (G) from PhSe• addition to alkene",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "benzylic cation (H) from SET oxidation of G",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "loose 6-endo benzylic carbocation-like transition state (I)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "N-protonated dihydro-thiazine (J)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "thioallyl benzimidazole radical cation (K)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes PhSeSePh by one electron to a radical cation that fragments to PhSe+ and PhSe•; PhSe+ adds electrophilically to the cinnamyl alkene of 1a to form a bridged seleniranium ion, which undergoes 6-endo nucleophilic ring closure by the benzimidazole nitrogen through a loose SN1-like transition state; deprotonation gives 3aa while cathodic H+ reduction to H2 balances the charge.",
+  "rate_determining_step": "6-endo nucleophilic annulation of the benzimidazole nitrogen onto the seleniranium ion via a loose benzylic-cation-like transition state",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "3aa still isolated in 85% yield under standard conditions with 2 equiv TEMPO, indicating radical pathway is not the major contributor"
+    },
+    {
+      "name": "Divided cell (anolyte 1a+2a)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Exclusive formation of 3aa (82%) when reactants kept only in anodic chamber, showing cathodic reduction is not required"
+    },
+    {
+      "name": "Divided cell (catholyte 1a+2a)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "3aa not detected, ruling out a purely cathodic initiation"
+    },
+    {
+      "name": "H2O2 oxidative deselenation of 3aa",
+      "smiles": "OO",
+      "purpose": "other",
+      "observation": "Syn-elimination to vinyl thiazine 6 (61%) supports trans-relative geometry of substituents in 3aa"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, 2a and mixture",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Ep/2(1a)=1.26 V, Ep/2(2a)=1.29 V individually; mixture shows waves at 1.28 and 1.66 V; reduction of 2a at -1.18 V; supports anodic oxidation of 2a initiating the reaction"
+    },
+    {
+      "name": "Thiopropargyl benzimidazole 4",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Annulation gives benzoimidazo[1,3]thiazine 5 in 92%, demonstrating generality of the selenocyclization"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly disfavor two alternative pathways: (i) a radical pathway via PhSe• addition giving benzyl radical G, which would require SET oxidation to cation H and is ruled out by divided-cell experiments and TEMPO insensitivity; (ii) initial anodic oxidation of 1a to radical cation K followed by 5-exo radical annulation and selenylation, which would give the undetected 5-exo regioisomer 3aa'. Exclusive 6-endo trans-diastereoselectivity is rationalized by a loose, SN1-like benzylic cation transition state retaining stereospecificity of the seleniranium opening."
+}

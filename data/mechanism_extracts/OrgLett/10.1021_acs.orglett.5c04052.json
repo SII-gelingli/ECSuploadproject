@@ -1,0 +1,74 @@
+{
+  "doi": "10.1021_acs.orglett.5c04052",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Continuous-flow electrochemical 1,2-arylheteroarylation of alkenes using aryl bromides and cyanopyridines to give 1,2-diarylethane products",
+  "mechanism_family": [
+    "radical_cathodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic reduction of both the aryl bromide (to aryl radical via debromination) and the cyanopyridine (to a persistent radical anion); concurrent two-substrate cathodic SET enables radical-radical cross-coupling",
+  "key_intermediates": [
+    {
+      "name": "aryl radical (from debromination of ArBr, 34)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "transient benzylic/alkyl carbon-centered radical from aryl radical addition to alkene (35)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyanopyridine radical anion (36, persistent)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,2-diarylethane cross-coupling product (37)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the cathode, the aryl bromide is reduced and loses bromide to give an aryl radical that adds across the alkene, generating a transient C-radical; in parallel the cyanopyridine is cathodically reduced to a persistent radical anion, and radical-radical cross-coupling between the transient and persistent radicals delivers the product. Et3N serves as the sacrificial reductant oxidized at the anode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 4 fully suppressed with 3.0 equiv TEMPO; TEMPO-aryl adduct detected by HRMS, indicating aryl radical intermediate"
+    },
+    {
+      "name": "(1-cyclopropylvinyl)benzene (radical clock 31)",
+      "smiles": "C(=C)(c1ccccc1)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 32 isolated in 37% yield, supporting a carbon-centered radical intermediate"
+    },
+    {
+      "name": "methyl 4-bromobenzoate (1)",
+      "smiles": "COC(=O)c1ccc(Br)cc1",
+      "purpose": "redox_probe",
+      "observation": "CV shows irreversible reduction at -1.86 V (vs Ag/AgCl) assigned to reductive debromination, with a subsequent quasi-reversible wave (Epc = -2.27 V) for the methyl benzoate radical"
+    },
+    {
+      "name": "styrene (2)",
+      "smiles": "C=Cc1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "No reduction wave from 0 to -2.5 V; electrochemically inert under conditions"
+    },
+    {
+      "name": "4-cyanopyridine (3)",
+      "smiles": "N#Cc1ccncc1",
+      "purpose": "redox_probe",
+      "observation": "Quasi-reversible redox wave (Epc = -1.81 V, Epa = -1.61 V), characteristic of a persistent radical anion; similar potential to 1 enables concurrent cathodic reduction"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "radical_clock",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Aliphatic alkenes are incompatible under the standard conditions. Mechanism relies on the persistent radical effect: cyanopyridine radical anion accumulates as the persistent partner while the alkyl radical is transient, biasing selective cross-coupling over homocoupling. Batch electrolysis gave much lower yields than continuous flow under identical conditions."
+}

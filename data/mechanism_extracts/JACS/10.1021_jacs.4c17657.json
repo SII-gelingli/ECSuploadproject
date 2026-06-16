@@ -1,0 +1,99 @@
+{
+  "doi": "10.1021_jacs.4c17657",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Photoredox/pyridine N-oxide co-catalyzed regioselective carbohydroxylation and aminohydroxylation of unactivated alpha-olefins with water as the hydroxyl source",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "excited-state acridinium photocatalyst PC2* (Mes-(tBu)2Acr-PhBF4)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "pyridine N-oxy radical from 2,6-dichloropyridine N-oxide (1b•)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tertiary carbon-centered radical from anti-Markovnikov N-oxy radical addition to alpha-olefin (Int1)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Giese adduct radical with benzalmalononitrile (post C-C bond formation)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "stabilized malononitrile carbanion (Int3) after SET reduction by PC2-reduced",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "N-alkoxypyridinium trifluoroacetate intermediate (Int4) after protonation by TFA",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "reduced photocatalyst PC2 (acridine radical)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Photoexcited acridinium PC2* performs single-electron oxidation of pyridine N-oxide 1b to generate an electrophilic N-oxy radical, which adds to the terminal carbon of the alpha-olefin to give a more substituted C-radical; this radical undergoes Giese addition to benzalmalononitrile (or DIAD), and the resulting adduct radical is reduced by PC2-radical-anion (regenerating PC2) to a carbanion that is protonated by TFA, forming an N-alkoxypyridinium that undergoes SN-type substitution by water (TFA-activated) to deliver the primary alcohol and regenerate pyridine N-oxide.",
+  "rate_determining_step": "Nucleophilic substitution of pyridine N-oxide from the N-alkoxypyridinium by water (TS_Sub, DFT free-energy barrier 24.3 kcal/mol), with water activated by trifluoroacetate counterion",
+  "probe_reagents": [
+    {
+      "name": "H2-18O (95 atom% 18O)",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "Carbohydroxylation of 2-ethyl-1-butene gave primary alcohol with 18O/16O = 92:8 (78% yield), confirming water as the hydroxyl source via nucleophilic substitution of N-alkoxypyridinium"
+    },
+    {
+      "name": "1,6-heptadiene (radical clock / intramolecular trap)",
+      "smiles": "C=CCCCC=C",
+      "purpose": "radical_clock",
+      "observation": "Cyclization/carbohydroxylation gave disubstituted cyclopentane 32 in 52% yield, evidencing a discrete carbon radical intermediate"
+    },
+    {
+      "name": "Stern-Volmer fluorescence quenching with 1b",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Excited PC2* quenched by 2,6-dichloropyridine N-oxide 1b (Ksv = 34.2) but not appreciably by alpha-olefin (Ksv = 1.8) or benzalmalononitrile, supporting initial SET to 1b"
+    },
+    {
+      "name": "tert-butanol (alternative nucleophile)",
+      "smiles": "CC(C)(C)O",
+      "purpose": "intermediate_trap",
+      "observation": "Gave carboetherification product 33 (42%), trapping the N-alkoxypyridinium electrophile"
+    },
+    {
+      "name": "acetic acid / acetate buffer",
+      "smiles": "CC(=O)O",
+      "purpose": "intermediate_trap",
+      "observation": "Gave carboesterification product 34 (56%), consistent with polar substitution on N-alkoxypyridinium"
+    },
+    {
+      "name": "4-pentenoic acid (intramolecular carboxylate)",
+      "smiles": "OC(=O)CCC=C",
+      "purpose": "intermediate_trap",
+      "observation": "Delivered gamma-substituted delta-lactone 35, proof-of-principle for cyclization via N-alkoxypyridinium substitution"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "DFT",
+    "product_isotope_distribution",
+    "intermediate_trap_other",
+    "UV_vis",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two pathways were considered for alcohol formation from the N-alkoxypyridinium: (favored) water nucleophilic substitution regenerating pyridine N-oxide (supported by catalytic 1b loading and 18O labeling), vs (alternative) reductive N-O bond cleavage which would consume 1b stoichiometrically. Competing ortho-alkylation of pyridine N-oxide (product 3) and allylic C-H functionalization (product 4 with 2,6-dibromopyridine N-oxide 1d; product 35 from cyclohexene) are side pathways suppressed by using ortho-chlorinated 1b. Direct SET oxidation of the alpha-olefin is excluded because olefin oxidation potential (>+2.50 V vs SCE) exceeds PC2* (+2.15 V)."
+}

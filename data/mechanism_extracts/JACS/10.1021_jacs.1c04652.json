@@ -1,0 +1,88 @@
+{
+  "doi": "10.1021_jacs.1c04652",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Pulse radiolysis and spectroelectrochemical study of bipyridine-ligated Ni(I) bromide intermediates relevant to Ni-catalyzed cross-coupling, characterizing Ni(0)/Ni(II) comproportionation and Ni(I) oxidative addition with aryl iodides.",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "direct_SET",
+    "mediator_cathodic"
+  ],
+  "electrochemical_role": "Cathodic two-electron reduction of (dtbbpy)NiBr2 generates Ni(0), which rapidly comproportionates with remaining Ni(II) to give the catalytically relevant Ni(I) monomer; pulse radiolysis alternatively delivers a single solvated electron to (dtbbpy)NiBr2 to directly generate [(dtbbpy)NiBr].",
+  "key_intermediates": [
+    {
+      "name": "(tpy)Ni(I)Br (model 4-coordinate Ni(I) complex)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[(dtbbpy)NiBr] monomeric Ni(I) bromide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "(dtbbpy)Ni(0) (transient post-2e- reduction)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "(dtbbpy)Ni(II)Br2 precatalyst",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "[(dtbbpy)NiBr]2 halide-bridged Ni(I) dimer",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "(dtbbpy)Ni(III)(Br)(I)(Ar) oxidative addition adduct",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "A solvated electron (from pulse radiolysis) or cathode reduces (dtbbpy)NiBr2; under bulk electrolysis a 2e- reduction yields Ni(0) which comproportionates with Ni(II) to give two Ni(I)Br monomers, which then undergo rapid oxidative addition with aryl iodides to give Ni(III)(Ar)(Br)(I).",
+  "rate_determining_step": "Oxidative addition of aryl iodide to [(dtbbpy)NiBr] (ΔG‡298K = 10.4 ± 0.4 kcal/mol; ΔH‡ = 5.8 kcal/mol, ΔS‡ = -15.5 cal/mol/K)",
+  "probe_reagents": [
+    {
+      "name": "4-bromobenzotrifluoride",
+      "smiles": "FC(F)(F)c1ccc(Br)cc1",
+      "purpose": "redox_probe",
+      "observation": "No significant decay of Ni(I) signal; upper limit kOA < 10^4 M-1 s-1 for aryl bromide OA"
+    },
+    {
+      "name": "ethyl 4-iodobenzoate",
+      "smiles": "CCOC(=O)c1ccc(I)cc1",
+      "purpose": "redox_probe",
+      "observation": "Significant Ni(I) signal quenching, kOA = 1.18 × 10^5 M-1 s-1"
+    },
+    {
+      "name": "1,3-dicyanobenzene",
+      "smiles": "N#Cc1cccc(C#N)c1",
+      "purpose": "other",
+      "observation": "Used as electron-transfer mediator to ensure efficient Ni(I) generation at high aryl iodide concentrations"
+    },
+    {
+      "name": "iodobenzene (vs synthesized [(dtbbpy)NiBr]2 dimer)",
+      "smiles": "Ic1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Monomer reacts rapidly (kOA = 2.2 × 10^4 M-1 s-1); pre-formed dimer shows no reaction with PhI over 16 h by 1H NMR"
+    },
+    {
+      "name": "panel of 4-substituted aryl iodides (OMe, H, OCF3, CO2Et, CN)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Hammett ρ = +3.1 (R2 = 0.91); 18-fold rate increase across σ = -0.27 to +0.66, consistent with electron-rich Ni(I) attacking electrophilic arene"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "UV_vis",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "kinetic_order",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two competing pathways for Ni(I) generation are distinguished: (i) direct 1e- reduction (pulse radiolysis) vs (ii) 2e- cathodic reduction followed by Ni(0)/Ni(II) comproportionation (bulk electrolysis) — both converge on the same [(dtbbpy)NiBr] monomer (matching UV-vis at 430, 620, 860 nm). Dimerization to [(dtbbpy)NiBr]2 occurs on the minute timescale and shunts catalyst into an unreactive off-cycle resting state, with implications for cross-coupling reactions run at high Ni concentrations. Eyring analysis provides experimental benchmark for DFT studies of Ni(I) OA barriers in Ni/photoredox catalysis. The OA could in principle proceed via Ni(I)/Ni(III) (favored here) or Ni(0)/Ni(II) (alternative complicated by comproportionation)."
+}

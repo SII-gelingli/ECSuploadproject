@@ -1,0 +1,54 @@
+{
+  "doi": "10.1039_d3ra07282g",
+  "journal": "RSCAdv",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative radical cascade trifluoromethylation/cyclization of N-(2-alkenylphenyl)benzamides with CF3SO2Na to give CF3-containing benzoxazines and oxazolines",
+  "mechanism_family": [
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2Na (Eox = 0.83 V) to CF3SO2 radical, which fragments to CF3 radical and SO2; cathodic reduction of HFIP generates H2; second anodic oxidation of the cyclized alkyl radical to a cation",
+  "key_intermediates": [
+    {
+      "name": "CF3SO2 radical from anodic oxidation of CF3SO2Na",
+      "smiles": "[O][S](=O)C(F)(F)F",
+      "role": "transient"
+    },
+    {
+      "name": "CF3 radical (after SO2 extrusion)",
+      "smiles": "[C](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Intermediate I: alkyl C-radical from CF3 addition to alkene of N-(2-isopropenylphenyl)benzamide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Intermediate II: benzylic/oxocarbenium cation after radical cyclization onto amide oxygen and anodic oxidation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "CF3-containing benzoxazine product 2a (after deprotonation)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- to CF3SO2 radical which loses SO2 to give CF3 radical; CF3 radical adds to the alkene of the N-arylbenzamide to give alkyl radical I, which cyclizes onto the amide oxygen; the resulting radical is oxidized at the anode to cation II and deprotonated to deliver the benzoxazine, with cathodic H2 evolution from HFIP.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Addition of TEMPO completely suppressed formation of 2a (0% yield), supporting a radical pathway involving CF3 radical"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "CV shows CF3SO2Na oxidizes at 0.83 V while substrate 1a oxidizes at 1.32 V, indicating preferential anodic oxidation of the sulfinate rather than the alkene (distinguishing this from alkene radical-cation pathways). Control entry without electricity gave no product, confirming electrochemistry is essential. CF2HSO2Na can replace CF3SO2Na to give the difluoromethyl analogue (2v, 31%)."
+}

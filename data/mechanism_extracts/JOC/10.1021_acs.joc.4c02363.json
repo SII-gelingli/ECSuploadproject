@@ -1,0 +1,78 @@
+{
+  "doi": "10.1021_acs.joc.4c02363",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative intramolecular cyclization of alkenyl alcohols with external nucleophiles (diarylmethanimines or carboxylic acids) to access amino- and hydroxy-functionalized tetrahydrofurans/tetrahydropyrans",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_cation",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of the alkene moiety to a radical cation, which is intercepted by the tethered alcohol; the resulting C-radical is further oxidized at the anode to a cation that is trapped by the external nucleophile (imine N or carboxylate O)",
+  "key_intermediates": [
+    {
+      "name": "alkene-derived radical cation (Ia for n=1, Ib for n=2)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tetrahydrofuranyl C-centered radical II (n=1, 5-endo-trig from Ia)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tetrahydropyranyl/THF C-centered radical V (n=2, more stable than III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "oxocarbenium/benzylic cation from anodic oxidation of II/V",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "radical IV (n=1, unstable, 5-exo from Ia)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "N-acyliminium/imine-trapped product Pa (with Ar2CNH nucleophile)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ester product Pb (with RCOOH nucleophile, 5-exo-trig pathway for n=2)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "The anode oxidizes the alkene to a radical cation; the pendant hydroxyl cyclizes (5-endo-trig for n=1, 5-exo-trig for n=2) generating a C-centered radical, which is further oxidized at the anode to a carbocation; the external nucleophile (Ar2CNH or RCOOH) traps this cation, while protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": "Anodic single-electron oxidation of the alkene to the radical cation (initial SET)",
+  "probe_reagents": [
+    {
+      "name": "Cyclic voltammetry of alkene S2, diphenylmethanimine, and acetic acid",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peaks of diphenylmethanimine (~2.60 V) and acetic acid (~2.80 V) are higher than that of the alkene C=C (~1.6 V using methoxy analogue S2-I/S2-II), indicating the alkene is oxidized first; cyclization proceeds via the alkene radical cation rather than free iminyl or acyloxy radicals"
+    },
+    {
+      "name": "O2 / air atmosphere control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Presence of O2 or air significantly inhibited the reaction, consistent with a radical-cation/radical pathway"
+    },
+    {
+      "name": "Current and time variation",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Both decrease and increase in current/time lowered yield, consistent with insufficient turnover or overoxidation"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "redox_probe",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two cyclization modes are proposed from the alkene radical cation: Path A (5-endo-trig, favored for n=1 via more stable radical II) gives product Pa; Path B (5-exo-trig, favored for n=2 via more stable radical V) gives Pb. For n=1, 5-exo radical IV is unstable; for n=2, 5-endo radical III is less stable than V. No TEMPO/BHT radical-trap or KIE experiments are reported on these pages; mechanism is supported primarily by CV and product selectivity."
+}

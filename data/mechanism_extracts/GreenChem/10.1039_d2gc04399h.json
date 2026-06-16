@@ -1,0 +1,87 @@
+{
+  "doi": "10.1039_d2gc04399h",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,2-diesterification (diacyloxylation) of alkenes with carboxylic acids using nBu4NOAc as both electrolyte and electrocatalyst to give 1,2-diesters under undivided-cell, metal/oxidant-free conditions.",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "mediator_anodic",
+    "radical_cation",
+    "carbocation"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of acetate (from nBu4NOAc) to acetoxy radical, which acts as a homogeneous mediator that performs SET on the alkene to give an alkene radical cation; further anodic oxidation of the β-acyloxy radical intermediate to a carbocation. At the cathode, protons are reduced to H2.",
+  "key_intermediates": [
+    {
+      "name": "acetoxy radical (AcO•) — mediator generated at anode",
+      "smiles": "[O]C(C)=O",
+      "role": "transient"
+    },
+    {
+      "name": "alkene radical cation (I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-acyloxy carbon radical (II) after nucleophilic addition of R4COOH to radical cation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-acyloxy carbocation (III) after second SET oxidation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "acetate anion (AcO−) regenerated after SET with alkene",
+      "smiles": "CC(=O)[O-]",
+      "role": "resting_state"
+    },
+    {
+      "name": "hydroxy ester by-product (e.g., 32, 33) from water as competing nucleophile",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes AcO− to AcO•; AcO• performs SET on the alkene to regenerate AcO− and form an alkene radical cation (I); carboxylic acid adds to I giving β-acyloxy radical II, which is further oxidized at the anode to carbocation III; a second carboxylic acid attacks III to deliver the 1,2-diester, while H+ is reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "DMPO (spin trap)",
+      "smiles": "CC1(C)CC=[N+]([O-])C1",
+      "purpose": "radical_trap",
+      "observation": "EPR signal observed, simulated as a mixture of DMPO-R (alkyl radical adduct: g=2.00593, AN=14.8 G, AH=21.3 G) and DMPO-OR (alkoxy radical adduct: g=2.00609, AN=12.9 G, AH=7.9 G), supporting a radical process."
+    },
+    {
+      "name": "nBu4NOAc / nBu4NClO4 (CV substrate scan)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Onset potentials: nBu4NOAc +0.715 V, 1a +1.155 V, 1b +1.998 V, product 1 +1.766 V — acetate is the easiest to oxidize, supporting AcO• as mediator; increasing [nBu4NOAc] suppresses the oxidation peak of product 1, indicating acetate protects the product from over-oxidation."
+    },
+    {
+      "name": "Electricity on/off and current variation (6 vs 3 mA)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction without current; yield drops from 72% to 60% at lower current — electricity is essential."
+    },
+    {
+      "name": "Et4NOCOCF3 (electrolyte swap)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only trace product, confirming acetate (not generic carboxylate/electrolyte) is the active mediator."
+    },
+    {
+      "name": "3 Å molecular sieves / dry solvent",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Removing water suppresses hydroxy ester by-product, consistent with cationic intermediate III being trapped by competing H2O nucleophile."
+    }
+  ],
+  "evidence_types_used": [
+    "EPR",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "nBu4NOAc plays a dual role as electrolyte and electrocatalyst (acetate mediator). Authors note that decarboxylation of AcO• is slower than SET with the alkene under these conditions. Hydroxy ester by-products (e.g., from 2a, 3a giving 30, 31) arise from water trapping the carbocation III, supporting a polar (cationic) step after radical–polar crossover rather than direct radical coupling. The DMPO experiment also detects an alkoxy radical, possibly from secondary reactions, so the EPR evidence is suggestive rather than definitive for a single radical."
+}

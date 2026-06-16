@@ -1,0 +1,74 @@
+{
+  "doi": "10.1021_acs.orglett.9b00444",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical fluoroalkylation-distal heteroaryl/vinyl/alkynyl migration of unactivated alkenes bearing tertiary alcohols, affording fluorinated (hetero)aryl ketones",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of fluoroalkanesulfinate (NaSO2RF) to generate RF radical (loss of SO2 and e-); a later carbon radical intermediate is further oxidized at the anode to a carbocation; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "CF3 (or RF) radical from anodic oxidation of NaSO2CF3 with loss of SO2",
+      "smiles": "[CH0](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon-centered radical A from RF addition to terminal alkene of homoallylic tertiary alcohol",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cyclic nitrogen-centered (aminyl/iminyl) radical B from intramolecular ipso-cyclization onto thiazole/benzothiazole",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ring-opened C-centered radical C stabilized by the alkoxide/alcohol carbon (β-scission product)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Carbocation D after anodic oxidation of radical C",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes NaSO2CF3 (losing SO2) to give CF3 radical, which adds to the terminal alkene to form C-radical A; A undergoes intramolecular addition to the tethered heteroarene (thiazole/benzothiazole) to give N-centered radical B; β-cleavage/ring-opening gives stabilized C-radical C, which is oxidized at the anode to cation D; deprotonation yields the heteroaryl-migrated fluoroalkyl ketone, with H+ reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Addition of 3 equiv TEMPO under standard conditions completely suppressed formation of product 3y (0% yield), indicating radical intermediacy"
+    },
+    {
+      "name": "1,1-Diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "CF3-DPE adduct 10 detected by GC-MS ([M+H]+ = 248.1), 21% by 19F NMR; alcohol adduct 11 isolated 18%; only 4% of 3y formed — supports CF3 radical addition"
+    },
+    {
+      "name": "Cyclic voltammetry of NaSO2RF reagents",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peaks: NaSO2CF2H at 0.590 V, NaSO2C6F13 at 0.742 V, NaSO2CF3 at 0.814 V (vs SCE), explaining the relative ease of anodic oxidation and reactivity ordering"
+    },
+    {
+      "name": "Derivatization of 3y (Me3OBF4 / NaBH4 / AgNO3)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "3y converted to aldehyde 12 in 68% over 3 steps, demonstrating utility of the aryl-migrated product"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "The 1,4-heteroaryl migration proceeds via ipso-radical cyclization onto the heteroarene (thiazole/benzothiazole) followed by β-C-C scission (Smiles-type/neophyl-like rearrangement). The final C-radical to cation step is proposed to be anodic (radical-polar crossover), with deprotonation generating the ketone. Lower reactivity of CF2H despite the lowest oxidation potential is attributed to rapid decomposition of CF2H radical on the electrode. Cathode role is H2 evolution from H+ reduction."
+}

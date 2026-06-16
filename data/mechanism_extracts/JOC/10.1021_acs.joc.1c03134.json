@@ -1,0 +1,77 @@
+{
+  "doi": "10.1021_acs.joc.1c03134",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical acylcyanation and aminocyanation of alkenes using α-oxocarboxylic acids (or (PhSO2)2NH) and a cyanobenziodoxole (CBX) as cyano source under undivided-cell constant-current conditions",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation/decarboxylation of α-oxocarboxylate to an acyl radical; cathodic reduction regenerates iodoarene from the iodine(III)-derived intermediate after CN transfer",
+  "key_intermediates": [
+    {
+      "name": "α-oxocarboxylate radical (A, after 1 e- anodic oxidation)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "acyl (benzoyl) radical B after loss of CO2",
+      "smiles": "[CH0](=O)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "β-keto carbon-centered radical C (acyl radical addition to styrene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-keto carbocation D (further anodic oxidation of C in absence of CBX)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "enone byproduct 7 (from D after deprotonation)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "CN-trapped product 4 and iodoaryl carboxylate F (from CBX after CN transfer to C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "homocoupling dimer 8 (PhC(O)C(O)Ph, benzil-type) from acyl radical dimerization",
+      "smiles": "O=C(c1ccccc1)C(=O)c1ccccc1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the Pt anode, the α-oxocarboxylate is oxidized by 1 e- and loses CO2 to give an acyl radical, which adds to the styrene to form a β-keto C-radical; this radical abstracts CN from CBX (3a) to deliver product 4 plus an iodoaryl carboxylate, which is reduced at the carbon cathode to close the redox balance. Without CBX, the C-radical is further oxidized anodically to a cation that eliminates to an enone byproduct.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "α-oxocarboxylic acid 1b (PhCOCO2H) under standard conditions without alkene",
+      "smiles": "O=C(C(=O)O)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Homocoupling product 8 (benzil-type) isolated in 37%, supporting facile acyl radical formation"
+    },
+    {
+      "name": "Cyclic voltammetry of CBX (3a)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "CBX shows no redox activity between -2.0 and +2.5 V vs Ag/AgCl, ruling out direct CBX reduction/oxidation as the initiation step"
+    },
+    {
+      "name": "Cyclic voltammetry of PhCOCO2H 1b with/without NaOH and styrene",
+      "smiles": "O=C(C(=O)O)c1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "Weak oxidation at 1.26 V for 1b alone; strong peak at 1.26 V upon addition of 2 equiv NaOH (carboxylate easier to oxidize); catalytic current 1.0–2.0 V when 1b/NaOH/styrene combined, consistent with acyl radical addition to alkene"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Alternative off-cycle pathway: in the absence of CBX, the β-keto C-radical C is anodically oxidized to cation D, which deprotonates to enone 7. The mechanism is supported by CV and a homocoupling trapping experiment but lacks radical traps (TEMPO/BHT), KIE, or DFT, hence medium strength."
+}

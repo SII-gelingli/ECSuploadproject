@@ -1,0 +1,57 @@
+{
+  "doi": "10.1039_D3CC05770D_sup_1",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical aerobic oxidative C=C bond cleavage/oxyfunctionalization of 1,1,2-triaryl alkenes to α,α-diaryl ketones using O2 as the oxygen source",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the triaryl alkene to a vinyl/alkene radical cation (Ep,a ~0.918 V observed by CV under O2), which is then trapped by molecular oxygen",
+  "key_intermediates": [
+    {
+      "name": "alkene radical cation of 1a (1,1,2-triphenylethylene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "peroxy/dioxetane intermediate from O2 addition to radical cation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α,α-diaryl ketone product 2a",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "The anode oxidizes the triaryl alkene to its radical cation; molecular O2 (incorporated as shown by 18O2 labeling) adds to the radical cation to give a peroxy/dioxetane species that fragments/rearranges to the α,α-diaryl ketone. Water is not the oxygen source (no reaction under Ar with H2 18O).",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "18O2 (isotopically labeled dioxygen)",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "Product 2a shows 18O incorporation by HRMS (found 275.1322 for C20H17 18O), confirming O2 as the oxygen source"
+    },
+    {
+      "name": "H2 18O (isotopically labeled water)",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "Under Ar with various equivalents of H2 18O (0.5–2.0 equiv, or 4:1 CH3CN/H2O), no reaction (N.R.) — water is not the O source"
+    },
+    {
+      "name": "Cyclic voltammetry under N2 vs O2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "An additional oxidation feature at ~0.918 V appears under O2 atmosphere, consistent with an O2-involved oxidation event"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "product_isotope_distribution",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "The 18O2 vs H2 18O double-labeling cleanly distinguishes O2 (operative) from H2O (inoperative) as the oxygen source. CV under O2 suggests interaction between O2 and the oxidized substrate/electrode. No radical traps (TEMPO/BHT) or DFT reported on these pages, so the exact peroxy intermediate (open peroxy vs 1,2-dioxetane) is not directly distinguished."
+}

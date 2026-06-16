@@ -1,0 +1,64 @@
+{
+  "doi": "10.1055_s-0039-1689934",
+  "journal": "Synthesis",
+  "is_review": false,
+  "rxn_class_summary": "Mn-catalyzed electrochemical three-component chlorophosphinoylation (and azidophosphinoylation) of alkenes via anodically coupled electrolysis, delivering vicinal Cl/P(O)R2 across C=C bonds",
+  "mechanism_family": [
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere",
+    "paired_electrolysis",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Two parallel anodic events mediated by Mn: (i) oxidation of Cl- to a [Mn(III)-Cl] species (latent Cl radical, persistent); (ii) Mn-mediated oxidation of the secondary phosphine oxide H-P(O)R2 to a P-centered radical. Cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "P-centered phosphinoyl radical (I)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "[Mn(III)-Cl] persistent chlorine radical equivalent (II)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "beta-phosphinoyl C-centered radical (III) after P-radical addition to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[Mn(II)] reduced catalyst form after Cl atom transfer",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "On the anode, Mn(II)/bipy is oxidized and mediates oxidation of Cl- to [Mn(III)-Cl] (persistent) and oxidation of H-P(O)Ph2 to a transient P-radical I; I adds regioselectively to the alkene to give C-radical III, which abstracts Cl from [Mn(III)-Cl] (II) via persistent-radical-effect-controlled cross-coupling, releasing the chlorophosphinoylation product and [Mn(II)], which is re-oxidized at the anode while protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "N,N-diallyl tosylamide (radical clock / cyclization probe)",
+      "smiles": "C=CCN(CC=C)S(=O)(=O)c1ccc(C)cc1",
+      "purpose": "radical_clock",
+      "observation": "Forms cyclized pyrrolidine 26 (57%, dr 1:1), consistent with intermediacy of P- and C-centered radicals"
+    },
+    {
+      "name": "TMSN3 (azide source, nucleophile substitution)",
+      "smiles": "C[Si](C)(C)N=[N+]=[N-]",
+      "purpose": "other",
+      "observation": "Replaces LiCl to give azidophosphinoylation product 23 (46%), supporting generality of the ACE scheme with different X-"
+    },
+    {
+      "name": "Cyclic voltammetry of Mn(OTf)2/bipy with LiCl and/or phosphine oxide 2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Phosphine oxide 2 is hard to oxidize directly; Mn+bipy alone shows weak features; addition of HOAc/NaOAc enhances Mn redox activity; LiCl + Mn gives current enhancement (Mn promotes Cl- oxidation, forming [Mn(III)-Cl]); mixing 2 + LiCl + Mn gives marked catalytic current scaling with [2], consistent with [Mn(III)-Cl] oxidizing 2 to P-radical I"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "radical_clock",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Selectivity rationalized by persistent radical effect: transient P-radical I adds to alkene faster than persistent [Mn(III)-Cl] (II); resulting C-radical III then cross-couples with persistent II rather than dimerizing or reacting with another I, ensuring chemoselective heterodifunctionalization over bisphosphinoylation. Alternative direct alkene oxidation (radical cation) pathway is explicitly disfavored due to high oxidation potentials of simple alkenes."
+}

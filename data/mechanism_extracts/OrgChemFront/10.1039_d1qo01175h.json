@@ -1,0 +1,96 @@
+{
+  "doi": "10.1039_d1qo01175h",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative three-component cyclization of allylic alcohols, arylboronic acids, and dichalcogenides (RSeSeR/RSSR) to access chalcogenated cyclic boronic esters (1,3,2-dioxaborinanes) that are hydrolyzed to chalcogenated 1,3-diols.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_anodic",
+    "cation_initiated",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation generates the active chalcogenating species: in pathway I, Br- is oxidized to Br+ (Br2) which reacts with PhSeSePh to give electrophilic PhSeBr; in pathway II, direct anodic SET oxidation of PhSeSePh gives a diselenide radical cation that fragments to PhSe• + PhSe+. Protons are reduced at the Pt cathode to H2.",
+  "key_intermediates": [
+    {
+      "name": "boronate ester I from condensation of cinnamyl alcohol and PhB(OH)2 (allyloxy-arylboronate)",
+      "smiles": "OB(OCC=Cc1ccccc1)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "PhSeBr electrophilic selenenyl bromide (pathway I)",
+      "smiles": "[Se](Br)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "seleniranium/β-selenocarbocation intermediate II on boronate scaffold (pathway I)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "diphenyl diselenide radical cation [PhSe-SePh]•+ (pathway II)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl radical PhSe•",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenyl cation PhSe+",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered β-selenoalkyl radical III on boronate scaffold (pathway II)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-selenoalkyl cation IV after anodic oxidation of III (pathway II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "chalcogenated 1,3,2-dioxaborinane product 4a",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Allylic alcohol and ArB(OH)2 condense (TFA) to an allyloxy boronate I; in parallel, the anode oxidizes either Br- (to Br+/Br2, which converts PhSeSePh to PhSeBr) or PhSeSePh directly to a radical cation that cleaves to PhSe• + PhSe+. The electrophilic/radical Se species adds to the tethered alkene of I to give a seleniranium (cationic, pathway I) or a C-radical that is anodically oxidized to a cation (pathway II); intramolecular trapping by the pendant B-OH oxygen closes the six-membered cyclic boronate 4a, while protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3a/4a decreased to 20% with 2 equiv TEMPO, indicating radical involvement."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield dropped to 28% with 2 equiv BHT, consistent with radical intermediates."
+    },
+    {
+      "name": "p-benzoquinone (BQ)",
+      "smiles": "O=C1C=CC(=O)C=C1",
+      "purpose": "radical_trap",
+      "observation": "Yield dropped to 22% with 2 equiv BQ, supporting a radical pathway."
+    },
+    {
+      "name": "PhSeBr (stoichiometric, no current)",
+      "smiles": "[Se](Br)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Reaction of cinnamyl alcohol + PhB(OH)2 + PhSeBr without electricity gave 4a in 78% yield, supporting PhSeBr as the active electrophile in pathway I."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two mechanisms are proposed and presented as co-existing: pathway I (Br+/PhSeBr-mediated electrophilic seleniranium, cation-initiated cyclization) is supported by the control experiment with stoichiometric PhSeBr giving 4a in 78% without current. Pathway II (direct anodic oxidation of PhSeSePh to a radical cation, generating PhSe• + PhSe+, radical addition then anodic oxidation to a cation — a radical-polar crossover) is supported by partial inhibition with TEMPO/BHT/BQ. The authors do not unambiguously favor one pathway over the other."
+}

@@ -1,0 +1,83 @@
+{
+  "doi": "10.1021_jacs.0c11025",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Iron-catalyzed intermolecular aminoazidation of alkenes affording unprotected primary 2-azidoamines from hydroxylamine-derived aminating reagent and an azide source",
+  "mechanism_family": [
+    "nitrene",
+    "electrocatalysis_inner_sphere",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "iron-bound aminating species from reductive cleavage of hydroxylamine reagent (putative iron nitrenoid or N-centered aminyl radical)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical from aminyl radical addition to alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "iron-coordinated azide (Fe-N3) that delivers azido group to C-radical",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "2-azidoamine product",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "An iron catalyst reductively cleaves the N–O bond of the hydroxylamine-derived reagent to generate an N-centered radical (or iron nitrenoid) that adds to the alkene; the resulting carbon-centered radical is then trapped by an iron-coordinated azide to deliver the 2-azidoamine.",
+  "rate_determining_step": "C–N bond-forming addition of the N-centered radical/nitrenoid to the alkene (product-selective step inferred from Hammett ρ = -0.51)",
+  "probe_reagents": [
+    {
+      "name": "phenyl cyclopropyl alkene (slow radical clock, 5a)",
+      "smiles": "C(=C)C1(c2ccccc2)CC1",
+      "purpose": "radical_clock",
+      "observation": "Ring not opened; intact product 5b (14%) plus methoxylated 5c (45%) in MeOH — radical short-lived"
+    },
+    {
+      "name": "fast radical clock (5d, phenyl vinyl cyclopropane)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring opens readily to give 5e (51%, 7:1 E/Z), confirming a C-centered radical intermediate"
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "No TEMPO-adduct isolable, but azidoamine 5g yield drops from 67% to 16% with 1.0 equiv TEMPO — consistent with a short-lived radical"
+    },
+    {
+      "name": "MeOH solvent trap",
+      "smiles": "CO",
+      "purpose": "intermediate_trap",
+      "observation": "Methoxylated byproduct 5c only forms at benzylic position (5a); non-benzylic alkene (5f) gives no methoxy adduct — argues against a free carbocation"
+    },
+    {
+      "name": "(E)- and (Z)-oct-4-ene (5h)",
+      "smiles": "CCCC=CCCC",
+      "purpose": "other",
+      "observation": "Stereoconvergent: both give similar dr of 5i (4:1 from E; 3:1 from Z); small amount of isomerized (E)-5h detected — supports stepwise radical addition with reversible C–N bond formation"
+    },
+    {
+      "name": "para-substituted styrenes (Hammett study)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "ρ = -0.51 against σp (R² = 0.93), minor positive charge buildup; consistent with radical rather than carbocationic amination"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "kinetic_order",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly contrast a radical-based mechanism vs a carbocationic one and favor the radical/iron-nitrenoid pathway based on (i) lack of MeOH trapping at non-benzylic positions, (ii) small negative Hammett ρ, (iii) radical-clock results, (iv) stereoconvergence of E/Z alkenes, and (v) TEMPO suppression. Compared to their prior aminochlorination, the lack of stereoretention here suggests a slightly longer-lived C-radical. Alternative mechanism mentioned: free carbocation pathway (ruled out except at benzylic positions where solvent trapping competes)."
+}

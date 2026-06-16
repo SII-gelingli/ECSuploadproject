@@ -1,0 +1,102 @@
+{
+  "doi": "10.1039_D5CC04608D",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Catalyst-free electrochemical bromochlorination of alkenes using bromide as Br source and hexachloroethane (C2Cl6) as Cl source via paired electrolysis",
+  "mechanism_family": [
+    "paired_electrolysis",
+    "cation_initiated",
+    "anion_initiated"
+  ],
+  "electrochemical_role": "Anodic two-step oxidation of Br- to Br+ cation; simultaneous cathodic reduction of C2Cl6 to Cl- anion and C2Cl4",
+  "key_intermediates": [
+    {
+      "name": "bromine cation (Br+)",
+      "smiles": "[Br+]",
+      "role": "reactive"
+    },
+    {
+      "name": "chloride anion (from cathodic reduction of C2Cl6)",
+      "smiles": "[Cl-]",
+      "role": "reactive"
+    },
+    {
+      "name": "bromonium intermediate M (from alkene + Br+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "dibromide product 5 (from Br- attack on bromonium)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "dichloride product 4 (from over-conversion of 2 or 5)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "tetrachloroethylene (C2Cl4)",
+      "smiles": "ClC(Cl)=C(Cl)Cl",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, Br- undergoes two-step oxidation to Br+, which adds to the alkene to form a bromonium ion M; chloride, generated at the cathode by reduction of C2Cl6 (yielding Cl- and C2Cl4), opens M to give the bromochloride product 2 (Path I). In a parallel Path II, Br- opens M to dibromide 5, which is then converted to 2 by Cl-.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "MeOH",
+      "smiles": "CO",
+      "purpose": "intermediate_trap",
+      "observation": "Bromoalkoxylation product 6a formed in 21% yield, supporting bromonium intermediate"
+    },
+    {
+      "name": "tBuOH",
+      "smiles": "CC(C)(C)O",
+      "purpose": "intermediate_trap",
+      "observation": "Bulky alcohol gave only trace bromoalkoxylation (6b) and bromochloride 2a in 56%, consistent with bromonium intermediate"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Significant yield decrease of 2a, but no BHT adducts detected by HRMS"
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Significant yield decrease of 2a, no TEMPO adducts observed"
+    },
+    {
+      "name": "(1-cyclopropylvinyl)benzene 1p",
+      "smiles": "C(=C)(c1ccccc1)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 7p obtained in 50% yield, suggesting involvement of a Br radical or cation"
+    },
+    {
+      "name": "bromochloride 2a (as substrate)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Converts to dichloride 4a (up to 18% with nBu4NCl); 8% without electricity, confirming interconversion"
+    },
+    {
+      "name": "dibromide 5a (as substrate)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Converts to bromochloride 2a (up to 53% with nBu4NCl) and small amounts of 4a, confirming 5a is on-path intermediate"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "kinetic_order",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "CV showed Br- oxidation (E1/2 = 0.98 V and 1.4 V) easier than styrene (2.06 V), indicating Br- is oxidized first rather than direct alkene oxidation. CV also confirmed C2Cl6 reduction at -1.46 V as the Cl source. Kinetics show dibromide 5a forms first, then converts to bromochloride 2a as Cl- accumulates; dichloride 4a forms only later from over-chlorination. Radical trap experiments suppress reaction but give no adducts, while cyclopropyl clock opens — the authors favor a cationic bromonium pathway but acknowledge possible Br radical/cation character."
+}

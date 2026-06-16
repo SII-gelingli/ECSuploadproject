@@ -1,0 +1,92 @@
+{
+  "doi": "10.1039_d3cc00231d",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Mediator-free electrochemical trifluoromethylation/cyclization of β,γ-unsaturated oximes with Langlois reagent (CF3SO2Na) to give trifluoromethylated isoxazolines",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2- to CF3SO2 radical (which loses SO2 to give CF3 radical); subsequent anodic single-electron oxidation of the alkyl radical intermediate A to carbocation B; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "CF3SO2 radical (Langlois-derived sulfonyl radical)",
+      "smiles": "[O]S(=O)C(F)(F)F",
+      "role": "transient"
+    },
+    {
+      "name": "CF3 radical",
+      "smiles": "[C](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon-centered radical A from CF3 addition to terminal alkene of β,γ-unsaturated oxime",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic/alkyl carbocation B after anodic SET of A",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Trifluoromethylated isoxazoline product 2",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- to CF3SO2 radical which extrudes SO2 to give CF3 radical; CF3 radical adds to the terminal alkene of the β,γ-unsaturated oxime forming carbon radical A; a second anodic SET oxidizes A to carbocation B, which is trapped intramolecularly by the oxime hydroxyl with loss of H+ to give the isoxazoline, while the cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "Argon atmosphere control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction proceeds with comparable efficacy under Ar, ruling out a significant role for aerial O2"
+    },
+    {
+      "name": "Divided cell with substrate+CF3SO2Na in anolyte",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "2a formed in 49% yield, confirming anodic chemistry"
+    },
+    {
+      "name": "Divided cell with substrate+CF3SO2Na in catholyte",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "<5% product, confirming oxidation (not reduction) is required"
+    },
+    {
+      "name": "OBz-protected oxime 5 (no free OH)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Hydroxy- or methoxy-trifluoromethylation products 6/7 detected by HRMS (water/MeOH attacks B), supporting radical addition then cationic trapping"
+    },
+    {
+      "name": "MeOH co-solvent on 5",
+      "smiles": "CO",
+      "purpose": "intermediate_trap",
+      "observation": "Methoxy-trifluoromethylation product formed, consistent with carbocation intermediate B"
+    },
+    {
+      "name": "Competition between terminal alkene 1a and styryl alkene 1r",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Exclusive formation of phenyl-substituted isoxazoline 2r, indicating better stabilization of radical/cation by aryl group"
+    },
+    {
+      "name": "Cyclic voltammetry of CF3SO2Na and 1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Half-peak potentials 1.17 V (CF3SO2Na) vs 1.39 V (1a); CF3SO2Na preferentially oxidized; product 2a shows no oxidation in operating window"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mediator-free, undivided cell with graphite electrodes, LiClO4/MeCN-H2O electrolyte, Langlois reagent as CF3 source. Divided-cell experiments unambiguously localize the productive chemistry to the anode; OBz-protected substrate diverts B to nucleophilic trapping by H2O/MeOH, providing strong support for the radical-polar crossover pathway over a purely radical cyclization."
+}

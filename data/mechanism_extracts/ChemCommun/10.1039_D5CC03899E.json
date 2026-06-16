@@ -1,0 +1,81 @@
+{
+  "doi": "10.1039_D5CC03899E",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical ferrocene-mediated anodic phosphorylation/intramolecular cyclization of N-allylamides with diarylphosphine oxides to give phosphorylated oxazolines",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of ferrocene to ferrocenium, which mediates single-electron oxidation of the deprotonated phosphine oxide (P-anion) to a P-centered radical; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "Anionic P-species (Ph2P(O)- from deprotonation of Ph2P(O)H by Et3N) - intermediate A",
+      "smiles": "[O-]P(c1ccccc1)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Phosphoryl radical Ph2P(O)• - intermediate B",
+      "smiles": "O=[P](c1ccccc1)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "C-centered radical from P-radical addition to alkene of N-allylamide - intermediate C",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Benzylic/secondary carbocation after anodic oxidation of C - intermediate D",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ferrocenium (Fc+) mediator",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Phosphorylated oxazoline product 3aa",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes ferrocene to ferrocenium, which performs SET on the Et3N-deprotonated Ph2P(O)- to give a phosphoryl radical; this adds to the alkene of the N-allylamide to give a C-radical, which is further oxidized at the anode (via Fc+) to a carbocation that undergoes intramolecular cyclization with the amide oxygen to form the oxazoline; the cathode reduces 2 H+ to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3aa formation completely inhibited; TEMPO–P adduct 4 detected by HRMS ([M+H]+ = 375.2213)"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction inhibited; BHT–phosphoryl adduct 5 detected by HRMS ([M+NH4]+ = 438.2526)"
+    },
+    {
+      "name": "(1-cyclopropylvinyl)benzene",
+      "smiles": "C(=C)(c1ccccc1)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "Reaction inhibited; ring-opened phosphorylated adduct 6 detected by HRMS ([M+K]+ = 385.1117), consistent with phosphoryl radical addition followed by cyclopropyl ring opening"
+    },
+    {
+      "name": "Ferrocene (CV study)",
+      "smiles": "[Fe+2].[cH-]1cccc1.[cH-]1cccc1",
+      "purpose": "redox_probe",
+      "observation": "Fc oxidation at 0.07 V vs Ag/AgNO3, low enough to mediate further electrochemical events; supports redox mediator role"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "radical_clock",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Mechanism is a ferrocene-mediated anodic radical/cation cascade (radical–polar crossover): P-radical addition to alkene then anodic oxidation to cation and cyclization by the amide oxygen. The X-ray structure of 3aa (CCDC 2466394) confirms regio/connectivity. Failure with trisubstituted/1,2-disubstituted alkenes (1v, 1w) and N-allylthioamide (1x) is rationalized by steric hindrance, regioselectivity issues, or reduced stability of the secondary carbocation intermediate D. Heteroaryl dithiophenylphosphine oxide 2f and diethyl phosphonate 2g failed, attributed to lower stability of the requisite P-centered anion."
+}

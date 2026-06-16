@@ -1,0 +1,67 @@
+{
+  "doi": "10.1021_acs.orglett.3c00310",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical difluoromethylation of electron-rich olefins (enamides and styrenes) using HCF2SO2Na as the CF2H radical source in an undivided cell, giving (E)-difluoromethylated enamides or β-hydroxy-difluoromethylated styrene products.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF2HSO2Na (sodium difluoromethanesulfinate) generates the CF2H radical via loss of SO2; a second anodic oxidation of the alkyl radical adduct gives a benzylic/α-aminocarbocation; cathode reduces H+ to H2.",
+  "key_intermediates": [
+    {
+      "name": "CF2H radical (from anodic oxidation of HCF2SO2- and loss of SO2)",
+      "smiles": "[CH]F F",
+      "role": "reactive"
+    },
+    {
+      "name": "α-amino/benzylic C-radical I from CF2H addition to electron-rich alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic/α-amino carbocation II (from anodic oxidation of I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "(E)-β-CF2H enamide product (route A, E1 elimination)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-hydroxy-CF2H styrene adduct (route B, H2O addition to cation)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF2HSO2Na (1e-) to release SO2 and a CF2H radical, which adds to the electron-rich olefin to give a stabilized α-amino or benzylic radical I; I is further oxidized at the anode to carbocation II, which either undergoes E1 deprotonation (enamides, route A) or is trapped by water (styrenes, route B); 2H+ are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclohexene (unactivated/non-stabilizing alkene control)",
+      "smiles": "C1CCCCC1",
+      "purpose": "other",
+      "observation": "No reaction, indicating that a stabilized (α-amino or benzylic) radical I is required."
+    },
+    {
+      "name": "alkyl-substituted (non-aryl, non-enamide) alkenes",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Poorly reactive (<20% yield), supporting the need for radical stabilization."
+    },
+    {
+      "name": "CF2HSO2Na (CV redox probe)",
+      "smiles": "OS(=O)C(F)F.[Na]",
+      "purpose": "redox_probe",
+      "observation": "Shows an irreversible oxidation wave; enamide and styrene show no oxidation/reduction up to ~1.5 V, and mixtures with CF2HSO2Na give unchanged profiles, ruling out substrate oxidation and supporting sulfinate as the species oxidized at the anode."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two product-forming branches share a common cation II: route A (E1 elimination) for enamides gives a single (E)-vinyl-CF2H diastereomer; route B (nucleophilic addition of H2O) for styrenes gives β-hydroxy-CF2H products. No radical trapping (e.g., TEMPO/BHT) or DFT was reported; the mechanism is supported mainly by CV and control experiments with non-stabilizing alkenes."
+}

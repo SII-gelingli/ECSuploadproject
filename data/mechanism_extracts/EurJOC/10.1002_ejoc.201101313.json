@@ -1,0 +1,45 @@
+{
+  "doi": "10.1002_ejoc.201101313",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intermolecular [2+2] cycloaddition between an enol ether (1-(prop-1-en-1-yloxy)-4-propylbenzene) and an olefinic carboxylic acid (hex-5-enoic acid) via an anodically generated radical cation, with the olefin nucleophile noncovalently condensed at the electrode surface.",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the electron-rich aryl enol ether (1) to its radical cation, which is trapped at the electrode surface by the surface-condensed olefin (2) to give a [2+2] cycloadduct.",
+  "key_intermediates": [
+    {
+      "name": "aryl enol ether radical cation of 1-(prop-1-en-1-yloxy)-4-propylbenzene",
+      "smiles": "CCCc1ccc(O/C=C/C)cc1",
+      "role": "transient"
+    },
+    {
+      "name": "distonic radical cation / 1,4-radical cation intermediate from C-C bond formation with hex-5-enoic acid",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[2+2] cyclobutane cycloadduct 3 (diastereomeric mixture)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "The anode removes one electron from the electron-rich aryl enol ether 1 to give a short-lived radical cation; the pendant olefin of hex-5-enoic acid 2, noncovalently condensed at the electrode surface, traps this radical cation and ring-closes to the cyclobutane radical cation, which is reduced back to the neutral [2+2] adduct 3.",
+  "rate_determining_step": "trapping of the transient radical cation of 1 by the olefin nucleophile 2 (limited by its local concentration at the electrode surface)",
+  "probe_reagents": [
+    {
+      "name": "high-equivalent loading of hex-5-enoic acid (20 mol equiv., 200 mM)",
+      "smiles": "OC(=O)CCCC=C",
+      "purpose": "intermediate_trap",
+      "observation": "Required excess for effective trapping of the short-lived radical cation under conventional conditions; yields of 3 dropped rapidly as the olefin amount was decreased, whereas with surface-condensed electrodes high yields were retained even with much less olefin."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "kinetic_order"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism is presented as a proposal supported indirectly by the dependence of yield on olefin loading and by the comparison between conventional vs surface-condensed electrode conditions; no TEMPO/BHT trapping, CV, EPR, or DFT data shown on the provided page. Only the first page of the communication was supplied, so later mechanistic details (if any) are not captured."
+}

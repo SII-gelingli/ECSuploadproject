@@ -1,0 +1,122 @@
+{
+  "doi": "10.1021_jacs.0c05183",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Radical-mediated three-component difunctionalization of alkenes with diazo compounds, delivering hydroalkylation (via photoredox/thiol HAT) or azidoalkylation (via Fe catalysis with TMSN3/TBHP), bypassing cyclopropanation.",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_polar_crossover",
+    "direct_SET",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "excited Ru(bpy)3(2+)* photocatalyst",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ru(I) reductant generated after oxidation of Hantzsch ester",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Hantzsch ester radical cation 3a'",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alpha-ester carbon radical I (•CH(CO2Et)R) from diazo after loss of N2 and protonation",
+      "smiles": "[CH](C(=O)OCC)C",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic alkyl radical II after addition to styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Fe(II)X2 / Fe(III)X2N3 redox couple in azidoalkylation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tBuO• / tBuOO• radicals from Fe + TBHP",
+      "smiles": "[O]C(C)(C)C",
+      "role": "transient"
+    },
+    {
+      "name": "HN3 generated from TMSN3 + ROH",
+      "smiles": "N=[N+]=[N-]",
+      "role": "transient"
+    },
+    {
+      "name": "α-azido benzyl radical 12-C (from addition to α-phenyl vinyl azide)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "iminyl radical 12-N after loss of N2 from 12-C",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "For hydroalkylation: photoexcited Ru(II)* oxidizes Hantzsch ester (PCET) generating Ru(I) and 3a'; Ru(I) reduces the diazo compound, which loses N2 and is protonated to give α-ester radical I that adds to the alkene to form radical II; thiol-mediated HAT from 3a' delivers the C–H bond of product. For azidoalkylation: Fe(II)/TBHP generates tBuO•/Fe(III)X2OR, which reduces the diazo via PCET to radical I; addition to alkene gives radical II; Fe(III)X2N3 (formed by ligand exchange with HN3 from TMSN3) transfers N3 to radical II, regenerating Fe(II).",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "3.0 equiv TEMPO fully suppresses both hydroalkylation (4a: 97%→0%) and azidoalkylation (6a: 73%→0%), consistent with radical intermediates."
+    },
+    {
+      "name": "α-cyclopropylstyrene (radical clock 8)",
+      "smiles": "C(=C)(c1ccccc1)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened products 9 (88%, E:Z 90:10) and 10/10' observed, confirming radical addition/ring-opening."
+    },
+    {
+      "name": "D2O (6.5 equiv) in MeCN",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "Dideuterated product 4a' formed (D at α and γ positions), indicating water/protic solvent provides H atoms in the photocatalytic system."
+    },
+    {
+      "name": "2-propanol-d8 solvent",
+      "smiles": "[2H]C([2H])([2H])C([2H])(O[2H])C([2H])([2H])[2H]",
+      "purpose": "isotope_label",
+      "observation": "In azidoalkylation, mixture of 6a/6a'/6a'' (8:37:55) indicates partial deuterium incorporation; H also from TBHP/H2O."
+    },
+    {
+      "name": "preformed cyclopropane 11 (from carbene + 1,1-diphenylethylene)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Cyclopropane 11 does NOT open to give 4bh or 6q under either set of conditions, ruling out a cyclopropane intermediate."
+    },
+    {
+      "name": "α-phenyl vinyl azide 1cr",
+      "smiles": "C(=C)(N=[N+]=[N-])c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Trapping gives ketone 12 (47%) via iminyl radical 12-N (confirmed by GC-MS of imine 12'), supporting the radical addition pathway; requires light and photocatalyst but not thiol."
+    },
+    {
+      "name": "Control: omission of Ru(bpy)3Cl2, light, or thiol",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No or trace product without photocatalyst, light, or Hantzsch ester; replacing Ru with Eosin Y fails – establishes role of each component."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "on/off_light_or_current",
+    "product_isotope_distribution",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two complementary catalytic manifolds share a common α-ester carbon radical generated from the diazo via PCET (Ru(I)-mediated for hydroalkylation; Fe(II)/TBHP-mediated for azidoalkylation). Authors explicitly exclude a free-carbene/cyclopropane pathway (preformed cyclopropane does not open). For azidoalkylation, azide delivery is proposed via inner-sphere ligand transfer from Fe(III)X2N3 to alkyl radical II rather than free N3• addition."
+}

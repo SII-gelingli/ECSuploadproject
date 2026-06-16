@@ -1,0 +1,69 @@
+{
+  "doi": "10.1039_d3gc02701e",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,4-alkoxydimerization of aryl alkenes with alcohols to give symmetric and asymmetric 1,4-dialkoxybutanes",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of styrene to a radical cation that initiates dimerization; a second anodic oxidation converts a β-alkoxy carbon radical to a carbocation; cathode reduces H+ to H2",
+  "key_intermediates": [
+    {
+      "name": "styrene radical cation (I)",
+      "smiles": "[CH2]=[C+](c1ccccc1).[e-]",
+      "role": "transient"
+    },
+    {
+      "name": "distonic dimer radical cation (II, PhCH(+)CH2CH2C(•)HPh)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-methoxy carbon radical (III, PhCH(OMe)CH2CH2C(•)HPh)",
+      "smiles": "COC(c1ccccc1)CC[CH]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "β-methoxy benzylic carbocation (IV)",
+      "smiles": "COC(c1ccccc1)CC[CH+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "1,4-dimethoxy-1,4-diphenylbutane (2)",
+      "smiles": "COC(c1ccccc1)CCC(OC)c1ccccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes styrene by SET to a radical cation (I), which adds to a second styrene to form distonic cation-radical II; methanol traps the cation end giving β-alkoxy radical III; a second anodic SET oxidizes III to carbocation IV, which is trapped by a second equivalent of methanol to deliver the 1,4-dialkoxybutane; protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": "Initial anodic single-electron oxidation of styrene (onset ~+1.713 V)",
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "2 equiv BHT fully suppressed product formation; HRMS detected BHT adduct V of radical intermediate III"
+    },
+    {
+      "name": "(1-cyclopropylvinyl)benzene",
+      "smiles": "C(=C)(c1ccccc1)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "No ring-opened product observed; instead 1,2-dimethoxylation byproduct A (53%) and dimer 21 (21%) formed, attributed to fast oxidation of the radical to a cation before cyclopropyl ring-opening"
+    },
+    {
+      "name": "styrene (cyclic voltammetry)",
+      "smiles": "C=Cc1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "Onset oxidation potential ~+1.713 V vs reference, confirming feasibility of anodic SET to form a cation/radical cation"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "radical_clock",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Pyrrole-, pyridine-, and furan-substituted alkenes failed, likely due to competing oxidation of the heteroarene. With the cyclopropyl probe, the absence of ring-opening is rationalized by rapid second SET (radical→cation) outcompeting the radical clock, which is itself mechanistic evidence for the radical-polar crossover step (III→IV). H2O as nucleophile gave only 12% yield; aniline, benzotriazole, AcOH, TMSCN, NH4CN were unsuccessful nucleophiles."
+}

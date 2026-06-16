@@ -1,0 +1,75 @@
+{
+  "doi": "10.1002_adsc.202400153_sup_1",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Photoelectrochemical thiocyanation/cyclization of N-alkenylacrylamides with KSCN to form SCN-functionalized pyrrolinones (3a) using Mes-Acr+ photocatalyst under 455 nm light and constant current electrolysis in Bu4NOAc/HFIP.",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation regenerates the excited-state-reduced photocatalyst (or oxidizes SCN-/acetate); light excites Mes-Acr+ which oxidizes thiocyanate to a thiocyanyl radical that adds to the acrylamide alkene, triggering radical cyclization.",
+  "key_intermediates": [
+    {
+      "name": "thiocyanyl radical (•SCN)",
+      "smiles": "[S]C#N",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical after SCN addition to acrylamide alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclized C-radical on enamide",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Mes-Acr+ excited state photocatalyst",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "TEMPO-SCN adduct (detected by HRMS)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Photoexcited Mes-Acr+* oxidizes SCN- to •SCN, which adds to the acrylamide alkene; the resulting carbon radical cyclizes onto the pendant enamide, and the cyclized radical is oxidized (anodically and/or by photocatalyst) to a cation that is deprotonated to give the pyrrolinone, while the anode reoxidizes the reduced acridine radical to close the catalytic cycle.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3a fully suppressed (0% under both conditions A and B); TEMPO-SCN adduct detected by HRMS, supporting •SCN intermediate."
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Product 3a fully suppressed (0% under both conditions A and B), consistent with radical pathway."
+    },
+    {
+      "name": "light/current on-off (control without photocatalyst)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Yield grows during 'on' periods and plateaus during 'off' periods for both light and current toggling, indicating both photo- and electro-input are continuously required."
+    },
+    {
+      "name": "no-light / no-electricity controls",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Without light: no product. Without electricity: only ~8% yield vs ~70% under full conditions, showing electrochemistry is essential."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "on/off_light_or_current",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two condition sets (A: with Mes-Acr+ photocatalyst; B: PC-free photoelectrosynthesis) are studied; on/off experiments in Figure S10 are for the PC-free variant (conditions B), showing that simultaneous photo- and electro-input are needed. Reaction profiles (Figure S9) confirm both light and current are required for high yield under conditions A."
+}

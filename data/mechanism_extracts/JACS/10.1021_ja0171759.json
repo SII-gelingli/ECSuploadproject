@@ -1,0 +1,90 @@
+{
+  "doi": "10.1021_ja0171759",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Cathodic reduction of an electrochemically generated N-acyliminium 'cation pool' to a carbon-centered α-amido radical, which adds to activated olefins (e.g., methyl acrylate) to forge C–C bonds (formal C–H addition to C=C).",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Two-stage electrolysis in a divided cell: anodic oxidation of N-(methoxycarbonyl)pyrrolidine at -72 °C generates an acyliminium cation pool; subsequent cathodic one-electron reduction of the acyliminium cation produces an α-amido carbon radical that couples with the olefin, and a second cathodic reduction of the adduct radical gives a carbanion trapped by proton.",
+  "key_intermediates": [
+    {
+      "name": "N-(methoxycarbonyl)pyrrolidinyl acyliminium cation (2)",
+      "smiles": "COC(=O)N1CCC[CH+]1",
+      "role": "reactive"
+    },
+    {
+      "name": "α-amido carbon radical (3) from one-electron reduction of 2",
+      "smiles": "COC(=O)N1CCC[CH]1",
+      "role": "reactive"
+    },
+    {
+      "name": "α-amido carbanion (5) from two-electron reduction of 2",
+      "smiles": "COC(=O)N1CCC[CH-]1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "adduct radical after addition to methyl acrylate (8)",
+      "smiles": "COC(=O)N1CCCC1CC[CH]C(=O)OC",
+      "role": "transient"
+    },
+    {
+      "name": "adduct carbanion (9) from further one-electron reduction of 8",
+      "smiles": "COC(=O)N1CCCC1CC[CH-]C(=O)OC",
+      "role": "transient"
+    },
+    {
+      "name": "homocoupling dimer (4)",
+      "smiles": "COC(=O)N1CCCC1C1CCCN1C(=O)OC",
+      "role": "off_pathway"
+    },
+    {
+      "name": "2:1 adduct byproduct (7)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "reduced parent carbamate (1, N-(methoxycarbonyl)pyrrolidine)",
+      "smiles": "COC(=O)N1CCCC1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the carbamate by 2e-/-H+ to give an acyliminium cation pool; at the cathode, one-electron reduction yields an α-amido radical that adds to the electron-deficient olefin (path A); the resulting electron-poor adduct radical is reduced by a second electron to a carbanion, which is protonated by added TfOH to give the cross-coupled product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "trifluoromethanesulfonic acid (TfOH) as proton source / carbanion trap",
+      "smiles": "OS(=O)(=O)C(F)(F)F",
+      "purpose": "intermediate_trap",
+      "observation": "Increasing TfOH (0→50 equiv) raised yield of cross-coupled 6 from 34% to 88% and suppressed 2:1 adduct 7; yield of reduced 1 did not increase with excess TfOH, ruling out path B (carbanion 5 attacking olefin)."
+    },
+    {
+      "name": "zinc metal (chemical reductant control)",
+      "smiles": "[Zn]",
+      "purpose": "redox_probe",
+      "observation": "Chemical 2e- reduction gave reduced product 1 (54%, major) with only 16% homocoupled 4, indicating that under chemical reduction the carbanion pathway dominates, whereas electrochemical reduction favors the radical coupling pathway."
+    },
+    {
+      "name": "cyclic voltammetry of cation 2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Acyliminium cation 2 shows reduction wave at -0.85 V vs Ag/AgCl in Bu4NBF4/CH2Cl2, supporting feasibility of cathodic one-electron reduction."
+    },
+    {
+      "name": "1H NMR control with TfOH",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "TfOH did not appreciably affect iminium cation 2 by 1H NMR, excluding protonation/decomposition of the cation by the proton source."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two mechanistic pathways were considered: favored path A involves one-electron cathodic reduction of acyliminium 2 to radical 3, radical addition to acrylate, then a second one-electron reduction to carbanion 9, and protonation. Alternative path B (two-electron reduction to carbanion 5 followed by Michael addition) was excluded because excess TfOH did not increase the yield of simple reduction product 1, which would be expected if 5 were a key intermediate. A competing homocoupling of radical 3 produces dimer 4, and oligomerization gives a 2:1 adduct 7; both are minimized at high TfOH (50 equiv) and 5 equiv acrylate."
+}

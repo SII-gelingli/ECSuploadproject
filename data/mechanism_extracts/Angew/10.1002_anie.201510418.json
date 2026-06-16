@@ -1,0 +1,74 @@
+{
+  "doi": "10.1002_anie.201510418",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrocatalytic intramolecular olefin hydroamidation of N-aryl amides via ferrocene-mediated anodic generation of amidyl radicals",
+  "mechanism_family": [
+    "mediator_anodic",
+    "electrocatalysis_outer_sphere",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of ferrocene (Fc) to ferrocenium (Fc+), which then oxidizes the deprotonated anilide (amide conjugate base) by outer-sphere SET to give an amidyl radical; cathodic reduction of MeOH generates H2 and MeO- which deprotonates the N-H amide",
+  "key_intermediates": [
+    {
+      "name": "ferrocenium cation (Fc+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "anilide conjugate base (deprotonated N-aryl amide, I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "N-centered amidyl radical (II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical from 5-exo cyclization onto tethered olefin (III)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "methoxide (MeO-)",
+      "smiles": "[O-]C",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Fc to Fc+ while cathode reduces MeOH to H2 and MeO-; MeO- deprotonates the N-H anilide, and Fc+ then SET-oxidizes the resulting amidate to an amidyl radical (regenerating Fc). The amidyl radical cyclizes onto the tethered olefin, and the resulting C-radical abstracts H from 1,4-cyclohexadiene to give the hydroamidation product.",
+  "rate_determining_step": "Single-electron transfer from anilide conjugate base to Fc+ (facilitated by less polar mixed THF/MeOH solvent that destabilizes ionic species)",
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of 1a with Fc",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "In basic MeOH, Ep/2(1a)=+0.83 V vs SCE >> Ep/2(Fc)=+0.37 V, no electron transfer observed; in THF/MeOH (5:1) the potentials converge to within 60 mV (1a +0.61 V; Fc +0.55 V) and the Fc back-scan disappears, indicating efficient SET"
+    },
+    {
+      "name": "cyclopropyl radical clock substrate 17",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Electrolysis gave ring-opened product 18 (67%), supporting a radical (amidyl) intermediate"
+    },
+    {
+      "name": "1,4-cyclohexadiene (1,4-CHD)",
+      "smiles": "C1C=CCC=C1",
+      "purpose": "intermediate_trap",
+      "observation": "Serves as H-atom donor to the cyclized C-radical; omission with substrate 15 led to oxidative termination giving indoline 16"
+    },
+    {
+      "name": "Na2CO3 (base substitution control)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No electron transfer detected when Na2CO3 was used instead of electrogenerated MeO-, indicating in situ MeO- is critical"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Solvent polarity is a key design element: switching from MeOH to THF/MeOH lowers substrate oxidation potential and raises Fc oxidation potential, enabling outer-sphere SET. Chemoselectivity (Scheme 2) shows oxidation occurs only on the more electron-rich PMP-carbamate, consistent with an outer-sphere SET mediator mechanism rather than direct electrolysis. With substrates lacking H-atom donor, an oxidative cyclization (C-radical further oxidized) pathway operates instead of hydroamidation."
+}

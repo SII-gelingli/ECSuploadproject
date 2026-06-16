@@ -1,0 +1,101 @@
+{
+  "doi": "10.1039_d2qo01111e",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical β-chlorosulfoxidation of alkenes using thiols and HCl as limiting reagents with water as the oxygen source",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of thiophenol generates a thiyl radical; subsequent anodic oxidations convert the β-thioether radical to an episulfonium cation and then oxidize the sulfide to a sulfoxide; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "thiyl radical (ArS•)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "diaryl disulfide (ArSSAr)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "disulfide radical cation / ArS+ equivalent",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-thioether carbon-centered radical (E)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "episulfonium ion (F)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-chloro sulfide (G)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-chloro sulfide radical cation (H)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-chlorosulfoxide product (I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-hydroxyl sulfide (Int6)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "β-hydroxyl sulfoxide (47)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes ArSH to a thiyl radical (in equilibrium with ArSSAr/disulfide radical cation); the thiyl radical adds to the alkene to give a β-thio C-radical, which is further oxidized at the anode to an episulfonium cation that is captured by chloride to give a β-chloro sulfide; a second anodic SET on sulfur followed by water attack and deprotonation delivers the β-chlorosulfoxide, while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "H2 18O isotope labeling",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "Sulfoxide O is 95:5 18O/16O, confirming water as the oxygen source"
+    },
+    {
+      "name": "vinylcyclopropane (radical clock, 56)",
+      "smiles": "C(=C)(c1ccccc1)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 57 obtained (10%, 2:1 dr), consistent with a thiyl/carbon-radical intermediate"
+    },
+    {
+      "name": "β-hydroxyl sulfoxide 47",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Submission of 47 under standard conditions gave only trace 3, ruling out β-hydroxy sulfoxide as a competent intermediate"
+    },
+    {
+      "name": "sampling/time-course of electrolysis",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Disulfide (Int1), β-functionalized sulfides (Int2–5) and β-hydroxy sulfoxide (Int6) accumulate in the first hour; β-chlorosulfoxide 8 forms only afterward, supporting β-functionalized organosulfur species as on-cycle intermediates"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "kinetic_order",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "A parallel path b is proposed where the alkene is first oxidized to a radical cation that is then trapped by ArS•/ArSSAr to converge on the episulfonium ion F. The β-hydroxy sulfoxide pathway (via Int6/47) is explicitly excluded by the control experiment, so chloride capture of the episulfonium ion precedes S-oxidation."
+}

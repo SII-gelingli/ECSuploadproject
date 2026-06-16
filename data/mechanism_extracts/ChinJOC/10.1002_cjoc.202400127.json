@@ -1,0 +1,108 @@
+{
+  "doi": "10.1002_cjoc.202400127",
+  "journal": "ChinJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical multicomponent cascade of indole-tethered alkenes with CF3SO2Na and n-Bu4NI to assemble iodomethyl spiropyrrolidinyl-oxindoles via iodide-mediated radical trifluoromethylsulfonyloxylation, spirocyclization, and water coupling.",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (I-) to I2 acts as the mediator that oxidizes CF3SO2Na to the CF3S(O)O• radical; additional anodic oxidations convert the spirocyclic C-radical to a cation and oxidize the hemiaminal to the oxindole carbonyl.",
+  "key_intermediates": [
+    {
+      "name": "CF3S(O)O• (trifluoromethylsulfonyloxyl radical)",
+      "smiles": "[O]S(=O)C(F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Intermediate A: C-radical from O-addition of CF3S(O)O• to alkene of 1a",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Intermediate B: spirocyclic indolyl C3-radical after 5-exo cyclization",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Intermediate C: cationic indoleninium after anodic oxidation of B",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Intermediate D: indolenine bearing CH2-OS(O)CF3 group",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Intermediate E: sulfonic ester after second anodic oxidation of D",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Intermediate 5: iodomethyl indolenine (SN2 product from E + I-)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Intermediate F: hemiaminal from H2O addition to 5",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "I2 (iodine, mediator from anodic oxidation of I-)",
+      "smiles": "II",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes I- to I2, which oxidizes CF3SO2- to CF3S(O)O•; this O-centered radical adds to the tethered alkene (A), 5-exo-trig spirocyclization onto the indole gives C3-radical B, which is anodically oxidized to indoleninium C and deprotonated to indolenine D; a second anodic oxidation furnishes sulfonate ester E, SN2 displacement by I- yields iodomethyl indolenine 5, water addition gives hemiaminal F, and final anodic oxidation delivers the oxindole 3a.",
+  "rate_determining_step": "Radical addition of CF3S(O)O• to the alkene via TS1 (ΔG‡ = 27.8 kcal/mol), the highest barrier on the computed profile.",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3a only in trace; TEMPO–SO2CF3 adduct 4 detected by ESI-MS, confirming CF3S(O)O• radical."
+    },
+    {
+      "name": "Reaction without CF3SO2Na",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only trace 3a, demonstrating CF3SO2Na is essential as the radical source."
+    },
+    {
+      "name": "Reaction under N2 (no air)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only trace 3a; suggests O2 or aerobic conditions contribute (control)."
+    },
+    {
+      "name": "N-alkyl indole substrates (1q, 1r; R = Me, Et)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "0% yield of spiroproduct, supporting indoleninium/indolenine intermediate requiring free N–H for tautomerization."
+    },
+    {
+      "name": "Intermediate 5 detection (2 h reaction)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Iodomethyl indolenine intermediate 5 detected by ESI-MS, supporting proposed pathway."
+    },
+    {
+      "name": "Cyclic voltammetry of n-Bu4NI, CF3SO2Na, 1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak for n-Bu4NI at 0.71 V; CF3SO2Na at 1.90 V; no oxidation peak for 1a — reaction is triggered by iodide oxidation (mediator)."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "DFT",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Alternative 6-endo spirocyclization (TS2′, ΔG‡ = 25.6 kcal/mol) was computed but disfavored vs 5-exo TS2 (21.8 kcal/mol), explaining regioselectivity for the 5-membered spirocycle. An alternative direct SN2 on intermediate D by iodide was ruled out by DFT (TS3′ = 35.7 kcal/mol) in favor of prior anodic oxidation to sulfonic ester E followed by SN2 (TS3 = 26.0 kcal/mol). Direct CF3• incorporation (trifluoromethyl spiroproduct) was not observed — O- rather than C-radical addition operates."
+}

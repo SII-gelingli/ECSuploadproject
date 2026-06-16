@@ -1,0 +1,140 @@
+{
+  "doi": "10.1021_ja00028a042",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electron-transfer-induced valence isomerization of 2,2'-distyrylbiphenyl into 9,10-dibenzyl-9,10-dihydrophenanthrene or a cyclobutane via reductive bis-benzylic dianion intermediates.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "mediator_cathodic",
+    "radical_anion",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic reduction (heterogeneous on K/Li, homogeneous via mediator dianions such as anthracene or stilbene, or electrochemically in DMA/THF) sequentially injects electrons into 2,2'-distyrylbiphenyl to form radical anion 1•-, dianion 1^2-, and higher anions which undergo skeletal rearrangement.",
+  "key_intermediates": [
+    {
+      "name": "radical monoanion of 2,2'-distyrylbiphenyl (1•-) with intact frame",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "dianion 1^2- (reactive dianion that rearranges)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "bis-benzylic dianion 3^2- (9,10-dihydrophenanthrene-type, trans-configured benzyl substituents), conformers 3a^2- and 3b^2-",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclobutane radical anion 2b•-",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclobutane dianion 3b^2- precursor to 2b upon reoxidation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phenanthrene and stilbene radical anion/dianion fragmentation products",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "trianion 3•3- / tetraanion 1^4-",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "9,10-dibenzyl-9,10-dihydrophenanthrene (6), product from protonation of 3^2-",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "all-trans cyclobutane 2b, product from oxidation of 3b^2-",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "tetrahydro derivative 10 from protonation of 1^4-",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode (or alkali metal / mediator dianion) delivers a first electron to 1 giving stable 1•-, then a second electron yields dianion 1^2- which rapidly rearranges (C-C bond formation at the benzylic/styryl carbons) into the bis-benzylic dianion 3^2- (kinetically as 3b^2-, equilibrating to 3a^2-); protonation of 3^2- gives dihydrophenanthrene 6, whereas oxidative quenching of 3b^2- (via 2b•-) closes the second C-C bond to give cyclobutane 2b. Overall observed as a two-electron EEC(DISP) process with disproportionation of 1•- driven by ion pairing.",
+  "rate_determining_step": "Follow-up rearrangement of dianion 1^2- to 3^2- (k ≈ 0.2 s^-1 in DMA at -40 °C; 0.04 s^-1 in DMA/TBABr), fastened at the dianion (or trianion) stage.",
+  "probe_reagents": [
+    {
+      "name": "CdCl2 (oxidative quench)",
+      "smiles": "[Cd+2].[Cl-].[Cl-]",
+      "purpose": "intermediate_trap",
+      "observation": "Reoxidation of anions traps 3^2- as dihydrophenanthrene 6 (up to 100%); also generates cyclobutane 2b from 3b^2-."
+    },
+    {
+      "name": "Iodine (oxidative quench)",
+      "smiles": "II",
+      "purpose": "intermediate_trap",
+      "observation": "Slow reoxidation yields stereoselectively the all-trans cyclobutane 2b (25-28%) alongside 6."
+    },
+    {
+      "name": "Methylene bromide / 1,2-dibromoethane",
+      "smiles": "BrCBr",
+      "purpose": "intermediate_trap",
+      "observation": "Quenching gives only starting material recovered (no alkylation of dianion); indicates fast SET from dianion."
+    },
+    {
+      "name": "1,3-dibromopropane",
+      "smiles": "BrCCCBr",
+      "purpose": "intermediate_trap",
+      "observation": "28% mono- and diadducts 7a/7b formed, evidencing benzylic carbanion character of 3^2-."
+    },
+    {
+      "name": "Ethanol / methanol (protonation)",
+      "smiles": "CCO",
+      "purpose": "intermediate_trap",
+      "observation": "Fast protonation of 3^2- gives 6 quantitatively; protonation of 1^4- gives tetrahydro 10."
+    },
+    {
+      "name": "Anthracene (mediator)",
+      "smiles": "c1ccc2cc3ccccc3cc2c1",
+      "purpose": "redox_probe",
+      "observation": "Anthracene dianion (E = -2.55 V) delivers one electron to 1 giving radical monoanion; product distribution (30% SM, 2-7% 6, 10-13% 11) confirms accessibility of mono- vs dianion stages."
+    },
+    {
+      "name": "Stilbene (mediator)",
+      "smiles": "C(=Cc1ccccc1)c1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "Stilbene dianion (-2.67 V) cleanly drives 1 to 3^2-, isolated as 6 after CdCl2 quench."
+    },
+    {
+      "name": "tert-butyl-substituted analog 5",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Solubility/steric probe: gives tetraanion 5^4- cleanly observable by NMR; second bond formation to cyclobutane sterically hindered, so only DHP 8 (no [2+2] adduct 9) forms."
+    },
+    {
+      "name": "15-crown-5",
+      "smiles": "C1COCCOCCOCCOCCO1",
+      "purpose": "other",
+      "observation": "Sequestration of alkali cations suppresses ion-pair-driven follow-up reactions, supporting ion-pair acceleration of 1^2- → 3^2-."
+    },
+    {
+      "name": "TBABr / TBAPF6 vs alkali salts (supporting electrolyte)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Switching to TBA+ reduces ion pairing; ΔE between first two reductions drops to ~90 mV (vs ~220 mV with alkali), slowing 1^2- → 3^2- ~5x and shifting product distribution."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "EPR",
+    "stoichiometric_intermediate",
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "kinetic_order",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly rule out an intramolecular [2+2] cycloaddition pathway (concerted or radical-anion mediated) for forming cyclobutane 2 under reductive conditions: 2b only appears upon reoxidation of 3b^2-. The voltammetric two-electron behavior at the first reduction is interpreted as an EEC(DISP) mechanism (Scheme III) rather than a true ECE, with disproportionation 2·1•- ⇌ 1 + 1^2- driven by ion pairing. Two conformers 3a^2- (rotatable, charges far apart, thermodynamic) and 3b^2- (fixed, charges close, kinetic) are invoked; only 3b^2- ring-closes stereoselectively to trans-2b. Side pathway at high T/low charge: fragmentation of 2 to phenanthrene + stilbene; at high charge: over-reduction to inert tetraanion 1^4- trapped as tetrahydro 10. Contrasts with photochemical [2+2] which gives all-trans 2b and thermal which gives all-cis 2a."
+}

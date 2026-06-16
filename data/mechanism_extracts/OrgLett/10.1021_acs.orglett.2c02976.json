@@ -1,0 +1,72 @@
+{
+  "doi": "10.1021_acs.orglett.2c02976",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "electroreductive three-component dicarbofunctionalization of styrenes with aryl iodides and unactivated alkyl iodides via Ni catalysis",
+  "mechanism_family": [
+    "radical_cathodic",
+    "electrocatalysis_inner_sphere",
+    "sacrificial_anode"
+  ],
+  "electrochemical_role": "cathodic reduction of Ni(II) precatalyst to Ni(0) initiates the cycle; Ni(II) species (G) generated after alkyl iodide activation is re-reduced cathodically to Ni(0); sacrificial Fe anode provides counter-oxidation (M to M^n+)",
+  "key_intermediates": [
+    {
+      "name": "Ni(0)Ln (A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ar-Ni(II)-I arylnickel(II) (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical (C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical from styrene addition (D)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ar(alkyl-CH-Ar')-Ni(III)-I complex (E)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(I)Ln-I (F)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(II)Ln(I)2 (G)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Cathode reduces Ni(II) to Ni(0) (A), which undergoes oxidative addition with ArI to give Ar-Ni(II) (B); Ni(I) (F) abstracts iodide from alkyl iodide to give alkyl radical (C) and Ni(II) (G); the alkyl radical adds to styrene forming benzylic radical (D) which combines with Ar-Ni(II) (B) to form Ni(III) (E); reductive elimination delivers the product and Ni(I) (F), while Ni(II) (G) is re-reduced at the cathode to Ni(0).",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Multicomponent product 4a abolished (0%); TEMPO-alkyl adduct 7 isolated in 13% from full system and 31% from alkyl iodide 3a alone, confirming alkyl radical intermediate"
+    },
+    {
+      "name": "DMPO (5,5-dimethyl-1-pyrroline N-oxide)",
+      "smiles": "CC1(C)CC=[N+]1[O-]",
+      "purpose": "radical_trap",
+      "observation": "EPR spin-adduct observed (g = 2.00502, αN = 14.54 G, αH = 20.92 G) for 3a, 1a+3a, and 1a+2a+3a; 1a and 2a alone were EPR-inactive, confirming alkyl radical originates from alkyl iodide 3a"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "EPR"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Tertiary alkyl bromides gave higher yields than tertiary alkyl iodides (63% vs 13%), suggesting halide identity influences radical generation efficiency. The alkyl radical adds preferentially to styrene to give the thermodynamically favored benzylic radical, which dictates regioselectivity of the two C-C bond formations (Csp3-Csp3 and Csp3-Csp2)."
+}

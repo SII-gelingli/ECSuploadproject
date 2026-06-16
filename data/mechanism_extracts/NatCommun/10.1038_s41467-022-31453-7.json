@@ -1,0 +1,101 @@
+{
+  "doi": "10.1038_s41467-022-31453-7",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative NHC organocatalysis of enals/aldehydes via iodide-mediated single-electron-transfer oxidation of the Breslow intermediate, enabling α-, β-, γ-, δ- and carbonyl-carbon functionalizations (cyclization, benzannulation, DKR).",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "carbene",
+    "paired_electrolysis",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anode performs two SET events: (A) one-electron oxidation of the Breslow intermediate I to the NHC-bound ketyl radical cation II, and (B) one-electron oxidation of iodide to iodine radical; radical-radical coupling near the anode then forms an α-iodo intermediate III which loses I- to give the acyl azolium IV.",
+  "key_intermediates": [
+    {
+      "name": "Breslow intermediate I (NHC-bound enol from aldehyde + NHC)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "NHC-attached ketyl radical cation II (radical intermediate after anodic SET)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Iodine radical (I•) generated at anode",
+      "smiles": "[I]",
+      "role": "transient"
+    },
+    {
+      "name": "α-Iodo NHC adduct III from radical-radical coupling",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Acyl azolium intermediate IV (after I- elimination)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Iodide ion (I-) regenerated mediator",
+      "smiles": "[I-]",
+      "role": "resting_state"
+    },
+    {
+      "name": "Iodinated NHC adduct D/E (poisoned catalyst, off-cycle)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "NHC adds to aldehyde to give Breslow intermediate I, which is anodically oxidized (event A) to the NHC ketyl radical cation II; concurrently iodide is anodically oxidized (event B) to I•. The two radicals couple at the anode surface to give III, which eliminates iodide to give acyl azolium IV; IV is then trapped by the nucleophilic partner (hydrazone, 1,3-dicarbonyl, ketimine, etc.) to deliver the chiral product and regenerate NHC.",
+  "rate_determining_step": "Anodic SET oxidation of the Breslow intermediate to the ketyl radical cation II is implicated as the key (and likely turnover-limiting) electrochemical step; direct oxidation of enal without NHC requires >2 V vs SCE while Breslow intermediate is oxidized below -1.0 V.",
+  "probe_reagents": [
+    {
+      "name": "cis-2-phenylcyclopropane-1-carbaldehyde (radical clock, cis-20)",
+      "smiles": "O=C[C@H]1C[C@@H]1c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Under electrochemical NHC/I- conditions gave ring-opened/isomerized trans-21 (15%), consistent with a radical intermediate; under chemical DQ oxidation only non-isomerized cis-21 was obtained (92%), indicating a two-electron pathway in DQ chemistry vs SET pathway electrochemically."
+    },
+    {
+      "name": "I2 (stoichiometric chemical oxidant test)",
+      "smiles": "II",
+      "purpose": "intermediate_trap",
+      "observation": "50 mol% I2 fully suppressed the [4+2] annulation (0% 3a); 10 mol% I2 added to standard reaction gave 53% yield, showing I2 poisons NHC catalyst by forming iodinated adducts D/E."
+    },
+    {
+      "name": "Iodinated NHC adducts D and E (isolated poisoned catalysts)",
+      "smiles": null,
+      "purpose": "intermediate_trap_other",
+      "observation": "Isolated in 48% (D) and 52% (E); when used as catalysts under standard conditions gave 0% product, confirming they are catalytically inert off-pathway species."
+    },
+    {
+      "name": "Control without NHC (γ-iodination test)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No γ-iodinated enal 19 formed (0%), excluding an enal γ-iodination pathway."
+    },
+    {
+      "name": "α-epimerization control on cis-20",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "cis-20 subjected to basic standard conditions showed no trans-20, ruling out α-racemization as the source of isomerization."
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, NHC A, DBU, TBAI",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Breslow intermediate oxidation potential <-1.0 V vs SCE (vs >2 V for free enal); mixing Breslow intermediate with TBAI causes disappearance of I-/I2 redox waves and irreversible coupling features, supporting radical-radical coupling between I• and ketyl radical II."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "crossover"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly contrast their SET radical-coupling mechanism with the conventional two-electron (DET) oxidative NHC catalysis using DQ; the radical clock gives different products between the two regimes. An alternative γ-iodination/SN2-like pathway was considered but excluded by the no-NHC control. Iodide functions as a redox mediator that is normally a catalyst poison; the non-uniform concentration of the electrolysis system (high local [NHC] at electrode) is invoked to explain why radical coupling outcompetes catalyst iodination."
+}

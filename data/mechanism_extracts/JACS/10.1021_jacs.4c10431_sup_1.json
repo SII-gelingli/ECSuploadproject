@@ -1,0 +1,102 @@
+{
+  "doi": "10.1021_jacs.4c10431_sup_1",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical anodic oxidation of an α-methylstyrene-type substrate leading to benzylic/allylic hydroxylation (formation of 2) versus deprotonation to a diene-type product (3), with TEMPO trapping evidence for a radical-polar crossover via a benzylic cation intermediate INT2.",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "radical_cation",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the styrene substrate generates a styrene radical cation (INT1); after TEMPO radical rebound a closed-shell benzylic cation (INT2) is formed, which is then trapped by H2O (hydroxylation) or deprotonated by lutidine (diene formation). A second anodic oxidation of 2 leads onward to ketone product 4.",
+  "key_intermediates": [
+    {
+      "name": "styrene-derived radical cation (INT1)",
+      "smiles": "[CH2]=C([CH3])c1ccccc1.+",
+      "role": "transient"
+    },
+    {
+      "name": "TEMPO-trapped benzylic cation (INT2)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "TS_radical (radical rebound TS with TEMPO)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TS_ionic (water addition TS, lutidine-assisted)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TS-OH-term (terminal hydroxylation TS)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TS-OH-benzyl (benzylic hydroxylation TS)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TS-diene (deprotonation TS by lutidine)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-hydroxy TEMPO adduct (2, benzylic OH)",
+      "smiles": "OC(c1ccccc1)(C=C)ON2C(C)(C)CCCC2(C)C",
+      "role": "reactive"
+    },
+    {
+      "name": "allyl-TEMPO ether (3, deprotonation product)",
+      "smiles": "C(=C)C(=C)(c1ccccc1)ON2C(C)(C)CCCC2(C)C",
+      "role": "off_pathway"
+    },
+    {
+      "name": "oxidized bis-aminoxy/oxocarbenium INT3 en route to 4",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-hydroxy aryl ketone (4)",
+      "smiles": "OC(c1ccccc1)(C(=O)C)O",
+      "role": "reactive"
+    },
+    {
+      "name": "TMP+ (oxoammonium)",
+      "smiles": "O=[N+]1C(C)(C)CCCC1(C)C",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode removes one electron from the styrene to give a radical cation INT1; TEMPO couples to the terminal carbon (TS_radical, 1.7 kcal/mol) producing the benzylic cation INT2 (-23.8 kcal/mol), which partitions between H2O addition (benzylic vs terminal hydroxylation, giving 2 or 2') and lutidine-mediated deprotonation to diene 3; subsequent anodic oxidation of 2 generates INT3 that collapses to ketone 4 with release of TMP+.",
+  "rate_determining_step": "On the productive surface, the lutidine/H2O-assisted ionic addition/deprotonation step from INT2 (TS-OH-benzyl 11.3, TS-diene 13.7, TS-OH-term 14.3 kcal/mol) is rate-limiting; the prior TEMPO radical-rebound is nearly barrierless (1.7 kcal/mol).",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "DFT shows near-barrierless radical rebound (TS_radical = 1.7 kcal/mol) onto the styrene radical cation to give the strongly stabilized adduct INT2 (-23.8 kcal/mol), supporting a stepwise radical-then-cation (radical-polar crossover) pathway over a direct ionic addition (TS_ionic = 19.6 kcal/mol)."
+    },
+    {
+      "name": "2,6-lutidine",
+      "smiles": "Cc1cccc(C)n1",
+      "purpose": "other",
+      "observation": "Acts as Brønsted base in the deprotonation pathway (TS-diene, 13.7 kcal/mol) to deliver diene product 3, and as proton shuttle with H2O in the hydroxylation TSs."
+    },
+    {
+      "name": "H2O",
+      "smiles": "O",
+      "purpose": "intermediate_trap",
+      "observation": "Nucleophile that traps cationic INT2 at the benzylic position (TS-OH-benzyl 11.3 kcal/mol, leading to 2 at -26.4) preferentially over the terminal position (TS-OH-term 14.3, leading to 2' at -19.5)."
+    }
+  ],
+  "evidence_types_used": [
+    "DFT",
+    "intermediate_trap_TEMPO"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two competing mechanistic surfaces were computed: (i) a 'radical trapping / radical-polar crossover' route via TEMPO addition to the styrene radical cation forming closed-shell cation INT2, and (ii) a direct 'charge annihilation' ionic route via TS_ionic (19.6 kcal/mol) leading to 2'. The radical-polar crossover (favored) is far lower in energy. From INT2, three downstream pathways were compared: benzylic hydroxylation (favored, TS = 11.3, giving 2), deprotonation to diene 3 (TS = 13.7), and terminal hydroxylation (TS = 14.3, giving 2'). Subsequent oxidation of 2 generates ketone 4 with extrusion of TMP+ (Figure S19). NPA charge analysis on INT2 (C1 +0.21, C2 +0.37, C3 +0.21) rationalizes site selectivity."
+}

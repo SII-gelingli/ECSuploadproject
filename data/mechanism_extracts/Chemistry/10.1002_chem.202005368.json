@@ -1,0 +1,120 @@
+{
+  "doi": "10.1002_chem.202005368",
+  "journal": "Chemistry",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical tri-/difluoromethylation-triggered radical cyclization of N-substituted 2-aryl indole acrylamides coupled with oxidative cleavage of the indole C(2)=C(3) bond to deliver fluoroalkylated 2-(2-acetylphenyl)isoquinoline-1,3-diones.",
+  "mechanism_family": [
+    "radical_anodic",
+    "paired_electrolysis",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2Na (or Mn(II)/CF2HSO2Na for CF2H) generates the fluoroalkyl radical that adds to the acrylamide alkene; subsequent anodic oxidations advance the cyclized intermediate to a radical cation and then to an iminium, while the cathode reduces water/H+ to H2 generating hydroxide that delivers the two new C=O oxygens.",
+  "key_intermediates": [
+    {
+      "name": "CF3 radical from anodic oxidation of CF3SO2- (loss of SO2)",
+      "smiles": "[CH0](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon radical A from CF3 addition to acrylamide alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cyclohexadienyl-type radical B after radical cyclization onto indole C2",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Trifluoromethylated indolo[2,1-a]isoquinoline 6 (cyclization product)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Radical cation D from anodic oxidation of 6",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "C3-hydroxylated intermediate E (iminium after OH addition)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "trans-2,3-dihydroxy intermediate F after second OH addition at C2",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Alkoxide/diol G prior to C-C cleavage",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ring-opened intermediate H after C2-C3 bond cleavage",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "MnIII-CF2H species (for CF2H variant)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- (or Mn(II) for CF2H) to generate a fluoroalkyl radical that adds to the acrylamide alkene and cyclizes onto the indole; a second anodic oxidation/deprotonation gives the closed indoloisoquinoline 6, which is further oxidized at the anode to a radical cation, then sequentially attacked by cathodically generated hydroxide at C3 and C2 to give a trans-diol; deprotonation and C2–C3 bond cleavage afford the diketone product while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely quenched; TEMPO–CF3 and TEMPO–CF2H adducts detected, supporting fluoroalkyl radical intermediates."
+    },
+    {
+      "name": "Isolated cyclization intermediate 6",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "6 isolated in 65% after 2 h electrolysis and converted to product 3a in 93% under standard conditions, establishing 6 as a key on-cycle intermediate."
+    },
+    {
+      "name": "N-Boc 2-aryl indole 1r (no acrylamide tether)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Without Langlois reagent gave indole oxidative cleavage product 7 in 71%, showing the oxidative cleavage step is independent of fluoroalkylation."
+    },
+    {
+      "name": "H2O-18 isotope labeling",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "Doubly 18O-labeled product 3f detected by HRMS, confirming both new carbonyl oxygens originate from water."
+    },
+    {
+      "name": "N2 atmosphere control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction under N2 still gave 3a in 76%, ruling out O2 as the oxygen source."
+    },
+    {
+      "name": "Anhydrous conditions",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only trace product formed without water (Table 1 entry 11), consistent with H2O as O source."
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, 2a, 2b",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Eox(CF3SO2Na)=1.1 V and Eox(CF2HSO2Na)=0.8 V vs Ag/AgCl, both well below Eox(1a)=1.58 V, so fluoroalkyl precursors are oxidized first."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "H/D_labeling",
+    "product_isotope_distribution",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "strong",
+  "notes": "For the CF2H variant a MnCl2·4H2O co-catalyst is required: anodic oxidation of Mn(II) to a Mn(III)-CF2H species delivers the CF2H radical, while the CF3 pathway is metal-free. Authors explicitly establish the sequence as fluoroalkylation → cyclization → indole C(2)=C(3) oxidative cleavage (not the reverse order)."
+}

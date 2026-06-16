@@ -1,0 +1,78 @@
+{
+  "doi": "10.1002_ejoc.202201032",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical vicinal fluoroselenenylation of alkenes using diaryl diselenides and Et3N·3HF to give β-fluoroselenides.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of diaryl diselenide (ArSeSeAr) to its radical cation, which fragments into an ArSe• radical and an ArSe+ cation; the alkene-derived carbon radical is then further oxidized at the anode to a selenonium cation that is trapped by fluoride.",
+  "key_intermediates": [
+    {
+      "name": "diaryl diselenide radical cation (ArSeSeAr•+)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "aryl selenium radical (ArSe•)",
+      "smiles": "[Se][c]1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "aryl selenium cation (ArSe+)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-selenyl carbon-centered radical (R1R2C•-CH2SeAr)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "three-membered seleniranium/selenonium cation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-fluoroselenide product",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes ArSeSeAr to its radical cation, which fragments to ArSe• + ArSe+; ArSe• adds across the alkene to give a β-selenyl C-radical, which is further oxidized at the anode to a selenonium (seleniranium) cation, and fluoride from Et3N·3HF opens it to deliver the β-fluoroselenide.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "(1-(2-phenylcyclopropyl)-vinyl)benzene (radical clock 29)",
+      "smiles": "C(=C)(c1ccccc1)C1CC1c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 30 obtained in 74% yield, indicating involvement of a selenium radical adding to the alkene."
+    },
+    {
+      "name": "Dark control (electrolysis without light)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction still proceeded in >99% yield, excluding photochemical generation of ArSe• and supporting anodic oxidation as the radical source."
+    },
+    {
+      "name": "No-electricity control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product formed, confirming electrochemical requirement."
+    },
+    {
+      "name": "Cyclic voltammetry of 1 and 2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peaks: α-methylstyrene 2.48 V vs SCE; PhSeSePh 1.91 V vs SCE — diselenide is oxidized first under electrolysis."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Reductive homo-coupling of the ArSe+ cation at the cathode is proposed to regenerate ArSeSeAr, closing a redox loop. An alternative photochemical pathway (visible-light homolysis of PhSeSePh to ArSe•) was explicitly excluded by the dark experiment."
+}

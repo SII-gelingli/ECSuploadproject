@@ -1,0 +1,62 @@
+{
+  "doi": "10.1002_ejoc.202500222_sup_1",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical reductive aryl radical cyclization/cross-coupling of aryl iodide-tethered alkenes with 1,4-dicyanobenzene to form chroman-type products bearing arylated quaternary centers",
+  "mechanism_family": [
+    "radical_cathodic",
+    "sacrificial_anode",
+    "direct_SET",
+    "radical_anion"
+  ],
+  "electrochemical_role": "Cathodic reduction: aryl iodide 1a is reduced at the carbon cloth cathode to generate an aryl radical (via C-I cleavage), while 1,4-dicyanobenzene 2a is reduced to its persistent radical anion; the Mg anode is sacrificial",
+  "key_intermediates": [
+    {
+      "name": "aryl radical from C-I cleavage of 1a",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical from 5-exo-trig cyclization onto pendant prenyl ether (chroman tertiary C-radical)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,4-dicyanobenzene radical anion",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "TEMPO-trapped chroman alkyl adduct (9)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "TEMPO-trapped dicyanobenzene adduct (10)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "TEMPO-aryl adduct from 2a (11)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode reduces 1,4-dicyanobenzene 2a to its radical anion (CV: ca. -1.49/-1.60 V) and reduces aryl iodide 1a (more negative, ca. -2.45/-2.52 V) to give an aryl radical after loss of iodide; the aryl radical undergoes intramolecular 5-exo-trig cyclization onto the alkene, and the resulting tertiary C-radical couples with the dicyanobenzene radical anion, followed by loss of cyanide to deliver the arylated chroman 3aa.",
+  "rate_determining_step": "Cathodic SET to the aryl iodide generating the aryl radical (highest reduction potential observed by CV)",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "TEMPO adducts 9 (chroman alkyl-OTMP), 10 (dicyanocyclohexadienyl-OTMP) and 11 (aryl-OTMP from 2a) each detected by HRMS (<5%); reaction to 3aa suppressed, supporting radical intermediates"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "intermediate_trap_TEMPO"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Current on/off experiments (Figure S1c) show yield increases only during current-on periods and plateaus when current is off, indicating no radical chain propagation and that continuous electron input is required. CV titration of 1a into 2a shows progressive cathodic shift of the 2a reduction wave (-1.62 to -1.63 V), consistent with interaction/consumption of the 2a radical anion in the presence of 1a. Sacrificial Mg anode balances charge."
+}

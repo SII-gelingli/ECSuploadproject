@@ -1,0 +1,66 @@
+{
+  "doi": "10.1021_acs.joc.3c01310_sup_1",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical sulfonylation/cyclization of N-allylamides with sulfonyl hydrazides (or CF3SO2Na) to form trifluoromethylated/sulfonylated oxazolines via radical-polar crossover",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of TsNHNH2 (4a) via stepwise -3H+/-3e- to generate sulfonyl diazo radical that loses N2 to give sulfonyl radical IV; a second anodic SET oxidizes the alkyl radical adduct V to cation VI; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "sulfonyl diazo radical (Ts-N=N•) intermediate III",
+      "smiles": "Cc1ccc(S(=O)(=O)N=[N])cc1",
+      "role": "transient"
+    },
+    {
+      "name": "tosyl/sulfonyl radical IV",
+      "smiles": "Cc1ccc(S(=O)(=O)[CH2])cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered benzylic radical adduct V (after sulfonyl addition to alkene of 1a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation VI (after second anodic SET)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "oxazoline product 5a (after intramolecular O-cyclization, -H+)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, TsNHNH2 is oxidized (-3e-, -3H+) and extrudes N2 to give a sulfonyl radical, which adds regioselectively to the alkene of the N-allylamide forming a benzylic radical; a second anodic SET oxidizes this radical to a cation that is trapped intramolecularly by the amide oxygen to give the oxazoline after deprotonation. The cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "With CF3SO2Na: 3a only trace and Ph2C(OH)CF3-type adduct detected by GC-MS, indicating CF3 radical intercepted by DPE; with TsNHNH2: 5a obtained in 18% and Ts-CH=CPh2-type styrene adduct detected by GC-MS, indicating sulfonyl radical trapped by DPE"
+    },
+    {
+      "name": "BHT (2,6-di-tert-butyl-4-methylphenol)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "With CF3SO2Na: 3a obtained in 23% with BHT-CF3 adduct (cyclohexadienone) detected by GC-MS; with TsNHNH2: 5a in 25% with BHT-Ts adduct detected by GC-MS, supporting CF3• and Ts• intermediates"
+    },
+    {
+      "name": "H-type divided cell experiment",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Substrate + 2a/K2CO3 (or 4a) only in anodic chamber gave 3a (57%) and 5a (39%), confirming the key bond-forming events occur at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two coupled systems are described: (i) CF3SO2Na (2a) with K2CO3 in MeCN/H2O giving 3a (CF3-oxazoline), and (ii) TsNHNH2 (4a) with Me4NBF4 in MeCN giving 5a (Ts-oxazoline). The scheme S3 explicitly depicts only the sulfonyl hydrazide pathway, but the CF3SO2Na variant is proposed to proceed analogously via CF3• addition and radical-polar crossover. Divided-cell experiments locate the productive chemistry at the anode; DPE and BHT trapping experiments support discrete sulfonyl/CF3 radical intermediates."
+}

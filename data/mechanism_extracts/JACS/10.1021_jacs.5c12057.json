@@ -1,0 +1,78 @@
+{
+  "doi": "10.1021_jacs.5c12057",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Photoinduced chiral N,N'-dioxide/metal Lewis acid-catalyzed asymmetric dearomative [2+2] photocycloaddition of quinolines and indoles with bicyclo[1.1.0]butanes (BCBs) to give chiral dihydroquinoline-fused and indoline-fused bicyclo[2.1.1]hexanes (BCHs).",
+  "mechanism_family": [
+    "biradical",
+    "photoredox_combined",
+    "electrocatalysis_outer_sphere"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Quinoline-acetyl/Zn(II)/N,N'-dioxide ground-state complex (INT0)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Triplet excited quinoline-LA complex (long-lived triplet diradical on quinoline C5-C8/C2-C3 of indole)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon-centered radical adduct after first C-C bond formation between BCB terminal carbon and quinoline C5 (INT2-Si1, cyclobutyl/quinolinyl 1,4-biradical bound to Zn)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Closed-shell dihydroquinoline-fused BCH product coordinated to Zn (INT3-Si1)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Indole/Tb(III)/L4-TqCPh3 triplet diradical (τ = 0.04 s) for indole substrates",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Chiral N,N'-dioxide/Zn(II) (or Tb(III)) Lewis acid binds the 2-acyl quinoline (or 2-acyl indole) substrate, lowering its triplet energy and inducing a bathochromic shift so that 400 nm light selectively excites the LA-substrate complex to a long-lived triplet diradical; this diradical adds to the strained central C-C bond of the BCB to form a chiral cyclobutyl/aryl 1,4-biradical (regio- and enantio-determining step), which then ring-closes to give the BCH product and regenerates the catalyst. SET is excluded by Rehm-Weller analysis.",
+  "rate_determining_step": "First C-C bond formation between the photoexcited triplet substrate-LA complex and the BCB terminal carbon (TS1-Si1), which is also the regio- and enantio-determining step.",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited; ESI-HRMS detected [A1+B1+TEMPO+H]+ (m/z 468.2856) and [A1+TEMPO+H]+ (m/z 327.2068), supporting radical intermediates from both quinoline and BCB."
+    },
+    {
+      "name": "Isoprene / 1,3-diene triplet quencher",
+      "smiles": "C=C(C)C=C",
+      "purpose": "intermediate_trap",
+      "observation": "Yield of C1 reduced to trace, consistent with triplet excited-state pathway."
+    },
+    {
+      "name": "O2 (air balloon)",
+      "smiles": "O=O",
+      "purpose": "intermediate_trap",
+      "observation": "Yield dropped from 80% to 32% (ee retained 98%), consistent with triplet quenching."
+    },
+    {
+      "name": "Naphthalene (3 equiv.)",
+      "smiles": "c1ccc2ccccc2c1",
+      "purpose": "intermediate_trap",
+      "observation": "Yield reduced to 57%, consistent with triplet energy transfer quenching."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "UV_vis",
+    "cyclic_voltammetry",
+    "DFT",
+    "isolation_of_intermediate",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "strong",
+  "notes": "SET (photoredox) mechanism was explicitly excluded: excited-state reduction potential of A1/Zn/L3-RaPr2(CPh3) is +1.17 V vs SCE, incompatible with BCB oxidation (+1.83 V vs SCE). Fluorescence lifetime increased from 3.76 to 4.21 ns and bathochromic shift on LA addition support selective excitation of the LA-bound complex. Quantum yield Φ = 0.04 rules out radical chain, supporting a closed catalytic cycle. Linear ligand-ee vs product-ee shows one ligand per active Zn. Regioselectivity (C5 vs C8 on quinoline; C3 vs C2 on indole) is controlled by the steric profile of the chiral pocket (extended/open/partly open) tuned by ligand bulk; DFT shows TS1-Si2 (C8) is 1.7 kcal/mol higher than TS1-Si1 (C5) due to steric clash with the ramipril framework, and Re-face is blocked by aryl ligand groups (TS1-Re1 disfavored by 1.2 kcal/mol). For indole/Tb system, C3 attack favored over C2 by 2.5 kcal/mol (48.3 vs 50.8 kcal/mol)."
+}

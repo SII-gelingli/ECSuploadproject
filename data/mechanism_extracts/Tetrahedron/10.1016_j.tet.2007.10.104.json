@@ -1,0 +1,72 @@
+{
+  "doi": "10.1016_j.tet.2007.10.104",
+  "journal": "Tetrahedron",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical carboxylation of cinnamate esters with CO2 at a metallic ring cathode with sacrificial Mg anode, affording benzylmalonate (dicarboxylic) and monocarboxylic ester products.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "sacrificial_anode",
+    "radical_anion",
+    "anion_initiated"
+  ],
+  "electrochemical_role": "Cathodic one-electron reduction of the cinnamate ester C=C to a radical anion, which attacks CO2; a second cathodic one-electron reduction generates a carbanion that is carboxylated again or protonated.",
+  "key_intermediates": [
+    {
+      "name": "cinnamate radical anion (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical from protonation of B (C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carboxylated radical anion D (from B + CO2)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-ester radical E (from C + CO2, after e-)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "carbanion F (from second reduction of D)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "monocarboxylic acid product H (F + H+)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "dicarboxylic acid product I (F + CO2)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "monocarboxylic acid product G (from E pathway)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode delivers one electron to the cinnamate ester to form a radical anion, which either adds to CO2 (major) or is protonated to a benzylic radical (minor); a second cathodic electron reduces these to carbanions that are trapped by CO2 (giving dicarboxylate) or by H+ (giving monocarboxylate), while the Mg anode is sacrificially oxidized.",
+  "rate_determining_step": "First one-electron reduction of the cinnamate ester to the radical anion",
+  "probe_reagents": [
+    {
+      "name": "CO2 saturation in CV experiment",
+      "smiles": "O=C=O",
+      "purpose": "intermediate_trap",
+      "observation": "First reduction peak shifts positive and current increases (ip/ip0 ≈ 1.76–1.96), indicating reaction of the electrogenerated radical anion with CO2."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two competing branches diverge at the radical anion B: nucleophilic addition to CO2 (major, leading to F and then dicarboxylic acid I or monocarboxylic acid H) vs protonation to benzylic radical C (minor, giving monocarboxylic acid G after further reduction/CO2 capture). Authors argue carbanion F is sterically hindered, so H+ trapping outcompetes a second CO2 addition, accounting for the mixture of mono- and dicarboxylic products."
+}

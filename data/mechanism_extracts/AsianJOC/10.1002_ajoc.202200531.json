@@ -1,0 +1,70 @@
+{
+  "doi": "10.1002_ajoc.202200531",
+  "journal": "AsianJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical N-centered radical addition/semipinacol rearrangement of alkenyl cyclobutanols with sulfonimides to give beta-amino cyclic ketones (ring-expanded cyclopentanones).",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of dibenzenesulfonimide (via PCET with n-Bu4NOAc base) generates an N-centered sulfonimidyl radical; a second anodic SET oxidizes the C-radical adduct to a carbocation that triggers 1,2-alkyl shift.",
+  "key_intermediates": [
+    {
+      "name": "sulfonimidyl N-centered radical (PhO2S)2N•",
+      "smiles": "O=S(=O)(c1ccccc1)N([S](=O)(=O)c2ccccc2)[*]",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical from addition to alkene (beta-amino tertiary C-radical bearing OTMS cyclobutane)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "beta-amino tertiary carbocation (OTMS cyclobutane substituted)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "beta-amino cyclopentanone product (after 1,2-alkyl shift / semipinacol)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the sulfonimide N-H via PCET (with n-Bu4NOAc as base) to give an N-centered radical I; I adds to the alkene of the alkenyl cyclobutanol giving C-radical II; anodic SET oxidizes II to cation III, which undergoes 1,2-alkyl (ring) migration (semipinacol) with loss of TMS to give the beta-amino cyclopentanone; protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Only trace product observed; reaction inhibited, supporting radical intermediates."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "0% product; reaction completely inhibited."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Coupling product 21 isolated in 82% yield, consistent with trapping of N-centered sulfonimidyl radical."
+    },
+    {
+      "name": "cyclic voltammetry of 1a and 2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peaks at 2.22 V (alkenyl cyclobutanol 1a) and 1.68 V (sulfonimide 2a); sulfonimide is oxidized preferentially."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism proposed by analogy to prior N-centered radical addition/semipinacol work (Li/Zhang with NFSI, Xiao with aminopyridinium); electrochemistry replaces stoichiometric external oxidants. CV indicates sulfonimide (1.68 V) is oxidized before the alkene (2.22 V), supporting initial N-H oxidation rather than alkene radical cation formation."
+}

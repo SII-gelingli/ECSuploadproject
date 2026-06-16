@@ -1,0 +1,114 @@
+{
+  "doi": "10.1002_cjoc.202300174",
+  "journal": "ChinJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrophotocatalytic reductive three-component 1,2-diarylation of alkenes with aryl halides and cyanoaromatics (isocyanopyridines) in an undivided cell, mediated by phenanthrene and 4-DPAIPN photocatalyst.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "mediator_cathodic",
+    "photoredox_combined",
+    "electrocatalysis_outer_sphere",
+    "radical_anion"
+  ],
+  "electrochemical_role": "Cathodic reduction of phenanthrene mediator generates phenanthrene radical anion, which reduces ArX to the aryl halide radical anion that fragments to aryl radical; anodic oxidation of DABCO/formate provides sacrificial electrons (replacing sacrificial metal anode).",
+  "key_intermediates": [
+    {
+      "name": "phenanthrene radical anion (A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "aryl halide radical anion (B)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "aryl radical (C / R3)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic alkyl radical adduct (D / III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyanoaromatic (isocyanopyridine) radical anion (E)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl-cyanoaromatic anion intermediate (F / IV)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "DABCO radical cation (G)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "CO2 radical anion (I)",
+      "smiles": "[O-]C(=O)[O]",
+      "role": "reactive"
+    },
+    {
+      "name": "excited 4-DPAIPN (PC*)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Cathode reduces phenanthrene to its radical anion, which performs outer-sphere SET to ArX, giving an aryl halide radical anion that mesolytically cleaves to aryl radical; the aryl radical adds to the styrene to give a benzylic radical that couples with the photoreduced cyanoaromatic radical anion (formed by SET from PC*– or CO2•–), and decyanation delivers the 1,2-diaryl product. DABCO/formate are oxidized at the anode to regenerate the catalysts.",
+  "rate_determining_step": "Formation of the aryl halide radical anion via SET from phenanthrene radical anion (TS_I, ΔG‡ = 31.6 kcal/mol in DFT model with iodobenzene)",
+  "probe_reagents": [
+    {
+      "name": "current on/off control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No 4aaa formed without electric current; electrocatalysis essential."
+    },
+    {
+      "name": "light on/off control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction proceeds without light or 4-DPAIPN but in lower yields; photoredox significantly improves yield."
+    },
+    {
+      "name": "phenanthrene omission",
+      "smiles": "c1ccc2ccc3ccccc3c2c1",
+      "purpose": "redox_probe",
+      "observation": "Yield drops sharply without phenanthrene, indicating its role as cathodic mediator."
+    },
+    {
+      "name": "DABCO omission / amine swap (DIEA, Et3N, quinuclidine)",
+      "smiles": "N12CCN(CC1)CC2",
+      "purpose": "other",
+      "observation": "Without DABCO yield falls to 7%; other amines give 15–58%, indicating DABCO acts as sacrificial electron donor."
+    },
+    {
+      "name": "HCO2Na omission",
+      "smiles": "[Na+].[O-]C=O",
+      "purpose": "other",
+      "observation": "Yield drops to 11%, indicating formate acts as reductant/H source via CO2•–."
+    },
+    {
+      "name": "NaOAc omission",
+      "smiles": "[Na+].CC(=O)[O-]",
+      "purpose": "other",
+      "observation": "Yield drops to 42%, supporting role in halide/cyanide removal."
+    },
+    {
+      "name": "cyclic voltammetry of substrates and additives",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "1a Ep/2red = -2.79 V; 2a -2.46 V; 3a -1.97 V; phenanthrene -2.58 V (shifted to -2.29 V with 2a, -2.15 V with 3a); DABCO/HCO2Na/NaOAc/4-DPAIPN mixture shows reduced potential -0.96 V for 2a, demonstrating cooperative reductive activation."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "DFT"
+  ],
+  "evidence_strength": "strong",
+  "notes": "An alternative photoredox-only pathway is also proposed in which reductive quenching of PC* by DABCO yields PC•–, which together with CO2•– (from HCO2Na/DABCO•+) reduces the aryl halide directly; both the electrocatalytic (phenanthrene-mediated) and photoredox pathways operate cooperatively. DFT shows direct dissociation of CN– to pyridyl radical R4 is highly endergonic (+25.6 kcal/mol), ruling out a free pyridyl radical pathway; instead, radical-radical coupling between benzylic radical and cyanoaromatic radical anion followed by decyanation (TS_IV, 7.9 kcal/mol) is favored. Overall process is exergonic by 82.1 kcal/mol."
+}

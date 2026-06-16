@@ -1,0 +1,96 @@
+{
+  "doi": "10.1021_jacs.0c08532",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "electroreductive carbofunctionalization of radical-acceptor alkenes with alkyl bromides (carboformylation, anti-Markovnikov hydroalkylation, carbocarboxylation, and allylic alkylation) via a radical-polar crossover mechanism",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_polar_crossover",
+    "sacrificial_anode",
+    "anion_initiated"
+  ],
+  "electrochemical_role": "cathodic reduction of alkyl bromide to alkyl radical (ECEC); cathode subsequently reduces the C-centered adduct radical to a benzylic carbanion; Mg sacrificial anode provides the counter oxidation",
+  "key_intermediates": [
+    {
+      "name": "isopropyl radical (Int-3, from cathodic reduction of iPrBr at ~ -2.0 V)",
+      "smiles": "[CH](C)C",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-centered radical adduct (Int-1/Int-6) from radical addition to styrene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbanion (Int-2/Int-8) from second cathodic reduction at ~ -1.6 V",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkoxide/hemiaminal adduct from carbanion addition to DMF (formyl donor)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-alkoxy carbanion Int-9/Int-10 in allyl ether substrates undergoing E1cb β-elimination",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Cathode reduces R-Br to R• (dissociative SET); R• adds to the radical-acceptor alkene in a polarity-matched fashion to give a benzylic radical; this radical is more easily reduced than the starting alkene, so a second cathodic SET produces a benzylic carbanion which is trapped by an external electrophile (DMF → CHO, MeCN/Et2NH → H, CO2 → CO2H, or undergoes E1cb on allyl ethers). The Mg anode is oxidized sacrificially.",
+  "rate_determining_step": "cathodic dissociative single-electron reduction of the alkyl bromide to generate R•",
+  "probe_reagents": [
+    {
+      "name": "iPrMgBr (preformed Grignard)",
+      "smiles": "CC(C)[Mg]Br",
+      "purpose": "intermediate_trap",
+      "observation": "slow addition of iPrMgBr to styrene 7 in DMF/MeCN gave ≤2% of difunctionalization products, ruling out direct carbanion addition to styrene (Pathway B)"
+    },
+    {
+      "name": "tBuLi",
+      "smiles": "CC(C)(C)[Li]",
+      "purpose": "intermediate_trap",
+      "observation": "same as above: no productive difunctionalization, disfavoring carbanion-to-alkene addition pathway"
+    },
+    {
+      "name": "enantioenriched chiral secondary alkyl bromide 130 (98% ee)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "product 131 formed in 52% yield as 1.4:1 dr with both diastereomers fully racemic, consistent with a free alkyl radical intermediate and ruling out an SN2 pathway via alkene radical anion (Pathway C)"
+    },
+    {
+      "name": "cyclopropane radical clock (vinylcyclopropane 132)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "ring-opened product 133 obtained in 66% with E/Z > 20:1 as the only observable product, confirming a radical addition step"
+    },
+    {
+      "name": "no-electricity control / no-electricity + Mg powder",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "2-3% conversion with no product, demonstrating that the reaction requires electrochemistry and is not driven by Mg(0)"
+    },
+    {
+      "name": "divided cell experiment",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "yield drops from 89% to 45% with increased byproducts, indicating that Mg salts generated at the anode play a beneficial role"
+    },
+    {
+      "name": "Co(salen) mediator test",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "2 mol% Co(salen) did not improve the reaction (55% vs 71%), suggesting direct electron transfer to iPrBr is operative rather than mediated SET"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "stoichiometric_intermediate",
+    "on/off_light_or_current",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly compare three mechanisms: Pathway A (ECEC radical-polar crossover initiated by alkyl halide reduction, favored), Pathway B (EEC: 2e- reduction of R-Br to R-, then carbanion adds to alkene; ruled out by Grignard/RLi control), and Pathway C (ECEC initiated by alkene radical anion reduction; ruled out by chiral alkyl bromide racemization). Reduction potentials (iPrBr ~ -2.0 V, styrene ~ -2.6 V, benzylic radical ~ -1.6 V vs SCE) are most consistent with Pathway A. The β-elimination side reactivity (E1cb) on allyl ether substrates was leveraged to discover a new allylic alkylation reaction. Standard conditions use LiOTf or TBAPF6 electrolyte, DMF solvent (also CHO source) or MeCN/Et2NH or CO2-saturated DMF, Mg sacrificial anode, graphite cathode, undivided cell, constant current 10 mA, 4 F/mol."
+}

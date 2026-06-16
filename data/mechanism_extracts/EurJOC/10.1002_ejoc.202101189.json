@@ -1,0 +1,44 @@
+{
+  "doi": "10.1002_ejoc.202101189",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intramolecular halo-amination (iodo- and bromo-) of unactivated N-alkenyl sulfonamides to give 3-, 5-, and 6-membered halogenated N-heterocycles using LiI or LiBr as halide source and redox mediator.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (or bromide) to molecular I2 (Br2), which acts as the halogen-transfer mediator; the sulfonamide substrate itself is not oxidized at the anode (confirmed by CV). Cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "molecular I2 generated in situ from anodic oxidation of I-",
+      "smiles": "II",
+      "role": "reactive"
+    },
+    {
+      "name": "cyclic iodonium ion from alkene + I2 (intermediate I)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "N-heterocycle product (e.g., 2-(iodomethyl)-N-tosylpyrrolidine 2a)",
+      "smiles": "O=S(=O)(c1ccc(C)cc1)N2CCCC2CI",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes I- to I2; I2 reacts with the pendant alkene to form an iodonium ion, which undergoes intramolecular nucleophilic attack by the sulfonamide nitrogen to give the halogenated N-heterocycle with loss of H+; protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction almost completely inhibited by 2.0 equiv TEMPO; starting material decomposed to 4-methylbenzenesulfonamide (detected by GC-MS); only trace 2a formed. Authors note this may reflect a radical pathway OR suppression via TEMPO-iodine adduct formation."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_TEMPO"
+  ],
+  "evidence_strength": "medium",
+  "notes": "CV shows two oxidation peaks for LiI (0.89 and 1.57 V vs Ag/AgCl) while sulfonamide 1a shows no anodic oxidation in the operating window, supporting iodide-mediator (not direct substrate oxidation) pathway. Authors favor an ionic iodonium/nucleophilic cyclization mechanism (Scheme 3), but acknowledge the TEMPO inhibition could alternatively implicate a radical pathway; they attribute it to TEMPO–I adduct formation rather than C-radical trapping."
+}

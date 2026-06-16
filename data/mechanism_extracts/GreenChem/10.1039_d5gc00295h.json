@@ -1,0 +1,130 @@
+{
+  "doi": "10.1039_d5gc00295h",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrocatalytic reductive head-to-head homo-coupling of styrenes to 1,4-diphenylbutanes via cathodically generated alkene radical anions",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_anion",
+    "direct_SET",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Cathodic reduction of styrene (and/or of nBuI from nBu4NI decomposition) generates an alkene radical anion; the anode oxidizes iodide back to I2, closing the redox cycle",
+  "key_intermediates": [
+    {
+      "name": "nBu-I derived radical anion (A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "styrene radical anion (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "coupled distonic radical anion (C, PhCH(-)-CH2-CH2-C(•)HPh)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl radical D (after protonation of C by H2O)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl carbanion E (after second cathodic reduction)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,4-diphenylbutane (T.M., 2a)",
+      "smiles": "c1ccc(CCCCc2ccccc2)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "nBu3N (from nBu4NI decomposition)",
+      "smiles": "CCCCN(CCCC)CCCC",
+      "role": "reactive"
+    },
+    {
+      "name": "nBu3N radical cation (HAT donor in path b)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the cathode, styrene is directly reduced (or via SET from a cathodically generated nBuI radical anion) to a radical anion B; B adds to another styrene to give coupled radical anion C, which is protonated by trace water to a benzyl radical D, reduced again at the cathode to carbanion E, and finally protonated to give 1,4-diphenylbutane; iodide is reoxidized at the anode to I2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction shut down (only trace product), supporting radical intermediate"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction shut down (trace product)"
+    },
+    {
+      "name": "CBr4",
+      "smiles": "BrC(Br)(Br)Br",
+      "purpose": "radical_trap",
+      "observation": "Yield dropped to 17%, consistent with radical pathway"
+    },
+    {
+      "name": "DMF-d7",
+      "smiles": "[2H]C(=O)N(C([2H])([2H])[2H])C([2H])([2H])[2H]",
+      "purpose": "isotope_label",
+      "observation": "No D incorporation in product (27% yield, 0% D); DMF is not the H source"
+    },
+    {
+      "name": "D2O (1 equiv) in anhydrous DMF",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "63% D incorporation at benzylic positions, identifying water as a major proton source"
+    },
+    {
+      "name": "anhydrous DMF (no added H2O)",
+      "smiles": "CN(C)C=O",
+      "purpose": "other",
+      "observation": "Yield decreased sharply to 25%, indicating water is needed as proton source; residual H must come from nBu4NI"
+    },
+    {
+      "name": "CH3I",
+      "smiles": "CI",
+      "purpose": "intermediate_trap",
+      "observation": "Benzyl monomethylated product detected (56%), trapping a benzyl carbanion intermediate"
+    },
+    {
+      "name": "KI instead of nBu4NI",
+      "smiles": "[K+].[I-]",
+      "purpose": "other",
+      "observation": "Only trace product; iodide alone insufficient — nBu3N component of nBu4NI is critical"
+    },
+    {
+      "name": "KI + nBu3N (0.5 equiv)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Restored 30% yield, confirming role of nBu3N (HAT pathway)"
+    },
+    {
+      "name": "Cyclic voltammetry of styrene / nBu4NI",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "nBu4NI reduces at -0.804 V; styrene + nBu4NI shows enhanced reduction current at -0.776 V with peak position essentially unchanged from styrene alone, indicating direct cathodic reduction of styrene promoted by nBu4NI"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "product_isotope_distribution",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two parallel cathodic initiation pathways are proposed: (i) main pathway — direct cathodic reduction of styrene to radical anion B (supported by CV); (ii) minor pathway — cathodic reduction of nBuI (from nBu4NI decomposition to nBuI + nBu3N, detected by LC-MS/1H NMR) to radical anion A, which then SETs to styrene. Final protonation can occur via H2O (path a, supported by D2O labeling) or via HAT from nBu3N radical cation to radical anion C (path b). At the anode, I- is oxidized to I2 (1/2 I2), making the process paired electrolysis without external oxidant/reductant or metal catalyst."
+}

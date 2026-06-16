@@ -1,0 +1,110 @@
+{
+  "doi": "10.1021_acscatal.9b02348",
+  "journal": "ACSCatal",
+  "is_review": false,
+  "rxn_class_summary": "Copper-electrocatalyzed C-H alkynylation/annulation of benzamides bearing 8-aminoquinoline directing group with terminal alkynes (or alkynyl carboxylic acids) to form isoindolones, with H2 as the sole byproduct.",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of Cu(I)/Cu(II) intermediates to Cu(III) drives carboxylate-assisted C-H activation and reductive elimination; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "Cu(II)-benzamide complex 5 (8-aminoquinoline-chelated)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cu(III)-carboxylate complex 6 after anodic oxidation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cu(III) cyclometalated intermediate 7 after CMD C-H activation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cu(III)-alkynyl/aryl complex 8 after ligand exchange with terminal alkyne",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ortho-alkynylated benzamide 4 (post reductive elimination)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cu(I) species (CuOPiv) 9 released after reductive elimination",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cu(II)(OPiv)2 10 (regenerated catalyst)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "isoindolone product 3 from intramolecular hydroamidation/cyclization of 4",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Substrate coordinates to Cu(II); anodic oxidation gives Cu(III) carboxylate which performs CMD C-H activation on the benzamide; ligand exchange with terminal alkyne and reductive elimination delivers the ortho-alkynylated arene and Cu(I); Cu(I) is reoxidized to Cu(II) at the anode (PCET) while protons are reduced to H2 at the cathode; the alkynylated intermediate cyclizes to the isoindolone.",
+  "rate_determining_step": "Not C-H cleavage (KIE ≈ 1.2 and no H/D scrambling); likely the anodic Cu oxidation / subsequent organometallic step",
+  "probe_reagents": [
+    {
+      "name": "para-substituted benzamide competition (1l CF3 vs 1i Me; 2g CF3-aryl alkyne vs 2b tolyl alkyne)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Electron-poor substrates react preferentially (3la/3ia = 3.2; 3ag/3ab = 2.3), inconsistent with SET-based anilide oxidation and consistent with concerted metalation-deprotonation"
+    },
+    {
+      "name": "CD3OD cosolvent",
+      "smiles": "[2H]C([2H])([2H])O[2H]",
+      "purpose": "H/D_labeling",
+      "observation": "<5% D incorporation into recovered 1a and into product 3aa; H/D exchange not observed, indicating C-H cleavage is irreversible and not rate-limiting"
+    },
+    {
+      "name": "[D5]-1a (perdeuterated benzamide)",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "Parallel in operando React-IR gave kH/kD ≈ 1.2, supporting facile (non-rate-limiting) C-H scission"
+    },
+    {
+      "name": "independently prepared ortho-alkynylated benzamide 4",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Delivered 3aa in 81% under electrolysis and 80% without electricity, confirming 4 as on-cycle intermediate and that cyclization is non-electrochemical"
+    },
+    {
+      "name": "headspace GC",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Detected H2 as sole gaseous byproduct, consistent with cathodic proton reduction"
+    },
+    {
+      "name": "cyclic voltammetry of Cu(OAc)2 with NaOAc and 1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Cu(II)+1a shows oxidation at 0.95 V vs SCE (assigned to Cu(II)→Cu(III)); CuOAc reoxidation at 0.05 V; 1a itself shows no competitive oxidation, ruling out substrate SET"
+    },
+    {
+      "name": "in operando React-IR kinetics",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Monitored growth of 3aa (1721 cm-1) and decay of 1a, enabling initial-rate KIE determination"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "kinetic_order"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly exclude a substrate SET-oxidation (radical cation) pathway based on Hammett-type competition (electron-poor benzamides faster) and CV (no oxidation of 1a in the operating window), distinguishing this Cu electrocatalysis from prior anilide SET functionalizations. The protocol is extended to decarboxylative C-H/C-C scission with alkynyl carboxylic acids 11 (Scheme 8), presumed via in situ decarboxylative generation of a Cu-acetylide that enters the same Cu(I)/Cu(III) cycle. Final isoindolone formation is a thermal (non-electrochemical) intramolecular hydroamidation of intermediate 4."
+}

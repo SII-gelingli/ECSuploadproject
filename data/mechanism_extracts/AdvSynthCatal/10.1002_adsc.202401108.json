@@ -1,0 +1,89 @@
+{
+  "doi": "10.1002_adsc.202401108",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,2-iodotrifluoroethoxylation (β-iodohydrofluoroether synthesis) of alkenes using 2-iodo-1,3-dimethoxy-5-methylbenzene as iodine source and TFE as nucleophile",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "cation_initiated",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic SET oxidation of the electron-rich iodoarene (1a) to a radical cation (I), which after a second oxidation/H+ loss releases I+ equivalent; cathode performs hydrogen evolution (HER) to balance charge",
+  "key_intermediates": [
+    {
+      "name": "Iodoarene radical cation of 2-iodo-1,3-dimethoxy-5-methylbenzene (I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Biaryl/passivated dimer (II) from coupling of two radical cations of 1a",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "Iodonium ion (I+ equivalent) released from oxidized iodoarene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cyclic iodiranium (alkene-iodonium) ion (III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Open β-iodo carbocation (for substrates showing rearrangement/Markovnikov selectivity)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes electron-rich iodoarene 1a by SET to a radical cation, which loses H+/further electron to generate an aryl-I+ species; this iodonium transfers I+ to the alkene forming an iodiranium ion that is opened regioselectively by trifluoroethanol (Markovnikov), while the cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT (2,6-di-tert-butyl-4-methylphenol)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3a dropped from baseline to 19%; 73% of alkene 2a recovered, indicating radical intermediates involved"
+    },
+    {
+      "name": "I2 (molecular iodine as alternative I source)",
+      "smiles": "II",
+      "purpose": "intermediate_trap",
+      "observation": "Only 17% of 3a obtained, showing I2 is a poor surrogate"
+    },
+    {
+      "name": "Bu4NI (tetrabutylammonium iodide)",
+      "smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[I-]",
+      "purpose": "intermediate_trap",
+      "observation": "No product formed, ruling out direct oxidation of iodide"
+    },
+    {
+      "name": "NIS (N-iodosuccinimide) as I+ source",
+      "smiles": "O=C1CCC(=O)N1I",
+      "purpose": "intermediate_trap",
+      "observation": "58% yield of 3a but regioselectivity dropped to 2:1, consistent with iodonium pathway but different selectivity"
+    },
+    {
+      "name": "PhI(OAc)2 / PhI(OCOCF3)2 with BF3·OEt2 (chemical oxidation of 1a)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Formed diiodinated arenes 1c/1d (20% and 60%), supporting SET oxidation of 1a to radical cation"
+    },
+    {
+      "name": "Control without electricity",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "<1% product, confirming necessity of current"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Regioselectivity follows Markovnikov, consistent with electrophilic addition via iodonium; products from norbornene (3o, 3o', 3o'') and rearranged products (3f, 3n') suggest open carbocation character competing with bridged iodonium. CV of 1a shows two oxidation waves; no redox features for alkene 2a, supporting iodoarene (not alkene) as the species oxidized at the anode. Passivation of the GC anode by biaryl dimer II is invoked to explain solution color change. Radical-cation iodoarene mediator mechanism is proposed in line with Kita/Waldvogel/Powers precedents."
+}

@@ -1,0 +1,80 @@
+{
+  "doi": "10.1007_s11030-019-09979-8",
+  "journal": "MolDivers",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical spirocyclopropanation of indane-1,3-dione with aromatic aldehydes or benzylidenemalononitriles via anodically-generated bromine mediator to afford spiro[indene-cyclopropane]tetraones and dihydrospiro[cyclopropane-indene]dicarbonitriles.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "anion_initiated",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Cathode reduces propanol to propoxide (with H2 evolution) generating the base; anode oxidizes Br- to Br2 which acts as a halogenating mediator on the Knoevenagel/Michael adduct enolate.",
+  "key_intermediates": [
+    {
+      "name": "propoxide anion (base generated at cathode)",
+      "smiles": "[O-]CCC",
+      "role": "reactive"
+    },
+    {
+      "name": "indane-1,3-dione enolate (anion 1)",
+      "smiles": "O=C1C=C(/[O-])c2ccccc12",
+      "role": "reactive"
+    },
+    {
+      "name": "2-arylidene-indane-1,3-dione (Knoevenagel intermediate 4)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Michael adduct of two indane-1,3-diones with aldehyde (intermediate 5)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alpha-bromo Michael adduct (intermediate 6)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "halodicarbanion (intermediate 7) / delocalized enolate (intermediate 8)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "spirodihydrofuran 9 (from O-attack, path b)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "benzylidenemalononitrile Michael adduct (intermediate 11)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alpha-bromo malononitrile adduct (intermediate 13)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "dihydrofuran-aminonitrile 15 (O-cyclization, off-pathway)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathodic reduction of ROH gives RO- (and 1/2 H2) which deprotonates indane-1,3-dione; Knoevenagel condensation with ArCHO followed by Michael addition of a second enolate builds a 1,3-dicarbonyl bis-adduct, whose enolate is brominated by Br2 generated from anodic oxidation of Br-; intramolecular C-alkylation (SN2-like displacement of Br by the second enolate carbon) closes the cyclopropane.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "13C NMR comparison of products 3j vs 9j (C- vs O-cyclization)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Experimental 13C shifts 37.9 and 51.4 ppm match calculated cyclopropane carbons of 3j (21.6, 51.2); no peak near 108 ppm expected for spirodihydrofuran 9j, confirming intramolecular C-attack (path a) over O-attack (path b)."
+    }
+  ],
+  "evidence_types_used": [
+    "DFT",
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Authors explicitly considered two divergent cyclization modes from the brominated enolate: path a (C-attack -> cyclopropane 3) vs path b (O-attack -> spirodihydrofuran 9); selectivity for path a supported by calculated vs experimental 13C NMR. An analogous bifurcation is invoked for the malononitrile series (cyclopropane 14 vs chromene-aminonitrile 15). No radical traps, KIE, or CV experiments were reported; mechanism is largely proposed by analogy."
+}

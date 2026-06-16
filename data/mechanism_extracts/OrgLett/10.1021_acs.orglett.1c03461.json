@@ -1,0 +1,124 @@
+{
+  "doi": "10.1021_acs.orglett.1c03461",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical phenylboronic-acid-promoted sulfuration-formyloxylation of styrenes with thiophenols in DMF to give beta-formyloxy sulfides, with downstream Selectfluor-mediated oxidation-olefination to (E)-vinyl sulfones",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation: thiophenol is oxidized at the anode (easier oxidation by CV) to a thiyl radical that adds to styrene; the resulting benzylic radical is further oxidized at the anode to a benzylic carbocation; protons are reduced to H2 at the cathode",
+  "key_intermediates": [
+    {
+      "name": "thiyl radical (PhS•) in equilibrium with disulfide PhSSPh",
+      "smiles": "[S]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl radical I from thiyl addition to styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl carbocation II (alpha-thio benzyl cation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "iminium intermediate III from DMF addition to cation II",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "PhB(OH)(NMe2) byproduct IV (scavenges dimethylamine/water)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "beta-formyloxy sulfide 3a (product of hydrolysis of III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "fluorosulfonium salt I-1 (Selectfluor + sulfide 3a)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ammonium salt I-2 (detected by ESI-MS/HRMS)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alpha-hydroxy sulfurane I-3",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "sulfoxide I-4",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "fluorosulfoxonium I-5 / hydroxysulfurane I-6 / sulfone I-7",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, PhSH undergoes 1e- oxidation to PhS•, which adds to styrene to give a benzylic radical; a second anodic 1e- oxidation furnishes a benzylic carbocation that is trapped by DMF to form an iminium, hydrolyzed (by H2O generated in situ from PhB(OH)2) to the beta-formyloxy sulfide; protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3n not formed (0%); TEMPO-SAr adduct 3n' detected by ESI-MS, supporting thiyl-radical intermediate"
+    },
+    {
+      "name": "H2O (2 equiv added)",
+      "smiles": "O",
+      "purpose": "other",
+      "observation": "Gave 3a in 68% with small amount of beta-hydroxy sulfide 5a (6%), indicating excess water is detrimental and supporting in situ water generation via PhB(OH)2"
+    },
+    {
+      "name": "Hu's conditions (HCO2H/CuCl/Bu4NPF6)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only trace 3a and 26% hydroxylation 5a; conditions not applicable for the sulfuration-formyloxylation"
+    },
+    {
+      "name": "Selectfluor / HF / HCO2H (on sulfoxide 8a)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "No vinyl sulfone 4g formed (0%), ruling out simple acid-mediated elimination"
+    },
+    {
+      "name": "DABCO or CsF (on sulfoxide 8a)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Near-quantitative conversion of 8a to vinyl sulfone 4g (>98%), supporting an E2-type elimination in the olefination step"
+    },
+    {
+      "name": "Cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Thiophenol is much more easily oxidized than styrene; two one-electron oxidation events observed, consistent with sequential anodic oxidations"
+    },
+    {
+      "name": "ESI-MS detection of I-2 and byproduct IV",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Mass-spec detection of ammonium intermediate I-2 and PhB(OH)(NMe2) byproduct IV supports proposed cycle"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors favor a stepwise radical/cation (anodic two-step oxidation) pathway: thiyl radical addition then anodic oxidation to a benzyl cation trapped by DMF (iminium III), hydrolyzed to product. PhB(OH)2 acts as a Lewis-acid additive that removes excess Me2NH/H2O (forming byproduct IV) and provides in situ water for iminium hydrolysis. Alternative: direct nucleophilic addition/elimination between iminium III and PhB(OH)2 to deliver the formate group. For the downstream Selectfluor oxidation-olefination of 3a to vinyl sulfone 4a, an E2-type elimination from sulfone I-7 is invoked (supported by DABCO/CsF base-promoted elimination of 8a)."
+}

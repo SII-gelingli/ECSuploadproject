@@ -1,0 +1,78 @@
+{
+  "doi": "10.1002_cssc.202402224",
+  "journal": "ChemSusChem",
+  "is_review": false,
+  "rxn_class_summary": "Ferrocene-mediated electrochemical dehydrogenative (3+2) annulation of 1,1-disubstituted alkenes with 1,3-diesters (dimethyl 2-benzylmalonates) to give gamma-butyrolactones",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of ferrocene (Cp2Fe) to Cp2Fe+ at the carbon felt anode acts as a redox mediator that oxidizes the malonate carbanion to a C-centered radical; cathodic reduction of H2O at the Pt cathode generates OH- (used as base) and H2",
+  "key_intermediates": [
+    {
+      "name": "Cp2Fe+ (ferrocenium, anodically generated mediator)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Malonate carbon anion (from deprotonation of benzyl dimethyl malonate by OH-)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Radical A: malonyl C-radical (alpha-carbon radical of benzyl dimethyl malonate after SET oxidation by Cp2Fe+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Radical B: benzylic radical from addition of A to 1,1-diphenylethylene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Carbocation C: benzylic cation after second SET oxidation of B by Cp2Fe+",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Benzyl alcohol intermediate D (after OH- addition to C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "gamma-Butyrolactone product (after intramolecular lactonization with loss of MeOH)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Cp2Fe to Cp2Fe+ while cathode reduces H2O to OH- + H2; OH- deprotonates the 1,3-diester and Cp2Fe+ performs SET on the resulting carbanion to give a malonyl radical, which adds to the 1,1-diarylalkene to form a benzylic radical; a second SET by Cp2Fe+ generates a benzylic cation that is trapped by hydroxide, and the resulting alcohol lactonizes onto an ester (loss of MeOH) to give the gamma-butyrolactone.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "H2 18-O (isotopically labeled water)",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "18O-labeled product 1' isolated in 22% yield (86% 18O incorporation) using MeOH solvent with H2(18O) additive, showing the lactone oxygen originates from water, not from substrate or methanol"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, 2a, and Cp2Fe",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No oxidation of 1a or 2a in 0-1.0 V vs Ag/AgCl; Cp2Fe shows reversible wave at ~0.45 V; catalytic current of Cp2Fe increases with added 1a (with base), consistent with electron transfer from the malonate anion to Cp2Fe+"
+    },
+    {
+      "name": "Controlled-potential electrolysis",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "At 0.3 V vs Ag/AgCl (below Cp2Fe oxidation) only 9% product after 20 h; at 0.6 V (above Cp2Fe oxidation) 80% product in 1.67 h, confirming Cp2Fe-mediated pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "X-ray structure (CCDC 2382826) of product 7 confirms gamma-butyrolactone connectivity. The mediator avoids direct anodic oxidation of the malonate, which is proposed to cause overoxidation; mono-substituted electron-rich alkenes give difunctionalized methoxy products instead of lactones (alternative trapping by MeOH on the cation), and benzyl acrylate gives a (4+2) product, indicating the radical-polar crossover step depends on alkene electronics."
+}

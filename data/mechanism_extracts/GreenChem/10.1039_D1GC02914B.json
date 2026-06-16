@@ -1,0 +1,73 @@
+{
+  "doi": "10.1039_D1GC02914B",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative radical cascade cyclization of olefinic amides with thiophenols/diselenides to synthesize sulfurated/selenylated benzoxazines, oxazolines, and iminoisobenzofurans without a metal catalyst or external oxidant",
+  "mechanism_family": [
+    "radical_anodic",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of thiophenol generates a sulfur radical (which dimerizes reversibly to disulfide); cathodic reduction of the disulfide back to thiyl radical/thiolate closes the loop, with cathodic proton reduction to H2",
+  "key_intermediates": [
+    {
+      "name": "sulfur (thiyl) radical RS•",
+      "smiles": "[S]c1ccc(C)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "diaryl disulfide RS-SR",
+      "smiles": "Cc1ccc(SSc2ccc(C)cc2)cc1",
+      "role": "resting_state"
+    },
+    {
+      "name": "disulfide radical anion [RS-SR]•-",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkyl radical INT-I (C-radical after thiyl addition to alkene, cyclized onto amide oxygen pending)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized carbocation INT-II (after radical cyclization and anodic oxidation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzoxazine product 3a",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, thiophenol is oxidized by SET to a thiyl radical (RS•) which reversibly dimerizes to RS-SR; the disulfide is reduced at the cathode to a radical anion that fragments to RS• + RS−, regenerating thiyl radicals. RS• adds to the C=C of the olefinic amide to give alkyl radical INT-I, which undergoes intramolecular cyclization onto the amide oxygen and a second anodic SET oxidation to cation INT-II, followed by deprotonation to the heterocyclic product; protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO/radical trap control (radical pathway probe, short-time reaction)",
+      "smiles": null,
+      "purpose": "radical_trap",
+      "observation": "Stopping reaction at 1.5 h gave product 3a in 10% yield and disulfide in 80% yield, supporting thiyl radical intermediacy"
+    },
+    {
+      "name": "Disulfide 2q as substrate",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Reaction of disulfide 2q with N-(2-(prop-1-en-2-yl)phenyl)benzamide 1a gave 3a in 73% yield, confirming disulfide as a competent intermediate"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a and 4-chlorobenzenethiol 2e",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peaks: 1a at 1.80 V, 2e at 1.51 V — thiol is preferentially oxidized at the anode; reduction peak of diphenyl disulfide at −1.14 V indicates cathodic reduction of disulfide"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism is paired: anodic oxidation of thiol initiates the radical, while cathodic reduction of disulfide regenerates thiyl radical and produces H2. Authors also performed derivatizations (mCPBA oxidation to sulfoxide/sulfone, HCl hydrolysis of iminoisobenzofuran and oxazoline) which are downstream functionalizations, not mechanistic probes."
+}

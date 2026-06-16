@@ -1,0 +1,43 @@
+{
+  "doi": "10.1021_ja501093m",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrooxidative direct C-N coupling of N-protected imidazoles with aromatic and benzylic C-H compounds to give N-aryl/N-benzyl imidazoles after deprotection",
+  "mechanism_family": [
+    "radical_cation",
+    "direct_SET",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the aromatic (or benzylic) substrate to its radical cation, which is then trapped by the N-protected imidazole nucleophile; the protecting group renders the resulting imidazolium electrooxidatively inactive, preventing overoxidation",
+  "key_intermediates": [
+    {
+      "name": "naphthalene (aromatic) radical cation",
+      "smiles": "[c]1ccc2ccccc2c1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical cation (ArCH2R radical cation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "N-protected (PG) imidazolium intermediate after C-N bond formation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "N-aryl/N-benzyl imidazolium ion (initial isolated product)",
+      "smiles": null,
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "The anode removes one electron from the arene or benzylic substrate to give a radical cation; the N-protected imidazole adds to this electrophilic intermediate, and a second oxidation/deprotonation gives the N-substituted imidazolium ion, which is electroinactive and thus avoids overoxidation. Subsequent nonoxidative removal of the protecting group affords the N-substituted imidazole.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Key design principle: use of an N-protecting group on the imidazole so the C-N coupled product is an imidazolium (electrooxidatively inactive), preventing the overoxidation that plagues the conventional approach with unprotected imidazoles (Figure 2a vs 2b). Naphthalene (1a) chosen as model arene because its anodically generated radical cation is well-documented. Mechanism is proposed/illustrated in Figure 2 rather than supported by radical traps or KIE on this page."
+}

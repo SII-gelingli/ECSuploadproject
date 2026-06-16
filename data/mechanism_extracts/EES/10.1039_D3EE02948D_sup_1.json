@@ -1,0 +1,59 @@
+{
+  "doi": "10.1039_D3EE02948D_sup_1",
+  "journal": "EES",
+  "is_review": false,
+  "rxn_class_summary": "EPR spin-trapping experiments using DMPO to detect carbonate radical (CO3•−) and peroxycarbonate radical (CO4•−) intermediates generated in the electrochemical/catalytic system.",
+  "mechanism_family": [
+    "radical_anodic",
+    "other"
+  ],
+  "electrochemical_role": "DMPO spin trap captures reactive oxygen-centered radicals (CO3•− and CO4•−) generated in the system; the radicals are presumed to form via oxidation of (bi)carbonate/peroxycarbonate species, enabling EPR detection of the radical intermediates.",
+  "key_intermediates": [
+    {
+      "name": "carbonate radical anion (CO3•−)",
+      "smiles": "[O-]C(=O)[O]",
+      "role": "reactive"
+    },
+    {
+      "name": "peroxycarbonate radical anion (CO4•−)",
+      "smiles": "[O-]C(=O)O[O]",
+      "role": "reactive"
+    },
+    {
+      "name": "DMPO-OCO2 adduct (carbonate addition to DMPO nitrone carbon)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "DMPO-OOCO2 adduct (peroxycarbonate addition to DMPO)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "DMPO-OH adduct (final EPR-active species after hydrolysis)",
+      "smiles": "CC1(C)CCC(O)=[N+]1[O-]",
+      "role": "reactive"
+    },
+    {
+      "name": "DMPO-OOH adduct (final EPR-active species after hydrolysis)",
+      "smiles": "CC1(C)CCC(OO)=[N+]1[O-]",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "CO3•− or CO4•− adds to the α-C of the DMPO nitrone to give a transient DMPO-OCO2 or DMPO-OOCO2 adduct; subsequent hydrolysis releases HCO3− and yields the EPR-detectable DMPO-OH or DMPO-OOH spin adduct.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "DMPO (5,5-dimethyl-1-pyrroline N-oxide)",
+      "smiles": "CC1(C)CCC=[N+]1[O-]",
+      "purpose": "radical_trap",
+      "observation": "Forms DMPO-OH adduct from CO3•− and DMPO-OOH adduct from CO4•−, both detected by EPR, confirming the presence of carbonate and peroxycarbonate radicals."
+    }
+  ],
+  "evidence_types_used": [
+    "EPR",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "The DMPO-OH and DMPO-OOH adducts observed by EPR are commonly attributed to •OH and •OOH directly; here the authors propose they arise via nucleophilic addition of CO3•−/CO4•− followed by hydrolytic loss of HCO3−, an alternative interpretation that should be considered when assigning EPR signals."
+}

@@ -1,0 +1,12 @@
+# Deploy repo: ship everything that's committed. Only ignore local runtime artifacts.
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.gradio/
+.DS_Store
+# 重组后的大索引（由 *.part 分块在 ECS 上合成，不入库；分块本身要入库）
+/data/faiss_index.npy
+/data/faiss_index_paper.npy

@@ -1,0 +1,116 @@
+{
+  "doi": "10.1021_jacs.3c08839",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrophotochemical dual transition metal (Ce/Ni) catalyzed decarboxylative alkenylation of alkyl carboxylic acids with vinyl halides to form alkenes.",
+  "mechanism_family": [
+    "paired_electrolysis",
+    "photoredox_combined",
+    "radical_anodic",
+    "radical_cathodic",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anode oxidizes Ce(III) to photoredox-active Ce(IV) carboxylate (71), which undergoes LMCT under 400 nm light to generate alkyl radical and CO2; cathode reduces Ni(II) precatalyst to active mononuclear Ni(I) (75) and later reduces Ni(III) adduct (76) to benzoate-bound Ni(II) (73).",
+  "key_intermediates": [
+    {
+      "name": "Ce(IV) bis-carboxylate (benzoate + alkyl carboxylate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical R• (post-decarboxylation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ce(III) benzoate complex",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzoate-bound Ni(I)(bpy) complex",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "vinyl-Ni(III)(bpy)(OBz) oxidative-addition adduct",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkyl-vinyl-Ni(II)(bpy)(OBz) species (73)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "primary alkyl radical from cyclopropane ring-opening (Int-2)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "nickel oligomers (reduced from precatalyst, reactivated by Phth-K)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "vinyl benzoate side product (70, C-O reductive elimination)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the anode, benzoate-ligated Ce(III) is oxidized to Ce(IV) carboxylate which, upon 400 nm irradiation, undergoes LMCT to extrude CO2 and release an alkyl radical. At the cathode, the Ni precatalyst is reduced to Ni(I), oxidatively adds the vinyl bromide to Ni(III), is reduced by one electron to Ni(II), captures the diffusing alkyl radical, and undergoes reductive elimination (assisted by anodic single-electron oxidation) to release the alkene.",
+  "rate_determining_step": "Radical capture of the alkyl radical by the persistent vinyl-Ni(II) intermediate at the counter electrode (described as the most challenging step).",
+  "probe_reagents": [
+    {
+      "name": "2-cyclopropylacetic acid (radical clock 62)",
+      "smiles": "OC(=O)CC1CC1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened linear 1,5-diene product 64 formed in 57% yield, confirming radical decarboxylation and primary alkyl radical intermediate (Int-2)."
+    },
+    {
+      "name": "alkene-tethered carboxylic acid 65",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Intramolecular cyclization product 66 favored over direct alkenylation product 67, consistent with a free alkyl radical intermediate."
+    },
+    {
+      "name": "dimeric Ni complex 69",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Stoichiometric use without Phth-K gave <10% product and decomposition; with Phth-K gave 69% — supports phthalimide reactivating Ni oligomers into active mononuclear Ni."
+    },
+    {
+      "name": "controlled-potential electrolysis at 0.2 V vs Fc+/0",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "33% conversion / 25% yield of product 3, matching CV-assigned Ce(III)/Ce(IV) oxidation potential facilitated by benzoate coordination."
+    },
+    {
+      "name": "omission controls (no Ce, no Ni, no light, no current, no Phth-K, no 4)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Each component required; without Phth-K or benzoate, product forms initially but decomposes, indicating additives protect the alkene."
+    },
+    {
+      "name": "cyclic voltammetry of CeCl3 ± benzoate 4",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "New oxidation wave at ~0.2 V vs Fc+/Fc upon adding 4, assigned to benzoate-ligated Ce(III)/Ce(IV)."
+    },
+    {
+      "name": "cyclic voltammetry of Ni(bpy)3Br2 ± benzoate 4",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Ni(II)/Ni(I) couple at -1.6 V made more reversible (ipa/ipc 0.3 → 0.7), showing benzoate stabilizes Ni species."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Side product 70 (vinyl benzoate) arises from anodic single-electron oxidation of alkyl-vinyl-Ni(II) 73 to Ni(III), followed by C-O reductive elimination (path b); this side reaction provides evidence that the cathodically generated Ni(II) species 73 diffuses to the anode compartment. Br2 generated by anodic oxidation of bromide may also mediate this oxidation. Phth-K functions as a ligand/promoter that converts inactive Ni oligomers into catalytically active mononuclear Ni, especially with electron-rich/neutral vinyl bromides. Asymmetric variant achievable by replacing bpy with chiral bis-oxazoline ligand 58."
+}

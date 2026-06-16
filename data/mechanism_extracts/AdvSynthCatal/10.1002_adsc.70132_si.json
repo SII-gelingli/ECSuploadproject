@@ -1,0 +1,44 @@
+{
+  "doi": "10.1002_adsc.70132_si",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "electrochemical three-component thiomethoxylation of vinyl ethers with diaryl disulfides and methanol via thiyl-radical addition/radical-polar crossover",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "anodic oxidation of PhSSPh (or thiolate) to generate PhS• thiyl radical that adds to the vinyl ether",
+  "key_intermediates": [
+    {
+      "name": "phenylthiyl radical (PhS•)",
+      "smiles": "[S]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-alkoxy carbon radical from PhS• addition to ethyl vinyl ether",
+      "smiles": "CCOC([CH2]SP)",
+      "role": "transient"
+    },
+    {
+      "name": "TEMPO-SPh adduct (radical trap product, C15H23NOS)",
+      "smiles": "CC1(C)CCCC(C)(C)N1OSc1ccccc1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anodic oxidation generates a PhS• thiyl radical from PhSSPh; PhS• adds to the vinyl ether to give an α-alkoxy carbon radical, which is further oxidized (anodically) to an oxocarbenium ion that is trapped by MeOH to furnish the α-methoxy thioether product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Target product formed only in trace amounts; TEMPO-SPh adduct (C15H24NOS+, m/z 266.1571, calcd 266.1573) detected by HRMS, confirming a thiyl-radical intermediate."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Only the radical-trapping control experiment is shown on this page; trapping captures the PhS• rather than the carbon radical, so the downstream cation step (radical-polar crossover with MeOH) is inferred from product structure rather than directly probed here."
+}

@@ -1,0 +1,129 @@
+{
+  "doi": "10.1021_acs.joc.4c02530",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrophotocatalytic thiocyanation/sulfonylation cyclization of unactivated alkenes (pyrazole-tethered styrenes) using NaSCN or RSO2Na as radical sources and TPPT as photocatalyst under anodic electrolysis.",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic regeneration of the photocatalyst: photoexcited TPPT* oxidizes NaSCN (or MeSO2SNa) to •SCN (or •SO2Me); reduced TPPT•– is reoxidized to TPPT at the graphite anode; protons are reduced at the Pt cathode to H2.",
+  "key_intermediates": [
+    {
+      "name": "TPPT* (excited 2,4,6-triphenylpyrylium photocatalyst)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "thiocyanato radical (•SCN)",
+      "smiles": "[S]C#N",
+      "role": "reactive"
+    },
+    {
+      "name": "methylsulfonyl radical (•SO2Me)",
+      "smiles": "[O]S(=O)C",
+      "role": "reactive"
+    },
+    {
+      "name": "thiocyanogen (SCN)2 (possible but non-essential intermediate)",
+      "smiles": "N#CSSC#N",
+      "role": "off_pathway"
+    },
+    {
+      "name": "alkyl radical A from •SCN/•SO2Me addition to alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexadienyl radical B (intramolecular ipso/aryl radical trap)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Wheland-type arenium cation C (after SET oxidation of B by TPPT*)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TPPT•– (reduced photocatalyst)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Blue-light excitation of TPPT gives TPPT*, which oxidizes NaSCN or MeSO2SNa (lower Eox than 1a) to the corresponding S- or N-centered radical; this radical adds to the alkene of 1a to give alkyl radical A, which undergoes intramolecular ipso-cyclization onto the pendant aryl to give cyclohexadienyl radical B; a second SET from B to TPPT* furnishes arenium cation C, which deprotonates to product 3a/5a, while TPPT•– is reoxidized to TPPT at the anode with concomitant cathodic H2 evolution.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction fully suppressed (0% yield of 3a)."
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "<1% yield of 3a; reaction inhibited."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "<1% of 3a; SCN–DPE adduct 6 isolated in 75%, confirming free •SCN radical."
+    },
+    {
+      "name": "p-dinitrobenzene (pDNB)",
+      "smiles": "O=[N+]([O-])c1ccc(cc1)[N+](=O)[O-]",
+      "purpose": "redox_probe",
+      "observation": "0% of 3a; consistent with SET pathway being blocked."
+    },
+    {
+      "name": "CuCl2",
+      "smiles": "[Cu](Cl)Cl",
+      "purpose": "redox_probe",
+      "observation": "0% yield; single-electron pathway intercepted."
+    },
+    {
+      "name": "CCl4",
+      "smiles": "ClC(Cl)(Cl)Cl",
+      "purpose": "radical_trap",
+      "observation": "50% of 3a (partial inhibition)."
+    },
+    {
+      "name": "(SCN)2 (thiocyanogen, via NCS-SCN)",
+      "smiles": "N#CSSC#N",
+      "purpose": "intermediate_trap",
+      "observation": "Reacts with 1a to give 3a in 64% (with electricity) but only trace without electricity, suggesting (SCN)2 is competent but not the principal/most productive intermediate."
+    },
+    {
+      "name": "on/off light and current",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Product formation requires both continuous light and current; switching either off halts conversion and H2 evolution, indicating concurrent photoredox + electrolysis."
+    },
+    {
+      "name": "TPPT fluorescence quenching with 1a and 2a",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "2a (NaSCN) and 4a (MeSO2SNa) strongly quench TPPT* fluorescence; 1a less so, consistent with PC* oxidizing the SCN/sulfinate anion first."
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, 2a, 4a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Eox(2a)=1.31 V, Eox(4a)=1.14 V vs SCE, both lower than 1a (1.95 V), supporting selective oxidation of SCN–/sulfinate by TPPT*."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "UV_vis",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly consider an alternative pathway where electrooxidation of NaSCN gives (SCN)2 as the active S-electrophile/radical source. Although (SCN)2 does deliver 3a, it is less reactive than NaSCN under standard conditions and gives only trace product without electricity, so the favored mechanism proceeds via direct photocatalytic SET oxidation of SCN–/sulfinate to •SCN/•SO2Me, with (SCN)2 deemed an unnecessary intermediate. H2 detection at the cathode confirms paired electrochemistry (anodic PC turnover / cathodic proton reduction)."
+}

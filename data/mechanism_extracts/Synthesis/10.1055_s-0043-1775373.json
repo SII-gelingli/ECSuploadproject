@@ -1,0 +1,62 @@
+{
+  "doi": "10.1055_s-0043-1775373",
+  "journal": "Synthesis",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical selenylation/cyclization of ortho-hydroxyaryl alkenes with diselenides to give selenyl-dihydrobenzofurans (and a chromane) bearing a tetrasubstituted carbon center",
+  "mechanism_family": [
+    "radical_anodic",
+    "cation_initiated",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of the diaryl diselenide (PhSeSePh, 2a) to a radical cation that fragments into PhSe+ (cation B) and PhSe• (radical C); the PhSe+ engages the alkene as a seleniranium electrophile",
+  "key_intermediates": [
+    {
+      "name": "diselenide radical cation A ([PhSeSePh]•+)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenium cation B (PhSe+)",
+      "smiles": "[Se+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenyl radical C (PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "seleniranium intermediate D (from PhSe+ + alkene 1a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-selenyl carbon radical E (from PhSe• addition to alkene)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "The anode oxidizes PhSeSePh (lower oxidation potential than 1a per CV) to a radical cation that splits into PhSe+ (B) and PhSe• (C); B forms a seleniranium with the alkene (D), and intramolecular phenol attack with loss of H+ delivers the dihydrobenzofuran 3a. In parallel, PhSe• adds to the alkene to give radical E, which is anodically oxidized to D (or PhSe• is oxidized at the anode to regenerate B), while protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "PhSeCl (stoichiometric, no current)",
+      "smiles": "Cl[Se]c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Delivers 3a in 91% yield without electricity, supporting a seleniranium (PhSe+) intermediate"
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "No effect on yield (3a still 84%), indicating free carbon radicals are not on the dominant pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors favor Path 1 (anodic oxidation of diselenide to PhSe+, then seleniranium cyclization), consistent with PhSeCl control and TEMPO insensitivity. Two alternative pathways are proposed: Path 2 — PhSe• addition to alkene forming radical E, then anodic oxidation to seleniranium D; Path 3 — anodic oxidation of PhSe• to PhSe+ to re-enter the cationic cycle, with cathodic H2 evolution closing the redox balance."
+}

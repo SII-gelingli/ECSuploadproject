@@ -1,0 +1,79 @@
+{
+  "doi": "10.1021_jacs.9b03296",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Enantioselective electrocatalytic cyanophosphinoylation of vinylarenes, installing C-P and C-CN bonds across the alkene using a chiral Cu/serine-derived bisoxazoline (sBOX) catalyst.",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "radical_polar_crossover",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anode oxidizes Cu(I)(sBOX)(CN) to Cu(II)(sBOX)(CN)+, which then oxidizes the secondary phosphine oxide (Ph2P(O)H) to a P-centered radical, regenerating Cu(I); two such anodic events per turnover deliver the P• and the Cu(II)-CN that engages the carbon radical.",
+  "key_intermediates": [
+    {
+      "name": "Cu(I)(sBOX)(CN) resting/reduced catalyst",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Cu(II)(sBOX)(CN)+ oxidized mediator",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "P-centered phosphinoyl radical (Ph2P(O)•)",
+      "smiles": "O=[P](c1ccccc1)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-centered radical from P• addition to vinylarene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "pentacoordinated Cu(III)(sBOX)(CN)(alkyl) intermediate prior to reductive elimination",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyanophosphinoylation product",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, Cu(I)(sBOX)(CN) is oxidized to Cu(II)(sBOX)(CN)+, which oxidizes Ph2P(O)H to a P-centered radical that adds to the vinylarene; the resulting benzylic radical is captured by another Cu(II)(sBOX)(CN) via single-electron oxidative addition to form a Cu(III) species, which undergoes enantiodetermining C-CN reductive elimination, releasing Cu(I) that is reoxidized at the anode while H+ is reduced to H2 at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of Cu/sBOX, +TMSCN, +Ph2P(O)H",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Catalytic anodic current at ~0.15 V increases upon addition of CN- and further upon addition of phosphine oxide 2, consistent with Cu(II)(sBOX)(CN) catalytically oxidizing the phosphine oxide to a P-centered radical."
+    },
+    {
+      "name": "direct anodic oxidation control of Ph2P(O)H on carbon anode",
+      "smiles": "O=P(H)(c1ccccc1)c1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "Direct oxidation of diphenylphosphine oxide is difficult (>0.3 V), supporting the need for the Cu mediator."
+    },
+    {
+      "name": "controlled-potential electrolysis at 0.19 V",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Product 3 formed in 94% ee, consistent with a Cu(I/II)(sBOX)(CN) mediated electrocatalytic cycle."
+    },
+    {
+      "name": "ligand scaffold variation (BOX vs sBOX with ester ancillary group)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Adding ester second-sphere ancillary coordination sites raised ee from 84% (11:1 er) to 95% (39:1 er), supporting a rigidified pentacoordinated Cu(III) reductive-elimination TS."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism proposed by analogy to Stahl/Liu Cu-catalyzed C-H cyanation (ref 15d) in which a pentacoordinated Cu(III)(BOX)(CN)2(alkyl) undergoes enantiodetermining C-CN reductive elimination; here one CN is conceptually replaced by an intramolecular ester carbonyl coordination from the sBOX ligand. Authors note the enantioinduction mode by Cu(sBOX) (steric vs electrostatic stabilization by the planar ester ancillary group) is still under investigation. No TEMPO/BHT trapping, KIE, or DFT explicitly reported on these pages."
+}

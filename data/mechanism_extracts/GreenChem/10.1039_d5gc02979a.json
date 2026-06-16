@@ -1,0 +1,101 @@
+{
+  "doi": "10.1039_d5gc02979a",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electroreductive linear hydrodimerization of allylbenzenes and vinylarenes to 1,4-diarylbutanes via in situ generated vinylarene radical anions",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_anion",
+    "sacrificial_anode"
+  ],
+  "electrochemical_role": "Cathodic single-electron reduction of the vinylarene (formed in situ by electrochemical isomerization of allylbenzene) to an alkene radical anion; Mg sacrificial anode is oxidized to Mg(II)",
+  "key_intermediates": [
+    {
+      "name": "vinylarene (styrene-type) intermediate from electrochemical isomerization of allylbenzene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkene radical anion (I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical (II) after protonation of radical anion",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical adduct (III) from radical addition to second vinylarene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbanion (IV) from second cathodic reduction of III",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Allylbenzene first undergoes electrochemical isomerization to a vinylarene, which is reduced at the cathode by SET to an alkene radical anion; protonation (from solvent) gives a benzylic radical that adds to another vinylarene, and the resulting benzylic radical is either further reduced to a carbanion and protonated or completes the product via HAT, while the Mg anode supplies electrons by oxidation to Mg(II).",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited; BHT-radical adduct detected by HRMS (m/z 357.2424)"
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product yield dropped to 10%; TEMPO-adduct detected by HRMS (m/z 262.2165)"
+    },
+    {
+      "name": "1,2-diphenylcyclopropane (substrate 11)",
+      "smiles": "C1(c2ccccc2)C(c2ccccc2)C1",
+      "purpose": "radical_clock",
+      "observation": "Underwent radical anion-mediated ring-opening reductive hydrogenation to 1,2-diphenylethane (12, 95%) with no dimerization, indicating radical anion does not directly homocouple"
+    },
+    {
+      "name": "benzyl ether substrate 9 (allyl OBn vinylarene)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Conversion of 9 to isopropylbiphenyl (10, 9%) supports benzyl carbanion intermediate"
+    },
+    {
+      "name": "CD3CN (solvent)",
+      "smiles": "[2H]C([2H])([2H])C#N",
+      "purpose": "isotope_label",
+      "observation": "Product 2l' obtained in 31% yield with 98% D incorporation - H comes from solvent"
+    },
+    {
+      "name": "DMSO-d6",
+      "smiles": "[2H]C([2H])([2H])S(=O)C([2H])([2H])[2H]",
+      "purpose": "isotope_label",
+      "observation": "2l' in 66% yield with 120% D incorporation (suggests minor benzylic C-H/D exchange)"
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "With 20 eq D2O, reduced product 13 (67%, 30% D) and coupled 2l' (25%, 9% D); low D suggests competitive D2O electrolysis"
+    },
+    {
+      "name": "sterically hindered olefin 7",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Afforded vinylarene 8 in 45% yield, confirming allylbenzene-to-vinylarene isomerization"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors note that for sterically congested 1,1,2-trisubstituted alkenes, addition of a tertiary radical to C1 is unfavorable, so a radical-radical coupling mechanism may operate instead for these substrates. The H source in products is primarily the solvent (DMSO/MeCN), not added proton donors. Anode material was modified to accommodate electron-deficient styrenes (1n)."
+}

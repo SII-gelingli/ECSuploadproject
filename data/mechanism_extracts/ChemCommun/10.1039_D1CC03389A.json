@@ -1,0 +1,82 @@
+{
+  "doi": "10.1039_D1CC03389A",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical trifluoromethylation/cyclization of N-aryl methacrylamides with IMDN-SO2CF3 to synthesize isoquinoline-1,3-diones and oxindoles via cathodically generated CF3 radicals.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Cathodic single-electron reduction of the IMDN-SO2CF3 reagent generates a CF3 radical (and releases 1-methyl-2-phenyl-1H-benzo[d]imidazole); the final cyclohexadienyl-type radical intermediate is then re-aromatized via anodic oxidation/deprotonation.",
+  "key_intermediates": [
+    {
+      "name": "trifluoromethyl radical (•CF3)",
+      "smiles": "[C](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "1-methyl-2-phenyl-1H-benzo[d]imidazole (byproduct from reagent reduction)",
+      "smiles": "Cn1c(-c2ccccc2)nc2ccccc21",
+      "role": "transient"
+    },
+    {
+      "name": "alkyl radical A (CF3-addition adduct on methacrylamide alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclohexadienyl radical B (post-ipso cyclization onto arene)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces IMDN-SO2CF3 by single-electron transfer to release •CF3, which adds to the methacrylamide alkene to give carbon radical A; A cyclizes intramolecularly onto the aryl/amide ring to give cyclohexadienyl radical B, which is then oxidized at the anode and deprotonated to restore aromaticity and afford the isoquinoline-1,3-dione or oxindole.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited; only trace 5a detected."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited; only trace 5a detected."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed; HRMS detected CF3–DPE adduct [M]+ 248.0812 (found 248.0807), confirming •CF3 formation from reagent 1."
+    },
+    {
+      "name": "CF3SO2Na (Langlois reagent control)",
+      "smiles": "[Na+].[O-]S(=O)(=O)C(F)(F)F",
+      "purpose": "other",
+      "observation": "No product 5a formed, indicating cathodic generation of •CF3 from Langlois reagent does not occur under these conditions."
+    },
+    {
+      "name": "1-methyl-3-phenyl-benzimidazolium BF4 (1b, lacking SO2CF3)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "5a obtained in 63%; demonstrates CF3 originates from the SO2CF3 portion of reagent 1 (the benzimidazolium is the redox-active carrier)."
+    },
+    {
+      "name": "N-methoxy methacrylamide substrate 3u",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Desired cyclized 5u not formed; instead 5ua (34%) and 5ub (3%) observed, indicating that an anodic oxidation step is required to close the catalytic cycle/aromatize."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism is supported by radical trapping (TEMPO, BHT, DPE adduct by HRMS) and by the N-OMe substrate experiment indicating an anodic re-aromatization step is operative (paired electrolysis). No KIE, CV, or DFT studies reported. Control with CF3SO2Na vs IMDN-SO2CF3 confirms the benzimidazolium-sulfonyl reagent is uniquely suited for cathodic •CF3 generation under these mild conditions."
+}

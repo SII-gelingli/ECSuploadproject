@@ -1,0 +1,50 @@
+{
+  "doi": "10.1002_adsc.202300949_sup_1",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical selenocyclization of N-allyl-N'-tosylureas with PhSeSePh to form 2-amino-oxazoline products bearing a CH2SePh group",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of PhSeSePh generates electrophilic PhSe+ (or PhSe radical/PhSe+ equivalent) that adds to the allyl alkene, triggering intramolecular cyclization by the urea oxygen",
+  "key_intermediates": [
+    {
+      "name": "PhSe electrophile (from anodic oxidation of diphenyl diselenide)",
+      "smiles": "[Se+](c1ccccc1)",
+      "role": "reactive"
+    },
+    {
+      "name": "seleniranium ion on allyl alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "oxazoline product 3a (5-(phenylselanylmethyl)-2-(tosylimino)oxazolidine)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "PhSeSePh is oxidized at the carbon anode to a PhSe+ electrophile (with reduction of protons at the Pt cathode); PhSe+ activates the allyl C=C as a seleniranium ion, which is opened by intramolecular attack of the urea carbonyl oxygen to give the 2-iminooxazoline 3a.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction proceeded under standard conditions with TEMPO (1 equiv.) giving 3a in 80% yield, indicating no free C-radical intermediate"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "3a obtained in 79% (1 equiv. BHT) and 81% (0.5 equiv. BHT), again consistent with a non-radical (ionic) pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Radical-trap experiments (TEMPO, BHT) do not inhibit the reaction, arguing against a free-radical chain and favoring an ionic seleniranium/cation-initiated cyclization following anodic generation of PhSe+. Optimal conditions: C(+)|Pt(-) undivided cell, n-Bu4NBF4, MeCN/H2O (7:1 mL), 10 mA, r.t., 2 h."
+}

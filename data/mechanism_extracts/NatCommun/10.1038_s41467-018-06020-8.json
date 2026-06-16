@@ -1,0 +1,80 @@
+{
+  "doi": "10.1038_s41467-018-06020-8",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Triarylamine-mediated electrochemical [4+2] annulation of alkenes with diols to afford 1,4-dioxanes and 1,4-dioxepanes",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_cation",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of triarylamine catalyst 3 to its radical cation I, which acts as a homogeneous single-electron oxidant (mediator) to oxidize the alkene; protons are reduced at the Pt cathode to H2",
+  "key_intermediates": [
+    {
+      "name": "triarylamine radical cation I (oxidized mediator, Ar3N•+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkene-derived radical cation II (1,1-diphenylethylene•+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-hydroxyethoxy carbon-centered radical III (after diol addition and deprotonation)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "carbocation IV (after second SET oxidation of III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "neutral triarylamine 3 (resting catalyst)",
+      "smiles": null,
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "The anode oxidizes triarylamine 3 to radical cation I, which performs SET on the alkene to give radical cation II; ethylene glycol adds to II and loses a proton to form C-radical III, which is further oxidized by another equivalent of I to carbocation IV; intramolecular cyclization of the pendant hydroxyl onto IV yields the 1,4-dioxane 4, while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of 3, 1, and mixture",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Catalytic current observed when 1 is added to 3 (Ep/2(3)=1.48 V, Ep/2(1)=1.68 V vs SCE), supporting mediated oxidation of alkene by 3•+"
+    },
+    {
+      "name": "less-oxidizing triarylamine mediators 3a, 3b and imidazole 3c",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Mediators with lower Ep/2 than 3 gave drastically lower yields (5–44%), consistent with thermodynamic requirement for SET to alkene"
+    },
+    {
+      "name": "electrolysis of product 4 with catalyst 3",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "4 was recovered in 96% yield; no decomposition to 5/6, showing 3 suppresses overoxidation of 4"
+    },
+    {
+      "name": "electrolysis of product 4 without catalyst 3",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "32% of 4 decomposed, giving 1,3-dioxolane 5 (16%) and benzophenone 6 (7%), confirming direct anodic overoxidation pathway in absence of mediator"
+    },
+    {
+      "name": "iPrCO2H additive omission / acid screen (AcOH, EtCO2H, CF3CO2H, TsOH)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Removing iPrCO2H or substituting other acids decreased yield, suggesting acid promotes H2 evolution and protects I, solvent and alkene from cathodic reduction"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "redox_probe"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors invoke two sequential SET events from the same mediator I (radical-polar crossover via radical cation II then cation IV). No radical traps (TEMPO/BHT), no KIE, and no DFT were reported; mechanism is supported primarily by CV (catalytic current) and by control electrolysis of isolated 4 demonstrating that 3 protects the product from anodic decomposition to dioxolane 5 and benzophenone 6."
+}

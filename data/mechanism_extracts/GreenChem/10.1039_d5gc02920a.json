@@ -1,0 +1,87 @@
+{
+  "doi": "10.1039_d5gc02920a",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical three-component imino-trifluoromethylation of olefins using Langlois reagent (CF3SO2Na) and benzophenone imines as bis-nucleophilic CF3 and amine sources, providing trifluoromethylated primary amine precursors.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2- (Langlois reagent) generates CF3 radical with loss of SO2; the benzyl radical formed after CF3 addition to the olefin is further oxidized at the anode to a benzyl cation that is trapped by the imine nitrogen; cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "trifluoromethyl radical (CF3•)",
+      "smiles": "[CH](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl radical after CF3 addition to styrene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzyl carbocation (β-CF3 benzyl cation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "iminium / N-attack adduct leading to C=N product",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-amino C-radical (Path b alternative: benzyl radical adds to C=N of imine)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "CF3SO2- is preferentially oxidized at the anode (Eox ~1.39 V vs olefin ~1.63 V; mixture shows first peak at 1.27 V), extruding SO2 to give CF3•, which adds to the styrene to form a benzyl radical; this radical is oxidized at the anode to a benzyl cation captured by the imine nitrogen to form the C–N bond, with cathodic H+ reduction to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited; product 5a N.D."
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited"
+    },
+    {
+      "name": "Cyclic voltammetry of CF3SO2Na / styrene / imine combinations",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Eox(CF3SO2Na)=1.39 V; Eox(olefin)≈1.63 V; mixture shows first oxidation at 1.27 V, indicating CF3SO2- is oxidized preferentially"
+    },
+    {
+      "name": "Control without electricity",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product (N.D.), confirming electrochemical initiation"
+    },
+    {
+      "name": "Hydrolysis derivatization (PPTS, THF/H2O)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Imine 5a hydrolyzed to β-CF3 primary amine tosylate 6 in 82% yield, supporting imine intermediate"
+    },
+    {
+      "name": "LiAlH4 reduction attempt",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Failed to reduce C=N to secondary amine (steric hindrance), indirectly supporting imine structure"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors favor Path a (radical–polar crossover: CF3• addition, anodic oxidation of benzyl radical to cation, then nucleophilic capture by imine). An alternative Path b is proposed but not excluded: the benzyl radical adds directly to the C=N bond of the imine to give an aminyl/α-amino radical, which is then oxidized at the anode with loss of an N–H proton to regenerate the C=N. Single-crystal X-ray (CCDC 2456921) confirms product structure."
+}

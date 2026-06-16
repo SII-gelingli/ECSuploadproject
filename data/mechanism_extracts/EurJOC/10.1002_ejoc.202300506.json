@@ -1,0 +1,84 @@
+{
+  "doi": "10.1002_ejoc.202300506",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical thiolative cyclization of lapachol/C-allyl-lawsone with diaryl disulfides to form fused sulfide-containing pyran (6-membered) or furan (5-membered) lapachones, followed by Ru/NaIO4 oxidation to the corresponding sulfones.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "paired_electrolysis",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of PhSSPh to [(PhS)4]2+/[(PhS)3]+ thiiranium-type electrophile which activates the alkene; protons are reduced to H2 at the cathode (paired electrolysis).",
+  "key_intermediates": [
+    {
+      "name": "diphenyl disulfide radical cation [PhSSPh]•+",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "tetrasulfide dication [(PhS)4]2+",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "trisulfide cation [(PhS)3]+ (electrophilic sulfenylating species)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "thiiranium / sulfonium adduct on the prenyl/allyl alkene of lapachol",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tertiary carbocation from Markovnikov opening (lapachol case)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "6-endo cyclized pyranonaphthoquinone sulfide 3a",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "5-exo cyclized furanonaphthoquinone sulfide 5a",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode PhSSPh is oxidized (E = -0.41 V vs Ag) to its radical cation, which dimerizes to [(PhS)4]2+ and fragments to electrophilic [(PhS)3]+; this sulfenyl cation adds to the alkene of lapachol/C-allyl-lawsone to give a sulfonium/carbocation that is intramolecularly trapped by the naphthoquinone enol-OH (6-endo for lapachol, 5-exo for less substituted C-allyl-lawsone), releasing H+ which is reduced to H2 at the cathode.",
+  "rate_determining_step": "Nucleophilic attack of the alkene on the electrogenerated sulfenyl cation / formation of the carbocation intermediate (slower for the less substituted C-allyl-lawsone, consistent with lower yields).",
+  "probe_reagents": [
+    {
+      "name": "diphenyl disulfide (2a) alone",
+      "smiles": "c1ccc(SSc2ccccc2)cc1",
+      "purpose": "redox_probe",
+      "observation": "CV shows semi-reversible oxidation; radical cation [PhSSPh]•+ at E = -0.41 V vs Ag, evolving to [(PhS)4]2+ at -0.06 V vs Ag."
+    },
+    {
+      "name": "lapachol (1) alone",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation at E = +0.70 V vs Ag; cathodic response at -1.22 V vs Ag assigned to quinone reduction/rearrangement."
+    },
+    {
+      "name": "lapachol + disulfide 2a mixture",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Lapachol oxidation peak disappears, indicating consumption/coupling with electrogenerated sulfenyl species; supports disulfide-as-mediator pathway rather than direct lapachol oxidation."
+    },
+    {
+      "name": "isolated product 3a",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Reversible reductions at -0.59 and -1.01 V and reduction at E1/2 = -0.80 V vs Ag confirm the quinone is recovered in its oxidized form after electrolysis."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism is supported primarily by CV studies and product/structural (ORTEP) characterization; no radical traps, KIE, DFT, or EPR were reported. Regiochemical divergence (6-endo vs 5-exo) is rationalized by carbocation stability — lapachol's prenyl group gives a tertiary cation enabling 6-membered ring closure, while C-allyl-lawsone gives a less stabilized cation favoring 5-membered ring closure. Subsequent (non-electrochemical) RuCl3/NaIO4 oxidation converts sulfides 3/5 to sulfones 6."
+}

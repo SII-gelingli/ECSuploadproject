@@ -1,0 +1,96 @@
+{
+  "doi": "10.1021_acs.joc.3c02934",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intramolecular 6-endo-trig cyclization/selenylation of 2-aminochalcones (and 2-hydroxychalcones) with diaryl diselenides to give 3-selenyl azaflavanones and flavanones",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic reduction of (PhSe)2 generates the [PhSeSePh]•– radical anion that fragments to PhSe• (and PhSe–, which is reoxidized at the graphite anode to PhSe•); the resulting PhSe radical adds to the chalcone, and the benzyl radical adduct is then anodically oxidized (SET) to a cation that cyclizes",
+  "key_intermediates": [
+    {
+      "name": "diphenyl diselenide radical anion [PhSeSePh]•–",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl radical (PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenide anion (PhSe–)",
+      "smiles": "[Se-]c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl cation (PhSe+) from anodic oxidation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-selenyl benzyl C-radical adduct (IV) on chalcone β-carbon",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-selenyl carbocation (V) after anodic SET",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "seleniranium ion (VI)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "N-cyclized cationic intermediate (VII) prior to deprotonation",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Cathode reduces (PhSe)2 to its radical anion which cleaves to PhSe• and PhSe–; PhSe– is reoxidized at the anode to PhSe•. PhSe• adds to the chalcone C=C giving a stabilized benzyl radical, which is anodically oxidized to a cation that tautomerizes to a seleniranium ion and is opened by intramolecular anti-nucleophilic attack of the N–H (or O–H), followed by deprotonation to give the trans product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT (butylated hydroxytoluene)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "2.0 equiv BHT completely inhibited formation of 3aa, indicating radical intermediates"
+    },
+    {
+      "name": "PhSeCl (no current)",
+      "smiles": "Cl[Se]c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Without current, 1a + PhSeCl gave 3aa in 88%, showing an ionic (PhSe+) pathway is also viable"
+    },
+    {
+      "name": "PhSeH (no current)",
+      "smiles": "[SeH]c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "0% 3aa without current"
+    },
+    {
+      "name": "PhSeH (with current)",
+      "smiles": "[SeH]c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "72% 3aa under current, consistent with PhSe• being the active species generated electrochemically"
+    },
+    {
+      "name": "cyclic voltammetry of (PhSe)2 and 1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "(PhSe)2 reduction at 0.06 V and oxidation at 0.885 V (vs Ag/AgCl); 1a has higher oxidation/reduction potentials, so 2a is preferentially reduced at the cathode initiating the process"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors propose a dominant radical pathway (cathodic reduction of (PhSe)2 → PhSe• addition → anodic oxidation of benzyl radical → seleniranium → anti cyclization gives trans-product, dr > 20:1). A parallel ionic pathway via direct anodic generation of PhSe+ (II-2) leading to seleniranium VI is acknowledged as occurring simultaneously but is slower; this is supported by the PhSeCl-without-current control."
+}

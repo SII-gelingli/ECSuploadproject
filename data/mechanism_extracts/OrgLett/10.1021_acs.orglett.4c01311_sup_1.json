@@ -1,0 +1,68 @@
+{
+  "doi": "10.1021_acs.orglett.4c01311_sup_1",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical three-component sulfonylation/arylation of styrenes with TsCl and arylboronic acids via a radical pathway",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation generates a sulfonyl radical (Ts•) from TsCl (or tosylate), which adds to the styrene to form a benzylic carbon radical; the aryl group from the arylboronic acid is then installed, likely via further anodic oxidation/transmetalation",
+  "key_intermediates": [
+    {
+      "name": "tosyl (sulfonyl) radical Ts•",
+      "smiles": "Cc1ccc(cc1)S(=O)(=O)[*]",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbon radical from Ts• addition to p-F-styrene",
+      "smiles": "Cc1ccc(cc1)S(=O)(=O)C[C]c1ccc(F)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "TEMPO adduct of benzylic radical (m/z 390.1539 found 390.1552)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TEMPO-Ts adduct (m/z 268.1007 found 268.1003)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "DMPO spin adduct of benzylic carbon radical (EPR g=2.0056, AN=15.9 G, AH=21.7 G)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anodic oxidation generates a sulfonyl radical from TsCl; this Ts• adds across the styrene alkene to give a benzylic C-radical, which is then coupled with the aryl group derived from the arylboronic acid to deliver the 1,2-sulfonyl-aryl product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed; TEMPO-Ts adduct (calc 268.1007, found 268.1003) and TEMPO-benzylic carbon radical adduct (calc 390.1539, found 390.1552) detected by HRMS"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction inhibited, supporting radical pathway"
+    },
+    {
+      "name": "DMPO",
+      "smiles": "CC1(C)CCC=[N+]1[O-]",
+      "purpose": "radical_trap",
+      "observation": "EPR spin adduct observed (g=2.0056, AN=15.9 G, AH=21.7 G), consistent with a carbon-centered radical (benzylic radical after Ts• addition)"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "EPR"
+  ],
+  "evidence_strength": "medium",
+  "notes": "A separate Cl-radical trapping experiment using N,N-diallyl-4-methylbenzenesulfonamide with Et4NCl probes whether Cl• is generated under electrolysis (suggesting a possible parallel chlorine radical pathway from TsCl/chloride oxidation). Mechanism is consistent with anodic generation of Ts•, radical addition to styrene, then arylation via the arylboronic acid; the exact step for C–C bond formation with ArB(OH)2 (radical vs radical-polar crossover with oxidation of benzylic radical to cation) is not unambiguously assigned by the probes shown."
+}

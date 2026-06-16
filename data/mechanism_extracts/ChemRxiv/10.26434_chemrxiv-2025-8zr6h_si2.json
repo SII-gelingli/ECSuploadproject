@@ -1,0 +1,51 @@
+{
+  "doi": "10.26434_chemrxiv-2025-8zr6h_si2",
+  "journal": "ChemRxiv",
+  "is_review": false,
+  "rxn_class_summary": "Cobalt-catalyzed enantioselective migratory insertion of an alkene into a Co-aryl bond generating stereoisomeric cobaltacyclic intermediates studied by DFT",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "concerted"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Co(III)-aryl alkene complex Int1A (pro-R coordination, acenaphthylene bound)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Migratory insertion transition state TS(1-2)A",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cobaltacyclic alkyl intermediate Int2A after 1,2-insertion",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Diastereomeric Co(III)-aryl alkene complex Int1B",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Migratory insertion transition state TS(1-2)B",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Diastereomeric cobaltacyclic alkyl intermediate Int2B",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Within an inner-sphere Co(III) coordination sphere bearing a pyridyl-imine and an oxazoline (iPr) ligand, the coordinated acenaphthylene undergoes concerted migratory insertion into the Co-aryl bond, producing diastereomeric cobaltacyclic alkyl intermediates Int2A/Int2B via TS(1-2)A/B.",
+  "rate_determining_step": "Migratory insertion of the alkene into the Co-aryl bond (TS(1-2))",
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "DFT"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Computational protocol: Gaussian 16, TPSS-D3(BJ)/def2-SVP geometry optimizations in gas phase; PW6B95-D4/def2-TZVPP single points with SMD implicit solvation (acetone ε=20.493 and ethanol ε=24.852, modeling 1:1 acetone/EtOH mixture). Two diastereomeric insertion pathways (A vs B) are compared to rationalize stereoisomer generation; the favored pathway determines product enantio/diastereoselectivity but relative energies are not given on this page."
+}

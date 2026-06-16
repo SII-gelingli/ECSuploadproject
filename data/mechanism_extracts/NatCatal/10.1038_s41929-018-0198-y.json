@@ -1,0 +1,76 @@
+{
+  "doi": "10.1038_s41929-018-0198-y",
+  "journal": "NatCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electricity-driven asymmetric rhodium-catalyzed oxidative cross-coupling of 2-acyl imidazoles with silyl enol ethers to give non-racemic 1,4-dicarbonyl compounds.",
+  "mechanism_family": [
+    "radical_anodic",
+    "electrocatalysis_inner_sphere",
+    "radical_cation"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the chiral Rh-bound enolate (Rh2-1a, E_p^ox = +0.52 V vs Ag/AgCl) generates a Rh-coordinated alpha-carbon radical; a second anodic SET after silyl enol ether addition gives an oxocarbenium that is trapped by MeOH; cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "Rh(III)-bound 2-acyl imidazole substrate complex (I)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Rh-bound enolate (II), characterized as Rh2-1a (X-ray)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Rh-bound alpha-carbon radical / radical cation [Rh2-1a]·+ (III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Rh-bound secondary ketyl-type radical after silyl enol ether addition (IV)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Rh-bound oxocarbenium intermediate (V) after second SET",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "The chiral Rh-Lewis acid binds the acyl imidazole and deprotonation gives a Rh-enolate that is anodically oxidized (1.5 V lower potential than free enol ether) to a Rh-bound alpha-radical; this radical adds to the silyl enol ether, the resulting beta-OTMS ketyl radical is oxidized again at the anode to an oxocarbenium, which is desilylated/trapped by MeOH to release product, while protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Electrolysis of 1a with TEMPO (without 2a) gave TEMPO-adduct 7 in 92% yield with 92% current efficiency; the 2a-derived TEMPO adduct 8 was not observed, supporting trapping of the Rh-bound alpha-radical [Rh2-1a]·+ rather than a silyl-enol-ether-derived radical."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Reaction of 1a with DPE in absence of 2a gave three-component product 9 (51%, 99% e.e.) via [Rh2-1a]·+ addition to DPE, further oxidation and MeOH trapping, supporting the proposed cationic intermediate V."
+    },
+    {
+      "name": "Rh2-1a (isolated Rh-enolate complex)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Synthesized, crystallographically characterized (shielding of re face by bulky TMS); cyclic voltammetry shows reversible-type oxidation at +0.52 V vs Ag/AgCl, ~1.5 V lower than the silyl enol ether 2a (+1.72 V) and the free acyl imidazole 1a (>2 V), identifying it as the species actually oxidized."
+    },
+    {
+      "name": "Cyclic voltammetry of 1a + 2,6-lutidine, 2a, Rh2, and Rh2-1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Only Rh2-1a shows a low-potential oxidation wave at +0.52 V; free 1a and 2a require much higher potentials, demonstrating that catalyst-bound enolate formation enables the mild anodic oxidation."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Chiral Lewis acid catalysis lowers oxidation potential of the substrate by ~1.5 V via enolate complexation, simultaneously preventing homocoupling by sequestering the radical and enforcing enantioselectivity (re-face shielded by bulky TMS group on the benzothiazole ligand). Stereochemistry of C-C bond formation occurs on the Rh-bound radical III; the second oxidation (III to V via IV) is proposed without direct kinetic evidence."
+}

@@ -1,0 +1,62 @@
+{
+  "doi": "10.1002_adsc.70132",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidant- and metal-free alkoxylation-thiolation of vinyl ethers using diaryl disulfides as arylthio sources and alcohols as alkoxy sources to give alpha-thionyl acetals",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of diaryl disulfide (PhSSPh) to arylthio radical and arylthio cation; subsequent anodic oxidation of beta-thio carbon radical to carbocation; cathode performs proton reduction to H2 (and can reduce PhS+ back to PhS radical that dimerizes to PhSSPh)",
+  "key_intermediates": [
+    {
+      "name": "arylthio radical (PhS•) — intermediate A",
+      "smiles": "[S]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "arylthio cation (PhS+) — intermediate A'",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "beta-(arylthio) alpha-alkoxy carbon radical (PhS-CH2-C•(OEt)) — intermediate B",
+      "smiles": "CCOC([CH2])SC1=CC=CC=C1",
+      "role": "transient"
+    },
+    {
+      "name": "alpha-alkoxy carbocation bearing beta-SPh (PhS-CH2-C+(OEt)) — intermediate C",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "TEMPO-SPh adduct (radical trap product)",
+      "smiles": "CC1(C)CCCC(C)(C)N1OSc1ccccc1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "PhSSPh is oxidized at the anode to give PhS• (A) and PhS+ (A'); PhS• adds to the vinyl ether 1a to form a C-centered radical B, which is further oxidized at the anode to oxocarbenium-type cation C; methanol attacks C and deprotonation (assisted by 4-CF3-pyridine) delivers product 4a, while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction inhibited with only trace 4a; TEMPO-SPh adduct detected by HRMS (m/z 266.1571), confirming arylthio radical intermediate"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, 2a, 4-CF3Py",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Neither 1a nor 4-CF3Py show oxidation peaks in the window; 2a oxidizes at 1.41 V, lowered to 1.32 V upon addition of 4-CF3Py, indicating disulfide 2a is the species oxidized at the anode and 4-CF3Py acts only as a base"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "4-(Trifluoromethyl)pyridine functions as a mild, electrochemically stable base that assists deprotonation rather than as a redox mediator. An alternative fate proposed for cation A' is reaction with vinyl ether 1a directly to form C, or cathodic reduction/dimerization back to PhSSPh, constituting a partially paired electrolysis cycle."
+}

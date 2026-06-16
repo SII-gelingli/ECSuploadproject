@@ -1,0 +1,95 @@
+{
+  "doi": "10.1021_jacs.4c01690",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Photoinduced palladium-catalyzed three-component asymmetric carboamination of 1,3-dienes with C(sp3)-H substrates and amines to give chiral allylic amines",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "excited-state Pd(0)Ln*",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "aryl radical / Pd(I) pair from ArBr SET reduction",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkyl radical (from HAT on C(sp3)-H substrate, e.g. benzyl radical)",
+      "smiles": "[CH2]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "allyl radical intermediate III from radical addition to 1,3-diene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "pi-allyl Pd(II) complex IV",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "direct aryl-diene addition side product 105",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Blue-light excited Pd(0)Ln* reduces ArBr by single-electron transfer to give an aryl radical and LnPd(I)Br; the aryl radical abstracts a C(sp3)-H hydrogen (HAT) to generate an alkyl radical, which adds to the 1,3-diene to give an allyl radical that recombines with Pd(I) to form a pi-allyl Pd(II) complex, finally undergoing nucleophilic allylic substitution by the amine to release product and regenerate Pd(0).",
+  "rate_determining_step": "Intermolecular hydrogen atom transfer (HAT) from the C(sp3)-H substrate to the aryl radical (KIE = 1.9)",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed; TEMPO-aryl adduct 101 and TEMPO-benzyl adduct 102 detected by HRMS, supporting aryl and benzyl radical intermediates"
+    },
+    {
+      "name": "trans-1-phenyl-2-vinylcyclopropane (103, radical clock)",
+      "smiles": "C(=C)C1CC1/C=C/c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 104 formed in 31% yield, 64% ee, supporting radical addition to the alkene"
+    },
+    {
+      "name": "D8-toluene (D8-1a)",
+      "smiles": "[2H]c1c([2H])c([2H])c(C([2H])([2H])[2H])c([2H])c1[2H]",
+      "purpose": "KIE",
+      "observation": "Parallel KIE kH/kD = 1.9, implicating HAT in the turnover-limiting step"
+    },
+    {
+      "name": "Ir(ppy)3 (photosensitizer swap)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No product formed when used in place of Pd catalyst, indicating Pd is essential beyond simple photosensitization"
+    },
+    {
+      "name": "dark / no light control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product even at 100 °C, confirming photoexcitation requirement"
+    },
+    {
+      "name": "omission of ArBr or Pd/L",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product, confirming both Pd catalyst and aryl bromide oxidant are required"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "on/off_light_or_current",
+    "isolation_of_intermediate",
+    "crossover"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Bulky 2,6-di-tert-butyl-substituted aryl bromides are used to suppress direct aryl-radical addition to the diene (side product 105), favoring the HAT pathway. Pi-allyl Pd(II) intermediate IV detected by HRMS. Chirality is set by chiral phosphine ligand (e.g., BINAP/xyl-BINAP) during nucleophilic attack on the pi-allyl Pd(II) complex."
+}

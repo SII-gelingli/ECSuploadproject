@@ -1,0 +1,86 @@
+{
+  "doi": "10.1021_acs.joc.5c01984",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical three-component thio-perfluoroalkylation of alkenes with thiophenols and perfluoroalkyl iodides under FeCl2 catalysis to give vicinal thioether/perfluoroalkyl products.",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of an Fe(II)-thiolate complex (C) to an Fe(III) species (D), with concomitant cathodic reduction of D back to release product and regenerate Fe(II); perfluoroalkyl radical is generated via halogen-bonding activation of nC4F9I by TMEDA/H2O rather than direct electrolysis.",
+  "key_intermediates": [
+    {
+      "name": "Halogen-bond (XB) complex of nC4F9I with TMEDA/H2O",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Perfluorobutyl radical A (nC4F9•)",
+      "smiles": "[CH2]C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic carbon radical B from nC4F9 addition to styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Fe(II)-thiolate complex C (ArS-Fe(II))",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Fe(III)-thiolate species D after anodic oxidation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Disulfide ArS-SAr (2a')",
+      "smiles": "COc1ccc(SSc2ccc(OC)cc2)cc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "Perfluoroalkyl iodide adduct C (alkyl iodide on styrene)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "TMEDA/H2O activates nC4F9I via halogen bonding to release nC4F9 radical, which adds to the alkene giving benzylic radical B; in parallel, ArSH coordinates Fe(II) (C), is oxidized at the anode to Fe(III)-thiolate D, which couples with radical B and is reduced at the cathode to deliver the product while regenerating Fe(II).",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 4aa only in trace amounts; TEMPO–nC4F9-alkyl adduct B detected by LCMS, supporting perfluoroalkyl/benzyl radical intermediates."
+    },
+    {
+      "name": "Diaryl disulfide 2a' (4-MeO-C6H4-S-S-C6H4-4-OMe)",
+      "smiles": "COc1ccc(SSc2ccc(OC)cc2)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Using disulfide instead of thiol gives only trace 4aa, indicating disulfide is not the productive intermediate."
+    },
+    {
+      "name": "nC4F9I + alkene without thiol (control for iodide adduct C)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Iodo-perfluoroalkylated alkene C not detected (n.d.), ruling out ATRA-type alkyl iodide as the intermediate."
+    },
+    {
+      "name": "Cyclic voltammetry (with/without FeCl2)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Eox decreases from 3.43 V to 3.23 V upon addition of FeCl2, indicating FeCl2 lowers the oxidation potential and mediates anodic oxidation."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly exclude two alternative pathways: (i) disulfide-mediated thiyl radical pathway and (ii) ATRA-type iodoperfluoroalkylation followed by SN2 with thiolate, since both surrogate intermediates fail to give product under standard conditions. The perfluoroalkyl radical is proposed to form via halogen-bonding activation rather than direct cathodic reduction of C-I."
+}

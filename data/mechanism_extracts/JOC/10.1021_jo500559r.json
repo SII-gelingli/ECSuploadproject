@@ -1,0 +1,132 @@
+{
+  "doi": "10.1021_jo500559r",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Anodic oxidation of 4,4'-dimethoxystilbene and substituted stilbenes to give tetraaryltetrahydrofurans, dehydrotetralins, aldehydes, indanyl acetamides, and pallidol/ampelopsin F-type products via radical cation dimerization",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_cation",
+    "cation_initiated",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic one-electron oxidation of the stilbene alkene to a radical cation, which dimerizes to a stable dication; subsequent nucleophilic capture (H2O, MeOH, AcOH, AcO-, MeCN) and intramolecular cyclization steps are non-electrochemical",
+  "key_intermediates": [
+    {
+      "name": "stilbene radical cation (30)",
+      "smiles": "[CH+]([c]1ccc(OC)cc1)[CH]c1ccc(OC)cc1",
+      "role": "transient"
+    },
+    {
+      "name": "open-chain dication 31 from radical cation dimerization (threo 31a and meso 31b)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "hydroxylated benzylic cation 32 (from H2O attack on 31)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "spirocyclic carbocation 33 (ring-closed onto OH; precursor to aldehydes 1e/1f)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "deprotonated cation 34 (styryl cation from 31)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "spirocyclic carbocation 35 (dearomatized; precursor to dehydrotetralins via 1,2-shift)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "methoxylated spirocyclic cation 36 (MeOH analog of 33; precursor to acetals 1g/1h)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "open-chain cation 37 (alkyl stilbene dication for stilbene 17)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "indanyl cation (from cation 35-type cyclization in alkyl stilbenes)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tetraaryltetrahydrofurans 1a/1b",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "dehydrotetralins 1c/1d",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "The anode removes one electron from the stilbene to give a radical cation (30), which dimerizes through C-C bond formation at the β-carbons to a stable dication (31); nucleophiles (H2O, MeOH, AcO-, MeCN) then attack 31 or its rearranged spirocyclic cations (33, 35, 36) to deliver tetrahydrofurans, acetals, aldehydes, dehydrotetralins, or acetamides after deprotonation.",
+  "rate_determining_step": "Radical cation dimerization of 30 to dication 31 (per Steckhan's kinetic studies)",
+  "probe_reagents": [
+    {
+      "name": "added water (1% H2O in MeCN/LiClO4)",
+      "smiles": "O",
+      "purpose": "intermediate_trap",
+      "observation": "Traps dication 31 to give tetrahydrofurans 1a/1b as major products, confirming dication is the primary electrolysis product"
+    },
+    {
+      "name": "nonaqueous workup (SiO2/CH2Cl2)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Markedly reduced tetrahydrofuran yield and increased dehydrotetralin yield, showing THFs arise from H2O attack during workup"
+    },
+    {
+      "name": "methanol (Steckhan's conditions, 25% MeOH/CH2Cl2)",
+      "smiles": "CO",
+      "purpose": "intermediate_trap",
+      "observation": "Gives dimethyl acetals 1g/1h as major products via methoxylated spirocation 36, supporting spirocyclic intermediate"
+    },
+    {
+      "name": "sodium acetate / AcOH (Eberson's conditions)",
+      "smiles": "CC(=O)[O-].[Na+]",
+      "purpose": "intermediate_trap",
+      "observation": "AcO- captures the radical cation 30 before dimerization, giving acetates 1i/1j (62%)"
+    },
+    {
+      "name": "Br2/CH2Cl2 on dehydrotetralin 1d",
+      "smiles": "BrBr",
+      "purpose": "other",
+      "observation": "Gives 1,6-dibromo-7-methoxy-2,3,4-tris(4-methoxyphenyl)naphthalene confirming 1d skeleton"
+    },
+    {
+      "name": "differentially disubstituted stilbenes (4-OMe vs 4'-CF3, 4'-NMe2 etc.)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Aryl migration in unsymmetrical stilbenes rules out open-chain carbocation; supports spirocyclic intermediate. Stronger donor placement determines regiochemistry of THF and dication coupling, supporting radical cation dimerization model"
+    },
+    {
+      "name": "X-ray diffraction on 1a, 1b, 1c, 1h, 1i, 1j, 2d, 6d, 14k, 15k, 16k, 20r, 21p, 22p, 22s, 23p, 23s, 25p",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Unambiguous configurational assignment of products supporting the proposed pathways"
+    },
+    {
+      "name": "acetonitrile solvent (Ritter-type capture)",
+      "smiles": "CC#N",
+      "purpose": "intermediate_trap",
+      "observation": "Traps indanyl cation in alkyl-substituted stilbenes 17-20 to give indanyl acetamides and tetralinyl acetamides (20q/20r), supporting cationic cyclization pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "crossover",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Favored mechanism: one-electron anodic oxidation -> radical cation 30 -> radical cation dimerization to dication 31 -> nucleophile/intramolecular trapping. Alternative pathway via 1,2-aryl shifts in an open-chain carbocation 32 (Scheme 2, path a) was initially proposed for aldehyde 1e but ruled out by results on unsymmetrically substituted stilbenes, which require a spirocyclic cation (33/35/36) for the observed aryl migrations. Two cation-radical coupling modes (threo 31a, C2; meso 31b) explain the two THF diastereomers 1a/1b. Two ring-expansion pathways from spirocation 35 (1,2-p-methoxybenzyl shift -> 1c; 1,2-p-methoxystyryl shift -> 1d) compete, with the styryl shift preferred ~5:1 for stilbene 1. Competing radical cation capture (vs. dimerization) operates in the presence of strong nucleophiles (NaOAc). For alkyl/EWG-substituted stilbenes, open-chain dication and acetonitrile (Ritter) trapping become competitive."
+}

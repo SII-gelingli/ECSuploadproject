@@ -1,0 +1,50 @@
+{
+  "doi": "10.1002_cjoc.200790177",
+  "journal": "ChinJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical dicarboxylation of styrene with CO2 at a sacrificial Mg anode to give 2-phenylsuccinic acid",
+  "mechanism_family": [
+    "radical_cathodic",
+    "sacrificial_anode",
+    "radical_anion",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic one-electron reduction of styrene to its radical anion; sacrificial Mg anode supplies Mg2+ to stabilize carboxylate intermediates",
+  "key_intermediates": [
+    {
+      "name": "styrene radical anion",
+      "smiles": "[CH2][C-]([H])c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "monocarboxylated benzyl radical (PhCH(CH2COO-)•)",
+      "smiles": "[CH]([CH2]C(=O)[O-])c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "benzyl carbanion carboxylate (PhCH(-)CH2COO-)",
+      "smiles": "[CH-](CC(=O)[O-])c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "2-phenylsuccinate dianion (product E)",
+      "smiles": "[O-]C(=O)CC(C(=O)[O-])c1ccccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode delivers one electron to styrene forming a radical anion B; B attacks CO2 yielding the monocarboxylated radical C, which is further reduced at the cathode to the benzyl carbanion D; D attacks a second CO2 to give the dicarboxylate E. Mg anode is oxidized to Mg2+, which pairs with the carboxylates.",
+  "rate_determining_step": "Heterogeneous one-electron transfer to styrene (α = 0.21, ∂Ep/∂lg v ≈ 70.7 mV/decade, indicating slow heterogeneous electron transfer)",
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of styrene with/without CO2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Without CO2: irreversible peak at -2.64 V (vs SCE). With 0.28 mol/L CO2: original peak shifts to less negative potentials and a new reduction peak appears at more negative potentials, supporting sequential SET/CO2 addition pathway."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism is supported primarily by CV data and consistent with general electrocarboxylation literature; no radical traps or isotope labeling were employed. The Mg2+ generated at the sacrificial anode is invoked to stabilize/precipitate the carboxylate intermediates and shift equilibria toward product. Lower temperatures favor carboxylation by increasing CO2 solubility."
+}

@@ -1,0 +1,89 @@
+{
+  "doi": "10.1021_acscatal.3c01244",
+  "journal": "ACSCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical cobalt-catalyzed cross-electrophile coupling of aryl/alkyl bromides with chlorogermanes (Me3GeCl) to form Csp2-Ge and Csp3-Ge bonds (germylation).",
+  "mechanism_family": [
+    "radical_cathodic",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Cathodic reduction of the bpy-Co(III)(acac) precatalyst to generate low-valent Co(0)/Co(I) species that activate Me3GeCl and Ar/Alkyl-Br sequentially; cathode also regenerates active Co(0) from Co(I) after reductive elimination.",
+  "key_intermediates": [
+    {
+      "name": "bpy-Co(0) active catalyst (A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ge-Co(II)-Cl intermediate from oxidative addition of Me3GeCl (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ge-Co(I) species after cathodic reduction of B (C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(III) intermediate bearing Ar/Alkyl and GeMe3 (D)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(I) species (E) released after reductive elimination",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkyl radical from inner-sphere halogen abstraction",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Co(II)-Ar/Alkyl intermediate (F, alternative pathway)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Co(I)-Ar/Alkyl intermediate (G, alternative pathway)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "The cathode reduces bpy-Co(III) to Co(0), which preferentially undergoes oxidative addition with Me3GeCl to give a Ge-Co(II)-Cl species; further cathodic reduction gives Ge-Co(I), which engages Ar-Br by oxidative addition or alkyl-Br by inner-sphere halogen abstraction/radical recombination to a Co(III)(GeMe3)(R) species. Reductive elimination forms the C-Ge bond and releases Co(I), which is reduced back to Co(0) at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3a still formed in 62% yield (vs 93% without TEMPO); no TEMPO-GeMe3 adduct observed, suggesting germanium radical is not a free intermediate."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Product 3a obtained in 72%; Me3Ge-CH2-CHPh2 type trapping product not detected, indicating no free Ge radical."
+    },
+    {
+      "name": "Radical clock alkyl bromide (allyl ether-tethered bromide)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Cyclized/germylated products 5t (36%) and 5u (39%) obtained, demonstrating that alkyl radicals are involved in the Csp3 germylation."
+    },
+    {
+      "name": "Cyclic voltammetry of [bpy-Co(III)](acac)3, Co(acac)2/3, and electrophiles",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Reduction peaks at -0.60 (Co(III)/Co(II)), -1.60 (Co(II)/Co(I)), -1.83 V (Co(I)/Co(0)) vs SCE; electrophile reductions (Ar-Br -2.62, alkyl-Br -2.64, Me3GeCl -2.81 V) are more negative than Co reductions. Co(I)/Co(0) peak current grows with added electrophiles and reversibility is lost, indicating Co(0) reacts preferentially with Me3GeCl."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "radical_clock",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "An alternative pathway is proposed (and shown in Figure 2e) in which Co(0) first reacts with Ar/Alkyl-Br to give Co(II)-R (F), then cathodic reduction to Co(I)-R (G), followed by SN2-type oxidative addition of Me3GeCl to give Co(III) (H) and reductive elimination. CV data indicate the main pathway (Me3GeCl activation first) is preferred because Co(0) shows the largest current enhancement with added germanium chloride and the Co(I)/Co(0) and Co(II)/Co(I) reversible waves vanish upon addition of electrophiles."
+}

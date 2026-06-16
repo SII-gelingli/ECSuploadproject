@@ -1,0 +1,80 @@
+{
+  "doi": "10.1039_c8qo00803e",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical ferrocene-mediated cascade 5-exo-trig/7-endo-trig radical cyclization of unsaturated carbamates and ureas to give functionalized 7-membered carbocycles (cycloheptane-fused oxazolidinones/imidazolones)",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "electrocatalysis_outer_sphere",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anode oxidizes Cp2Fe to Cp2Fe+, which performs single-electron transfer (SET) oxidation of the deprotonated carbamate/urea N-anion to generate a nitrogen-centered radical; cathode reduces MeOH to methoxide and H2, with methoxide deprotonating the N-H substrate.",
+  "key_intermediates": [
+    {
+      "name": "N-anion of carbamate/urea substrate (conjugate base A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "nitrogen-centered radical B (NCR)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical C after 5-exo-trig cyclization (5-membered ring with trans-disposition of radical and pendant alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "bicyclic 3,4-cis 7-endo-trig cyclized C-radical D",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "3,4-trans diastereomeric 7-endo radical D' (disfavored)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "Cp2Fe+ (ferrocenium, anodically generated oxidant)",
+      "smiles": "[Fe+2].[cH-]1cccc1.[cH-]1cccc1",
+      "role": "transient"
+    },
+    {
+      "name": "monocyclized H-atom-transfer product 3 (from C trapping H from 1,4-CHD)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cp2Fe is oxidized at the anode to Cp2Fe+ while MeOH is reduced at the cathode to MeO- + 1/2 H2; methoxide deprotonates the N-H substrate to give anion A, which Cp2Fe+ oxidizes by SET to nitrogen-centered radical B; B undergoes stereoselective 5-exo-trig cyclization to C-radical C, then regioselective 7-endo-trig cyclization to D, which abstracts H from 1,4-CHD to deliver the 7-membered product 2.",
+  "rate_determining_step": "7-endo-trig cyclization of carbon radical C (TS1, ΔG‡ = 10.1 kcal/mol; competing TS2 to 3,4-trans diastereomer at 11.7 kcal/mol)",
+  "probe_reagents": [
+    {
+      "name": "1,4-cyclohexadiene (1,4-CHD)",
+      "smiles": "C1=CCC=CC1",
+      "purpose": "intermediate_trap",
+      "observation": "H-atom donor; required for efficient turnover — omitting it drops yield of 2 from 60% to 37% and increases monocyclized HAT product 3 to 18%, consistent with H-atom transfer reduction of bicyclic radical D"
+    },
+    {
+      "name": "substrate with two internal alkenes (gives 18)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only monocyclized product 18 isolated (62%), showing the second (7-endo) cyclization is sensitive to steric hindrance at the distal alkene"
+    },
+    {
+      "name": "X-ray crystallography of product 12 (CCDC 1823050)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Confirms cis ring-fusion stereochemistry of the bicyclic 7-membered product"
+    }
+  ],
+  "evidence_types_used": [
+    "DFT",
+    "isolation_of_intermediate",
+    "intermediate_trap_other",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "DFT (UB3LYP/6-31G*) supports kinetic and thermodynamic preference for 3,4-cis intermediate D over 3,4-trans D' (ΔΔG‡ ≈1.6 kcal/mol; D at -16.0 vs D' at -14.9 kcal/mol relative to C). Origin of selectivity attributed to steric repulsion between PMP and nBu groups in TS2, forcing PMP rotation out of conjugation (dihedral ∠C2-N1-C12-C17 = 61.3° in TS2 vs 35.0° in TS1). Alternative 6-exo-trig pathway from radical C is proposed to be inhibited by ring strain of the trans-fused bicyclic system; the trans disposition of radical and alkene in C is the key stereoelectronic feature that channels cyclization to 7-endo rather than the usual 6-exo for 6-heptenyl radicals."
+}

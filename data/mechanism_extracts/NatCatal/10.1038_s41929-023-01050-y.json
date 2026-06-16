@@ -1,0 +1,115 @@
+{
+  "doi": "10.1038_s41929-023-01050-y",
+  "journal": "NatCatal",
+  "is_review": false,
+  "rxn_class_summary": "Photoelectrochemical asymmetric dehydrogenative [2+2] cycloaddition between alkyl 2-acyl imidazole ketones and alkenes, forging chiral cyclobutanes by activating two C(sp3)-H bonds and a C=C double bond under chiral-at-Rh Lewis acid / ferrocene-mediated electrolysis.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "photoredox_combined",
+    "biradical",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Ferrocene (Fc) acts as an anodic redox mediator: Fc is oxidized to Fc+ at the RVC anode, which then performs single-electron oxidation of the Rh-bound enolate intermediate II to a carbon radical cation III; the cathode reduces alcohol to H2 and alkoxide, completing the dehydrogenative cycle.",
+  "key_intermediates": [
+    {
+      "name": "Rh(III)-ketone bidentate complex I",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Rh-bound enolate II (after DABCO deprotonation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Rh-bound alpha-carbonyl radical cation III (SET oxidation by Fc+)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Rh-bound allylic/alpha-carbonyl radical IV (after proton loss)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Rh-dienolate radical cation V (tautomer of VI after second SET)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Rh-coordinated alpha,beta-unsaturated ketone (enone) intermediate VI",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Excited triplet-state Rh-enone VII (T1, 1,3-biradical character)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Triplet 1,4-diradical VIII (after C-C bond formation with alkene)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Rh-coordinated cyclobutane IX (after ISC and ring closure)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ferrocenium (Fc+) redox mediator",
+      "smiles": "[Fe+2].[cH-]1cccc1.[cH-]1cccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, Fc is oxidized to Fc+, which performs SET on the Rh-enolate II to give radical cation III; deprotonation yields allylic radical IV, which is further oxidized (by Fc+) to V/VI, the Rh-bound enone. Visible light excites VI to triplet biradical VII, which adds to the alkene to give 1,4-diradical VIII, followed by ISC and C-C bond closure to cyclobutane IX; protons released are reduced at the Pt cathode to H2, achieving overall dehydrogenation.",
+  "rate_determining_step": "Electrochemical dehydrogenative oxidation of the alkyl ketone to the enone intermediate VI (1 -> 52, ~10 h) is markedly slower than the subsequent photochemical [2+2] cycloaddition (52 -> 3, ~3 h).",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "TEMPO-adduct 53 isolated (8%, 23% e.e.) at the alpha-carbonyl position; cyclobutane formation suppressed, supporting radical intermediates III/IV."
+    },
+    {
+      "name": "Phenyl vinyl ketone (Michael acceptor)",
+      "smiles": "O=C(c1ccccc1)C=C",
+      "purpose": "intermediate_trap",
+      "observation": "Gave Michael adduct 55 (28%, 96% e.e.) plus mono-addition 54, confirming the enolate intermediate II."
+    },
+    {
+      "name": "Reaction without diene 2",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Enone 52 isolated in 72% yield, confirming the dehydrogenative pathway generates VI before cycloaddition."
+    },
+    {
+      "name": "Stoichiometric Fc+PF6- (no current)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "With 10 equiv Fc+PF6-, product 3 obtained in 25% (97% e.e.) plus enone 52 (35%), demonstrating Fc+ is the kinetically competent oxidant."
+    },
+    {
+      "name": "Light/current on-off (sequential)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Electrolysis without light gives only enone 52; subsequent irradiation without current converts 52 + diene to 3 (77%, 14:1 d.r., 96% e.e.), decoupling the EC dehydrogenation from the photo-[2+2] step."
+    },
+    {
+      "name": "Cyclic voltammetry of Fc / Fc + RhS-enolate",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Catalytic current observed (oxidation peak enhanced, reduction peak vanishes) only when 1 + Rh + DABCO are present, confirming Fc+ oxidizes enolate II (Ep/2 ~0.50 V vs ~0.44 V for Fc+/Fc)."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly exclude an alternative pathway in which an electro-oxidized electron-rich olefin radical cation couples with another olefin: no cyclobutane forms in absence of diene, and the isolated enone 52 cleanly converts to product upon photolysis, supporting the 'dehydrogenation-then-photo-[2+2]' sequence over a radical-cation [2+2]. The chiral-at-Rh complex serves a dual role as Lewis acid and triplet photosensitizer, enabling enantiocontrol via the triplet biradical VII/VIII."
+}

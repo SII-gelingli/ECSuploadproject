@@ -1,0 +1,106 @@
+{
+  "doi": "10.1021_jacs.4c09621",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Decarboxylative C(sp2)-C(sp3) cross-coupling of carboxylic acids with aryl iodides via Fe/Ni dual metallaphotoredox catalysis under 390 nm irradiation.",
+  "mechanism_family": [
+    "photoredox_combined",
+    "direct_SET",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Fe(III) carboxylate complex (FeIII(O(CO)R)n)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "carboxylate radical (RCO2•)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Fe(II) species after LMCT",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkyl radical (R•) from CO2 extrusion",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "(L)Ni(I)-I (50)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "(L)Ni(II)(Alkyl)X (51)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "(L)Ni(I)(Alkyl) (52)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "(L)Ni(III)(Aryl)(Alkyl) (53)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "(4-tBuBpy)Ni(II)(Aryl)(NPhth) (44)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "(4-tBuBpy)Ni(II)(Alkyl)(NPhth) (46)",
+      "smiles": null,
+      "role": "stoichiometric_model"
+    }
+  ],
+  "electron_flow": "Photoexcited Fe(III) carboxylate undergoes inner-sphere LMCT to give a carboxyl radical and Fe(II); decarboxylation releases an alkyl radical that adds to (L)Ni(I)X to form (L)Ni(II)(Alkyl)X, which is reduced by Fe(II) to (L)Ni(I)(Alkyl); oxidative addition of Ar-I gives (L)Ni(III)(Aryl)(Alkyl) that reductively eliminates the cross-coupled product and regenerates (L)Ni(I)X.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "(4-tBuBpy)Ni(II)(Aryl)(NPhth) (44)",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "With FeCl3 + light gave only 2% cross-coupled product and ~6% Ar-NPhth, indicating Ni(II)-aryl is not the productive on-cycle intermediate."
+    },
+    {
+      "name": "(4-tBuBpy)Ni(II)(Alkyl)(NPhth) (46)",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "Formed cross-coupled product under various conditions even without light, supporting Ni(II)-alkyl as competent intermediate; bialkyl side products implicate reductive elimination forming Ni(0)."
+    },
+    {
+      "name": "KNPhth (potassium phthalimide)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Addition of 5 equiv with FeCl3/acid/base gave only 13% product, distinct from MacMillan's 67%, arguing against Ni(II)-aryl pathway."
+    },
+    {
+      "name": "FeCl2 vs FeCl3 control (no light)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No coupled product without irradiation; only Ar-H formed, confirming light-driven Fe-mediated decarboxylation is essential."
+    },
+    {
+      "name": "X-ray crystallography of 46",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Structural characterization of Ni(II)(Alkyl)(NPhth) (CCDC 2371033)."
+    }
+  ],
+  "evidence_types_used": [
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "on/off_light_or_current",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly consider and disfavor an alternative pathway proceeding via Ni(0)/Ni(II)(Aryl)X oxidative addition followed by radical capture; their data instead support radical capture by Ni(I)X to give Ni(II)(Alkyl)X, then reduction to Ni(I)(Alkyl) prior to Ar-I oxidative addition. Open questions remain regarding exact Fe speciation, the radical-capture step, and roles of iodide, Zn, and 4-ethylpyridine additives. Fe activation is via inner-sphere LMCT rather than outer-sphere SET typical of Ir photocatalysts."
+}

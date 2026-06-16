@@ -1,0 +1,100 @@
+{
+  "doi": "10.1021_jacs.3c04864",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical isomerizing allylation and allenylation of aldehydes with unactivated alkenes and alkynes via cobalt-salen-mediated hydrogen evolution generating allylic/propargylic carbanions",
+  "mechanism_family": [
+    "mediator_cathodic",
+    "electrocatalysis_inner_sphere",
+    "anion_initiated"
+  ],
+  "electrochemical_role": "Cathodic reduction of Co(II)-salen to Co(I), which deprotonates the allylic/propargylic C-H substrate to form Co(III)-H; further SET reduction gives Co(II)-H that releases H2, shifting the dissociation equilibrium to slowly release the carbanion nucleophile (indirect HER)",
+  "key_intermediates": [
+    {
+      "name": "Co(I)-salen (cathodically generated)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(III)-H salen intermediate",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Co(II)-H hydride species",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Allylic carbanion (A-1/A-2 resonance, from allylbenzene)",
+      "smiles": "[CH2-]C=Cc1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Propargylic/allenyl carbanion (B-1/B-2 resonance, from 1-phenyl-1-butyne)",
+      "smiles": "C[CH-]C#Cc1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Linear (E)-homoallyl alkoxide IM1(E) / product 3a(E)",
+      "smiles": "[O-]C(c1ccccc1)C/C=C/c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "Allenyl alcohol product 5a",
+      "smiles": "OC(c1ccccc1)C=C=Cc1ccccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces Co(II)-salen to Co(I), which deprotonates the weakly acidic allylic/propargylic C-H of the alkene/alkyne to give Co(III)-H and a carbanion; a second electron converts Co(III)-H to Co(II)-H, releasing H2 and regenerating Co(II). The slowly released carbanion then undergoes nucleophilic addition to benzaldehyde via the kinetically and thermodynamically favored TS1(E) to give the linear (E)-allylation or allenylation product.",
+  "rate_determining_step": "Deprotonation/proton transfer of the allylic (or propargylic) C-H bond during the HER step (supported by secondary KIE in parallel experiments and larger KIE in intermolecular competition)",
+  "probe_reagents": [
+    {
+      "name": "Cyclopropyl-substituted allyl/alkyne and aldehyde substrates (radical clock)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Products 3bm-3br and 5bd-5be obtained with cyclopropyl ring intact; no ring-opening or cyclization, excluding a radical pathway"
+    },
+    {
+      "name": "Allylbenzene-d2 (1be-d2)",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "Parallel kH/kD = 1.3, intermolecular competition kH/kD = 3.3; secondary KIE consistent with H/D exchange of carbanion and proton transfer in HER"
+    },
+    {
+      "name": "1-Phenyl-1-butyne-d5 (4a-d5)",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "Parallel kH/kD = 1.5, intermolecular competition kH/kD = 4.3"
+    },
+    {
+      "name": "NaH in DMF (stoichiometric base mimic)",
+      "smiles": "[H-].[Na+]",
+      "purpose": "intermediate_trap",
+      "observation": "With allylbenzene + PhCHO gives isomerizing allylation product 3a in 62% yield (linear E); fails for 4a (alkyne) due to lower acidity, supporting carbanion intermediate for allylation"
+    },
+    {
+      "name": "Acidic additives (HOAc, MeOH, H2O)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Addition of acid dramatically decreases yield (trace-40%) due to competing HER of the acid, supporting an anionic/HER-driven mechanism"
+    },
+    {
+      "name": "DABCO (CV probe)",
+      "smiles": "C1CN2CCN1CC2",
+      "purpose": "redox_probe",
+      "observation": "DABCO is cathodically inert but enhances Co(II)/Co(III) and Co(I)/Co(II) redox peaks of salen catalyst I; required additive for catalysis"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "radical_clock",
+    "cyclic_voltammetry",
+    "DFT",
+    "stoichiometric_intermediate",
+    "kinetic_order"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two mechanisms are proposed: (favored) indirect HER via Co(II)-salen mediator generating Co(I)/Co(III)-H/Co(II)-H that deprotonates substrate, and (alternative) direct HER where the cathode reduces protons from the weakly acidic substrate directly. CV shows substrate (allylbenzene Ered = -1.78 V) is more reducible than aldehydes (-1.96 to -2.74 V), but the cathode potential is held more positive than aldehyde reduction to avoid the side reaction (PhCHO -> PhCH2OH or pinacol). DFT (PBE0+D3(BJ)/ma-def2-TZVPP//B3LYP/Def2-SVP) shows TS1(E) is kinetically (4.3 vs 6.0/8.9 kcal/mol) and thermodynamically (-2.8 vs -0.5/+3.3 kcal/mol) favored, rationalizing the unusual linear (E)-selectivity over the branched product."
+}

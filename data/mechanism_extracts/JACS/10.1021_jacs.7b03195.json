@@ -1,0 +1,115 @@
+{
+  "doi": "10.1021_jacs.7b03195",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Ni-catalyzed three-component reductive 1,2-dicarbofunctionalization of alkenes with aryl iodides and tertiary alkyl iodides using TDAE as organic reductant",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "radical_polar_crossover",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "ArNi(II)-I (A), from oxidative addition of ArI to Ni(0)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Tertiary alkyl C-centered radical (C) from Ni(I)-mediated activation of alkyl iodide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Alkyl-CH2-CHR• radical adduct (D) after addition of alkyl radical to alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(III)(Ar)(alkyl-CH2-CHR) species (B) from radical recombination with A",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(I) species regenerating Ni(0)/Ni(II) with TDAE",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Secondary alkyl iodide (E) — proposed but ruled out as intermediate",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "Stoichiometric ArNi(II)Cl complex 43 (from dtbbpy and 4-tBu-C6H4Cl)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ArNi(II) complex 42 (from Ni(dtbbpy)I2 + 2-iodotoluene + TDAE)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "TDAE reduces Ni(II) to Ni(0), which undergoes oxidative addition into ArI to give ArNi(II) (A); in parallel a Ni(I) species reduces the tertiary alkyl iodide via SET to release an alkyl radical (C) that adds to the alkene giving radical D, which recombines with A to form Ni(III) intermediate B that reductively eliminates the dicarbofunctionalized product and Ni(I), the latter being re-reduced by TDAE.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "significantly reduced reaction efficiency, consistent with radical intermediates"
+    },
+    {
+      "name": "1,1-diphenylethylene",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "significantly reduced reaction efficiency"
+    },
+    {
+      "name": "1,4-cyclohexadiene",
+      "smiles": "C1=CCC=CC1",
+      "purpose": "radical_trap",
+      "observation": "significantly reduced reaction efficiency"
+    },
+    {
+      "name": "Radical clock alkyl iodide 38 (hexenyl-type)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "with unactivated alkene, 5-exo cyclization product 39 favored over intermolecular addition to allyl acetate (17%); with acrylonitrile, intermolecular addition product 40 obtained in 45% without 39 — confirms C-centered radical and kinetic competition"
+    },
+    {
+      "name": "Preformed secondary alkyl iodide 41",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "no reactivity under standard conditions, ruling out secondary alkyl iodide as on-cycle intermediate (path II excluded)"
+    },
+    {
+      "name": "Stoichiometric ArNi(II) complex 43",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "with acrylonitrile, tBuI and TDAE gave product 24 in 55% yield, confirming ArNi(II) competence"
+    },
+    {
+      "name": "Ni(dtbbpy)I2 + 2-iodotoluene + TDAE",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "formed ArNi(II) complex 42, demonstrating TDAE reduces Ni(II) and enables oxidative addition"
+    },
+    {
+      "name": "Control without ArI / without Ni",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "no reaction in absence of Ni or ArI; without alkyl iodide no reaction; demonstrates all three components required"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors favor Path I (radical addition to alkene then capture by ArNi(II) to give Ni(III), then reductive elimination). Path II (in situ secondary alkyl iodide E undergoing oxidative addition) is explicitly ruled out by NMR/GC-MS monitoring and by unreactivity of preformed secondary iodide 41. Alternative ArAlkNi(III) pathway via direct recombination of tertiary alkyl radical with A or oxidative addition of ArI to AlkNi(I) is disfavored due to absence of Alk-Ar direct coupling products. Unactivated olefins fail — a coordinating/directing group is required."
+}

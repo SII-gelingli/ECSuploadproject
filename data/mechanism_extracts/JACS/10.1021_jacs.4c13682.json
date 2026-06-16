@@ -1,0 +1,121 @@
+{
+  "doi": "10.1021_jacs.4c13682",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical metal-free 1,2-syn-cyano-hydroxylation of alkenes via a telescoped 1,3-dipolar cycloaddition with a sulfonyl-nitrile oxide followed by cathodic SET-induced radical ring-opening (sew & cut)",
+  "mechanism_family": [
+    "radical_cathodic",
+    "direct_SET",
+    "paired_electrolysis",
+    "concerted"
+  ],
+  "electrochemical_role": "Cathodic SET reduction of the C=N (oxime) moiety of the 3-sulfonyl-isoxazoline cycloadduct generates a radical anion that expels arylsulfinate to form an imidoyl radical, which undergoes β-scission; anode performs oxidation of Et3N (or 1,4-cyclohexadiene) as sacrificial reductant to close the circuit",
+  "key_intermediates": [
+    {
+      "name": "sulfonyl-nitrile oxide (1,3-dipole I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "3-sulfonyl-isoxazoline cycloadduct 2",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "radical anion IX (cathodic SET adduct of cycloadduct)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "imidoyl radical X (after ArSO2- loss)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "oxygen-centered radical XI (after β-scission)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkoxide (cathodic reduction of XI)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "furoxan 11 (dimer of nitrile oxide I)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "β-elimination olefin 26 (loss of ArFSO2H)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "α-oxy radical VIII from radical Brook rearrangement (with C5-silyl substrate)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "In situ generated sulfonyl-nitrile oxide undergoes metal-free 1,3-dipolar cycloaddition with the alkene to give an isoxazoline cycloadduct; cathodic single-electron reduction of its C=N bond yields a radical anion that ejects arylsulfinate to form an imidoyl radical, which fragments by radical β-scission of the N–O bond to release a nitrile and an oxygen-centered radical, the latter being further reduced at the cathode and protonated to deliver the 1,2-syn-cyano-hydroxylation product.",
+  "rate_determining_step": "Radical β-scission of the imidoyl radical X (isoxazoline ring-opening) following SET reduction and sulfinate loss",
+  "probe_reagents": [
+    {
+      "name": "cyclopropene-derived cycloadduct 18 (radical clock)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Electrolysis afforded β-hydroxy aldehyde 19 (70%) and over-reduced alcohol 20 (28%); no β-hydroxy-imine or β-hydroxy-amine (excluding path A) and no tertiary-radical product 21/22 from cyclopropane opening (excluding path C), consistent with path B: SET to C=N, sulfinate loss, then fast isoxazoline β-scission outcompeting cyclopropane opening"
+    },
+    {
+      "name": "3-bromo-isoxazoline 12",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Gave product 9 in 33% with 66% recovered SM, showing a good anionic leaving group at C3 is required"
+    },
+    {
+      "name": "3-ester isoxazoline 13 and 3-alkyl isoxazoline 14",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No fragmentation product formed; confirms need for an expellable anionic LG (ArSO2-, Br) at C3"
+    },
+    {
+      "name": "C3-carboxylate 15 (anodic decarboxylation under alternating polarity)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Delivered 9 in 9% NMR yield, showing pendant redox handle can also trigger ring-opening"
+    },
+    {
+      "name": "NHPI ester 16 (cathodic activation)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Gave syn-hydroxy nitrile 9 in complex mixture, supporting analogous radical fragmentation"
+    },
+    {
+      "name": "C5-trimethylsilyl cycloadduct 23 (Brook probe)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Furnished silyl ether 24 (64%) via radical Brook rearrangement of oxygen-centered radical VII to α-oxy radical VIII, confirming oxygen-centered radical intermediate"
+    },
+    {
+      "name": "cyclic voltammetry of cycloadduct 8 and analogs 12–16",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Two reduction peaks at Epc = -1.01 V (oxime C=N) and -2.10 V (aryl sulfone); first reduction at oxime triggers fragmentation"
+    },
+    {
+      "name": "1,4-cyclohexadiene (sacrificial reductant at anode)",
+      "smiles": "C1=CCC=CC1",
+      "purpose": "other",
+      "observation": "Serves as competent anodic sacrificial reductant, easing purification by avoiding nonvolatile byproducts"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Three pathways were considered for cycloadduct fragmentation: path A (cathodic N–O cleavage to distonic radical anion III) was ruled out by absence of β-hydroxy-imine/amine; path C (cyclopropane ring-opening dominant) was ruled out by absence of stabilized tertiary-radical products 21/22; favored path B involves SET to C=N then sulfinate loss and β-scission. Minor side pathway: with C5-silyl substrates a radical Brook rearrangement diverts the oxygen-centered radical to an α-oxy radical, giving silyl ether instead of the cyano-hydroxylation product. Furoxan 11 (nitrile oxide dimer) is a stoichiometric byproduct consumed during the first ~1 F/mol of electrolysis."
+}

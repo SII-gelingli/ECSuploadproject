@@ -1,0 +1,87 @@
+{
+  "doi": "10.1021_acscatal.0c02607",
+  "journal": "ACSCatal",
+  "is_review": false,
+  "rxn_class_summary": "Enantioselective copper-catalyzed intramolecular alkene carboamination and carboetherification of alkenylsulfonamides/alcohols using O2 (air or 10% O2) as the sole stoichiometric oxidant",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Cu(II)-bis(oxazoline) complex coordinated to alkene/sulfonamide substrate",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "primary carbon radical formed after intramolecular C-X bond formation (X = O, NSO2Ar) onto alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized C-radical adding intramolecularly onto aryl ring of N-tosyl/aryl group",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexadienyl radical prior to rearomatization",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cu(I) species reoxidized by O2 to Cu(II)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "aldehyde aminooxygenation byproduct (4)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "gamma-lactam byproduct (5)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "aminochlorination product (3) from CuCl precatalyst",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cu(II)·L coordinates the tethered heteroatom nucleophile and alkene; intramolecular C-X bond formation generates a primary carbon radical with concomitant reduction to Cu(I); the C-radical adds onto the pendant arene and rearomatizes to give the carbocyclized product, while Cu(I) is reoxidized to Cu(II) by O2 to close the catalytic cycle.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "K2CO3 additive control",
+      "smiles": "[K+].[K+].[O-]C([O-])=O",
+      "purpose": "other",
+      "observation": "Little conversion (entry 8); proposed to sequester protons required for O2 -> H2O reduction, impeding Cu reoxidation"
+    },
+    {
+      "name": "O2 partial-pressure variation (1 atm O2 vs air vs 10% O2)",
+      "smiles": "O=O",
+      "purpose": "other",
+      "observation": "Lower O2 (air/10%) suppresses competitive intermolecular trapping of C-radical by O2 (aldehyde 4, lactam 5) and improves sultam 2 yield"
+    },
+    {
+      "name": "Anaerobic control (no O2, entry 7)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Mostly starting material with traces of sultam 2 and aminochloride 3; confirms O2 is required for catalytic turnover (Cu(I)->Cu(II) reoxidation)"
+    },
+    {
+      "name": "Achiral vs chiral bis(oxazoline) ligand screen (L1 vs L2)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "CuCl·L1 gives racemic sultam in good yield under air/10% O2; Cu(OTf)2·L2 under O2 gives poor reactivity and ee with competing aminooxygenation/aminochlorination"
+    }
+  ],
+  "evidence_types_used": [
+    "other",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism is inferred by analogy to the authors' prior MnO2-oxidant carboamination/carboetherification (ref 13) and TEMPO/O2 aminooxygenation (ref 10/11a) systems shown in Scheme 1A/B. The paper focuses on demonstrating O2 (air) as terminal oxidant in place of MnO2 or TEMPO/O2; detailed mechanistic probes (TEMPO trapping, radical clocks, KIE, DFT) are not performed on this page. Side pathways (aminooxygenation to aldehyde 4, gamma-lactam 5, aminochlorination 3) are diagnostic of a discrete C-radical intermediate. Counterion (OTf vs Cl/carboxylate) and oxidant identity strongly influence whether enantioselective carboamination or racemic/competing pathways dominate."
+}

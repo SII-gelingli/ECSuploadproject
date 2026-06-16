@@ -1,0 +1,62 @@
+{
+  "doi": "10.1021_jacs.3c12894",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "photoredox-catalyzed dearomative [2π+2σ] cycloaddition of phenols with bicyclo[1.1.0]butanes to give bicyclo[2.1.1]hexane-fused cyclic enones",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_cation",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "excited acridinium photocatalyst [PC1]*",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "BCB-derived radical cation (I)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phenoxyl radical from phenol oxidation (II)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic/ring-opened radical intermediate III (common to both paths)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-carbonyl radical IV after 5-exo-trig cyclization",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "reduced photocatalyst [PC1]•−",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Visible-light-excited acridinium [PC1]* is reductively quenched by either the BCB (Path A, oxidation to radical cation I) or the phenol (Path B, oxidation to phenoxyl radical II); both pathways converge via Friedel–Crafts-type strain-release C–C bond formation to a common benzylic radical III, which undergoes 5-exo-trig cyclization to α-carbonyl radical IV, finally reduced by [PC1]•− to regenerate the photocatalyst and close the cycle.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "product 3a obtained in <5% yield, indicating involvement of radical intermediates"
+    }
+  ],
+  "evidence_types_used": [
+    "UV_vis",
+    "cyclic_voltammetry",
+    "intermediate_trap_TEMPO",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two mechanistic pathways are proposed and both are considered operative: Path A (oxidation of BCB 2a, E1/2 = 1.66 V vs SCE, thermodynamically slightly favored) and Path B (oxidation of phenol 1a, E1/2 = 1.70 V vs SCE, kinetically favored due to excess phenol). Stern–Volmer quenching shows BCB quenches [PC1]* ~1.4× more efficiently than phenol. Quantum yield Φ = 0.19 supports a closed catalytic (non-chain) cycle. UV–vis confirms PC1 is the only species absorbing at 450 nm, excluding direct substrate excitation."
+}

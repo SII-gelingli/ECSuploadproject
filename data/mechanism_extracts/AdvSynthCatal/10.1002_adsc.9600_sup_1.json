@@ -1,0 +1,88 @@
+{
+  "doi": "10.1002_adsc.9600_sup_1",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical hydroxy-thiocarbamation of electron-deficient alkenes (α-arylacrylates) with KSCN and H2O to give β-hydroxy primary S-thiocarbamates",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of SCN- to thiocyanate radical (SCN•) which adds to the alkene; cathode reduces H2O/protons to evolve H2 (confirmed by Pd/C-catalyzed hydrogenation of N-phenylmaleimide using the evolved H2)",
+  "key_intermediates": [
+    {
+      "name": "thiocyanate radical (SCN•)",
+      "smiles": "[S]C#N",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-radical from SCN• addition to α-phenylacrylate",
+      "smiles": "COC(=O)C(c1ccccc1)(CSC#N)[CH2]",
+      "role": "transient"
+    },
+    {
+      "name": "benzylic cation after further anodic oxidation",
+      "smiles": "COC(=O)C(c1ccccc1)(CSC#N)[CH2+]",
+      "role": "transient"
+    },
+    {
+      "name": "β-hydroxy thiocyanate (after H2O trapping)",
+      "smiles": "COC(=O)C(O)(c1ccccc1)CSC#N",
+      "role": "transient"
+    },
+    {
+      "name": "β-hydroxy primary S-thiocarbamate product 4a (after SCN hydrolysis)",
+      "smiles": "COC(=O)C(O)(c1ccccc1)CSC(=O)N",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "SCN- is oxidized at the anode to SCN•, which adds to the β-carbon of the α-arylacrylate to give a stabilized benzylic radical; further anodic single-electron oxidation generates a benzylic cation that is trapped by H2O to install the OH, while the cathode reduces protons to H2. The pendant SCN is then hydrolyzed to the primary S-thiocarbamate.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Only trace 4a formed; BHT-SCN adduct (HRMS m/z 300.1400, calc 300.1393) and BHT-trapped benzylic radical adduct (HRMS m/z 462.2076, calc 462.2073) detected, supporting SCN• and a C-centered radical intermediate"
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "D-incorporation into OH and NH2 of 4a (D-4a, HRMS 281.0643 vs calc 281.0646), confirming H2O is the proton/H source for OH and NH"
+    },
+    {
+      "name": "H2-18O",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "18O incorporated into both the OH and the C=O of the thiocarbamate of 4a (18O-4a, HRMS 282.0549 vs calc 282.0542), confirming H2O is the oxygen source for hydroxyl and for carbamate carbonyl (SCN hydrolysis)"
+    },
+    {
+      "name": "α-phenylacrylate 1a",
+      "smiles": "COC(=O)C(=C)c1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "CV onset oxidation +1.693 V vs SCE"
+    },
+    {
+      "name": "KSCN",
+      "smiles": "[K+].[S-]C#N",
+      "purpose": "redox_probe",
+      "observation": "CV onset oxidation +0.383 V vs SCE — much easier to oxidize than 1a, indicating SCN- is the species oxidized at the anode"
+    },
+    {
+      "name": "N-phenylmaleimide (H2 probe)",
+      "smiles": "O=C1C=CC(=O)N1c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Headspace H2 from electrolysis reduces N-phenylmaleimide to N-phenylsuccinimide 6a in 59% yield with Pd/C, confirming cathodic H2 evolution"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "product_isotope_distribution",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors depict two BHT adducts (I: BHT-SCN from direct trapping of SCN•; II: BHT-trapped benzylic radical after SCN• addition to alkene), supporting a stepwise radical addition / radical-polar crossover pathway. The primary S-thiocarbamate (-SC(=O)NH2) arises from hydrolysis of the intermediate thiocyanate (-SCN) by H2O, as evidenced by 18O incorporation into the carbamate carbonyl."
+}

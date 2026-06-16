@@ -1,0 +1,65 @@
+{
+  "doi": "10.1002_ejoc.202301246_sup_1",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical [3+2] annulation of 3-aza-1,5-dienes with dimethyl malonate to access 4-pyrrolin-2-ones with cathodic H2 evolution",
+  "mechanism_family": [
+    "radical_anodic",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation generates a malonyl radical from deprotonated dimethyl malonate; cathodic reduction of protons produces H2",
+  "key_intermediates": [
+    {
+      "name": "malonyl-stabilized C-centered radical from dimethyl malonate",
+      "smiles": "COC(=O)[CH]C(=O)OC",
+      "role": "reactive"
+    },
+    {
+      "name": "N-acyl alpha-amino allyl/C-centered radical after radical addition to the methacrylamide alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclized N-acyl iminium / radical cation intermediate prior to deprotonation/aromatization to 4-pyrrolin-2-one",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the malonate anion (formed by n-Bu4NOAc base) to a malonyl C-radical that adds to the methacrylamide C=C of the 3-aza-1,5-diene; the resulting carbon radical cyclizes onto the pendant styrenyl alkene, and a further SET oxidation/deprotonation furnishes the 4-pyrrolin-2-one, with protons reduced at the stainless-steel cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO/BHT (radical quenching experiments)",
+      "smiles": null,
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed in the presence of radical scavengers, supporting a radical pathway"
+    },
+    {
+      "name": "electricity on/off",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Product formation only progresses while current is applied, indicating continuous electrolysis is required"
+    },
+    {
+      "name": "H2 detection (GC)",
+      "smiles": "[H][H]",
+      "purpose": "other",
+      "observation": "H2 detected as the cathodic counter-product"
+    },
+    {
+      "name": "cyclic voltammetry of substrates/malonate",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation event consistent with anodic oxidation of the malonate anion being the initiating SET step"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "on/off_light_or_current",
+    "cyclic_voltammetry",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism inferred from the SI section headings (quenching, on/off, H2 detection, CV) and the gram-scale electrolysis scheme using C(+)/stainless-steel(-) electrodes with n-Bu4NOAc in MeCN; full mechanistic schemes were not visible on the supplied pages, so specific intermediate SMILES beyond the malonyl radical are left null."
+}

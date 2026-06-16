@@ -1,0 +1,88 @@
+{
+  "doi": "10.1039_D4CC02543A",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical difluoromethylation/Smiles rearrangement of N-arylsulfonyl acrylamides with CF2HSO2Na to afford β-difluoromethylamides via radical addition, aryl migration, and desulfonylation",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF2HSO2Na (sodium difluoromethanesulfinate) to generate CF2H radical with loss of SO2 and electron; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "CF2H radical generated from anodic oxidation of CF2HSO2Na",
+      "smiles": "[CH](F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Intermediate A: tertiary C-radical from CF2H addition to acrylamide alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Intermediate B: spirocyclic cyclohexadienyl radical from ipso-attack on N-aryl ring (Smiles cyclization)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Intermediate C: N-centered (aminyl) radical after extrusion of SO2",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-difluoromethylamide product 3a",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF2HSO2Na (Eox ~1.40 V) to release SO2 and CF2H radical, which adds to the acrylamide alkene of 1a forming carbon radical A; intramolecular ipso-attack on the N-aryl ring gives spirocyclic radical B, which loses SO2 to form nitrogen radical C; C is reduced/abstracts H (proton from trace water) to give product 3a while the cathode evolves H2.",
+  "rate_determining_step": "Anodic oxidation of CF2HSO2Na to generate CF2H radical (irreversible oxidation peak at 1.40 V vs Ag/AgCl)",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Only trace 3g formed; TEMPO-CF2H adduct detected by HRMS (M+H+ 321.3189), confirming CF2H radical"
+    },
+    {
+      "name": "BHT (2,6-di-tert-butyl-4-methylphenol)",
+      "smiles": "CC1=CC(=C(C(=C1)C(C)(C)C)O)C(C)(C)C",
+      "purpose": "radical_trap",
+      "observation": "Only trace 3g; BHT-CF2H adduct detected by HRMS (M+H+ 271.1848)"
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "In ultradry CH3CN with 10 equiv D2O, 43% D incorporation on N-H of product (39% yield), showing N-H hydrogen originates from water"
+    },
+    {
+      "name": "CD3CN/DCE (no D2O)",
+      "smiles": "[2H]C([2H])([2H])C#N",
+      "purpose": "isotope_label",
+      "observation": "0% D incorporation (34% yield), excluding solvent CH3CN as H source"
+    },
+    {
+      "name": "Divided cell experiment",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Product 3a obtained in 65% yield in separated electrolytic cell, ruling out paired-electrolysis coupling requirement"
+    },
+    {
+      "name": "Cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "CF2HSO2Na shows irreversible oxidation at 1.40 V; 1a oxidizes at 1.90 V (irreversible) — sulfinate is preferentially oxidized at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Smiles-type 1,4-aryl migration from sulfonyl-N to carbon with extrusion of SO2 is invoked. Control with divided cell shows pairing of anodic/cathodic half-reactions is not required for productivity. The N-H proton was shown to derive from adventitious/added water rather than acetonitrile solvent."
+}

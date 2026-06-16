@@ -1,0 +1,62 @@
+{
+  "doi": "10.1016_j.tetlet.2019.04.009",
+  "journal": "Tetrahedron",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative sulfonylation/semipinacol ring-expansion of 1-(1-arylvinyl)cyclobutanols with arylsulfonyl hydrazides to give β-sulfonyl cyclopentanones.",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "mediator_anodic",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (NaI) to I2, which oxidizes ArSO2NHNH2 to a sulfonyl iodide that fragments to an arylsulfonyl radical; the resulting carbon radical from radical addition is further oxidized at the anode to a carbocation. Cathode reduces water to H2/hydroxide.",
+  "key_intermediates": [
+    {
+      "name": "arylsulfonyl radical (I)",
+      "smiles": "[O]S(=O)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "arylsulfonyl iodide (ArSO2-I)",
+      "smiles": "IS(=O)(=O)c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "tertiary carbon radical from ArSO2• addition to alkenyl cyclobutanol (II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tertiary benzylic cation on cyclobutanol (III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "I2 (anodically generated mediator)",
+      "smiles": "II",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes I- to I2, which converts ArSO2NHNH2 into ArSO2I and then an ArSO2• radical; the sulfonyl radical adds to the vinyl group of the cyclobutanol, the resulting C-radical is oxidized at the anode to a benzylic cation, which undergoes 1,2-alkyl (semipinacol) ring expansion of the cyclobutanol to give the cyclopentanone product. Cathode reduces water to H2 and hydroxide.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Only trace 3a formed with 3 equiv TEMPO, consistent with a radical intermediate."
+    },
+    {
+      "name": "Ts-I (preformed sulfonyl iodide)",
+      "smiles": "Cc1ccc(S(=O)(=O)I)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Ts-I with electrolysis gave 3a in 51%; even without current Ts-I afforded 3a in 35%, supporting ArSO2I as the on-cycle sulfonyl radical precursor."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "stoichiometric_intermediate",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Desulfonation of 3l with Mg/MeOH gives α-methyl cyclopentanone 10, supporting the β-sulfonyl ketone connectivity. NaI acts as a redox mediator; without current, Ts-I still gives some product, indicating the electrochemistry mainly regenerates the I2/ArSO2I oxidant and oxidizes the C-radical to the cation for semipinacol rearrangement."
+}

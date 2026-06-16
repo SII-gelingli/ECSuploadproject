@@ -1,0 +1,83 @@
+{
+  "doi": "10.1021_acs.orglett.4c01311",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Organoboron-promoted electrochemical chlorosulfonylation of styrenes with sulfonyl chlorides via convergent paired electrolysis to give β-chlorosulfones",
+  "mechanism_family": [
+    "radical_cathodic",
+    "paired_electrolysis",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Cathodic reduction of sulfonyl chloride (RSO2Cl) to sulfonyl radical + chloride; anodic oxidation of the released chloride anion to a chlorine radical, which is shuttled by p-ethylphenylboronic acid as a Cl-boron complex",
+  "key_intermediates": [
+    {
+      "name": "sulfonyl radical (RSO2•)",
+      "smiles": "[O]=S(=O)([R])[*]",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbon radical adduct P1 (ArCH•-CH2SO2R)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "chlorine radical (Cl•)",
+      "smiles": "[Cl]",
+      "role": "transient"
+    },
+    {
+      "name": "chloro-boron complex 49 (Ar'B(OH)Cl, dechlorinative borane)",
+      "smiles": "OB(Cl)c1ccc(CC)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "chloride anion",
+      "smiles": "[Cl-]",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Cathode reduces RSO2Cl to a sulfonyl radical plus chloride; the sulfonyl radical adds to the styrene giving benzylic radical P1. The chloride migrates to the anode and is oxidized to Cl•, which is captured by p-ethylphenylboronic acid; this Cl-boron complex then transfers Cl to P1 to deliver the β-chlorosulfone and a dechlorinated borane.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product yield dropped from 68% to 9% (1 equiv) and n.d. (2 equiv), indicating radical involvement"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Product not detected with 2 equiv BHT"
+    },
+    {
+      "name": "DMPO",
+      "smiles": "CC1(C)CC=C[N+]1([O-])",
+      "purpose": "radical_trap",
+      "observation": "EPR signal (g=2.0056, AN=15.9 G, AH=21.7 G) for carbon radical from tosyl addition to p-F-styrene; HRMS adducts 46 (tosyl) and 47 (benzyl) detected"
+    },
+    {
+      "name": "N,N-diallyl-4-methylbenzenesulfonamide",
+      "smiles": "C=CCN(CC=C)S(=O)(=O)c1ccc(C)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Chlorinated ring-closing product 48 NOT detected; instead chloro-boron complex 49 was detected by HRMS, supporting Cl• capture by the boronic acid"
+    },
+    {
+      "name": "divided cell (H-cell) control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product formed, confirming necessity of paired (undivided) electrolysis"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "EPR",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "CV shows chloride anion (1.42 V) is oxidized preferentially over 4-fluorostyrene (2.45 V vs 1.68 V), and TsCl shows irreversible reduction at -1.63 V; organoboron does not shift redox potentials but increases currents, supporting its role as a Cl-atom shuttle rather than redox mediator. The authors describe the process as ATRA-type within a convergent paired electrolysis framework."
+}

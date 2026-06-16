@@ -1,0 +1,62 @@
+{
+  "doi": "10.1039_d3qo00731f",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative radical cascade oxydifluoromethylation of N-acyl-(2-ene)anilines (olefinic amides) with sodium difluoromethanesulfinate to give difluoromethylated benzoxazines in an undivided cell.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF2HSO2Na (2a) on graphite anode to generate the difluoromethyl radical (with SO2 extrusion); a second anodic oxidation converts the cyclized benzyl radical to a benzyl cation. Cathode (Pt) reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "difluoromethyl radical (•CF2H)",
+      "smiles": "[CH]F",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl radical Int-1 from CF2H addition to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl cation Int-2 (after anodic oxidation of Int-1)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "difluoromethylated benzoxazine product 3",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF2HSO2Na to •CF2H (loss of SO2), which adds to the alkene of the N-acyl olefinic amide to give a benzyl radical (Int-1); a second anodic oxidation generates a benzyl cation (Int-2) that is trapped by intramolecular nucleophilic attack of the amide oxygen to form the benzoxazine, while protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Product 3aa formed only in trace at 1.0–3.0 equiv BHT; BHT–CF2H adduct 4 detected by EI-MS, supporting •CF2H formation."
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction fully inhibited at 2.0–3.0 equiv TEMPO; TEMPO–CF2H adduct 5 detected by EI-MS; however putative TEMPO adduct of the benzyl radical (6) was not detected, and self-coupling products 7/8 of Int-1 were not observed."
+    },
+    {
+      "name": "cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Olefin 1a not oxidized up to 2.0 V (vs Ag/AgCl); 2a oxidized at ~0.75 V, indicating the cascade is initiated by oxidation of 2a rather than the alkene, and ruling out a radical–radical coupling pathway."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "A radical–radical coupling pathway between •CF2H and an anilide-derived radical was explicitly ruled out by CV (1a is not oxidized in the operating window). Absence of TEMPO-trapped benzyl radical (6) and self-coupling products (7,8) is rationalized by rapid further anodic oxidation of Int-1 to the cation Int-2 (radical–polar crossover) rather than radical termination."
+}

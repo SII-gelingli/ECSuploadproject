@@ -1,0 +1,91 @@
+{
+  "doi": "10.26434_chemrxiv-2023-dzw3d",
+  "journal": "ChemRxiv",
+  "is_review": false,
+  "rxn_class_summary": "Cobalt-catalyzed enantioselective C–H functionalization / spiroannulation of 8-aminoquinoline benzamides with maleimides, with a chiral phosphoric acid (CPA) co-catalyst controlling enantioselectivity",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "8-aminoquinoline benzamide substrate 1 (free amide)",
+      "smiles": "O=C(Nc1cccc2cccnc12)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Co(II)–pivalate–amide complex (benzamide bound to Co with pivalate ligand)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Bis(amidate) Co(II) complex (two benzamide ligands on Co)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Cyclometalated Co(III)–aryl/maleimide insertion intermediate (containing N-benzylmaleimide)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Spirocyclic succinimide–isoindolinone product 3 bound to quinoline (released product)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(II)–amide–pivalate–CPA (binaphthyl phosphate) ternary complex",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Co–bis(amidate)–CPA complex",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Co(IV)–maleimide insertion intermediate ligated by CPA phosphate (m/z 839.1210)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Co(II) coordinates the 8-aminoquinoline amide and undergoes pivalate-assisted concerted metalation–deprotonation (CMD) of the ortho C–H bond; oxidation to Co(III)/Co(IV) and migratory insertion into the maleimide C=C, followed by C–N bond-forming reductive cyclization, delivers the spirocyclic product. The chiral phosphoric acid binds to the Co center and enforces enantioselectivity in the C–C/C–N forming step.",
+  "rate_determining_step": "Product-forming step after C–H metalation (likely migratory insertion / C–N reductive elimination); C–H cleavage is not rate-limiting since KIE ≈ 1.0–1.2",
+  "probe_reagents": [
+    {
+      "name": "[D]5-1 (pentadeuterated benzamide substrate) – parallel KIE with CPA1",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "kH/kD ≈ 1.2 from parallel reactions with CPA1, indicating C–H cleavage is not rate-determining"
+    },
+    {
+      "name": "[D]5-1 – parallel KIE without CPA1",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "kH/kD ≈ 1.0 without CPA1, confirming C–H activation is not rate-limiting in either regime"
+    },
+    {
+      "name": "HRMS aliquot analysis during catalysis",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Detected masses consistent with Co(II)–amide–pivalate (m/z 408.0873), bis(amidate)Co (554.1142), Co(III)–insertion/cyclometalated species (739.1608), CPA-bound Co complexes (695.1004, 756.1447, 902.1693) and a Co(IV) maleimide-insertion species (839.1210)"
+    },
+    {
+      "name": "DFT computation of product racemization barrier",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "ΔG‡ = 48.3 kcal/mol for 36-(S) → 36-(R) rotation, t1/2 ≈ 3.2×10^18 yr, confirming configurational stability of the atropisomeric product"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "DFT",
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "strong",
+  "notes": "HRMS detects multiple plausible on-cycle species, including CPA-ligated Co complexes, supporting direct coordination of the chiral phosphate to cobalt rather than a purely outer-sphere Brønsted-acid role. Near-unity KIE (1.0 without CPA, 1.2 with CPA) rules out turnover-limiting C–H metalation; CPA likely modulates a later enantiodetermining migratory insertion or C–N bond-forming step. Product atropisomerism is configurationally locked (DFT)."
+}

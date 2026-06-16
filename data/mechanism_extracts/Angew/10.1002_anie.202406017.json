@@ -1,0 +1,63 @@
+{
+  "doi": "10.1002_anie.202406017",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical fluoromethylation (CF3/CF2H/CF2Cl) of N-allylbenzamides triggering a Truce-Smiles 1,4-aryl migration to give CF2X-containing β-arylethylamines",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2- (Langlois reagent) to CF3SO2 radical which loses SO2 to give CF3 radical; later a second anodic oxidation converts the carbamoyl radical D to acyl/carbamoyl cation E that is trapped by ROH",
+  "key_intermediates": [
+    {
+      "name": "CF3 radical (from Langlois reagent after SO2 extrusion)",
+      "smiles": "[C](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "β-amino C-centered radical A (after CF3 addition to alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "spirocyclic cyclohexadienyl radical B (ipso 5-exo adduct)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "spirocyclic 6-endo cyclohexadienyl radical C' (off-path dihydroisoquinolinone precursor)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "ring-opened aryl-migrated carbamoyl/N-acyl radical C (after C-C cleavage, before decarbonylation)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "carbamoyl radical D (after homolytic C-C cleavage)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbamoyl cation E (after second anodic oxidation)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "carbamate cation F / final carbamate product after ROH addition",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2Na to CF3SO2 radical which extrudes SO2 to give CF3 radical; CF3 adds regioselectively to the allyl alkene generating a β-amino radical that undergoes 5-exo ipso cyclization onto the benzamide arene, then C–C homolysis releases the migrated aryl and a carbamoyl radical, which is anodically oxidized to a carbamoyl cation trapped by ROH to yield the carbamate.",
+  "rate_determining_step": "Ipso 5-exo cyclization of the β-amino radical onto the arene (TS_BC), competing with 6-endo cyclization; selectivity governed by N-protecting group (t-Bu favors 5-exo, ΔΔE‡ ≈ 3.1 kcal/mol vs 1.6 for Ts)",
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "DFT",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "DFT (B3LYP-D3/def2-SV(P) with DLPNO-CCSD(T)/def2-TZVPP single points) rationalizes why bulky t-Bu N-protection favors s-cis conformer of β-amino radical A enabling 5-exo ipso attack and 1,4-aryl migration, whereas Ts protection allows π-stacking that stabilizes s-trans and promotes competitive 6-endo cyclization to dihydroisoquinolinones. Alternative pathway: 6-endo cyclization gives dihydroisoquinolinones (observed as side products with Ts/OMe protecting groups). A putative carbocation oxidation side pathway from the β-amino radical is also drawn in Scheme 1c. No radical traps (TEMPO/BHT) or KIE explicitly reported in these pages."
+}

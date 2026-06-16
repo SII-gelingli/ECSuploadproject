@@ -1,0 +1,74 @@
+{
+  "doi": "10.1021_jacs.3c01137",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,2-aminofunctionalization (including diamination) of terminal alkenes via anodically generated thianthrenium-based dicationic adducts that undergo regiospecific single substitution by phthalimide and subsequent functionalization with a second nucleophile",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of thianthrene (TT) generates a thianthrenium radical cation that adds to the alkene to form a dicationic bis-sulfonium adduct; the electrochemistry is upstream of the productive C-N bond-forming substitution steps",
+  "key_intermediates": [
+    {
+      "name": "thianthrene-derived dicationic adduct (bis-sulfonium) on alkene (I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkenyl thianthrenium salt (33 / II) formed by E1cb-type elimination of dicationic adduct by phthalimide anion",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-phthalimido sulfur ylide intermediate (III) from phthalimide addition at β-position of alkenyl thianthrenium",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "1,2-phthalimidosulfonium monocation salt (2 / IV)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "allylic phthalimide byproduct (34, 3:1 Z/E) formed under proton-deficient conditions",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes thianthrene to its radical cation, which adds across the alkene to give a dicationic bis-sulfonium adduct; phthalimide anion then deprotonates/eliminates this adduct to an alkenyl thianthrenium salt, adds regiospecifically at the β-carbon to form a sulfur ylide, and is protonated by HNPhth (generated in the elimination) to deliver the β-phthalimido monosulfonium product, which is finally displaced by a second nucleophile.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "isolated alkenyl thianthrenium salt 33",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Resubjection to KNPhth (4 equiv) + HNPhth (1 equiv) gave 1,2-phthalimidosulfonium 2 in 74% yield with no allylic byproduct 35; with KNPhth (5 equiv) only, 2 dropped to 15% and allylic byproduct 34 formed in 38% (3:1 Z:E), establishing 33 as on-pathway and showing proton balance controls selectivity"
+    },
+    {
+      "name": "time-course 1H NMR monitoring",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "After addition of KNPhth, dicationic adduct 32 is rapidly consumed to alkenyl thianthrenium 33, which is then converted to 2, consistent with sequential elimination then addition"
+    },
+    {
+      "name": "X-ray crystallography of 1,2-phthalimidosulfonium 2",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Crystal structure confirms regiochemistry of internal phthalimide addition / external sulfonium"
+    },
+    {
+      "name": "ammonia surrogate screen (TBAN3, pyridine, Ph2C=NH, KNPhth)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only KNPhth gives high yield (~80%) of internal addition product A; other nucleophiles favor terminal isomer B or eliminated/allylic products, highlighting KNPhth's unique regioselectivity"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "kinetic_order"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly contrast with the alternative direct SN2-like substitution of the dicationic adduct, which would not explain the high internal selectivity; instead, an elimination/re-addition pathway through alkenyl thianthrenium 33 is favored because alkenyl sulfonium salts are more electrophilic at the β-position. Proton balance (HNPhth generated in the elimination step) is essential — its absence diverts the reaction to allylic substitution product 34, indicating a competing allylation pathway analogous to reported alkenyl thianthrenium allylation chemistry."
+}

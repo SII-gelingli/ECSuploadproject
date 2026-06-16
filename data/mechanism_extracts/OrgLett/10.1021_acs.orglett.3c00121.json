@@ -1,0 +1,74 @@
+{
+  "doi": "10.1021_acs.orglett.3c00121",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical [2+1] cycloaddition of electron-rich alkenes with diazo compounds to give cyclopropanes, and [2+2] cycloaddition with styrenes to give cyclobutanes, both via anodically generated alkene radical cations",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_cation",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of an electron-rich alkene (e.g., trans-anethole) to an electrophilic alkene radical cation; cathodic reduction of the downstream cyclopropyl/cyclobutyl radical cation closes the cycle",
+  "key_intermediates": [
+    {
+      "name": "alkene radical cation of electron-rich styrene (e.g., anethole)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "diazo-coupled distonic radical cation (D)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclopropyl radical cation (E) after N2 extrusion",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclopropane product (F)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclobutanyl radical cation (H) from radical cation + styrene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclobutane product (I)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the electron-rich alkene A to radical cation B; B is attacked by the nucleophilic diazo compound C to give distonic radical cation D, which extrudes N2 to give cyclopropyl radical cation E, then cathodic reduction yields cyclopropane F. In the [2+2] manifold, B adds to a second styrene G to form cyclobutanyl radical cation H, which is reduced at the cathode (or via chain) to cyclobutane I.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "E/Z isomeric alkene substrates (stereochemical probe)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Both E and Z olefins converge to only trans-cyclopropanes, consistent with a stepwise radical-cation intermediate rather than a concerted pathway"
+    },
+    {
+      "name": "electricity on/off control",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No product formed without applied current, confirming electrochemical initiation is essential"
+    },
+    {
+      "name": "tetrasubstituted/stilbene substrates with NO2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Electron-poor stilbene (NO2) still reactive (58%) because electrochemistry accesses oxidation potentials outside photoredox/Fe(III) window; tetrasubstituted olefin unreactive"
+    }
+  ],
+  "evidence_types_used": [
+    "on/off_light_or_current",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly note they cannot exclude a radical chain pathway in which radical cations E and H are reduced by an incoming neutral alkene (chain propagation) rather than at the cathode. Mechanism is proposed by analogy to prior Bauld/Ferreira/Kang radical-cation cycloadditions; no DFT, EPR, TEMPO trapping, or KIE experiments are reported."
+}

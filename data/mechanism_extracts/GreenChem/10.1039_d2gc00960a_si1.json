@@ -1,0 +1,50 @@
+{
+  "doi": "10.1039_d2gc00960a_si1",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical trifluoromethylation/cyclization of N-allylsulfonamides using CF3SO2Na as the CF3 radical source",
+  "mechanism_family": [
+    "radical_anodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2- (Langlois reagent) to generate CF3 radical via loss of SO2; the CF3 radical then adds to the allyl group of the N-allylsulfonamide",
+  "key_intermediates": [
+    {
+      "name": "CF3 radical",
+      "smiles": "[CF3]",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical from CF3 addition to allyl group",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "BHT-CF3 adduct (1,3-di-tert-butyl-5-methyl-2-(trifluoromethoxy)benzene-type, 6)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the anode, CF3SO2Na is oxidized with loss of SO2 to give a CF3 radical, which adds to the alkene of the N-allylsulfonamide to form a carbon radical that undergoes intramolecular cyclization onto the sulfonamide-tethered arene/heteroarene to give the cyclized product after rearomatization.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "CC1=CC(=C(C(=C1)C(C)(C)C)O)C(C)(C)C",
+      "purpose": "radical_trap",
+      "observation": "Reaction fully suppressed (no desired product) and BHT-CF3 adduct 6 detected by GC-MS, supporting a CF3 radical intermediate"
+    },
+    {
+      "name": "crossover substrates (methyl 5-(N-acetyl-N-allylsulfamoyl)thiophene-2-carboxylate and N-allyl-N-((5-chlorothiophen-2-yl)sulfonyl)-4-oxopentanamide)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Products 3i (68%) and 3z4 (62%) were obtained with no crossover products, indicating the cyclization is intramolecular"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "crossover"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism inferred from the two control experiments shown (BHT radical quench and crossover). The intramolecular nature of the C-radical cyclization onto the (hetero)arene is supported by the absence of crossover products."
+}

@@ -1,0 +1,79 @@
+{
+  "doi": "10.1021_jo402623r",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intramolecular cyclization of unsaturated amides via anodically generated amidyl radicals that add to electron-rich olefins (vinyl sulfides, enol ethers, ketene dithioacetals) to form five- and six-membered lactams with a tetrasubstituted carbon",
+  "mechanism_family": [
+    "radical_anodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation: the deprotonated amide (hydroxamate/sulfonamide anion) is oxidized at the RVC anode to generate a nitrogen-centered amidyl radical; after cyclization a second anodic oxidation of the cyclized C-radical gives a cation trapped by MeOH",
+  "key_intermediates": [
+    {
+      "name": "amidyl (N-centered) radical from anodic oxidation of amide anion",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized C-centered radical (alpha to heteroatom-stabilized carbon)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclized carbocation after second SET oxidation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "methoxy-trapped lactam product",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "N-alkoxyamidyl radical dimer (hydrazide 14)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "distal-olefin-localized radical cation (intramolecular ET form, intermediate 25)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the amide/hydroxamate anion (after deprotonation by LiOMe) to an N-centered amidyl radical, which cyclizes onto the tethered electron-rich olefin to give a stabilized C-radical; this radical undergoes a second anodic SET to a cation that is trapped by MeOH, while Pt cathode reduces MeOH to H2.",
+  "rate_determining_step": "Oxidation of the cyclized radical (second SET) is critical; cyclization step itself must be exergonic enough to keep [cyclic radical] > [acyclic amidyl radical] so that productive oxidation outcompetes radical–radical dimerization",
+  "probe_reagents": [
+    {
+      "name": "competition substrate 23 (amide with both ketene dithioacetal and pendant alcohol)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Designed to distinguish direct radical cyclization (via 26) from intramolecular SET to give olefin radical cation 25 trapped by tethered OH to give 27"
+    },
+    {
+      "name": "N-phenyl substrate 9d (six-membered cyclization)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Gave complex mixture, no lactam; DFT shows competing 1,5-HAT has lower barrier than 6-exo cyclization for N-phenyl amidyl radical"
+    },
+    {
+      "name": "Substrate 9c (seven-membered ring attempt)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No cyclization; only methyl ester 12c (74%) from amidyl radical dimerization to hydrazide 14 and decomposition, indicating 7-membered cyclization too slow to compete with dimerization"
+    },
+    {
+      "name": "Cyclic voltammetry of 5a, 9a, 9b, 9c, ketene dithioacetal",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "E_p/2 = 0.40–0.52 V (Ag/AgCl) for hydroxamates vs 1.06 V for ketene dithioacetal and 0.90 V for sulfonamide; consistent with amide-anion oxidation as initiation"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "DFT",
+    "intermediate_trap_other",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two mechanistic possibilities are considered for the cyclization: (favored) direct N-radical addition to the olefin to give cyclized C-radical 26, vs. (alternative) intramolecular SET from olefin to amidyl radical giving olefin radical cation 25 that is then attacked by nitrogen — competition substrate 23 was designed to distinguish these. DFT (UB3LYP/6-31G(d,p)) IRC analysis shows the spin density remains localized on N up to the TS, supporting a radical (not radical-cation/polar) cyclization. Success of the reaction depends on (i) sufficiently electron-rich olefin to lower oxidation potential of the cyclized radical, and (ii) cyclization being exergonic so the cyclic radical accumulates over the acyclic amidyl radical, suppressing dimerization to hydrazide 14 (which decomposes with loss of N2 to methyl ester 12 + BnOH). N-phenyl amidyl radicals fail in 6-exo cyclization due to competing 1,5-HAT."
+}

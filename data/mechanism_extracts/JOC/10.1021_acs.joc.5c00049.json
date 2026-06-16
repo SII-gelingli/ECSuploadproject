@@ -1,0 +1,57 @@
+{
+  "doi": "10.1021_acs.joc.5c00049",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative dibrominative cyclization of 1,n-enynes using bromide ionic liquid as Br source and 4-iodotoluene as redox mediator to give vinyl/alkyl dibrominated heterocycles.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_anodic",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation of bromide (Br-) to bromine radical (Br•), which combines with 4-iodotoluene to form a hypervalent ArIBr2 (aryl iodine I/III) mediator; cathode reduces HFIP/H+ to H2.",
+  "key_intermediates": [
+    {
+      "name": "bromine radical (Br•)",
+      "smiles": "[Br]",
+      "role": "transient"
+    },
+    {
+      "name": "ArIBr2 hypervalent iodine(III) mediator (from 4-iodotoluene)",
+      "smiles": "Cc1ccc(I(Br)Br)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "4-iodotoluene (catalyst resting state)",
+      "smiles": "Cc1ccc(I)cc1",
+      "role": "resting_state"
+    },
+    {
+      "name": "vinyl bromide / alkyl bromide cyclized product 2a",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, Br- is oxidized to Br•, which reacts with 4-iodotoluene to generate the active ArIBr2 hypervalent iodine(III) species; ArIBr2 engages the enyne to deliver two Br atoms via cyclization and C-Br bond formation, regenerating ArI. At the cathode, protons from HFIP are reduced to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "radical trap control experiments",
+      "smiles": null,
+      "purpose": "radical_trap",
+      "observation": "Reaction inhibited, supporting a free-radical pathway."
+    },
+    {
+      "name": "cyclic voltammetry of Br- and 4-iodotoluene",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Br- oxidizes prior to Br• formation; reduction peak for Br- disappears upon addition of 4-iodotoluene, indicating reaction between Br• and 4-iodotoluene to form ArIBr2."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Recyclability demonstrated: [C2MPr]Br ionic liquid recovered (91%) via liquid-liquid extraction with bromoethane and reused for 5 cycles. Downstream derivatization (Suzuki with ArB(OH)2, SN2 with NaN3 and KI) selectively replaces the alkyl bromide while leaving the vinyl bromide intact, consistent with two electronically distinct C-Br bonds in the product."
+}

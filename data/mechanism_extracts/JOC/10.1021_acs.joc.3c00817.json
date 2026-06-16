@@ -1,0 +1,47 @@
+{
+  "doi": "10.1021_acs.joc.3c00817",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical [2+2] cycloaddition of two alpha,beta-unsaturated carbonyl compounds (chalcones) to give tetrasubstituted cyclobutanes using NaI as redox mediator in an undivided cell",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (2 I- -> I2) generates I2 which iodinates the enolate/enone; cathode reduces water to H2 and HO-, regenerating base/closing the loop in a paired-electrolysis scenario",
+  "key_intermediates": [
+    {
+      "name": "iodine (I2) generated at the anode from 2 I-",
+      "smiles": "II",
+      "role": "reactive"
+    },
+    {
+      "name": "enolate of chalcone 1a (1a')",
+      "smiles": "[O-]C(=C(c1ccccc1)[H])c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "alpha-iodo ketone 1a'' (alpha-iodochalcone adduct)",
+      "smiles": "O=C(c1ccccc1)C(I)Cc1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "open-chain bis-iodo / Michael adduct 2a' (precursor to cyclobutane via intramolecular SN2/displacement of I-)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tetrasubstituted cyclobutane 2a (3,4-diphenylcyclobutane-1,2-diyl bis(phenylmethanone))",
+      "smiles": "O=C(c1ccccc1)C2C(C(=O)c3ccccc3)C(c4ccccc4)C2c5ccccc5",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, 2 I- are oxidized (loss of 2 e-) to I2, which iodinates the chalcone enolate to give an alpha-iodo ketone; this intermediate undergoes Michael addition with a second chalcone enolate, and intramolecular displacement of iodide closes the cyclobutane ring. At the cathode, 2 H2O are reduced to H2 + 2 HO-, which regenerates the enolate base.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism in Scheme 4 is presented as 'plausible' without explicit radical traps, KIE, or CV data on these pages. NaI acts as both supporting electrolyte and redox mediator (I-/I2 shuttle). The chalcone precursors 1 are prepared by classical Claisen-Schmidt condensation (NaOH, EtOH/H2O) prior to electrolysis. Reaction is run in an undivided cell with PGE anode and stainless-steel cathode at 20 mA, MeCN-MeOH (3:1), 15 h (11.19 F/mol)."
+}

@@ -1,0 +1,45 @@
+{
+  "doi": "10.3762_bjoc.11.21",
+  "journal": "BJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical cathodic reductive hydrodimerization of methyl cinnamate (and related phenylacrylates) on a boron-doped diamond (BDD) electrode to give neolignan-type C-C coupled dimers.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic one-electron reduction of the methyl cinnamate (phenylacrylate) C=C to a benzylic/stabilized radical anion (after protonation, a benzylic radical), which dimerizes to the hydrodimer.",
+  "key_intermediates": [
+    {
+      "name": "radical anion / benzylic radical of methyl cinnamate after 1e- reduction and protonation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "C-C coupled hydrodimer (±)-2 (racemate/meso mixture)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "The BDD cathode delivers one electron to methyl cinnamate (1a) generating a radical anion that is protonated to a benzylic radical at the β-carbon; two such radicals couple to give the hydrodimer 2, while undesired hydrolysis to 1b is suppressed by using a phosphate-buffered catholyte.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "electrode material variation (GC, Pt, Mg vs BDD)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Pt and Mg cathodes gave only H2 evolution and recovery of 1a; GC gave dimer 2 (34%, dr 74:26) plus cyclic product E-3 (25%) and 41% 1a; BDD selectively produced hydrodimer 2 in 85% yield."
+    },
+    {
+      "name": "phosphate buffer (catholyte)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Suppresses hydrolysis of ester 1a to 1b and improves selectivity for dimer 2."
+    }
+  ],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "On other cathodes (Hg, Cu, Pb, Zn, Sn, Ag) the major products from cinnamate reductions are reported to be cyclic Dieckmann-type products (type 3), whereas BDD uniquely favors the open-chain hydrodimer 2. The proposed mechanism (Figure 1, right) is drawn but not interrogated with radical traps, KIE, CV, or DFT in this paper."
+}

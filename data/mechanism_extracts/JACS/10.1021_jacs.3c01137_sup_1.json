@@ -1,0 +1,77 @@
+{
+  "doi": "10.1021_jacs.3c01137_sup_1",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical anti-Markovnikov aminofunctionalization of alkenes via vinyl thianthrenium salt intermediates trapped by phthalimide nucleophiles",
+  "mechanism_family": [
+    "cation_initiated",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of thianthrene to thianthrene radical cation, which adds to the alkene to generate an alkyl-thianthrenium salt that serves as the electrophilic intermediate; subsequent steps (amine addition, byproduct formation) are non-electrochemical",
+  "key_intermediates": [
+    {
+      "name": "alkyl thianthrenium salt (from terminal alkene + methylamine substrate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "vinyl thianthrenium salt 33",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "phthalimide-derived tetrahedral hemiorthoamide adduct (amine addition to phthalimide C=O)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "oxazoline/oxazolidine intermediate from intramolecular O-attack after loss of thianthrene (TT)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ring-opened iminoisoindolinone with pendant aminoalcohol",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "bis-amidine / amidinium intermediate after second methylamine addition and ring opening",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "N-methyl iminoisoindolinone byproduct (observed by LCMS)",
+      "smiles": "O=C1N(C)/C(=N\\C)c2ccccc12",
+      "role": "off_pathway"
+    },
+    {
+      "name": "1,2-aminoalcohol byproduct (2-amino-4-phenylbutan-1-ol)",
+      "smiles": "NC(CCc1ccccc1)CO",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Thianthrene is anodically oxidized to its radical cation, which reacts with the alkene to give an alkyl- (or vinyl-) thianthrenium electrophile; methylamine then attacks the adjacent phthalimide carbonyl rather than displacing thianthrene cleanly, triggering loss of TT, intramolecular O-cyclization, ring-opening by a second equivalent of MeNH2, and finally collapse to release the aminoalcohol plus N-methyl iminoisoindolinone byproduct.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "isolated vinyl thianthrenium salt 33",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Treatment of isolated 33 with KNPhth (4 equiv) + HNPhth (1 equiv) gave alkyl-thianthrenium 2 in 74% yield with no enamide 34; with KNPhth alone (5 equiv), 2 dropped to 15% and enamide 34 formed in 38% (3:1 Z:E), implicating 33 as a kinetically competent intermediate and showing HNPhth suppresses elimination"
+    },
+    {
+      "name": "trans-4-octene (internal alkene substrate scope probe)",
+      "smiles": "CCC/C=C/CCC",
+      "purpose": "other",
+      "observation": "Electrolysis with thianthrene gave vinyl thianthrenium salt (59% trans, 8% cis at 5 min); after 18 h with KPhth, only 5–7% aminofunctionalization product and 28–33% allylic phthalimide formed, indicating internal alkenes do not productively undergo aminofunctionalization"
+    }
+  ],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "intermediate_trap_other",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Figure S2 proposes a detailed off-pathway sequence accounting for observed aminoalcohol and N-methyl iminoisoindolinone byproducts when methylamine is the nucleophile: amine addition to the phthalimide carbonyl (rather than SN2 at the C–S bond) leads to TT loss, intramolecular oxazolidine formation, second amine addition, and ring fragmentation. Figure S5 shows HNPhth additive is critical to suppress E1-type elimination of the alkyl thianthrenium to enamide 34. Figure S6 demonstrates that internal alkenes fail because allylic phthalimide formation dominates over aminofunctionalization."
+}

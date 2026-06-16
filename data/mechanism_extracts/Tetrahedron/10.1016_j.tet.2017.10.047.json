@@ -1,0 +1,96 @@
+{
+  "doi": "10.1016_j.tet.2017.10.047",
+  "journal": "Tetrahedron",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical synthesis of vinyl sulfones from sulfonyl hydrazides and styrenes using KI as redox mediator in an undivided cell",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide to I2 (and to p-toluenesulfonyl iodide A); the sulfonyl iodide A is reduced at the cathode to sulfinate anion B which is then re-oxidized at the anode to sulfonyl radical C; benzyl radical D is further oxidized at the anode to benzyl cation E. H2O is reduced at the cathode to H2 and OH-.",
+  "key_intermediates": [
+    {
+      "name": "p-toluenesulfonyl iodide (A)",
+      "smiles": "Cc1ccc(cc1)S(=O)(=O)I",
+      "role": "reactive"
+    },
+    {
+      "name": "p-toluenesulfinate anion (B)",
+      "smiles": "Cc1ccc(cc1)S(=O)[O-]",
+      "role": "transient"
+    },
+    {
+      "name": "p-toluenesulfonyl radical (C)",
+      "smiles": "Cc1ccc(cc1)S(=O)(=O)[CH2]",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl C-centered radical adduct (D)",
+      "smiles": "[CH](c1ccccc1)CS(=O)(=O)c1ccc(C)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl cation (E)",
+      "smiles": "[CH+](c1ccccc1)CS(=O)(=O)c1ccc(C)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "β-iodosulfone (F)",
+      "smiles": "ICC(c1ccccc1)CS(=O)(=O)c1ccc(C)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "β-hydroxysulfone (4)",
+      "smiles": "OC(c1ccccc1)CS(=O)(=O)c1ccc(C)cc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "molecular iodine I2",
+      "smiles": "II",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, iodide is oxidized to I2 which converts TsNHNH2 into sulfonyl iodide A; A is reduced at the cathode via ECE to sulfinate B which is then anodically oxidized to sulfonyl radical C. C adds to styrene to give benzyl radical D, which is anodically oxidized to cation E; loss of H+ (or HI via iodosulfone F) yields the vinyl sulfone.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "p-toluenesulfonyl iodide A (isolated/prepared)",
+      "smiles": "Cc1ccc(cc1)S(=O)(=O)I",
+      "purpose": "intermediate_trap",
+      "observation": "Independently prepared; its CV shows irreversible cathodic reduction (~-0.75 V vs SCE) consistent with ECE reduction to sulfinate"
+    },
+    {
+      "name": "sodium p-toluenesulfinate (TsNa)",
+      "smiles": "Cc1ccc(cc1)S(=O)[O-].[Na+]",
+      "purpose": "intermediate_trap",
+      "observation": "CV shows irreversible oxidation at +0.78 V; current matches 1e- (vs ferrocene) confirming single-electron oxidation to sulfonyl radical C"
+    },
+    {
+      "name": "ferrocene",
+      "smiles": "[Fe+2].[cH-]1cccc1.[cH-]1cccc1",
+      "purpose": "redox_probe",
+      "observation": "Used as 1e- reference to calibrate the electron count of the sulfinate oxidation"
+    },
+    {
+      "name": "β-hydroxysulfone 4ao",
+      "smiles": "OC(c1ccccc1)(C)CS(=O)(=O)c1ccc(C)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Electrolysis under reaction conditions did NOT give vinyl sulfone 3ao, ruling out dehydroxylation pathway"
+    },
+    {
+      "name": "p-methoxystyrene / α-methylstyrene",
+      "smiles": "COc1ccc(C=C)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Yielded β-hydroxysulfones 4, supporting intermediacy of stabilized benzyl cation E"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two pathways from cation E are proposed: (i) direct deprotonation to vinyl sulfone, or (ii) iodide trapping to β-iodosulfone F followed by HI elimination. With electron-rich styrenes, E is trapped by water to give β-hydroxysulfones (off-pathway, control experiment shows these do not dehydrate to vinyl sulfones). Hypoiodite/iodate species formed from I2 + cathodically generated OH- may also participate in oxidizing the hydrazide."
+}

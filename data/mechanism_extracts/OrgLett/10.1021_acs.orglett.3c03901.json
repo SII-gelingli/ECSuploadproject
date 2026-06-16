@@ -1,0 +1,63 @@
+{
+  "doi": "10.1021_acs.orglett.3c03901",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical fluorination-difunctionalization of gem-difluoroalkenes with CsF and nucleophiles (alcohols, azoles) to deliver trifluoromethylated/fluoroazolation products",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of the gem-difluoroalkene substrate (oxidation onset 0.80 V vs SCE) initiates the transformation; fluoride/nucleophile addition and further oxidation generate cationic intermediates trapped by F- and nucleophile",
+  "key_intermediates": [
+    {
+      "name": "gem-difluoroalkene radical cation (from anodic SET on 1a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl radical (after fluoride addition to radical cation)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzyl cation (after second anodic oxidation) trapped by nucleophile",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "oxidative gem-difluoroolefin intermediate (probed but not required)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the gem-difluoroalkene (1a) to a radical cation; fluoride (from CsF) adds to give a benzylic radical, which is further oxidized at the anode to a benzylic cation that is trapped by the nucleophile (alcohol or azole) to install the second functional group.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "4-vinylbiphenyl (5, normal alkene control)",
+      "smiles": "C=Cc1ccc(-c2ccccc2)cc1",
+      "purpose": "other",
+      "observation": "No difluorination product 6 formed under standard conditions (2.0-3.5 V), indicating non-fluorinated alkenes are unreactive and the gem-difluoroalkene functionality is essential"
+    },
+    {
+      "name": "constant anode potential control (0.70 V and 0.90 V vs SCE on 1a)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "At 0.70 V no product 2a formed; at 0.90 V 12% yield of 2a, supporting that anodic oxidation of the gem-difluoroalkene is required to initiate the reaction"
+    },
+    {
+      "name": "O2 (radical trapping under O2 atmosphere)",
+      "smiles": "O=O",
+      "purpose": "radical_trap",
+      "observation": "Ketone 7 (MW 250.2, ArC(O)CF3) detected by GC-MS, indicating a benzyl radical intermediate from 1a is involved"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "redox_probe",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors also probed whether an oxidative gem-difluoroolefin (overoxidized alkene) intermediate forms (Scheme 2b) — control experiments instead supported direct anodic oxidation of the gem-difluoroalkene. Full proposed pathway is given in Figure S3 (SI). A radiofluorination variant with K[18F]F-kryptofix was demonstrated (5% RCY), consistent with the same mechanism."
+}

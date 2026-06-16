@@ -1,0 +1,91 @@
+{
+  "doi": "10.1002_anie.202313273",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical Cu-catalyzed enantioselective azidocyanation of alkenes using TMSN3 and TMSCN to install azide and nitrile groups across the C=C bond",
+  "mechanism_family": [
+    "radical_anodic",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation of azide anion (N3-) to azidyl radical (N3•); Cu(I) is also anodically reoxidized to Cu(II) to close the catalytic cycle; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "azidyl radical (N3•)",
+      "smiles": "[N-]=[N+]=[N]",
+      "role": "reactive"
+    },
+    {
+      "name": "beta-azido carbon radical from alkene addition",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[LCu(II)(CN)2] resting copper-cyanide complex",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "[LCu(III)(CN)2(alkyl-N3)] alkyl-Cu(III) intermediate",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "[LCu(I)(CN)] reduced copper species",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ring-opened homoallyl azide from vinylcyclopropane radical clock (48)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "putative benzylic carbocation 54 (ruled out)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes N3- (generated from TMSN3/HFIP) to N3•, which adds to the alkene to give a carbon-centered radical; this radical is captured by [LCu(II)(CN)2] to form a Cu(III)-alkyl that undergoes C–CN reductive elimination, delivering the azidocyanation product and Cu(I), which is reoxidized anodically to Cu(II) while the cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "vinylcyclopropane (47)",
+      "smiles": "C1CC1C=C",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened azidocyanation product 48 obtained in 15% yield, consistent with a carbon-centered radical intermediate 49"
+    },
+    {
+      "name": "N-allyl amide alkene 50",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Linear azidocyanation product 51 formed (45%) with no oxazoline cyclization product 52, arguing against a cationic intermediate 54 and supporting a radical pathway"
+    },
+    {
+      "name": "stoichiometric Cu(acac)2/L1 without electricity",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No azidocyanation product 2 formed (0% yield, 41% conversion), showing electricity is required"
+    },
+    {
+      "name": "cyclic voltammetry of Cu(acac)2/L1 with TMSCN and/or TMSN3",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Trace d (with both) mirrors trace b (TMSCN) in the Cu(II/I) region, indicating [Cu–CN] dominates over [Cu–N3]; anodic peak at 0.99 V assigned to N3- → N3• oxidation appears only when TMSN3 is added"
+    },
+    {
+      "name": "anode potential monitoring during preparative electrolysis",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Stable ~1 V potential that surges at end of reaction, consistent with depletion of N3- being oxidized at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "intermediate_trap_other",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Alternative cationic pathway via benzylic carbocation 54 was explicitly considered and ruled out by absence of intramolecular oxazoline cyclization product 52 from amide-tethered alkene 50. HFIP is invoked to promote H2 evolution at the cathode (suppressing undesired cathodic reduction) and to facilitate generation of free N3- from TMSN3; predominance of [Cu–CN] over [Cu–N3] suppresses competing alkene diazidation."
+}

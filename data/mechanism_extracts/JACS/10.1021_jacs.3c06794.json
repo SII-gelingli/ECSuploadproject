@@ -1,0 +1,77 @@
+{
+  "doi": "10.1021_jacs.3c06794",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "electrochemical three-component cross-electrophile dialkylation of alkenes with tertiary and primary alkyl bromides via radical-polar crossover under sacrificial Mg anode conditions",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "radical_cathodic",
+    "sacrificial_anode",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic reduction selectively reduces the more easily reduced tertiary alkyl bromide to a tertiary alkyl radical; after radical addition to the alkene, the resulting stabilized benzylic/α-boryl radical is further reduced at the cathode to a carbanion. The Mg sacrificial anode is oxidized to Mg2+ to balance charge.",
+  "key_intermediates": [
+    {
+      "name": "tertiary alkyl radical (e.g., tert-butyl radical) from cathodic reduction of tertiary alkyl bromide",
+      "smiles": "[CH0]([CH3])([CH3])[CH3]",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic/α-boryl radical adduct after tertiary radical addition to alkene (intermediate E)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "stabilized benzylic/α-boryl carbanion (intermediate F) from second cathodic reduction",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "primary alkyl bromide electrophile (e.g., 1-bromo-3-chloropropane) attacked by carbanion via SN2",
+      "smiles": "BrCCCCl",
+      "role": "reactive"
+    },
+    {
+      "name": "Mg2+ from sacrificial anode (forms MgBr2/Mg(ClO4)2 passivation layer in THF)",
+      "smiles": "[Mg+2]",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the cathode, the less-negative-potential tertiary alkyl bromide is reduced first to a tertiary alkyl radical, which adds to the radical-acceptor alkene; the resulting stabilized radical undergoes a second cathodic reduction (radical-polar crossover) to a carbanion that performs SN2 on the sterically accessible primary alkyl bromide, while the Mg anode is sacrificially oxidized.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "vinylcyclopropane radical clock (substrate 59, Ph-cyclopropyl-vinyl)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring-opened dialkylation product 60 obtained in 18% yield (7:1 E/Z), supporting intermediacy of carbon radical E after tert-butyl radical addition"
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "intermediate_trap",
+      "observation": "Addition of D2O (5 equiv) under standard conditions gave deuteroalkylation product 61 (8% NMR yield) with 82% D incorporation at the benzylic position, supporting carbanion intermediate F"
+    },
+    {
+      "name": "cyclic voltammetry of tBuBr vs n-alkyl bromide",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "tBuBr Ep/2 = -2.77 V vs Fc+/0; primary alkyl bromide 3 Ep/2 = -3.00 V vs Fc+/0 (0.23 V more difficult), rationalizing selective reduction of the tertiary halide"
+    },
+    {
+      "name": "chlorotrimethylsilane CV",
+      "smiles": "Cl[Si](C)(C)C",
+      "purpose": "redox_probe",
+      "observation": "Onset potential < -3 V vs Fc+/0; too hard to reduce, so chlorosilanes act as electrophiles trapping the carbanion rather than as radical precursors"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "cyclic_voltammetry",
+    "DFT",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "DFT supports facile tert-butyl radical addition to styrene/vinyl boronate (ΔG‡ ≈ 12.1–12.6 kcal/mol) and accessible SN2 of carbanion F on primary bromide (ΔG‡ ≈ 14.2–14.5 kcal/mol); computed E° of tert-butyl radical is -3.54 V vs Fc+/0 (too negative to reduce directly), whereas the stabilized benzylic/α-boryl radical E reduces at -2.63 to -2.80 V, explaining why an anion/radical-stabilizing Z group on the alkene is essential for radical-polar crossover. Solvent choice (DME vs THF) is critical: DME dissolves Mg salts and suppresses anode passivation observed in THF, raising yield from 8% to 79–80%. Deuteration via H-atom transfer from D2O to radical E is ruled out on BDE grounds (O-D 118.3 vs C-D 89.3 kcal/mol), favoring protonation of carbanion F."
+}

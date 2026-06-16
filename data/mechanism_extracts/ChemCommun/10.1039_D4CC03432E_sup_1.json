@@ -1,0 +1,67 @@
+{
+  "doi": "10.1039_D4CC03432E_sup_1",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical chalcogenation/cyclization of N-tosyl alkenyl amines with diaryl dichalcogenides (PhXXPh, X = S, Se, Te) to give 2-(chalcogenylmethyl)pyrrolidines",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of diaryl dichalcogenide PhXXPh to generate PhX• radical (and/or PhX+); the chalcogenyl radical adds to the terminal alkene, and the resulting carbon radical undergoes intramolecular cyclization with the tethered N-tosyl amine",
+  "key_intermediates": [
+    {
+      "name": "phenylchalcogenyl radical PhX• (X = S, Se, Te)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical from anti-Markovnikov addition of PhX• to terminal alkene of N-tosyl pent-4-enylamine",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "(2,2-diphenylvinyl)(phenyl)sulfane (I), trapping adduct from DPE",
+      "smiles": "C(=C(c1ccccc1)c1ccccc1)Sc1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "(2,2-diphenylvinyl)(phenyl)selane (II), trapping adduct from DPE",
+      "smiles": "C(=C(c1ccccc1)c1ccccc1)[Se]c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "(2,2-diphenylvinyl)(phenyl)tellane (III), trapping adduct from DPE",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "2-(chalcogenylmethyl)-N-tosylpyrrolidine product",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode (GF) the diaryl dichalcogenide is oxidized to give PhX•, which adds to the terminal alkene of the N-tosyl pent-4-enylamine; the resulting secondary C-radical cyclizes onto the N-tosylamide nitrogen (with loss of H+, reduced at the GP cathode to H2) to deliver the 2-substituted pyrrolidine.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "With 2 equiv TEMPO, formation of S-product 4 was suppressed to trace, while Se (32, 70%) and Te (47, 47%) products still formed, indicating partial radical involvement (chalcogen-dependent)"
+    },
+    {
+      "name": "1,1-diphenylethene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "DPE intercepted PhX• radicals giving (2,2-diphenylvinyl)(phenyl)chalcogenides I (S, 30%), II (Se, 10%), III (Te, trace), while cyclized pyrrolidines were still obtained (4, 15%; 32, 65%; 47, 49%), supporting a PhX• radical intermediate"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Radical trapping behavior is chalcogen-dependent: the S pathway is most sensitive to TEMPO/DPE (strong radical character), whereas Se and Te reactions are only partially inhibited, possibly implying a competing two-electron/ionic (PhX+) pathway for the heavier chalcogens. Cyclic voltammetry (HFIP/TBABF4, GC working electrode) was used to probe redox potentials of PhXXPh; CV of 1,2-diphenylditellane was measured in TFE due to poor HFIP solubility."
+}

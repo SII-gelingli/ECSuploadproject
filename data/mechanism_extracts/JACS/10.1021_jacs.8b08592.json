@@ -1,0 +1,76 @@
+{
+  "doi": "10.1021_jacs.8b08592",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,2-carbohydroxylation of arylalkenes via anodic oxidation, adding an alkynyl/alkenyl group (from organotrifluoroborate) and OH (from H2O) across the C=C bond",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "radical_cation",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of arylalkene to a radical cation, which is trapped by the organotrifluoroborate; the resulting C-radical is further anodically oxidized to a benzylic cation that is trapped by H2O. At the cathode, H2O is reduced to H2 and HO-.",
+  "key_intermediates": [
+    {
+      "name": "arylalkene radical cation (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "organotrifluoroborate reagent (C, R-BF3K)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-centered radical (D) after concerted C-C bond formation/BF3 loss",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbocation (E) from anodic oxidation of D",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "homopropargylic/homoallylic alcohol product (F)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the arylalkene (Ep/2 = 1.57 V vs SCE) to a radical cation, which is intercepted by the organotrifluoroborate through a concerted C-C bond formation/BF3 release, yielding a benzylic radical; this radical is further oxidized at the anode to a carbocation that is trapped by H2O, while at the cathode H2O is reduced to H2 + HO-.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "photoredox control (Acr+-Mes ClO4- / [Co] cat., blue LED)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "0% of carbohydroxylation product 3; instead 58% aldehyde 77 formed, showing distinct selectivity vs electrochemistry"
+    },
+    {
+      "name": "CAN (cerium ammonium nitrate, chemical oxidant)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "0% of 3; benzophenone formed (25%) at 42% conversion, indicating alkene preferentially reacts with H2O under homogeneous SET oxidation"
+    },
+    {
+      "name": "1,1-diphenylpropene (trisubstituted alkene)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Gave 27% hydroxy-alkynylation 32 plus 51% vicinal diol 33, 10% epoxide, and 9% benzophenone, consistent with a benzylic cation intermediate trapped competitively by H2O"
+    },
+    {
+      "name": "DFT calculation on radical cation + alkenyltrifluoroborate",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Low activation barrier for a concerted C-C bond formation/C-B cleavage, supporting concerted (not stepwise) coupling that preserves alkene stereochemistry"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "DFT",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Alternative stepwise mechanism (C-C bond formation followed by SET oxidation and C-B cleavage, as proposed for enamine radical cations with alkenyltrifluoroborates, ref 9c) was considered but ruled out because alkenyltrifluoroborate stereochemistry is fully retained in product, favoring a concerted C-C/C-B step. Selectivity for H2O over a second equivalent of organotrifluoroborate at the cation E is rationalized by steric hindrance."
+}

@@ -1,0 +1,32 @@
+{
+  "doi": "10.1021_ar200318q",
+  "journal": "AccChemRes",
+  "is_review": true,
+  "rxn_class_summary": "Metal-catalyzed (Rh2 and Ru2 paddlewheel) intramolecular and intermolecular nitrogen-atom transfer / C–H amination of sulfamate, carbamate, sulfamide, and related N–H substrates using hypervalent iodine oxidants to give heterocycles or amines via metal nitrenoid intermediates.",
+  "mechanism_family": [
+    "nitrene",
+    "concerted",
+    "biradical",
+    "electrocatalysis_inner_sphere",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [],
+  "electron_flow": "PhI(OAc)2 condenses with sulfamate/carbamate N–H substrate to form an iminoiodinane (ROSO2N=IPh); coordination to the dirhodium (or diruthenium) paddlewheel extrudes PhI to give a metal nitrenoid, which transfers nitrogen to a C–H bond either by concerted asynchronous insertion (Rh2) or stepwise H-atom abstraction / radical rebound (Ru2(hp)4Cl).",
+  "rate_determining_step": "For Rh2-catalyzed amination, formation of the iminoiodinane ROSO2N=IPh appears rate-limiting (no variance in rate across 0.5–5 mol% catalyst within first 100 s); the product-determining C–H insertion step itself is fast.",
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "KIE",
+    "radical_clock",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "UV_vis",
+    "DFT",
+    "kinetic_order",
+    "isolation_of_intermediate",
+    "H/D_labeling",
+    "crossover"
+  ],
+  "evidence_strength": "review",
+  "notes": "Two competing mechanisms are discussed: (favored for Rh2) concerted asynchronous singlet nitrene C–H insertion supported by KIE ~2.6, Hammett ρ = -0.55, stereochemical retention at tertiary C–H, and failure of a 10^11 s^-1 cyclopropane radical clock to ring-open; (favored for [Ru2(hp)4Cl]) stepwise H-atom abstraction/radical rebound supported by larger KIE 4.9, Hammett ρ = -0.90, partial cis-trans alkene isomerization, cyclopropane clock ring-opening, and DFT. A one-electron / proton-coupled pathway via mixed-valent [Rh2(esp)2]+ (characterized by UV-vis, λ ~750 nm) is also proposed for intermolecular amination and can be driven by Ce(SO4)2 as a single-electron oxidant. Sulfilimine trapping with PhSMe provides indirect evidence for the transient iminoiodinane. Catalyst decomposition via ligand exchange between PhI(OAc)2 and Rh2(O2 13CMe)4 (release of 13C-labeled AcOH) is documented; chelating esp ligand suppresses this and stabilizes the mixed-valent state."
+}

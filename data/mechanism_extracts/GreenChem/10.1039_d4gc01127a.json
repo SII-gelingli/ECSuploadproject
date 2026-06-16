@@ -1,0 +1,60 @@
+{
+  "doi": "10.1039_d4gc01127a",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative coupling of cyclic beta-keto esters with styrenes to form beta-keto spirolactones via double anodic oxidation and water trapping under green solvent conditions",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis",
+    "carbocation"
+  ],
+  "electrochemical_role": "Anodic oxidation of the deprotonated beta-keto ester enolate to an alpha-keto radical, followed by a second anodic oxidation of the benzylic radical adduct to a benzylic carbocation; cathode reduces protons/water to H2",
+  "key_intermediates": [
+    {
+      "name": "alpha-keto radical from beta-keto ester (intermediate I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical adduct after styrene addition (intermediate II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation (intermediate III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic alcohol after water trapping (intermediate IV)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Base deprotonates the beta-keto ester; the anode oxidizes the enolate to an alpha-keto radical (I) which adds to the styrene to give a benzylic radical (II); a second anodic oxidation gives a benzylic carbocation (III), which is trapped intermolecularly by water to alcohol IV, and intramolecular lactonization affords the spirolactone, while the cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "TEMPO adduct 6 isolated in 89% yield, supporting formation of benzylic radical II; TEMPO adduct 7 of the alpha-keto radical detected by mass spectrometry"
+    },
+    {
+      "name": "H2-18O (18O-labeled water)",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "18O incorporated into the lactone oxygen of product 4 (48% overall yield), demonstrating that water (not the ester) supplies the lactone oxygen, consistent with mechanism A (intermolecular water attack on carbocation)"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "H/D_labeling",
+    "isotope_label",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two mechanistic pathways are considered after the carbocation III: Mechanism A (favored) involves intermolecular attack of water on the benzylic carbocation to give alcohol IV, followed by intramolecular lactonization; Mechanism B involves intramolecular ester oxygen attack to form oxocarbenium IV' followed by hydrolysis. 18O-labeling experiments support Mechanism A. Isolation of hemiketal byproducts 3s/3t is also consistent with water trapping of the carbocation. Reaction performed in acetone/water with LiClO4 electrolyte, 2,6-lutidine base, graphite anode and Ni-foam cathode, runs under batch and continuous flow."
+}

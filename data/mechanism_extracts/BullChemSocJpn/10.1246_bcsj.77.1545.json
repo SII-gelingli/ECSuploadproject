@@ -1,0 +1,113 @@
+{
+  "doi": "10.1246_bcsj.77.1545",
+  "journal": "BullChemSocJpn",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical one-electron cathodic reduction of accumulated N-acyliminium ion 'cation pools' to generate carbon free radicals that homo-couple or add to activated olefins (e.g., methyl acrylate)",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Two-step paired sequence: anodic two-electron oxidation of N-(methoxycarbonyl)pyrrolidine (or silyl-substituted precursor) at -78 °C generates and accumulates the N-acyliminium cation pool; subsequent cathodic one-electron reduction (Ep ≈ -0.85 to -0.90 V vs Ag/Ag+) of the cation gives the α-amino C-radical",
+  "key_intermediates": [
+    {
+      "name": "N-methoxycarbonyl pyrrolidinyl N-acyliminium ion (2)",
+      "smiles": "COC(=O)N1CCC[CH+]1",
+      "role": "reactive"
+    },
+    {
+      "name": "α-amino carbon radical (3) from one-electron reduction of 2",
+      "smiles": "COC(=O)N1CCC[CH]1",
+      "role": "reactive"
+    },
+    {
+      "name": "α-amino carbanion (9) from two-electron reduction of 2",
+      "smiles": "COC(=O)N1CCC[CH-]1",
+      "role": "transient"
+    },
+    {
+      "name": "dimeric radical cation (8) from radical-cation coupling",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "homo-coupled pyrrolidine dimer (4)",
+      "smiles": "COC(=O)N1CCCC1C1CCCN1C(=O)OC",
+      "role": "reactive"
+    },
+    {
+      "name": "adduct radical (20) from addition of 3 to methyl acrylate",
+      "smiles": "COC(=O)N1CCCC1CC([CH])C(=O)OC",
+      "role": "transient"
+    },
+    {
+      "name": "carbanion (21) from one-electron reduction of 20",
+      "smiles": "COC(=O)N1CCCC1CC([CH-])C(=O)OC",
+      "role": "transient"
+    },
+    {
+      "name": "C-H addition product (19)",
+      "smiles": "COC(=O)N1CCCC1CCC(=O)OC",
+      "role": "reactive"
+    },
+    {
+      "name": "2:1 coupling byproduct (22) from reaction of 21 with 2",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "simply reduced pyrrolidine (1) via protonation of 9",
+      "smiles": "COC(=O)N1CCCC1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode performs 2e- oxidation of carbamate precursor (with loss of H+ or SiMe3+) to accumulate N-acyliminium cation; cathode then delivers 1e- to the cation giving an α-amino carbon radical, which either homo-couples (possibly via radical-radical or radical-cation dimer reduction) or adds to methyl acrylate, after which the resulting electron-poor radical is reduced once more and protonated to close a formal C-H/C=C addition.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "Zn powder (chemical 2e- reductant)",
+      "smiles": "[Zn]",
+      "purpose": "redox_probe",
+      "observation": "Predominantly gives simply reduced 1 (54%) with only 16% dimer 4, indicating 2e- pathway via carbanion 9 dominates chemically"
+    },
+    {
+      "name": "SmI2 (chemical 1e- reductant)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Gives mainly 1 (10%) with little 4 (4%); supports 2e- pathway in chemical reduction vs 1e- in electrochemistry"
+    },
+    {
+      "name": "Methyl acrylate (radical acceptor)",
+      "smiles": "C=CC(=O)OC",
+      "purpose": "intermediate_trap",
+      "observation": "Trapping gives adduct 19 (up to 88% with 50 equiv TfOH), supporting intermediacy of carbon radical 3"
+    },
+    {
+      "name": "Trifluoromethanesulfonic acid (proton source)",
+      "smiles": "OS(=O)(=O)C(F)(F)F",
+      "purpose": "intermediate_trap",
+      "observation": "Suppresses 2:1 byproduct 22 by protonating carbanion 21; increases 19 to 88%"
+    },
+    {
+      "name": "Mixed cation pool (2 + 7) crossover",
+      "smiles": null,
+      "purpose": "crossover",
+      "observation": "Non-selective formation of three coupling products (4, 16, 18) consistent with radical coupling but also compatible with radical-cation or anion-cation coupling"
+    },
+    {
+      "name": "Cyclic voltammetry of cation pools 2 and 7",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Ep = -0.85 to -0.90 V for 2 and -0.75 V for 7; positive shift vs N,N-dialkyliminium (-1.95 V) attributed to electron-withdrawing CO2Me"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "crossover",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors favor the radical pathway (path A: 3 adds to methyl acrylate → 20 → 21 → 19) over the carbanion pathway (path B: 2e- reduction of 2 to carbanion 9, then conjugate addition). For homo-coupling, radical-radical dimerization of 3 and radical-cation coupling (3 + 2 → 8, then reduction) cannot be experimentally distinguished. Electrode choice matters: Pt cathode favors 1e- reduction (selective dimer 4, up to 75%), while C cathode allows more 2e- over-reduction to 1. Chemical reductants (Zn, SmI2) instead favor the 2e- carbanion pathway, possibly via metal-ion stabilization of 9."
+}

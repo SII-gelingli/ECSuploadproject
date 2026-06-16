@@ -1,0 +1,95 @@
+{
+  "doi": "10.1002_adsc.202100161",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical alkoxy- and hydroxy-bromination of styrenes to bromohydrins and bromohydrin ethers using KBr as bromine source in DMSO/H2O or MeCN/ROH with AcOH additive.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of bromide to Br2 / [Br]+ which acts as the electrophilic mediator that activates the styrene; no direct SET to the alkene (CV shows styrene is not oxidized under these conditions).",
+  "key_intermediates": [
+    {
+      "name": "molecular bromine / [Br]+ electrophile generated at anode",
+      "smiles": "BrBr",
+      "role": "reactive"
+    },
+    {
+      "name": "cyclic bromonium ion A from styrene + [Br]+",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkoxysulfonium / sulfonium salt B (DMSO-trapped benzylic cation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "DMSO-Br complex C ([Br]+ bound to DMSO)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "vicinal dibromide 4 (from Br- attack on bromonium A)",
+      "smiles": "BrCC(Br)c1ccccc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "styrene oxide 3 (epoxide, from high [OH-])",
+      "smiles": "O1CC1c1ccccc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "1-phenyl-1,2-diol 5 (from epoxide opening)",
+      "smiles": "OCC(O)c1ccccc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "bromohydrin 2a (target)",
+      "smiles": "OC(CBr)c1ccccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Bromide is oxidized at the anode to Br2 / [Br]+; this electrophile (optionally relayed through a DMSO-Br adduct C) adds to the styrene to give bromonium A or benzylic sulfonium B, which is opened by H2O (or ROH) to give the bromohydrin (or its ether); protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of KBr, styrene 1a, and their mixture",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Only Br- is oxidized; styrene 1a shows no oxidation wave; addition of 1a to KBr decreases the reverse reduction peak, consistent with chemical consumption of electrogenerated Br2/[Br]+ by the alkene."
+    },
+    {
+      "name": "control with isolated epoxide 3 under reaction conditions",
+      "smiles": "O1CC1c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Epoxide 3 does not convert to bromohydrin 2a, ruling out epoxide as on-cycle intermediate."
+    },
+    {
+      "name": "AcOH vs TFA vs KOH additive screen",
+      "smiles": "CC(=O)O",
+      "purpose": "other",
+      "observation": "5 eq AcOH gives 86% 2a with no epoxide; adding KOH or removing AcOH increases epoxide 3 (up to 48%) and suppresses 2a, showing acid controls hydroxide concentration and prevents epoxide formation."
+    },
+    {
+      "name": "TFA substitution for AcOH",
+      "smiles": "OC(=O)C(F)(F)F",
+      "purpose": "other",
+      "observation": "Lower 76% yield of bromohydrin ether 6a vs 87% with AcOH."
+    },
+    {
+      "name": "high current density operation (j=53.3 mA/cm^2) with visible Br2 evolution",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Bulk Br2 observed dripping from electrodes, supporting two-electron Br-/Br2 mediator pathway over a Br-radical chain."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "A radical pathway (anodic Br- -> Br•, addition to styrene, anodic oxidation of benzyl radical to cation, then nucleophile capture) is explicitly considered but disfavored based on CV and observation of free Br2 at high current density. Two electrophile delivery modes are proposed in parallel: direct attack of [Br]+/Br2 on styrene to give bromonium A, and DMSO-mediated delivery via complex C giving sulfonium B; both converge on nucleophilic opening by H2O/ROH. Side products include vicinal dibromide 4 (Br- opening of A), epoxide 3 (high OH-), and diol 5 (hydrolysis of 3)."
+}

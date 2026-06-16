@@ -1,0 +1,59 @@
+{
+  "doi": "10.1016_j.tetlet.2021.153602",
+  "journal": "Tetrahedron",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical halo-heterocyclization of N-allylbenzamides using 1,2-dichloroethane (DCE) as a chloride shuttle to construct 5-halomethyl-2-oxazolines, 2-thiazolines, 1,3-oxazines and isoxazolines",
+  "mechanism_family": [
+    "paired_electrolysis",
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Cathodic reduction of DCE generates a chloroethyl radical/carbanion that fragments to ethylene and Cl-; the released Cl- is then anodically oxidized to electrophilic Cl+ which initiates chloro-cyclization of the N-allylbenzamide (DCE acts as an e-shuttle halogenating reagent in a paired electrolysis).",
+  "key_intermediates": [
+    {
+      "name": "chloroethyl radical from one-electron reduction of DCE (A)",
+      "smiles": "[CH2]CCl",
+      "role": "transient"
+    },
+    {
+      "name": "chloroethyl carbanion (B) from second reduction",
+      "smiles": "[CH2-]CCl",
+      "role": "transient"
+    },
+    {
+      "name": "ethylene + chloride (from beta-elimination of B)",
+      "smiles": "C=C",
+      "role": "transient"
+    },
+    {
+      "name": "electrophilic Cl+ from anodic oxidation of Cl-",
+      "smiles": "[Cl+]",
+      "role": "reactive"
+    },
+    {
+      "name": "chloriranium/chloronium complex C of N-allylbenzamide with Cl+",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized oxazolinium intermediate D (pre-deprotonation)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the cathode, DCE is reduced (2 e-) to a chloroethyl radical (A) then carbanion (B), which beta-eliminates Cl- and releases ethylene. The liberated Cl- migrates to the anode where it is oxidized to electrophilic Cl+; this Cl+ activates the alkene of the N-allylbenzamide (intermediate C), the amide oxygen cyclizes onto the chloronium (intermediate D), and loss of H+ delivers the 5-chloromethyl-2-oxazoline product 2aa.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of 1aa, DCE, and Et4NBF4 in MeCN",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No oxidation wave for 1aa in 0-2.0 V, ruling out direct anodic oxidation of the alkene to a radical cation; DCE shows a reduction peak at 0.95 V and an oxidation peak at 1.41 V (Cl- generated from DCE reduction is oxidized at the anode)."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "weak",
+  "notes": "An alternative mechanism via direct anodic oxidation of the alkene 1aa to a radical cation was explicitly excluded by CV (no oxidation of 1aa in 0-2.0 V). The mechanism is supported mainly by CV and analogy to prior work; no radical traps, KIE, or DFT calculations are reported on these pages."
+}

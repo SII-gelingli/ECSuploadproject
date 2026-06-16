@@ -1,0 +1,71 @@
+{
+  "doi": "10.1039_D4QO01354A_sup_1",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical three-component selenocyclization of diphenyl diselenide, methacryloyl chloride, and 2-mercaptobenzimidazole to construct selenium-containing benzimidazole-fused thiazinones.",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation: TBPB acts as a redox mediator/initiator and PhSeSePh is oxidized at the anode to generate PhSe radical; cathode reduces protons/water to H2 (with D2O giving D-incorporation in the product).",
+  "key_intermediates": [
+    {
+      "name": "phenylselenyl radical (PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon radical from PhSe• addition to methacryloyl chloride",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "thiyl/N-acylated benzimidazole-2-thiol intermediate (after acylation by 2a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "C-centered radical alpha to carbonyl prior to H/D abstraction",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "TBPB mediates anodic oxidation of PhSeSePh to give PhSe•, which adds to the methacrylamide-type acceptor formed by N-acylation of 2-mercaptobenzimidazole with methacryloyl chloride; the resulting carbon radical cyclizes onto S and is reduced/protonated (D from D2O) while H2 evolves at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Yield drops from 90% to 80% (0.8 equiv) and 54% (1.2 equiv), indicating radical involvement."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield decreases to 70% (0.8 equiv) and 65% (1.2 equiv)."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Yield decreases to 67% (0.8 equiv) and 60% (1.2 equiv)."
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "96% D-incorporation at the methyl/CH position of product 6-d (95% yield), indicating proton (deuteron) source from water at the late stage."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "CV shows an oxidation feature around 1.327 V when 1a (PhSeSePh) is added to TBPB/Cs2CO3/MeCN, supporting anodic oxidation of the diselenide (likely mediated by TBPB). Radical traps only partially suppress the reaction, suggesting a radical chain or partially caged radical pathway rather than free diffusing radicals exclusively."
+}

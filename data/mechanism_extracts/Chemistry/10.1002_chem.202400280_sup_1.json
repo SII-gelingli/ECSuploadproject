@@ -1,0 +1,104 @@
+{
+  "doi": "10.1002_chem.202400280_sup_1",
+  "journal": "Chemistry",
+  "is_review": false,
+  "rxn_class_summary": "Photoelectrochemical radical selenocyclization of N-alkenylacrylamides with diselenides (PhSeSePh) catalyzed by 4CzIPN to form selenylated pyrrolinones (e.g., 3a).",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation regenerates/oxidizes the photocatalyst (4CzIPN) or directly oxidizes selenide to a selenyl radical; cathode reduces protons to H2 (hydrogen evolution detected), enabling net oxidative selenocyclization under combined photo/electrochemical conditions.",
+  "key_intermediates": [
+    {
+      "name": "phenylselenyl radical (PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical from PhSe• addition to acrylamide alkene of 1a",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized alkyl radical after intramolecular addition onto pendant styrenyl alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "carbocation after oxidation of cyclized radical (radical-polar crossover)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "4CzIPN excited state (*4CzIPN)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Visible light excites 4CzIPN; the excited photocatalyst oxidizes PhSeSePh to generate a PhSe• radical that adds to the acrylamide alkene of 1a, initiating 5-exo-trig radical cyclization onto the pendant alkene. The resulting alkyl radical is oxidized (radical-polar crossover) to a cation that undergoes deprotonation/aromatization to give 3a; the anode regenerates the photocatalyst while the cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Yield partially suppressed (60% A / 40% B / 37% C); radical pathway implicated but not fully shut down."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely suppressed (0% under all conditions), strongly supporting radical intermediates."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Partial suppression (41/32/46%), consistent with radical intermediates."
+    },
+    {
+      "name": "azulene",
+      "smiles": "c1ccc2cccc-2cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Reaction shut down (trace), suggesting triplet-state involvement."
+    },
+    {
+      "name": "ferrocene (Fc)",
+      "smiles": "[Fe+2].[cH-]1cccc1.[cH-]1cccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Trace yield; triplet quenching suppresses reaction."
+    },
+    {
+      "name": "biisobutenyl (2,5-dimethyl-2,4-hexadiene)",
+      "smiles": "CC(C)=CC=C(C)C",
+      "purpose": "intermediate_trap",
+      "observation": "Trace under A, 31% under B; partial triplet quenching."
+    },
+    {
+      "name": "trans-stilbene/parbenate",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "16% (A), 18% (B); significant triplet quenching."
+    },
+    {
+      "name": "benzil",
+      "smiles": "O=C(C(=O)c1ccccc1)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "15% (A), 46% (B); triplet quencher partially suppresses."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "UV_vis",
+    "DFT",
+    "crossover",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Mechanistic SI includes quenching experiments (radical and triplet scavengers), reaction profiles, on-off light/current experiments, CV, UV-Vis, fluorescence, H2 detection, Se-scrambling crossover experiments with MeSeSeMe under 395 nm, excited-state redox potential determinations for 4CzIPN, 1a, and 3a in DCE/HFIP (3:1), and DFT calculations. Control experiments confirm 1a/3a do not act as 395-nm photooxidants or energy-transfer photocatalysts, supporting 4CzIPN as the active photocatalyst. Triplet-state involvement supported by quenching with azulene, Fc, benzil, etc."
+}

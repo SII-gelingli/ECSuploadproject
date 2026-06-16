@@ -1,0 +1,83 @@
+{
+  "doi": "10.1021_ja016885b",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrocatalytic intermolecular formal [2+2] cycloaddition between aryl enol ethers and alkenes (including allyl-TMS and nonactivated alkenes) to give substituted cyclobutanes via anodic oxidation",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_cation",
+    "cation_initiated",
+    "electrocatalysis_outer_sphere"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the electron-rich (4-methoxyphenyl) enol ether to its radical cation, which initiates C-C bond formation with a neutral alkene; the product radical cation is regenerated/turned over by intermolecular disproportionation with starting enol ether (chain-like, sub-stoichiometric charge: ~0.5 F/mol)",
+  "key_intermediates": [
+    {
+      "name": "4-methoxyphenyl enol ether radical cation (from 3)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "open-chain distonic radical cation after C-C bond formation with allyl-TMS (β-silyl carbocation / C-radical hybrid)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclobutane radical cation bearing methoxyphenyl group (precursor to 5)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "neutral trans-cyclobutane product 5",
+      "smiles": "COc1ccc(C2(OC)CC2C[Si](C)(C)C)cc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "The anode oxidizes the 4-methoxyphenyl enol ether to a radical cation, which adds across the allyl-TMS (or other alkene) to give an acyclic distonic radical cation; ring-closure forms a cyclobutane radical cation, which is reduced back to neutral product by intermolecular electron transfer (disproportionation) from another enol ether, propagating the chain.",
+  "rate_determining_step": "Initial anodic SET oxidation of the methoxyphenyl-substituted enol ether (governed by Eox; only the 4-MeO-aryl substrate 3 reacts, not n-pentyl 1 or phenyl 2)",
+  "probe_reagents": [
+    {
+      "name": "on/off current interval electrolysis (stair-step potential application)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Product accumulates only during current application and is essentially constant during off intervals over 16 h, consistent with electrochemical initiation rather than a long-lived non-electrochemical chain"
+    },
+    {
+      "name": "dark control (electrolysis without light)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Product 5 forms equally under dark conditions, ruling out a photochemical [2+2] pathway"
+    },
+    {
+      "name": "pre-electrolyzed electrolyte then substrate addition (no current)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "No product formed, excluding a long-lived electrogenerated oxidant doing the chemistry"
+    },
+    {
+      "name": "oxidation potential screen of enol ethers 1-3",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Only 3 (Eox = 1.39 V, 4-MeO-C6H4) gives cycloadduct; 1 (1.48 V) and 2 (1.43 V) give none, showing the methoxyphenyl group is required to access the radical cation under these conditions"
+    },
+    {
+      "name": "nOe analysis of 5",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "All-trans stereochemistry of the cyclobutane established, consistent with stepwise (radical cation) rather than concerted [2+2]"
+    },
+    {
+      "name": "o-methoxyphenyl variant 12",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Also gives cycloadducts 13/14, supporting role of methoxyaryl in intramolecular disproportionation step"
+    }
+  ],
+  "evidence_types_used": [
+    "on/off_light_or_current",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly invoke intramolecular disproportionation between the cyclobutane radical cation and the pendant methoxyphenyl group to regenerate the enol-ether radical cation (Scheme 5), explaining catalytic turnover at ~0.5 F/mol. A concerted [2+2] is excluded by trans stereochemistry and by the dark control. Reaction fails without the electron-rich aryl group, indicating the aryl substituent is essential both for accessible Eox and for the redox relay step."
+}

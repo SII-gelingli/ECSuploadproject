@@ -1,0 +1,86 @@
+{
+  "doi": "10.1021_acs.joc.4c00991",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative selenocyclization of N-allyl ureas with diaryl diselenides to give selenylated cyclic isoureas, with subsequent acid-catalyzed skeletal rearrangement to cyclic ureas",
+  "mechanism_family": [
+    "radical_anodic",
+    "cation_initiated",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of diaryl diselenide (ArSe-SeAr) to aryl selenium radical cations / ArSe+ cation; cathodic reduction of protons to H2 at platinum",
+  "key_intermediates": [
+    {
+      "name": "diaryl diselenide radical cation / ArSe+ cation (B -> ArSe+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclic seleniranium ion (I) from ArSe+ addition to allyl alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "kinetic 5-exo-tet cyclic isourea product C (O-cyclized, selenylated oxazoline-type)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "N-protonated isourea II (after protonation of exocyclic N of C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "regenerated seleniranium I via reversible neighboring group participation (NGP) of Se",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclic urea D (N-cyclized, thermodynamic product)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the graphite anode, diaryl diselenide B is oxidized (lower onset, 1.49 V vs 1.57 V for substrate) to generate ArSe+, which electrophilically adds to the allyl alkene of urea A to give a seleniranium ion I; intramolecular 5-exo-tet attack by the urea oxygen yields cyclic isourea C, while the two released protons are reduced to H2 at the Pt cathode. Under HClO4/heat, C is protonated at the exocyclic N (II) and undergoes reversible NGP back to I followed by irreversible N-attack to give the thermodynamic cyclic urea D.",
+  "rate_determining_step": "Anodic oxidation of diaryl diselenide to generate the ArSe+ electrophile (lowest-potential, kinetically gating event)",
+  "probe_reagents": [
+    {
+      "name": "argon atmosphere (O2 exclusion)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction proceeds with similar yield (75%) under Ar, ruling out aerial O2 involvement"
+    },
+    {
+      "name": "divided cell with A1+B1 in anolyte",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "C1 formed in 55% yield, confirming oxidative (anodic) pathway"
+    },
+    {
+      "name": "divided cell with A1+B1 in catholyte",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product formed, confirming anode is the working electrode"
+    },
+    {
+      "name": "competition: (4-MeC6H4Se)2 (B2) vs (4-FC6H4Se)2 (B6)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Slight preference for electron-deficient 4-F aryl selenide product C27 (35%) over 4-Me C23 (27%), consistent with easier oxidation/transfer of more electron-poor diselenide"
+    },
+    {
+      "name": "cyclic voltammetry of (PhSe)2 and A12",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "(PhSe)2 oxidizes at Ep=1.49 V with strong current; substrate A12 oxidizes at 1.57 V with much weaker current, indicating diselenide is preferentially oxidized"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two-stage mechanism: (1) electrochemical selenocyclization gives kinetic O-cyclized isourea C; (2) separate HClO4/dioxane acid-catalyzed skeletal rearrangement converts C to thermodynamic N-cyclized urea D via reversible seleniranium reformation (NGP) then irreversible N-attack. Authors invoke H2 evolution at Pt cathode as the counter-reaction. No radical traps (TEMPO/BHT), KIE, or DFT reported; mechanism supported mainly by CV, divided-cell, and control experiments."
+}

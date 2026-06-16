@@ -1,0 +1,63 @@
+{
+  "doi": "10.1016_j.tet.2021.132535",
+  "journal": "Tetrahedron",
+  "is_review": false,
+  "rxn_class_summary": "Electroreductive linear dimerization of electron-deficient vinylarenes to 1,4-diarylbutanes in an undivided cell with carbon electrodes using n-Bu4NBr/CH3CN-DMF, where CH3CN serves as the H-atom source.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_anion",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Cathodic single-electron reduction of the electron-deficient vinylarene generates a radical anion that adds to a second vinylarene; after H-atom abstraction from CH3CN the resulting carbanion is re-oxidized at the anode to a radical, which abstracts a second H from CH3CN to give the saturated dimer.",
+  "key_intermediates": [
+    {
+      "name": "vinylarene radical anion (15a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "distonic radical anion from radical addition to second vinylarene (16a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbanion after H-atom transfer from CH3CN (17a)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic radical after anodic oxidation (18a)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Cathode reduces vinylarene 6a to radical anion 15a, which adds across another 6a to give distonic intermediate 16a; HAT from CH3CN furnishes carbanion 17a, which is oxidized at the anode to radical 18a; a second HAT from CH3CN delivers the 1,4-diarylbutane 12a.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 12a not detected under standard conditions with 2.0 equiv TEMPO, consistent with a radical intermediate."
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "Addition of D2O (0.1 mL) gave 12a in 62% yield with no deuterium incorporation, indicating H does not come from water."
+    },
+    {
+      "name": "CD3CN",
+      "smiles": "[2H]C([2H])([2H])C#N",
+      "purpose": "isotope_label",
+      "observation": "Replacing CH3CN with CD3CN gave [D]-12a in 60% yield with 100% D incorporation at the benzylic positions, demonstrating CH3CN is the H-atom source."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_TEMPO",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors note that other mechanistic pathways cannot be ruled out. Strong electron-withdrawing substituents favor reaction by stabilizing the intermediate anion 17a, consistent with the proposed cathodic reduction initiation. A cross-coupling variant (4-vinylpyridine 6y + acrylate 6aa → 12aa, 52%) is also demonstrated."
+}

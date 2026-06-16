@@ -1,0 +1,105 @@
+{
+  "doi": "10.1016_j.cclet.2021.10.016",
+  "journal": "ChinChemLett",
+  "is_review": false,
+  "rxn_class_summary": "Applied-potential-controlled electrochemical vicinal fluorosulfenylation and fluorosulfoxidation of alkenes using thiols and Et3N·3HF, proceeding through a thiyl radical / disulfide / episulfonium ion pathway.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of thiophenol to a thiyl radical (and further anodic oxidation of the in-situ generated disulfide back to thiyl radical); a second anodic oxidation event generates the episulfonium ion intermediate, and a higher applied potential further oxidizes the fluorosulfide to the fluorosulfoxide (with CCl4/H2O as the oxygen-transfer system).",
+  "key_intermediates": [
+    {
+      "name": "thiyl radical (ArS•)",
+      "smiles": "[S]c1ccc(Cl)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "diaryl disulfide (ArSSAr)",
+      "smiles": "Clc1ccc(SSc2ccc(Cl)cc2)cc1",
+      "role": "transient"
+    },
+    {
+      "name": "β-thio carbon radical (ArS-CR2-CR2•)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "episulfonium ion (thiiranium)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "aryl-bis(arylthio)sulfonium ion [ArS(ArSSAr)]+",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "vicinal fluorosulfide (G)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "vicinal fluorosulfoxide (H)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "ArSH is anodically oxidized (with H2 evolution at cathode) to ArS•, which dimerizes to ArSSAr; further anodic oxidation regenerates ArS• that adds to the alkene to give a β-thio carbon radical, which after another anodic oxidation forms an episulfonium ion (alternatively, the alkene reacts with an anodically generated bis(arylthio)sulfonium ion). Fluoride from Et3N·3HF opens the episulfonium to give the fluorosulfide, and at higher cell potential CCl4/H2O-mediated anodic oxidation converts it to the fluorosulfoxide.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "diaryl disulfide (96) in place of ArSH",
+      "smiles": "Clc1ccc(SSc2ccc(Cl)cc2)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Gave fluorosulfide 3 (67%) under condition A and fluorosulfoxide 63 (51%) under condition B, supporting disulfide as a viable intermediate."
+    },
+    {
+      "name": "vinylcyclopropane (radical clock, 97)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring-opened products 98 (15%) and 99 (44%) observed, indicating radical intermediates."
+    },
+    {
+      "name": "indene (100) and 1,2-dihydronaphthalene (102)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Stereospecific trans-fluorosulfenylation (101, 50%; 103, 59%) consistent with an episulfonium ion intermediate."
+    },
+    {
+      "name": "(E)- and (Z)-stilbene (104)",
+      "smiles": "C(=C/c1ccccc1)\\c1ccccc1",
+      "purpose": "other",
+      "observation": "Both isomers gave fluorosulfide 105 with the same stereochemistry; Z→E isomerization observed prior to fluorosulfenylation, consistent with reversible thiyl-radical addition."
+    },
+    {
+      "name": "H2^18O labeling",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "O-18 incorporation in fluorosulfoxide 63 scaled with amount of H2^18O added, indicating H2O (not O2) is the oxygen source for sulfoxidation."
+    },
+    {
+      "name": "cyclic voltammetry of 39 and 62",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Distinct oxidation potentials of fluorosulfide vs. fluorosulfoxide rationalize selectivity via 'dialled-in' applied potentials (Ecell 1.8 V for sulfenylation; CCE 20 mA, Eanode 1.10–1.95 V for sulfoxidation)."
+    },
+    {
+      "name": "rigorously oxygen-free conditions",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Yield of fluorosulfoxide 63 unchanged, ruling out O2 as oxygen source."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "isotope_label",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "crossover"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two pathways to the episulfonium ion are proposed: (path a, favored) anodic oxidation of the β-thio carbon radical from ArS• addition to the alkene; (path b) reaction of the alkene with an anodically generated aryl-bis(arylthio)sulfonium ion [ArS(ArSSAr)]+. Cathodic reduction of ArSSAr to ArS• is mechanistically possible but deemed non-essential given the undivided cell setup. Attempts to access the fluorosulfone (I) at higher potentials (2.8–3.8 V) only led to decomposition. CCl4 is proposed to deliver Cl−/Cl• species that facilitate oxidation of fluorosulfide to fluorosulfoxide, with H2O as the oxygen source."
+}

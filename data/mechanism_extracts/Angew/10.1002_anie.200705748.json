@@ -1,0 +1,76 @@
+{
+  "doi": "10.1002_anie.200705748",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electroinitiated cation chain reaction forming intramolecular C-C bond between thioacetal and pendant olefin to give tetrahydropyrans bearing an ArS group",
+  "mechanism_family": [
+    "cation_initiated",
+    "mediator_anodic",
+    "carbocation"
+  ],
+  "electrochemical_role": "Anodic oxidation of ArSSAr generates ArS(ArSSAr)+ (an 'ArS+' equivalent) that activates the thioacetal; only a catalytic amount of electricity is required because ArS+ is regenerated in the chain",
+  "key_intermediates": [
+    {
+      "name": "ArS(ArSSAr)+ (electrochemically generated 'ArS+' equivalent)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Alkoxycarbenium ion 9 from thioacetal 6 after ArS+ abstraction of ArS",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cyclized carbocation 10 (tetrahydropyranyl cation after intramolecular olefin addition)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ArSSAr (disulfide, regenerated nucleophile/mediator)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Product 8 (cis-tetrahydropyran with ArS group)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes ArSSAr to an 'ArS+' equivalent [ArS(ArSSAr)+]; ArS+ abstracts ArS from thioacetal 6 to give alkoxycarbenium 9, which cyclizes onto the pendant olefin to give cation 10; ArSSAr traps 10 to deliver product 8 and regenerate ArS+, propagating the chain.",
+  "rate_determining_step": "Intramolecular addition of the alkoxycarbenium ion to the olefin (cyclization of 9 to 10), made feasible by intramolecularization; the trapping of 10 by ArSSAr is concerted-like and accelerated by excess ArSSAr",
+  "probe_reagents": [
+    {
+      "name": "Bu4NBF4 supporting electrolyte (fluoride source probe)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Fluoride from BF4- attacks cyclized cation giving fluorinated product 7a (81%), proving a free cation intermediate"
+    },
+    {
+      "name": "Bu4NB(C6F5)4 (non-nucleophilic electrolyte)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Suppresses fluoride attack; ArSSAr instead traps the cyclized cation giving 8a (72-82%), confirming ArSSAr as nucleophile in the chain"
+    },
+    {
+      "name": "Substoichiometric ArS(ArSSAr)+ (20 mol%, 2 mol%)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Catalytic loading still produces 8a (33-47%), consistent with a chain mechanism; excess ArSSAr boosts yield to 82%"
+    },
+    {
+      "name": "CSI-MS / 1H NMR of ArS(ArSSAr)+B(C6F5)4-",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Direct spectroscopic detection (HRMS m/z 381.0084) of the cationic ArS+ carrier"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "kinetic_order",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Exclusive cis-selectivity in 8 (except 8b) suggests that cyclization of 9 to 10 and trapping by ArSSAr occur in a somewhat concerted manner rather than via a fully free, equilibrated cation 10. In-cell (direct) electrolysis (method B) also initiates the chain effectively. The reaction of alkoxycarbenium with a non-stabilized olefin is proposed as the potential bottleneck, rescued by intramolecularity."
+}

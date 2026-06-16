@@ -1,0 +1,65 @@
+{
+  "doi": "10.1016_j.cclet.2020.09.041",
+  "journal": "ChinChemLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intramolecular aminoazidation of 2-vinylanilines (N-Ts) with NaN3 to give 3-azido-indolines via an iodonium-ion intermediate",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (I-) to molecular I2, which then forms an iodonium ion with the styrenyl alkene; the cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "molecular iodine (I2) generated at anode from I-",
+      "smiles": "II",
+      "role": "reactive"
+    },
+    {
+      "name": "iodonium ion of 2-vinyl-N-tosyl aniline (A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "rearranged/opened iodonium intermediate B",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclized indolinium cation C (after intramolecular N-attack)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "3-iodo-indoline D (after deprotonation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "3-azido-indoline product 3a (after SN2 by azide on D)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes I- to I2; I2 adds to the styrene alkene of 1a forming an iodonium ion, which is opened by intramolecular nucleophilic attack of the tosylamide nitrogen to give a 3-iodo-indoline after deprotonation; azide then displaces iodide via SN2 to give the 3-azido-indoline, while the cathode reduces protons to H2.",
+  "rate_determining_step": "Slow electrochemical generation of I2 from I- (matching the rate of iodonium formation with intramolecular amine cyclization to suppress competing direct amine addition)",
+  "probe_reagents": [
+    {
+      "name": "BHT (2,6-di-tert-butyl-4-methylphenol)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Addition of BHT did not decrease the yield (3a obtained in 72%), indicating no radical intermediate is involved"
+    },
+    {
+      "name": "I2 (stoichiometric, no electricity)",
+      "smiles": "II",
+      "purpose": "intermediate_trap",
+      "observation": "1 equiv I2 with HOAc in CH3CN:H2O at 25 °C gave 3a in 47%, supporting I2 as the active species but showing direct I2 addition is less efficient than slow electrogeneration"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors argue that under direct I2 catalysis, rapid iodonium formation outpaces intramolecular amine cyclization (aniline competes via nucleophilic addition first), lowering yield; slow electrogeneration of I2 from I- matches the cyclization rate and suppresses this side pathway. No radical pathway is supported by the BHT experiment."
+}

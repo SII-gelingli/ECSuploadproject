@@ -1,0 +1,79 @@
+{
+  "doi": "10.1039_D3GC02128A",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative 1,2-aryl migration coupling of allyl alcohols with sulfonyl hydrazides to access γ-keto sulfones via a radical-mediated semipinacol-type rearrangement",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of sulfonyl hydrazide (2a) to a sulfonyl diazonium/radical species (loss of 3H+, 3e-, then N2 extrusion gives a sulfonyl radical); a later C-centered radical intermediate is further oxidized at the anode (-e-) to a cation that loses a proton to give the ketone product; protons are reduced at the cathode to H2",
+  "key_intermediates": [
+    {
+      "name": "sulfonyl diazonium intermediate A (ArSO2-N=N+) from anodic oxidation of TsNHNH2",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "sulfonyl radical B (ArSO2•) after N2 extrusion",
+      "smiles": "O=S(=O)(c1ccc(C)cc1)[CH2]",
+      "role": "reactive"
+    },
+    {
+      "name": "C-centered tertiary carbinol radical C (sulfonyl radical added to C=C of allyl alcohol)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,2-aryl-migrated tertiary carbinol radical D (after phenyl 1,2-shift)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbocation E (anodic oxidation of radical D)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "γ-keto sulfone product 3aa (after -H+ from E)",
+      "smiles": "O=C(c1ccccc1)C(c1ccccc1)CS(=O)(=O)c1ccc(C)cc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the sulfonyl hydrazide (2a) with loss of 3H+/3e- to a diazonium species A, which extrudes N2 to give sulfonyl radical B; B adds to the C=C of allyl alcohol 1a, forming carbinol radical C, which undergoes 1,2-aryl migration to ketyl-type radical D; D is oxidized at the anode to cation E, deprotonation of which yields the γ-keto sulfone 3aa, while protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Addition of 3.0 equiv TEMPO totally prevented the transformation (0% of 3aa), indicating a radical pathway"
+    },
+    {
+      "name": "BHT (butylated hydroxytoluene)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "3.0 equiv BHT greatly decreased conversion (3aa yield dropped to 36%), consistent with radical intermediates"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, 2a, and 1a+2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "2a shows oxidation peaks at 1.50 V and 2.01 V vs Ag/AgCl while 1a oxidizes at 2.36 V; in the mixture the 1a peak shifts, indicating 2a is preferentially oxidized at the anode and interacts with 1a"
+    },
+    {
+      "name": "X-ray diffraction of product 4",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Structure of spirocyclic sulfone 4 (no 1,2-migration product from rigid benzo-cycloheptane substrate) confirmed by single-crystal XRD (CCDC 2268921), supporting steric control of the migration pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "For rigid benzo-cycloheptane-substituted allyl alcohols, no 1,2-aryl migration occurs and the sulfonyl radical instead adds to the C=C to give spirocyclic/epoxide-type sulfones (products 4 and 5), attributed to steric hindrance preventing the aryl shift; this represents a divergent radical pathway off the main rearrangement mechanism."
+}

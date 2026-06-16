@@ -1,0 +1,90 @@
+{
+  "doi": "10.1039_D1OB00236H",
+  "journal": "OrgBiomolChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative selenocyclization of 2-vinylbenzamides with diphenyl diselenide to form selenium-containing isobenzofuran-imines (3a-type products) in a flow microreactor.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of diphenyl diselenide (PhSeSePh, 2a) to a cationic radical intermediate that fragments to PhSe radical and PhSe cation; later, anodic oxidation of cyclized intermediate E to cation F",
+  "key_intermediates": [
+    {
+      "name": "diphenyl diselenide cationic radical (A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenium radical (B, PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenium cation (C, PhSe+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical D (benzylic C-radical bearing SePh after PhSe• addition to vinyl)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized intermediate E (isobenzofuran-type with N-H, after intramolecular O-cyclization of D)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cationic intermediate F (oxidized E)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "intermediate G (cation adduct from PhSe+ + 1a, path b alternative)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes PhSeSePh (2a) to radical cation A, which fragments to PhSe• (B) and PhSe+ (C). PhSe• adds to the vinyl group of 2-vinylbenzamide 1a to give alkyl radical D, which cyclizes intramolecularly via the amide oxygen to E; E is further oxidized at the anode to cation F, which is deprotonated to give product 3a. Cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction significantly suppressed; yield of 3a dropped to 10% with 3 equiv"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3a reduced to 30% with 3 equiv"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3a reduced to 40% with 3 equiv, supporting radical intermediates"
+    },
+    {
+      "name": "diphenyl diselenide (2a)",
+      "smiles": "c1ccc(cc1)[Se][Se]c1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "CV shows oxidation peak at 1.84 V, lower than 1a at 2.25 V, indicating 2a is preferentially oxidized at the anode"
+    },
+    {
+      "name": "2-vinylbenzamide 1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "CV oxidation peak at 2.25 V, higher than 2a"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two pathways proposed: favored path a (PhSe• radical addition to alkene → alkyl radical D → cyclization → anodic oxidation to F → product) and alternative path b in which PhSe+ cation C reacts with 1a to give cation G, undergoing intramolecular nucleophilic cyclization to F and then dehydrogenation to 3a. The authors cannot exclude path b."
+}

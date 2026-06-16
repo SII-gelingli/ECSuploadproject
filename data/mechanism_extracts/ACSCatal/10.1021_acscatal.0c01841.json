@@ -1,0 +1,76 @@
+{
+  "doi": "10.1021_acscatal.0c01841",
+  "journal": "ACSCatal",
+  "is_review": false,
+  "rxn_class_summary": "Visible-light photocatalytic dearomative [2+2] cycloaddition of N-(omega-alkenoyl)indoles with alkenes via energy transfer to give cyclobutane-fused indoline polycycles",
+  "mechanism_family": [
+    "photoredox_combined",
+    "biradical",
+    "concerted"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Triplet excited indole substrate 1a-T1 (sensitized via EnT from Ir photocatalyst)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Tail-to-tail bridged [6.3.0] 1,4-biradical INT1 (triplet)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Open-shelled singlet biradical INT1-OSS (after MECP1 spin crossing)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Head-to-head bridged [6.2.1] 1,4-biradical INT1' (triplet, disfavored)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "Open-shelled singlet INT1'-OSS (disfavored pathway)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Ir(III) photocatalyst is excited by visible light and transfers triplet energy to the N-acylindole substrate, generating a triplet diradical localized at indole C2/C3; this attacks the tethered alkene in a tail-to-tail fashion to give a triplet 1,4-biradical, which crosses to the open-shelled singlet surface (MECP) and closes to the cyclobutane-fused indoline product. No net SET between PC and substrate occurs (substrate redox potentials lie outside PC range).",
+  "rate_determining_step": "C-C bond formation via tail-to-tail transition state TS1 (14.5 kcal/mol barrier from 1a-T1; head-to-head TS1' at 91.9 kcal/mol is disfavored by 14.9 kcal/mol)",
+  "probe_reagents": [
+    {
+      "name": "2,5-dimethylhexa-2,4-diene (triplet quencher)",
+      "smiles": "CC(=CC=C(C)C)C",
+      "purpose": "intermediate_trap",
+      "observation": "Standard reaction strongly inhibited, yield drops to 2%, supporting a triplet energy-transfer mechanism"
+    },
+    {
+      "name": "Trifluoroethanol (CF3CH2OH) titration monitored by 13C NMR",
+      "smiles": "OCC(F)(F)F",
+      "purpose": "other",
+      "observation": "Downfield shift and line broadening of the acyl carbonyl 13C signal upon adding TFE, indicating H-bonding between solvent and substrate carbonyl that lowers triplet energy"
+    },
+    {
+      "name": "Stern-Volmer quenching with 1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Photocatalyst emission efficiently quenched by N-(omega-alkenoyl)indole 1a"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "E(ox) = 1.70 V vs SCE; no reductive peak observed - outside redox window of Ir PC (E1/2(III*/II)=1.21 V, E1/2(III*/IV)=-0.89 V), ruling out photoinduced electron transfer"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "UV_vis",
+    "DFT",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two competing cyclization modes were computed: favored tail-to-tail (TS1 77.0 kcal/mol, via INT1/INT1-OSS/TS2 to product 2a at 9.6 kcal/mol) vs disfavored head-to-head (TS1' 91.9 kcal/mol, via INT1'/INT1'-OSS/TS2'). Three undetected diastereomers (2a-A', 2a-B, 2a-B') were also located on the PES and shown to be kinetically/thermodynamically inaccessible. Mechanism involves two minimum energy crossing points (MECP1 48.4, MECP2 80.1 kcal/mol) between triplet and open-shelled singlet surfaces. H-bonding from CF3CH2OH solvent to the acyl carbonyl is proposed to lower the substrate triplet energy, enabling efficient EnT from Ir(dFCF3ppy)2(dtbbpy)PF6."
+}

@@ -1,0 +1,66 @@
+{
+  "doi": "10.1039_d5gc03120f",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,4-selective dialkoxylation of 1,3-dienes with alcohols in an undivided cell to give (E)-1,4-diether alkenes",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of methoxide (MeO-) to methoxy radical (MeO•); subsequent anodic oxidation of allyl/benzyl radical intermediate II to allyl cation III",
+  "key_intermediates": [
+    {
+      "name": "methoxy radical (MeO•)",
+      "smiles": "[O]C",
+      "role": "reactive"
+    },
+    {
+      "name": "primary allyl radical I from MeO• addition to terminal alkene of diene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "rearranged (E)-configured benzylic/allyl radical II (1,4-addition radical)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "allyl/benzyl cation III (after one-electron oxidation of II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,2-addition radical II' (less stable regioisomer)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "(E)-1,4-dimethoxy alkene product 2a",
+      "smiles": "COC(c1ccccc1)/C=C/COC",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes MeO- to MeO•, which adds to the terminal carbon of the 1,3-diene to give an allyl radical that rearranges to the more stable (E)-benzylic radical II; II is further oxidized at the anode to allyl cation III, which is trapped by MeOH/MeO- to deliver the 1,4-diether (path A, favored over direct radical-radical coupling of II with MeO•, path B).",
+  "rate_determining_step": "Anodic ionization of radical II to cation III (computed ionization energy 107.21 kcal/mol); overall radical addition/rearrangement step is strongly exergonic (-31.11 kcal/mol)",
+  "probe_reagents": [
+    {
+      "name": "BHT (added at t=0, 3.0 eq)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited; BHT-OMe adduct isolated in 39% yield, confirming generation of MeO• radical"
+    },
+    {
+      "name": "BHT (added after 2 h, 3.0 eq)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "intermediate_trap",
+      "observation": "Mono-methoxylation BHT-trapped radical intermediate detected by HRMS, supporting carbon radical intermediate II"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "DFT",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two pathways considered: path A (oxidation of radical II to cation III, then MeO- capture; methoxylation step exergonic by 58.28 kcal/mol, favored) vs path B (direct radical-radical coupling of II with MeO•). Path A favored thermodynamically and by suppression of homocoupling via steric effects. DFT shows (E)-II more stable than (Z)-II by 3.82 kcal/mol and 1,4-radical II more stable than 1,2-radical II' by 2.80 kcal/mol in MeOH complex state, rationalizing E- and 1,4-selectivity."
+}

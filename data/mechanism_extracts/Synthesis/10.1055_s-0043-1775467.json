@@ -1,0 +1,68 @@
+{
+  "doi": "10.1055_s-0043-1775467",
+  "journal": "Synthesis",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative α-functionalization of ketones via anodic oxidation of silyl enol ethers, enabling C-C bond formation with 1,3-dicarbonyls, α-chlorination, and oxidative [3+2] cycloaddition with styrenes",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_cation",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the silyl enol ether to a radical cation; a second anodic oxidation of the α-radical intermediate gives an oxocarbenium/oxonium that loses TMS to deliver the α-functionalized ketone. Cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "silyl enol ether radical cation (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-carbon radical adduct after nucleophilic attack of deprotonated malonate (C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "oxonium/oxocarbenium intermediate (D) after second oxidation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "deprotonated dimethyl malonate (nucleophile)",
+      "smiles": "COC(=O)[CH-]C(=O)OC",
+      "role": "reactive"
+    },
+    {
+      "name": "ketone dimerization side product 18",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "The anode performs single-electron oxidation of the silyl enol ether (Eox ≈ 1.8 V, lower than malonate at 2.06 V) to give radical cation B; deprotonated malonate attacks the α-carbon to form radical intermediate C, which is oxidized again at the anode to oxonium D; loss of TMS yields the α-functionalized ketone while the cathode evolves H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of enol ether 14 vs dimethyl malonate",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Enol ether oxidizes at 1.8 V while Me-malonate oxidizes at 2.06 V, supporting initial anodic oxidation of the enol ether"
+    },
+    {
+      "name": "stoichiometric (1 equiv) Me-malonate experiment",
+      "smiles": "COC(=O)CC(=O)OC",
+      "purpose": "intermediate_trap",
+      "observation": "Formation of ketone dimer side product 18 (confirmed by GCMS), consistent with radical-cation intermediate B reacting with another enol ether"
+    },
+    {
+      "name": "cyclopropyl ring-opening clock (literature precedent, Moeller/Wright)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Cited prior work establishing enol ether radical cation formation by anodic oxidation"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Free ketone is not observed in the reaction mixture, arguing against a pathway via ketone enolization; instead the silyl enol ether is the entry point. The mechanism is shown to be generalizable to α-chlorination (with LiCl as Cl source) and oxidative [3+2] cycloaddition with styrene, both presumed to proceed through the same radical-cation intermediate B."
+}

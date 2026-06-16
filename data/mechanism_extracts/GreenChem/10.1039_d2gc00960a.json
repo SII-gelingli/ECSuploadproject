@@ -1,0 +1,105 @@
+{
+  "doi": "10.1039_d2gc00960a",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical stereoselective migratory heteroaryltrifluoromethylation of allylic amines via anodic oxidation of Langlois reagent and radical Smiles-type N-to-C heteroaryl migration",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of Langlois reagent (CF3SO2Na) at RVC anode to generate CF3SO2 radical, which loses SO2 to give CF3 radical; cathode evolves H2 (proton reduction) but does not directly reduce the organic substrate",
+  "key_intermediates": [
+    {
+      "name": "CF3 radical (from anodic oxidation of CF3SO2Na with SO2 loss)",
+      "smiles": "[CH](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon-centered radical I from CF3 addition to terminal alkene of allylic sulfonamide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Spirocyclic cyclohexadienyl radical II from ipso addition onto heteroaryl (Smiles rearrangement TS)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Nitrogen-centered (amidyl/sulfonyl-N) radical III after SO2 extrusion and heteroaryl migration",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "H2SO3 / HSO3- (from SO2 + H2O) acting as chemical reductant of N-radical",
+      "smiles": "OS(=O)O",
+      "role": "reactive"
+    },
+    {
+      "name": "Oxidative cyclization byproduct 3d' (competing pathway when H2SO3 is low)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- to CF3SO2 radical which releases SO2 to give CF3 radical; CF3 radical adds to the terminal alkene of the allylic N-heteroarylsulfonamide, the resulting C-radical undergoes intramolecular ipso addition onto the heteroaryl group (5-membered TS) forming a spirocyclic intermediate that fragments with SO2 loss to an N-centered radical, which is then reduced by in-situ-generated H2SO3 (from SO2 + H2O) and protonated to give the heteroaryl-migrated β-heteroaryl-γ-CF3 amine; cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT (2,6-di-tert-butyl-4-methylphenol)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely suppressed; BHT-CF3 adduct 6 detected by GC-MS, supporting CF3 radical intermediate"
+    },
+    {
+      "name": "Crossover substrates (two different N-heteroarylsulfonamides mixed)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "No crossover products (3i and 3z4 obtained cleanly, 68% and 62%), indicating intramolecular Smiles migration"
+    },
+    {
+      "name": "CD3CN (deuterated solvent)",
+      "smiles": "[2H]C([2H])([2H])C#N",
+      "purpose": "isotope_label",
+      "observation": "0% D incorporation in 3a, excluding H-abstraction from solvent by N-radical"
+    },
+    {
+      "name": "Divided cell experiment",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Product obtained in similar yield (70%), excluding paired electrolysis / cathodic reduction of substrate"
+    },
+    {
+      "name": "Current on/off experiment",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction only proceeds under applied current; ~41% Faradaic efficiency, arguing against a long radical-chain process"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, CF3SO2Na, 3a amide anion, and H2SO3",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "1a inert 0-2 V; CF3SO2Na oxidation ~1.37 V; amidyl anion of 3a 0.70 V; H2SO3 0.62 V — consistent with anodic initiation at Langlois reagent and H2SO3 acting as chemical reductant of N-radical"
+    },
+    {
+      "name": "Added H2SO3 / N2 bubbling (varying SO2 content)",
+      "smiles": "OS(=O)O",
+      "purpose": "other",
+      "observation": "More H2SO3 favors migration product 3d over oxidative cyclization 3d' (3d:3d' from 2:1 anhydrous up to 8:1 with added H2SO3), supporting H2SO3 as reductant"
+    },
+    {
+      "name": "Ion chromatography for sulfate",
+      "smiles": "[O-]S(=O)(=O)[O-]",
+      "purpose": "other",
+      "observation": "SO4(2-) byproduct detected, consistent with H2SO3 reducing N-radical to amide"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_BHT",
+    "crossover",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Formally redox-neutral electrosynthesis: anodically generated SO2 (from Langlois reagent decomposition and Smiles rearrangement) is converted with water to H2SO3, which serves as the chemical reductant of the nitrogen radical, so no net stoichiometric reductant is required. A competing direct oxidative cyclization pathway (giving 3d') operates when [H2SO3]/[SO2] is low (anhydrous CH3CN or N2 bubbling). Alternative reduction pathways considered and excluded: (i) paired electrolysis (excluded by divided-cell), (ii) chain reduction by CF3SO2Na (CV shows it is harder to reduce than H2SO3), and (iii) H-abstraction from CH3CN (excluded by CD3CN). Stereoselectivity is rationalized by a favored 5-membered cyclic migration transition state placing CF3 away from α-substituent (Scheme 3c)."
+}

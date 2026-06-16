@@ -1,0 +1,59 @@
+{
+  "doi": "10.1002_anie.201700837",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Brønsted acid catalyzed intramolecular [2+2] photocycloaddition of dithiane-substituted alkenes/alkynes under visible-light (405 nm) irradiation via a thionium ion excited state",
+  "mechanism_family": [
+    "cation_initiated",
+    "biradical",
+    "photoredox_combined"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "thionium ion 7 (from Brønsted acid protonation/ionization of dithiane)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ππ* singlet excited state of thionium ion",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "triplet 1,4-biradical 8 (after ISC and ring closure)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Brønsted acid catalyst ionizes the dithiane to a thionium ion 7, which absorbs visible light (405 nm) to populate a ππ* singlet state; ring closure onto the tethered alkene followed by intersystem crossing gives a triplet 1,4-biradical 8, whose free rotation around the central C–C bond before spin inversion and C–C bond formation explains loss of alkene stereochemistry to give cyclobutane products.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "Z-configured substrate 1j (stereochemical probe)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Stereo-unspecific [2+2]: cis/trans-6 obtained in 67:33 ratio, indicating loss of alkene geometry consistent with a triplet 1,4-biradical with free C–C rotation"
+    },
+    {
+      "name": "X-ray crystallography of 2g",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Confirmed the relative configuration of the cyclobutane product"
+    },
+    {
+      "name": "UV/Vis absorption of thionium ion (Figure 1)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Strong absorption indicates a ππ* singlet (S1) is populated upon 405 nm excitation"
+    }
+  ],
+  "evidence_types_used": [
+    "UV_vis",
+    "isolation_of_intermediate",
+    "product_isotope_distribution",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Alternative singlet [2+2] pathway is implicitly excluded because Z-1j reacts stereo-unspecifically (67:33 d.r.), favoring a triplet 1,4-biradical mechanism over a concerted singlet [2+2]. Dithiane group can subsequently be removed reductively (Raney-Ni → 4) or oxidatively (PhI(OOCCF3)2 → ketone 5/6)."
+}

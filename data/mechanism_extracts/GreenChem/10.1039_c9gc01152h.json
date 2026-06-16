@@ -1,0 +1,69 @@
+{
+  "doi": "10.1039_c9gc01152h",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical halogenation/semi-pinacol rearrangement of allylic alcohols using MgBr2·6H2O or MgCl2 as halide source to form β-halocarbonyls with all-carbon quaternary centers",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of halide anion (Br- or Cl-) to molecular halogen (Br2 / Cl2), which then acts as the electrophilic halogen source; cathode evolves H2 from protons",
+  "key_intermediates": [
+    {
+      "name": "dibromide radical anion / molecular bromine (Br2)",
+      "smiles": "BrBr",
+      "role": "reactive"
+    },
+    {
+      "name": "halonium ion / bromiranium ion on alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "tertiary carbocation after 1,2-aryl(alkyl) migration (semi-pinacol)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-halocarbonyl product",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Halide anion is oxidized at the anode to molecular halogen (via Br2•- to Br2); the halogen forms a halonium ion with the allylic alcohol alkene, triggering a classic electrophilic semi-pinacol 1,2-migration of the aryl/alkyl group from the carbinol carbon to give a β-halocarbonyl, while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Inhibited the reaction, suggesting radical species involvement (halogen radical/Br2•-)"
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Inhibited the reaction, consistent with radical halogen intermediate"
+    },
+    {
+      "name": "non-symmetric migration substrate 1v (p-MeO-aryl vs p-CF3-aryl)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Selective migration of electron-rich p-MeO-aryl group gave 2v in 95% yield, identical to product from NBS-mediated reaction, supporting a cationic semi-pinacol migration"
+    },
+    {
+      "name": "NBS control",
+      "smiles": "O=C1CCC(=O)N1Br",
+      "purpose": "other",
+      "observation": "NBS as electrophilic Br source gave the same product 2v, supporting electrophilic Br+ / cationic pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "crossover",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors propose that anodically generated Br2 (via Br2•-) initiates an electrophilic semi-pinacol rearrangement; the high diastereoselectivity (dr > 20:1 for 2i, 2j) and preferential migration of electron-rich aryl groups support a cationic (rather than radical) migration step. Radical inhibition by BHT/TEMPO is attributed to interception of the halogen radical intermediate during anodic Br- oxidation, not a C-centered radical on substrate. MgBr2·6H2O is preferred over MgCl2 due to lower oxidation potential of Br-."
+}

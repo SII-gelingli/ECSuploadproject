@@ -1,0 +1,103 @@
+{
+  "doi": "10.1002_adsc.202200421",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidation-induced oxyphosphorylation of alkenes and alkynes with water to give β-ketophosphonates via acetate-mediated HAT generation of P-radicals",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of acetate (nBu4NOAc) generates an acetoxyl radical mediator that abstracts H from P(O)–H; carbon radical intermediate is further anodically oxidized to a carbocation",
+  "key_intermediates": [
+    {
+      "name": "acetoxyl radical (AcO•) from anodic oxidation of acetate",
+      "smiles": "CC(=O)[O]",
+      "role": "reactive"
+    },
+    {
+      "name": "phosphorus-centered radical (P•) from HAT on diarylphosphine oxide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-phosphoryl carbon radical (C) from P• addition to alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-phosphoryl carbocation (D) from anodic oxidation of carbon radical",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-hydroxyphosphonate (E) from water attack on carbocation",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes acetate to AcO•, which abstracts H from Ar2P(O)H to give a P-centered radical; this P• adds to the alkene to form a β-phosphoryl C-radical, which is further oxidized at the anode to a carbocation, trapped by water, and oxidized to the ketone (β-ketophosphonate), with H2 evolved at the cathode.",
+  "rate_determining_step": "Not P–H cleavage (KIE = 1.26); rate-limiting step likely occurs after HAT (e.g., radical addition or subsequent oxidation)",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed; product not observed, indicating radical intermediates"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "BHT-P adduct 1e isolated in 61% yield, confirming P-radical intermediate"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Product 2e detected by HRMS; reaction suppressed, supporting radical pathway"
+    },
+    {
+      "name": "deuterated P(O)–H substrate 1b-d",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "KH/KD = 1.26 (parallel experiments); P–H cleavage not rate-limiting"
+    },
+    {
+      "name": "H2 18O",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "18O incorporated into β-ketophosphonate (2c'), confirming water as oxygen source (86% yield)"
+    },
+    {
+      "name": "isolated β-hydroxyphosphonate (D/E intermediate)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Subjected to standard conditions gave 2c in 75%, supporting path a (hydroxyl intermediate oxidized to ketone)"
+    },
+    {
+      "name": "β-acetoxyphosphonate (path b intermediate)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Under standard conditions + DTPB, no 2c formed; rules out path b via acetate adduct"
+    },
+    {
+      "name": "nBu4NOAc / 1b cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "1b not directly oxidized at anode; nBu4NOAc oxidizes more easily (Ep=2.35 V); new peaks upon mixing indicate electron transfer between them"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "product_isotope_distribution",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two pathways considered after carbocation D: (path a, favored) water nucleophilic attack to give β-hydroxyphosphonate E, then anodic oxidation to β-ketophosphonate; (path b, ruled out) acetate trapping of D to give β-acetoxyphosphonate F. Path b excluded by independent synthesis showing the acetoxy intermediate does not convert to product. 18O labeling confirms water (not acetate/O2) as the oxygen source."
+}

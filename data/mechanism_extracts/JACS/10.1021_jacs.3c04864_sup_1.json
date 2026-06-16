@@ -1,0 +1,103 @@
+{
+  "doi": "10.1021_jacs.3c04864_sup_1",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical allylation and allenylation of aldehydes (benzaldehyde) with allylarenes/propargylarenes via cathodically generated allylic/propargylic carbanions under Co-salen/DABCO catalysis",
+  "mechanism_family": [
+    "anion_initiated",
+    "mediator_cathodic",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Cathodic reduction generates a Co(II)-salen / Co(III)-H species that deprotonates the weakly acidic allyl/propargyl C-H of the substrate (HER-type), delivering an allylic or propargylic carbanion that adds to the aldehyde; sacrificial anode oxidation balances charge",
+  "key_intermediates": [
+    {
+      "name": "allylic carbanion (from allylarene 1a)",
+      "smiles": "[CH-]/C=C/c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "propargylic / allenyl carbanion (from propargylarene 4a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(III)-H (radical-like cobalt hydride mediator)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkoxide adduct (3a/5a-alkoxide after C-C bond formation)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Cathode reduces Co(II)-salen / generates Co(III)-H that abstracts a proton from the weakly acidic benzylic/propargylic C-H of the substrate (HER-like, mediated), producing an allylic or propargylic carbanion that nucleophilically adds to benzaldehyde to give the homoallylic alcohol (3a) or α-allenyl alcohol (5a); the anode supplies the balancing oxidation.",
+  "rate_determining_step": "Proton transfer in the HER/deprotonation step generating the carbanion (consistent with observed secondary KIE in parallel experiments)",
+  "probe_reagents": [
+    {
+      "name": "cyclopropyl-substituted substrates (radical clock 3bm-3br, 5bd, 5be)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "No ring-opening products observed; cyclopropyl group retained in all products, arguing against radical intermediates and supporting an ionic (carbanion) pathway"
+    },
+    {
+      "name": "HOAc",
+      "smiles": "CC(=O)O",
+      "purpose": "intermediate_trap",
+      "observation": "Suppresses reaction to trace yield — acidic additive preferentially undergoes HER over substrate deprotonation"
+    },
+    {
+      "name": "MeOH",
+      "smiles": "CO",
+      "purpose": "intermediate_trap",
+      "observation": "Reduces yield (32%/12% for 3a/5a Cond II) — competing HER of acidic additive"
+    },
+    {
+      "name": "H2O",
+      "smiles": "O",
+      "purpose": "intermediate_trap",
+      "observation": "Reduces yield (40%/25%) — competing HER consistent with carbanion mechanism"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Only marginal effect on yield (68-73%), inconsistent with radical chain"
+    },
+    {
+      "name": "P(OEt)3",
+      "smiles": "CCOP(OCC)OCC",
+      "purpose": "intermediate_trap",
+      "observation": "Significant yield erosion (21%/48% / 50%) attributed to nucleophilic addition of carbanion to P(OEt)3, supporting carbanion intermediate"
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "No D incorporation in allylation product 3a; 0.48 D incorporated at allene carbon of 5a — propargylic carbanion has lower reactivity and undergoes reversible H/D exchange at cathode, whereas allylic carbanion adds to aldehyde faster than exchange"
+    },
+    {
+      "name": "4a-d5 (CD3-labeled propargylarene)",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "5a-d4 product shows 0.25 D at benzylic position and 0.72 D at allene terminus (D depleted from CD3 source) — supports H/D exchange via carbanion"
+    },
+    {
+      "name": "1be-d2 / 4a-d5 KIE substrates",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "Parallel KIE kH/kD = 1.3/1 (allyl) and 1.5/1 (propargyl) — secondary KIE consistent with proton transfer in HER; intermolecular competition gives kH/kD = 3.3/1 and 4.3/1, discrepancy attributed to rapid H/D exchange of the carbanion"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "radical_clock",
+    "intermediate_trap_other",
+    "DFT",
+    "kinetic_order",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "strong",
+  "notes": "DFT (PBE0-D3(BJ)/ma-def2-TZVPP//B3LYP-D3(BJ)/Def2-SVP, SMD DMF) supports nucleophilic addition of allyl/allenyl carbanion to PhCHO: for allylation, the E-pathway is favored (TS1(E) 4.3 kcal/mol; 3a(E) -2.8 kcal/mol) over Z and over a homoallyl regioisomer (TS2 8.9 kcal/mol giving 3a'); for allenylation, addition through the central allenyl C is preferred (TS3 ~1.5-2.6 kcal/mol) giving 5a over the propargylic isomer 5a'. A radical pathway via Co(III)-H HAT was considered but excluded by radical clock and trap experiments; the authors note radical-like Co(III)-H species may still be affected by radical scavengers, explaining the partial yield drop with P(OEt)3."
+}

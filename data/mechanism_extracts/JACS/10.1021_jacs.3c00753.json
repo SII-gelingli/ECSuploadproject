@@ -1,0 +1,113 @@
+{
+  "doi": "10.1021_jacs.3c00753",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "PPTS-promoted divergent conversion of a grayanane-type intermediate 11 into 1-epi-33 and 33 via competing Grob fragmentation/carbonyl-ene and E1 elimination pathways, applied to total syntheses of grayanoids",
+  "mechanism_family": [
+    "cation_initiated",
+    "carbocation",
+    "concerted"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "INT1, hydrogen-bonded complex of 11 with PPTS (pyridinium tosylate and acetate counterion network)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "INT2, ion-paired oxocarbenium/carbocationic intermediate after C-OAc heterolysis via TS1",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "INT3, higher-energy isomeric ion pair in equilibrium with INT2, leading to E1 elimination",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "10A, macrocyclic Grob fragmentation product bearing Δ1,10-alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "10B, reactive conformer of 10A leading to 1-epi-33 via TS4",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "10C, reactive conformer of 10A leading to 5-epi-33 via TS5 (disfavored)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "1-epi-33, transannular carbonyl-ene cyclization product (major)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "33, E1 elimination/Prins-type product from INT3 via TS3",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "PPTS hydrogen-bonds to 11 (INT1) and promotes heterolytic C1-OAc cleavage through TS1 to give the ion pair INT2; INT2 either undergoes deprotonation-triggered Grob fragmentation of the C1-C5 bond (TS2) to macrocycle 10A, which then collapses by concerted transannular carbonyl-ene cyclization (TS4) to 1-epi-33, or isomerizes to INT3 and undergoes E1 elimination (TS3) to give 33.",
+  "rate_determining_step": "Either Grob fragmentation via TS2 (ΔG‡ = 35.9 kcal/mol) for the 1-epi-33 pathway or E1 elimination via TS3 (ΔG‡ = 37.7 kcal/mol) for the 33 pathway; the close barriers rationalize the observed ~2.5:1 dr",
+  "probe_reagents": [
+    {
+      "name": "BF3·Et2O (Lewis acid screen)",
+      "smiles": "FB(F)F.CCOCC",
+      "purpose": "other",
+      "observation": "Substantial decomposition of 11 at 0 °C in CH2Cl2"
+    },
+    {
+      "name": "TsOH·H2O",
+      "smiles": "Cc1ccc(S(=O)(=O)O)cc1.O",
+      "purpose": "other",
+      "observation": "<5% of both 1-epi-33 and 33 in toluene at 110 °C"
+    },
+    {
+      "name": "PPTS (pyridinium p-toluenesulfonate)",
+      "smiles": "Cc1ccc(S(=O)(=O)[O-])cc1.c1cc[nH+]cc1",
+      "purpose": "other",
+      "observation": "Best conditions: 2.5:1 1-epi-33:33 in 80% combined yield at 110 °C, toluene"
+    },
+    {
+      "name": "Py·HCl",
+      "smiles": "Cl.c1ccncc1",
+      "purpose": "other",
+      "observation": "Diminished yield (18% of 33), supporting role of tosylate counterion"
+    },
+    {
+      "name": "2,6-lutidine·TsOH",
+      "smiles": "Cc1cccc(C)n1.Cc1ccc(S(=O)(=O)O)cc1",
+      "purpose": "other",
+      "observation": "Low yields (9% 1-epi-33, 20% 33); ortho-substitution on pyridinium disrupts H-bond network"
+    },
+    {
+      "name": "3,5-lutidine·TsOH",
+      "smiles": "Cc1cnc(C)cc1.Cc1ccc(S(=O)(=O)O)cc1",
+      "purpose": "other",
+      "observation": "Diminished yields (16% 1-epi-33, 24% 33), implicating meta-H involvement"
+    },
+    {
+      "name": "para-substituted pyridinium tosylate variants (Table S2 entries 25, 26)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Electron-deficient pyridinium tunes acetate basicity and biases pathway selectivity, validating the H-bond-weaved counterion model"
+    },
+    {
+      "name": "DFT (ωB97X-V-SMD(toluene)/def2-TZVPP//B3LYP-D4-CPCM(toluene)/def2-SVP)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Located INT1/INT2/INT3 and TS1-TS5; predicts ΔG‡(TS2)=35.9 vs ΔG‡(TS3)=37.7 kcal/mol and ΔΔG‡(TS5-TS4)=4.0 kcal/mol explaining absence of 5-epi-33"
+    }
+  ],
+  "evidence_types_used": [
+    "DFT",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Alternative pathway considered: direct PPTS-promoted Prins cyclization of 10A to 33 was computed to be kinetically unfavorable (ΔG‡ = 37.7 kcal/mol, Figure S3), so 33 is assigned exclusively to the E1 elimination route from INT3. The diastereoselectivity of the transannular carbonyl-ene step is rationalized by an eclipsed (disfavored, TS5, leads to 5-epi-33) vs staggered (favored, TS4, leads to 1-epi-33) transition state with torsional strain developing as the C6-H/C5-O dihedral rotates from -23.1° to +22.1°. The hydrogen-bond-weaved PPTS-acetate counterion is invoked as the key organizing element enabling pathway divergence."
+}

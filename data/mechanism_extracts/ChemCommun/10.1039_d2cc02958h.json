@@ -1,0 +1,67 @@
+{
+  "doi": "10.1039_d2cc02958h",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical azidocyanation of alkene-tethered cyanohydrins via Mn-mediated azide radical addition and 1,4-nitrile migration to deliver 1,2-azidonitriles.",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of an in situ formed [Mn(II)X2N3]- complex to a Mn(III)-azide species that delivers an azidyl radical to the alkene; cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "[Mn(II)X2N3]- ate complex",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Mn(III)X2N3 azide-transfer species",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "secondary alkyl C-radical from azide addition to alkene (36)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclic iminyl radical from intramolecular nitrile cyclization (37)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-hydroxy alkyl radical from beta-scission (38)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,2-azidonitrile product (2)",
+      "smiles": "O=C(c1ccccc1)CCC(CC#N)N=[N+]=[N-]",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, Mn(II)/azide ate complex is oxidized to Mn(III)-N3, which transfers an azidyl radical to the alkene of the cyanohydrin to give a C-centered radical; intramolecular addition onto the pendant nitrile forms an iminyl radical that undergoes beta-scission to a ketyl-type alkyl radical, which is anodically oxidized and loses H+ to give the 1,2-azidonitrile, while protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclopropyl-substituted cyanohydrin (radical clock 34)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring-opened azido-nitrile 35 obtained as sole product in 56% NMR yield, consistent with a carbon-radical intermediate after azide addition."
+    },
+    {
+      "name": "Mn(OTf)2 / TBAN3 cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "TBAN3 alone shows irreversible oxidation at ~0.97 V vs Fc/Fc+; with Mn(OTf)2 a new irreversible event appears at ~0.50 V vs Fc/Fc+, indicating formation of an oxidizable [Mn(II)X2N3]- species (Mn(II)->Mn(III))."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors note azidyl radicals could in principle be generated directly by anodic oxidation of azide, but CV shows Mn(OTf)2 lowers the oxidation potential substantially, supporting a Mn-mediated inner-sphere azide-transfer pathway rather than free N3 radical from direct azide oxidation. Methodology extends to sulfonylcyanation (using NaSO2Ph) via the same radical/migration manifold and to a malononitrile-derived substrate (30 -> 31)."
+}

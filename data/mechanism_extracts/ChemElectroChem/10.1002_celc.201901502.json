@@ -1,0 +1,115 @@
+{
+  "doi": "10.1002_celc.201901502",
+  "journal": "ChemElectroChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical iodocyclisation of 2-allylphenols to 2-(iodomethyl)dihydrobenzofurans via in situ anodic generation of I2 and Zn(II) Lewis acid from a zinc-coated graphite electrode.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "sacrificial_anode",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Dual anodic oxidation: first oxidation of Zn(0) coating on graphite to Zn(II) (releases Lewis acid), then anodic oxidation of iodide (via triiodide) to I2 as the on-demand iodinating species.",
+  "key_intermediates": [
+    {
+      "name": "Zn(II) Lewis acid (released from Zn-coated graphite anode)",
+      "smiles": "[Zn+2]",
+      "role": "reactive"
+    },
+    {
+      "name": "triiodide",
+      "smiles": "I[I-]I",
+      "role": "transient"
+    },
+    {
+      "name": "molecular iodine",
+      "smiles": "II",
+      "role": "reactive"
+    },
+    {
+      "name": "bis(aryloxy)zinc complex of 2-allylphenoxide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "transient iodosyl(aryloxy)zinc / iodophenoxy intermediate (species 2) — ArO-I tethered to Zn",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cycloiodonium ion on allyl group (iodiranium-like)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "2-(iodomethyl)-2,3-dihydrobenzofuran product",
+      "smiles": "ICC1Cc2ccccc2O1",
+      "role": "reactive"
+    },
+    {
+      "name": "HI (formed in situ; drives reverse deiodination of aryl ring)",
+      "smiles": "I",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the anode, Zn(0) on the graphite electrode is first oxidised to Zn(II) (releasing a dry Lewis acid), then iodide is oxidised via I3- to I2; Zn(II) binds the deprotonated 2-allylphenol to give a bis(aryloxy)zinc complex which coordinates I2 and undergoes I–I/Zn–O metathesis to deliver an iodosyl-aryloxy species that intramolecularly iodocyclises the pendant alkene to the dihydrobenzofuran.",
+  "rate_determining_step": "Formation/transfer of the transient iodosyl(aryloxy)zinc intermediate (ArO–I) that delivers I+ intramolecularly to the alkene; cyclisation of the unsubstituted (non-ring-iodinated) allylphenol is faster than that of the ring-iodinated congener.",
+  "probe_reagents": [
+    {
+      "name": "allylbenzene (no phenol)",
+      "smiles": "C=CCc1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "No reaction with I2/NaI or with I2/NaI/ZnCl2 — alkene alone is not iodocyclised; rules out free I+ acting on alkene."
+    },
+    {
+      "name": "2,4,6-trimethylphenol (external phenol, no tethered alkene)",
+      "smiles": "Cc1cc(C)c(O)c(C)c1",
+      "purpose": "intermediate_trap",
+      "observation": "With allylbenzene + I2/NaI/ZnCl2 + mesitol, ~10% of intermolecular iodoether 1 isolated, showing the phenol/Zn complex is required to activate iodine."
+    },
+    {
+      "name": "K2CO3 (added base)",
+      "smiles": "[K+].[K+].[O-]C(=O)[O-]",
+      "purpose": "other",
+      "observation": "Addition of base did not accelerate cyclisation; instead gave predominantly arene-iodinated products, arguing against a free cycloiodonium pathway and implicating the Zn-phenoxide–I intermediate."
+    },
+    {
+      "name": "cyclic voltammetry of allylbenzene",
+      "smiles": "C=CCc1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "No redox events within solvent window — alkene is not directly oxidised electrochemically."
+    },
+    {
+      "name": "4-iodophenol (model for ring-iodinated intermediate)",
+      "smiles": "Oc1ccc(I)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Under electrochemical conditions with MeSO3H (HI mimic), the C–I bond is labile (deiodination observed), supporting reversible aryl iodination."
+    },
+    {
+      "name": "4-iodoanisole (alkylated analogue)",
+      "smiles": "COc1ccc(I)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "No deiodination — C(aryl)–I in the absence of free phenol OH is not labile, showing the OH is required for the reverse deiodination equilibrium."
+    },
+    {
+      "name": "MeSO3H (used to mimic HI)",
+      "smiles": "CS(=O)(=O)O",
+      "purpose": "other",
+      "observation": "Mimics in situ HI; together with the iodophenol experiments shows iodinated allylphenol can revert to allylphenol + I2, explaining lack of ring-iodinated by-products."
+    },
+    {
+      "name": "charge–time monitoring during electrolysis",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Two-stage charge profile: initial Zn(0)→Zn(II) oxidation, then 3 I- → I3- (-2e-), confirming the dual oxidative process of Scheme 1."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "kinetic_order"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly rule out two alternative mechanisms: (i) direct interaction of Zn(II) with I2 to generate the iodinating species (excluded by Scheme 4a–c control experiments showing alkene + I2/ZnCl2 alone is unreactive), and (ii) a free cycloiodonium-ion pathway intercepted by zinc phenoxide (excluded because added K2CO3 did not accelerate cyclisation and instead gave arene iodination). Favored pathway (Scheme 5): bis(aryloxy)zinc complex coordinates I2, undergoes I–I/Zn–O metathesis to a tethered ArO–I (iodosylaryl) species (intermediate 2), which delivers I+ intramolecularly to the allyl alkene; reversible deiodination via HI prevents accumulation of ring-iodinated arenes and the cyclised dihydrobenzofuran is itself deactivated toward further iodination, accounting for the high selectivity. No TEMPO/BHT or DFT studies were performed; mechanism is supported mainly by control experiments, CV, and charge–time electrochemical profiling."
+}

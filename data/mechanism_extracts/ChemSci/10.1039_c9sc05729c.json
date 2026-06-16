@@ -1,0 +1,96 @@
+{
+  "doi": "10.1039_c9sc05729c",
+  "journal": "ChemSci",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intermolecular [3+2] annulation of N-aryl sulfonamides (anilines) with alkenes (α-methylstyrenes) to give 2,2-disubstituted indolines under undivided-cell constant-current electrolysis with DDQ co-mediator and AcOH",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of the N-aryl sulfonamide (aniline 1a) generates an N-centered radical after deprotonation; DDQ acts as a co-mediator/oxidant to re-oxidize the cyclohexadienyl-type intermediate III; cathode reduces protons (from AcOH) to H2",
+  "key_intermediates": [
+    {
+      "name": "N-centered aminyl radical (after anodic oxidation and deprotonation of 1a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "C-centered (para-carbon) aryl radical from resonance of N-radical (species II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical adduct (III) from radical addition of II to α-methylstyrene 2a",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexadienyl/iminium cation after oxidation of III by anode or DDQ",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "DDQH2 (reduced DDQ)",
+      "smiles": "OC1=C(O)C(=C(C#N)C(=C1Cl)Cl)C#N",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "The anode oxidizes aniline 1a to a radical cation which loses a proton to give an N-radical (I); resonance delivers a C-radical (II) that adds to alkene 2a giving benzylic radical III; III is further oxidized (anode or DDQ) to a cation that undergoes intramolecular C–N cyclization to indoline 3aa, while the cathode reduces protons from AcOH to H2.",
+  "rate_determining_step": "Anodic oxidation of aniline 1a (first-order in 1a, zero-order in alkene 2b)",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction of 1a + 2a with 1 equiv TEMPO under standard conditions gave no desired product 3aa, consistent with a radical pathway"
+    },
+    {
+      "name": "triethyl phosphite P(OEt)3",
+      "smiles": "CCOP(OCC)OCC",
+      "purpose": "intermediate_trap",
+      "observation": "With 5 equiv P(OEt)3 added, phosphorylation product 4c was isolated in 50%, indicating generation of a carbon radical"
+    },
+    {
+      "name": "alkene-free control (no 2a, no DDQ)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Homocoupling product 4d (3%) and 4e (53%) formed, indicating N-radical generation that converts to C-radical"
+    },
+    {
+      "name": "cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "1a oxidizes at 1.49 V vs Ag/AgCl; 2a shows no oxidation 0–2.0 V; catalytic current appears upon adding 2a (radical addition); HOAc does not change 1a oxidation (serves as proton source); DDQ only slightly increases current (does not directly oxidize 1a)"
+    },
+    {
+      "name": "UV-vis (DDQ + 1a)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No interaction between DDQ and 1a observed by UV"
+    },
+    {
+      "name": "EPR (electrolysis 30 min without 2a and DDQ)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Organic conjugated radical signal observed, supporting radical intermediate"
+    },
+    {
+      "name": "kinetic order analysis (HPLC initial rates)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "First order in 1a, zero order in 2b; anodic oxidation of 1a is rate-determining"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "UV_vis",
+    "EPR",
+    "kinetic_order",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Mechanism (Scheme 9) is initiated by anodic SET on aniline 1a rather than on alkene 2a (which is not electroactive in the operating window). DDQ is proposed as an auxiliary oxidant for intermediate III (parallel to direct anodic oxidation). AcOH serves primarily as proton source for cathodic H2 evolution. No reaction occurs at the electrode surface for DDQ-mediated step (heterogeneous vs homogeneous oxidation of III remains ambiguous)."
+}

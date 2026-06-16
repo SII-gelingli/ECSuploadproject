@@ -1,0 +1,74 @@
+{
+  "doi": "10.1016_j.tet.2022.132651",
+  "journal": "Tetrahedron",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical fluorosulfonylation of 1,1-disubstituted alkenes with sulfonyl hydrazides and Et3N·HF to give vicinal fluorinated sulfones",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of sulfonyl hydrazide (after deprotonation) to generate a sulfonyl radical (with N2 release); subsequent anodic oxidation of the benzylic radical adduct to a benzylic cation; cathodic reduction generates H2",
+  "key_intermediates": [
+    {
+      "name": "sulfonyl radical A (e.g., tosyl radical) from anodic oxidation/deprotonation/N2 loss of sulfonyl hydrazide",
+      "smiles": "[O]S(=O)(c1ccc(C)cc1)",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical B from sulfonyl radical addition to 1,1-diarylalkene",
+      "smiles": "[CH]([Ph])(c1ccccc1)CS(=O)(=O)c1ccc(C)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic cation C from anodic oxidation of radical B",
+      "smiles": "[C+](c1ccccc1)(c1ccccc1)CS(=O)(=O)c1ccc(C)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "vicinal fluorinated sulfone product 4 after fluoride capture",
+      "smiles": "FC(c1ccccc1)(c1ccccc1)CS(=O)(=O)c1ccc(C)cc1",
+      "role": "transient"
+    },
+    {
+      "name": "alkenyl sulfone (tested as putative intermediate, ruled out)",
+      "smiles": "O=S(=O)(c1ccc(C)cc1)/C=C(\\c1ccccc1)c1ccccc1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the anode, the sulfonyl hydrazide is deprotonated and oxidized with loss of N2 to give a sulfonyl radical A, which adds to the alkene to form benzylic radical B; B is further oxidized at the anode to benzylic cation C, which is trapped by fluoride from Et3N·HF to deliver product 4, while H+ is reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Sulfonyl-BHT adduct isolated in 41%; product 4aa yield drops to 40%, supporting sulfonyl radical intermediacy"
+    },
+    {
+      "name": "cyclopropyl-substituted alkene 1y (radical clock)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Cyclopropane ring-opened product 4aa formed in 25%; closed product 4ya 0%, consistent with radical addition pathway"
+    },
+    {
+      "name": "alkenyl sulfone 1z (putative intermediate test)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Under standard conditions gave 0% of 4aa, excluding hydrofluorination of alkenyl sulfone as the pathway"
+    },
+    {
+      "name": "cyclic voltammetry of 1a, 2a, 3a and mixtures",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Sulfonyl hydrazide 2a oxidizes at 1.92 V (and 2.41 V) vs Ag/AgCl, lower than 1,1-diphenylethylene 1a (2.26 V), indicating preferential anodic oxidation of the hydrazide"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "An alternative pathway via initial formation of an alkenyl sulfone followed by hydrofluorination was explicitly tested with 1z and ruled out (0% product). CV data establish that the sulfonyl hydrazide, not the alkene, is oxidized first at the anode."
+}

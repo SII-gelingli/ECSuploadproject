@@ -1,0 +1,66 @@
+{
+  "doi": "10.1002_adsc.201801492",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical three-component 1,2-aminosulfonylation of alkenes with sulfinates and amines to form 2-sulfonylethan-1-amines",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of sulfinate (PhSO2Na) to sulfonyl radical; subsequent anodic oxidation of the benzylic C-radical adduct to a benzylic cation; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "sulfonyl radical A (PhSO2•)",
+      "smiles": "[O]S(=O)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-radical adduct B (after sulfonyl radical addition to alkene)",
+      "smiles": "[CH]([CH2]S(=O)(=O)c1ccccc1)c1ccc(OC)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic cation C (from anodic oxidation of B)",
+      "smiles": "[C+]([CH2]S(=O)(=O)c1ccccc1)c1ccc(OC)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "styrene radical cation D (over-oxidation pathway)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "vinyl sulfone byproduct 5aa (from -H+ of C)",
+      "smiles": "COc1ccc(/C=C/S(=O)(=O)c2ccccc2)cc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "sulfonamide byproduct 6aa (PhNHSO2Ph)",
+      "smiles": "O=S(=O)(Nc1ccccc1)c1ccccc1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes sulfinate to a sulfonyl radical which adds to the alkene giving a benzylic C-radical; this radical is further oxidized at the anode to a benzylic cation that is trapped by the amine nucleophile, while the cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Only trace 4aaa; >95% of 1a and 3a recovered — reaction suppressed, supporting radical pathway"
+    },
+    {
+      "name": "BHT (2,6-di-tert-butyl-4-methylphenol)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield of 4aaa dropped to 21%, consistent with radical intermediates"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Byproducts 5aa (vinyl sulfone via deprotonation of cation C) and 6aa (PhNHSO2Ph, from sulfonyl radical + amine) arise from high reactivity of intermediates A and B. Use of NH3 or NH3·H2O gave no product (4aan trace). Mechanism supported by CV (Figure S1, SI)."
+}

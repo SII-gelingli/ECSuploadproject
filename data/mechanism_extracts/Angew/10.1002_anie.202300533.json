@@ -1,0 +1,114 @@
+{
+  "doi": "10.1002_anie.202300533",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemically driven 1,2-halonitration (bromo/chloro-nitration) of alkenes using ferric nitrate as nitryl radical source and LiX as halide source",
+  "mechanism_family": [
+    "radical_cathodic",
+    "electrocatalysis_inner_sphere",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic single-electron reduction of Fe(NO3)3·9H2O activates nitrate, generating nitryl radical (•NO2) and Fe(II); the injected electron is substoichiometric and acts catalytically (electron as catalyst)",
+  "key_intermediates": [
+    {
+      "name": "[Fe(II)(NO3)3]- (one-electron reduced ferric nitrate)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Nitryl radical (•NO2)",
+      "smiles": "[O][N+](=O)[O-]",
+      "role": "reactive"
+    },
+    {
+      "name": "NO3 dianion radical (NO3•2-) from pulse radiolysis (λmax 350 nm)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-nitroalkyl carbon radical (R-CH•-CH2NO2)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Fe(III)-Br (bromide-bound Fe(III)) ligand-transfer agent",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Fe(II) species (regenerated, undergoes anodic reoxidation outside main cycle)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Fe(II)/Fe(III) oxide-hydroxide precipitate (FeIIxOz·nH2O)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode injects one electron into Fe(NO3)3·9H2O, producing Fe(II) and releasing •NO2 via SET reduction of nitrate (NO3- -> NO3•2- -> •NO2). •NO2 adds to the alkene to give a β-nitroalkyl C-radical, which undergoes inner-sphere radical ligand transfer from an in-situ formed Fe(III)-X intermediate to deliver the C-X bond and regenerate Fe(II); Fe(II) is reoxidized anodically, closing the catalytic cycle with substoichiometric electrons.",
+  "rate_determining_step": "Single-electron reduction/activation of Fe(NO3)3·9H2O to release •NO2 (initiation); current-controlled, with on/off experiments showing slow continued conversion after current off",
+  "probe_reagents": [
+    {
+      "name": "Aryl cyclopropyl alkene (radical clock 3)",
+      "smiles": "C1CC1C(=C)c1ccc(Cl)cc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened bromo-nitro product 4 obtained in 87% (E:Z 1.1:1), confirming C-radical intermediate after •NO2 addition"
+    },
+    {
+      "name": "Allyl phenyl sulfone (5)",
+      "smiles": "O=S(=O)(c1ccccc1)CC=C",
+      "purpose": "radical_clock",
+      "observation": "β-scission/desulfonylation product 6 (41%) consistent with radical intermediate"
+    },
+    {
+      "name": "(E)- and (Z)-stilbene",
+      "smiles": "C(=C/c1ccccc1)\\c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Both give product 7 with similar d.r. (10:3), indicating loss of olefin geometry via free C-radical"
+    },
+    {
+      "name": "Cesium nitrate / pulse radiolysis",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Transient at λmax = 350 nm decaying by 2nd-order kinetics, assigned to NO3•2- from one-electron reduction of NO3-"
+    },
+    {
+      "name": "Substituted styrenes (Hammett series: tBu, H, F, Cl, Br, CN, NO2)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Slightly negative ρ ≈ -0.2, consistent with electrophilic •NO2 addition to alkene"
+    },
+    {
+      "name": "Nitrite (NO2-) detection (Griess-type test)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "NO2- formed only when electricity is passed through Fe(NO3)3 solution, confirming electrochemical generation of •NO2"
+    },
+    {
+      "name": "Fe(OTf)2 / LiNO3 control (test F, I)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Mixing Fe(II) with nitrate also produces NO2-, supporting Fe(II) role in •NO2 regeneration"
+    },
+    {
+      "name": "On/off current experiments",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Conversion continues during off periods; TON higher with longer off intervals, supporting substoichiometric electron (electrocatalysis) rather than stoichiometric radical chain initiation"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "UV_vis",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "crossover",
+    "kinetic_order",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors frame the electron itself as a substoichiometric catalyst (electrocatalysis, scenario a) but also present the classical Fe(III)/Fe(II) redox cycle (scenario b) as equivalent representation. XPS of precipitate shows Fe(II)/Fe(III) oxide-hydroxide byproducts. Direct cathodic reduction of styrene (~ -1.2 V) is excluded since electrolysis at 0.77 V still works. An alternative inner-sphere pathway where the β-nitroalkyl radical is stabilized by Fe coordination prior to ligand transfer cannot be ruled out. Oxygen-atom transfer from NO3- to Fe(II) as an alternative to SET is also acknowledged."
+}

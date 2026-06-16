@@ -1,0 +1,109 @@
+{
+  "doi": "10.1055_s-0040-1720135_si13",
+  "journal": "Synthesis",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical triacetoxylation of allylbenzenes (alkylbenzenes bearing a terminal alkene) to give 1,2,3-triacetoxy products via anodic oxidation and acetate trapping",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the allylarene to an alkene radical cation; subsequent anodic oxidation of a β-acetoxy carbon radical to a cation/acyloxonium; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "allylarene alkene radical cation (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-acetoxy benzylic carbon radical (C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,3-dioxolan-2-ylium (acyloxocarbenium) intermediate D with Me at C2",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,2-diacetoxy intermediate E (vicinal diacetate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical F after further anodic oxidation/H loss",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "1,2,3-triacetoxy product G",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cinnamyl acetate H (allylic acetate)",
+      "smiles": "CC(=O)OC/C=C/c1ccccc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "1,3-diacetoxy isomer 6a",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "internal alkene 1a' (β-methylstyrene)",
+      "smiles": "C/C=C/c1ccccc1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "The anode performs SET on the allylarene to generate an alkene radical cation that is captured by acetate to give a β-acetoxy benzylic radical; a second anodic oxidation produces a cation that closes to a methyl-substituted 1,3-dioxolan-2-ylium, which is opened by acetate to the 1,2-diacetate, and a further anodic oxidation/deprotonation followed by acetate trapping installs the third OAc. Protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1,3-diacetoxy isomer 6a (putative intermediate)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Resubjection of 6a under standard conditions gave 2a in 68%; without electricity 2a was not detected — supports 6a as a competent intermediate requiring anodic oxidation"
+    },
+    {
+      "name": "cinnamyl acetate 7a",
+      "smiles": "CC(=O)OC/C=C/c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Decomposed under standard conditions, no 2a formed — excludes allylic acetate H as on-cycle intermediate"
+    },
+    {
+      "name": "internal alkene β-methylstyrene 1a'",
+      "smiles": "C/C=C/c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Gave 1,2-diacetate 3a in 75% but no triacetate 2a — suggests terminal alkene geometry is required for triacetoxylation"
+    },
+    {
+      "name": "para-CF3 allylbenzene 1p",
+      "smiles": "FC(F)(F)c1ccc(CC=C)cc1",
+      "purpose": "other",
+      "observation": "Gave 2p (22%) and 1,3-diacetate 3p (6%); electron-poor arene lowers yield, consistent with arene-assisted oxidation"
+    },
+    {
+      "name": "cyclopropyl-substituted allylarene (radical clock)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "No ring-opened products from a vinylcyclopropane substrate; ring-opened acyclic triacetate 2v formed in 7% (1.4:1 dr), consistent with a radical intermediate adjacent to the cyclopropane"
+    },
+    {
+      "name": "in situ GC-MS time course",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "GC-MS at 2.5 h detected 1,2-diacetate, 1,3-diacetate (6a), propylbenzene/alkene byproducts, and triacetate 2a, supporting stepwise build-up via diacetate intermediates"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "radical_clock",
+    "stoichiometric_intermediate",
+    "on/off_light_or_current",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors disfavor a pathway through cinnamyl acetate H (allylic C–H acetoxylation product), since independently prepared 7a decomposes under the conditions and does not yield 2a. The 1,3-diacetate 6a is shown to be a productive on-cycle intermediate (requires current), implicating a 1,3-dioxolan-2-ylium (acyloxonium) opening by acetate. Internal alkene 1a' diverts to the 1,2-diacetate 3a only, indicating the third acetoxylation requires the terminal-alkene-derived radical/cation manifold. A minor amount of ring-opened triacetate from a cyclopropyl probe (2v, 7%) supports radical character at the benzylic position."
+}

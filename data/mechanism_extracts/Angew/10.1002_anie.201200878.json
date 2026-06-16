@@ -1,0 +1,84 @@
+{
+  "doi": "10.1002_anie.201200878",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Anodic oxidation of methanol at a boron-doped diamond (BDD) electrode generates methoxy radicals, which enable construction of bisdimethyl acetals from dimethoxybenzyl ethers and an electrochemical biomimetic synthesis of the benzofuran neolignan (±)-licarin A from isoeugenol.",
+  "mechanism_family": [
+    "radical_anodic",
+    "direct_SET",
+    "radical_cation"
+  ],
+  "electrochemical_role": "Anodic oxidation: MeOH/MeO- is oxidized at the BDD anode to generate methoxy radicals (MeO•); substrates (electron-rich arenes, isoeugenol) are also oxidized at the anode to aryl radical cations under CPE conditions.",
+  "key_intermediates": [
+    {
+      "name": "methoxy radical (MeO•)",
+      "smiles": "[O]C",
+      "role": "reactive"
+    },
+    {
+      "name": "aryl radical cation of 2,5-dimethoxybenzyl ether (A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "methoxy-substituted cyclohexadienyl radical adduct (C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "oxocarbenium-type cation (B) en route to bisdimethyl acetal 2",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phenoxyl/benzylic radical cation D from a phenol precursor",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "oxocarbenium E leading to aldehyde 3 by loss of MeOR",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "isoeugenol-derived radical/radical cation 9",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "DMPO-OMe O-adduct nitroxyl radical (ESR-observed)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, methanol/methoxide is oxidized by single-electron transfer to give methoxy radicals; in parallel, electron-rich arene substrates undergo anodic SET to radical cations that are trapped by MeOH/MeO-, followed by a second oxidation and loss of a proton or MeOR to deliver bisdimethyl acetals, aldehydes, or (for isoeugenol) radical intermediate 9 that couples/cyclizes to licarin A.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "DMPO (5,5-dimethyl-1-pyrroline N-oxide)",
+      "smiles": "CC1(C)CC=[N+]1[O-]",
+      "purpose": "radical_trap",
+      "observation": "Electrolysis of MeOH in the presence of DMPO gave an ESR signal matching the DMPO O-methoxy adduct (A_N = 13.37 G, A_H = 7.98 G), confirming generation of methoxy (not hydroxymethyl) radicals; signal intensity followed BDD > Pt > GC anode."
+    },
+    {
+      "name": "Linear sweep voltammetry of isoeugenol (5)",
+      "smiles": "COc1cc(/C=C/C)ccc1O",
+      "purpose": "redox_probe",
+      "observation": "Established first and second oxidation potentials used to set CPE potentials (entries 1–6); higher potential on BDD (1.06 V vs SCE) gave the best licarin A yield (40%)."
+    },
+    {
+      "name": "Anode material variation (BDD vs Pt vs GC)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "BDD anode gave the strongest methoxy-radical ESR signal and the highest yield of licarin A (40%), consistent with more efficient MeO• generation at BDD."
+    }
+  ],
+  "evidence_types_used": [
+    "EPR",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "The mechanism is supported chiefly by DMPO spin-trapping/ESR detection of methoxy radicals and by anode-material-dependent yields, plus LSV measurements of substrate oxidation potentials; no KIE, DFT, or isotope labeling is reported. Two parallel anodic pathways are proposed: (i) direct SET oxidation of the arene to a radical cation followed by MeOH/MeO- addition (Scheme 1, intermediates A→C→B→2 and D→E→3), and (ii) anodic generation of MeO• that can add to the arene; both can plausibly contribute. For isoeugenol, vicinal byproducts 7 and 8 are rationalized via self-coupling of radical intermediate 9."
+}

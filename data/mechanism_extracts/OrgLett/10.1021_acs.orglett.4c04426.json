@@ -1,0 +1,80 @@
+{
+  "doi": "10.1021_acs.orglett.4c04426",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical cyclizative dicarboxylation of o-vinylphenyl isocyanides with CO2 to give 3-substituted 2-oxoindolin-3-acetic acids in an undivided cell with sacrificial Mg anode",
+  "mechanism_family": [
+    "radical_cathodic",
+    "sacrificial_anode",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic reduction: either the o-vinylphenyl isocyanide alkene (path A) or CO2 (path B) is reduced at the cathode to generate a carbon-centered radical anion that initiates carboxylation; Mg anode is sacrificial",
+  "key_intermediates": [
+    {
+      "name": "benzylic radical anion of o-vinylphenyl isocyanide (1a•-, path A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "CO2 radical anion (·CO2-, path B)",
+      "smiles": "[O-]C(=O)[O]",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical 1a' after CO2 addition to alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "dicarboxylated isocyanide intermediate (bis-carboxylate with pendant isocyanide)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "seven-membered cyclic intermediate prior to 1,3-O→N acyl transfer",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "2-oxoindolin-3-acetic acid product 2a",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode delivers one electron to either the vinyl arene (path A, favored) or CO2 (path B) to give a radical anion; this radical adds CO2 (or adds to the alkene), then a second cathodic electron transfer and protonation by H2O furnishes a dicarboxylated isocyanide that undergoes intramolecular cyclization onto the isocyanide and a 1,3-O→N acyl transfer to yield the 2-oxoindolin-3-acetic acid, while the Mg anode is oxidized as sacrificial counter-electrode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited; starting material 1a recovered in 86%, indicating a radical pathway"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Only trace amount of product 2a observed; 2a isolated in 22% and a related product 3a in 21%, supporting radical intermediacy"
+    },
+    {
+      "name": "cyclic voltammetry of CO2 and styrene",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Reduction potentials are similar (·CO2-/CO2 E1/2 = -2.21 V; styrene E1/2 = -2.58 V vs SCE in DMF), so either substrate or CO2 could be reduced first, supporting two plausible pathways"
+    },
+    {
+      "name": "control without CO2",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Reduced (non-carboxylated) product observed, consistent with path A involving initial cathodic reduction of the alkene"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two mechanistic pathways are proposed; path A (cathodic reduction of the o-vinylphenyl isocyanide alkene first, followed by CO2 addition) is favored because in the absence of CO2 the reduced (non-carboxylated) substrate is observed. Path B (initial cathodic reduction of CO2 to ·CO2-, then addition to the alkene) cannot be ruled out. Regioselectivity for the five-membered oxindole is rationalized by preferential formation of a seven-membered ring intermediate over an eight-membered ring prior to 1,3-O→N acyl transfer."
+}

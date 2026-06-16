@@ -1,0 +1,90 @@
+{
+  "doi": "10.1039_d3cc04920e",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Galvanostatic electroreductive cyclodimerization of chalcones to densely functionalized 1,3-diol cyclopentanes with five contiguous stereocenters",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_anion"
+  ],
+  "electrochemical_role": "Cathodic single-electron reduction of chalcone to a radical anion at the Ag cathode (Epc = -1.52 V vs SCE), followed by a second cathodic reduction event of the dimerized enolate intermediate and a final more demanding reduction of the aldol ketone (E1/2 = -1.86 V); graphite anode oxidizes TEOA as sacrificial reductant/proton source",
+  "key_intermediates": [
+    {
+      "name": "chalcone radical anion (A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Giese-type tail-to-tail dimer radical (B)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "1,6-diketone monoenolate (C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "aldol intermediate 2a (cis hydrogen-bonded isomer)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "aldol epimer 2a' (X-ray characterized)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,3-diol product 3a",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "putative epimer 3a' (not observed)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode reduces chalcone 1a to radical anion A, which adds in tail-to-tail Giese fashion to a second 1a giving radical B; a second cathodic event plus protonation (or radical-radical coupling of two A) produces 1,6-diketone monoenolate C, which undergoes non-diastereoselective intramolecular aldol to 2a/2a'; an irreversible cathodic ketone reduction of the more reactive H-bonded isomer 2a delivers diol 3a (dynamic kinetic resolution via retro-aldol equilibration of 2a').",
+  "rate_determining_step": "Final cathodic reduction of the aldol ketone 2 to the 1,3-diol 3 is the most energetically demanding step (occurs at -1.86 V vs the -1.52/-1.58 V for chalcone reduction), enabled only by galvanostatic self-adaptation",
+  "probe_reagents": [
+    {
+      "name": "isolated aldol intermediates 2a and 2a'",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Reaction interrupted at 1 F/mol gave 68% combined 2a + 2a' (~1:1); resubjecting either to optimal conditions delivered 3a in >20:1 dr with no 3a' formed, confirming both as productive intermediates and revealing dynamic kinetic resolution"
+    },
+    {
+      "name": "pure 2a' + TEOA (control)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Exposure to TEOA (2 equiv) furnished a 1:1 2a:2a' mixture, supporting retro-aldol equilibration"
+    },
+    {
+      "name": "Hantzsch ester (HE)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Replacing TEOA with HE as reductant gave no 3a, only aldol mixture 18/17/— (entry 6), showing TEOA's dual role as reductant and proton source"
+    },
+    {
+      "name": "Zn sacrificial anode (no TEOA)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No 3a formed; only partial reduction of 1a and aldols (entry 7)"
+    },
+    {
+      "name": "controlled H2O addition",
+      "smiles": "O",
+      "purpose": "other",
+      "observation": "Made the second CV peak fully reversible at E1/2 = -1.86 V, supporting proton-coupled formation of C and aldol cyclization"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two pathways are proposed for formation of monoenolate C: (a) favored — Giese addition of radical anion A to neutral 1a giving B, then second cathodic reduction/protonation; (b) alternative — direct radical-radical coupling of two A followed by protonation, consistent with the half-height of the second CV wave and the fact that B→C reduction would occur at less negative potential than 1a→A. Diastereoselectivity arises from dynamic kinetic resolution: only the H-bond-activated isomer 2a is reduced rapidly, while 2a' equilibrates back via retro-aldol. X-ray structures of 3a and 2a' were obtained."
+}

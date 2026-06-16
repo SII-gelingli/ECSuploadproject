@@ -1,0 +1,83 @@
+{
+  "doi": "10.1016_S1872-2067(23)64510-3_sup_1",
+  "journal": "ChinJCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative coupling of dimethyl 2-(4-methoxybenzyl)malonate with alkenes/alkynes proceeding via an anodically generated benzylic/malonyl radical that undergoes radical-polar crossover and ipso-cyclization onto the p-methoxyaryl ring with water as the oxygen source",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of the malonate substrate (mediated by ferrocene/ferrocenium as a redox mediator) generates a tertiary C-centered (malonyl/benzylic) radical; subsequent oxidation of a cyclohexadienyl radical intermediate to a cation enables nucleophilic trapping by H2O",
+  "key_intermediates": [
+    {
+      "name": "tertiary malonyl/benzylic C-centered radical from 1a",
+      "smiles": "COC1=CC=C(CC(C(=O)OC)C(=O)OC)C=C1",
+      "role": "transient"
+    },
+    {
+      "name": "homo-coupling dimer (radical-radical combination product)",
+      "smiles": "COC1=CC=C(CC(C(=O)OC)(C(=O)OC)C(C(=O)OC)(C(=O)OC)CC2=CC=C(OC)C=C2)C=C1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "thiophene radical-trapped adduct",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "spirocyclohexadienone-type cation (ipso-cyclization intermediate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ferrocenium (Fc+) mediator",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Ferrocene is oxidized at the anode to Fc+, which oxidizes the malonate 1a to a tertiary C-radical; this radical adds to the alkene/alkyne, the resulting radical undergoes ipso-cyclization onto the p-methoxyaryl ring, and the cyclohexadienyl radical is further oxidized to a cation that is trapped by H2(18)O to deliver the spirocyclohexadienone with 18O incorporation; H2 is evolved at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "no radical trap (homo-coupling control)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Homo-coupled dimer of 1a isolated in 33% yield, supporting a C-radical intermediate"
+    },
+    {
+      "name": "2-methylthiophene",
+      "smiles": "Cc1ccc(s1)",
+      "purpose": "radical_trap",
+      "observation": "Radical addition/coupling product with thiophene isolated in 39% yield, consistent with a free C-radical"
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Desired cyclization product not detected (n.d.); reaction suppressed, indicating a radical pathway"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Desired product not detected (n.d.); radical intermediates are intercepted"
+    },
+    {
+      "name": "H2(18)O",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "Product shows 18O:16O > 20:1 incorporation in the cyclohexadienone carbonyl, demonstrating water as the O source"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "H/D_labeling",
+    "product_isotope_distribution",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Mechanism supported by (i) isolation of homo-coupling dimer, (ii) thiophene radical trapping, (iii) complete suppression with TEMPO and BHT, and (iv) >20:1 18O incorporation from H2(18)O establishing water as the oxygen source in the spirocyclohexadienone product. Ferrocene functions as a single-electron-transfer mediator at the anode."
+}

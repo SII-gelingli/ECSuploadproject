@@ -1,0 +1,56 @@
+{
+  "doi": "10.1021_acs.orglett.2c03443_sup_1",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical deuteration/functionalization of alkenes using CDCl3 as a deuterated dichloromethyl radical source",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic/cathodic generation of dichloromethyl-d radical (·CDCl2) from CDCl3, which adds to the alkene as the first step",
+  "key_intermediates": [
+    {
+      "name": "dichloromethyl-d radical (·CDCl2)",
+      "smiles": "[2H][C]([Cl])[Cl]",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl radical from styrene + ·CDCl2 addition",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclopropane product 2ag (D,Cl-substituted phenylcyclopropane)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "dimer S1 (1,4-diphenyl-1,4-bis(dichloromethyl)butane-type)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Electrolysis homolyzes CDCl3 to generate a ·CDCl2 radical which adds to the styrene C=C; the resulting benzylic radical either cyclizes/closes to give cyclopropane 2ag or dimerizes to S1, and in fluorinated substrate S2 defluorination delivers S3, confirming radical addition as the initiating step.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "styrene (radical acceptor probe)",
+      "smiles": "C=Cc1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Reaction with CDCl3 under standard conditions gave cyclopropane 2ag and isolable dimer S1, indicating ·CDCl2 addition to alkene"
+    },
+    {
+      "name": "fluorinated substrate S2",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Defluorination product S3 was obtained, consistent with radical addition of ·CDCl2 followed by β-F loss"
+    }
+  ],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "intermediate_trap_other",
+    "H/D_labeling"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism supported by isolation of dimer S1 (radical–radical coupling byproduct) and defluorinated product S3 from a fluorinated probe; both implicate ·CDCl2 radical as the chain-initiating species. Comparison table also shows electrochemistry gives higher D-incorporation (96–98%) at low CDCl3 loading vs. non-electrochemical conditions."
+}

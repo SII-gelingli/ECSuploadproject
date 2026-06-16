@@ -1,0 +1,64 @@
+{
+  "doi": "10.1021_acscatal.1c05557_sup_1",
+  "journal": "ACSCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical cobalt-catalyzed hydrofunctionalization (hydromethoxylation/hydroalkoxylation) of alkenes proceeding via metal-hydride hydrogen atom transfer (MHAT) and radical-polar crossover",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "radical_polar_crossover",
+    "mediator_cathodic"
+  ],
+  "electrochemical_role": "Cathodic reduction regenerates the active Co(II/I) catalyst; Co-H is generated from Ph2SiH2 and delivers H• to alkene (MHAT); the carbon radical is further oxidized (anodically or via Co) to a carbocation that is trapped by MeOH/ROH",
+  "key_intermediates": [
+    {
+      "name": "Co-H species (from Ph2SiH2)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical (from MHAT to alkene)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "carbocation (after SET oxidation of C-radical)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(II)/Co(I) resting state",
+      "smiles": null,
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "Electrochemically generated low-valent Co reacts with Ph2SiH2 to form a Co-H; HAT to alkene gives a carbon radical, which is oxidized to a carbocation and trapped by the alcohol nucleophile (MeOH) to give the ether; Co is regenerated cathodically.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "CD3OD (deuterated methanol)",
+      "smiles": "[2H]OC([2H])([2H])[2H]",
+      "purpose": "isotope_label",
+      "observation": "Product 13 (cyclized THF) showed <2% D incorporation at the methyl-derived position, indicating the H delivered to the alkene comes from Ph2SiH2 (Co-H) and not from the alcohol solvent"
+    },
+    {
+      "name": "(1-cyclopropyl-1-phenyl)alkene / vinylcyclopropane 14",
+      "smiles": "C(=C)C1(c2ccccc2)CC1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 15 (homoallyl methyl ether, 40%) obtained, consistent with a carbon-centered radical intermediate undergoing cyclopropane ring opening before C-O bond formation"
+    },
+    {
+      "name": "n-Bu4NBF4 electrolyte",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Electrolyte identity affects hydromethoxylation efficiency (Figure 5e), supporting electrochemical involvement"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "cyclic_voltammetry",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Additional mechanistic probes include CV studies (III-A), attempts at asymmetric catalysis (III-D) which failed — consistent with a free (non-Co-bound) carbocation/radical intermediate after MHAT, supporting the radical-polar crossover pathway rather than a Co-alkyl inner-sphere ionization."
+}

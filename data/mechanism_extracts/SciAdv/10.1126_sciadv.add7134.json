@@ -1,0 +1,75 @@
+{
+  "doi": "10.1126_sciadv.add7134",
+  "journal": "SciAdv",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical asymmetric Ni-catalyzed three-component alkoxy-alkylation of alkenes with 2-acylimidazoles and methanol, forming β-methoxy ketones with a quaternary stereocenter via radical addition.",
+  "mechanism_family": [
+    "radical_anodic",
+    "electrocatalysis_inner_sphere",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of the Ni(II)-bound enolate (derived from 2-acylimidazole 1a deprotonated by quinuclidine/2,6-di-tert-butylpyridine) generates a Ni-stabilized α-carbonyl radical that adds to the alkene; the resulting benzylic radical/cation is trapped by methanol.",
+  "key_intermediates": [
+    {
+      "name": "Ni(II)-bound enolate of 2-acylimidazole 1a",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Ni-bound α-carbonyl radical (anodically oxidized enolate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical from radical addition to 1,1-diphenylethylene (2a)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbocation (after second SET oxidation)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ring-opened homoallyl/allyl-carbinyl radical from cyclopropane probe 19",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "The Ni(II)/L8 complex binds the deprotonated 2-acylimidazole; anodic oxidation of this Ni-enolate produces a Ni-stabilized α-carbonyl radical that adds to the alkene to give a benzylic radical, which is further oxidized to a benzylic cation and trapped by MeOH, while protons are reduced at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3a not formed; TEMPO-adduct of the α-carbonyl carbon isolated in 99% yield, supporting an α-carbonyl radical intermediate."
+    },
+    {
+      "name": "TEMPO+ BF4- (oxoammonium)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "In the absence of current, TEMPO+ alone yields the same TEMPO-adduct (76%, 59% ee), indicating that TEMPO+ generated in situ by anodic oxidation could also be the trapping species; cannot rule out TEMPO oxidation pathway."
+    },
+    {
+      "name": "(1-phenyl-2-phenylcyclopropyl)ethylene 19 (radical clock)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring-opened products 20 (13%, d.r. 1:1) and 21 (10%, d.r. 1:1) observed, consistent with a carbon-centered radical that opens the cyclopropane (intermediate [20-A] → [20-B])."
+    },
+    {
+      "name": "Cyclic voltammetry of NiCl2-L8 + 1a vs TEMPO",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Onset potential of the Ni-bound enolate is ~+0.50 V vs SCE, similar to TEMPO, supporting feasibility of anodic generation of the Ni-enolate radical."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "radical_clock",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Constant-current (2-6 mA) and constant-potential (+1.0 V vs SCE) experiments both give 3a with consistently high ee (92-93%), indicating the stereo-determining step is Ni/L8-controlled radical addition rather than potential-dependent. Authors explicitly acknowledge an alternative pathway in which TEMPO is first oxidized to TEMPO+ which then traps the radical/enolate; this cannot be excluded based on the CV and stoichiometric TEMPO+ experiment."
+}

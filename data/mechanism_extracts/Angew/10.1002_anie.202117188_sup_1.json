@@ -1,0 +1,44 @@
+{
+  "doi": "10.1002_anie.202117188_sup_1",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical Cp*Rh-catalyzed C-H alkenylation of 1-naphthols with alkenes under constant current in an undivided cell",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation regenerates the active Cp*Rh(III) catalyst from a reduced Rh species formed after C-H activation/alkene insertion/β-H elimination; H2 evolution at Pt cathode closes the redox balance",
+  "key_intermediates": [
+    {
+      "name": "Cp*Rh(III) naphtholate/aryl complex after C-H metalation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Rh(III)-alkyl after migratory insertion into alkene 2e",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Reduced Rh species (Rh(I)) after β-hydride elimination/product release",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Cp*Rh(III) performs C-H activation on 1-naphthol (non-rate-limiting), alkene inserts and β-H elimination delivers the alkenylated naphthol and a reduced Rh species; the anode reoxidizes Rh back to Rh(III) while protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": "Step after the C-H cleavage (likely migratory insertion or β-hydride elimination); C-H activation is not rate-limiting based on kH/kD ≈ 1.1",
+  "probe_reagents": [
+    {
+      "name": "[D]n-1a (ortho-deuterated 1-naphthol, 90% D)",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "Parallel initial-rate experiment gave kH/kD ≈ 1.1, indicating C-H cleavage is not rate-determining"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "kinetic_order"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Only the KIE portion of the mechanistic studies is shown on this page; the near-unity KIE (1.1) argues against rate-limiting concerted metalation-deprotonation, suggesting a post-C-H-activation step controls the rate."
+}

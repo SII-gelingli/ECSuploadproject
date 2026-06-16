@@ -1,0 +1,67 @@
+{
+  "doi": "10.31635_ccschem.021.202100826",
+  "journal": "CCSChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical aziridination of alkenes with ammonia to give NH-aziridines, with solvent-controlled chemoselectivity (MeOH favors aziridination over NH3 oxidation/N2 formation seen in DMF)",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_anodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of the alkene (e.g., triphenylethene 1v) to its radical cation, followed by nucleophilic addition of NH3 and a second anodic oxidation of the resulting aminyl radical to a nitrogen-centered cation that closes to the aziridine; in MeOH, hydrogen-bond donation by solvent raises Eox(NH3), suppressing competing NH3 oxidation",
+  "key_intermediates": [
+    {
+      "name": "alkene radical cation (1v•+, triphenylethene radical cation)",
+      "smiles": "[CH+]([C](c1ccccc1)c2ccccc2)c3ccccc3",
+      "role": "reactive"
+    },
+    {
+      "name": "β-ammonio carbon radical (Int2-a, NH3 adduct of radical cation, after deprotonation)",
+      "smiles": "[CH]([C](N)(c1ccccc1)c2ccccc2)c3ccccc3",
+      "role": "transient"
+    },
+    {
+      "name": "β-amino carbon radical (Int3-a, neutral aminyl/C-radical)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-amino carbocation (Int4-a, after second oxidation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "protonated aziridinium (Int5-a)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "NH3 radical cation (NH3•+)",
+      "smiles": "[NH3+]",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the alkene to a radical cation (Eox = 6.64 eV); NH3 nucleophilically adds to the less-substituted carbon (TS1-a, 8.7 kcal/mol), and the adduct is deprotonated to a neutral β-amino C-radical; a second anodic oxidation (Eox = 5.72 eV) gives a β-amino carbocation that undergoes near-barrierless ring closure to the aziridinium, which is deprotonated to the NH-aziridine. In DMF the competing pathway is direct anodic oxidation of NH3 to NH3•+ leading to N2/H2 formation.",
+  "rate_determining_step": "Nucleophilic addition of NH3 to the alkene radical cation via TS1-a (ΔG‡ ≈ 8.7 kcal/mol in MeOH)",
+  "probe_reagents": [
+    {
+      "name": "triphenylethene (1v) as model substrate",
+      "smiles": "C(=C(c1ccccc1)c2ccccc2)c3ccccc3",
+      "purpose": "redox_probe",
+      "observation": "Greatest contrast between MeOH (aziridination) and DMF (hydrogenation/N2 formation), used to probe solvent-dependent chemoselectivity"
+    },
+    {
+      "name": "Ammonia (NH3)",
+      "smiles": "N",
+      "purpose": "redox_probe",
+      "observation": "CV shows NH3 is oxidized preferentially in DMF but 1v is oxidized prior to NH3 in MeOH, indicating MeOH H-bonding stabilizes NH3 lone pair"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "DFT",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two solvent-dependent pathways are computed: in MeOH, NH3 addition to 1v•+ (TS1-a, 8.7 kcal/mol) outcompetes endergonic NH3 oxidation (+17.9 kcal/mol), leading to aziridine; in DMF, NH3•+ formation is only +3.6 kcal/mol and leads to barrierless deprotonation/hydrazine/N2 formation (N2 hydrogenation pathway), explaining loss of aziridination selectivity. The MeOH selectivity is rationalized by Kamlet–Taft α (H-bond donor) parameter (α=0.98 vs 0 for DMF). Tetraphenyl aziridine 2u structure confirmed by X-ray."
+}

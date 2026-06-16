@@ -1,0 +1,75 @@
+{
+  "doi": "10.1021_acs.orglett.2c03774",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative sulfoximido-oxygenation of alkenes (styrenes) using NH-sulfoximines and alcohols (MeOH) to give β-alkoxy sulfoximides without metal catalysts or external oxidants",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation: NH-sulfoximine (1a) is deprotonated to 1a' then anodically oxidized to an N-centered sulfoximidoyl radical (A); MeOH is also anodically oxidized in the presence of base to a methoxy radical. Cathode reduces 2 H+ to H2.",
+  "key_intermediates": [
+    {
+      "name": "N-centered sulfoximidoyl radical (A)",
+      "smiles": "O=S(=N[*])(c1ccccc1)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "methoxy radical (minor HAT path)",
+      "smiles": "[O]C",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl/carbon radical adduct after radical addition to styrene (B)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzyl cation intermediate (C) from further anodic oxidation of B",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "deprotonated sulfoximine conjugate base (1a')",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, deprotonated NH-sulfoximine (1a') is oxidized to an N-centered sulfoximidoyl radical A, which adds to the styrene to give benzyl radical B; B is further oxidized at the anode to benzyl cation C, which is trapped by MeOH and deprotonated to give product 3a. At the cathode, protons are reduced to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "radical clock (cyclopropyl-substituted alkene 7)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Standard product 8 (21%) and ring-opened product 9 (64%) isolated, confirming a benzyl radical intermediate"
+    },
+    {
+      "name": "control experiment detecting sulfoximidoyl dimer 10 and radical addition adducts 11/12",
+      "smiles": null,
+      "purpose": "intermediate_trap_other",
+      "observation": "Dimer 10 from N-centered sulfoximidoyl radical and adducts 11/12 of methoxy radical detected by HRMS, supporting both N-radical and MeO radical intermediates"
+    },
+    {
+      "name": "cyclic voltammetry of styrene 2a, MeOH/K3PO4, and 1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Ep(2a)=2.07 V vs SCE; Ep(MeOH)=1.29 V; oxidation peaks of MeOH and 1a overlap and are lower than styrene, indicating anodic oxidation of 1a/MeOH occurs preferentially (reaction onset ~0.8 V)"
+    },
+    {
+      "name": "constant potential electrolysis",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Reaction initiates at ~0.8 V (vs SCE), below styrene oxidation potential, indicating initiation by oxidation of 1a/MeOH rather than styrene"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "A minor pathway is proposed in which an anodically generated methoxy radical performs HAT on 1a to furnish the N-centered sulfoximidoyl radical A (Scheme 5, 'minor' arrow); the major pathway goes through direct anodic oxidation of deprotonated 1a'. Initiation by alkene oxidation is ruled out based on CV (styrene oxidation potential is higher than the operating potential)."
+}

@@ -1,0 +1,86 @@
+{
+  "doi": "10.1021_acs.orglett.4c04041",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical dichlorinative cyclization of 1,n-enynes catalyzed by 4-iodotoluene via in situ generated hypervalent ArICl2 as the active chlorinating/cyclizing reagent",
+  "mechanism_family": [
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation of chloride (from Et3N·HCl) to a chlorine-radical/active [Cl+]ox species (Eox = 1.75 V), which then oxidizes 4-iodotoluene (ArI) to the hypervalent ArICl2 mediator that delivers Cl to the enyne substrate",
+  "key_intermediates": [
+    {
+      "name": "active oxidized chlorine species [Cl+]ox (chlorine radical / Cl+ equivalent)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "4-Me-C6H4ICl2 (ArICl2, hypervalent iodine(III) dichloride)",
+      "smiles": "Cc1ccc(I(Cl)Cl)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "chloriranium / cationic alkyne-Ar(I)Cl adduct A from cis-chloroiodination of the alkyne",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "vinyl-ArI(Cl) intermediate B (cis-chloroiodination product of alkyne)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclic carbocation C from syn-migratory insertion across the alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "4-iodotoluene (ArI, regenerated catalyst)",
+      "smiles": "Cc1ccc(I)cc1",
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "At the anode, Cl- is oxidized (Eox 1.75 V) to an active [Cl+]ox species which oxidizes ArI to ArICl2; ArICl2 performs electrophilic cis-chloroiodination of the alkyne to give vinyl-iodonium B, intramolecular syn-migratory insertion onto the alkene gives cation C, and Cl- displaces ArI by nucleophilic substitution to yield the dichloride product while regenerating ArI; protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Under standard electrochemical conditions no conversion of 1a; however with pre-formed 4-Me-PhICl2 (no current) BHT did not inhibit product formation, indicating no free radical on the productive ArICl2 pathway"
+    },
+    {
+      "name": "1,2-diphenylethylene (DPE)",
+      "smiles": "C(=Cc1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "No conversion of 1a under standard electrochemical conditions, suggesting a radical step (Cl•) in the anodic mediator-generation phase"
+    },
+    {
+      "name": "no-current control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction without electric current, confirming current is required to generate the active oxidant"
+    },
+    {
+      "name": "stoichiometric 4-Me-PhICl2 (no current)",
+      "smiles": "Cc1ccc(I(Cl)Cl)cc1",
+      "purpose": "stoichiometric_intermediate",
+      "observation": "1.5 equiv 4-Me-PhICl2 without current gave 52% yield of 2a, supporting ArICl2 as the key catalytic intermediate"
+    },
+    {
+      "name": "Selectfluor / CsCl with ArI (no direct current step bypass)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "In situ chemical generation of 4-Me-PhICl2 also delivered the product, corroborating the ArICl2 intermediate"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "CV shows Et3N·HCl oxidizes at 1.75 V, below ArI at 1.98 V, and addition of ArI to Et3N·HCl produces a new peak matching 4-Me-C6H4ICl2 while the Et3N·HCl peak disappears — direct CV evidence that Cl- is oxidized first and rapidly transfers Cl to ArI. The authors note BHT inhibition under electrochemical conditions is 'not conclusive' for a free-radical productive pathway; the radical character is assigned only to the anodic Cl-/Cl• step generating ArICl2, after which the cyclization proceeds via cationic (iodonium/carbocation) intermediates, not a free C-radical chain. An asymmetric version is mentioned as ongoing work."
+}

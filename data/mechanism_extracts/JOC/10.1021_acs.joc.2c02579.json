@@ -1,0 +1,81 @@
+{
+  "doi": "10.1021_acs.joc.2c02579",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Metal-free electrochemical oxidative difluoroethylation/cyclization of N-arylacrylamides and N-methacryloyl-N-alkylbenzamides with sodium difluoroalkylsulfinates (RCF2SO2Na) to construct difluoroalkylated oxindoles and isoquinoline-1,3-diones.",
+  "mechanism_family": [
+    "radical_anodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation (SET) of the sulfinate anion MeCF2SO2- to a sulfonyl radical, which extrudes SO2 to give the difluoroethyl radical; a second anodic oxidation aromatizes the cyclohexadienyl radical intermediate; cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "sulfonyl radical A (MeCF2SO2•)",
+      "smiles": "[O]S(=O)C(F)(F)C",
+      "role": "transient"
+    },
+    {
+      "name": "difluoroethyl radical (•CF2Me)",
+      "smiles": "[C](F)(F)C",
+      "role": "reactive"
+    },
+    {
+      "name": "tertiary alkyl radical B (after addition to acrylamide)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclohexadienyl radical C (after ipso/ortho cyclization)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "BHT-trapped / DPE-trapped adduct 36",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes MeCF2SO2- by SET to sulfonyl radical A, which loses SO2 to give •CF2Me; this carbon radical adds to the acrylamide alkene to form radical B, which cyclizes onto the aryl ring to give cyclohexadienyl radical C; C is oxidized at the anode (−e-, −H+) to rearomatize to product, while protons are reduced at the cathode to H2.",
+  "rate_determining_step": "Anodic SET oxidation of MeCF2SO2Na to generate the difluoroethyl radical (MeCF2SO2Na oxidized at 0.72 V, more easily than the acrylamide at 1.35 V).",
+  "probe_reagents": [
+    {
+      "name": "BHT (2,6-di-tert-butyl-4-methylphenol)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction greatly inhibited; only trace product formed."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Reaction fully suppressed; DPE-CF2Me adduct 36 isolated in 42%, confirming free difluoroethyl radical."
+    },
+    {
+      "name": "Hu's cathodic-reduction conditions (benzothiazolyl difluoroethyl sulfone, TBAOAc)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "0% of oxindole 1 — cathodic-reduction protocol does not deliver the cyclized product, supporting an anodic-oxidation pathway."
+    },
+    {
+      "name": "difluoroethyl sulfone (replacing MeCF2SO2Na) under standard conditions",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "0% product, confirming that the difluoroethyl radical is produced by SET oxidation of the sulfinate, not from the sulfone."
+    },
+    {
+      "name": "controlled potential electrolysis at 0.73 V vs Ag/AgNO3",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Product 1 obtained in 64% yield, confirming sulfinate oxidation at the anode initiates the reaction."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "CV shows MeCF2SO2Na oxidation peak at 0.72 V vs N-methyl-N-phenylmethacrylamide at 1.35 V, indicating sulfinate is preferentially oxidized at the anode. The method also extends to cyclopropyldifluoromethylsulfinate. No KIE or DFT was reported; mechanism is supported by radical trapping, CV, and controlled-potential electrolysis."
+}

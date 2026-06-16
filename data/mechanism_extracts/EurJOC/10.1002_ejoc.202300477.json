@@ -1,0 +1,66 @@
+{
+  "doi": "10.1002_ejoc.202300477",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Enantioselective electrochemical 1,2-diacetoxylation of styrenes mediated by a chiral iodoarene (Ishihara-Muñiz-type iodoresorcinol-lactamide) catalyst",
+  "mechanism_family": [
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere",
+    "radical_cation"
+  ],
+  "electrochemical_role": "Anode oxidizes the chiral iodoarene catalyst (ArI) to a hypervalent I(III) species (ArI(OAc)2/ArI-OAc radical/cation), which then acts as the stoichiometric oxidant transferring two OAc groups to the styrene; direct anodic oxidation of the styrene to a radical cation is a competing background pathway leading to racemic product 3 and dimeric side-product 4",
+  "key_intermediates": [
+    {
+      "name": "styrene radical cation (from direct anodic oxidation, background racemic pathway)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "β-acetoxy benzylic radical (from AcOH addition to styrene radical cation)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "β-acetoxy benzylic cation (further oxidation, gives rac-3 after AcOH trap)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "dimeric distonic radical cation leading to side-product 4",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "ArI(•)-OAc (anodically generated iodine(II) radical intermediate of chiral catalyst)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ArI(OAc)2 (chiral hypervalent iodine(III) diacetate, active enantioselective oxidant)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "styrene–I(III) adduct / acetoxy-iodonium intermediate that delivers OAc enantioselectively",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "The anode oxidizes the chiral iodoarene (S,S)-1 stepwise in the presence of AcOH to give a chiral λ3-iodane ArI(OAc)2; this I(III) species then engages styrene to deliver two acetoxy groups enantioselectively, regenerating ArI. A competing direct anodic SET oxidation of styrene to its radical cation produces racemic 3 and dimer 4.",
+  "rate_determining_step": "Anodic oxidation of the iodoarene catalyst to the I(III) state (catalyst E_p/2 ~2.0 V vs Fc+/Fc is at the high end of the electrochemical window, identified as the key obstacle)",
+  "probe_reagents": [
+    {
+      "name": "glassy carbon anode (vs graphite)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Switching from graphite to glassy carbon anode changed yields and ee (e.g. 3a: 23%/84% ee → 71%/56% ee; 3c: 19%/78% ee → 30%/10% ee; 3e: 36%/81% ee → 40%/28% ee; 3j: 15%/33% ee → 31%/3% ee), showing electrode material modulates competition between catalyst-mediated enantioselective pathway and direct styrene oxidation"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Two competing mechanisms are presented in Scheme 4: (A) direct anodic oxidation of styrene generating a radical cation that is trapped by AcOH, oxidized further to a cation, and trapped again to give racemic 3 (with a dimeric C–C coupled side-product 4) — based on Schäfer's work; (B) the desired enantioselective pathway via anodically generated chiral I(III) species (ArI(OAc)2) that transfers two OAc groups to styrene — based on Ishihara/Muñiz precedent. Pathway B is the favored/intended mechanism. The authors note the catalyst's high oxidation potential (~2.0 V vs Fc+/Fc) is the main reason direct styrene oxidation competes and ee is moderate; this suggests the Ishihara–Muñiz iodoresorcinol-lactamide scaffold is not ideal for electrochemistry. No radical traps, KIE, or DFT were performed; mechanism is proposed by analogy to literature."
+}

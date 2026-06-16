@@ -1,0 +1,86 @@
+{
+  "doi": "10.1021_ja806259z",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Anodic oxidative cyclization of tosyl-sulfonamide-tethered enol ethers, thioenol ethers, allylsilanes, and styrenes to form proline (pyrrolidine) derivatives via olefin radical cation intermediates trapped by the nitrogen nucleophile",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_cation",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation (RVC anode, Pt cathode) of the electron-rich olefin (enol ether/thioenol ether/styrene/allylsilane) to a one-electron olefin radical cation; LiOMe/n-BuLi deprotonates the sulfonamide N-H to enhance nucleophilicity for intramolecular trapping",
+  "key_intermediates": [
+    {
+      "name": "olefin radical cation of enol/thioenol ether substrate (6)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "nitrogen-centered (aminyl) radical resonance form of 6",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "C-centered cyclized radical (7) after C-N bond formation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alpha-alkoxy/thio carbocation (8) formed by second anodic oxidation of 7",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "methoxylated pyrrolidine product (4) after MeOH trapping and deprotonation",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode removes one electron from the electron-rich olefin to give a radical cation (resonance: olefin radical cation with N-anion, or N-centered radical with olefin); intramolecular C-N bond formation gives a C-centered radical (7), which is oxidized at the anode to a cation (8), then trapped by methanol to give the proline product.",
+  "rate_determining_step": "Intramolecular cyclization of the radical cation by the deprotonated sulfonamide nitrogen (rate enhanced by LiOMe-mediated N-H deprotonation); under fast cyclization, methanol trapping of cation 8 must also be rapid to preserve yield",
+  "probe_reagents": [
+    {
+      "name": "methanol vs 30% methanol/THF solvent variation",
+      "smiles": "CO",
+      "purpose": "intermediate_trap",
+      "observation": "Switching from MeOH to 30% MeOH/THF dropped yield of 4g from 83% to 28%, indicating that rapid trapping of cation 8 by MeOH is required after fast cyclization"
+    },
+    {
+      "name": "LiOMe (basic additive)",
+      "smiles": "[Li+].[O-]C",
+      "purpose": "other",
+      "observation": "Improved cyclization yields by deprotonating the sulfonamide N-H, increasing N nucleophilicity"
+    },
+    {
+      "name": "less polar thioenol ether substrate (3b/3f)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Less polar radical cation gave higher yields, supporting a discrete radical cation intermediate"
+    },
+    {
+      "name": "lowered electrolyte concentration (0.03 M Et4NOTs)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Suppressed over-oxidation/elimination side path; raised yield of 4c to 50% and 4d to 73%"
+    },
+    {
+      "name": "allylsilane substrate 9a",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Anodic oxidation of allylsilane initiated cyclization in 90% yield, consistent with radical cation generation on electron-rich olefin"
+    },
+    {
+      "name": "styrene substrate 9b",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Oxidation of styrene moiety triggered cyclization (88%), supporting generality of olefin radical cation mechanism"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two resonance descriptions are given for intermediate 6: (a) olefin radical cation trapped by a nitrogen anion, or (b) a nitrogen-centered radical adding to the electron-rich olefin; the authors treat these as resonance forms rather than distinct mechanisms. Product 4g is formed as a single diastereomer, consistent with prior cyclizations using alcohol nucleophiles and ketene dithioacetals, suggesting a well-defined stereochemistry-determining cyclization transition state. No TEMPO/BHT trapping, KIE, or DFT studies are reported on these pages."
+}

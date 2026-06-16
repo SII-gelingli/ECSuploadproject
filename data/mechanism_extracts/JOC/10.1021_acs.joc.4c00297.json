@@ -1,0 +1,70 @@
+{
+  "doi": "10.1021_acs.joc.4c00297",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative sulfonylation-azidation of alkenes using arylsulfonyl hydrazides and TMSN3 to give β-azidoarylsulfones via radical-polar crossover",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of arylsulfonyl hydrazide to sulfonyl radical (with -3H+, -3e-, -N2); subsequent anodic oxidation of benzyl radical intermediate to benzyl cation; cathodic reduction of protons to H2",
+  "key_intermediates": [
+    {
+      "name": "arylsulfonyl radical (A)",
+      "smiles": "[O]=S(=O)([c]1ccc(C)cc1)[*]",
+      "role": "reactive"
+    },
+    {
+      "name": "β-sulfonyl benzyl carbon radical (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-sulfonyl benzyl carbocation (C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "azide anion from TMSN3",
+      "smiles": "[N-]=[N+]=[N-]",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the arylsulfonyl hydrazide (losing 3e-, 3H+, N2) to generate a sulfonyl radical A, which adds to the styrene to give benzyl radical B; B is further oxidized at the anode to benzyl cation C, which is trapped by azide from TMSN3, while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": "Anodic oxidation of the sulfonyl hydrazide 1a (CV shows 1a oxidizes at lower potential than 2a; TMSN3 shows no oxidation peak)",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely suppressed (4aa, 0%); TEMPO-sulfonyl adduct 5 detected by HRMS ([M+H]+ 430.2392)"
+    },
+    {
+      "name": "(1-cyclopropylvinyl)benzene",
+      "smiles": "C(=C)(c1ccccc1)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 4ay isolated in 6% along with normal product 4ax (62%), confirming radical intermediate"
+    },
+    {
+      "name": "alkene-tethered diol substrate 6",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Without TMSN3, intramolecular OH nucleophile traps the cation to give ring-formed tetrahydrofuran 7 in 51%, supporting carbocation intermediate"
+    },
+    {
+      "name": "cyclic voltammetry of 1a, 2a, 3",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "1a oxidation peak much lower than 2a; TMSN3 shows almost no oxidation peak, indicating 1a is oxidized first at anode"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Carbocation intermediate C is supported by trapping with internal hydroxyl nucleophile (Scheme 2d). Strongly electron-donating (p-OMe) and electron-withdrawing (p-NO2) styrenes failed, and p-CF3 styrene gave only trace product, consistent with the need for a moderately stabilizable benzylic radical/cation. α-substituted styrenes give higher yields due to more stable tertiary benzyl cation/radical."
+}

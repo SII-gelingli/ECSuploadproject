@@ -1,0 +1,95 @@
+{
+  "doi": "10.1002_chem.202005368_sup_1",
+  "journal": "Chemistry",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical trifluoromethylation/cyclization of N-aryl acrylamides bearing 2-aryl indoles followed by oxidative indole cleavage to give CF3-containing isoquinolinediones",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anode oxidizes CF3SO2Na (Langlois reagent) to generate CF3 radical (loss of SO2, e-); subsequent intermediates are further oxidized anodically through several SET steps, with cathode reducing H+/H2O to H2 and regenerating mediator",
+  "key_intermediates": [
+    {
+      "name": "CF3 radical from anodic oxidation of CF3SO2Na",
+      "smiles": "[CH0](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical A' after CF3 addition to acrylamide alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "spirocyclic indolyl radical B' after radical cyclization onto indole C3",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "indolenium cation C' after anodic oxidation of B'",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "deprotonated neutral spiro indoline (azafulvene-type) intermediate",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "radical cation D' from further anodic SET",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "hydroxylated adduct E' from H2O addition to radical cation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "dihydroxy intermediate F'/G' en route to C-C cleavage",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ring-opened diketo/ortho-acyl amide product 5 (3a) after oxidative C-C cleavage of indole",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "spirocyclic isoquinolinedione 3aa' (kinetic product, converts to 3a)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anodic oxidation of CF3SO2Na releases CF3 radical, which adds to the acrylamide alkene; the resulting C-radical cyclizes onto the 2-aryl indole to give a spiro indolinyl radical, which undergoes sequential anodic SET oxidations and H2O additions to install two oxygens at the indole C2-C3 bond, ultimately cleaving the indole ring to the isoquinolinedione product. The cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3a formed in 0%; TEMPO-CF3 adduct detected by HRMS ([M+H]+ calc 226.1408, found 226.1427), supporting CF3 radical intermediate"
+    },
+    {
+      "name": "H2-18O",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "HRMS of product from reaction in H2-18O shows incorporation of one and two 18O atoms (m/z 468.0851 mono-18O and 470.0893 di-18O alongside 466.0818 unlabeled), confirming both carbonyl oxygens of cleavage product derive from water"
+    },
+    {
+      "name": "Time-course / reaction profile of 1a",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "3aa' accumulates early (up to ~47% at 4 h) then decays as 3a grows, indicating 3aa' is an on-pathway intermediate that is further oxidized/cleaved to 3a"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "H/D_labeling",
+    "isotope_label",
+    "product_isotope_distribution",
+    "kinetic_order",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Mechanism proposed for difluoroalkylation variant in Figure S6 is drawn analogously (CF2H instead of CF3) and invokes a Mn(II)/Mn(III) mediator in one cycle branch; alternative would be direct anodic SET without mediator. Spiro intermediate 3aa' is competent and converts to 3a, supporting an indole oxidative C-C cleavage by sequential water addition/SET rather than a single dioxygenation event."
+}

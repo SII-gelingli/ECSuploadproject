@@ -1,0 +1,82 @@
+{
+  "doi": "10.1021_acscatal.3c02072",
+  "journal": "ACSCatal",
+  "is_review": false,
+  "rxn_class_summary": "Cobalt-catalyzed enantioselective electrochemical C-H annulation of benzamides/diarylphosphinic amides with allenes to afford C-N axially chiral isoquinolinone/phosphinamide products",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation selectively oxidizes Co(II) to Co(III) catalyst, enabling chiral cobaltacycle formation without chemical oxidant; Co(III)/Co(I)/Co(II) redox cycle supported by CV",
+  "key_intermediates": [
+    {
+      "name": "Co(III) cobaltacycle from benzamide with 4-methoxypyridine and chiral oxazoline ligand L3 (intermediate 45)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(III) cobaltacycle from diarylphosphinic amide with L2 and 4-methoxypyridine (intermediate 46)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(II) resting/precatalyst species (Co(OAc)2 with L3/NaOPiv)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Co(I) species generated after C-N bond-forming reductive elimination",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Co(II)/L complex to Co(III), enabling concerted metalation-deprotonation (CMD) C-H activation to form chiral cobaltacycle; allene migratory insertion followed by C-N reductive elimination releases product and Co(I), which is reoxidized at the anode back to Co(III)/Co(II).",
+  "rate_determining_step": "Not C-H cleavage (KIE PH/PD ≈ 1.2 indicates C-H activation is not rate-determining); likely allene insertion or subsequent reductive elimination",
+  "probe_reagents": [
+    {
+      "name": "[D5]-benzamide substrate (d-substrate)",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "Intermolecular competition gave PH/PD ≈ 1.2, indicating C-H cleavage is not the rate-determining step"
+    },
+    {
+      "name": "4-methoxypyridine",
+      "smiles": "COc1ccncc1",
+      "purpose": "intermediate_trap",
+      "observation": "Stabilized Co(III) cobaltacycles 45 and 46, allowing their isolation"
+    },
+    {
+      "name": "Isolated cobaltacycle 45",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Stoichiometric reaction with allene 2 + NaOPiv delivered product 3 in 52% yield, 99% ee, supporting catalytic relevance"
+    },
+    {
+      "name": "Isolated cobaltacycle 46",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Stoichiometric reaction with allene 2 + NaOPiv gave product 31 in 41% yield, 99% ee"
+    },
+    {
+      "name": "Cyclic voltammetry of Co(OAc)2/NaOPiv/L3 ± substrate 1",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Co(OAc)2/NaOPiv shows no relevant redox; addition of L3 produces clear oxidation waves (mono- and bis-L3 Co species); reversible wave at 0.8 V vs SCE becomes less reversible upon adding substrate 1, supporting Co(III)/Co(I)/Co(II) catalytic pathway"
+    },
+    {
+      "name": "Thermal racemization of product 3",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Racemization barrier 39.4 kcal/mol, t1/2 ≈ 2.7×10^8 years at 25 °C — confirms configurational stability of C-N axis"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "cyclic_voltammetry",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "4-Methoxypyridine is used as an ancillary ligand to stabilize otherwise unstable Co(III) cobaltacycle intermediates for isolation/characterization. The authors explicitly favor a Co(III)/Co(I)/Co(II) electrocatalytic cycle in which anodic oxidation replaces a stoichiometric chemical oxidant; this is also implemented in a continuous-flow electrochemical reactor enabling decagram-scale synthesis without supporting electrolyte."
+}

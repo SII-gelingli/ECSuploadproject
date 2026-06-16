@@ -1,0 +1,79 @@
+{
+  "doi": "10.1021_jacs.0c03993",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Photoinduced palladium-catalyzed three-component 1,2-carbofunctionalization (aminoalkylation, oxyalkylation, dialkylation) of 1,3-dienes with alkyl iodides and N/O/C-nucleophiles via a π-allyl Pd radical-polar crossover pathway",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "photoredox_combined",
+    "direct_SET"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "photoexcited LnPd(0)*",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "hybrid alkyl radical / LnPd(I)-X species (C) formed via SET to R3-I",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkyl radical R3• adding to terminal diene carbon",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "π-allyl Pd(I) radical intermediate A (allyl radical / Pd(I) hybrid)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cationic π-allyl Pd(II) intermediate B (after radical-polar crossover, stabilized by triflimide as weakly coordinating anion)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Xantphos π-allyl Pd complex with iodide counterion (82)",
+      "smiles": null,
+      "role": "stoichiometric_model"
+    },
+    {
+      "name": "Xantphos π-allyl Pd complex with triflimide counterion (83)",
+      "smiles": null,
+      "role": "stoichiometric_model"
+    }
+  ],
+  "electron_flow": "Blue-light photoexcited LnPd(0) performs single-electron transfer to the alkyl iodide, generating an alkyl radical and LnPd(I)-I; the alkyl radical adds to the terminal carbon of the 1,3-diene to give an allyl radical that combines with Pd(I) as π-allyl Pd radical A, which undergoes radical-polar crossover (favored by the weakly coordinating NTf2- anion from AgNTf2) to cationic π-allyl Pd(II) species B, where the amine/O-/C-nucleophile attacks to deliver the 1,2-product and regenerate LnPd(0).",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "With TEMPO added to the standard reaction, the aminoalkylation product 4a was suppressed (0%) and a TEMPO-alkyl adduct 80 was isolated in 22% NMR yield, consistent with a free alkyl radical intermediate."
+    },
+    {
+      "name": "Reaction without AgNTf2 (counterion control)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Without AgNTf2, aminoalkylation product 4a forms in 44% NMR yield along with 34% of allyl-radical dimerization byproduct 81, indicating that the triflimide anion suppresses radical dimerization by stabilizing the cationic π-allyl Pd species."
+    },
+    {
+      "name": "Stoichiometric Xantphos π-allyl Pd complexes 82 (X=I) and 83 (X=NTf2) with TEMPO",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Under blue LED, both complexes gave TEMPO-allyl trapping product 84 (82: 74%; 83: 59%), but under thermal/dark conditions only 82 reacted (50%) while 83 was unreactive (0%), supporting that NTf2- stabilizes the π-allyl Pd complex against homolysis and shifts the equilibrium toward the ionic π-allyl Pd cation."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "stoichiometric_intermediate",
+    "on/off_light_or_current",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "The mechanism hinges on a radical ⇌ ionic π-allyl Pd equilibrium (A ⇌ B); weakly coordinating triflimide (from AgNTf2) shifts this toward the electrophilic cationic π-allyl Pd intermediate B, enabling nucleophile attack and suppressing radical dimerization. Photoexcitation is required for SET to alkyl iodide; thermal reactivity of iodide complex 82 with TEMPO suggests some Pd-allyl homolysis is accessible thermally, but productive turnover requires light. No DFT, KIE, or radical clock experiments are reported."
+}

@@ -1,0 +1,90 @@
+{
+  "doi": "10.1002_anie.202300533_sup_2",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Iron-catalyzed electrochemical nitration of alkenes, alkynes, aryl boronic acids and arenes (including halo-, decarboxylative, and deborylative variants) using Fe(NO3)3 as both NO2-radical source and redox mediator",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "electrocatalysis_inner_sphere",
+    "mediator_cathodic",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Cathodic reduction of Fe(III) to Fe(II) initiates the cycle; Fe(II) reduces nitrate (or Fe(III)-bound nitrate) to release NO2 radical; the Fe(II) generated is re-oxidized at the anode (along with halide A- to A2) to regenerate Fe(III)",
+  "key_intermediates": [
+    {
+      "name": "NO2 radical",
+      "smiles": "[O]N=O",
+      "role": "reactive"
+    },
+    {
+      "name": "Fe(II) species (reduced mediator)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Fe(III) oxo/hydrate resting state (FeIIIxO2·nH2O)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "beta-nitro carbon radical (R-CH(•)-CH2NO2)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[FeIII-X] halide complex for ligand transfer (X = Br, Cl)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "beta-halo-nitroalkane (R-CHX-CH2NO2) prior to base elimination",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alpha-nitro-beta-Bpin carbon radical (deborylative pathway)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alpha-nitro-beta-carboxylate Fe(III) intermediate (decarboxylative pathway)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "nitro-substituted cyclohexadienyl radical/cation (aryl nitration)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Cathode injects an electron into Fe(III) to give Fe(II), which reduces nitrate to NO2 radical; NO2• adds to the alkene/alkyne or aryl pi-system to give a C-centered radical that is intercepted by Fe(III)-X ligand transfer (halonitration), by loss of CO2/Bpin/H+ (decarboxylative/deborylative/aromatic nitration); at the anode, halide is oxidized to X2 and Fe(II) reoxidized to Fe(III), closing the cycle.",
+  "rate_determining_step": "Generation/release of NO2 radical from Fe(III)-nitrate via Fe(II) (electron injection-dependent), consistent with on/off current induction behavior",
+  "probe_reagents": [
+    {
+      "name": "1-chloro-4-(1-cyclopropylvinyl)benzene (radical clock)",
+      "smiles": "ClC1=CC=C(C(=C)C2CC2)C=C1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened bromo-nitroalkene product 4 isolated in 77% (E:Z = 1.1:1), confirming a carbon-centered radical intermediate after NO2• addition"
+    },
+    {
+      "name": "Current on/off",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Conversion proceeds only while current is applied; no dark propagation, indicating continuous electrochemical initiation/turnover of Fe and induction period at low F/mol"
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Invoked in decarboxylative mechanism as trapping the α-nitro-β-carboxylate radical, supporting radical intermediate"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "on/off_light_or_current",
+    "intermediate_trap_TEMPO",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism is unified across four substrate classes (alkenes, vinyl acids, vinyl boronates, arenes/ArB(OH)2) with the same Fe(III)/Fe(II) electrocatalytic cycle releasing NO2•. For halonitration, the C-radical is captured by Fe(III)-X (radical ligand transfer) and then undergoes base-mediated E2/intramolecular SN2 to give nitroalkenes or nitrolactones (81 & 82). For aryl nitration the cyclohexadienyl radical is oxidized by Fe(III) to a Wheland cation that loses H+ or B(OH)2 (ipso). An alternative direct anodic oxidation of nitrate to NO2• cannot be fully excluded but the Fe-mediated cathodic-initiation pathway is favored."
+}

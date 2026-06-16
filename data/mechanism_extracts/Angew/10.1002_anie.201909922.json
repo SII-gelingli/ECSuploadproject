@@ -1,0 +1,95 @@
+{
+  "doi": "10.1002_anie.201909922",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical anodic decarboxylative lactonisation of allyl hemioxalate salts with aliphatic carboxylic acids to form γ-butyrolactones via radical cyclisation/cross-coupling",
+  "mechanism_family": [
+    "radical_anodic",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation (Pt) of the hemioxalate salt to an oxycarbonyl radical via decarboxylation, while the cathode (Pt) reduces protons (from MeOH/NH4+/co-acid) generating methoxide that deprotonates the co-acid; both electrodes contribute productively (paired electrolysis)",
+  "key_intermediates": [
+    {
+      "name": "oxycarbonyl radical from hemioxalate (A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "carbon-centred CH2 radical after 5-exo-trig cyclisation (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carboxylate of aliphatic co-acid (C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkyl radical R• from decarboxylation of co-acid",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "R-R homodimer",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "acyl nitrene/isocyanate from oxamic acid (lactam attempt)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "carbamate 20 from methoxide trapping of nitrogen-centred cation",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidises the hemioxalate to an oxycarbonyl radical that loses CO2 and undergoes 5-exo-trig cyclisation onto the pendant alkene, giving a primary C-radical; in parallel, the co-acid carboxylate is anodically decarboxylated to an alkyl radical, and the two radicals recombine at/near the electrode to give the γ-substituted lactone; the cathode reduces protons to H2, generating methoxide that maintains deprotonation of the co-acid.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of hemioxalate vs aliphatic acid",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Hemioxalate 1 is easier to oxidise than the aliphatic co-acid, justifying portionwise addition of 1 to maintain low concentration"
+    },
+    {
+      "name": "carbon graphite electrode (control)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Unsuitable due to high H overpotential and strong adsorption of organics; supports choice of Pt"
+    },
+    {
+      "name": "deoxygenation/drying of solvent",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No impact on yield, consistent with robust radical pathway at electrode surface"
+    },
+    {
+      "name": "N-tosyl hemioxalate 18 (lactam attempt)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "No exo-cyclisation; instead overoxidation to N-centred cation trapped by MeOH/MeO- to give carbamate 20, indicating cation formation outcompetes radical cyclisation for N-substrates"
+    },
+    {
+      "name": "secondary co-acid (→ lactone 7)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Lower yield consistent with known anodic overoxidation of secondary alkyl radicals to carbocations"
+    },
+    {
+      "name": "halide-bearing co-acid (→ lactone 10)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Halogenated chain tolerated, indicating short radical lifetime / rapid recombination near electrode (no halide abstraction)"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Main by-product is the R-R homodimer from co-acid radicals; excess (5 equiv) co-acid is used to suppress homo-dimerisation of the cyclised radical. Attempted lactam synthesis from oxamic acids fails because nitrogen lone pair stabilises a cation pathway; even with EWG (Ts, OTf) on N, overoxidation dominates and methoxide traps the cation to give carbamate 20 rather than radical cyclisation product 19."
+}

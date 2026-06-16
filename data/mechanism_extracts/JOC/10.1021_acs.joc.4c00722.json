@@ -1,0 +1,37 @@
+{
+  "doi": "10.1021_acs.joc.4c00722",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical fluorosulfonylation of styrenes with sodium arylsulfinates and Et3N·3HF to give β-fluorosulfones via radical-polar crossover",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of sodium arylsulfinate (2a) to a sulfonyl radical; subsequent anodic oxidation of the benzylic radical adduct to a benzylic cation; cathodic reduction of protons generates H2 (obviating chemical oxidant)",
+  "key_intermediates": [
+    {
+      "name": "arylsulfonyl radical (I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical from sulfonyl addition to styrene (II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic cation (III)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes ArSO2Na (2a) to sulfonyl radical I, which adds to the styrene to give benzylic radical II; a second anodic oxidation forms benzylic cation III, which is trapped by fluoride from Et3N·3HF to deliver the β-fluorosulfone 3. Protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism is proposed primarily on the basis of CV showing low oxidation potential of sulfinate 2a (oxidized first) and analogy to literature precedents; no radical-trap (TEMPO/BHT), KIE, or DFT experiments are reported on this page. The same paradigm is extended to fluorothiocyanation (with NH4SCN) and to vinylsulfonylation (with stainless-steel cathode)."
+}

@@ -1,0 +1,95 @@
+{
+  "doi": "10.1039_D3CC05770D",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical Wacker-type aerobic oxygenation of triaryl-substituted alkenes to 1,2,2-triarylethanones using O2 as oxygen source in an undivided cell with LiClO4/CH3CN",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_anodic",
+    "radical_cathodic",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the triaryl alkene to a radical cation (Eox ~2.1 V vs SCE); simultaneous cathodic reduction of O2 to superoxide (Ered ~ -0.91 V vs SCE)",
+  "key_intermediates": [
+    {
+      "name": "alkene radical cation (3)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "zwitterionic peroxide adduct from radical cation + superoxide (4)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "1,2-dioxetane (four-membered peroxide ring, 5)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "superoxide radical anion (O2•-)",
+      "smiles": "[O-][O]",
+      "role": "reactive"
+    },
+    {
+      "name": "ethylene oxide-type epoxide intermediate (6)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, the triaryl alkene undergoes single-electron oxidation to a radical cation; at the cathode, O2 is reduced to superoxide. Superoxide couples with the radical cation to give a zwitterion that cyclizes to a 1,2-dioxetane, which fragments with a 1,2-aryl shift to deliver the 1,2,2-triarylethanone (and an epoxide that further rearranges to the same ketone).",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Only trace product 2a formed, indicating involvement of a radical pathway"
+    },
+    {
+      "name": "BHT (2,6-di-tert-butyl-4-methylphenol)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction strongly inhibited; only trace 2a"
+    },
+    {
+      "name": "no-current control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No 2a formed without applied current, confirming electrochemical activation is required"
+    },
+    {
+      "name": "ultra-dry conditions",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Yield of 2a unchanged (71%), excluding H2O as oxygen source"
+    },
+    {
+      "name": "18O2",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "HRMS shows 18O-labeled 2a, confirming O2 as the oxygen source"
+    },
+    {
+      "name": "H2 18O under Ar",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "No product formed, excluding water as oxygen source"
+    },
+    {
+      "name": "cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "O2 reduced at -0.91 V vs SCE; 1a oxidized at ~2.1 V vs SCE, supporting paired anodic/cathodic events"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "on/off_light_or_current",
+    "product_isotope_distribution",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors invoke a 1,2-dioxetane intermediate that fragments with 1,2-aryl migration of the electron-rich aryl group to rationalize the 1,2,2-triarylethanone connectivity; an alternative pathway via an epoxide intermediate (6) that rearranges (Meinwald-type) is proposed as a parallel route to the same ketone. No DFT or KIE reported."
+}

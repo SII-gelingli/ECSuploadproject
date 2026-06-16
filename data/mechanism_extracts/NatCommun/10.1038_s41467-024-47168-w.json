@@ -1,0 +1,132 @@
+{
+  "doi": "10.1038_s41467-024-47168-w",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electroreductive hydrogenation/deuteration of unactivated alkyl alkenes using catalytic Ph3SiCl as an H/D-carrier and H2O/D2O as the H/D source, with sacrificial Fe anode and Ni-bipyridine co-catalyst",
+  "mechanism_family": [
+    "mediator_cathodic",
+    "sacrificial_anode",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Cathodic two-electron reduction of Ph3SiCl (silicon mediator) generates a silyl anion that is protonated by H2O to give Ph3SiH; the sacrificial Fe anode releases Fe(n+) salts that, upon further reduction, form the active [Fe]-H species via sigma-bond metathesis with Ph3SiH",
+  "key_intermediates": [
+    {
+      "name": "silyl radical Ph3Si• (intermediate A)",
+      "smiles": "[Si](c1ccccc1)(c1ccccc1)c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "silyl anion Ph3Si- (intermediate B)",
+      "smiles": "[Si-](c1ccccc1)(c1ccccc1)c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "silane Ph3SiH (intermediate C)",
+      "smiles": "[SiH](c1ccccc1)(c1ccccc1)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Fe-halide/BF4 species Fe-INT1A",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "iron hydride [Fe]-H (Fe-INT2A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "linear alkyl-iron Fe-INT3A (major after migratory insertion)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "branched alkyl-iron Fe-INT3B (minor)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "iron hydroxide [Fe]-OH (Fe-INT4A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "silanol Ph3SiOH (D, regenerates Ph3SiX via fluorination)",
+      "smiles": "O[Si](c1ccccc1)(c1ccccc1)c1ccccc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "fluorosilane Ph3SiF (re-enters Si cycle)",
+      "smiles": "F[Si](c1ccccc1)(c1ccccc1)c1ccccc1",
+      "role": "resting_state"
+    },
+    {
+      "name": "Ni(0)-dtbpy complex (minor pathway co-catalyst)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces Ph3SiCl by two sequential SETs to silyl radical then silyl anion, which is protonated by H2O to Ph3SiH; sacrificial Fe anode dissolves to give Fe(n+), which after reduction undergoes sigma-bond metathesis with Ph3SiH to form [Fe]-H. [Fe]-H performs migratory insertion across the alkene, and the resulting alkyl-Fe is protonated by H2O to release the hydrogenated product and Fe-OH, closing both Si and Fe cycles.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "Ph3SiH (instead of Ph3SiCl)",
+      "smiles": "[SiH](c1ccccc1)(c1ccccc1)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Affords product in 73% yield, supporting silane as the operative H-carrier intermediate"
+    },
+    {
+      "name": "alkyl-SiMe3 (substrate 75)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "No hydrogenation product; 86% substrate recovered, showing Si-Cl bond (not Si-C) is the activated bond"
+    },
+    {
+      "name": "PhMe2SiD / D2O",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "α and β positions deuterated (up to 85/79% D-inc.); two H atoms come from silane and from water; w/o NiBr2·dtbpy α-D drops (56/85), supporting Ni-assisted insertion"
+    },
+    {
+      "name": "((1R,2S)-2-vinylcyclopropyl)benzene (76)",
+      "smiles": "C=C[C@H]1C[C@@H]1c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 77 (20%) and unopened hydrogenation product 78 (33%) detected, consistent with β-carbon elimination from a metal-alkyl intermediate (not free radical)"
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": ">99% D-incorporation at terminal alkene carbons; chain-walking gives multi-site D-labeling in internal alkenes"
+    },
+    {
+      "name": "TMSCl / TMSBr (19F NMR monitoring)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Rapid conversion to TMSF via reaction with TBABF4, evidencing fluorosilane as a viable mediator state"
+    },
+    {
+      "name": "no electricity control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product formed (>99% substrate recovered), confirming electrochemical activation is essential"
+    },
+    {
+      "name": "cyclic voltammetry of Ph3SiCl and Ni/L",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Ph3SiCl reduces at Ep/2 = -2.4 V; Ni(II)/Ni(I) at -1.82 V and Ni(I)/Ni(0) at -2.55 V; addition of Ph3SiCl enhances Ni(0) generation"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "intermediate_trap_other",
+    "product_isotope_distribution",
+    "crossover"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two interconnected catalytic cycles are proposed: a Si-mediator cycle (Ph3SiCl → Ph3Si• → Ph3Si- → Ph3SiH → Ph3SiX) and an Fe-hydride cycle that performs migratory insertion/protonation on the alkene. A minor parallel Ni-catalyzed cycle is also invoked (supported by ring-opening of vinylcyclopropane and Ni CV data) and detailed in SI. Heterogeneous hydrogenation on Fe-coated Ni foam contributes as well, since Zn(+) or Mg(+) anodes give product only when the cathode is pre-coated with Fe particles. Authors favor the [Fe]-H pathway over a free-radical pathway based on the radical-clock outcome (β-carbon elimination from alkyl-Fe rather than radical ring-opening)."
+}

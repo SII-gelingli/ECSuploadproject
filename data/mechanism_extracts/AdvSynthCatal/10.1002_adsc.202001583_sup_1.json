@@ -1,0 +1,57 @@
+{
+  "doi": "10.1002_adsc.202001583_sup_1",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical bromocyclization of N-aryl acrylamides with KBr to form bromo-substituted indolo[2,1-a]isoquinolines",
+  "mechanism_family": [
+    "radical_anodic",
+    "cation_initiated",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of bromide (Br-) from KBr to generate Br radical (Path A) or Br2/bromonium (Path B); cathodic reduction of protons to H2",
+  "key_intermediates": [
+    {
+      "name": "bromine radical (Br•) from anodic oxidation of Br-",
+      "smiles": "[Br]",
+      "role": "reactive"
+    },
+    {
+      "name": "C-centered radical E from Br• addition to olefin of 1a",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexadienyl radical F after 6-endo-trig cyclization onto aryl ring",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "arenium cation G after further anodic oxidation (or Br2 oxidation) of F",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "bromonium ion H from Br2 addition to olefin (Path B)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Wheland/arenium intermediate I after electrophilic cyclization (Path B)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "product 4a (bromomethyl indolo[2,1-a]isoquinoline)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, Br- is oxidized to Br• (or further to Br2); in Path A, Br• adds to the acrylamide olefin to give C-radical E, which undergoes 6-endo-trig cyclization onto the pendant aryl to give radical F, then a second anodic oxidation (or Br2) yields arenium cation G, which loses H+ to afford 4a. Meanwhile, protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Two pathways are proposed. Favored Path A is a radical cascade (Br• addition / 6-endo-trig / oxidation / deprotonation), analogous to the authors' sulfonyl-radical cyclization to indolo[2,1-a]isoquinolines. Alternative Path B is an electrophilic bromocyclization via a bromonium ion H and arenium I. Mechanism is proposed based on prior literature analogy rather than dedicated probe experiments shown on this page."
+}

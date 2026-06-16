@@ -1,0 +1,154 @@
+{
+  "doi": "10.1021_jacs.9b05572",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Visible-light photocatalytic remote double functionalization of 5-aryl-1,2,4-oxadiazolines to spiro-azalactams via energy-transfer-generated iminyl radicals and singlet oxygen.",
+  "mechanism_family": [
+    "photoredox_combined",
+    "biradical",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "triplet excited oxadiazoline 1a*",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "singlet oxygen (1O2)",
+      "smiles": "O=O",
+      "role": "reactive"
+    },
+    {
+      "name": "5-hydroperoxy oxadiazoline excited species D*",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "iminyl (N-centered) radical A",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "spirocyclic C-centered radical E (post-ipso attack)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexadienyl hydroperoxide F",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "hydroperoxyl radical HOO•",
+      "smiles": "O[O]",
+      "role": "transient"
+    },
+    {
+      "name": "radical cation B (excluded electron-transfer intermediate)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "radical anion C (excluded electron-transfer intermediate)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "fac-Ir(ppy)3 is photoexcited and undergoes triplet-triplet energy transfer in parallel to both the oxadiazoline 1a (giving 1a*) and to O2 (giving 1O2); 1O2 inserts at C5 of 1a* to form excited hydroperoxide D*, whose homolytic N–O cleavage releases HOO• and an iminyl radical A that performs ipso attack on the pendant arene, with the resulting spirocyclic radical E trapped by O2/HOO• at the para position to give 3a after loss of water.",
+  "rate_determining_step": "Homolytic N–O bond cleavage of the excited hydroperoxy intermediate D* generating iminyl radical A (DFT TS1 N–O ≈ 24.9 kcal/mol on the favored pathway).",
+  "probe_reagents": [
+    {
+      "name": "18O2 isotopic labeling",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "Product 3a exclusively contained 18O, confirming O2 as the oxygen source incorporated at the para position."
+    },
+    {
+      "name": "SmI2 (chemical one-electron reductant)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No 3a formed (0%); 1a recovered (94%), excluding a reductive SET pathway via radical anion B."
+    },
+    {
+      "name": "Ceric ammonium nitrate (CAN)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Gave only 2a (20%) and trace 3a, ruling out oxidative SET pathway via radical cation C."
+    },
+    {
+      "name": "Benzil (triplet sensitizer, ET = 2.57 eV)",
+      "smiles": "O=C(c1ccccc1)C(=O)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Afforded 3a (32%), supporting triplet-triplet energy-transfer activation of 1a."
+    },
+    {
+      "name": "1,3-Diphenylisobenzofuran (DPBF)",
+      "smiles": "c1ccc(-c2oc(-c3ccccc3)c4ccccc24)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Bleaching of DPBF absorbance confirmed 1O2 generation by fac-Ir(ppy)3; ΦΔ = 0.95."
+    },
+    {
+      "name": "DABCO (1O2 quencher)",
+      "smiles": "C1CN2CCN1CC2",
+      "purpose": "intermediate_trap",
+      "observation": "Reaction completely suppressed (0% 3a), confirming requirement of singlet oxygen."
+    },
+    {
+      "name": "NaN3 (1O2 quencher)",
+      "smiles": "[N-]=[N+]=[N-].[Na+]",
+      "purpose": "intermediate_trap",
+      "observation": "Yield reduced to 33%, consistent with 1O2 involvement."
+    },
+    {
+      "name": "Sterically hindered 2,6-disubstituted substrate 1b",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No 3b formed; ipso attack sterically disfavored, supporting iminyl radical ipso cyclization."
+    },
+    {
+      "name": "Chemical 1O2 sources (NaOH/Na2MoO4/H2O2 or Ca(OH)2/H2O2)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No 3a formed (1a recovered 97%), showing 1a* (not ground-state 1a) is required."
+    },
+    {
+      "name": "Benzoyl peroxide (PhCO2)2",
+      "smiles": "O=C(OOC(=O)c1ccccc1)c1ccccc1",
+      "purpose": "other",
+      "observation": "Only 10% 3a with 31% 2a side product, demonstrating need for visible-light photocatalysis."
+    },
+    {
+      "name": "Light on/off and photon flux variation",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No dark reactivity; nonlinear photon-flux dependence consistent with two-photon excitation of both 1a and O2."
+    },
+    {
+      "name": "Ferrioxalate actinometry",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Quantum yield 16–18% (<50%), excluding radical chain propagation."
+    },
+    {
+      "name": "Cyclic voltammetry of 1a / fac-Ir(ppy)3",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Eox(1a)=+1.24 V, Ered(1a)=−2.16 V vs SCE vs E*red(Ir)=+0.16 V and E*ox(Ir)=−1.62 V — both SET directions thermodynamically forbidden."
+    }
+  ],
+  "evidence_types_used": [
+    "isotope_label",
+    "intermediate_trap_other",
+    "on/off_light_or_current",
+    "UV_vis",
+    "cyclic_voltammetry",
+    "DFT",
+    "isolation_of_intermediate",
+    "kinetic_order",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors favor dual energy-transfer (Dexter to 1a, confirmed by ln(ET rate) ∝ [1a]^(−1/3); Förster-like to O2) producing 1a* and 1O2 that combine to D*, then homolytic N–O cleavage to iminyl radical A and ipso arene attack. An alternative pathway (ortho-hydroperoxidation of spiro radical E followed by [1,3]-sigmatropic shift via intermediate F) is mentioned as plausible based on DFT spin densities (para 0.605 vs ortho 0.415). Electron-transfer pathways via radical cation C or radical anion B are explicitly excluded by redox potentials and by SmI2/CAN control experiments."
+}

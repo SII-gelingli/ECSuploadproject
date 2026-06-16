@@ -1,0 +1,131 @@
+{
+  "doi": "10.1039_d5gc01259g",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical amidoselenation of unactivated alkenes with diaryl diselenides via tandem radical selenation/oxidative Ritter reaction to give 1,4-selenoamide products",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of diphenyl diselenide to its radical cation, which fragments into PhSe+ and PhSe•; PhSe+ is reduced at the cathode to a second PhSe• radical; after radical addition to alkene, the resulting C-radical is re-oxidized at the anode to a selenonium/carbocation; protons are reduced at the cathode to H2",
+  "key_intermediates": [
+    {
+      "name": "diphenyl diselenide radical cation",
+      "smiles": "[c-]1ccccc1[Se][Se]c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenium cation (PhSe+)",
+      "smiles": "[Se+]c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl radical (PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylseleno-substituted cyclohexyl radical (A)",
+      "smiles": "[CH]1CCCCC1[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "selenonium/cyclohexyl cation B (after anodic oxidation of A)",
+      "smiles": "[C+]1CCCCC1[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "nitrilium ion intermediate C (Ritter adduct with MeCN)",
+      "smiles": "C[N+]#CC1CCCCC1[Se]c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "water-trapped intermediate D",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "IM1 (radical adduct, DFT)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "1IM2 singlet selenonium cation (DFT, -35.93 kcal/mol)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "IM3 nitrilium-cyclohexyl adduct (DFT)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "IM4 water-added amide precursor (DFT)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "IM5 tautomer prior to deprotonation (DFT)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes (PhSe)2 to its radical cation, which fragments to PhSe+ and PhSe•; PhSe+ is reduced at the cathode to a second PhSe•. PhSe• adds to cyclohexene to give a C-radical A, which the anode oxidizes to selenonium/cation B; MeCN attacks (Ritter) to give nitrilium C, water adds to D, and deprotonation/tautomerization yields the amide 3n while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": "Water addition to nitrilium intermediate IM3 via TS4 (barrier ~21.12 kcal/mol), the highest barrier on the DFT pathway",
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield suppressed to 55% (2 eq) and 20% (4 eq), consistent with radical involvement"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "2 eq DPE fully inhibited the reaction (trace product); PhSe-DPE adduct detected by HRMS (m/z 337.0490)"
+    },
+    {
+      "name": "HRMS detection of selenonium cation",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "C12H15Se+ detected (m/z 239.0332), confirming selenonium ion formation"
+    },
+    {
+      "name": "anhydrous/dry MeCN under N2",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "Yield dropped to 43%, indicating moisture/water is the oxygen source for the amide"
+    },
+    {
+      "name": "PhSeCl substitution for (PhSe)2",
+      "smiles": "[Se](Cl)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "No product at 65 °C/5 h; with (NH4)2S2O8 as oxidant 32%; under electrochemical conditions without oxidant 15% — supports radical (not ionic) pathway from diselenide"
+    },
+    {
+      "name": "Cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Cyclohexene 1n not electroactive in window; (PhSe)2 oxidized at 1.70 V; second oxidation peak of 1n+2n shifts from 2.36 V to 2.10 V upon TsOH addition, showing acid promotes oxidation"
+    },
+    {
+      "name": "Cathodic H2 detection",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "H2 evolution confirmed at cathode, consistent with proton reduction completing the redox balance"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "DFT",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly disfavor an ionic PhSe+ addition pathway based on PhSeCl control experiments (no reaction without oxidant); the favored pathway is radical addition of PhSe• followed by anodic oxidation of the C-radical (radical-polar crossover) and Ritter trapping by MeCN/H2O. DFT shows the singlet selenonium cation 1IM2 is much more stable than the triplet 3IM2 (-35.93 vs -1.66 kcal/mol), so the singlet cation is the operative species for nucleophilic capture."
+}

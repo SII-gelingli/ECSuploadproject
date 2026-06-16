@@ -1,0 +1,127 @@
+{
+  "doi": "10.1038_s41467-024-47168-w_sup_1",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical hydrogenation of unactivated alkyl alkenes using catalytic chlorosilanes as a Si-based H-carrier with H2O as the terminal hydrogen source, mediated by Fe (sacrificial anode) and Ni cocatalysis.",
+  "mechanism_family": [
+    "mediator_cathodic",
+    "sacrificial_anode",
+    "electrocatalysis_inner_sphere",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Cathodic reduction of Ph3SiCl to a silyl anion (via silyl radical) that abstracts H from H2O to give Ph3SiH; concurrently the sacrificial Fe anode releases Fe(II/III) salts that enter an Fe-H catalytic cycle delivering H to alkene; Ni(II) precatalyst (NiBr2·dtbpy) provides a parallel Ni-H pathway with opposite regioselectivity.",
+  "key_intermediates": [
+    {
+      "name": "Ph3Si- (silyl anion, B)",
+      "smiles": "[Si-](c1ccccc1)(c1ccccc1)c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "Ph3Si• (silyl radical, A)",
+      "smiles": "[Si](c1ccccc1)(c1ccccc1)c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "Ph3SiH (hydrosilane, C)",
+      "smiles": "[SiH](c1ccccc1)(c1ccccc1)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Ph3SiOH (silanol, D, resting Si species)",
+      "smiles": "O[Si](c1ccccc1)(c1ccccc1)c1ccccc1",
+      "role": "resting_state"
+    },
+    {
+      "name": "[Fe]Xn anodically generated Fe salt (Fe-INT1A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[Fe]-H hydride (Fe-INT2A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[Fe]-CH(R)CH3 alkyl-Fe (linear, Fe-INT3B, major)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[Fe]-CH2CH2R alkyl-Fe (branched, Fe-INT3A, minor)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[Fe]-OH hydroxide (Fe-INT4A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni-H species (parallel cycle, branch-selective)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Disilane Ph(Me)2Si-Si(Me)2Ph (off-pathway at high [chlorosilane])",
+      "smiles": "C[Si](C)(c1ccccc1)[Si](C)(C)c1ccccc1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode reduces Ph3SiCl (via Si radical to silyl anion) which is protonated by H2O to give Ph3SiH; Ph3SiH transfers H to an Fe(II)-X species generated from the sacrificial Fe anode, forming Fe-H that inserts into the alkene; hydrolysis of the resulting Fe-alkyl by H2O releases alkane and Fe-OH, which is reduced back into the cycle, while Ph3SiOH (resting Si species) is recycled via fluorination/chlorination back to Ph3SiX.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "D2O / CF3CH2OD",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "Deuterium incorporation in product confirms H2O/ROH is the H-source; inverse D-ratio between Fe-H and Ni-H regimes supports two parallel metal-hydride cycles."
+    },
+    {
+      "name": "CF3CH2OH (replacing H2O)",
+      "smiles": "OCC(F)(F)F",
+      "purpose": "intermediate_trap",
+      "observation": "Ph3SiOCH2CF3 detected by 19F NMR, confirming silanol/silyl-ether intermediates; reaction still proceeds in 90% yield."
+    },
+    {
+      "name": "(TMS)2O",
+      "smiles": "C[Si](C)(C)O[Si](C)(C)C",
+      "purpose": "redox_probe",
+      "observation": "CV shows E1/2 = -3.17 V vs Ag/Ag+; under electrolysis converts to TMSOCH2CF3, supporting Si-O cleavage and re-entry to Si cycle."
+    },
+    {
+      "name": "GC-MS detection of Ph3SiOH",
+      "smiles": "O[Si](c1ccccc1)(c1ccccc1)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Significant Ph3SiOH peak at 15.6 min after 5 h electrolysis, identifying silanol as the stable Si resting species."
+    },
+    {
+      "name": "PhMe2SiCl (1.0-2.0 equiv)",
+      "smiles": "C[Si](C)(Cl)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Disilane Ph(Me)2Si-Si(Me)2Ph isolated (56-58%) alongside hydrogenation product (15-20%), evidencing silyl-anion intermediate via nucleophilic Si-Si coupling."
+    },
+    {
+      "name": "Fe(BF4)2·6H2O / FeCl3 (no current)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Stoichiometric mixing with Ph3SiH and alkene gave 0% alkane (98% recovered SM), showing that electrochemistry is indispensable for generating the active Fe species."
+    },
+    {
+      "name": "H2O loading screen (0, 1, 2, 3, 5 equiv)",
+      "smiles": "O",
+      "purpose": "other",
+      "observation": "Sharply non-monotonic: 0 equiv 92% (H from DMF), 1/2/5 equiv 0%, 3 equiv 92%; consistent with a narrow optimum balancing H-transfer vs. silane hydrolysis."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "DFT",
+    "stoichiometric_intermediate",
+    "kinetic_order"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors favor a homogeneous dual Fe/Ni-hydride cycle with a Si-shuttle (Ph3SiCl -> Ph3Si- -> Ph3SiH -> Ph3SiOH -> back to Ph3SiX). Reviewers raised serious alternatives: (i) heterogeneous Fe/Ni nanoparticle hydrogenation from electrodeposited Fe on Ni foam, and (ii) hydroxysilane (Ph3SiOH) rather than chlorosilane being the true active mediator. The stoichiometric Fe(BF4)2/FeCl3 + Ph3SiH controls gave no alkane, which the authors attribute to inability to mimic the anodically generated Fe species but reviewers argue is consistent with heterogeneous catalysis. Ni-H and Fe-H proposed to give opposite regioselectivity (branch vs linear), supported by DFT (Figures S2/S3). Disilane formation at high chlorosilane loading is rationalized as off-pathway Si-Si coupling of silyl anion with chlorosilane."
+}

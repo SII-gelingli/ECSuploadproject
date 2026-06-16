@@ -1,0 +1,50 @@
+{
+  "doi": "10.1039_D5GC03120F_sup_1",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,4-dimethoxylation of aryl-substituted 1,3-dienes with methanol via a radical pathway, with subsequent conversion of the allylic dimethoxy product to an allylic carbamate using CSI.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation generates methoxy radical (·OMe) from methanol and oxidizes the aryl diene/allyl intermediate; radical coupling delivers the 1,4-dimethoxy product.",
+  "key_intermediates": [
+    {
+      "name": "allyl/benzyl radical intermediate II (methoxy-added diene radical)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "methoxy radical (·OMe)",
+      "smiles": "[O]C",
+      "role": "reactive"
+    },
+    {
+      "name": "1,2-selective radical intermediate (higher energy)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "1,4-selective radical intermediate (lower energy)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anodic oxidation of MeOH generates a methoxy radical that adds to the aryl 1,3-diene to form a delocalized allyl/benzyl radical (intermediate II); a second ·OMe couples to the remote (1,4) position, producing the 1,4-dimethoxy product 2a.",
+  "rate_determining_step": "Coupling of intermediate II with ·OMe (vs. H-abstraction from MeOH); DFT shows pathway (2) is favored (ΔG = -50.85 kcal/mol) over pathway (1) via TS2 at +72.15 kcal/mol.",
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "BHT-OMe adduct (2,6-di-tert-butyl-4-(methoxymethyl)phenol) isolated in 39% yield; target product 2a not detected, indicating radical involvement."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "DFT",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two radical pathways considered from intermediate II to 2a: pathway (1) H-atom transfer from neutral MeOH via TS2 (+72.15 kcal/mol, releasing H·) and pathway (2) direct coupling with ·OMe (-50.85 kcal/mol). Pathway (2) is strongly favored. A relaxed PES scan of the C–O distance also shows the 1,4-selective intermediate is more stable than the 1,2-selective one (minimum near 1.9 Å for 1,2; lower-energy 1,4 region), rationalizing 1,4- over 1,2-selectivity. Compound 5a is a downstream derivatization (CSI/Na2CO3 then Na2SO3/KOH) of 2a, not part of the electrochemical mechanism."
+}

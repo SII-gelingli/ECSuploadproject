@@ -1,0 +1,70 @@
+{
+  "doi": "10.1021_acs.orglett.3c03940_sup_1",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical reductive cross-coupling of two vinyl bromides to form unsymmetrical 1,3-dienes using a Ni catalyst with sacrificial-like cathodic SET activation.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Cathodic reduction generates low-valent Ni species and/or reduces a Ni-vinyl intermediate to enable cross-coupling; vinyl bromide is activated via SET to give a vinyl radical that engages Ni.",
+  "key_intermediates": [
+    {
+      "name": "vinyl radical from styryl bromide (1a)",
+      "smiles": "[CH]=Cc1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "allyloxy-substituted vinyl bromide partner (2a)",
+      "smiles": "C(=C)(Br)COc1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(dtbbpy) low-valent catalyst",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni-vinyl (Ni-alkenyl) species",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the cathode, Ni(II)/dtbbpy is reduced to a low-valent Ni that oxidatively adds/couples with one vinyl bromide; the second vinyl bromide is activated by SET to a vinyl radical which is captured by Ni, and reductive elimination delivers the 1,3-diene. TMSCl activates the SS anode/scavenges bromide.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3a not detected (ND at 6.5 F/mol; trace at 13.0 F/mol); 1a recovered 51%/34% — reaction strongly inhibited, consistent with radical intermediate."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Little effect: 3a still formed in 62%; suggests the radical is not a free, BHT-trappable species (likely metal-bound or short-lived)."
+    },
+    {
+      "name": "(Z)-styryl bromide (1m)",
+      "smiles": "Br/C=C\\c1ccccc1",
+      "purpose": "other",
+      "observation": "Cross-coupling with 2a gave 3a (13%) and 3a' (Z-isomer, 14%) — partial loss of olefin geometry, consistent with a vinyl-radical intermediate that loses stereochemistry."
+    },
+    {
+      "name": "nitrosobenzene",
+      "smiles": "O=Nc1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Used in one-pot tandem (procedure IX) to trap intermediate and give product 6i."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "TEMPO suppresses but BHT does not — authors interpret this as a Ni-bound/short-lived vinyl radical rather than a freely diffusing one. E/Z scrambling from (Z)-1m supports a vinyl radical intermediate. Pre-electrolysis and CV experiments referenced (sections 5.3 and 6) further support cathodic activation of the Ni catalyst before substrate engagement."
+}

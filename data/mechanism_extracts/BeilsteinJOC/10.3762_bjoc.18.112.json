@@ -1,0 +1,71 @@
+{
+  "doi": "10.3762_bjoc.18.112",
+  "journal": "BeilsteinJOC",
+  "is_review": false,
+  "rxn_class_summary": "Radical cation Diels–Alder reaction of arylidene cycloalkanes with 2,3-dimethyl-1,3-butadiene under TiO2 photoelectrochemical or electrochemical conditions to give spirocyclic cyclohexenes",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_anodic",
+    "photoredox_combined",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the electron-rich arylalkene (anethole/arylidene cycloalkane) to its radical cation, which acts as the dienophile; the cyclohexene radical cation intermediate is then reduced back (at cathode or by another substrate molecule in a chain) to give the neutral cycloadduct",
+  "key_intermediates": [
+    {
+      "name": "arylalkene radical cation (dienophile)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "distonic cyclohexene radical cation (after C–C bond formation with diene)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "neutral cyclohexene cycloadduct",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode (or photoexcited TiO2 hole) oxidizes the electron-rich styrene/arylidene cycloalkane to a radical cation, which undergoes stepwise [4+2] addition with 2,3-dimethyl-1,3-butadiene to give a cyclohexene radical cation; back-electron transfer (from cathode, TiO2 conduction-band electron, or a neutral substrate in a chain) regenerates the neutral Diels–Alder adduct.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "β-methylstyrene (non-substituted dienophile control)",
+      "smiles": "CC=Cc1ccccc1",
+      "purpose": "other",
+      "observation": "Productive under TiO2 photoelectrochemical conditions (61%) but 0% under simple electrochemical conditions, showing photoelectrochemistry enables otherwise unreactive substrates"
+    },
+    {
+      "name": "β-methylanethole (1)",
+      "smiles": "COc1ccc(C=C(C)C)cc1",
+      "purpose": "other",
+      "observation": "Trace under TiO2/UV (9%) but 43% under electrochemistry; β-substitution introduces steric hindrance disfavoring the radical cation cycloaddition"
+    },
+    {
+      "name": "arylidene cyclopropane (4)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Totally unreactive under both conditions, attributed to instability/strain of the proposed tertiary radical cation"
+    },
+    {
+      "name": "arylidene cyclobutane (5)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Spiro adduct 9 formed in 61% (photo) / 66% (EC), showing reduced steric hindrance vs gem-dimethyl analog enables reaction"
+    },
+    {
+      "name": "arylidene cyclopentane (6) and cyclohexane (7)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Less productive (10: 0–5%; 11: 31–56%), indicating ring-size dependent steric/electronic effects"
+    }
+  ],
+  "evidence_types_used": [
+    "on/off_light_or_current",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism (Figure 1) is the established radical cation Diels–Alder pathway adopted from prior literature; no direct mechanistic probes (TEMPO, KIE, CV, DFT) were performed in this work. The study focuses on substrate scope to test steric/electronic effects of β-substitution. TiO2 photoelectrochemistry is invoked as advantageous because both single-electron oxidation and reduction occur at the same semiconductor surface, enabling a productive chain/back-ET pathway not accessible under simple constant-potential electrolysis for some substrates."
+}

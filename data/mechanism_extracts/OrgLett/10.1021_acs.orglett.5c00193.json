@@ -1,0 +1,63 @@
+{
+  "doi": "10.1021_acs.orglett.5c00193",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intramolecular bromocyclization of alpha-allenols to enantioenriched spirocyclic 2,5-dihydrofuran derivatives using KBr as the bromine source",
+  "mechanism_family": [
+    "radical_anodic",
+    "paired_electrolysis",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of Br- to Br radical, which dimerizes to Br2 (and Br3-) as the active electrophilic brominating species; cathode concurrently reduces water to H2 and OH-",
+  "key_intermediates": [
+    {
+      "name": "bromine radical (Br•)",
+      "smiles": "[Br]",
+      "role": "transient"
+    },
+    {
+      "name": "molecular Br2 generated in situ",
+      "smiles": "BrBr",
+      "role": "reactive"
+    },
+    {
+      "name": "tribromide Br3-",
+      "smiles": "[Br-].BrBr",
+      "role": "resting_state"
+    },
+    {
+      "name": "bromonium ion intermediate (int. I) from allenol",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, Br- is oxidized (two sequential peaks at ~1.0 and 1.4 V vs SCE) to Br•, which dimerizes to Br2 and equilibrates with Br3-; Br2 then electrophilically activates the allene of (R)-1h to a bromonium ion, which is opened by intramolecular anti-attack of the pendant hydroxyl followed by deprotonation to give the dihydrofuran. At the cathode, water is reduced to H2 + OH-.",
+  "rate_determining_step": "Slow electrochemical release of Br2 (controlling Br2 concentration is responsible for the high yield vs direct Br2 addition)",
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of KBr and substrate 1e",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Two anodic peaks at ~1.0 and 1.4 V (Br-/Br• and Br3-/Br2); oxidative current increases when KBr + 1e are combined, indicating chemical reaction between electrogenerated Br2 and the allenol"
+    },
+    {
+      "name": "molecular Br2 (stoichiometric, direct or dropwise)",
+      "smiles": "BrBr",
+      "purpose": "intermediate_trap",
+      "observation": "Gave product 2a in only 28% (direct) and 25% (dropwise) yield, much lower than the electrochemical conditions; KBr/Br2 combination gave 47%, supporting slow in situ Br2 release"
+    },
+    {
+      "name": "enantiopure (R)-1h and (S)-1h substrates",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Chirality fully transferred (98% ee retained), consistent with a stereospecific bromonium-ion/anti-cyclization pathway rather than a free radical/racemizing route"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Chirality transfer with high ee retention argues for an ionic bromonium-ion mechanism (cation-initiated electrophilic cyclization) rather than a free Br-radical addition pathway; the role of electrochemistry is to slowly generate Br2/Br3- in situ rather than to perform direct SET on the substrate."
+}

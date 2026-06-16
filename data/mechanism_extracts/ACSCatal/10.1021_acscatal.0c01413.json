@@ -1,0 +1,116 @@
+{
+  "doi": "10.1021_acscatal.0c01413",
+  "journal": "ACSCatal",
+  "is_review": false,
+  "rxn_class_summary": "Enantioselective visible-light [2+2] photocycloaddition between aryl enones and alkenes, organocatalyzed by a chiral primary-secondary diamine via an intramolecular charge-transfer iminium ion intermediate",
+  "mechanism_family": [
+    "photoredox_combined",
+    "biradical",
+    "cation_initiated",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Iminium ion A-1 (condensation of enone 1a with diamine catalyst 3d, with pendant naphthyl donor)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Singlet charge-transfer excited state B-2 (CT^S, S1, naphthyl->iminium SET)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Singlet iminium-localized excited state B-1 (LE^S, S2), reactive species for [2+2]",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Singlet 1,4-biradical C-1 (tertiary radical at iminium C, primary radical on alkene-derived carbon)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Alternative biradical C-1' (primary radical at iminium side, tertiary on alkene side) from CT excitation, 20.6 kcal/mol higher in energy",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "Cyclobutyl iminium D-1",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Triplet iminium-localized excited state B-1^T (accessed only with Ru(bpy)3 sensitization via triplet energy transfer)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Triplet 1,4-biradical (longer-lived, gives higher dr after ISC)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cyclobutane product 4a",
+      "smiles": "O=C(C)C1C(C)(C(=C)C)CC1c1ccccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Acid-promoted condensation of diamine 3d with enone gives iminium A-1 bearing a tethered naphthyl donor; visible light populates a CT excited state B-2 (naphthyl->iminium SET) that thermally equilibrates with the iminium-localized singlet B-1, which adds to alkene 2a to form 1,4-biradical C-1, ring-closes to cyclobutyl iminium D-1, and hydrolyzes to release cyclobutane 4 and regenerate catalyst. With Ru(bpy)3Cl2, an external triplet energy transfer to the iminium gives B-1^T and a longer-lived triplet biradical, raising dr.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "Ru(bpy)3Cl2·6H2O (triplet photosensitizer)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Switches mechanism to triplet pathway; dr increases from 2:1 (singlet, direct CT excitation) to 5:1 for 4k, while er remains comparable, supporting iminium intermediacy in both regimes"
+    },
+    {
+      "name": "Catalysts 3g/3h lacking naphthyl donor",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No bathochromic CT absorption band; negligible conversion under 456 nm without sensitizer, confirming the intramolecular CT transition is responsible for visible-light photoactivity"
+    },
+    {
+      "name": "Achiral diamine 3g + Ru(bpy)3Cl2 control (Scheme 1a)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Triplet sensitization gives 71% conversion of 4a (vs 10% without Ru), demonstrating that the iminium can be triplet-sensitized; racemic since catalyst is achiral"
+    },
+    {
+      "name": "Bulky achiral diamine 3i + Ru(bpy)3Cl2 control (Scheme 1b)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "36% conversion to racemic 4a vs 5% without Ru, again supporting triplet-sensitized iminium reactivity"
+    },
+    {
+      "name": "(Z)-4-phenyl-3-buten-2-one",
+      "smiles": "O=C(C)/C=C\\c1ccccc1",
+      "purpose": "isotope_label",
+      "observation": "Gives same cyclobutane 4a (84%, 80:20 er) via organocatalyzed Z->E isomerization, consistent with iminium intermediate"
+    },
+    {
+      "name": "X-ray of hydrazone 5a derived from 4a",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Establishes absolute configuration of cyclobutane product"
+    },
+    {
+      "name": "O2 (air) tolerance test",
+      "smiles": "O=O",
+      "purpose": "radical_trap",
+      "observation": "Air did not inhibit the reaction; full conversion under air, arguing against a long-lived freely diffusing triplet/radical in the CT pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "UV_vis",
+    "DFT",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "intermediate_trap_other",
+    "crossover"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two excited-state pathways are considered: (favored) singlet iminium-localized excited state B-1 (LE^S, S2) reacting via a singlet biradical C-1 with concerted-or-stepwise [2+2], and an alternative CT excited state B-2 (S1) that is discarded as unproductive because (i) its derived biradical C-1' is 20.6 kcal/mol less stable than C-1 and would give wrong regiochemistry, and (ii) ISC from singlet iminium to triplet is slow by El-Sayed's rule. The CT state's role is to provide the visible-light absorption band that then funnels via thermal S1<->S2 equilibrium into the reactive LE singlet. With external Ru(bpy)3Cl2 (ET=46 kcal/mol matching the singlet-triplet gap of A-1), a parallel triplet-energy-transfer pathway operates, giving a longer-lived triplet biradical and higher dr (5:1 vs 2:1 for 4k). Solvent polarity tunes the CT^S/LE^S equilibrium. TDDFT (CAM-B3LYP/6-31G*) on M06-2X/6-311G** structures supports HOMO(naphthyl)->LUMO(iminium) CT assignment; no pi-stacking between donor and acceptor is required."
+}

@@ -1,0 +1,86 @@
+{
+  "doi": "10.1021_acs.joc.5c01733",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical trifluoromethylation/iminyl-radical-mediated 1,5-HAT cyclization of N-cyanamide alkenes with CF3SO2Na to give trifluoromethylated bicyclic amidines and N-acryloylpyrrolidin-2-one derivatives",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2Na (2a, Eox = 1.13 V vs SCE) to generate CF3 radical (after loss of SO2); a second anodic oxidation converts the post-1,5-HAT benzylic radical IIIa to the benzylic carbocation IVa, which cyclizes to product. Cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "trifluoromethyl radical (CF3•)",
+      "smiles": "[CH]([F])([F])[F]",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical Ia from CF3• addition to N-cyanamide alkene 1a",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "iminyl radical IIa from intramolecular cyclization of Ia",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical IIIa formed by 1,5-HAT from iminyl radical",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation IVa from anodic oxidation of IIIa",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-hydroxy pyrrolidinone 4 (water trap of cation)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- to CF3SO2• which extrudes SO2 to give CF3•; CF3• adds to the N-cyanamide alkene to form C-radical Ia that cyclizes onto the cyanamide N≡C to give iminyl radical IIa; 1,5-HAT generates benzylic radical IIIa, which is further oxidized at the anode to benzylic cation IVa; intramolecular cyclization of the iminyl nitrogen onto the cation and deprotonation furnishes amidine 3a, while H+ is reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Product 3a not detected, consistent with radical intermediates"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "3a not detected; CF3-DPE adduct 8 isolated in 7% yield, trapping CF3 radical"
+    },
+    {
+      "name": "water (acetone/H2O 5/1)",
+      "smiles": "O",
+      "purpose": "intermediate_trap",
+      "observation": "Isolation of α-hydroxy pyrrolidinone 4 (21%) supports benzylic cation intermediate IVa"
+    },
+    {
+      "name": "HFIP cosolvent (acetone/HFIP/H2O 10/1/1)",
+      "smiles": "OC(C(F)(F)F)C(F)(F)F",
+      "purpose": "intermediate_trap",
+      "observation": "α,α-Diphenylacetyl-pyrrolidin-2-one 5 (18%) isolated, supporting iminyl radical intermediate IIa"
+    },
+    {
+      "name": "cyclic voltammetry of 2a/1a/3a/6c/7c",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "2a oxidizes at 1.13 V, well below 1a (2.43 V), 6c (2.32 V), 3a (2.50 V), and 7c (1.46 V), indicating preferential anodic oxidation of CF3SO2Na and explaining overoxidation susceptibility of 7"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two parallel product branches from common radical intermediates: bicyclic amidine 3a (from cation IVa cyclization) and N-acryloylpyrrolidinone 7a (from elimination/hydrolysis of cation IVb derived from substrate 6a). Side product 4 (water trap of IVa) and 5 (from iminyl radical IIa pathway) serve as diagnostic intermediates rather than productive intermediates. No oxidant or transition metal required; two-step anodic oxidation distinguishes this from Cu-catalyzed oxidative addition/reductive elimination pathway."
+}

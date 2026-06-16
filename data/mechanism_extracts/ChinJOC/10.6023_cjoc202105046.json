@@ -1,0 +1,54 @@
+{
+  "doi": "10.6023_cjoc202105046",
+  "journal": "ChinJOC",
+  "is_review": false,
+  "rxn_class_summary": "ArI-mediated electrochemical aziridination of electron-deficient alkenes using acetyl hydrazide-type N-source in an undivided cell",
+  "mechanism_family": [
+    "mediator_anodic",
+    "nitrene"
+  ],
+  "electrochemical_role": "Anodic oxidation of ArI to ArI(OAc)2 (hypervalent iodine, I(III)) which serves as the active mediator; cathodic reduction generates H2 and regenerates acetate, closing the electron cycle",
+  "key_intermediates": [
+    {
+      "name": "ArI(OAc)2 (hypervalent iodine(III), intermediate A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ArI(OAc)(NHFg) (iodine(III) species with I-O and I-N bonds, intermediate B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Fg-NH-OAc (acetoxyamine, compound 6)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ArI=N-Fg (iodonitrene, compound 7)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "acetate anion (OAc-)",
+      "smiles": "CC(=O)[O-]",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes ArI to ArI(OAc)2 (A), which exchanges an OAc for the N-nucleophile (Fg-NH2) to give iodine(III) intermediate B bearing I-O and I-N bonds; B partitions into acetoxyamine 6 (releasing ArI) or iodonitrene 7 (releasing HOAc), and both deliver nitrogen to the alkene to give the aziridine in a stepwise manner. At the cathode, protons are reduced to H2, regenerating acetate.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "HRMS detection of reaction mixture",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Species with masses matching compound 6 (HRMS 221.0568) and compound 7 (394.9892) both detected, supporting two coexisting pathways via acetoxyamine and iodonitrene"
+    }
+  ],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two parallel pathways are proposed (via acetoxyamine 6 and via iodonitrene 7), both leading to stepwise aziridination; the authors do not designate one as exclusively favored. Mechanism cites ref [10c] for the stepwise aziridination mode. No radical traps, KIE, or DFT reported on these pages."
+}

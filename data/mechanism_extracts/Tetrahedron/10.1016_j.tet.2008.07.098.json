@@ -1,0 +1,74 @@
+{
+  "doi": "10.1016_j.tet.2008.07.098",
+  "journal": "Tetrahedron",
+  "is_review": false,
+  "rxn_class_summary": "Nickel-catalyzed electrochemical conjugate addition of ortho-functionalized aryl bromides to Michael acceptors with sacrificial iron anode, followed by base-promoted cyclization to dihydro/tetrahydronaphthalenes.",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "sacrificial_anode",
+    "anion_initiated",
+    "mediator_cathodic"
+  ],
+  "electrochemical_role": "Cathodic reduction of Ni(II) (with 2 e-) generates a low-valent nickel species that undergoes oxidative addition into the Ar-Br bond; the sacrificial iron anode releases Fe(II) ions that act as a Lewis acid activating the Michael acceptor and the resulting carbanion/enolate intermediate.",
+  "key_intermediates": [
+    {
+      "name": "ArNi species from oxidative addition of o-(cyanomethyl)aryl bromide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Fe(II)-stabilized benzylic/α-EWG carbanion (Michael adduct anion)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Intramolecular ketenimine-type cyclized anion (from CN attack by benzylic carbanion)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "1-amino-3,4-dihydronaphthalene-2-carbonitrile (compound 19)",
+      "smiles": "N#CC1=C(N)c2ccccc2CC1",
+      "role": "reactive"
+    },
+    {
+      "name": "Open-chain conjugate addition product (e.g., 16, 18, 20)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Dialkylated benzylic anion intermediate (Scheme 7)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the cathode, Ni(II) is reduced by 2 e- to Ni(0), which oxidatively adds into the Ar-Br bond; the resulting aryl-nickel transfers the aryl group to the activated olefin, generating an α-EWG carbanion stabilized by Fe(II) (released by anodic dissolution of the iron anode), which either is protonated by EtOH to give the conjugate adduct or cyclizes onto a tethered CN/COCH3 group to give the bicyclic product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "ethanol (proton source)",
+      "smiles": "CCO",
+      "purpose": "other",
+      "observation": "Addition of 1-4 equiv EtOH suppresses cyclization and favors the open-chain conjugate addition product (48-62% isolated); Fe(II) from anode enhances EtOH acidity."
+    },
+    {
+      "name": "stainless steel anode (replacing Fe)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "With non-sacrificial stainless-steel anode (runs 4-5), no Fe(II) Lewis acid is released and conjugate addition product is not observed (only cyclized 21, 22 formed), supporting the role of Fe(II) released from the sacrificial anode."
+    },
+    {
+      "name": "excess acrylonitrile (4 equiv)",
+      "smiles": "C=CC#N",
+      "purpose": "intermediate_trap",
+      "observation": "With o-acetyl aryl bromide 13 and acrylonitrile, double alkylation at the benzylic position is observed (compound 23), consistent with a benzylic carbanion intermediate (Scheme 7)."
+    }
+  ],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two competing pathways are proposed depending on conditions: (i) Ni-mediated aryl transfer followed by intramolecular cyclization of the α-EWG carbanion onto the ortho CN or COCH3 group gives bicyclic dihydro/tetrahydronaphthalenes (Scheme 6); (ii) when EtOH is added, the intermediate carbanion is protonated, giving the acyclic conjugate addition product that can be cyclized in a second step with NaOEt. Scheme 7 shows a competing benzylic dialkylation pathway with excess acrylonitrile. Fe(II) from the sacrificial iron anode is explicitly invoked as a Lewis acid activating both the Michael acceptor and EtOH."
+}

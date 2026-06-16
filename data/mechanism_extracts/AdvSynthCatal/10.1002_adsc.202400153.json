@@ -1,0 +1,109 @@
+{
+  "doi": "10.1002_adsc.202400153",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrophotocatalytic carbothiocyanation of N-alkenylacrylamides with KSCN to give thiocyanato-4-pyrrolin-2-ones, either acridinium-catalyzed (conditions A) or self-photocatalyzed by the diene substrate/product (conditions B).",
+  "mechanism_family": [
+    "radical_anodic",
+    "photoredox_combined",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of KSCN (or of the reduced photocatalyst) to regenerate the oxidized PC; the excited PC* (acridinium under A, or the substrate/product 1a/3a acting as self-PC under B) oxidizes SCN- to SCN radical, and the anode reoxidizes the reduced PC•- closing the cycle, with concomitant cathodic H+ reduction to H2.",
+  "key_intermediates": [
+    {
+      "name": "excited photocatalyst [PC/1a/3a]*",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "thiocyanate radical (NCS•)",
+      "smiles": "[S]C#N",
+      "role": "reactive"
+    },
+    {
+      "name": "thiocyanogen (NCSSCN)",
+      "smiles": "N#CSSC#N",
+      "role": "off_pathway"
+    },
+    {
+      "name": "C-centered radical adduct I from SCN addition to acryloyl alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclized C-centered radical II (ring-closed via enaminic double bond)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cationic intermediate III after oxidative SET",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "reduced photocatalyst [PC/1a/3a]•-",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Photoexcited PC (acridinium under A, or 3-aza-1,5-diene 1a/pyrrolinone 3a as self-PC under B) oxidizes SCN- to SCN•, generating PC•-; SCN• adds regioselectively to the acrylamide alkene to give radical I, which undergoes intramolecular radical cyclization onto the enamine to give radical II; II is oxidized (SET to PC* or anode) to cation III, which deprotonates to product 3a, and PC•- is reoxidized at the anode while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction shut down under both conditions A and B; TEMPO-SCN adduct detected by ESI-HRMS, supporting SCN• intermediacy."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely suppressed."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Reaction shut down; with NaSMs instead of KSCN, DPE-Ms adduct 6a was isolated (58% A, 62% B), supporting free radical S-centered intermediate."
+    },
+    {
+      "name": "CuCl2",
+      "smiles": "[Cl-].[Cl-].[Cu+2]",
+      "purpose": "redox_probe",
+      "observation": "Electron scavenger; completely suppressed product formation, consistent with SET pathway."
+    },
+    {
+      "name": "p-dinitrobenzene (pDNB)",
+      "smiles": "O=[N+]([O-])c1ccc(cc1)[N+](=O)[O-]",
+      "purpose": "redox_probe",
+      "observation": "SET scavenger; significant yield decrease (to 30% A, 41% B)."
+    },
+    {
+      "name": "CCl4",
+      "smiles": "ClC(Cl)(Cl)Cl",
+      "purpose": "redox_probe",
+      "observation": "Electron scavenger; yield decreased (43% A, 24% B)."
+    },
+    {
+      "name": "thiocyanogen (SCN)2 / NCSSCN",
+      "smiles": "N#CSSC#N",
+      "purpose": "intermediate_trap",
+      "observation": "Reacted with 1a to give 3a in only 44% (A/B), 9% (Mes-Acr+/blue LED), 8% (365 nm UVA); less reactive than KSCN/anodic conditions, suggesting NCSSCN is not the key productive intermediate."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "UV_vis",
+    "stoichiometric_intermediate",
+    "DFT",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two operative regimes are proposed: (A) Mes-Acr+ acts as photocatalyst at 455 nm with electrolysis; (B) PC-free, where 3-aza-1,5-diene 1a and product 3a self-photocatalyze under 365 nm UVA. Stern-Volmer shows KSCN quenches Mes-Acr+* (not 1a), while 1a* and 3a* are quenched by KSCN. Computed triplet energies (1a 50.6, 3a 54.3, NCSSCN 28.9 kcal/mol) suggest EnT to NCSSCN is exergonic, but chalcone dimerization control rules out EnT photocatalysis by 1a/3a, so 1a/3a operate as SET photocatalysts. Low quantum yields (Φ=0.009 A, 0.037 B) and on/off experiments argue against long radical chains. Alternative NCSSCN-mediated pathway considered but disfavored. H2 evolution at cathode confirmed."
+}

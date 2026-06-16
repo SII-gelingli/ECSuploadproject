@@ -1,0 +1,81 @@
+{
+  "doi": "10.1021_acs.orglett.3c03901_sup_1",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,2-difunctionalization (fluoroamination/fluoroalkoxylation) of gem-difluoroalkenes via anodic oxidation and sequential nucleophilic additions of fluoride and a second nucleophile (azole or alcohol)",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_polar_crossover",
+    "direct_SET",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the gem-difluorostyrene to a radical cation; cathode reduces protons to H2 (paired electrolysis)",
+  "key_intermediates": [
+    {
+      "name": "styrene radical cation I",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical II/II' after 1st nucleophilic addition of F- (or alcohol/azole) at CF2 terminus",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic cation III/III' after second anodic oxidation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "HFIP–fluoride/HFIP–nucleophile H-bonded aggregate (modulates nucleophilicity)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "aryl trifluoromethyl ketone (oxidation trapping product under O2/MeOH)",
+      "smiles": "O=C(c1ccc(-c2ccccc2)cc1)C(F)(F)F",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Graphite anode removes one electron from the gem-difluoroalkene to give radical cation I; a nucleophile (F-, alcohol, or azole, modulated by HFIP H-bonding) adds at the CF2 terminus to give benzylic radical II; II is further oxidized at the anode to benzylic cation III, which is trapped by a second nucleophile to give product 4; at the Pt cathode, protons are reduced to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "MeOH under O2 (radical trapping / oxygenation probe)",
+      "smiles": "CO",
+      "purpose": "radical_trap",
+      "observation": "GC-MS detected aryl trifluoromethyl ketone (C14H9F3O, MW 250.22), consistent with a benzylic radical intermediate intercepted by O2"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, CsF, and 2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "CV in 0.1 M nBu4NBF4 HFIP/DCM (1:4), 0–3.0 V vs SCE, used to establish oxidation potentials of substrate vs product and fluoride"
+    },
+    {
+      "name": "Control: no electricity",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "0% yield, confirming electrochemical initiation is required"
+    },
+    {
+      "name": "Control: under N2 vs air",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "46% under N2 vs 50% under air; reaction not dependent on O2 for productive pathway"
+    },
+    {
+      "name": "Alternative alcohol co-solvents (TFE, tBuOH)",
+      "smiles": "OCC(F)(F)F",
+      "purpose": "other",
+      "observation": "Lower yields due to competitive nucleophilic addition by the alcohol vs fluoride"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors propose two regiochemical channels (II/III vs II'/III') leading to 4 or 4'; selectivity attributed to HFIP-mediated H-bonded aggregates that tune nucleophilicity of F-, alcohol, and azole. No DFT, KIE, or TEMPO trapping reported. Attempts to extend to 1,1-difluorodec-1-en-3-yne failed (insoluble anode deposit), and alkoxy-/azofluorination of difluoro-diene 1o was too messy to isolate."
+}

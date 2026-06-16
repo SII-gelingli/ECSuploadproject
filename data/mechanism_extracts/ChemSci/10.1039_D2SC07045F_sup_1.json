@@ -1,0 +1,44 @@
+{
+  "doi": "10.1039_D2SC07045F_sup_1",
+  "journal": "ChemSci",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical sulfonylation/cyclization of alkenes with sodium sulfinates proceeding via sulfonyl radical addition under undivided-cell conditions.",
+  "mechanism_family": [
+    "radical_anodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of sulfinate (ArSO2Na) to a sulfonyl radical (ArSO2•), which adds to the alkene; cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "tosyl radical (ArSO2•) from anodic oxidation of sodium p-toluenesulfinate",
+      "smiles": "O=S(=O)(c1ccc(C)cc1)[O]",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic/cyclopropylcarbinyl C-radical from sulfonyl radical addition to 1-cyclopropyl-1-phenylethylene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "vinyl sulfone product 9 (sulfonyl-trapped alkene, no ring-opening observed)",
+      "smiles": "O=S(=O)(c1ccc(C)cc1)/C=C(\\c1ccccc1)C1CC1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Sulfinate is oxidized at the anode by SET to generate a sulfonyl radical that adds to the alkene; the resulting carbon radical is further oxidized/deprotonated to the vinyl sulfone, while protons are reduced at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1-cyclopropyl-1-phenylethylene (radical clock)",
+      "smiles": "C(=C)(c1ccccc1)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "Reaction with sodium p-toluenesulfinate under electrolysis (GF anode, Pt cathode, Et4NClO4, HFIP/H2O 20:1, 4 mA, 8 h) gave the vinyl sulfone 9 without cyclopropane ring-opening rearrangement, indicating fast trapping of the sulfonyl-adduct radical or a non-radical pathway at that stage."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Page also contains characterization data for Suzuki cross-coupling product 6 (Pd(OAc)2/PPh3/K2CO3, i-PrOH, 90 °C) of bromo-thiazonine 4l with (3,4,5-trimethoxyphenyl)boronic acid — this is product diversification, not mechanistic. Only the radical trapping/clock experiment at the bottom is mechanism-relevant."
+}

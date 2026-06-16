@@ -1,0 +1,105 @@
+{
+  "doi": "10.1021_jo049889i",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Anodic electrooxidative intramolecular coupling of a silyl enol ether with a tethered furan to construct cis-fused annulated (six-membered ring) furans",
+  "mechanism_family": [
+    "radical_cation",
+    "direct_SET",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the silyl enol ether to a radical cation, which is then attacked by the pendant furan; a second anodic oxidation and loss of TMS deliver the annulated furan",
+  "key_intermediates": [
+    {
+      "name": "silyl enol ether radical cation (from oxidation of TMS enol ether)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized furyl oxocarbenium/oxonium radical (after furan attack on enol ether radical cation)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alpha-furyl radical after iPrOH trapping of oxonium",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alpha-furyl cation (after second SET)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "dihydrofuran 2-isopropoxy acetal intermediate 46 (25/43)",
+      "smiles": null,
+      "role": "stoichiometric_intermediate"
+    },
+    {
+      "name": "annulated furan product",
+      "smiles": null,
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "The anode removes one electron from the silyl enol ether to form a radical cation; the tethered furan attacks intramolecularly to give a cyclized oxocarbenium/radical; 2-propanol traps the oxocarbenium and a second anodic SET generates a furyl cation that loses TMS to give the dihydrofuran intermediate, which aromatizes (loss of iPrOH) to the annulated furan.",
+  "rate_determining_step": "Initial anodic single-electron oxidation of the silyl enol ether (lowest oxidation potential component)",
+  "probe_reagents": [
+    {
+      "name": "model silyl enol ether of cyclohexanone (29)",
+      "smiles": "O(C1=CCCCC1)[Si](C)(C)C",
+      "purpose": "redox_probe",
+      "observation": "E1/2 = 0.87 V vs Fc; comparable to substrate 14 (0.83 V), identifying enol ether as oxidation site"
+    },
+    {
+      "name": "3-substituted silyl furan (30, TBS-furan)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "E1/2 = 1.31 V vs Fc; furan harder to oxidize than enol ether, supporting path a"
+    },
+    {
+      "name": "cyclopropyl radical clock at C1 (substrate 35 from enone 34)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Cyclized to 37 in 69% with no ring-opened products; either intermediate is stabilized (siloxy) or oxidation/cyclization is faster than ring-opening"
+    },
+    {
+      "name": "acyclic cyclopropyl ketone probe (39 from enone 38)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Cyclized to 40 in 60% with no fragmentation, ruling out poor orbital overlap as the reason for lack of clock ring-opening"
+    },
+    {
+      "name": "C2-cyclopropyl probe (42 from enone 41)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Cyclopropane fully opened; ketone 44 (and alcohol 45 with BAHA) obtained in low yield, consistent with cyclopropylcarbinyl radical/cation at C2 lacking siloxy stabilization"
+    },
+    {
+      "name": "tris(4-bromophenyl)aminium hexachloroantimonate (BAHA)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Chemical one-electron oxidant gave the same ring-opened products (44 + 45), supporting a radical-cation intermediate"
+    },
+    {
+      "name": "2-propanol (electrolyte cosolvent)",
+      "smiles": "CC(C)O",
+      "purpose": "intermediate_trap",
+      "observation": "Traps furyl oxocarbenium to give isolable dihydrofuran acetal 46 when acidic workup is omitted"
+    },
+    {
+      "name": "byproduct enone 31 from substrate 16h",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "~5% enone byproduct from deprotonation of the enol ether radical cation supports initial SET at the silyl enol ether"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "radical_clock",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Alternative path b (initial SET from furan to give furan radical cation 26, attacked by silyl enol ether to give furyl radical 27) was considered but disfavored by CV data showing the silyl enol ether is more easily oxidized than the furan. Cis-fused ring junction stereochemistry is rationalized by a cis-exo transition state (TS-1) where the furan closes on the radical cation in an exo orientation. The C1 cyclopropyl clock failed to ring-open, attributed to siloxy stabilization of the adjacent radical cation; C2 substitution lacking such stabilization did ring-open."
+}

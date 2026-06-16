@@ -1,0 +1,82 @@
+{
+  "doi": "10.1038_s41467-023-42566-y",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical hydroalkylation of electron-poor olefins with unactivated alkyl iodides via anodic generation of alpha-aminoalkyl radicals that perform halogen-atom transfer (e-XAT)",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "radical_anodic",
+    "mediator_anodic",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of Et3N to aminium radical cation followed by alpha-deprotonation generates an alpha-aminoalkyl radical that acts as the XAT mediator; the alkyl radical adds to the Michael acceptor and the resulting alpha-carbonyl C-radical is then reduced at the cathode to a carbanion which is protonated by H2O",
+  "key_intermediates": [
+    {
+      "name": "alpha-aminoalkyl radical from Et3N (Et2N-CH(.)-CH3)",
+      "smiles": "CC(.)N(CC)CC",
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-iodoamine / iminium iodide pair from XAT",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkyl radical (primary, secondary, or tertiary) from alkyl iodide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-EWG carbon-centered radical after Giese addition",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-EWG carbanion after cathodic reduction",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Et3N to its aminium radical cation, which loses an alpha-H to give an alpha-aminoalkyl radical; this radical abstracts I from the alkyl iodide (XAT) producing an alkyl radical that adds to the electron-poor olefin, and the resulting alpha-EWG radical is reduced at the Pt cathode to a carbanion that is protonated by H2O.",
+  "rate_determining_step": "Halogen-atom transfer from alkyl iodide to the alpha-aminoalkyl radical (driven by exothermic formation of iminium iodide)",
+  "probe_reagents": [
+    {
+      "name": "cyclopropylmethyl iodide radical clock (substrate 88)",
+      "smiles": "ICC1CC1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 89 obtained in 36% yield with only 12% unrearranged 90, confirming a free alkyl radical intermediate"
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "H/D_labeling",
+      "observation": "Deuterated product 91 in 89% yield with >95% D incorporation at the alpha-EWG position, indicating cathodic reduction to a carbanion that is protonated by water"
+    },
+    {
+      "name": "tethered alkene radical probe (substrate 85)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "5-exo cyclization to pyrrolidine 86 (with intermolecular Giese products 87a/87b when external acceptor added), supporting intramolecular radical addition pathway"
+    },
+    {
+      "name": "amine screen (Et3N, iPr2NEt, DABCO, TMP, iPr2NH, Bn3N, Ph2NPMP, 2,2,6,6-tetramethylpiperidine)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Only alkylamines with secondary alpha-H and suitable Eox (~+0.67 to +0.77 V) gave high yields; amines lacking alpha-H gave no reaction, supporting alpha-aminoalkyl radical as the XAT agent"
+    },
+    {
+      "name": "cyclic voltammetry of Et3N vs alkyl iodides/acrylates",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Et3N oxidizes at much lower potential than reduction of alkyl iodides or Michael acceptors, ruling out direct SET to substrate and supporting mediated XAT"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "cyclic_voltammetry",
+    "kinetic_order"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors cite prior DFT (ref 37) showing the XAT step proceeds via a polarized transition state with charge-transfer character; no new DFT performed here. Method avoids sacrificial anodes by replacing cathodic reduction of R-I with anodic-mediator XAT, with cathode reserved for the radical-polar crossover step (reduction of the Giese adduct radical to a carbanion)."
+}

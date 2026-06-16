@@ -1,0 +1,82 @@
+{
+  "doi": "10.1016_j.checat.2021.08.004",
+  "journal": "ChemCatalysis",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical (3+2) cyclization between amides and olefins using DCE as a chlorine source to give 2-oxazolines via chloronium-ion intermediates",
+  "mechanism_family": [
+    "paired_electrolysis",
+    "mediator_cathodic",
+    "cation_initiated",
+    "carbocation"
+  ],
+  "electrochemical_role": "Consecutive paired electrolysis: DCE is reduced at the cathode to release chloride (with H2 evolution), then chloride is oxidized at the anode to a chlorine radical/Cl+ equivalent that forms a chloronium ion with the alkene; the chloride anion functions as a redox mediator generated in situ",
+  "key_intermediates": [
+    {
+      "name": "chloride anion (from cathodic reduction of DCE)",
+      "smiles": "[Cl-]",
+      "role": "reactive"
+    },
+    {
+      "name": "chlorine radical / Cl+ (anodic oxidation of Cl-)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "chloronium ion of olefin (3-membered cyclic chloriranium)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-chloro amide (ring-opened adduct, e.g. 5bc/5bc')",
+      "smiles": "O=C(NC(Cl)Cc1ccccc1)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "2-aryl-4,5-dihydrooxazoline product",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "H2 (cathodic byproduct)",
+      "smiles": "[H][H]",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the cathode, DCE accepts 2 e- to release 2 Cl- (and ethylene/H2 byproducts); at the anode, Cl- is oxidized (-2e-) to Cl+/Cl•, which adds to the olefin to form a chloronium intermediate that is opened by the amide oxygen, followed by deprotonation and cyclization (intramolecular N attack with loss of HCl) to give the oxazoline.",
+  "rate_determining_step": "Electrochemical redox step (first-order in current; zero-order in both indene and benzamide), consistent with anodic Cl- oxidation being rate-limiting",
+  "probe_reagents": [
+    {
+      "name": "AgNO3 (chloride detection)",
+      "smiles": "[Ag+].[O-][N+](=O)=O",
+      "purpose": "intermediate_trap",
+      "observation": "White AgCl precipitate formed from electrolyzed solution, confirming Cl- generation; solution pH = 3.19 (acidic)"
+    },
+    {
+      "name": "Styrene (as model olefin without base)",
+      "smiles": "C=Cc1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Isolated β-chloroamides 5bc (40%) and 5bc' (41%); subsequent treatment with NaOAc converted them to oxazolines 4bc/4bc' (35%/33%), supporting them as on-cycle intermediates"
+    },
+    {
+      "name": "HCl additive (10 mol%) in THF",
+      "smiles": "Cl",
+      "purpose": "other",
+      "observation": "In THF (no DCE chloride source) yield dropped to 11%; adding 10 mol% HCl restored 51% yield with r.r. = 10:1, confirming the essential role of chloride"
+    },
+    {
+      "name": "Cyclic voltammetry of DCE, 1a, 2a, TBACl",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "DCE reduces at -1.5 V vs Ag/AgCl; Cl- oxidation at 1.5 V is lower than 1a (1.8 V) or 2a, so Cl- is preferentially oxidized at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "kinetic_order",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors note an induction period in time-monitored conversion (consistent with Cl- buildup before productive turnover). An alternative pathway in which the indene is first anodically oxidized to a radical cation cannot be excluded (see SI Figure S9); the favored pathway proceeds via chloronium ion formed from anodically generated Cl+/Cl•."
+}

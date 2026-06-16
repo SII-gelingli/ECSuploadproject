@@ -1,0 +1,73 @@
+{
+  "doi": "10.1039_c9ob00717b",
+  "journal": "OrgBiomolChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical vicinal aminotrifluoromethylation of alkenes using CF3SO2Na as CF3 source and acetonitrile as N-nucleophile to give β-trifluoromethylamines via Ritter-type amination.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "direct_SET",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of CF3SO2Na releases SO2 and generates CF3 radical; the β-CF3 carbon radical intermediate is further oxidized at the anode to a benzylic carbocation; cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "CF3 radical",
+      "smiles": "[CH0](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "β-trifluoromethylated benzylic C-radical (intermediate A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-trifluoromethylated benzylic carbocation (intermediate B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "nitrilium ion from MeCN attack on carbocation",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- to CF3 radical (losing SO2); CF3 radical adds to the alkene giving a benzylic C-radical, which is further oxidized at the anode to a benzylic carbocation; MeCN attacks the cation and water hydrolyzes the nitrilium (Ritter-type) to the β-CF3 acetamide; cathode reduces 2H+ to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed (3a only trace); CF3-TEMPO adduct 4 detected by HRMS ([M+H]+ = 226.1416). Without electricity, TEMPO fully recovered and no product, showing CF3 radical is generated anodically rather than by TEMPO oxidation."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield drops to 12%; CF3-BHT adduct 5 ([M+H]+ = 289.1778) and β-CF3-benzyl-BHT adduct 6 ([M+H]+ = 393.2401) detected, supporting both CF3 radical and β-CF3 C-radical intermediates."
+    },
+    {
+      "name": "D2O (water)",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "In ultra-dry MeCN/CH2Cl2 no D-incorporated product; adding 4 equiv H2O (with CD3CN) gives D3-3a in 72% GC yield ([M+H]+ = 235.1124), proving the amide oxygen comes from water and MeCN is the N source."
+    },
+    {
+      "name": "CD3CN",
+      "smiles": "[2H]C([2H])([2H])C#N",
+      "purpose": "isotope_label",
+      "observation": "D3-labeled acetamide product confirms MeCN incorporation via Ritter-type pathway."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "strong",
+  "notes": "CV shows oxidation peak of CF3SO2Na at 0.89 V vs Ag/AgCl and a higher peak at 0.93 V when styrene is co-present, supporting anodic oxidation of the sulfinate rather than the alkene. Analogous CF2H reaction with CF2HSO2Na gives the β-CF2H amide (3a', 54%), consistent with the same SET/Ritter pathway. X-ray of 3j confirms regiochemistry (CF3 on terminal carbon, NHAc on benzylic carbon)."
+}

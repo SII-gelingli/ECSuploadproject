@@ -1,0 +1,92 @@
+{
+  "doi": "10.1021_jacs.0c03130",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Copper-catalyzed three-component asymmetric radical 1,2-carboalkynylation of alkenes with terminal alkynes and alkyl halides using a chiral cinchona-derived N,N,P-ligand to deliver chiral alkynes",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "L1Cu(I) complex (I)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "L1Cu(I)-acetylide (II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "L1Cu(II)-acetylide (III) generated after SET to alkyl halide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tertiary/secondary/primary alkyl C-centered radical (·R2)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic/prochiral alkyl radical IV stabilized by delocalization into the (hetero)aromatic ring (after addition to alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "pentacoordinated Cu(III)-alkyl-alkynyl species VI (enantiodetermining)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "polymeric/aggregated [Cu(I)-acetylide]n (V)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "L1Cu(I)-acetylide (II) reduces alkyl halide R2-X by inner-sphere SET to generate an alkyl radical ·R2 and L1Cu(II)-acetylide (III); ·R2 adds to the terminal alkene to give a benzylic radical IV, which combines with Cu(II) species III to form Cu(III) intermediate VI that reductively eliminates the C(sp3)-C(sp) bond, regenerating L1Cu(I).",
+  "rate_determining_step": "C(sp3)-C(sp) bond-forming reductive elimination from Cu(III) intermediate VI is proposed as the enantiodetermining step; kinetic orders (first order in alkene, catalyst, and alkyl halide; saturation in alkyne) are consistent with turnover-limiting steps involving alkene, catalyst, and R-X but not free alkyne",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction inhibited, supporting a radical pathway"
+    },
+    {
+      "name": "radical clock substrate 82 (cyclopropane-containing)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 83 obtained under standard conditions, consistent with an alkyl radical intermediate"
+    },
+    {
+      "name": "Control: reaction without L1",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction without L1; with L1, copper phenylacetylide + 3a gave product 39 in 80% yield, 96% ee, implicating the ligated Cu-acetylide as the reductant of alkyl halides"
+    },
+    {
+      "name": "Tertiary alkyl bromide 3b vs chloride 3c",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Both gave the same enantioselectivity, arguing against outer-sphere/free SET stereochemistry differences"
+    },
+    {
+      "name": "L2CuI NMR binding study",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "1H NMR of L2Cu(I) complex characterized binding mode of N,N,P-ligand to Cu(I)"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "kinetic_order",
+    "stoichiometric_intermediate",
+    "UV_vis",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Enantiodiscrimination is rationalized by two pentacoordinated Cu(III) transition states: the re-TS is favored over si-TS due to steric clash between the (hetero)aryl group on substrate and the P-3,5-di-tert-butylphenyl group of the ligand, giving R-configured products. Authors note no solid experimental evidence yet for the stereochemical model and that DFT/further experiments are ongoing. Direct radical-Cu(II) coupling at quaternary centers is suppressed by steric hindrance, consistent with observed selectivity. Aggregated Cu(I)-acetylide (V) is proposed as an off-cycle resting form."
+}

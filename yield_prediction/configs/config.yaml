@@ -1,0 +1,58 @@
+# 产率预测模型配置
+
+data:
+  yield_data_dir: "/inspire/hdd/global_user/gelingli-253114010248/WDproject2/condition_agent/data/alkene_reactions_by_yield"
+  smiles_data_path: "/inspire/hdd/global_user/gelingli-253114010248/extracted_smiles.json"
+  train_ratio: 0.8
+  val_ratio: 0.1
+  test_ratio: 0.1
+  random_seed: 42
+
+model:
+  # 分子编码器配置
+  mol_encoder:
+    type: "fingerprint"  # fingerprint, gnn, transformer
+    fingerprint_size: 2048
+    fingerprint_radius: 2
+
+  # 条件编码器配置
+  condition_encoder:
+    hidden_dim: 256
+    num_layers: 2
+    dropout: 0.1
+
+  # 预测头配置
+  predictor:
+    hidden_dims: [512, 256, 128]
+    dropout: 0.2
+    output_dim: 1  # 产率预测
+
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  epochs: 100
+  early_stopping_patience: 10
+  scheduler:
+    type: "cosine"
+    warmup_epochs: 5
+
+  # GNN模型配置
+  gnn:
+    atom_feat_dim: 42
+    edge_feat_dim: 10
+    hidden_dim: 256
+    num_layers: 4
+    dropout: 0.2
+    readout: "mean_max"  # mean + max pooling
+
+# xTB量化描述符配置
+xtb:
+  csv_path: "/inspire/hdd/global_user/gelingli-253114010248/WDproject2/yield_prediction/data/xtb_reaction_molecules.csv"
+  feature_dim: 55
+  normalize: true
+  use_xtb: true  # 启用xTB量子化学特征
+
+output:
+  model_dir: "./checkpoints"
+  log_dir: "./logs"

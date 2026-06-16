@@ -1,0 +1,83 @@
+{
+  "doi": "10.1039_d4ob01327a",
+  "journal": "OrgBiomolChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical aryl-/alkyl-sulfonylation and alkoxysulfonylation of N-tert-butyl-N-allylbenzamides promoted by a radical Truce–Smiles rearrangement to deliver sulfone- and sulfonate-containing β-arylethylamines.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic SET oxidation of the sulfonyl source (arylsulfonyl hydrazide ArSO2NHNH2 to ArSO2• via -3H+/-N2; or bisulfite/metabisulfite to SO2 then SO2•+); the resulting carbamoyl radical after Truce–Smiles is further anodically oxidized to a carbamoyl cation; cathode performs proton reduction to H2.",
+  "key_intermediates": [
+    {
+      "name": "arylsulfonyl (or methyl) radical Ia (XSO2•, X = Ar, Me)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "sulfur dioxide radical cation Ib (SO2•+) generated from NaHSO3/Na2S2O5 after SET",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "γ-sulfonyl β-amino C-centered radical IIa (after addition of ArSO2• to alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "γ-methylsulfonate-ester β-amino C-centered alkyl radical IIb (after SO2•+/MeOH trapping of alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "spirocyclic ipso-cyclohexadienyl radical III (5-exo-trig Truce–Smiles intermediate)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "carbamoyl (amidyl-acyl) radical IV after C–C cleavage / aryl migration",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbamoyl cation V (anodic oxidation of IV)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "dihydrothienopyridinone 4n' from competing 6-endo ortho-addition of the alkyl radical onto thiophene",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the anode, ArSO2NHNH2 (or HSO3-) is oxidized by SET (losing 3H+/N2, or losing e-/Na+) to a sulfonyl radical ArSO2• or SO2•+; this radical adds regioselectively to the terminal alkene of the N-allylbenzamide to give a β-amino C-radical, which undergoes 5-exo-trig ipso-cyclization onto the N-aroyl arene (Truce–Smiles) to a spirocyclic radical that fragments by C–C cleavage to a carbamoyl radical; this carbamoyl radical is oxidized at the anode to a carbamoyl cation trapped by MeOH to give the methyl carbamate product, while protons are reduced to H2 at the Ni cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of 1a, (4-fluorophenyl)sulfonyl hydrazine, and NaHSO3",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Ep/2 = 1.49 V (1a), 0.93 V (ArSO2NHNH2), 0.67 V (NaHSO3) vs Fc+/0 in CH3CN/MeOH 6:4, indicating the sulfur components are oxidized preferentially, initiating the reaction via SET on the sulfonyl source rather than the amide."
+    },
+    {
+      "name": "control without current (Table 1, entry 15)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product (0% yield), confirming that electrolysis is essential to generate the sulfonyl/SO2-derived radical."
+    },
+    {
+      "name": "thiophene-substrate 1o (probe for ipso vs ortho selectivity)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Gives 4n in only 24% yield together with the 6-endo ortho-addition byproduct 4n' (46%), supporting a radical aryl-migration pathway competitive with cyclization onto the heteroarene."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two parallel pathways are proposed in Scheme 4: path a (aryl-/alkyl-sulfonylation) starts from a sulfonyl radical Ia from ArSO2NHNH2 (or MeSO2 source); path b (methoxy/alkoxysulfonylation) starts from SO2•+ (Ib) released from NaHSO3/Na2S2O5 and trapped by MeOH to install a methyl sulfonate ester. Both converge through the Truce–Smiles spirocyclic intermediate III and a carbamoyl radical/cation (IV→V) trapped by methanol. The bulky N-tBu group is invoked to enforce s-cis amide conformation that favors 5-exo ipso-cyclization over a competing 6-endo ortho-addition (the latter observed only with thiophene substrate 1o, giving dihydrothienopyridinone 4n')."
+}

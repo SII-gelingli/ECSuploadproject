@@ -1,0 +1,65 @@
+{
+  "doi": "10.1039_d0sc05665k",
+  "journal": "ChemSci",
+  "is_review": false,
+  "rxn_class_summary": "Catalyst-free electrochemical [3+2] annulation of N-cyclopropylanilines with alkenes (styrenes) via a radical cation chain mechanism",
+  "mechanism_family": [
+    "radical_cation",
+    "direct_SET",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of N-cyclopropylaniline (1a) to its aminium radical cation (1a+•) initiates a chain; cathode reduces the product radical cation (3a+•) only in initiation; propagation is via SET between 3a+• and 1a",
+  "key_intermediates": [
+    {
+      "name": "N-cyclopropylaniline radical cation (1a+•)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ring-opened distonic radical cation (β-iminium carbon radical)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclopentane-annulated product radical cation (3a+•)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "neutral [3+2] annulation product 3a (N-aryl 2-arylcyclopentylamine)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "The anode oxidizes 1a to the aminium radical cation 1a+•, which undergoes cyclopropane ring-opening and addition to styrene 2a to give the cyclized radical cation 3a+•; 3a+• is then reduced by another molecule of 1a (chain propagation), regenerating 1a+• and releasing neutral product 3a, so only sub-stoichiometric current is needed.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "divided H-cell (frit-separated anode/cathode)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Product 3a (23% NMR yield) and [3a+H]+ detected only in the anode chamber, none in the cathode chamber — rules out cathodic reduction as the productive reduction step and supports the chain mechanism"
+    },
+    {
+      "name": "online EC/MS (sonic spray ionization)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Direct detection of 1a+• (m/z 161) upon applying +3.0 V, confirming anodic generation of the aminium radical cation"
+    },
+    {
+      "name": "catalytic current / Faradaic analysis",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Only ~0.34 equiv of electrons consumed relative to 1a (32.4 C vs 96.5 C required for stoichiometric oxidation), consistent with a radical chain rather than stoichiometric electrolysis"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "kinetic_order",
+    "on/off_light_or_current",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly translate a known photoredox (Ru(bpz)3) [3+2] annulation into a catalyst-free electrochemical version; alternative non-chain pathway (anodic oxidation + cathodic reduction of 3a+•) is considered but disfavored by the divided-cell experiment and the sub-stoichiometric charge consumption. Conditions: undivided RVC(+)/Pt(–) cell, LiOTf/MeCN, 1 mA constant current."
+}

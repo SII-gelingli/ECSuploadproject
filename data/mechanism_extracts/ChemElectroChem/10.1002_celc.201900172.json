@@ -1,0 +1,41 @@
+{
+  "doi": "10.1002_celc.201900172",
+  "journal": "ChemElectroChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative 1,2-migration of α,α-disubstituted allyl alcohols to α-exo-methylene ketones using calcium or magnesium halide salts as halogen mediators",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of halide (Cl- or Br-) from CaX2/MgX2 generates an electrophilic halogen species (X+) that activates the allyl alcohol; cathode reduces MeOH to H2 and methoxide",
+  "key_intermediates": [
+    {
+      "name": "electrophilic halogen species (X+) generated at anode from halide mediator",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "halonium ion / halogenated alkoxide adduct of allyl alcohol (X added across C=C with adjacent O-H)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-halo ketone (after 1,2-migration and loss of H+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-exo-methylene ketone (final product after base-mediated dehydrohalogenation)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Halide (from CaX2 or MgX2) is oxidized at the anode to an electrophilic X+ species, which adds to the allyl alcohol alkene; 1,2-migration with loss of H+ delivers an α-halo ketone; cathodic reduction of MeOH produces methoxide which (or added base) effects dehydrohalogenation to the α-exo-methylene ketone.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism is proposed in Scheme 1 without direct mechanistic probes shown on these pages; halide-mediator role inferred from screening of supporting electrolytes (Et4NBF4 inactive; chloride/bromide salts active). Calcium and magnesium halides outperform alkali metal chlorides, and mixed MeOH/MeCN solvent suppresses electrode fouling from insoluble Ca species."
+}

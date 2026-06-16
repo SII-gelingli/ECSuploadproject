@@ -1,0 +1,75 @@
+{
+  "doi": "10.1016_j.jorganchem.2017.02.002",
+  "journal": "JOrganometChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical hydrogenation and reductive coupling of alkenes and alkynes catalyzed by a B12 model complex (heptamethyl cobyrinate) in the presence of TFA",
+  "mechanism_family": [
+    "mediator_cathodic",
+    "electrocatalysis_inner_sphere",
+    "radical_cathodic"
+  ],
+  "electrochemical_role": "Cathodic reduction of Co(II)/Co(III) B12 model complex to Co(I), which is protonated by TFA to form a Co(III)-H species that delivers a hydrogen radical to the alkene/alkyne substrate",
+  "key_intermediates": [
+    {
+      "name": "Co(I) species of B12 model complex (heptamethyl cobyrinate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(III)-H hydride intermediate with H-radical character",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-carbon-centered benzylic radical (e.g. PhC•(CH3)R)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(II) species",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbanion (for R = electron-withdrawing group such as CO2Et or Br)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbene from alpha-bromo benzylic carbanion after Br- elimination",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Cathode reduces the Co(II/III) B12 model to Co(I), which is protonated by TFA to give a Co(III)-H with H• character; H• transfers to the beta-position of the alkene/alkyne to generate an alpha-benzylic radical that then dimerizes, disproportionates, abstracts H•, or (for electron-poor substrates) is further reduced to a carbanion that is protonated.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "DMPO (5,5-dimethyl-1-pyrroline-N-oxide)",
+      "smiles": "CC1(C)CCC=[N+]1[O-]",
+      "purpose": "radical_trap",
+      "observation": "ESR detection of DMPO-H adduct (g=2.009, AN=14.9 G, AH=19.7 G) and DMPO-C carbon-centered radical adduct (g=2.008, AN=15.0 G, AH=21.4 G) during electrolysis of styrene"
+    },
+    {
+      "name": "TFA-d1 (deuterated trifluoroacetic acid)",
+      "smiles": "OC(=O)C(F)(F)F",
+      "purpose": "isotope_label",
+      "observation": "DMPO-H ESR signal disappeared when TFA-d1 was used in place of TFA, confirming the trapped H originates from the acid via the Co-H intermediate"
+    },
+    {
+      "name": "control without acid",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reduced product formed in the absence of TFA for all alkene/alkyne substrates, confirming Co-H requires protonation"
+    }
+  ],
+  "evidence_types_used": [
+    "EPR",
+    "H/D_labeling",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "For styrene derivatives with electron-withdrawing alpha-substituents (R = CO2Et, Br), a second cathodic reduction of the benzylic radical to a carbanion is invoked; with R = Br, elimination of Br- gives a transient carbene that couples with another benzylic carbanion to deliver E/Z 2,3-diphenylbutene. Three competing pathways for ethylbenzene formation from the benzylic radical are proposed: disproportionation, H• abstraction, and reaction with a second Co-H. Phenylacetylene is proposed to be reduced first to styrene, then further to 2,3-diphenylbutanes (racemic/meso) and ethylbenzene at -1.2 V vs Ag/AgCl."
+}

@@ -1,0 +1,74 @@
+{
+  "doi": "10.1021_acs.orglett.9b00263",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical tandem trifluoromethylation (or sulfonylation)/semipinacol rearrangement of cyclobutanol-substituted allylic alcohols to give α-quaternary β-CF3 (or β-sulfonyl) cyclopentanones via 1,2-alkyl migration.",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "radical_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of CF3SO2Na (Langlois reagent) generates CF3SO2 radical that extrudes SO2 to give CF3 radical; after CF3 addition to the alkene, the resulting benzyl radical is further anodically oxidized to a benzyl carbocation that triggers ring expansion. Cathode reduces H2O/H+ to H2.",
+  "key_intermediates": [
+    {
+      "name": "CF3SO2 radical (sulfonyl radical from anodic SET of Langlois reagent)",
+      "smiles": "[O]S(=O)C(F)(F)F",
+      "role": "transient"
+    },
+    {
+      "name": "CF3 radical (after SO2 extrusion)",
+      "smiles": "[C](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic carbon radical 5 (CF3 addition adduct to styrenyl cyclobutanol)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic carbocation 6 (after second anodic oxidation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ring-expanded oxocarbenium / protonated cyclopentanone after 1,2-alkyl migration",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-quaternary β-CF3 cyclopentanone 2a (product)",
+      "smiles": "O=C1CCCC1(c1ccccc1)CC(F)(F)F",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- to CF3SO2 radical which loses SO2 to give CF3 radical; CF3 radical adds to the styrenyl C=C of the allylic cyclobutanol giving a benzyl radical, which is oxidized again at the anode to a benzyl cation; 1,2-alkyl (cyclobutyl C-C) migration with deprotonation furnishes the α-quaternary cyclopentanone, while the cathode reduces water to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction inhibited; no 2a formed; TEMPO-CF3 adduct detected by GC-MS, supporting a free CF3 radical."
+    },
+    {
+      "name": "Methanol (as cosolvent)",
+      "smiles": "CO",
+      "purpose": "intermediate_trap",
+      "observation": "Methanol-trapped (methoxy-incorporated) species observed, indicating a carbocation intermediate."
+    },
+    {
+      "name": "CF3SO2Na / 1a cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "1a oxidizes at Ep/2 = 2.1 V vs SCE while CF3SO2Na oxidizes at 1.4 V vs SCE, so CF3SO2Na is preferentially oxidized first, generating CF3 radical."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Selectivity for 1,2-migration over oxygen-trapping or deprotonation byproducts (4aa/4ab) relies on the high migratory aptitude of the cyclobutyl group. Competing arene trifluoromethylation byproduct 4aa is suppressed by lowering CF3SO2Na to 2.0 equiv and increasing H2O:MeCN ratio. The sulfonylation variant is proposed to follow an analogous pathway with ArSO2 radical instead of CF3 radical (no SO2 extrusion)."
+}

@@ -1,0 +1,88 @@
+{
+  "doi": "10.1002_anie.201902315",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical [4+2] annulation-rearrangement-aromatization of styrenes to multi-substituted naphthalenes mediated by TBPA, forming polycyclic aromatics from simple styrene building blocks",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_cation",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of TBPA (tris(4-bromophenyl)amine) to a stable radical-cation TBPA•+, which then oxidizes electron-rich styrene to its radical cation via SET",
+  "key_intermediates": [
+    {
+      "name": "TBPA radical cation (mediator)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "styrene radical cation (69)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "radical cyclization adduct (70) - C-C bonded dimeric cation-radical",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexadienyl cation intermediate (71)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "deprotonated radical (72)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "dehydrodimer (68) - isolable homo-cycloadduct intermediate",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbon radical (73) from oxidation of 6",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "secondary carbocation (74)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "rearranged tertiary carbocation (75) after para-anisole migration",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cathodic H2 evolution from HFIP/proton reduction",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes TBPA to TBPA•+, which performs SET on electron-rich styrene to give styrene radical cation 69; a second styrene attacks 69 (radical cyclization) to form 70, deprotonation/further oxidation yields dehydrodimer 68; TBPA•+ oxidizes 68 to radical 73 then cation 74, which undergoes 1,2-aryl (para-anisole) migration to tertiary cation 75, and oxidative aromatization delivers naphthalene 2. Protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "isolated dehydrodimer 68 (intermediate resubjection)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "68 detected by GC during reaction, isolated in 50% yield; resubjecting 68 to electrolysis gave product 2 in 62% yield, confirming it as an on-cycle intermediate"
+    },
+    {
+      "name": "Cyclic voltammetry of 68 and of TBPA/1 mixture",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Two anodic peaks for 68 at 1.45 V and 1.90 V (sequential 2e- losses); CV of TBPA + 68 indicates TBPA mediates oxidation of 68, paralleling TBPA/1 behavior"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Para-anisole 1,2-migration is favored over methyl migration due to electron-rich aryl, generating the more stable tertiary carbocation 75 prior to aromatization. HFIP serves as proton source/solvent enabling cathodic H2 evolution. Mechanism is proposed without radical-trap experiments (no TEMPO/BHT reported on these pages) or DFT; key support comes from CV and isolation/resubjection of intermediate 68."
+}

@@ -1,0 +1,49 @@
+{
+  "doi": "10.1021_acs.joc.3c00790_sup_1",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Photoelectrochemical radical trifluoromethylation/cyclization of N-aryl-N-benzyl methacrylamides with CF3SO2Na to afford 3-CF3-substituted pyrrolin-2-ones (3-CF3 oxindole/pyrrolinone-type products)",
+  "mechanism_family": [
+    "radical_anodic",
+    "photoredox_combined",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation (assisted by photoexcited Mes-Acr+ photocatalyst under 455 nm irradiation) generates CF3• from CF3SO2Na via SET/desulfonylation; the Pt cathode reduces protons to H2 to close the redox cycle",
+  "key_intermediates": [
+    {
+      "name": "Photoexcited Mes-Acr+* (strongly oxidizing excited state)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "CF3 radical from desulfonylation of CF3SO2Na",
+      "smiles": "[CH0](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon-centered radical from CF3 addition to methacrylamide alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cyclized carbocation/enamide-derived intermediate after intramolecular addition onto the N-vinyl group",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Mes-Acr• (reduced acridine radical), reoxidized at the anode",
+      "smiles": null,
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "Under 455 nm light, Mes-Acr+* oxidizes CF3SO2Na to generate CF3•, which adds to the methacrylamide alkene; the resulting C-radical cyclizes onto the pendant enamide and is further oxidized (by Mes-Acr+* or at the anode) to a cation that loses a proton to give the pyrrolinone product, while protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "on/off_light_or_current",
+    "cyclic_voltammetry",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanistic section (per TOC) includes electricity on/off experiments (demonstrating need for continuous current/light), cyclic voltammetry studies (to assign oxidation events), and H2 detection tests at the cathode confirming proton reduction as the counter-reaction. PC screening (Table S7) shows Mes-Acr+ClO4- is optimal (81%) and that an added supporting electrolyte (Bu4NBF4, LiClO4) actually lowers yield, suggesting the photocatalyst plus KPF6/Cs2CO3 alone suffice for SET. Detailed radical-trap experiments (TEMPO/BHT) are not visible in the provided pages."
+}

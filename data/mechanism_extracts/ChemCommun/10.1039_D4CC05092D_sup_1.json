@@ -1,0 +1,58 @@
+{
+  "doi": "10.1039_D4CC05092D_sup_1",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical cyclopropanation of cinnamaldehydes with dimethyl malonate via iminium/enamine organocatalysis combined with iodide electrocatalytic mediation",
+  "mechanism_family": [
+    "mediator_anodic",
+    "electrocatalysis_outer_sphere",
+    "paired_electrolysis",
+    "radical_cation"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide to iodine radical (E-cat cycle) and anodic oxidation of the enamine intermediate (ii) to a radical cation that captures the iodine radical; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "iminium ion from condensation of pyrrolidine catalyst with cinnamaldehyde 1a (i)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "enamine adduct after Michael addition of dimethyl malonate (ii)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "enamine-derived radical cation captured by I• (ii-a/iii)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-iodo iminium intermediate (iii)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclopropane-fused iminium (iv) after intramolecular SN2 displacement of iodide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "iodine radical (I•) generated at the anode",
+      "smiles": "[I]",
+      "role": "reactive"
+    },
+    {
+      "name": "cyclopropane aldehyde product 3a",
+      "smiles": "O=CC1(C(=O)OC)(C(=O)OC)C1c1ccccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, iodide is oxidized to I• (E-cat cycle); in parallel the enamine intermediate (ii) is anodically oxidized to a radical cation that couples with I• to give an α-iodo iminium (iii). Intramolecular displacement of iodide by the malonate carbon closes the cyclopropane (iv); hydrolysis releases product 3a and regenerates the pyrrolidine catalyst, while the cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "This scheme (Scheme S2) is presented as an ALTERNATIVE mechanism to the main proposal: instead of α-iodination of the enamine by I• directly, the enamine is first oxidized anodically to a radical cation which then captures I•. Both pathways converge on the α-iodo iminium (iii) and subsequent intramolecular cyclopropanation. No probe experiments (TEMPO, KIE, CV, DFT) are shown on this page to distinguish the two."
+}

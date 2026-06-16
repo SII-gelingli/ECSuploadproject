@@ -1,0 +1,93 @@
+{
+  "doi": "10.1021_jacs.2c06273",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Photoelectrochemical (PEC) bromide-mediated epoxidation of alkenes on a BiVO4 photoanode using NaBr as redox mediator in H2O/CH3CN",
+  "mechanism_family": [
+    "mediator_anodic",
+    "photoredox_combined",
+    "electrocatalysis_outer_sphere",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Photogenerated holes at the BiVO4 photoanode oxidize Br- to Br2 (mediator); Br2 disproportionates in water to give the electrophilic [Br]+ (HBrO) that initiates alkene activation. Cathode performs HER, producing OH- needed for ring closure.",
+  "key_intermediates": [
+    {
+      "name": "Br2 (anodically generated)",
+      "smiles": "BrBr",
+      "role": "transient"
+    },
+    {
+      "name": "HBrO / [Br]+ electrophilic bromenium",
+      "smiles": "OBr",
+      "role": "reactive"
+    },
+    {
+      "name": "cyclic bromonium ion of alkene (2)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "bromohydrin (3)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "epoxide product (4)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,2-dibromide (5) side product",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "diol (6) side product",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Light excites BiVO4; holes at the photoanode oxidize Br- to Br2, which disproportionates with H2O to HBrO/[Br]+ and HBr. [Br]+ adds to the alkene C=C to give a bromonium, water opens it to bromohydrin, and OH- (from cathodic HER) closes it to the epoxide while regenerating Br-.",
+  "rate_determining_step": "Photoanodic oxidation of Br- to Br2 (mediator turnover), as suggested by current-limited epoxide accumulation under light-on/off control",
+  "probe_reagents": [
+    {
+      "name": "proton exchange membrane (two-compartment cell)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Anodic reaction stalls at bromohydrin 3 because OH- from the cathode cannot reach the anolyte, confirming bromohydrin as the on-cycle intermediate prior to OH--assisted cyclization"
+    },
+    {
+      "name": "dark control (no illumination)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No epoxide formed in the dark at 0.8 V; epoxide accumulates only under light, showing PEC (photo-driven) origin"
+    },
+    {
+      "name": "NaBr omission control",
+      "smiles": "[Na+].[Br-]",
+      "purpose": "redox_probe",
+      "observation": "Only 8% epoxide yield without NaBr and water oxidation dominates; with NaBr, water oxidation is suppressed and epoxidation is selective"
+    },
+    {
+      "name": "NaClO4 substitution for NaBr",
+      "smiles": "[Na+].[O-]Cl(=O)(=O)=O",
+      "purpose": "redox_probe",
+      "observation": "O2 evolution observed (water oxidation) instead of epoxidation, confirming Br- as the essential mediator"
+    },
+    {
+      "name": "GC headspace analysis",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "H2 quantified at cathode with ~100% FE; no O2 detected in sealed H-cell with NaBr, confirming suppression of OER"
+    }
+  ],
+  "evidence_types_used": [
+    "on/off_light_or_current",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "UV_vis",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism is adapted from established halide-mediated EC epoxidation (refs 28, 31). NaBr plays a dual role: redox mediator for epoxidation and hole scavenger that stabilizes BiVO4 against photocorrosion (loss of V5+). Dibromide (5) and diol (6) side pathways are drawn in Scheme 1 but not observed experimentally. Non-unity FE (65%) attributed to accumulation of unreacted Br2/HBrO rather than side reactions."
+}

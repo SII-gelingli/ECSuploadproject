@@ -1,0 +1,79 @@
+{
+  "doi": "10.1021_acs.joc.2c03020",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "electrochemical oxidative radical 1,2-halofunctionalization (iodo-, bromo-, chloro-) of alkenes with carboxylic acids, water, or alcohols as nucleophiles using nBu4NX as the halogen source",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "anodic oxidation of halide (X-) from nBu4NX to halogen radical (X•), which adds to the alkene; the resulting carbon radical is further anodically oxidized to a carbocation that is trapped by the nucleophile. An alternate path involves anodic oxidation of X• to X+ which forms a haliranium ion intermediate.",
+  "key_intermediates": [
+    {
+      "name": "halogen radical X• (I•, Br•, Cl•) generated at anode",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-halo carbon radical (intermediate I) from X• addition to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-halo benzylic carbocation (intermediate II) from anodic oxidation of I",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "haliranium / halonium ion (intermediate III) from X+ addition to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclopropyl-retained β-iodo benzyl radical/cation (Int-1)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ring-opened homoallyl bromide radical (Int-2)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ring-opened homoallyl chloride radical (Int-3)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Halide anion X- is preferentially oxidized at the anode (lower Eox than the alkene) to give X•, which adds to the alkene to form a benzylic C-radical; this radical is further oxidized at the anode to a benzylic cation that is captured by the carboxylate/water/alcohol nucleophile. In parallel, X• can be further oxidized to X+ which forms a haliranium ion attacked by the nucleophile. At the cathode, H+ is reduced to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "DMPO (spin trap)",
+      "smiles": "CC1(C)CC=[N+]([O-])C1",
+      "purpose": "radical_trap",
+      "observation": "EPR signals consistent with iodine and bromine radicals detected during electrolysis of nBu4NI and nBu4NBr; DMPO adducts also observed in model reactions with 1a/1b"
+    },
+    {
+      "name": "vinylcyclopropane 2a (radical clock)",
+      "smiles": "C(=C)(c1ccccc1)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "With nBu4NI only cyclopropyl-retained product 54 (56%) was obtained (radical oxidized to cation before ring opening, or I- oxidized to I+); with nBu4NBr both retained 55 (12%) and ring-opened 56 (40%) formed; with nBu4NCl retained 57 (20%) and ring-opened dichloro 58 (32%) formed, supporting radical intermediates Int-2 and Int-3"
+    },
+    {
+      "name": "cyclic voltammetry of nBu4NI, nBu4NBr, nBu4NCl vs 1-methoxy-4-vinylbenzene and benzoic acid",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Eox(nBu4NI)=+0.373 V, Eox(nBu4NBr)=+0.686 V, Eox(nBu4NCl)=+0.815 V vs SCE in MeCN/DCM, all much lower than 1a (+1.413 V); benzoic acid shows no oxidation up to +3.0 V — halides are preferentially oxidized"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "EPR",
+    "cyclic_voltammetry",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two parallel pathways are proposed in Scheme 4: (a) radical addition of X• to alkene then anodic oxidation of the C-radical to carbocation II (radical–polar crossover), and (b) anodic oxidation of X• to X+ followed by haliranium ion III formation; both are quenched by the nucleophile. The cyclopropyl-retained product with iodide could indicate either I- → I+ pathway or fast oxidation of the radical to a cation before ring opening, so the iodination case does not unambiguously distinguish the two routes."
+}

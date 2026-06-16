@@ -1,0 +1,90 @@
+{
+  "doi": "10.1021_jacs.4c02284",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Photoredox/nickel dual-catalyzed three-component 1,2-dialkylation of unactivated alkenes with alkyl halides and hypervalent iodine(III) reagents via bimolecular homolytic substitution (SH2).",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_polar_crossover",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "excited-state 4-CzIPN triplet (*PC, T1)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "carboxyl radical from I-O homolysis of iodine(III) reagent (fragments to CO2 + alkyl radical)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "nucleophilic primary alkyl radical (i, e.g. methyl radical from PhI(OAc)2)",
+      "smiles": "[CH3]",
+      "role": "reactive"
+    },
+    {
+      "name": "electrophilic alkyl radical ii (e.g. •CH2CF3 from ICH2CF3 via XAT)",
+      "smiles": "[CH2]C(F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "sterically congested secondary C-radical iii from addition of ii to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Tp*Ni(II)-Me complex (iv)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Tp*Ni(III)(Me)(R) complex (v) formed by radical capture of i by Ni(II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Me-I byproduct from XAT",
+      "smiles": "CI",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Visible-light excitation of 4-CzIPN generates a triplet that triplet-triplet energy-transfers to the iodine(III) reagent, homolyzing I-O to release a nucleophilic 1° alkyl radical (i, +CO2, +PhI); i abstracts iodine from the electrophilic alkyl iodide (XAT) to give an electrophilic alkyl radical ii, which adds regioselectively to the unactivated alkene to give congested radical iii; meanwhile i is selectively captured by Tp*Ni(II) to form Tp*Ni(III)(alkyl) v, which undergoes outer-sphere SH2 with iii to forge the second C(sp3)-C(sp3) bond and release Ni(I)/Ni(II) for turnover.",
+  "rate_determining_step": "Outer-sphere bimolecular homolytic substitution (SH2) of secondary C-radical iii at the Tp*Ni(III)-alkyl species v to forge the second C(sp3)-C(sp3) bond (proposed key selectivity-determining step).",
+  "probe_reagents": [
+    {
+      "name": "exogenous haloarene (4-bromoiodoarene)",
+      "smiles": "Brc1ccc(I)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Haloarene fully recovered and reaction unaffected (84% 4a), arguing against low-valent Ni(0)/Ni(I) that would oxidatively insert into Ar-X."
+    },
+    {
+      "name": "methyl iodide (in place of PhI(OAc)2)",
+      "smiles": "CI",
+      "purpose": "other",
+      "observation": "No dialkylation detected, showing the second C(sp3)-C(sp3) bond does not form via Ni insertion into Me-I and that the Me source must come from the iodine(III) reagent."
+    },
+    {
+      "name": "dicumyl peroxide (alternative methyl radical source)",
+      "smiles": "CC(C)(OOC(C)(C)c1ccccc1)c1ccccc1",
+      "purpose": "other",
+      "observation": "Affords 4a in 14% yield, supporting that photolytically generated Me• can engage in XAT with ICH2CF3."
+    },
+    {
+      "name": "PhI(O2CEt)2 with ICH2CN",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Gives product 5m (45%) along with EtI (110%), confirming chemoselective XAT in which the ethyl radical from the I(III) reagent abstracts iodine from the electrophilic alkyl iodide."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "crossover",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly disfavor a low-valent Ni(0)/Ni(I) oxidative addition pathway based on the haloarene control. Polarity matching (nucleophilic 1° radical preferentially abstracts I from electrophilic EWG-CH2-I) and steric differentiation by Tp*Ni (preferring the unhindered 1° alkyl radical) are invoked to rationalize chemoselectivity. Ring-opening of α-pinene/caryophyllene oxide substrates serves as an implicit radical clock supporting cyclobutylcarbinyl-radical intermediacy after initial electrophilic radical addition. No KIE, EPR, DFT, or CV reported in the main text."
+}

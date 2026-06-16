@@ -1,0 +1,87 @@
+{
+  "doi": "10.1002_adsc.9600",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical multi-component hydroxy-thiocarbamation of electron-deficient alkenes with KSCN and H2O to give β-hydroxy primary S-thiocarbamates",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of SCN- to thiocyanyl radical (SCN•); the benzylic radical adduct is further oxidized at the anode to a carbocation; protons are reduced at the cathode to H2",
+  "key_intermediates": [
+    {
+      "name": "Thiocyanyl radical (SCN•), intermediate I",
+      "smiles": "[S]C#N",
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic carbon radical from SCN• addition to α-phenylacrylate, intermediate II",
+      "smiles": "[CH](c1ccccc1)(C(=O)OC)CSC#N",
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic carbocation, intermediate III",
+      "smiles": "[C+](c1ccccc1)(C(=O)OC)CSC#N",
+      "role": "reactive"
+    },
+    {
+      "name": "β-Hydroxy thiocyanate, intermediate IV",
+      "smiles": "OC(c1ccccc1)(C(=O)OC)CSC#N",
+      "role": "transient"
+    },
+    {
+      "name": "HFIP H-bond-activated thiocyanate adduct, intermediate V",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-Hydroxy primary S-thiocarbamate product 4a",
+      "smiles": "OC(c1ccccc1)(C(=O)OC)CSC(=O)N",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "SCN- is oxidized at the anode to SCN•, which adds to the electron-deficient alkene to give a benzylic C-radical; a second anodic SET produces a benzylic cation that is trapped by H2O to give a β-hydroxy thiocyanate; HFIP-assisted hydration of the SCN group then yields the primary S-thiocarbamate while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Target product 4a suppressed to trace; HRMS detected BHT-SCN adduct and BHT-carbon radical adduct, confirming SCN• (I) and benzylic radical (II)"
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "D-labeled 4a detected by HRMS; N-H/O-H of carbamoyl and hydroxyl originate from water"
+    },
+    {
+      "name": "H2 18O",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "18O-labeled 4a detected by HRMS; both hydroxyl and carbamoyl oxygens come from H2O"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a and KSCN",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "KSCN onset oxidation +0.383 V vs SCE, much lower than α-phenylacrylate (+1.693 V), indicating SCN- is preferentially oxidized at the anode"
+    },
+    {
+      "name": "Pd/C hydrogenation of N-phenylmaleimide using cell-evolved H2",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "N-phenylsuccinimide 6a obtained in 59% yield, confirming cathodic H2 evolution"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "product_isotope_distribution",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "HFIP (solvent) is proposed to activate the SCN group via H-bonding (intermediate V), enabling nucleophilic hydration of the nitrile-like SCN to deliver the primary S-thiocarbamate; no DFT or KIE reported."
+}

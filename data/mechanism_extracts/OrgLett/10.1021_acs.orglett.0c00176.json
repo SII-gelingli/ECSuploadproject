@@ -1,0 +1,61 @@
+{
+  "doi": "10.1021_acs.orglett.0c00176",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intramolecular oxytrifluoromethylation of N-tethered alkenyl alcohols using Langlois reagent (CF3SO2Na) to deliver 2-(2,2,2-trifluoroethyl)morpholines",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2Na (Langlois reagent) generates CF3SO2 radical that extrudes SO2 to release CF3 radical; a second anodic SET oxidizes the alkyl radical adduct to a carbocation that is trapped intramolecularly by the tethered alcohol",
+  "key_intermediates": [
+    {
+      "name": "CF3SO2 radical (from anodic SET on CF3SO2Na)",
+      "smiles": "[O]S(=O)C(F)(F)F",
+      "role": "transient"
+    },
+    {
+      "name": "CF3 radical",
+      "smiles": "[C](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "beta-CF3 alkyl carbon-centered radical (intermediate 6)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "beta-CF3 alkyl carbocation (intermediate 7)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "trifluoromethylated morpholine product 3",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2Na by SET to give CF3SO2 radical which loses SO2 to form CF3 radical; CF3 radical adds regioselectively to the terminal alkene to form a secondary C-radical, which is further oxidized at the anode to a carbocation; the tethered hydroxyl performs intramolecular nucleophilic addition with loss of H+ to give the morpholine, while cathodic reduction of H+/H2O liberates H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "no-current control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction in the absence of electric current (Table 1, entry 10), confirming electrochemical initiation"
+    },
+    {
+      "name": "cyclic voltammetry of Langlois reagent vs substrate 1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "CF3SO2Na shows irreversible anodic oxidation at 1.48 V (vs Ag/AgCl), substantially lower than substrate 1a at 2.07 V, indicating selective oxidation of Langlois reagent at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism proposed on the basis of control experiments (no current = no reaction), CV data, and analogy to prior reports; no radical trap (e.g., TEMPO/BHT), KIE, or DFT studies are reported. Method also extends to a 7-membered benzoxazepine from an alken-7-ol substrate (Scheme 3)."
+}

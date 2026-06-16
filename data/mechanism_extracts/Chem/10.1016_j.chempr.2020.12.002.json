@@ -1,0 +1,94 @@
+{
+  "doi": "10.1016_j.chempr.2020.12.002",
+  "journal": "Chem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical aziridination of electron-rich styrenes with primary alkyl amines in flow, via anodic oxidation of the alkene to a radical cation that is attacked by the amine, followed by deprotonation, second SET, and ring closure",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_polar_crossover",
+    "direct_SET",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the electron-rich styrene generates an alkene radical cation; cathode reduces protons to H2 (which can be used in a downstream Pd/C hydrogenation for formal hydroamination)",
+  "key_intermediates": [
+    {
+      "name": "styrene/anethole radical cation (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-amino-α-carbon radical (C, after amine addition to radical cation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "protonated β-amino radical / ammonium radical (D)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-amino benzylic carbocation (E, after second SET)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "trans-aziridine product (F, 9A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Schiff base / imine from overoxidation of alkene",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "aminium radical cation from amine oxidation (alternative initiation)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the electron-rich styrene by SET to a radical cation, which is attacked by the primary alkyl amine to give a β-amino C-radical; deprotonation and a second anodic SET deliver a β-amino benzylic carbocation that undergoes barrier-less intramolecular ring closure with loss of a proton to the trans-aziridine, while protons are reduced to H2 at the stainless-steel cathode.",
+  "rate_determining_step": "Initial anodic SET oxidation of the alkene to its radical cation (ΔG = +28.3 kcal/mol, +1.226 V vs SCE); subsequent C–N bond formation proceeds via a low (+5.4 kcal/mol) transition state",
+  "probe_reagents": [
+    {
+      "name": "1,4-cyclohexadiene (1,4-CHD)",
+      "smiles": "C1CC=CCC=1",
+      "purpose": "intermediate_trap",
+      "observation": "0.5 equiv suppressed overoxidation of the alkene; imine byproduct dropped from 15% to 6% and aziridine 9A rose from 78% to 92%"
+    },
+    {
+      "name": "γ-terpinene",
+      "smiles": "CC(C)C1=CCC(C)=CC1",
+      "purpose": "intermediate_trap",
+      "observation": "Non-toxic H-atom/electron donor alternative to 1,4-CHD; suppressed alkene overoxidation (88% 9A, 8% imine) and attenuated the CV oxidation wave of anethole"
+    },
+    {
+      "name": "cis- vs trans-stilbene",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Both stereoisomers converge to the same trans-aziridine (19-A), consistent with a stepwise (non-concerted) radical-cation pathway"
+    },
+    {
+      "name": "styrene / trans-β-methylstyrene (high oxidation-potential alkenes)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No aziridine formed; rationalized by competing amine oxidation before alkene oxidation"
+    },
+    {
+      "name": "anethole + cyclohexylamine (CV studies)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "CV shows two oxidation events of the alkene (radical cation, then oxidative cleavage to Schiff base); amine oxidation requires +1.665 V vs SCE and is kinetically disfavored"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "DFT",
+    "intermediate_trap_other",
+    "stereochemical_convergence",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "An alternative initiation via anodic oxidation of the alkyl amine to an aminium radical is computed to be uphill (+38.4 kcal/mol, +1.665 V vs SCE) and is therefore disfavored, but the authors do not exclude it for some substrate combinations. Aryl amines fail because they are not nucleophilic enough to add to radical cation B. Scope limits (electron-rich β-substituted styrenes only) are rationalized by accessible alkene oxidation potential plus steric protection of the radical cation. The cathodically generated H2 is productively used downstream over a Pd/C packed bed to give the formal hydroamination product."
+}

@@ -1,0 +1,75 @@
+{
+  "doi": "10.1002_slct.202503086",
+  "journal": "ChemSelect",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxyselenation of carbamate- and benzoate-tethered terminal alkenes with diphenyl diselenide to deliver β-hydroxyselenides via an anodically generated selenium electrophile and intramolecular cyclic seleniranium intermediate opened by water.",
+  "mechanism_family": [
+    "cation_initiated",
+    "mediator_anodic",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of PhSeSePh to a selenonium radical cation (A) which fragments to PhSe• (B) and PhSe+ (C); the cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "PhSeSePh radical cation (A)",
+      "smiles": "[Se+](c1ccccc1)([Se][c2ccccc2])",
+      "role": "transient"
+    },
+    {
+      "name": "Phenylselenyl radical (B)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "Phenylselenyl cation (C)",
+      "smiles": "[Se+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Six-membered seleniranium/cyclic selenonium intermediate (D) from intramolecular carbamate-O assistance",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-Hydroxyselenide product 3a",
+      "smiles": "O=C(NS(=O)(=O)c1ccc(C)cc1)OCC(O)C[Se]c2ccccc2",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "PhSeSePh is oxidized at the graphite anode to a radical cation that splits into PhSe• and PhSe+; the electrophilic PhSe+ adds to the tethered alkene with anchimeric assistance from the carbamate/ester oxygen to form a six-membered cyclic selenonium ion D, which is opened by water/hydroxide to give the β-hydroxyselenide while protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3a still formed in 65% yield, indicating the productive pathway is not radical."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Product 3a still obtained in 49% yield, supporting a non-radical (cationic) pathway."
+    },
+    {
+      "name": "Cyclohexene (6)",
+      "smiles": "C1CCCCC=1",
+      "purpose": "intermediate_trap",
+      "observation": "No β-hydroxyselenide product 8 formed; non-tethered simple alkenes are unreactive, supporting the need for an intramolecular nucleophile to form intermediate D."
+    },
+    {
+      "name": "Allylbenzene (7)",
+      "smiles": "C=CCc1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "No desired product 9, again indicating tether-assisted seleniranium opening is required."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Substrate-scope failures (cyano, nitro, dimethylcarbamate, cinnamyl) are rationalized by competing cathodic reduction of EWGs or anodic oxidation of N-methyl groups rather than by a change in mechanism. X-ray structure of 3j (CCDC 2408983) confirms the β-hydroxyselenide regiochemistry consistent with seleniranium-opening pathway. A radical chain involving PhSe• cannot be fully excluded but is disfavored by TEMPO/BHT results."
+}

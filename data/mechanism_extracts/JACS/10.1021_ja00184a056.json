@@ -1,0 +1,68 @@
+{
+  "doi": "10.1021_ja00184a056",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical reductive double cyclization of β-dicarbonyl enol phosphates to bicyclo[n.1.0]alkanes (cyclopropane-fused carbocycles)",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_anion",
+    "carbene",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Cathodic reduction of β-dicarbonyl enol phosphate substrate 1; one-electron reduction gives radical anion 3, two-electron reduction gives vinyl anion 4 (resonance form of singlet carbene 4a), both with loss of diethyl phosphate anion",
+  "key_intermediates": [
+    {
+      "name": "radical anion 3a/3b (from one-electron reduction of enol phosphate, loss of phosphate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "vinyl anion 4b / singlet carbene 4a (from two-electron reduction)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "monocyclized radical 5 (first cyclization product of 3a)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "bicyclic radical 6 (second cyclization, cyclopropane-containing)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "bicyclic carbanion/anion 8 prior to protonation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "final bicyclo[n.1.0]alkane product 7 (e.g., 2)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces β-dicarbonyl enol phosphate 1 by one electron with loss of diethyl phosphate to give vinyl radical 3a; intramolecular radical cyclization gives monocyclic radical 5, a second radical cyclization forms bicyclic radical 6, which is further reduced at the cathode to anion 8 and protonated to deliver the bicyclo[n.1.0]alkane 7. A competing pathway via two-electron reduction to singlet carbene 4a (≡ vinyl anion 4b) is excluded by retention of alkene stereochemistry in probe substrates.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cis/trans-disubstituted alkene substrates (examples 6 and 7 of Table I)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Double cyclization proceeded with retention of alkene stereochemistry, excluding free singlet carbene (3a/4a) as the reactive intermediate; an intermediate that permits isomerization (e.g., free vinyl anion) is also ruled out since complete equilibration does not occur"
+    },
+    {
+      "name": "ethyl carbonate analogue of enol phosphate (example 5 substrate)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Under identical electrochemical conditions gave 43% of the same bicyclic product, showing the leaving group can be varied and supporting a reductive C–O cleavage step"
+    }
+  ],
+  "evidence_types_used": [
+    "stoichiometric_intermediate",
+    "product_isotope_distribution",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly state mechanism is complex and not rigorously defined. Favored pathway is stepwise radical cyclization from radical anion 3a → 5 → 6 → reduction to 7. Alternatives considered and disfavored: (i) singlet carbene addition via 3a or 4a (excluded by stereoretention in examples 6/7); (ii) two-step anionic Michael route via vinyl anion 4b → 8 → intramolecular Michael; (iii) direct H-atom abstraction by 6 to give 2; (iv) reduction of 5 to 8 prior to second cyclization (disfavored due to short lifetime/ring closure outcompeting bond rotation). Loss of stereoselectivity in final protonation in example 8 indicates protonation of carbanion 8 is hindered from both cyclopentyl faces. Footnote 13 notes vinyl anions like 4b do not add intramolecularly to unactivated 1,2-disubstituted alkenes, further arguing against the anionic pathway."
+}

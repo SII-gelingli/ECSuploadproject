@@ -1,0 +1,96 @@
+{
+  "doi": "10.1002_adsc.202401225",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical dual trifluoromethylation/cyclization of 2-aryl-N-acryloyl indoles with CF3SO2Na to afford bis-trifluoromethylated indolo[2,1-a]isoquinolinones.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2Na to a trifluoromethanesulfonyl radical that loses SO2 to give CF3 radical; later anodic oxidations of cyclized C-radicals generate cationic intermediates that lose H+ to rearomatize/form product.",
+  "key_intermediates": [
+    {
+      "name": "trifluoromethanesulfonyl radical (CF3SO2•)",
+      "smiles": "[O-]S(=O)(=O)C(F)(F)F",
+      "role": "transient"
+    },
+    {
+      "name": "trifluoromethyl radical (CF3•)",
+      "smiles": "[CH](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon radical A (CF3 adduct on acryloyl C=C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized C3-indolyl radical B (after intramolecular radical addition onto indole C3)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cationic intermediate C (oxidation of B)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "mono-CF3 indolo[2,1-a]isoquinolinone intermediate 5 (after deprotonation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical D after second CF3• addition",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cation E (anodic oxidation of D)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "bis-CF3 indolo[2,1-a]isoquinolinone 3a (product)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2− to CF3SO2• which extrudes SO2 to give CF3•; CF3• adds to the acryloyl alkene of 1a, the resulting C-radical cyclizes onto the indole C3 to give radical B, which is anodically oxidized to cation C and deprotonated to neutral mono-CF3 intermediate 5; a second CF3• adds to the styrene-like alkene of 5 to give benzylic radical D, anodic oxidation to cation E followed by deprotonation furnishes 3a.",
+  "rate_determining_step": "Intramolecular radical cyclization of A onto the indole (TS2, ΔG‡ = 19.1 kcal/mol).",
+  "probe_reagents": [
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely suppressed; DPE-CF3SO2 adduct 4 detected by ESI-MS, implicating CF3SO2• as a radical intermediate."
+    },
+    {
+      "name": "no-current control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Without electricity essentially no reaction occurred; electricity is indispensable."
+    },
+    {
+      "name": "reaction quench at 2 h",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Mono-CF3 intermediate 5 detected by ESI-MS, supporting stepwise dual trifluoromethylation."
+    },
+    {
+      "name": "cyclic voltammetry of 2a vs 1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "CF3SO2Na oxidation onset at 1.80 V vs Ag/AgCl, lower than 1a (1.97 V), indicating preferential anodic oxidation of CF3SO2− to generate CF3•."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "DFT",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Mechanism supported by DFT (wB97XD/def2TZVPP, CPCM-MeCN) including TS1 (CF3• addition, 10.5 kcal/mol), TS2 (radical cyclization, 19.1 kcal/mol, rate-determining), TS3 (second CF3• addition, 9.1 kcal/mol), and Hirshfeld spin-density analysis tracking spin-center migration from CF3 carbon to β-carbon during each addition/cyclization step. Single-crystal X-ray of 3a confirms regiochemistry. Substrate with CHF2SO2Na failed, suggesting sensitivity to radical stability of the perfluoroalkyl source."
+}

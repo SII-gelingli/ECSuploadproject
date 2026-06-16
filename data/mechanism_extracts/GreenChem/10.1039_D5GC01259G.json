@@ -1,0 +1,99 @@
+{
+  "doi": "10.1039_D5GC01259G",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical vicinal amidoselenation of unactivated aliphatic alkenes with diaryl diselenides and acetonitrile via a tandem radical selenation/oxidative Ritter reaction",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of diphenyl diselenide to a diselenide radical cation that fragments to PhSe+ and PhSe•; the alkyl radical formed after PhSe• addition to the alkene is further oxidized at the anode to a selenonium cation, while protons are reduced at the cathode to H2",
+  "key_intermediates": [
+    {
+      "name": "diphenyl diselenide radical cation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl radical (PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenium cation (PhSe+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "phenylseleno-substituted cyclohexyl radical (A)",
+      "smiles": "[CH]1CCCCC1[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "cyclohexyl selenonium cation (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "nitrilium ion intermediate (C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "water-trapped nitrilium / hydroxyl iminium (D, IM4/IM5)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, Ph2Se2 is oxidized to its radical cation which fragments into PhSe+ and PhSe•; PhSe• adds to cyclohexene to give a β-selenoalkyl radical, which is then oxidized at the anode to a selenonium cation. Acetonitrile attacks this cation to form a nitrilium ion that is trapped by water, deprotonates/isomerizes to the amide product, while H+ is reduced to H2 at the cathode.",
+  "rate_determining_step": "Nucleophilic attack of acetonitrile on the selenonium ion (TS4, ΔG‡ ≈ 21.12 kcal/mol) is the highest barrier on the productive pathway",
+  "probe_reagents": [
+    {
+      "name": "BHT (2,6-di-tert-butyl-4-methylphenol)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield suppressed to 55% (2 eq) and 20% (4 eq), indicating radical involvement"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Complete inhibition (trace product) with 2 eq; PhSe-DPE adduct detected by HRMS (m/z 337.0483)"
+    },
+    {
+      "name": "phenylselenenyl chloride (PhSeCl)",
+      "smiles": "Cl[Se]c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "No product at 65 °C/5 h without oxidant; only 32% with (NH4)2S2O8; 15% under electrochemical conditions — suggests ionic PhSe+ pathway is inefficient and radical pathway dominates"
+    },
+    {
+      "name": "D2O / anhydrous conditions",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "Under dry MeCN/N2 only 43% yield obtained, confirming water is the oxygen source for the amide group"
+    },
+    {
+      "name": "selenonium cation 4a and PhSe-DPE adduct 4b",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Both detected by HRMS (239.0332 and 337.0483), confirming selenonium and selenyl radical intermediates"
+    },
+    {
+      "name": "cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Cyclohexene is not oxidizable; Ph2Se2 shows Eox = 1.70 V; with TsOH the second oxidation peak of the mixture shifts from 2.36 to 2.10 V, showing acid promotes the electrochemical step"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "DFT",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly rule out a purely ionic PhSe+ pathway (no reaction with PhSeCl alone) in favor of a radical addition by PhSe• followed by anodic oxidation to the selenonium cation (radical-polar crossover). DFT shows the singlet selenonium 1IM2 is strongly favored over triplet 3IM2 (−35.93 vs −1.66 kcal/mol). Hydrogen gas at the cathode confirmed by detection experiment. Water (adventitious from solvent/air) is the source of the amide oxygen via Ritter-type trapping."
+}

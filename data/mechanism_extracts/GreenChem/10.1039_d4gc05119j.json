@@ -1,0 +1,85 @@
+{
+  "doi": "10.1039_d4gc05119j",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical dehydrogenative annulation between N-vinylamides (enamides) and O-nucleophiles (water, alcohols, carboxylic acids) to form 4-oxo-oxazolines, mediated by anodically generated bromine from NaBr.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of Br- to Br2 (mediator); Br2 functionalizes the enamide N-H to an N-Br intermediate which homolyzes to an N-centered radical; a second anodic SET converts the resulting C-radical to a carbocation. Cathode reduces H2O to H2/OH-.",
+  "key_intermediates": [
+    {
+      "name": "N-bromo-N-vinylbenzamide (A)",
+      "smiles": "O=C(c1ccccc1)N(Br)C=C",
+      "role": "transient"
+    },
+    {
+      "name": "N-centered amidyl radical (B)",
+      "smiles": "[N]([CH]=[CH2])C(=O)c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "alpha-carbon radical (C)",
+      "smiles": "O=C(c1ccccc1)N=C[CH2]",
+      "role": "reactive"
+    },
+    {
+      "name": "N-acyl iminium / alpha-cation (D)",
+      "smiles": "O=C(c1ccccc1)N=C[CH2+]",
+      "role": "reactive"
+    },
+    {
+      "name": "O-nucleophile adduct (J, e.g., hydroxyethyl-amide from H2O addition)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclized oxazolinium (K)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "4-hydroxy-2-aryl-oxazoline (2a, product)",
+      "smiles": "OC1OC(=N1)c1ccccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Br- to Br2, which brominates the amide N-H of the enamide to give N-Br species A; homolysis gives amidyl radical B that tautomerizes to alpha-C radical C; a second anodic one-electron oxidation produces N-acyliminium/carbocation D, which undergoes O-nucleophile addition, intramolecular cyclization, and deprotonation to the 4-oxo-oxazoline. Cathode reduces water to H2 and hydroxide.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction partially inhibited (2a yield drops to 30%); TEMPO-radical adduct E (C18H27N2O2+, m/z 303.2056) and its hydrolysates F (C7H8NO+, 122.0599) and G (C11H22NO2+, 200.1639) detected by HRMS, confirming carbon radical C."
+    },
+    {
+      "name": "H2O (nucleophile trap on cation)",
+      "smiles": "O",
+      "purpose": "intermediate_trap",
+      "observation": "Open-chain hydroxyethyl amide H (C9H10NO2+, 164.0701) and hydrolysate I (C2H4O2+, 61.0283) detected by HRMS, supporting cationic intermediate D."
+    },
+    {
+      "name": "NaBr / 1a CV",
+      "smiles": "[Na+].[Br-]",
+      "purpose": "redox_probe",
+      "observation": "NaBr oxidation peak at 1.19 V; 1a shows no oxidation between 0–2 V, indicating reaction is initiated by anodic oxidation of bromide rather than direct substrate oxidation."
+    },
+    {
+      "name": "benzamide (observed byproduct)",
+      "smiles": "NC(=O)c1ccccc1",
+      "purpose": "other",
+      "observation": "Trace benzamide observed as side product, consistent with hydrolysis of intermediates C/D."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Bromide serves as a redox mediator (in situ Br2 generation) rather than as an incorporated atom. The mechanism proceeds through a radical (C) → cation (D) sequence (radical-polar crossover). Authors note intermediate D is supported because nucleophilic water adduct H was also detected. Cathode half-reaction is H2O reduction (H2 + OH-)."
+}

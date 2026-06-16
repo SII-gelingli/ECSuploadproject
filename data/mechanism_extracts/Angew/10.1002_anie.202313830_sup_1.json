@@ -1,0 +1,89 @@
+{
+  "doi": "10.1002_anie.202313830_sup_1",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical reductive Giese-type coupling of unactivated alkyl chlorides with electron-deficient olefins (acrylates) catalyzed by cobalt salen complexes",
+  "mechanism_family": [
+    "radical_cathodic",
+    "electrocatalysis_inner_sphere",
+    "sacrificial_anode"
+  ],
+  "electrochemical_role": "Cathodic reduction of Co(II/III) salen to a Co(I) nucleophile that activates the alkyl chloride via inner-sphere oxidative addition to form Co(III)-alkyl; a second cathodic reduction of the Giese adduct (alpha-acyl radical) to the enolate is required for product formation. Zn sacrificial anode supplies counter-oxidation.",
+  "key_intermediates": [
+    {
+      "name": "[Co(I)(salen)]- anionic complex",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(III)(salen)-alkyl (e.g., Co(III)(L1)-nOctyl)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "alkyl radical (R•) from Co(III)-C homolysis",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alpha-carbonyl C-radical (Giese adduct radical)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "enolate (from second reduction of Giese adduct)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "acrylate oligomers (polymerization side products without reductant)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode reduces Co(II) salen to Co(I), which displaces chloride from R-Cl to form a Co(III)-alkyl resting state; thermal Co(III)-C homolysis releases an alkyl radical that adds to acrylate (Giese addition); the resulting alpha-ester radical is reduced (cathodically) to an enolate, which is protonated by nBuOH/H2O to deliver the product.",
+  "rate_determining_step": "Co(III)-C homolysis releasing the alkyl radical (modulated by salen steric bulk; faster with bulky Co(L3) for primary substrates)",
+  "probe_reagents": [
+    {
+      "name": "6-chlorohex-1-ene (radical clock)",
+      "smiles": "ClCCCCC=C",
+      "purpose": "radical_clock",
+      "observation": "Cyclized:uncyclized product ratio 3.6:1 at 5 mol% Co(Me4Salen); ratio decreases with higher catalyst loading (2.8 at 1.1% to 1.9 at 20%), consistent with free alkyl radical intermediate whose lifetime depends on Co concentration"
+    },
+    {
+      "name": "D2O (vs H2O)",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "~95% single deuterium incorporation at alpha-position of ester product, confirming protonation of an enolate intermediate (i.e., second reduction of Giese adduct radical)"
+    },
+    {
+      "name": "Co(III)(L2)-nOctyl stoichiometric",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "Heating in presence of butyl acrylate without reductant gives Giese product plus oligomers (radical polymerization); under electroreductive conditions, oligomers suppressed and product yield increases, supporting cathodic reduction of Giese adduct to enolate"
+    },
+    {
+      "name": "Co(L1) added to Co(L3) reactions (inhibition study)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Increasing loading of less bulky Co(L1) decreases yield with primary electrophiles, implying formation of stable Co(III)-R adduct that retards homolysis"
+    },
+    {
+      "name": "Constant-potential electrolysis at -1.7, -1.9, -2.2 V (CV referenced)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Product formation and RCl consumption rates independent of applied potential; near-quantitative yield even at mild -1.7 V (E1/2 of catalyst), indicating direct reduction of Co(III)-alkyl is not required—radical generation proceeds via thermal homolysis"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "H/D_labeling",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "UV_vis",
+    "kinetic_order"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Steric tuning of salen ligand (Co(L3) = Me4Salen bulky vs Co(L1) = CySalen less bulky) controls Co(III)-C homolysis rate: bulky ligand accelerates homolysis (preferred for primary alkyl chlorides), less bulky for secondary/tertiary. An alternative mechanism in which the Co(III)-alkyl is reduced directly at the cathode to release the radical is ruled out by potential-independence experiments — thermal homolysis is operative. Without cathodic reduction of the Giese adduct radical, acrylate polymerization dominates, indicating that the second cathodic electron (to form the enolate) is essential."
+}

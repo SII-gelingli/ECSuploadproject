@@ -1,0 +1,93 @@
+{
+  "doi": "10.1021_jacs.8b13192",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Aminoxyl (CHAMPO)-catalyzed electrochemical 1,2-diazidation of alkenes mediated by a metastable CHAMPO-N3 charge-transfer complex as an azidyl group-transfer agent.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anode oxidizes the aminoxyl radical (CHAMPO) to the oxoammonium cation (CHAMPO+), which combines with N3- to form a metastable CHAMPO-N3 charge-transfer complex; this CTC serves as the source of free N3 radical and as a radical azidyl group-transfer agent. Cathode reduces water to H2 + OH-.",
+  "key_intermediates": [
+    {
+      "name": "CHAMPO+ (oxoammonium cation of 4-acetamido-cyclohexyl-fused TEMPO analog)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "CHAMPO-N3 charge-transfer complex",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Free azidyl radical (N3•)",
+      "smiles": "[N-]=[N+]=[N]",
+      "role": "reactive"
+    },
+    {
+      "name": "β-azido carbon-centered radical (I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "TEMPO/aminoxyl-trapped azidooxygenation product (3, R-CH(OTMP)-CH2N3)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "β-azido carbocation (II)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the anode, CHAMPO is oxidized to CHAMPO+ which associates with N3- to give a CHAMPO-N3 CTC; endergonic fragmentation releases N3• that adds to the alkene to form a β-azido C-radical (I), which then undergoes inner-sphere azidyl group transfer from a second CHAMPO-N3 to give the 1,2-diazide and regenerate CHAMPO.",
+  "rate_determining_step": "Endergonic fragmentation of the CHAMPO-N3 CTC to free N3• and CHAMPO (first C-N bond formation is slower than the second).",
+  "probe_reagents": [
+    {
+      "name": "Vinylcyclopropane radical clock (7)",
+      "smiles": "C=CC1(C(=O)OCc2ccccc2)CC1C(=O)OCc1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened azide 8 formed in 61% (E:Z >20:1); no direct diazidation — supports radical intermediate."
+    },
+    {
+      "name": "N-allyl-N-methallyl tosylamide (9/10)",
+      "smiles": "C=CCN(S(=O)(=O)c1ccc(C)cc1)CC(=C)C",
+      "purpose": "radical_clock",
+      "observation": "5-exo-trig cyclization to pyrrolidine diazide observed (11/12), consistent with radical cyclization rather than cation."
+    },
+    {
+      "name": "N-allyl benzamide (13, carbocation trap)",
+      "smiles": "C=C(C)CNC(=O)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Gives diazide 14 (71%) cleanly; oxazoline 15 (cation-cyclization product) not observed — excludes carbocation pathway."
+    },
+    {
+      "name": "Camphor-derived alkene (16)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Gives only 11% diazide 17 plus 42% rearranged 1,3-azidoalcohol 18 (via norbornyl cation); shows cationic pathway operates only when carbocation is stabilized."
+    },
+    {
+      "name": "4-Methoxy-α-methylstyrene (1g)",
+      "smiles": "C=C(C)c1ccc(OC)cc1",
+      "purpose": "redox_probe",
+      "observation": "Major diazide 2g (79%) plus minor azidoalcohol 20 (16%); cation capture by H2O is minor, supporting predominantly radical pathway."
+    },
+    {
+      "name": "Pre-formed TEMPO-azidooxygenation adduct (3g/3k)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Electrolysis of 3 instead of alkene gave no diazide (>85% 3 recovered); rules out oxidation/mesolytic cleavage of azidooxygenation product as on-pathway."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_other",
+    "UV_vis",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two alternative cationic pathways were considered and disfavored: (A) direct anodic or CHAMPO+ oxidation of radical I to carbocation II followed by N3- capture, and (B) oxidation/mesolytic cleavage of the azidooxygenation byproduct 3 to II. Both are ruled out by radical clock, carbocation-trap (amide 13), and control electrolysis of 3. Cationic pathway can operate for substrates that form especially stabilized carbocations (e.g., camphor alkene 16, p-MeO styrene 1g). Catalyst design (CHAMPO vs TEMPO/ACT) suppresses β-H elimination of the oxoammonium and prolongs CTC lifetime; the dark-red color of the CTC serves as a visual UV-vis indicator of catalyst integrity."
+}

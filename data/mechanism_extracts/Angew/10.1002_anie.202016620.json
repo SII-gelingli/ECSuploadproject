@@ -1,0 +1,63 @@
+{
+  "doi": "10.1002_anie.202016620",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical three-component radical 1,2-silyl-oxygenation of electron-deficient alkenes with hydrosilanes and N-hydroxy (N-oxyl) compounds to give β-silyl-oxygenated products.",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of N-hydroxyphthalimide (NHPI) to the phthalimido-N-oxyl radical (PINO), which performs HAT on the Si-H bond to generate the silyl radical; protons are reduced at the cathode to H2.",
+  "key_intermediates": [
+    {
+      "name": "phthalimido-N-oxyl radical (PINO)",
+      "smiles": "O=C1N(O[O])C(=O)c2ccccc12",
+      "role": "reactive"
+    },
+    {
+      "name": "silyl radical (e.g. Ph3Si•)",
+      "smiles": "[Si](c1ccccc1)(c1ccccc1)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "β-silyl carbon radical (Int-1) from silyl addition to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "N-oxyl species (NHPI / R2N-OH)",
+      "smiles": "O=C1N(O)C(=O)c2ccccc12",
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "At the anode, NHPI is oxidized (with proton loss) to PINO, which abstracts H from the hydrosilane to give a silyl radical; the silyl radical adds to the electron-deficient alkene to form a β-silyl C-radical, which is trapped by a second N-oxyl radical to deliver the C-O bond, while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "3.0 equiv TEMPO completely suppressed the reaction; product 4a not detected, consistent with radical intermediates."
+    },
+    {
+      "name": "vinylcyclopropane (substrate 9, dimethyl/ethyl ester-substituted)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 10 isolated in 28% yield, supporting a β-silyl C-radical intermediate (Int-1)."
+    },
+    {
+      "name": "NHPI / Ph3SiH (CV study)",
+      "smiles": "O=C1N(O)C(=O)c2ccccc12",
+      "purpose": "redox_probe",
+      "observation": "CV showed NHPI has lower oxidation potential than Ph3SiH; a new oxidation peak appeared for the NHPI + Ph3SiH mixture, supporting NHPI-mediated anodic oxidation/HAT."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism is mediator-based: NHPI/PINO serves as an HAT mediator at the anode to generate silyl radicals from hydrosilanes, avoiding direct silane oxidation. The N-oxyl moiety plays a dual role — anodic mediator and the oxygen-coupling partner that traps the β-silyl C-radical. Cathodic half-reaction is H2 evolution in an undivided cell."
+}

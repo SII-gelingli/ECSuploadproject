@@ -1,0 +1,61 @@
+{
+  "doi": "10.1055_s-0037-1611791",
+  "journal": "Synthesis",
+  "is_review": false,
+  "rxn_class_summary": "Diastereodivergent bromoiminolactonization of α-allylmalonamides to bromo-substituted iminolactones, performed either electrochemically (with Zn(OTf)2/2,2'-bipyridine and Et4NBr) or chemically (NBS/Et4NBr).",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of bromide (Et4NBr) generates an electrophilic brominating species (bromo cation / Br+ equivalent) that is delivered to the alkene; Et4N+ pairs with this bromo cation to modulate selectivity.",
+  "key_intermediates": [
+    {
+      "name": "electrochemically generated bromo cation (Br+ equivalent) complexed with Et4N+",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "bromonium ion on allyl alkene of α-allylmalonamide",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "trans-bromoiminolactone 2a' (major)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cis-bromoiminolactone 2a (minor)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Bromide is oxidized at the anode (directly or via Et4NBr) to an electrophilic bromo cation that forms a bromonium ion on the allyl group; intramolecular 5-exo attack by the amide oxygen closes the iminolactone with preferential trans diastereoselectivity.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "NBS / Et4NBr (chemical control)",
+      "smiles": "O=C1CC(=O)N1Br",
+      "purpose": "other",
+      "observation": "Chemical bromocyclization with NBS/Et4NBr also gave trans-2a' preferentially but with lower dr than the electrochemical conditions, supporting that an Et4NBr–bromo cation complex (rather than Zn(OTf)2/bipy alone) governs selectivity."
+    },
+    {
+      "name": "oxalic acid hydrolysis of 2a/2a'",
+      "smiles": "OC(=O)C(=O)O",
+      "purpose": "intermediate_trap",
+      "observation": "Iminolactones 2a/2a' hydrolyzed cleanly to the corresponding lactones 3a (82%) and 3a' (85%) with retention of stereochemistry."
+    },
+    {
+      "name": "4-bromobenzenethiol substitution",
+      "smiles": "Sc1ccc(Br)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Nucleophilic displacement of the C–Br in 2a/2a' afforded thioether iminolactones 4a (91%) and 4a' (92%), confirming the bromide position and configuration."
+    }
+  ],
+  "evidence_types_used": [
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "weak",
+  "notes": "The authors explicitly state that the role of Zn(OTf)2 and 2,2'-bipyridine in the electrochemical reaction remains unclear; they propose that Et4NBr complexes with an anodically generated bromo cation to control diastereoselectivity. No radical traps, CV, or DFT studies are reported on these pages; mechanistic support is indirect (comparison of chemical vs electrochemical bromination and product derivatization). Asymmetric variants and deeper mechanistic studies are stated to be ongoing."
+}

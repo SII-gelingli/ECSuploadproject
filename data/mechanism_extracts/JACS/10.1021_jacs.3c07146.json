@@ -1,0 +1,91 @@
+{
+  "doi": "10.1021_jacs.3c07146",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Photoelectrocatalytic asymmetric heteroarylcyanation of aryl alkenes with thiophenes and TMSCN via dual acridinium photoredox / chiral copper catalysis under anodic oxidation.",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_polar_crossover",
+    "electrocatalysis_inner_sphere",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anode regenerates the ground-state acridinium photocatalyst from the acridine radical (Mes-Acr-Ph•) and re-oxidizes Cu(I) to Cu(II); cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "excited-state acridinium [Mes-Acr-Ph]+*",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "thiophene radical cation (I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "acridine radical [Mes-Acr-Ph]•",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "distal benzylic/heteroarene-stabilized radical cation (II) from alkene addition",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical III after deprotonation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cu(II)(L1)(CN)2 complex",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Cu(III)(L1)(CN)2-alkyl complex IV",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cu(I)(L1)(CN)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Photoexcited [Mes-Acr-Ph]+* oxidizes the thiophene to a radical cation, which adds to the aryl alkene at the α-position to form a distal radical cation; deprotonation gives a benzylic radical that is captured by chiral Cu(II)(CN)2 to form a Cu(III) intermediate that undergoes enantiodetermining reductive elimination to deliver the chiral nitrile. The anode reoxidizes [Mes-Acr-Ph]• and Cu(I) back to their active states while the cathode evolves H2.",
+  "rate_determining_step": "Enantiodetermining reductive elimination from Cu(III)(CN)2-alkyl complex IV (stereochemistry-determining step; not explicitly assigned as rate-limiting)",
+  "probe_reagents": [
+    {
+      "name": "allyl sulfone 51 (methyl 2-((phenylsulfonyl)methyl)acrylate)",
+      "smiles": "C=C(C(=O)OC)CS(=O)(=O)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Benzylic allylation product 52 isolated in 17% yield alongside 24% of 3, confirming a benzylic radical intermediate."
+    },
+    {
+      "name": "electron-rich aryl alkene 47 (2-methoxystyrene)",
+      "smiles": "COc1ccccc1C=C",
+      "purpose": "redox_probe",
+      "observation": "Alkene 47 (Ep/2ox = 1.46 V) did not react with thiophene 2 (1.70 V) and decomposed; pairing 47 with more electron-rich thiophene 49 restored reactivity, supporting that the heteroarene must be more easily oxidized than the alkene."
+    },
+    {
+      "name": "2-acetylthiophene",
+      "smiles": "CC(=O)c1ccc(s1)",
+      "purpose": "redox_probe",
+      "observation": "Higher oxidation potential (2.19 V) than alkene 1 (2.00 V); failed to yield product 12, consistent with required photooxidation of the heteroarene."
+    },
+    {
+      "name": "thiophene 2 and alkene 1 (Stern-Volmer)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Both quench [Mes-Acr-Ph]+*, but thiophene 2 quenches much more efficiently, indicating heteroarene is the principal SET partner."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "redox_probe",
+    "cyclic_voltammetry",
+    "UV_vis"
+  ],
+  "evidence_strength": "medium",
+  "notes": "An alternative initial addition mode (II') in which the thiophene radical cation adds at the β-position of the alkene is considered but disfavored because pathway via II benefits from more extensive cation delocalization; for carbonyl-substituted alkenes (compounds 17-19), regiochemistry inverts to position (b) to avoid placing the cation adjacent to the carbonyl. Stern-Volmer data show alkene also quenches the excited state but less efficiently, so a minor alkene-first oxidation pathway cannot be strictly excluded."
+}

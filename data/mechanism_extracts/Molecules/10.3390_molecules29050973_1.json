@@ -1,0 +1,62 @@
+{
+  "doi": "10.3390_molecules29050973_1",
+  "journal": "Molecules",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical cascade fluoroalkylation/cyclization of N-acryloyl 2-arylbenzimidazoles (and 2-arylindoles) with sodium fluoroalkylsulfinates to construct fluoroalkylated benzimidazo[2,1-a]isoquinolinones",
+  "mechanism_family": [
+    "radical_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of MeCF2SO2Na generates the MeCF2SO2 radical that loses SO2 to give the MeCF2 radical; a second anodic oxidation converts the cyclized aryl radical B into aryl cation C",
+  "key_intermediates": [
+    {
+      "name": "MeCF2SO2 radical (sulfonyl radical from anodic oxidation of sulfinate)",
+      "smiles": "[O]S(=O)C(F)(F)C",
+      "role": "transient"
+    },
+    {
+      "name": "MeCF2 radical (1,1-difluoroethyl radical after SO2 extrusion)",
+      "smiles": "[CH2]C(F)(F)C",
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon-centered radical A (addition of MeCF2 to acrylamide alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Aryl radical B (after intramolecular cyclization onto arene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Aryl cation C (after second anodic oxidation of B)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "The anode oxidizes the sulfinate to a sulfonyl radical that extrudes SO2 to give a MeCF2 radical, which adds to the acrylamide alkene to form C-radical A; A cyclizes onto the pendant aryl ring giving aryl radical B, which is further oxidized at the anode to aryl cation C, then deprotonated to product. Protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Product not detected; BHT–CF2Me adduct detected by HRMS, supporting a free MeCF2 radical"
+    },
+    {
+      "name": "1,1-Diphenylethylene (DPE)",
+      "smiles": "C(=C(c1ccccc1)c1ccccc1)",
+      "purpose": "radical_trap",
+      "observation": "Product yield dropped to 16%; MeF2C–CH=CPh2 type adduct detected by HRMS, confirming MeCF2 radical intermediate"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Cyclic voltammetry shows an oxidation onset for 2a (sulfinate) and an enhanced current for the 1a+2a mixture, consistent with anodic oxidation of the sulfinate initiating the cascade rather than direct substrate oxidation. Product structures confirmed by X-ray (CCDC 2303467 and 2307007). The scope extends to cyclopropyl-CF2 sulfinate (compound 5i)."
+}

@@ -1,0 +1,76 @@
+{
+  "doi": "10.1016_j.cclet.2025.110822_sup_1",
+  "journal": "ChinChemLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical three-component oxysulfonyl-triazolylation of alkenes with N-sulfonyl-1,2,3-triazoles and water (or other nucleophiles) to give β-hydroxy N2-alkylated triazoles via radical-polar crossover",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of the nucleophile (H2O/NuH) generates a nucleophile-derived radical (•Nu, e.g. •OH); cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "nucleophile-centered radical (•OH from water)",
+      "smiles": "[OH]",
+      "role": "reactive"
+    },
+    {
+      "name": "β-hydroxy carbon radical from addition of •Nu to 1,1-diphenylethylene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "radical adduct on N-sulfonyl triazole (N2-attack intermediate prior to SO2R loss)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "sulfonyl radical •SO2R2 released after triazole N–S homolysis",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "BHT-trapped triazolylmethyl adduct (compound 53)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the anode, the nucleophile (H2O) is oxidized to a nucleophile radical (•OH) which adds to the 1,1-diaryl alkene to give a stabilized β-functionalized C-radical; this C-radical attacks N2 of the N-sulfonyl-1,2,3-triazole, expelling a sulfonyl radical (•SO2R2) to deliver the N2-alkylated triazole product, while at the cathode protons are reduced to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO (TMEPO)",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Desired product 4 fully suppressed (n.d.), consistent with a radical pathway"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Product 4 suppressed; BHT–triazolylmethyl adduct 53 isolated in 76%, supporting a triazolyl/C-radical intermediate"
+    },
+    {
+      "name": "(E)- and (Z)-β-methylstyrene (54)",
+      "smiles": "C/C=C/c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Both E- and Z-isomers give 55 in similar yield with dr ≈ 1:1, indicating loss of olefin geometry through a free C-radical intermediate"
+    },
+    {
+      "name": "NH-triazole (56) and 1H-triazole isomer (57)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "NH-triazoles give product 4 in 81% and 78%, suggesting N-sulfonyl group is not strictly required and triazolyl radical/anion may be operative"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "radical_clock",
+    "EPR",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Anode potential monitoring shows a gradual rise to ~2.25 V during electrolysis; a potential-controlled experiment (Table S2) shows that fixed Vanode from 2.0–2.6 V gives only trace–15% product, indicating constant-current conditions are important for productive turnover. The favored mechanism involves anodic generation of •Nu followed by addition to the alkene and radical substitution at N2 of the triazole with loss of •SO2R2; an alternative would be direct anodic oxidation of the triazole to a triazolyl radical, but the BHT trapping of a triazolylmethyl-type adduct and NH-triazole competence are consistent with the radical-addition/N–S cleavage pathway shown in Figure S3."
+}

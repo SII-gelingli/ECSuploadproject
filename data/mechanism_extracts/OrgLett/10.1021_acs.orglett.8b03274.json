@@ -1,0 +1,79 @@
+{
+  "doi": "10.1021_acs.orglett.8b03274",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative amino- and oxyselenation of styrenes with diphenyl diselenide and amine or alcohol nucleophiles to give vicinal aminoselenides or oxyselenides under undivided-cell, metal- and oxidant-free conditions",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_cathodic",
+    "paired_electrolysis",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Cathodic reduction of PhSeSePh generates PhSe• and PhSe-; anodic oxidation regenerates PhSe• from PhSe- (and/or oxidizes the styrene/benzylic radical to a benzylic cation); a parallel anodic path oxidizes PhSeSePh to a seleniranium-type intermediate that is attacked by NuH",
+  "key_intermediates": [
+    {
+      "name": "phenylselenyl radical (PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenide anion (PhSe-)",
+      "smiles": "[Se-]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "β-(phenylseleno)benzylic radical B (from PhSe• addition to styrene)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-(phenylseleno)benzylic cation C (anodic oxidation of B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclic seleniranium ion E (from PhSeSePh anodic oxidation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ammonium/oxocarbenium adduct D (NuH attack on C)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the cathode, PhSeSePh is reduced to PhSe• and PhSe- (with concomitant H2 evolution from ROH); PhSe• adds regioselectively to the styrene to give a benzylic radical B, which is further oxidized at the anode to benzylic cation C. Nucleophile (amine or alcohol) attacks C and deprotonation gives the 1,2-difunctionalized product 4; alternatively PhSeSePh is directly oxidized at the anode to a seleniranium ion E that is opened by NuH.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclopropyl-substituted styrene (radical clock)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "ring-opened/retained product 8f formed (73%), consistent with a carbon-radical intermediate from PhSe• addition"
+    },
+    {
+      "name": "diphenyl diselenide (PhSeSePh) - CV",
+      "smiles": "c1ccc(cc1)[Se][Se]c1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "oxidation peak at 1.88 V and reduction peak at -1.74 V; indicates both anodic and cathodic involvement"
+    },
+    {
+      "name": "styrene 1a - CV",
+      "smiles": "C=Cc1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "oxidation peak observed at 2.25 V"
+    },
+    {
+      "name": "benzotriazole 5a - CV",
+      "smiles": "c1ccc2[nH]nnc2c1",
+      "purpose": "redox_probe",
+      "observation": "no obvious oxidation peak, ruling out direct anodic oxidation of the N-nucleophile"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "radical_clock"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two parallel anodic pathways are proposed: (i) anodic oxidation of the β-selenyl benzylic radical B to cation C followed by NuH addition (favored), and (ii) anodic oxidation of PhSeSePh to a cyclic seleniranium intermediate E that is opened by NuH. H2 evolution from ROH at the cathode is part of the paired electrolysis. No TEMPO/BHT trapping or KIE was reported."
+}

@@ -1,0 +1,61 @@
+{
+  "doi": "10.1021_acscatal.8b03302",
+  "journal": "ACSCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative alkoxysulfonylation of alkenes with sulfonyl hydrazines and alcohols to give beta-alkoxy sulfones",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of sulfonyl hydrazine to a sulfonyl radical (via diazo intermediate, losing N2); second anodic oxidation of the beta-sulfonyl carbon radical to a benzyl cation; cathodic reduction of ROH/H+ to H2 and alkoxide",
+  "key_intermediates": [
+    {
+      "name": "sulfonyl diazo intermediate (R-SO2-N=N*) after anodic oxidation and deprotonation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "sulfonyl radical (R-SO2*) after N2 loss",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "beta-sulfonyl benzyl carbon radical from addition to styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "beta-sulfonyl benzyl cation after second anodic oxidation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "beta-alkoxy sulfone product",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the sulfonyl hydrazine (with -3H+/-3e-) to a diazo species that loses N2 to give a sulfonyl radical, which adds to the styrene to form a benzyl radical; this radical is further oxidized at the anode to a benzyl cation that is trapped by the alcohol and deprotonated, while protons and ROH are reduced at the cathode to H2 and alkoxide.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "alpha-cyclopropyl styrene (radical clock 2m)",
+      "smiles": "C=C(c1ccccc1)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "Both direct beta-alkoxy sulfone 5m (41%) and ring-opened product 5m' (40%) isolated, indicating intermediacy of a carbon radical that undergoes cyclopropyl ring-opening"
+    },
+    {
+      "name": "cyclic voltammetry of 1a and 2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak of 1a at 1.91 V and 2a at 2.19 V (vs Ag/AgCl), indicating 1a (sulfonyl hydrazine) is oxidized preferentially at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Catalyst-free, additive/oxidant-free electrolysis with carbon anode and Ni cathode in undivided cell; N2 and H2 are the only byproducts. Mechanism proposed on the basis of CV and radical clock evidence; no DFT, TEMPO trapping, or KIE reported."
+}

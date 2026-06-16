@@ -1,0 +1,78 @@
+{
+  "doi": "10.1021_acs.joc.3c02186",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical [4+1] cycloaddition of arylidene/alkylidene chromane-2,4-diones with NaI as mediator/reactant to form spiro[benzofuran-2,2'-furan]-3-ones",
+  "mechanism_family": [
+    "paired_electrolysis",
+    "radical_anion",
+    "mediator_anodic",
+    "carbene"
+  ],
+  "electrochemical_role": "Cathode reduces the α,β-unsaturated chromane-2,4-dione 1a to a radical anion (1a'); iodide is oxidized at the anode to I2 which iodinates the substrate; cathode also reduces water generating hydroxide that hydrolyzes/opens the ring; the final iodo-α-elimination yields a carbene that undergoes [4+1] with another molecule of 1a.",
+  "key_intermediates": [
+    {
+      "name": "radical anion of arylidene chromane-2,4-dione (1a')",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-iodo radical 1a''",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-iodo-β-hydroxy chromane-2,4-dione 1a'''",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ring-opened 2'-hydroxyphenyl iodohydroxy diketone 1b",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzofuranone carboxylic acid 1c (after base-mediated cyclization)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-iodo benzofuran-3(2H)-one 1c' (after decarboxylation and iodination of enolate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzofuran-3(2H)-one-derived carbene 1c'' (after PhCHO release and α-elimination of I-)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "molecular iodine I2 (anodically generated mediator)",
+      "smiles": "II",
+      "role": "reactive"
+    },
+    {
+      "name": "hydroxide (from cathodic water reduction)",
+      "smiles": "[OH-]",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode injects an electron into 1a giving radical anion 1a', which combines with anodically generated I2 to form α-iodo radical 1a''; further anodic oxidation plus hydroxide addition gives 1a''', which ring-opens with water to 1b. Base-promoted cyclization, decarboxylation, and a second iodination give 1c', then loss of PhCHO with α-elimination of iodide generates carbene 1c'' that undergoes intermolecular [4+1] cycloaddition with 1a to give spirocycle 2a, while cathodic water reduction produces H2 and OH- (paired electrolysis).",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed (Table 1, entry 30), supporting a radical intermediate"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_TEMPO",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "X-ray structure (CCDC 2262815) of product 2j confirms the spirocyclic connectivity and diastereochemistry. GC-MS detection of free benzaldehyde supports the proposed extrusion step from 1c' en route to carbene 1c''. CV shows a reduction peak of 1a near -1.28 V vs Ag/AgCl distinct from solvent; 1a is not anodically oxidizable, consistent with cathodic initiation. Gram-scale electrolysis (67%) demonstrates scalability."
+}

@@ -1,0 +1,102 @@
+{
+  "doi": "10.1039_D2SC04027A",
+  "journal": "ChemSci",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical alkene sulfonation with inorganic sulfites and alcohols to form alkoxysulfonyl-functionalized products (sulfonate esters) via anodic generation of alkoxysulfonyl radicals",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of inorganic sulfite (SO3^2- / HSO3-) to sulfite radical anion (SO3•-), which is trapped by alcohol to give alkoxysulfonyl radical ROSO2•; subsequent anodic oxidation of the C-radical adduct to a carbocation enables polar trapping by alcohol",
+  "key_intermediates": [
+    {
+      "name": "sulfite radical anion (SO3•-)",
+      "smiles": "[O-]S(=O)[O]",
+      "role": "transient"
+    },
+    {
+      "name": "alkoxysulfonyl radical A (ROSO2•)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical B from addition to styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation C (after anodic SET of B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-hydroxy carbon radical D (from addition to homoallyl/allyl alcohol 4)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "migrated radical E (after radical functional group migration)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cation F (after anodic oxidation of E)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes inorganic sulfite to SO3•-, which is captured by ROH to give an alkoxysulfonyl radical (ROSO2•). This radical adds to the alkene to give a C-radical, which is further oxidized at the anode to a carbocation; alcohol (or deprotonation) then delivers the sulfonate ester product, while the cathode reduces protons/ROH to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "methacryloyl-N-methylbenzamide (6) radical trap/cyclization probe",
+      "smiles": "C=C(C)C(=O)N(C)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "cyclized sulfonate ester 7 obtained in 18% yield, indicating an alkoxysulfonyl radical adds to the alkene and the resulting C-radical cyclizes"
+    },
+    {
+      "name": "cyclopropyl-substituted styrene (1bi) radical clock",
+      "smiles": "C(=C)(c1ccccc1)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "ring-opened product 8 (15%) formed alongside difunctionalized 3bi (24%), supporting a radical addition intermediate"
+    },
+    {
+      "name": "trifluoromethyl-substituted styrene (1bj)",
+      "smiles": "C=Cc1ccc(C(F)(F)F)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "gave difunctionalized product 3bj (37%) and elimination alkene 9 (14%), consistent with cationic intermediate undergoing proton elimination"
+    },
+    {
+      "name": "enamide 1bk",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "afforded coupling sulfonate 10 in 84% yield, supporting cationic intermediate formed by anodic oxidation of radical adduct"
+    },
+    {
+      "name": "SO2 gas (CV probe)",
+      "smiles": "O=S=O",
+      "purpose": "redox_probe",
+      "observation": "no oxidation peak in MeCN/MeOH, excluding oxidation of SO2 / alkyl sulfite as radical source"
+    },
+    {
+      "name": "NaHSO3 (CV probe)",
+      "smiles": "OS(=O)[O-].[Na+]",
+      "purpose": "redox_probe",
+      "observation": "oxidation peak at 1.23 V vs SCE, lower than styrene 1a (1.80 V), indicating preferential anodic oxidation of inorganic sulfite"
+    },
+    {
+      "name": "Na2S2O5 (CV probe)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "oxidation peak at 1.15 V vs SCE; alkene 4a showed no oxidation peak, supporting sulfite oxidation as initiation"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "For homoallyl/allyl alcohol substrates 4, a radical functional group migration pathway (D → E → F → 5) is proposed in parallel to the direct radical–polar crossover route used for styrenes. CV experiments rule out direct SO2 or alkyl sulfite oxidation as the radical source."
+}

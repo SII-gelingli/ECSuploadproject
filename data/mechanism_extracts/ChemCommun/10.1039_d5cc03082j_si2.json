@@ -1,0 +1,71 @@
+{
+  "doi": "10.1039_d5cc03082j_si2",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical Ni-catalyzed α-allylation/alkylation of β-ketoesters with alkenes (e.g., 1,1-diphenylethylene or allyl-TMS) via radical-polar crossover at the anode.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "electrocatalysis_inner_sphere",
+    "paired_electrolysis",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of a Ni(II)-enolate complex generates a carbon-centered radical/cation that adds to the alkene; cathode reduces protons to H2 (and TMS-related byproducts), closing the paired electrolysis.",
+  "key_intermediates": [
+    {
+      "name": "Ni(II)-enolate of β-ketoester 1a (complex A')",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Anodically oxidized Ni(II)-enol radical cation (B')",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "C-C bond formed Ni(II) alkyl intermediate C' (after alkene addition with allyl-TMS 2k)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-silyl carbocation D' (after second SET oxidation)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Allylated product 31 (after loss of TMS+/desilylation)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Ni(II) coordinates the β-ketoester enolate (A'); single-electron anodic oxidation gives an α-carbon radical (B') that adds to the alkene to form alkyl–Ni intermediate C'; a second anodic SET produces β-silyl cation D', which loses TMS+ (as TMSOH/TMS2O) to give product 31, while the cathode evolves H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "no current (control)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No product 3 formed, confirming the reaction is electrochemically driven."
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3 not detected; TEMPO-adduct 50 isolated in 82% yield (HRMS [M+Na]+ 368.1831), supporting a C-centered radical at the α-position of 1a."
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Product 3 not detected; BHT-adduct 51 isolated in 75% yield (HRMS [M+Na]+ 431.2183), corroborating the radical intermediate."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "on/off_light_or_current",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism proposed (Scheme S3) is for the allyl-TMS variant giving product 31; the α-radical is generated via anodic oxidation of a Ni(II)-enolate rather than direct substrate oxidation. Cathodic chemistry includes H2 evolution and degradation of TMS group (TMSOH, TMS2O). No DFT or CV reported in the provided pages."
+}

@@ -1,0 +1,92 @@
+{
+  "doi": "10.1016_j.tetlet.2023.154410",
+  "journal": "Tetrahedron",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical relay cyclization of benzimidazole-tethered alkenes with sodium triflinate (Langlois reagent) to access 5-(2,2,2-trifluoroethyl)-5,6-dihydrobenzimidazo-isoquinolines",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2- (Langlois reagent) generates CF3SO2• which extrudes SO2 to give CF3•; a downstream cyclohexadienyl-type radical intermediate is also oxidized at the anode to a cation prior to rearomatization",
+  "key_intermediates": [
+    {
+      "name": "CF3SO2• (sulfonyl radical from anodic oxidation of Langlois reagent)",
+      "smiles": "[O]S(=O)C(F)(F)F",
+      "role": "transient"
+    },
+    {
+      "name": "CF3• radical (after SO2 extrusion)",
+      "smiles": "[C](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon-centered alkyl radical A from CF3 addition to the pendent alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cyclohexadienyl radical B from intramolecular radical addition onto the aryl ring",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Wheland-type arenium cation C after anodic oxidation of B",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Benzimidazo-isoquinoline product 3 after deprotonation/rearomatization",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- to CF3SO2•, which loses SO2 to give CF3•; CF3• adds to the tethered alkene of 1a to form alkyl radical A, which cyclizes onto the arene to give cyclohexadienyl radical B; B is oxidized at the anode (or by O2/HOO•) to cation C, then deprotonation yields aromatic product 3 with concomitant H2 evolution at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3 not detected (N.D.), consistent with radical intermediates"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Product 3 not detected, supporting a radical pathway"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Ph2C=CHSO2CF3 adduct detected by GC-MS (m/z 312.00); product 3 not formed, trapping CF3SO2•/CF3• indicates sulfonyl/trifluoromethyl radical intermediates"
+    },
+    {
+      "name": "N2 atmosphere control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Yield dropped from 80% (air) to 43% under N2, indicating O2 participates as a terminal oxidant/H-abstractor (HOO•/O2•-) in rearomatization"
+    },
+    {
+      "name": "No current control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction without applied current, confirming electrochemical initiation"
+    },
+    {
+      "name": "Unactivated N-pentenyl substrates 26 and 27",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "0% product — aryl ring acceptor is required for the radical cyclization step"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Cyclic voltammetry (Fig. 1) shows that 2 + CF3SO3H produces a new oxidation feature at lower potential than 1a, supporting that anodic oxidation of the Langlois reagent (not the benzimidazole alkene) initiates the cycle. The authors note that direct H-atom abstraction from cyclohexadienyl radical B (by O2•-/HOO•) to deliver 3 cannot be ruled out as an alternative to the anodic oxidation/deprotonation pathway through cation C."
+}

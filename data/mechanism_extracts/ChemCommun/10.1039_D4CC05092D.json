@@ -1,0 +1,105 @@
+{
+  "doi": "10.1039_D4CC05092D",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Asymmetric electrochemical cyclopropanation of α,β-unsaturated aldehydes with malonates via iminium-ion organocatalysis and anodically generated electrophilic iodine species (Michael-initiated ring closure)",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated",
+    "electrocatalysis_outer_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (Et4NI) to electrophilic iodine species (I+/I2), which iodinates the enamine intermediate; cathode reduces protons (from HFIP) to H2 as the counter half-reaction",
+  "key_intermediates": [
+    {
+      "name": "iminium ion from condensation of diarylprolinol-OTMS catalyst I with cinnamaldehyde (i)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "enamine after Michael addition of dimethyl malonate to iminium (ii)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Michael adduct aldehyde 4a (hydrolysis product of enamine ii)",
+      "smiles": "O=CC(c1ccccc1)CC(C(=O)OC)C(=O)OC",
+      "role": "transient"
+    },
+    {
+      "name": "α-iodo iminium ion (iii) from iodination of enamine by electrophilic I+",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclopropane-bound iminium ion (iv) after intramolecular SN2 ring closure",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "electrophilic iodine species (I+ / I2) generated at anode",
+      "smiles": "II",
+      "role": "reactive"
+    },
+    {
+      "name": "retro-Michael byproduct 5a (ring-opened α,β-unsaturated diester)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Organocatalyst condenses with enal to form an iminium ion that accepts malonate (Michael addition) giving an enamine; the anode oxidizes iodide to electrophilic iodine, which α-iodinates the enamine to an α-iodo iminium; intramolecular enolate displacement of iodide closes the cyclopropane and hydrolysis releases the product and regenerates catalyst, while H2 evolves at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Only minor suppression of 3a (36% NMR yield); TEMPO-adduct 6 isolated (25%); result deemed ambiguous because TEMPO can be oxidized to N-oxoammonium and react with enamine in polar fashion"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Cyclopropane 3a still formed in 38% yield with only 4% of 4a, indicating no quenching of putative enamine radical cation — supports a polar pathway"
+    },
+    {
+      "name": "pre-synthesized intermediate 4a (stoichiometric)",
+      "smiles": "O=CC(c1ccccc1)CC(C(=O)OC)C(=O)OC",
+      "purpose": "intermediate_trap",
+      "observation": "Under standard electrochemical conditions 4a gave 43% 3a (and 17% 5a); without catalyst still gave 23% 3a — confirms 4a/enamine is on-cycle and ring closure is electrochemically driven"
+    },
+    {
+      "name": "I2 / NIS (stoichiometric, no current)",
+      "smiles": "II",
+      "purpose": "intermediate_trap",
+      "observation": "No conversion of starting materials and catalyst I decomposed — controlled electrocatalytic generation of I+ is essential to protect catalyst from Grob-type fragmentation"
+    },
+    {
+      "name": "cyclic voltammetry of components",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Iodide oxidizes at +0.19/+0.38 V; enamine derived from 4a+I oxidizes at +0.27 V (between I- peaks); other components have higher potentials — iodide is selectively oxidized first"
+    },
+    {
+      "name": "no-electricity control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only Michael adduct 4a formed (49%), no cyclopropane — electricity required for ring closure"
+    },
+    {
+      "name": "no-organocatalyst control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction — iminium activation required"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors favor a fully polar mechanism (iminium/enamine + electrophilic I+ ionic alkylation), supported by BHT insensitivity, CV showing iodide as the lowest-potential oxidizable species, and ring closure from isolated 4a. An alternative SET pathway via enamine radical cation (oxidation at +0.27 V) is considered possible but disfavored. Side pathways: base-induced retro-Michael of iminium iv gives byproduct 5a; free catalyst can decompose via Grob-type fragmentation when excess electrophilic iodine is present, hence the need for catalytic, electrochemically controlled I+ generation. The reaction comprises two coupled cycles (organocatalytic, temperature-controlled; electrocatalytic, current-controlled) whose rates must be balanced."
+}

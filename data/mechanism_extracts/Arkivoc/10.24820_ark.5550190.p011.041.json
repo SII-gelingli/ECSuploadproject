@@ -1,0 +1,52 @@
+{
+  "doi": "10.24820_ark.5550190.p011.041",
+  "journal": "Arkivoc",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical synthesis of cyclopropanes (including spirocyclopropanes) from C-H acids and alkylidenemalononitriles using pyridinium bromide as a redox mediator in an undivided cell.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "paired_electrolysis",
+    "anion_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of bromide to Br2 (mediator regeneration); cathodic reduction of pyridinium cation to pyridine (base generator) with concomitant H2 evolution.",
+  "key_intermediates": [
+    {
+      "name": "alpha-bromo C-H acid (intermediate A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "N-substituted pyridinium salt (alpha-pyridinio C-H acid, pre-ylide)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "pyridinium ylide (intermediate B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Michael adduct (pyridinium-stabilized malononitrile carbanion)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "molecular bromine (Br2, mediator)",
+      "smiles": "BrBr",
+      "role": "reactive"
+    },
+    {
+      "name": "pyridine (base, generated at cathode)",
+      "smiles": "c1ccncc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes 2 Br- to Br2 while the cathode reduces 2 PyH+ to 2 Py + H2; Py deprotonates the C-H acid whose anion is brominated by Br2 to give A; a second equivalent of Py displaces bromide forming pyridinium ylide B, which undergoes Michael addition to the alkylidenemalononitrile followed by intramolecular SN2 displacement of pyridine to close the cyclopropane 3.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism is proposed by analogy (last cyclization step postulated following Abaszadeh's work on pyridinium ylide + benzylidenemalononitrile cyclopropanation). Authors note NaBr in MeOH is a more effective mediator than PyHBr in MeCN, attributed to mechanistic particularities but not probed experimentally. Bromine formation at the anode is supported by visual observation of its color; H2 evolution at the cathode is observed especially under unstirred conditions."
+}

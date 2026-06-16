@@ -1,0 +1,65 @@
+{
+  "doi": "10.1021_acs.orglett.3c01130",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical metal-free 1,1-difunctionalization of gem-difluoroalkenes with two nucleophiles (alcohols/H2O and azoles) to give alpha-difluoro(alkoxyl/azolated) methylated ethers",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the aryl gem-difluoroalkene to a radical cation; cathode reduces protons to H2 (no sacrificial oxidant needed)",
+  "key_intermediates": [
+    {
+      "name": "aryl gem-difluoroalkene radical cation (I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-alkoxy/azolyl benzyl radical (II) after Nu1H addition, deprotonation and intramolecular electron shift",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-alkoxy/azolyl benzyl carbocation (III) from second anodic SET",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "difunctionalized CF2 product (4)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the gem-difluoroalkene to a radical cation, which is attacked by Nu1-H; loss of a proton and intramolecular electron shift gives a benzyl radical, which is further oxidized at the anode to a benzyl carbocation that is trapped by Nu2-H. Protons released are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "controlled-potential electrolysis at sub-oxidation potentials (1.25 V vs SCE, below 1.30 V onset)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "no product at 1.25 V; 15% yield at 1.35 V, confirming need for anodic oxidation of the alkene"
+    },
+    {
+      "name": "1H-imidazole / O2 trap (radical capture as hydroperoxide)",
+      "smiles": "c1cnc[nH]1",
+      "purpose": "radical_trap",
+      "observation": "alpha-imidazolyl benzyl hydroperoxide/alcohol detected by GC-MS (23%), supporting a benzyl radical intermediate"
+    },
+    {
+      "name": "biphenyl-type homo-coupling product observed",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "detection of (alpha-functionalized)-biphenyl species by GC-MS, consistent with benzyl radical II"
+    }
+  ],
+  "evidence_types_used": [
+    "redox_probe",
+    "intermediate_trap_other",
+    "DFT",
+    "cyclic_voltammetry",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "DFT shows HOMO of the aryl gem-difluoroalkene is delocalized over the whole molecule (not just the olefin), rationalizing anodic SET. Mechanism is proposed as radical-cation / radical-polar crossover with two sequential anodic SET events; cathodic H2 evolution removes the need for a chemical oxidant. No KIE or TEMPO-trap experiments reported."
+}

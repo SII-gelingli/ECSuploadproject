@@ -1,0 +1,90 @@
+{
+  "doi": "10.1021_acs.orglett.4c04041_sup_1",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,2-dichlorocyclization/dichlorination of enyne substrates using catalytic aryl iodide (p-Tol-I) as a redox mediator generating an aryl-λ3-iodane (ArICl2) that delivers chlorine radicals/atoms under undivided-cell electrolysis with Et3N·HCl as Cl source.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "electrocatalysis_outer_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation of aryl iodide (p-Tol-I) to a hypervalent dichloro(aryl)-λ3-iodane (ArICl2) using chloride from Et3N·HCl; this hypervalent iodine mediator then transfers Cl to the organic substrate. Cathode reduces protons/Et3NH+ to H2.",
+  "key_intermediates": [
+    {
+      "name": "dichloro(p-tolyl)-λ3-iodane (ArICl2)",
+      "smiles": "Cc1ccc(I(Cl)Cl)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "vinyl/alkenyl chloride radical adduct from Cl• addition to alkyne",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "carbon-centered radical after 5-exo-trig cyclization onto pendant alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "p-tolyl iodide (catalyst resting state)",
+      "smiles": "Cc1ccc(I)cc1",
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "Anode oxidizes p-Tol-I in the presence of Cl- (from Et3N·HCl) to generate ArICl2; this λ3-iodane homolytically delivers a Cl• to the alkyne of the enyne, producing a vinyl radical that cyclizes 5-exo onto the alkene; the resulting C-radical abstracts/captures a second Cl from ArICl2, regenerating p-Tol-I.",
+  "rate_determining_step": "Chlorine atom transfer from ArICl2 to the alkyne (Cl• addition generating vinyl radical)",
+  "probe_reagents": [
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Reaction of 1a fully suppressed (2a N.R.); HRMS detected 1-chloro-2,2-diphenylethylene adduct (calc 215.0622, found 215.0626), trapping a Cl• / vinyl-Cl species."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed (N.R.) under standard electrolysis; with stoichiometric ArICl2 + BHT product still forms (45%), consistent with mediator-derived radical pathway."
+    },
+    {
+      "name": "Stoichiometric 4-Me-C6H4ICl2 (preformed ArICl2)",
+      "smiles": "Cc1ccc(I(Cl)Cl)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Without current but with 2 equiv ArICl2 the reaction proceeds in 52% yield (entry 5), supporting ArICl2 as the active chlorinating intermediate; isolated in 20% yield, 49% ee in a separate stoichiometric run."
+    },
+    {
+      "name": "Selectfluor / CsCl (alternative oxidant)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Without current, replacing Et3N·HCl with Selectfluor + CsCl gives 23% yield, indicating chemical oxidation of ArI to ArICl2 reproduces reactivity."
+    },
+    {
+      "name": "No p-Tol-I control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction still proceeds in 21% yield without mediator, indicating a minor direct/background pathway, but mediator strongly accelerates the reaction."
+    },
+    {
+      "name": "No Et3N·HCl control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No detectable product (N.D.), confirming chloride is the Cl source."
+    },
+    {
+      "name": "No current control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction without electrolysis, confirming requirement of anodic oxidation to generate ArICl2."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "intermediate_trap_BHT",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "cyclic_voltammetry",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "strong",
+  "notes": "In-situ formation of ArICl2 was directly observed by 1H NMR of the crude electrolysis mixture (p-Tol-I + Et3N·HCl in DCM/HFIP, 10 mA, 2 h). Control experiments collectively support a mediator-based Cl-atom-transfer (radical) mechanism rather than direct anodic oxidation of substrate: (i) radical traps (DPE, BHT) shut down reaction and trap a Cl-containing radical; (ii) preformed ArICl2 substitutes for current; (iii) alternative chemical oxidants (Selectfluor/CsCl) recover reactivity. An alternative ionic pathway via ArICl2-mediated chloriranium ion cannot be fully excluded but is disfavored by radical-trapping outcomes and modest ee (49%)."
+}

@@ -1,0 +1,95 @@
+{
+  "doi": "10.1039_d5qo00289c",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical anti-Markovnikov hydration of aryl-substituted alkenes to primary/secondary alcohols using chloride as a redox mediator and water as the hydrogen/oxygen source",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of chloride (from TBAC) to Cl2/Cl+, which acts as a mediator that converts the aryl alkene to a chloriranium/chlorohydrin; cathodic reduction of a benzylic radical/cation occurs in the epoxide ring-opening sequence",
+  "key_intermediates": [
+    {
+      "name": "chloriranium ion (intermediate I) from aryl alkene + Cl+",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "chlorohydrin 5 (Ph-aryl-CH(OH)-CH2Cl)",
+      "smiles": "OC(c1ccc(-c2ccccc2)cc1)CCl",
+      "role": "reactive"
+    },
+    {
+      "name": "styrene oxide 6 (aryl epoxide)",
+      "smiles": "C1OC1c1ccc(-c2ccccc2)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical (intermediate II) from epoxide ring-opening / SET",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbanion (intermediate III) after second cathodic SET",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "anti-Markovnikov alcohol 2a (product)",
+      "smiles": "OCCc1ccc(-c2ccccc2)cc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Chloride is anodically oxidized to Cl2/Cl+, which adds to the aryl alkene to form a chloriranium that is opened by H2O to chlorohydrin 5; base (K3PO4) closes 5 to epoxide 6, which is then reduced at the cathode in two sequential SET steps via a benzylic radical and carbanion that is protonated by water to deliver the anti-Markovnikov alcohol.",
+  "rate_determining_step": "Cathodic reductive ring-opening of the aryl epoxide to the benzylic radical/carbanion (slow conversion of 6 to 2a observed by kinetics)",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 2a fully suppressed (89% 1a recovered); with epoxide 6 + TEMPO, the TEMPO–benzylic radical adduct was detected by HRMS, confirming a benzylic radical intermediate"
+    },
+    {
+      "name": "Chlorohydrin 5 (as substrate)",
+      "smiles": "OC(c1ccc(-c2ccccc2)cc1)CCl",
+      "purpose": "intermediate_trap",
+      "observation": "Subjected to standard conditions, gave 2a in 66%, confirming 5 as an on-cycle intermediate"
+    },
+    {
+      "name": "Epoxide 6 (as substrate)",
+      "smiles": "C1OC1c1ccc(-c2ccccc2)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Subjected to standard conditions, gave 2a in 82%, confirming 6 as an on-cycle intermediate"
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "D-2a obtained in 60% with 96% d-incorporation at the β-position, showing water is the H source"
+    },
+    {
+      "name": "4-phenyl-1-butene (alkyl-tethered alkene)",
+      "smiles": "C=CCCc1ccccc1",
+      "purpose": "other",
+      "observation": "No anti-Markovnikov hydration product 4i; epoxide 4i' isolated in 46%, indicating phenyl conjugation is required for the epoxide ring-opening/reduction step"
+    },
+    {
+      "name": "Cyclic voltammetry (Cl- vs 1a)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Cl- oxidation onset 2.02 V vs SCE, below 1a first oxidation at 2.95 V; without Cl-, no 2a formed — confirming Cl- mediator role"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_TEMPO",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "kinetic_order",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "strong",
+  "notes": "The mechanism is a chloride-mediated paired-electrolysis-like sequence: anodic generation of Cl+/Cl2 to form chlorohydrin/epoxide, followed by cathodic two-electron reductive ring-opening of the aryl epoxide. Kinetics show 6 builds up early then decays into 2a, supporting 6 as the productive intermediate. Phenyl conjugation is essential to stabilize the benzylic radical/anion formed on cathodic ring-opening."
+}

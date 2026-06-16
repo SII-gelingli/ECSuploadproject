@@ -1,0 +1,90 @@
+{
+  "doi": "10.1021_jacs.4c05288",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Gd(III)/chiral PyBox-catalyzed visible-light-promoted asymmetric [4+2] dearomative cycloaddition of 1-(2-carbonylpyridine)-substituted naphthalenes with styrenes",
+  "mechanism_family": [
+    "photoredox_combined",
+    "biradical",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Gd(III)/L4-naphthalene ground-state complex (I)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "singlet excited-state Gd(III)/L4-naphthalene complex (I*)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "triplet-state Gd(III)/L4-naphthalene complex (II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "triplet 1,4-biradical from Si-face addition of styrene to triplet naphthalene (III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "singlet biradical/closed-shell intermediate after ISC (IV)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Gd(III)/PyBox coordinates the 2-carbonylpyridine-directed naphthalene to lower its excitation energy; blue-light excitation of this complex gives a singlet that undergoes ISC to a triplet naphthalene biradical, which adds enantioselectively to styrene to form a triplet 1,4-biradical, then a second ISC and radical recombination close the [4+2] ring.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "O2 (triplet quencher)",
+      "smiles": "O=O",
+      "purpose": "intermediate_trap",
+      "observation": "yield dropped to 26% (ee retained 96%), consistent with triplet intermediate"
+    },
+    {
+      "name": "2,5-dimethylhexa-2,4-diene (10)",
+      "smiles": "CC(=CC=C(C)C)C",
+      "purpose": "intermediate_trap",
+      "observation": "dose-dependent inhibition (5% yield at 100 mol%); supports triplet pathway"
+    },
+    {
+      "name": "benzil (triplet sensitizer, ET ~54 kcal/mol)",
+      "smiles": "O=C(C(=O)c1ccccc1)c1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "racemic 3aa in low yield (17%), poor dr/rr — direct triplet sensitization does not reproduce selective reaction"
+    },
+    {
+      "name": "[Ir(ppy)2(dtbbpy)]PF6 (ET 49.2 kcal/mol)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "23% yield, racemic, low selectivity"
+    },
+    {
+      "name": "[Ir(dFCF3ppy)2(dtbbpy)]PF6 (ET 61.8 kcal/mol)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "54% yield, racemic, low selectivity — rules out simple energy transfer mechanism"
+    },
+    {
+      "name": "(E)- vs (Z)-β-methylstyrene (2ac)",
+      "smiles": "C/C=C/c1ccccc1",
+      "purpose": "other",
+      "observation": "(E)-2ac gives 3aac (3:1 dr, 95% ee) with recovered 2ac >20:1 E/Z; (Z)-2ac gives 3aac' (1.4:1 dr, 60% ee) with recovered 2ac 0.8:1 E/Z — partial Z→E isomerization indicates reversible radical addition through a biradical, not energy transfer"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "UV_vis",
+    "on/off_light_or_current",
+    "isolation_of_intermediate",
+    "crossover",
+    "kinetic_order",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Job's plot established 1:1 Gd:1a binding stoichiometry; UV-vis shows a bathochromic shift (ε = 59 M^-1 cm^-1 at 448 nm) for the Gd(III)/L4/1a complex enabling visible-light absorption that the free naphthalene lacks. A linear nonlinear-effect plot (ee of 3aa vs ee of L4) implies one ligand per enantiodetermining TS. An alternative energy-transfer mechanism via free triplet naphthalene was excluded because external triplet sensitizers gave racemic, low-selectivity product and Z/E isomerization of styrene argues for reversible biradical addition rather than triplet energy transfer. Control experiments confirmed Gd(OTf)3, L4, and light are all essential."
+}

@@ -1,0 +1,51 @@
+{
+  "doi": "10.1002_adsc.202001192",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical tandem cyclization of N-arylacrylamides with diaryl diselenides to form 3-(arylselanyl)oxindoles via selenyl radical addition/cyclization.",
+  "mechanism_family": [
+    "radical_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of PhSeSePh generates PhSe• radical (A) and PhSe+ cation (B); cathode reduces H+ to H2.",
+  "key_intermediates": [
+    {
+      "name": "phenylselenyl radical (A)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenyl cation (B)",
+      "smiles": "[Se+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "tertiary C-radical from PhSe• addition to acrylamide (C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexadienyl radical from intramolecular cyclization (D)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "seleniranium/β-selenyl carbocation from PhSe+ addition (F)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexadienyl cation from ionic cyclization (E)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes PhSeSePh to give PhSe• (path I) and PhSe+ (path II); PhSe• adds to the acrylamide alkene to form a C-radical that cyclizes onto the arene; further anodic oxidation and deprotonation yield the oxindole. In parallel, PhSe+ adds to the alkene to give a cation that cyclizes and loses H+ to the same product. Cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Two parallel pathways proposed: favored radical path (path I) via PhSe• and ionic path (path II) via PhSe+ — authors state the ionic path cannot be ruled out. Electrooxidation nature was confirmed by prior control experiments referenced on this page but probe reagent details (e.g., TEMPO trapping) are not shown on the provided page."
+}

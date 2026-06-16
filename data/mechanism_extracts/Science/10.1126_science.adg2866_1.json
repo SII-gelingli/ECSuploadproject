@@ -1,0 +1,102 @@
+{
+  "doi": "10.1126_science.adg2866_1",
+  "journal": "Science",
+  "is_review": false,
+  "rxn_class_summary": "Enantioselective electrochemical cobalt-catalyzed aryl C-H activation enabling C-C, C-N, and C-O annulations of carboxylic amides and P-stereogenic phosphinamides with alkenes/alkynes, coupled to cathodic hydrogen evolution (HER).",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of cyclometalated Co(III) species (Co(III)-CPA1 intermediate, complex C1) to higher oxidation states (Co(IV)/Co(III)/Co(II) manifold), enabling oxidation-induced reductive elimination; cathode performs HER releasing H2 as the sole stoichiometric byproduct.",
+  "key_intermediates": [
+    {
+      "name": "Cyclometalated Co(III) aryl complex C1 (C-H-activated Co(III)-CPA1)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(III)-CPA1 chiral phosphate-bound cobalt species (inner-sphere enantio-determining)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Higher-valent Co(IV) intermediate from anodic oxidation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Alkene-inserted Co alkyl intermediate (post migratory insertion)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Co(II) species (post reductive elimination, re-oxidized at anode)",
+      "smiles": null,
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "Co(II)/Co(III) precatalyst with chiral phosphoric acid CPA1 performs enantioselective C-H metalation of the amide substrate to give cyclometalated Co(III)-C1; the anode oxidizes this Co(III) intermediate to Co(IV) (after alkene migratory insertion), triggering oxidation-induced C-N/C-O/C-C reductive elimination and releasing Co(II); protons are reduced at the Pt cathode to H2.",
+  "rate_determining_step": "Electron transfer (anodic oxidation of the Co intermediate) is rate-limiting; C-H cleavage is not rate-determining (kH/kD ≈ 1.0) and migratory insertion is relatively fast (no order dependence on maleimide).",
+  "probe_reagents": [
+    {
+      "name": "Deuterated benzamide [D]5-1",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "kH/kD ≈ 1.0 from parallel reactions, indicating C-H cleavage is not rate-determining"
+    },
+    {
+      "name": "Isolated Co(III) complex C1",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Stoichiometrically prepared, isolated, and fully characterized; electricity required for productive turnover to product, supporting oxidation-induced reductive elimination"
+    },
+    {
+      "name": "Variable maleimide concentration (kinetic order)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Logarithmic plot of initial rates showed no marked correlation with maleimide concentration; migratory insertion considered relatively fast"
+    },
+    {
+      "name": "Variable current (product formation monitoring)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Direct correlation between current and product formation rate; electron transfer identified as rate-determining factor"
+    },
+    {
+      "name": "Nonlinear effect study with scalemic CPA1",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Linear relationship between ee of CPA1 and ee of product 3, ruling out self-association/multiligand catalysts; single chiral acid coordinates Co"
+    },
+    {
+      "name": "Silver carbonate (chemical oxidant control)",
+      "smiles": "[Ag+].[Ag+].[O-]C(=O)[O-]",
+      "purpose": "redox_probe",
+      "observation": "Gave very low enantioselectivity, highlighting electrochemistry's role in enantiocontrol"
+    },
+    {
+      "name": "No-current control",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No product formation in absence of electricity, confirming electrochemical requirement"
+    },
+    {
+      "name": "Headspace GC analysis",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Molecular H2 detected, confirming HER as the cathodic half-reaction"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "UV_vis",
+    "kinetic_order",
+    "DFT",
+    "on/off_light_or_current",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors favor an inner-sphere mechanism in which CPA1 directly coordinates to cobalt (rather than outer-sphere enantioinduction), supported by linear NLE and HRMS/UV-vis detection of cobalt-CPA1 intermediates traversing a Co(III)/Co(IV)/Co(II) manifold. Cathode material can be replaced with stainless steel without loss of efficiency. Faradaic efficiency up to 89% on decagram scale. Natural sunlight can power the cell. DFT used primarily for atropostability (rotational barrier of axially chiral product 36) rather than core mechanism."
+}

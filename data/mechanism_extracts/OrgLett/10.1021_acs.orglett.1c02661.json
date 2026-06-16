@@ -1,0 +1,92 @@
+{
+  "doi": "10.1021_acs.orglett.1c02661",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical selenylation of alkenes (three-component carboselenylation with styrenes/arenes) and direct C-H selenylation of activated arenes via Se-Se bond activation of diselenides without external oxidants",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_polar_crossover",
+    "paired_electrolysis",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic reduction of diselenide (RSeSeR) generates a selenium-centered radical (RSe•) and a selenium anion (RSe-); the latter is reoxidized at the anode to RSe•. After radical addition to alkene/arene, the resulting carbon-centered radical is anodically oxidized to a cation, and H2 is evolved at the cathode (paired electrolysis).",
+  "key_intermediates": [
+    {
+      "name": "phenylselenyl radical (PhSe•, intermediate A)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "diselenide radical anion [RSeSeR]•-",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenide anion (PhSe-)",
+      "smiles": "[Se-]c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbon radical from PhSe• addition to styrene (intermediate B)",
+      "smiles": "[CH](C[Se]c1ccccc1)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation after anodic oxidation of B",
+      "smiles": "[C+](C[Se]c1ccccc1)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "arenium/thiophenyl radical adduct from PhSe• addition to 2-ethylthiophene (intermediate C)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathodic reduction cleaves the Se-Se bond of PhSeSePh into PhSe• and PhSe- (the anion is reoxidized at the anode to PhSe•). PhSe• adds to a styrene to give a benzylic radical, which is anodically oxidized to a benzylic cation, trapped by a thiophene nucleophile, and deprotonated to product; on the arene branch PhSe• adds to the activated arene to give a radical that is anodically oxidized and deprotonated, with H2 evolution at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "diphenyl diselenide (1a) - cyclic voltammetry",
+      "smiles": "c1ccc(cc1)[Se][Se]c2ccccc2",
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak at 1.64 V and reduction peak at -0.98 V observed, indicating both oxidation and reduction processes are accessible in the catalytic cycle"
+    },
+    {
+      "name": "styrene (2a) - cyclic voltammetry",
+      "smiles": "C=Cc1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak at 2.51 V, too high to be oxidized first under reaction conditions"
+    },
+    {
+      "name": "2-ethylthiophene (3a) - cyclic voltammetry",
+      "smiles": "CCc1cccs1",
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak at ~2.54 V, ruling out arene oxidation as the initiating event"
+    },
+    {
+      "name": "ITO electrode substitution",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Replacing carbon anode with ITO gave no reaction; replacing Pt cathode with ITO decreased yield - indicates electrode plays vital role beyond simple electron transfer"
+    },
+    {
+      "name": "kinetic profile vs 3a concentration",
+      "smiles": null,
+      "purpose": "kinetic_order",
+      "observation": "Higher concentration of 3a (0.6 vs 0.3 mmol) increased rate/yield of 4a, consistent with arene trapping of cationic intermediate"
+    },
+    {
+      "name": "time-course of 4a vs 5b",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Three-component product 4a accumulates while diselenylated arene byproduct 5b stays near 0%, indicating alkene pathway dominates when styrene present"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "kinetic_order",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors cannot rule out an alternative initiation in which PhSeSePh is first anodically oxidized to a radical cation, fragmenting into PhSe• and PhSe+; the favored pathway is cathodic reduction of the Se-Se bond followed by anodic reoxidation of PhSe-. Two parallel product channels: radical-polar crossover with styrene (route a, giving aryl-alkyl selenoethers 4) and radical addition/oxidation/deprotonation on activated arenes (route b, giving aryl-aryl selenoethers 5). H2 evolution at the cathode balances the anodic oxidation events (paired electrolysis)."
+}

@@ -1,0 +1,83 @@
+{
+  "doi": "10.1002_anie.202406017_sup_1",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical trifluoromethylation/cyclization of N-allyl benzamides with CF3SO2Na to access 3,4-dihydroisoquinolin-1(2H)-ones via anodic CF3 radical generation and subsequent radical cyclization with decarbonylative/dearomative rearrangement",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2- (Langlois reagent 2a) to generate CF3 radical (with loss of SO2); subsequent anodic oxidations of cyclohexadienyl/aminyl radical intermediates to cations that are trapped by MeOH or undergo intramolecular SNAr-type rearrangement",
+  "key_intermediates": [
+    {
+      "name": "CF3 radical",
+      "smiles": "[CH0](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon-centered radical B (CF3-addition adduct to allyl alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Spirocyclic cyclohexadienyl radical C (5-exo ipso-cyclization adduct)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ring-expanded dihydroisoquinolinone radical C' (6-endo / decarbonylative-rearranged adduct)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Carbamoyl/N-acyliminium-type cation E (after second anodic oxidation)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Methoxy carbamate cation F (MeOH addition product)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Dihydroisoquinolinone cation G (intramolecular SNAr product)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "N-acyl oxazolidinium intermediate (from N-OMe substrate 1d, leading to benzoate ester S1)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- to CF3 radical (with SO2 extrusion), which adds to the allyl alkene of the N-acyl substrate to give a C-radical B; intramolecular ipso-addition onto the aryl ring forms spirocyclic radical C (5-exo), which rearranges to the dihydroisoquinolinone-type radical C' via neophyl-like C-C migration; C' is oxidized at the anode to cation G, and deprotonation/aromatization affords the dihydroisoquinolinone. With N-OMe substrates, the carbamoyl cation E is intercepted by MeOH to give carbamate F, accounting for the rearranged ester byproduct S1.",
+  "rate_determining_step": "Radical cyclization/rearrangement step TS_BC (5-exo ipso-spirocyclization, ~16.4 kcal/mol for Ts; ~8.5 kcal/mol for t-Bu by DLPNO-CCSD(T)) is the highest barrier on the productive pathway",
+  "probe_reagents": [
+    {
+      "name": "N-OMe allyl benzamide 1d",
+      "smiles": "C=CCN(OC)C(=O)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Formation of rearranged benzoic ester S1 (29%) along with cyclized 4d (10%) supports trapping of a carbamoyl/N-acyliminium cation by intramolecular OMe migration via an oxazolidinium intermediate"
+    },
+    {
+      "name": "MeOH co-solvent (with N-Ts and N-t-Bu substrates 1ab/1ae)",
+      "smiles": "CO",
+      "purpose": "intermediate_trap",
+      "observation": "With Ts (1ab): linear methoxycarbonyl product 5b (27%) and cyclized 4b (24%); with t-Bu (1ae): 5e (63%) and no cyclized 4e, indicating that the cation intermediate is intercepted by MeOH and that the protecting group governs partitioning between rearrangement and trapping"
+    },
+    {
+      "name": "DFT (B3LYP-D3/def2-SV(P); DLPNO-CCSD(T)/def2-TZVPP)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Computed competitive Truce-Smiles (desulfonylative) pathway TS_AB' is 6.8 kcal/mol above the productive decarbonylative TS_BC; C-C cleavage of spirocycle C to C' has ~70 kcal/mol barrier, ruling out direct radical ring expansion and supporting a stepwise cation-mediated rearrangement"
+    }
+  ],
+  "evidence_types_used": [
+    "DFT",
+    "intermediate_trap_other",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "A competitive Truce-Smiles (desulfonylative) rearrangement was considered but is disfavored by DFT (TS_AB' 6.8 kcal/mol above TS_BC). Direct radical-radical C-C bond cleavage from spirocycle C to ring-expanded radical C' is energetically prohibitive (~70 kcal/mol), so rearrangement is proposed to occur via the cation manifold after a second anodic oxidation (E -> F or E -> G). The N-protecting group strongly biases the outcome: t-Bu favors open-chain methoxycarbonyl product, Ts allows cyclization to dihydroisoquinolinone."
+}

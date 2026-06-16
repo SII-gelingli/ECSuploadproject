@@ -1,0 +1,79 @@
+{
+  "doi": "10.1134_s1023193511100144",
+  "journal": "RussJElectrochem",
+  "is_review": false,
+  "rxn_class_summary": "Electrosynthesis of substituted cyclopropanecarboxylic acid esters via cathodic reduction of methyl trichloroacetate (MTCA) or methyl dichloroacetate (MDCA) in the presence of acrylonitrile (AcN), yielding methyl 1-chloro-2-cyanocyclopropanecarboxylate.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "anion_initiated",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic reduction: two-electron dissociative reduction of MTCA (C–Cl cleavage) at Hg cathode generates a stabilized dichlorocarbanion (CCl2C(O)OMe-); alternatively, cathodic reduction of residual water generates OH-/Et4NOH which deprotonates MDCA to the same anion (hidden indirect deprotonation, pathway II).",
+  "key_intermediates": [
+    {
+      "name": "methyl dichloroacetate carbanion (CCl2C(O)OMe anion)",
+      "smiles": "[CH-](Cl)(Cl)C(=O)OC",
+      "role": "reactive"
+    },
+    {
+      "name": "Michael adduct anion from carbanion + acrylonitrile (CCl2(CO2Me)-CH2-CH(-)-CN)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "tetraethylammonium hydroxide (Et4NOH) as in situ base",
+      "smiles": "CC[N+](CC)(CC)CC.[OH-]",
+      "role": "reactive"
+    },
+    {
+      "name": "methyl 1-chloro-2-cyanocyclopropanecarboxylate (cyclopropane 'a', two stereoisomers)",
+      "smiles": "ClC1(C(=O)OC)CC1C#N",
+      "role": "reactive"
+    },
+    {
+      "name": "methyl 2-cyanocyclopropanecarboxylate (cyclopropane 'b', not detected from MDCA)",
+      "smiles": "O=C(OC)C1CC1C#N",
+      "role": "off_pathway"
+    },
+    {
+      "name": "linear adduct 'm' EtO2C-CCl2-CH2-CHCl-CN (claimed in ref [6], not observed here)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the Hg cathode, MTCA accepts 2e- with loss of Cl- to give the CCl2CO2Me carbanion, which undergoes Michael addition to acrylonitrile; the resulting carbanion displaces an intramolecular Cl- to close the cyclopropane ring. For MDCA on steel/Hg, cathodic reduction of H2O gives OH- (then Et4NOH via Et4NCl), which deprotonates MDCA to the same CCl2CO2Me anion that then follows the Michael/ring-closure sequence.",
+  "rate_determining_step": "Initial C–Cl dissociative electron transfer (for MTCA) or cathodic water discharge / deprotonation of MDCA (for MDCA pathway II)",
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of MDCA on Pt in Et4NClO4/MeCN",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Reverse-scan anodic peak for Cl- oxidation observed, indicating that on low-H-overpotential cathodes MDCA reduction still proceeds with C–Cl cleavage rather than C–H deprotonation."
+    },
+    {
+      "name": "solvent variation (DMF vs MeCN) and electrolyte (Et4NCl vs LiCl)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Substitution of LiCl for Et4NCl lowers current efficiency; MeCN on steel recovers cyclopropane yield comparable to Hg/DMF, supporting Et4NOH as in situ base (pathway II)."
+    },
+    {
+      "name": "cathode material variation (Hg vs steel)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "On steel cathode no cyclopropane 'b' (which would indicate cathodic dechlorination of MDCA) is detected, supporting the deprotonation pathway II for MDCA."
+    },
+    {
+      "name": "1H NMR and GC-MS product analysis",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Cyclopropane 'a' identified (M+ = 125); no linear product 'm' detected, contradicting the halogenation mechanism proposed in ref [6]."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two pathways are proposed for cyclopropane 'a' formation: Pathway I (favored for MTCA) — direct 2e cathodic dissociative reduction of MTCA to the CCl2CO2Me carbanion, Michael addition to acrylonitrile, intramolecular SN2 ring closure. Pathway II (favored for MDCA, especially on steel) — 'hidden indirect deprotonation' where cathodic water reduction generates OH-, which together with Et4NCl yields Et4NOH that deprotonates MDCA to the same carbanion. The earlier mechanism 'm' from ref [6], invoking MTCA as a halogenating agent to give a linear chloronitrile, is rejected because product 'm' was not detected by 1H NMR or GC-MS in this work."
+}

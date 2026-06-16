@@ -1,0 +1,79 @@
+{
+  "doi": "10.1039_d0ob00629g",
+  "journal": "OrgBiomolChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intramolecular oxyselenocyclization of 1-allylnaphthalen-2-ols and allylphenols with diaryl diselenides to give selenylated dihydrofurans.",
+  "mechanism_family": [
+    "radical_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of diphenyl diselenide (PhSeSePh) to a selenium-centered radical cation/PhSe radical; cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "PhSeSePh radical cation (A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "PhSe radical (B)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "PhSe cation (C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical adduct on alkene (D)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic/naphthyl cation after anodic oxidation of D (E)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "seleniranium ion (F)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anodic oxidation of PhSeSePh gives a Se-centered radical cation that fragments into PhSe• (Pathway I) or PhSe+ (Pathway II); the radical adds to the allyl alkene to form a C-radical that is further oxidized at the anode to a cation, which is trapped by the pendant naphthol OH (Pathway I); alternatively the PhSe+ forms a seleniranium that is opened by the phenol; protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "3.0 equiv TEMPO completely inhibits the reaction, supporting a radical pathway (Pathway I)."
+    },
+    {
+      "name": "PhSeBr (with electrolyte, no current)",
+      "smiles": "[Se](Br)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Affords 3a in 86% yield without electricity, supporting a PhSe+/seleniranium pathway (Pathway II)."
+    },
+    {
+      "name": "PhSeBr (no current, no nBu4NClO4)",
+      "smiles": "[Se](Br)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Still gives 3a in 45%, consistent with electrophilic Se+ intermediate."
+    },
+    {
+      "name": "Ar atmosphere control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Under Ar with standard conditions, 3a obtained in 45% (vs 64% in air), indicating air/O2 plays a role but reaction still proceeds."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors propose two parallel pathways: Pathway I (favored, radical) via anodic generation of PhSe•, alkene addition, second anodic oxidation to cation E, then intramolecular O-attack and deprotonation; Pathway II (cannot be ruled out) via PhSe+ cation forming a seleniranium F opened by the phenol. CV showed Epa = 1.63 V for 2a and 1.77 V for 1a (vs NHE), indicating diselenide is oxidized first. Gram-scale (6 mmol) gives 64% of 3a."
+}

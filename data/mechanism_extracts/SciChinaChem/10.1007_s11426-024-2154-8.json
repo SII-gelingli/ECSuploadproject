@@ -1,0 +1,103 @@
+{
+  "doi": "10.1007_s11426-024-2154-8",
+  "journal": "SciChinaChem",
+  "is_review": false,
+  "rxn_class_summary": "Organo-mediated electrochemical three-component arylcarboxylation of styrenes with aryl halides and CO2 to give 2,2-diarylpropionic-type carboxylic acids",
+  "mechanism_family": [
+    "mediator_cathodic",
+    "radical_polar_crossover",
+    "sacrificial_anode",
+    "electrocatalysis_outer_sphere",
+    "radical_anion"
+  ],
+  "electrochemical_role": "Cathodic single-electron reduction of a naphthalene-2,6-dicarboxylate mediator (Med-1) generates a radical anion that acts as an outer-sphere SET mediator, reducing the aryl halide to an aryl radical; Mg sacrificial anode supplies Mg2+ and electrons",
+  "key_intermediates": [
+    {
+      "name": "Med-1 radical anion (dimethyl naphthalene-2,6-dicarboxylate radical anion)",
+      "smiles": "[O-]C(=O)c1ccc2cc([C](=O)OC)ccc2c1",
+      "role": "reactive"
+    },
+    {
+      "name": "aryl halide radical anion [Ar-X]•-",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "aryl radical (e.g. phenyl radical)",
+      "smiles": "[c]1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl radical from anti-Markovnikov addition to styrene",
+      "smiles": "C(c1ccccc1)[CH]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl carbanion (after second SET reduction)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α,α-diaryl carboxylate (product anion before workup)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Cathode reduces Med-1 to its radical anion, which performs outer-sphere SET to ArX giving [ArX]•- that fragments to Ar• and X-; Ar• adds anti-Markovnikov to styrene to form a benzyl radical, which is further reduced at the cathode to a benzyl carbanion that nucleophilically attacks CO2. Mg anode is sacrificially oxidized to Mg2+.",
+  "rate_determining_step": "Outer-sphere SET from Med-1 radical anion to aryl halide (ΔG‡ ≈ 21.2 kcal/mol by DFT for PhI)",
+  "probe_reagents": [
+    {
+      "name": "isobutyraldehyde (electrophile swap)",
+      "smiles": "CC(C)C=O",
+      "purpose": "intermediate_trap",
+      "observation": "Replacing CO2 gave alcohol 60 in 21%, evidencing a benzyl carbanion intermediate"
+    },
+    {
+      "name": "cyclobutanone (electrophile swap)",
+      "smiles": "O=C1CCC1",
+      "purpose": "intermediate_trap",
+      "observation": "Gave tertiary alcohol 61 in 12%, supporting benzyl anion intermediate"
+    },
+    {
+      "name": "H2O",
+      "smiles": "O",
+      "purpose": "intermediate_trap",
+      "observation": "20 equiv H2O gave hydrogenation/arylation product 62 in 39% (carbanion protonation)"
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "Product 63 isolated in 37% with 92% D incorporation at benzylic position, confirming benzyl carbanion"
+    },
+    {
+      "name": "vinylidenecyclopropane radical clock (64)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring-opened arylcarboxylation product 65 obtained in 37% (Z/E = 1/9), supporting radical addition of Ar• to alkene"
+    },
+    {
+      "name": "DMPO (5,5-dimethyl-1-pyrroline N-oxide)",
+      "smiles": "CC1(C)CCC=[N+]1[O-]",
+      "purpose": "radical_trap",
+      "observation": "Phenyl-radical DMPO adduct observed by EPR (g=2.0058, AN=14.40 G, AH=21.18 G) and confirmed by ESI-HRMS; no EPR signal without Med-1"
+    },
+    {
+      "name": "Cyclic voltammetry of Med-1 with PhI / styrene",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Med-1 reduction peak at -2.47 V shows increasing catalytic current with added PhI; no change with 4-phenylstyrene, indicating Med-1 mediates SET to ArX and not to styrene"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "EPR",
+    "DFT",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "DFT comparison shows SET from Med-1•- is favorable to PhI (ΔG = -5.6 kcal/mol, ΔG‡ = 21.2) but unfavorable to styrene (ΔG‡ = 27.4) and CO2 (ΔG‡ = 25.3), explaining chemoselectivity. Reactivity tuning: more electron-rich Med-7 used for aryl bromides; Med-9 (methyl benzoate) for electron-rich aryl bromides with more negative potentials. Competing pathways suppressed include hydrogenation, hydrocarboxylation, dicarboxylation, and direct reduction of styrene/ArX."
+}

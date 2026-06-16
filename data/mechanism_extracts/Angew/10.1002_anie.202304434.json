@@ -1,0 +1,111 @@
+{
+  "doi": "10.1002_anie.202304434",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical [3+2] cycloaddition of nitromethane-derived dipoles with olefins to construct isoxazoline aldoximes",
+  "mechanism_family": [
+    "radical_anodic",
+    "paired_electrolysis",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of I- (from n-Bu4NI) to I•/I2 and of CF3CO2- to •CF3 + CO2; these radicals abstract H from a cathodically reduced nitromethane-derived intermediate (II). Cathode reduces deprotonated nitromethane (aci-form) cleaving N-O bond.",
+  "key_intermediates": [
+    {
+      "name": "aci-nitromethane anion (CH2=NO2-) intermediate I",
+      "smiles": "[O-]N(=O)C",
+      "role": "reactive"
+    },
+    {
+      "name": "intermediate II (formaldehyde oxime anion / CH2=N-O-) after N-O cleavage and reduction",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "intermediate III: HC=N+(O-)(O-) type nitrile oxide/nitronate radical after HAT",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,2,5-oxadiazole 2-oxide intermediate IV (from self [3+2] of III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[3+2] cycloadduct V between IV and styrene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "intermediate VI after N-O cleavage/PT en route to product",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "iodine radical / I2 (anodic mediator)",
+      "smiles": "[I][I]",
+      "role": "reactive"
+    },
+    {
+      "name": "trifluoromethyl radical",
+      "smiles": "[CH0](F)(F)F",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, I- is oxidized to I•/I2 and CF3CO2- to •CF3 + CO2; at the cathode, the t-BuOK-generated aci-nitromethane (I) is reduced with N-O bond cleavage to give II. Anodic radicals then perform HAT on II to give dipole III, which self-[3+2] dimerizes to 1,2,5-oxadiazole 2-oxide IV; IV undergoes [3+2] with styrene and PT to deliver the isoxazoline aldoxime.",
+  "rate_determining_step": "Self-[3+2] cycloaddition of III to form IV (DFT activation barrier ~112 kJ/mol), consistent with the 60 °C requirement; the C(sp3)-H cleavage of nitromethane is NOT rate-determining (secondary KIE 0.74).",
+  "probe_reagents": [
+    {
+      "name": "d8-styrene (1a-d8)",
+      "smiles": "[2H]c1c([2H])c([2H])c(C([2H])=C([2H])[2H])c([2H])c1[2H]",
+      "purpose": "isotope_label",
+      "observation": "Gave 2a-d8 in 87% yield, confirming styrene H/D incorporation into product"
+    },
+    {
+      "name": "CD3NO2 vs CH3NO2 (intermolecular competition)",
+      "smiles": "[2H]C([2H])([2H])[N+](=O)[O-]",
+      "purpose": "KIE",
+      "observation": "kH/kD = 0.74 (avg of four runs); inverse secondary KIE indicates C(sp3)-H cleavage of MeNO2 is not in the RDS and rehybridization occurs"
+    },
+    {
+      "name": "current on/off control",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No reaction without current; electrical input crucial"
+    },
+    {
+      "name": "Cyclic voltammetry of components",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "n-Bu4NI Ep_ox = 0.85 V, CF3CO2Na = 1.12 V, 1,4-dioxane = 2.50 V vs Ag/AgCl; styrene (2.53 V) and 2a (2.60 V) are not directly oxidized"
+    },
+    {
+      "name": "HRMS detection of IV",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "1,2,5-oxadiazole 2-oxide intermediate IV detected by HRMS"
+    },
+    {
+      "name": "CO2 detection experiment",
+      "smiles": "O=C=O",
+      "purpose": "intermediate_trap",
+      "observation": "CO2 evolution confirms anodic decarboxylation of CF3CO2-"
+    },
+    {
+      "name": "Control omission of CF3CO2Na, t-BuOK, n-Bu4NI, dioxane",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Each component necessary; no product without n-Bu4NI (no current) or without both CF3CO2Na and t-BuOK"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "DFT",
+    "isolation_of_intermediate",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "DFT (M06-2X/6-31+G(d,p), LanL2DZ for I, SMD MeNO2) supports HAT from II being easier with I• and •CF3 than with I2, and characterizes the two [3+2] cycloadditions (self-dimerization of III to IV, then with styrene) as concerted but asynchronous. Inverse secondary KIE (0.74) reflects sp3→sp2 rehybridization at the MeNO2 carbon rather than C-H cleavage in RDS."
+}

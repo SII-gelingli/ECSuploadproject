@@ -1,0 +1,44 @@
+{
+  "doi": "10.1039_d2cc06246a_si_1",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Synthesis of vicinal azidoacetamides from alkenes using TMSN3, probed by a radical clock experiment with a vinylcyclopropane substrate.",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "carbon-centered radical at benzylic position of vinylcyclopropane (pre ring-opening)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ring-opened homoallyl/benzyl radical after cyclopropane fragmentation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ring-opened carbocation trapped by acetonitrile (Ritter-type) en route to acetamide",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Addition to the styryl alkene generates a benzylic radical that triggers ring-opening of the adjacent cyclopropane to give a distal homoallyl radical; subsequent oxidation to a cation is intercepted by MeCN (Ritter) and azide delivery from TMSN3 gives the linear 1,4-azidoacetamide 31.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1-(2-phenylcyclopropyl)vinyl)benzene (30)",
+      "smiles": "C(=C)(c1ccccc1)C2CC2c3ccccc3",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened acyclic product 31 (N-(4-azido-1,4-diphenylbut-3-en-1-yl)acetamide) isolated in 17% yield, 4.4:1 dr, consistent with a radical intermediate that opens the cyclopropane."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Only the radical clock experiment is shown on this page; the ring-opened product implicates a carbon radical intermediate, but a radical-polar crossover is suggested by formation of the acetamide moiety (Ritter-type trapping of a cation by acetonitrile)."
+}

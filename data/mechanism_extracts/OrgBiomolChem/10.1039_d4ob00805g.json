@@ -1,0 +1,78 @@
+{
+  "doi": "10.1039_d4ob00805g",
+  "journal": "OrgBiomolChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical selenylation-dearomative ipso-cyclization of N-benzylacrylamides with diaryl diselenides to access selenylated 2-azaspiro[4.5]decadienones",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of diphenyl diselenide (PhSeSePh) generates a PhSe radical and a selenium cation; cathode reduces the cyclohexadienyl radical cation intermediate to the corresponding carbanion that undergoes demethylation to deliver the spirocyclic dienone",
+  "key_intermediates": [
+    {
+      "name": "phenylselenyl radical (PhSe•) from anodic oxidation of (PhSe)2",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "diphenyl diselenide radical cation (Ph2Se2•+)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "C-centered radical C from PhSe• addition to acrylamide alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclohexadienyl radical D after ipso-carbocyclization onto the p-methoxyaryl",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclohexadienyl cation E after SET at cathode (then demethylation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "spirocyclic azaspiro[4.5]decadienone product 3a",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "TEMPO-SePh adduct 6 (observed by HRMS)",
+      "smiles": "CC1(C)CCCC(C)(C)N1O[Se]c1ccccc1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the anode, (PhSe)2 is oxidized to a radical cation that fragments to PhSe• and PhSe+; PhSe• adds to the acrylamide alkene to give a C-radical that undergoes ipso-cyclization onto the p-methoxyphenyl ring to form a cyclohexadienyl radical, which is oxidized (at the anode) / reduced at the cathode pathway then loses methyl to furnish the dearomatized spirocyclic dienone.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Formation of spirocycle 3a was inhibited and a TEMPO-SePh adduct 6 was detected by HRMS, supporting PhSe radical intermediacy"
+    },
+    {
+      "name": "No current (electrolysis off)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product formation in the absence of current, confirming that electrochemistry is essential"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a and 2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak of (PhSe)2 (2a) at 1.18 V vs 1.72 V for acrylamide 1a, indicating diselenide is oxidized preferentially at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Reaction fails with 4-NO2 substituent on the N-benzyl aryl (electron-poor arene cannot be dearomatized) and with Me2Se2 (no selenyl radical generated). The cathodic step is drawn as SET to convert dienyl radical D to cation/anion E followed by demethylation; the exact polarity of E (cation after anodic oxidation vs anion after cathodic reduction) is ambiguous in the scheme, but the authors invoke cathodic SET."
+}

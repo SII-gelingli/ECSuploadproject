@@ -1,0 +1,72 @@
+{
+  "doi": "10.1039_d4ob00980k",
+  "journal": "OrgBiomolChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative radical cascade sulfonylation/cyclization of N-aryl 2-vinylbenzamides with sodium sulfinates to access 3-sulfonylisoindolin-1-ones",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of sulfinate anion (ArSO2-) to sulfonyl radical (ArSO2•); cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "Sulfinate anion (A, ArSO2-)",
+      "smiles": "[O-]S(=O)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Sulfonyl radical resonance form B (ArS(=O)-O•)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Sulfonyl radical C (ArSO2•)",
+      "smiles": "O=[S](=O)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic C-radical D from sulfonyl addition to styrenyl amide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Resonance-stabilized N-centered/iminol radical E",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cyclized cationic iminol intermediate F (after anodic SET)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, sulfinate (2b) loses one electron to give sulfonyl radical C (via resonance forms A/B); C adds across the alkene of 1a to form benzylic radical D, whose amide resonance form E undergoes intramolecular cyclization onto nitrogen. A second anodic SET gives cation F, which loses H+ to deliver the isoindolin-1-one product 3ab; the cathode produces H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "3 equiv TEMPO under standard conditions suppressed product formation (only trace 3aa); supports radical pathway"
+    },
+    {
+      "name": "1,1-Diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Sulfonyl-DPE adduct 4 detected by NMR in 68%; product 3aa only trace — confirms free sulfonyl radical"
+    },
+    {
+      "name": "Cyclic voltammetry of substrates",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation potentials measured (ESI) consistent with anodic oxidation of sulfinate"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Gram-scale (3.5 mmol, 1.05 g of 1a) reaction delivered 3aa in 70% yield, supporting scalability. No DFT or KIE performed; mechanism is proposed by analogy to prior radical sulfonylation literature."
+}

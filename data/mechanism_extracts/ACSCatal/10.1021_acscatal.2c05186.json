@@ -1,0 +1,75 @@
+{
+  "doi": "10.1021_acscatal.2c05186",
+  "journal": "ACSCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrocatalytic 1,2-diazidation of alkenes mediated by a second-sphere H-bonding manganese amidoporphyrin complex using NaN3 as the azide source",
+  "mechanism_family": [
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of [Mn(L1)N3] (and/or free N3-) generates an azidyl radical and a higher-valent diazidomanganese(IV) species that delivers the second azide; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "[Mn(III)(L1)N3] mono-azide manganese porphyrin complex",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Anodically generated [Mn(IV)(L1)(N3)2] diazidomanganese(IV)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Free azidyl radical (N3•)",
+      "smiles": "[N-]=[N+]=[N]",
+      "role": "transient"
+    },
+    {
+      "name": "Carbon-centered β-azido alkyl radical (II) after N3• addition to alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "1,2-Diazide product (III)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "[Mn(L1)Cl] undergoes ligand exchange with N3- to form [Mn(III)(L1)N3], which is anodically oxidized (and/or free N3- is oxidized) to release an azidyl radical that adds to the alkene; the resulting C-radical then abstracts a second azide via azidyl transfer from the anodically generated [Mn(IV)(L1)(N3)2] to deliver the 1,2-diazide, while protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "Tetrabutylammonium azide (TBAN3)",
+      "smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[N-]=[N+]=[N-]",
+      "purpose": "redox_probe",
+      "observation": "Oxidation wave at Ep/2 = +453 mV vs Fc+/0; mixing with [Mn(L1)Cl] gave a new redox peak at E1/2 = +155 mV assigned to [Mn(L1)N3], showing ligand exchange lowers MnIII oxidation potential by >600 mV"
+    },
+    {
+      "name": "[Mn(L1)Cl] complex",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "CV shows two overlapping one-electron oxidations above +600 mV; UV-vis titration with NaN3 confirms quantitative formation of [Mn(L1)N3]"
+    },
+    {
+      "name": "DFT model [Mn(L3)N3] and [Mn(L3)(N3)2]",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "B3LYP-D3(BJ)/def2-SVP calculations identify two N-H···N H-bonds between amide groups and Mn-bound azide (QTAIM BCPs); supports second-sphere stabilization of key intermediates"
+    },
+    {
+      "name": "Chiral D2-symmetric amidoporphyrin Mn catalysts [Mn(L4)Cl] and [Mn(L5)Cl]",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "[Mn(L5)Cl] gave 13% ee in diazidation of 4-tert-butylstyrene, implying second azidyl transfer occurs from the chiral Mn azide complex rather than via free diffusion"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "UV_vis",
+    "DFT",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors consider two parallel initiation pathways leading to the same azidyl radical: (i) anodic oxidation of [Mn(L1)N3] to [Mn(L1)(N3)2] followed by homolytic fragmentation, and (ii) direct anodic oxidation of free N3- (both feasible since anode potential reaches +420 mV vs Fc+/0). The second C-N bond is proposed to form by azidyl group transfer from [Mn(IV)(L1)(N3)2] to the transient carbon radical rather than by radical-radical coupling, which is statistically disfavored. Overall cycle formulated as MnIII/MnIV. Second-sphere amide N-H···N3 H-bonds are invoked to stabilize Mn-azide intermediates and may reduce N3 nucleophilicity (no SN2/E2 side products with tosylate substrate 13)."
+}

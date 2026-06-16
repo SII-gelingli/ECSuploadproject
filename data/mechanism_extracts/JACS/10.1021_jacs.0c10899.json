@@ -1,0 +1,92 @@
+{
+  "doi": "10.1021_jacs.0c10899",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electroreductive activation of chlorosilanes (Si-Cl) to generate silyl radicals that add to alkenes, enabling disilylation, hydrosilylation, allylic silylation, and silacycle synthesis via a radical-polar crossover mechanism",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_polar_crossover",
+    "sacrificial_anode",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic single-electron reduction of R3Si-Cl (~ -0.5 V vs Mg0/2+) cleaves the strong Si-Cl bond to generate a silyl radical; Mg sacrificial anode provides Mg2+ that facilitates Si-Cl reduction by binding Cl-; a second cathodic reduction reduces the benzylic radical to a benzylic anion",
+  "key_intermediates": [
+    {
+      "name": "chlorosilane radical anion [R3Si-Cl]•-",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "silyl radical R3Si•",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbon radical Int-1 (ArCH•-CH2-SiR3)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbanion Int-2 (ArCH(-)-CH2-SiR3)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Mg2+ (Lewis acid promoter, binds Cl-)",
+      "smiles": "[Mg+2]",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces R3Si-Cl (rate-determining) to its radical anion, which fragments to Cl- and a silyl radical; the silyl radical adds to the alkene giving a benzylic radical (Int-1) that is further reduced at the cathode to a benzylic anion (Int-2); Int-2 attacks a second R3Si-Cl (or H+/intramolecular electrophile) to form the second C-Si bond, while Mg is oxidized at the sacrificial anode.",
+  "rate_determining_step": "Cathodic single-electron reduction of TMSCl (global rate-determining step, GRDS); first C-Si bond formation (silyl radical addition to alkene) is the rate-determining chemical step (RDCS)",
+  "probe_reagents": [
+    {
+      "name": "vinyl cyclopropane (substrates 30, 31)",
+      "smiles": "C=CC1CC1",
+      "purpose": "radical_clock",
+      "observation": "Ring opening observed giving products 32/33 (73%, 55%), confirming intermediacy of carbon radical Int-3"
+    },
+    {
+      "name": "allyl ether 34 (allyl-OBn substrate)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Converted to allylsilane 35 (71%) with BnOTMS detected by GC-MS, supporting benzylic anion Int-4 that triggers β-elimination of BnO- leaving group"
+    },
+    {
+      "name": "CD3CN (deuterated acetonitrile)",
+      "smiles": "[2H]C([2H])([2H])C#N",
+      "purpose": "isotope_label",
+      "observation": "Deuterosilylation product 45 obtained, confirming H+/D+ from MeCN as the proton source for the carbanion Int-2"
+    },
+    {
+      "name": "13C kinetic isotope effect",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "13C KIE consistent with nucleophilic silyl radical addition to alkene being rate-determining chemical step"
+    },
+    {
+      "name": "substituted styrenes (Hammett/MLR)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Two-parameter MLR fit (lg(krel) = 0.12 + 1.2σ + 0.73σ*, R2=0.96) shows both electronic and radical stability effects on rate, consistent with nucleophilic silyl radical addition"
+    },
+    {
+      "name": "TMSOAc (very strong Si-O bond substrate)",
+      "smiles": "CC(=O)O[Si](C)(C)C",
+      "purpose": "redox_probe",
+      "observation": "Even Si-O bond (120-140 kcal/mol) was activated giving 31% product, demonstrating reach of cathodic potential"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "radical_clock",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "DFT",
+    "kinetic_order",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "An alternative 2e- pathway in which TMSCl is reduced to silyl anion TMS- (analogous to Li/Na chemistry, Scheme 1B) was considered but ruled out based on CV, MLR, KIE, and DFT data. Control experiments also exclude pathways involving electrogenerated Mg0 (no conversion with Mg powder or Mg0 pre-generation); Mg2+ is not required but lowers Si-Cl reduction overpotential by Cl- coordination. Overall ECEC sequence (electrochemical-chemical-electrochemical-chemical) with zero-order in substrate and first-order in current."
+}

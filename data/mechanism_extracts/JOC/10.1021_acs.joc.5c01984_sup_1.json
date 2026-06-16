@@ -1,0 +1,69 @@
+{
+  "doi": "10.1021_acs.joc.5c01984_sup_1",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical three-component thiol-ene/perfluoroalkylation of styrenes with arylthiols and perfluoroalkyl iodides to give β-thio-perfluoroalkylated products via a radical pathway",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Cathodic reduction generates the perfluoroalkyl radical (nC4F9•) from nC4F9I; the perfluoroalkyl radical adds to the styrene to form a benzylic C-radical that is trapped by the arylthiol/thiyl species",
+  "key_intermediates": [
+    {
+      "name": "perfluorobutyl radical (nC4F9•)",
+      "smiles": "[CH2]C(F)(F)C(F)(F)C(F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-radical from nC4F9• addition to 4-vinylbiphenyl",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "TEMPO-trapped adduct B (benzylic radical + TEMPO, [M+H]+ = 556.4)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "aryl thiyl radical (4-MeO-C6H4-S•)",
+      "smiles": "[S]c1ccc(OC)cc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces nC4F9I to give nC4F9• which adds to the styrene producing a benzylic radical; this carbon radical is captured by the arylthiol (or its thiyl radical) to deliver the ArS group, completing the three-component coupling.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 4aa only trace; TEMPO-benzylic adduct B detected by LC-MS ([M+H]+ 556.4, calc 556.57)"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "4aa still formed in 70% yield (incomplete suppression)"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "4aa obtained in 42% yield (partial suppression)"
+    },
+    {
+      "name": "diaryl disulfide 2a' (in place of thiol 2a)",
+      "smiles": "COc1ccc(SSc2ccc(OC)cc2)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Only trace 4aa formed, indicating disulfide is not a competent intermediate under the standard conditions"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Incomplete suppression by BHT (70%) and DPE (42%) suggests the benzylic radical is short-lived/efficiently trapped before scavenger interception; only TEMPO fully suppresses and gives a detectable adduct. Control with the disulfide 2a' giving only trace product argues against a disulfide-derived thiyl radical pathway under the standard electrochemical conditions."
+}

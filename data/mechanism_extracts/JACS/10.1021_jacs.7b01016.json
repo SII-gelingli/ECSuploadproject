@@ -1,0 +1,37 @@
+{
+  "doi": "10.1021_jacs.7b01016",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Metal- and reagent-free electrochemical intramolecular oxidative amination of tri- and tetrasubstituted alkenes to give allyl-substituted cyclic carbamates, ureas, and lactams via anodically generated nitrogen-centered radicals",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of the amide N-H substrate generates a nitrogen-centered radical (NCR); a second anodic oxidation of the cyclized C-radical produces a carbocation that loses a proton to give the allylic product",
+  "key_intermediates": [
+    {
+      "name": "N-centered radical (amidyl radical) from anodic oxidation/deprotonation of the tethered amide N-H",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon-centered radical from 5-exo cyclization onto the tri/tetrasubstituted alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Carbocation (intermediate III) from anodic oxidation of the C-radical",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "The anode oxidizes the alkene-tethered amide (after N-H deprotonation) to a nitrogen-centered radical I, which undergoes intramolecular cyclization onto the hindered alkene to give a carbon-centered radical II; II is further oxidized at the anode to a carbocation III, which loses a proton to regenerate a terminal C=C, yielding the cyclic allyl carbamate/urea/lactam. Protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Authors note that the alternative pathways for C-radical II (H-abstraction reduction; nucleophilic trapping of cation III; nonselective/undesired proton elimination from III) are challenges that are overcome here, with regioselective deprotonation occurring at the terminal position to give the less stable but kinetically favored terminal alkene rather than the thermodynamically more stable tetrasubstituted enamine. Redox potentials (Ep/2 vs SCE in MeCN): substrate 1 = 1.23 V, product 2 = 1.39 V, rationalizing absence of overoxidation. Only the proposal portion of the paper is shown; mechanistic probe experiments (if any) are not visible on this page."
+}

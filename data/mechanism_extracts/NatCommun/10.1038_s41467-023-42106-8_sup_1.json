@@ -1,0 +1,103 @@
+{
+  "doi": "10.1038_s41467-023-42106-8_sup_1",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical anti-Markovnikov dihydroxylation of alkenes to 1,2-diols via iodonium intermediates and α-amino radical-mediated C-I activation in tBuOH/H2O",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide to I2 (which acts as the alkene-activating mediator forming an iodonium) and parallel anodic oxidation of in-situ-generated Et3N (from Et4NI decomposition) to an α-amino radical; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "iodonium ion from alkene (Int-I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-iodo alcohol from water opening of iodonium (Int-II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-amino alkyl radical from Et3N (Et2N-•CHMe)",
+      "smiles": "CCN(CC)[CH]C",
+      "role": "transient"
+    },
+    {
+      "name": "halogen-bonded / HAT transition state A between Int-II and α-amino radical",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "protonated epoxide / cyclic oxiranium (Int-III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "free epoxide (Int-IV) in equilibrium with Int-III",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "molecular iodine I2 (mediator)",
+      "smiles": "II",
+      "role": "reactive"
+    },
+    {
+      "name": "Et3N from Et4NI decomposition",
+      "smiles": "CCN(CC)CC",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes I- to I• which dimerizes to I2; I2 forms an iodonium with the alkene that is opened by water to give a β-iodo alcohol (Int-II). In parallel, Et4NI decomposes to Et3N which is anodically oxidized (-H+/-e-) to an α-amino radical that abstracts the iodine of Int-II; the resulting carbon radical loses an electron at the anode and cyclizes to a protonated epoxide (Int-III), which is opened by H2O to deliver the trans 1,2-diol (with Int-IV epoxide as equilibrium partner). Protons are reduced to H2 at the cathode.",
+  "rate_determining_step": "Iodine-atom abstraction from Int-II by the α-amino radical (C-I activation) followed by intramolecular cyclization to Int-III",
+  "probe_reagents": [
+    {
+      "name": "compound 4 (β-iodo alcohol) without electricity, with Et3N",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "No product 2a; 4 recovered in 90% — electricity required to convert Int-II to product"
+    },
+    {
+      "name": "compound 4 with electricity + Et3N",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "2a formed in 27%, confirming Int-II is on-cycle and electrochemistry drives its conversion"
+    },
+    {
+      "name": "compound 4 with electricity + DIPEA (in place of Et3N)",
+      "smiles": "CC(C)N(C(C)C)CC",
+      "purpose": "intermediate_trap",
+      "observation": "2a in 11%; tertiary amine + current still operative but less efficient"
+    },
+    {
+      "name": "compound 4 with DIPEA, no electricity",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "No product; 4 recovered 93%"
+    },
+    {
+      "name": "GC-MS of reaction mixture",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Et3N detected (m/z 86, 58, 101), confirming in-situ decomposition of Et4NI to Et3N"
+    },
+    {
+      "name": "single-crystal X-ray of product 2y (CCDC-2286663)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "trans-diol configuration on cyclohexane confirms anti opening of a protonated epoxide (Int-III/Int-IV) by water"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "on/off_light_or_current",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "An earlier mechanism draft proposed direct Int-II → Int-III without electron accounting; reviewer 3 pointed out the missing electron loss, and the revised mechanism explicitly invokes anodic oxidation of the carbon radical (after iodine atom transfer to the α-amino radical) to give the cyclic oxiranium Int-III. Int-III and the neutral epoxide Int-IV are in protonation equilibrium; trans-diol stereochemistry from internal alkenes (X-ray of 2y) supports SN2-like anti opening of the protonated epoxide by water. Et4NI serves dual roles: iodide source for I2 mediator and precursor (via Hofmann-type decomposition) to Et3N that supplies the α-amino radical."
+}

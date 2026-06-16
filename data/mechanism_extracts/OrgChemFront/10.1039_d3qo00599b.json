@@ -1,0 +1,76 @@
+{
+  "doi": "10.1039_d3qo00599b",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Direct electrochemical difluorination and azo-fluorination of gem-difluorostyrenes using Et3N·3HF as fluoride source to access perfluoroalkyl aromatics",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "anion_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of gem-difluorostyrene to a radical cation, then a second anodic oxidation of the benzyl radical to a benzyl cation; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "radical cation of gem-difluorostyrene (I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical after F- addition at C1 (II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl cation (III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "trifluoromethyl benzylic product after second F- addition (3)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the gem-difluorostyrene to a radical cation (I); fluoride from Et3N·3HF attacks C1 to give a benzylic radical (II); a second anodic oxidation furnishes a benzyl cation (III), which is trapped by a second fluoride (or other nucleophile such as azole/alcohol) to deliver the difunctionalized product; protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "alkyl-substituted gem-difluoroalkene (11, non-conjugated)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product 12 formed, indicating a conjugated aryl group is essential to enable substrate oxidation"
+    },
+    {
+      "name": "controlled-potential electrolysis at 1.05 V vs SCE (below oxidation onset)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No product 3a at 1.05 V; 9% at 1.30 V, supporting oxidation of the gem-difluorostyrene as the initiating step"
+    },
+    {
+      "name": "O2 (radical trapping under O2 atmosphere)",
+      "smiles": "O=O",
+      "purpose": "radical_trap",
+      "observation": "Hydroperoxide/methoxy adduct 13 (MW 280.27) detected by GC-MS, consistent with a benzyl radical intermediate"
+    },
+    {
+      "name": "4-vinylbiphenyl (non-fluorinated styrene)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Easily oxidized but no fluorination occurs, indicating the gem-difluoro motif is required for productive F- capture"
+    },
+    {
+      "name": "TMSCN as competing nucleophile",
+      "smiles": "C[Si](C)(C)C#N",
+      "purpose": "intermediate_trap",
+      "observation": "Fluorocyanation product 8 detected by GC-MS, consistent with cation interception by CN-"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "redox_probe",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism additionally supported by selective cathodic hydrodefluorination/deuteration of the benzyl C-F bond of product 3g (giving 9/10 in 83%/81%), demonstrating reversible electrochemical handling of the C-F bond. No DFT or KIE studies reported."
+}

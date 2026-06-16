@@ -1,0 +1,69 @@
+{
+  "doi": "10.1038_s41467-022-32084-8_sup_1",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electro-oxidative three-component 1,2-amino oxygenation of alkenes with sulfonamides and trifluoroethanol (TFE) to give β-amino alcohol derivatives via N-centered radicals",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation: DBU is electroactive and shuttles electrons from the sulfonamide anion (deprotonated by DBU) to the anode, generating an N-centered radical (NCR); the benzylic carbon radical formed after addition to alkene is further oxidized at the anode to a benzylic cation that is trapped by TFE",
+  "key_intermediates": [
+    {
+      "name": "Tosyl-amide anion (deprotonated sulfonamide)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "N-centered (aminyl) radical from sulfonamide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic carbon radical from NCR addition to styrene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Benzylic carbocation after anodic oxidation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Oxidized DBU (mediator)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "DBU deprotonates the sulfonamide and is oxidized at the anode; electron transfer from sulfonamide anion to oxidized DBU generates an N-centered radical that adds to the alkene; the resulting benzylic radical is anodically oxidized to a cation and trapped by TFE to give the β-amino ether, with H2 evolved at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "Aliphatic sulfonamide 10 (non-benzylic competitive substrate)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Under standard conditions with 3 equiv styrene, intermolecular 1,2-amino oxygenation product 10a formed in 15% while intramolecular pyrrolidine 10b (from 5-exo cyclization of NCR onto pendant alkene) formed in 41%, supporting an N-centered radical pathway"
+    },
+    {
+      "name": "DBU titration (0–2.0 equiv)",
+      "smiles": "C1CCC2=NCCCN2CC1",
+      "purpose": "other",
+      "observation": "Yield of 4aa increased monotonically with DBU loading (0→76% at 2.0 equiv), consistent with DBU acting as base and electroactive mediator"
+    },
+    {
+      "name": "Cyclic voltammetry of DBU/1a/2aa",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "DBU shows catalytic current that increases with added sulfonamide 1a; 1a alone shows no oxidation peak 0–2.5 V; styrene 2aa is electroactive but EDG-styrenes give low yields, arguing against direct alkene oxidation as the initiation step"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "radical_clock",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Reviewers questioned the rigor of competitive experiments (benzylic C–H of substrate 10 could in principle be oxidized to a cation rather than going through NCR); authors addressed by using an aliphatic substrate where intramolecular 5-exo cyclization (10b, 41%) provides evidence for the NCR pathway. Reviewer #3 proposed an alternative: anodic oxidation of tosylamide anion directly to N-radical without DBU mediation. CV data indicate DBU mediation is operative rather than direct sulfonamide oxidation."
+}

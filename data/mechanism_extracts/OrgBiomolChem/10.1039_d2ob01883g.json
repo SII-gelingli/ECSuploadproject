@@ -1,0 +1,54 @@
+{
+  "doi": "10.1039_d2ob01883g",
+  "journal": "OrgBiomolChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical monofluoroalkylation/cyclization of N-arylacrylamides with dimethyl 2-fluoromalonate to construct monofluorinated 2-oxindoles via a ferrocene-mediated anodic radical pathway.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_anodic",
+    "electrocatalysis_outer_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation of Cp2Fe to Cp2Fe+ which acts as a SET mediator to oxidize the fluoromalonate carbanion to a monofluoroalkyl radical; cathode reduces MeOH to MeO- and H2.",
+  "key_intermediates": [
+    {
+      "name": "Cp2Fe+ (ferrocenium, anodically generated SET mediator)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Fluoromalonate carbanion 31 (deprotonated dimethyl 2-fluoromalonate)",
+      "smiles": "COC(=O)[C-](F)C(=O)OC",
+      "role": "transient"
+    },
+    {
+      "name": "Monofluoroalkyl radical 32 (·CF(CO2Me)2)",
+      "smiles": "COC(=O)[C](F)C(=O)OC",
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon-centered cyclohexadienyl/benzylic radical 33 after radical addition and cyclization onto arene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Monofluorinated 2-oxindole product 3",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, Cp2Fe is oxidized to Cp2Fe+; at the cathode MeOH is reduced to MeO- + 1/2 H2. MeO- deprotonates dimethyl 2-fluoromalonate to carbanion 31, which Cp2Fe+ oxidizes via SET to monofluoroalkyl radical 32; radical addition to the acrylamide alkene followed by intramolecular cyclization onto the arene gives radical 33, which is oxidized and deprotonated to deliver the monofluorinated oxindole.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "Cyclic voltammetry of substrate 1, product 3, mediator Cp2Fe, and fluoromalonate 2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "E_p/2: Cp2Fe 0.46 V, carbanion 31 0.45 V, fluoromalonate 2 1.21 V, substrate 1 1.79 V, product 3 1.64 V (vs Ag/AgCl); Cp2Fe+ can oxidize carbanion 31 but not 2, 1, or 3, supporting mediated SET via the deprotonated malonate."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism is proposed based on CV data and literature precedent (refs 13,14); no radical trapping (TEMPO/BHT), KIE, or DFT studies are reported. The same mediated monofluoroalkyl radical is invoked for related transformations in the paper including spirocyclization to 2-azaspiro[4.5]decanes, indole[2,1-a]isoquinoline formation, and 1,2-aryl migration from allyl alcohols to 4-fluorobutanones."
+}

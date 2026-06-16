@@ -1,0 +1,76 @@
+{
+  "doi": "10.1080_00397911.2022.2028843",
+  "journal": "SynthCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical bromolactonization of 4-aryl-4-pentenoic acids with CBr4 as bromine radical source to give bromomethylated γ-butyrolactones",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_cathodic",
+    "paired_electrolysis",
+    "radical_polar_crossover",
+    "carbocation"
+  ],
+  "electrochemical_role": "Cathodic reduction of CBr4 generates Br- and •CBr3; bromide is then anodically oxidized to Br• (and/or Br+), which adds across the alkene; benzylic radical is further oxidized at the anode to a benzylic cation",
+  "key_intermediates": [
+    {
+      "name": "tribromomethyl radical (•CBr3, quenched to CHBr3)",
+      "smiles": "[C](Br)(Br)Br",
+      "role": "transient"
+    },
+    {
+      "name": "bromine radical (Br•) from anodic oxidation of Br-",
+      "smiles": "[Br]",
+      "role": "reactive"
+    },
+    {
+      "name": "bromine cation (Br+) alternative anodic species",
+      "smiles": "[Br+]",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbon radical intermediate I after Br• addition to alkene",
+      "smiles": "OC(=O)CCC([Ph])(C[Br])[CH]",
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbocation intermediate II",
+      "smiles": "OC(=O)CC[C+](c1ccccc1)CBr",
+      "role": "reactive"
+    },
+    {
+      "name": "bromomethyl γ-butyrolactone 3a",
+      "smiles": "O=C1OC(CBr)(c2ccccc2)CC1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the cathode CBr4 is reduced to Br- and •CBr3 (trapped as CHBr3, with H+ reduced to ½H2); at the anode Br- is oxidized to Br• which adds to the alkene of 1a to give benzylic radical I, which is further oxidized at the anode to benzylic cation II (alternatively Br+ adds directly to 1a giving II); intramolecular nucleophilic cyclization by the carboxylic acid then delivers γ-lactone 3a with loss of H+.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction still afforded 3a in 42% yield (radical pathway implicated but not fully suppressed)"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "3a obtained in 44% yield under BHT (radical intermediates implicated)"
+    },
+    {
+      "name": "molecular Br2 (control without current)",
+      "smiles": "BrBr",
+      "purpose": "intermediate_trap",
+      "observation": "Only trace 3a formed, indicating Br2 is not the active brominating intermediate"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors present two converging anodic pathways to the benzylic cation II: (a) Br• addition giving radical I followed by anodic oxidation, or (b) direct Br+ addition to the alkene. CV showed oxidation peaks of 1a at 1.74 V and CBr4 at 1.03 V, and CBr4 reduction at -0.78 V, consistent with cathodic activation of CBr4 and anodic oxidation of bromide/substrate. Radical traps only partially suppress the reaction, suggesting both radical and cationic routes may operate."
+}

@@ -1,0 +1,88 @@
+{
+  "doi": "10.1021_jacs.7b04363",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Visible-light-excited asymmetric intermolecular [2+2] photocycloaddition of α,β-unsaturated 2-acyl imidazoles (and related N,O-chelating substrates) with alkenes catalyzed by a chiral-at-rhodium Lewis acid (Δ-RhS).",
+  "mechanism_family": [
+    "biradical",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Rh(III)/substrate N,O-chelate ground-state complex (I)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Rh-bound substrate singlet excited state S1 (II)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Rh-bound substrate triplet excited state T1 (III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Rh-coordinated 1,4-triplet biradical from addition to alkene (IV)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Rh-coordinated cyclobutane product complex (V)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Substrate coordinates to chiral Rh(III) via N,O-chelation, red-shifting absorption; visible light directly excites the Rh-substrate complex to S1, which undergoes ISC to a triplet state localized on the enone alkene; this triplet adds to the alkene cosubstrate to form a 1,4-biradical that ring-closes (after ISC) to the chiral cyclobutane, then dissociates from Rh.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "benzil (triplet sensitizer)",
+      "smiles": "O=C(C(=O)c1ccccc1)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Racemic [2+2] product 3a obtained with benzil as sensitizer in place of Δ-RhS, supporting a triplet pathway."
+    },
+    {
+      "name": "2,5-dimethylhexa-2,4-diene (triplet quencher)",
+      "smiles": "CC(C)=CC=C(C)C",
+      "purpose": "radical_trap",
+      "observation": "Reaction 1a + 2a → 3a significantly inhibited, consistent with a triplet intermediate."
+    },
+    {
+      "name": "(E)- vs (Z)-1p substrate diastereomers",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Both (E)- and (Z)-1p give the same diastereomer of 3p with >20:1 d.r. and 99% ee, indicating configurational lability (a biradical/triplet) at the alkene during cycloaddition."
+    },
+    {
+      "name": "Cyclic voltammetry / redox potentials of RhS-1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Excited-state potentials (E[Rh]+/[Rh]* = -0.78 V; E[Rh]*/[Rh]- = +0.88 V) insufficient to oxidize/reduce styrene (Ep red = -2.91 V; E1/2 ox = +2.05 V), excluding photoredox/SET."
+    },
+    {
+      "name": "DFT on RhS-1a T1 state",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Spin density localized on the alkene carbons of the coordinated enone, consistent with alkene-localized triplet reactivity in [2+2]."
+    },
+    {
+      "name": "UV/Vis of RhS, 1a, RhS-1a",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "RhS-1a complex shows red-shifted absorption into the visible, demonstrating direct visible-light activation of the Lewis acid/substrate complex."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "UV_vis",
+    "DFT",
+    "cyclic_voltammetry",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "A photoredox/SET pathway was explicitly excluded based on excited-state redox potentials. Alternative mechanisms considered include triplet sensitization of free substrate (ruled out because Rh-substrate complex absorbs visible light directly and gives enantioselective product, whereas benzil sensitization gives racemate). The favored mechanism is direct visible-light excitation of the Rh-bound substrate followed by ISC to an alkene-localized triplet that undergoes stepwise biradical [2+2] cycloaddition under chiral Lewis acid control."
+}

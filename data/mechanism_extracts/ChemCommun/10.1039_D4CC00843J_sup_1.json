@@ -1,0 +1,101 @@
+{
+  "doi": "10.1039_D4CC00843J_sup_1",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative ring-opening/oxidation of arylmethylenecyclopropanes with methanol to give methyl 4-methoxy-4-arylbutanoates via radical cation and cyclopropane ring-opening",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the electron-rich arylidenecyclopropane alkene to a radical cation; cathode reduces methanol to generate methoxide and H2",
+  "key_intermediates": [
+    {
+      "name": "aryl-stabilized alkene radical cation (I) from 1b",
+      "smiles": "COc1ccc(cc1)[CH+][C]1CC1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic alpha-methoxy cyclopropylcarbinyl radical (II) after MeO- addition",
+      "smiles": "COc1ccc(cc1)C(OC)[C]1CC1",
+      "role": "transient"
+    },
+    {
+      "name": "ring-opened primary carbon radical / homoallyl-type radical (III) after cyclopropane C-C homolysis",
+      "smiles": "COc1ccc(cc1)C(OC)CC[CH2]",
+      "role": "reactive"
+    },
+    {
+      "name": "4-aryl-4-methoxybutan-1-ol (IV), detected by GC-MS and HRMS",
+      "smiles": "COc1ccc(cc1)C(OC)CCCO",
+      "role": "transient"
+    },
+    {
+      "name": "4-aryl-4-methoxybutanal (V), detected by GC-MS and HRMS",
+      "smiles": "COc1ccc(cc1)C(OC)CCC=O",
+      "role": "transient"
+    },
+    {
+      "name": "acylium cation (VI) from oxidation of aldehyde",
+      "smiles": "COc1ccc(cc1)C(OC)CCC(=O)[+]",
+      "role": "transient"
+    },
+    {
+      "name": "BHT-adduct of mono-methoxylated cyclopropyl benzylic species (off-cycle trap)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode performs SET oxidation of the styryl-cyclopropane 1b to a radical cation, which is trapped by cathodically generated methoxide; the resulting cyclopropylcarbinyl radical undergoes ring-opening, then a second anodic oxidation and trapping by hydroxide (from adventitious water/D2O) gives a primary alcohol intermediate, which is oxidized to the aldehyde and finally to an acylium that is captured by MeOH to deliver the methyl ester 2b.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Complete shutdown of reaction; starting material unconsumed, indicating a radical pathway"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction shut down; HRMS detected BHT adduct (M+Na 433.2724) corresponding to BHT trapping of mono-methoxylated cyclopropyl benzylic radical/cation, supporting initial SET oxidation of the alkene to a radical cation"
+    },
+    {
+      "name": "D2O (MeOH/D2O mixed solvent)",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "Product 2b formed in 58%; intermediate III' bearing -OD on the terminal CH2 detected by GC-MS (base peak 211), confirming that ring-opening of cyclopropane is terminated by hydroxide/OD- from water"
+    },
+    {
+      "name": "2-(cyclopropylmethyl)-1,3,5-trimethylbenzene (1v)",
+      "smiles": "Cc1cc(C)c(CC2CC2)c(C)c1",
+      "purpose": "radical_clock",
+      "observation": "Electrochemical control experiment to probe cyclopropyl radical-clock behavior"
+    },
+    {
+      "name": "(cyclopropylidenemethyl)cyclohexane (1w)",
+      "smiles": "C1CCC(=C2CC2)CC1",
+      "purpose": "radical_clock",
+      "observation": "Used to test substrate scope of radical ring-opening with non-aryl methylenecyclopropane"
+    },
+    {
+      "name": "Isolated intermediate III (4-aryl-4-methoxybutan-1-ol)",
+      "smiles": "COc1ccc(cc1)C(OC)CCCO",
+      "purpose": "intermediate_trap",
+      "observation": "Subjected to standard electrochemical conditions and converted to product 2b, confirming it as an on-cycle intermediate"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "H/D_labeling",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "radical_clock"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors present two mechanistic proposals; favored Pathway-2 is depicted here, in which methoxide adds first to the radical cation and the cyclopropylcarbinyl radical then undergoes homolytic ring opening; the alternative Pathway-1 (not shown in detail) likely invokes cyclopropane ring opening before MeO- attack. A divided-cell experiment, current on/off, cyclic voltammetry, and Faradaic efficiency calculation further support the electrochemical radical-cation pathway. BHT adduct supports an initial alkene radical-cation oxidation step."
+}

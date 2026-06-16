@@ -1,0 +1,54 @@
+{
+  "doi": "10.1039_D3QO01241G_sup_1",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical three-component thioether-tetrazole synthesis from TMSN3, vinyl arenes, and arylthiols, proceeding through a thiyl radical addition / radical-polar crossover pathway as probed by a radical clock experiment.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation generates a thiyl radical from the arylthiol (ArSH); the thiyl radical adds to the alkene, and subsequent oxidation/azide trapping with the tetrazole-forming step closes the cycle.",
+  "key_intermediates": [
+    {
+      "name": "aryl thiyl radical (4-F-C6H4-S•)",
+      "smiles": "[S]c1ccc(F)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "cyclopropylcarbinyl radical from thiyl addition to 1-(2-phenylcyclopropyl)vinylbenzene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ring-opened homoallyl/benzylic radical (radical clock product)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic cation (after oxidation of ring-opened radical)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "azide adduct / 5-methyltetrazole product 32",
+      "smiles": "Fc1ccc(SCC=CC(c2ccccc2)n3nnnc3C)cc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "ArSH is oxidized (anodically, mediated by Ar3N) to an arylthiyl radical that adds to the vinylarene; the resulting cyclopropylcarbinyl radical undergoes ring-opening (radical clock), and the ring-opened C-radical is further oxidized to a benzylic cation that is trapped by azide/tetrazole nitrogen to give 32.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1-(2-phenylcyclopropyl)vinylbenzene (cyclopropyl radical clock)",
+      "smiles": "C(=C)(c1ccccc1)C2CC2c3ccccc3",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 32 isolated in 20% yield (7.6:1 dr), confirming a carbon-radical intermediate that opens the cyclopropane after thiyl addition."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Only the radical clock experiment is shown on this page; other mechanistic probes (if any) are not included here. The ring-opened olefinic thioether-tetrazole product supports a stepwise radical addition followed by radical-polar crossover rather than a concerted pathway."
+}

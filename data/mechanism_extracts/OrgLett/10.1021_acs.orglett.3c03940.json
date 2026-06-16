@@ -1,0 +1,80 @@
+{
+  "doi": "10.1021_acs.orglett.3c03940",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical reductive cross-coupling of α-aryl vinyl bromides with β-alkenyl bromides to construct 1,3-dienes using a sacrificial stainless steel anode that releases Ni catalyst in situ",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "sacrificial_anode",
+    "mediator_cathodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of stainless steel anode releases Ni ions into solution; cathodic reduction generates active Ni(0) catalyst B and reduces Ni(II)/Ni(III) intermediates throughout the catalytic cycle",
+  "key_intermediates": [
+    {
+      "name": "Ni(II) precatalyst A (from anodic dissolution of stainless steel)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Ni(0)-dtbbpy active catalyst B",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(II)-alkenyl bromide complex C (oxidative addition of β-alkenyl bromide)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(I)-alkenyl species D (after cathodic reduction of C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(III)-bis(alkenyl) bromide species E (after 2nd oxidative addition of α-alkenyl bromide)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(I)-Br species F (after reductive elimination releasing 1,3-diene)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Stainless steel anode is oxidized to release Ni(II) (A), which is cathodically reduced to Ni(0) (B); B performs oxidative addition with β-alkenyl bromide to give Ni(II) (C), then cathodic reduction yields Ni(I) (D); a second oxidative addition with α-alkenyl bromide gives Ni(III) (E), which reductively eliminates the 1,3-diene and Ni(I)-Br (F), which is reduced back to B.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "(Z)-(2-bromovinyl)benzene (1m)",
+      "smiles": "Br/C=C\\c1ccccc1",
+      "purpose": "isotope_label",
+      "observation": "1:1 mixture of E/Z diene isomers obtained, indicating loss of alkene geometry during the coupling"
+    },
+    {
+      "name": "alkenyl chloride / iodide variants",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Lower yields of 1,3-diene 3d with more homocoupling side products when halide is changed from Br"
+    },
+    {
+      "name": "Pre-electrolysis with SS anode/Ni cathode (no Ni catalyst added)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "ICP-OES detected Fe (552.6 mg/L), Cr (187.1 mg/L), Ni (63.9 mg/L) in solution; subsequent addition of substrates under Gong's protocol gave product 3a in 28% yield, confirming in situ generation of Ni catalyst from electrodes"
+    },
+    {
+      "name": "Cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Supported proposed redox events of Ni species (details in SI)"
+    }
+  ],
+  "evidence_types_used": [
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Notable that no exogenous metal catalyst or chemical reductant is required: Ni is generated in situ from the stainless steel anode (which also contains Fe and Cr by ICP-OES). The Z/E scrambling with 1m suggests a radical or planar alkenyl-Ni intermediate rather than fully stereoretentive oxidative addition. TMSCl additive likely activates the electrode surface or Ni species."
+}

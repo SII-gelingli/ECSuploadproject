@@ -1,0 +1,100 @@
+{
+  "doi": "10.1039_D3QO00290J_sup_1",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Photoelectrochemical trifluoromethylation/cyclization of N-allyl 2-arylbenzimidazoles with CF3SO2Na to access CF3-bearing benzimidazo-fused tetrahydroisoquinolines",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_polar_crossover",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation regenerates the photoexcited eosin Y catalyst (and/or oxidizes the cyclized radical to a cation); CF3SO2Na is oxidized via SET to release CF3 radical after extrusion of SO2",
+  "key_intermediates": [
+    {
+      "name": "CF3 radical",
+      "smiles": "[CH2]C(F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical after CF3 addition to allyl alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexadienyl radical from intramolecular arene attack",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Wheland-type cation (after anodic oxidation of cyclized radical)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "(3,3,3-trifluoroprop-1-ene-1,1-diyl)dibenzene (18, DPE-CF3 adduct)",
+      "smiles": "FC(F)(F)CC=C(c1ccccc1)c1ccccc1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Photoexcited eosin Y oxidizes CF3SO2- to generate a CF3 radical (after SO2 loss), which adds to the terminal allyl alkene of 1a; the resulting carbon radical cyclizes onto the pendant aryl ring, and the cyclohexadienyl radical is further oxidized (anodically and/or via eosin Y+) to a cation, then deprotonated to give 3a. Protons are reduced at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "0% yield of 3a; reaction fully suppressed"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Only trace 3a"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Trace 3a; CF3-DPE adduct 18 isolated in 36%, confirming CF3 radical"
+    },
+    {
+      "name": "p-dinitrobenzene (pDNB)",
+      "smiles": "O=[N+]([O-])c1ccc(cc1)[N+](=O)[O-]",
+      "purpose": "redox_probe",
+      "observation": "0% 3a; SET inhibitor shuts down reaction"
+    },
+    {
+      "name": "CuCl2",
+      "smiles": "[Cl-].[Cl-].[Cu+2]",
+      "purpose": "redox_probe",
+      "observation": "Trace 3a"
+    },
+    {
+      "name": "CCl4",
+      "smiles": "ClC(Cl)(Cl)Cl",
+      "purpose": "redox_probe",
+      "observation": "Trace 3a"
+    },
+    {
+      "name": "on/off control: no PC/no light",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction profile shows greatly diminished/no formation of 3a without photocatalyst and light"
+    },
+    {
+      "name": "on/off control: no electricity",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction profile shows greatly diminished/no formation of 3a without electrolysis, confirming synergy of photo- and electrocatalysis"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "on/off_light_or_current",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Trapping experiments collectively support a radical pathway initiated by CF3 radical generated via SET oxidation of CF3SO2Na; isolation of CF3-DPE adduct 18 (36%) provides direct evidence for free CF3 radical. SET inhibitor (pDNB) abolishes reactivity. On/off control reactions (no PC/light or no electricity) demonstrate both photochemical and electrochemical components are required, consistent with a photoelectrochemical radical-polar crossover cyclization."
+}

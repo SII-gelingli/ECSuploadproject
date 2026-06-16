@@ -1,0 +1,129 @@
+{
+  "doi": "10.1021_jacs.3c10109",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Ni-catalyzed enantioselective electroreductive cross-coupling (eRCC) of acrylates with aryl halides and alkyl bromides to give alpha-aryl carbonyls in an undivided cell with sacrificial Fe anode",
+  "mechanism_family": [
+    "sacrificial_anode",
+    "electrocatalysis_inner_sphere",
+    "radical_cathodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic reduction (Ni foam) regenerates low-valent Ni species (Ni(II)->Ni(I) and Ar-Ni(III)->Ar-Ni(II)); Fe sacrificial anode is oxidized to Fe2+ to balance charge",
+  "key_intermediates": [
+    {
+      "name": "Ni(I)L precatalyst A (chiral BiIM-ligated Ni(I))",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ar-Ni(III) species (oxidative addition adduct of ArCl to Ni(I))",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ar-Ni(II) species B (after cathodic reduction)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical (tert-butyl radical from t-BuBr via SET with Ni(I))",
+      "smiles": "[CH2]C(C)(C)C",
+      "role": "transient"
+    },
+    {
+      "name": "alpha-ester C-radical intermediate C (alkyl radical addition to acrylate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ar-Ni(III)-alkyl intermediate D",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(I) species E (after reductive elimination)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Dimeric Ni/BiIM species Ni-1 (two BiIM ligands per Ni, characterized by XRD)",
+      "smiles": null,
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "Cathode reduces Ni(II) precatalyst to Ni(I) (A), which undergoes oxidative addition with ArCl to give Ar-Ni(III); cathodic reduction yields Ar-Ni(II) (B). In parallel, Ni(I) activates alkyl bromide by SET to release an alkyl radical that adds to the acrylate giving radical C, which is captured by B to form Ar-Ni(III)-alkyl D; reductive elimination delivers the product and Ni(I) (E), while Fe anode is oxidized to Fe2+.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 4a not formed (0% yield), consistent with radical intermediates"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Product 4a not formed (0% yield)"
+    },
+    {
+      "name": "Mn",
+      "smiles": "[Mn]",
+      "purpose": "other",
+      "observation": "No product without electric current; underscores requirement of electrochemistry"
+    },
+    {
+      "name": "Zn",
+      "smiles": "[Zn]",
+      "purpose": "other",
+      "observation": "No product without electric current"
+    },
+    {
+      "name": "TDAE (tetrakis(dimethylamino)ethylene)",
+      "smiles": "CN(C)C(=C(N(C)C)N(C)C)N(C)C",
+      "purpose": "other",
+      "observation": "No product as chemical reductant alone"
+    },
+    {
+      "name": "tert-butyl bromide (3a) added to NiBr2.glyme/L1 in CV",
+      "smiles": "CC(C)(C)Br",
+      "purpose": "redox_probe",
+      "observation": "Reduction peak of Ni(II)/Ni(I) considerably increased, indicating SET from Ni(I) to alkyl bromide generates alkyl radicals"
+    },
+    {
+      "name": "aryl chloride 1a added in CV",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak at -0.59 V disappears with increasing 1a; consistent with oxidative addition of ArCl to Ni(I)"
+    },
+    {
+      "name": "Controlled potential electrolysis",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product at -1.0 V; 68% yield/94% ee at -1.8 V; 27% at -2.2 V, supporting Ni(I) (not Ni(0)) as active species"
+    },
+    {
+      "name": "Electrolysis without catalyst",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No radical addition product detected (Fig 1G), excluding direct cathodic generation of alkyl radicals"
+    },
+    {
+      "name": "Nonlinear effect study with chiral L1",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Positive nonlinear effect (ee_prod > ee_L1), indicating a dimeric Ni species with two BiIM ligands is involved in the enantio-determining step"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "kinetic_order"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors favor Ni(I)/Ni(III) cycle (rather than Ni(0)/Ni(II)) based on CV showing oxidation peak disappearance upon ArCl addition and constant-potential electrolysis at -1.87 V (matching Ni(II)/Ni(I) couple). Positive nonlinear effect suggests a dimeric Ni-BiIM2 species participates in the stereo-determining step; a dimeric Ni species (Ni-1) was crystallographically characterized. Fe anode is sacrificial (oxidized to Fe2+). Chemical reductants (Mn, Zn, TDAE) fail under otherwise identical conditions, highlighting unique role of cathodic reduction."
+}

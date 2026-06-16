@@ -1,0 +1,91 @@
+{
+  "doi": "10.1021_jacs.1c01967",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrophotocatalytic acetoxyhydroxylation (1,2-dioxygenation) of aryl-substituted olefins using a triaminocyclopropenium (TAC) photocatalyst under anodic electrolysis with AcOH as the oxygen nucleophile",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_cation",
+    "direct_SET",
+    "electrocatalysis_outer_sphere"
+  ],
+  "electrochemical_role": "Anode oxidizes the ground-state TAC catalyst (TAC+ -> TAC2+•); photoexcitation of TAC2+• generates a strongly oxidizing excited state TAC*2+• that performs single-electron oxidation of the aryl olefin to its radical cation, regenerating TAC+",
+  "key_intermediates": [
+    {
+      "name": "TAC+ (triaminocyclopropenium cation, ground-state catalyst, 6)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "TAC2+• (anodically generated oxidized catalyst, 7)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TAC*2+• (photoexcited oxidant, 8)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Aryl olefin radical cation (5)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-aryl-β-acetoxy carbon radical (9) after AcOH addition and -H+",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,3-dioxolan-2-yl / acetoxonium-type cyclic cation (10)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-hydroxy acetate product (11)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "TAC+ is oxidized at the anode to TAC2+•, which absorbs a photon to give a potent excited-state oxidant TAC*2+• that performs SET on the aryl alkene to give an alkene radical cation and regenerate TAC+. Nucleophilic addition of AcOH followed by deprotonation gives a β-acetoxy C-radical, which is further oxidized (loss of a second electron, anode-mediated) to an acetoxonium/dioxolenium cation that is opened by water to deliver the β-hydroxy acetate.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "no light control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction suppressed (<5% yield), indicating photoexcitation of the oxidized TAC catalyst is required"
+    },
+    {
+      "name": "no catalyst control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction suppressed (<5% yield) at 1.5 V; at 3.0 V direct electrolysis gave only ~40% with substantial overoxidation byproducts (aldehyde/ketone/diacetyl acetal), demonstrating the selectivity benefit of the electrophotocatalytic cycle"
+    },
+    {
+      "name": "no electrolysis control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "0% yield, confirming anodic oxidation is required to access the active TAC2+• state"
+    },
+    {
+      "name": "Differentiated diene substrate 50 (one styrenyl, one non-styrenyl olefin)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Exclusive functionalization of the styrenic olefin to give 51 in 75%, consistent with a mechanism initiated by single-electron oxidation of the more easily oxidized aryl alkene"
+    },
+    {
+      "name": "1,3-diene substrates",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only 1,2-dioxygenation observed; no 1,4- or tetraoxygenated products, consistent with localized radical cation reactivity"
+    }
+  ],
+  "evidence_types_used": [
+    "on/off_light_or_current",
+    "intermediate_trap_other",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism proposed in Figure 1C contrasts the electrophotocatalytic cycle with simple direct anodic oxidation, which leads to overoxidation side products (aldehydes, ketones, diacetyl acetals). The selectivity (chemoselective styrenic olefin oxidation in diene 50; clean 1,2- vs 1,4-dioxygenation in dienes; tolerance of electron-rich heterocycles like furan/pyrrole/indole) supports a discrete alkene radical cation rather than a strongly oxidizing electrode surface as the active oxidant. Direct mechanistic probes such as CV, radical traps (TEMPO/BHT), or KIE are not explicitly reported on this page; conclusions rest on control experiments (no light, no catalyst, no current, direct electrolysis) and chemoselectivity arguments."
+}

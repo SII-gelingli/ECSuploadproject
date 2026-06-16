@@ -1,0 +1,73 @@
+{
+  "doi": "10.1002_ejoc.202200977",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical iron-catalyzed azidoesterification of alkenes using carbazates as alkoxycarbonyl radical precursors and TMSN3 as the azide source to give beta-azido esters.",
+  "mechanism_family": [
+    "radical_anodic",
+    "electrocatalysis_inner_sphere",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of PcFe(II) to PcFe(III), which oxidizes methyl carbazate to generate the methoxycarbonyl radical (with loss of N2); a second metal-azide complex (Fe or Mn) delivers N3 to the alkyl radical after C-C bond formation.",
+  "key_intermediates": [
+    {
+      "name": "PcFe(III) catalyst (anodically generated oxidant)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "PcFe(II) resting state",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Methoxycarbonyl radical (III)",
+      "smiles": "[CH2]OC(=O)[O]",
+      "role": "transient"
+    },
+    {
+      "name": "beta-(alkoxycarbonyl) carbon-centered radical (I) after addition to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "M(III)-N3 azido metal complex (M = Fe or Mn)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "M(II)-N3 complex after azide group transfer",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes PcFe(II) to PcFe(III), which oxidizes methyl carbazate to give methoxycarbonyl radical (releasing N2); this C-radical adds to the alkene to form a secondary C-radical that is trapped by an azido-M(III) complex via inner-sphere azide group transfer, regenerating M(II). Protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "(1-phenyl-2-methylcyclopropyl)methylene alkene (radical clock 29)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 30 obtained in 53% yield (E/Z = 2.5:1), consistent with a carbon-centered radical intermediate after addition."
+    },
+    {
+      "name": "Cyclic voltammetry of TMSN3, methyl carbazate (1), PcFe, and MnBr2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Methyl carbazate oxidizes at 670 mV and TMSN3 at 340 mV; addition of PcFe to TMSN3 gives a new wave at ca. 160 mV (Fe(II)/Fe(III) with azide as ligand); this wave increases with added carbazate indicating redox communication between Fe(III) and 1. MnBr2 does not show analogous behavior."
+    },
+    {
+      "name": "Controlled potential electrolysis at Eanode = 0.10 V vs Fc+/0",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Azidoesterification of 4-tBu-styrene proceeded smoothly to give product 3 in 64% yield, confirming low-potential Fe-mediated oxidation is sufficient."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two metal catalysts are used cooperatively: PcFe is proposed as the redox-active mediator that oxidizes the carbazate to the alkoxycarbonyl radical, while MnBr2·4H2O (or PcMn in some cases) is invoked as the azide-delivery metal (M(III)-N3 -> M(II)). Mn alone is not catalytically competent (Table 1, entry 3). Cathode reaction is H2 evolution."
+}

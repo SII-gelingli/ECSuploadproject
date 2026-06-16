@@ -1,0 +1,87 @@
+{
+  "doi": "10.1021_jacs.1c12762",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrocatalytic intramolecular cyclopropanation of active methylene cyanoamides bearing tethered alkenes using a phenothiazine organocatalyst (PT-1) in TFE to give cyclopropane-fused quinolinones and pyrrolidinones.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "electrocatalysis_outer_sphere",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of phenothiazine catalyst PT-1 to its persistent radical cation [PT-1]•+, which serves as the active oxidant; cathodic reduction of CF3CH2OH generates CF3CH2O- (base) and H2.",
+  "key_intermediates": [
+    {
+      "name": "phenothiazine radical cation [PT-1]•+ (SOMO with significant S character)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "deprotonated cyanoamide anion (70 -> anion after CF3CH2O- deprotonation)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alpha-cyano carbon radical 71 (electrophilic C-radical on cyanoamide)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized alkyl radical 72 (after 5-exo/exo-trig radical cyclization onto pendant alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "sulfonium adduct 73 (C-S bond between alkyl radical 72 and [PT-1]•+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "substrate-catalyst adduct 68 (analog of 73 from methylated substrate 67) detected by HRMS at m/z 608.2032",
+      "smiles": null,
+      "role": "stoichiometric_intermediate"
+    },
+    {
+      "name": "cyclopropane product 74 + regenerated PT-1 (after SN2-like displacement by CF3CH2O-)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes PT-1 to [PT-1]•+; cathodically generated CF3CH2O- deprotonates the active methylene substrate, and [PT-1]•+ oxidizes the resulting carbanion to an alpha-cyano C-radical, which undergoes exo-trig cyclization; the cyclized alkyl radical couples with another [PT-1]•+ to give a sulfonium intermediate that is opened by CF3CH2O- in a Corey-Chaykovsky-like SN2 to deliver the cyclopropane and regenerate PT-1.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cis/trans-alkene stereoisomers 64 and 65",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Both isomers gave similar yields and a mixture of diastereomers (1.7:1 and 1.3:1 dr), indicating loss of alkene stereochemistry and a stepwise radical cyclization rather than concerted carbene-like addition."
+    },
+    {
+      "name": "alpha-methylated cyanoamide 67",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Blocks the cyclization step after C-S bond formation; substrate-catalyst sulfonium adduct 68 detected by HRMS (608.2032, calc 608.2036), supporting sulfonium intermediate 73."
+    },
+    {
+      "name": "cyclic voltammetry of 1, PT-1, and PT-1 + 1 + LiOMe",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Catalytic current observed only with both amide 1 and base present, showing base-assisted electrocatalytic oxidation of substrate by [PT-1]•+."
+    },
+    {
+      "name": "DFT calculation of [PT-1]•+ SOMO and exo- vs endo-trig cyclization",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "SOMO is distributed across the tricyclic ring with significant density on sulfur (rationalizing C-S coupling); exo-trig cyclization is kinetically favored over endo even for 1,1-disubstituted alkenes."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "DFT",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors emphasize that efficient radical cyclization of 71 is essential — otherwise the open-chain alpha-cyano radical can couple with [PT-1]•+ to form undesired sulfur ylides. The C-S/SN2 termination is explicitly analogized to the Corey-Chaykovsky cyclopropanation. The corresponding adduct 69 from non-methylated substrate 1 was not observed by HRMS, consistent with fast turnover. No exogenous base is needed because cathodic reduction of TFE continuously generates CF3CH2O-."
+}

@@ -1,0 +1,85 @@
+{
+  "doi": "10.1126_science.abf2974",
+  "journal": "Science",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical halogen-shuttle (e-shuttle) reaction that transfers Br2 or Cl2 from vicinal dihaloalkane donors (e.g., 1,2-dibromoethane, polychloroalkanes including Lindane) to alkene acceptors to give 1,2-dihalogenated products with extrusion of ethylene.",
+  "mechanism_family": [
+    "paired_electrolysis",
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Paired electrolysis: cathodic 2e- reduction of the vicinal dihaloalkane donor cleaves two C-X bonds releasing 2 X- and ethylene; anodic 2e- oxidation regenerates X+ (as bromonium or, for Cl2, as Mn(III)-Cl from a Mn(II) mediator) which halogenates the alkene acceptor.",
+  "key_intermediates": [
+    {
+      "name": "halide anion (Br- or Cl-)",
+      "smiles": "[Br-]",
+      "role": "transient"
+    },
+    {
+      "name": "ethylene (extruded from donor)",
+      "smiles": "C=C",
+      "role": "transient"
+    },
+    {
+      "name": "bromonium ion / Br+ equivalent on alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Mn(II)-Cl (resting Cl2 shuttle mediator)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Mn(III)-Cl (oxidized Cl-transfer agent)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,2-dihaloalkane product",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode delivers 2 e- to the vicinal dihaloalkane donor, cleaving two C-X bonds to release 2 X- and ethylene; the X- is oxidized at the anode (directly for Br-, or via a Mn(II)/Mn(III) mediator for Cl-) to an X+ equivalent that adds across the alkene acceptor, with a second X- closing the addition to give the 1,2-dihalide product.",
+  "rate_determining_step": "Second cathodic electron transfer to the dihaloalkane donor (irreversible CV wave at ca. -2.7 V vs Fc, coupled to extrusion of ethylene + bromide)",
+  "probe_reagents": [
+    {
+      "name": "1,2-dibromoethane (donor probe)",
+      "smiles": "BrCCBr",
+      "purpose": "intermediate_trap",
+      "observation": "Acts as Br2 donor; no HBr elimination products observed, supporting C-Br homolytic/2e- cleavage with ethylene extrusion rather than E2."
+    },
+    {
+      "name": "2,3-dibromobutane (donor probe)",
+      "smiles": "CC(Br)C(Br)C",
+      "purpose": "intermediate_trap",
+      "observation": "Delivers Br2 to alkene acceptor; absence of HX elimination products confirms shuttle (not elimination) pathway."
+    },
+    {
+      "name": "1,1,1,2-tetrachloroethane",
+      "smiles": "ClCC(Cl)(Cl)Cl",
+      "purpose": "intermediate_trap",
+      "observation": "Functions as Cl2 donor without HX elimination."
+    },
+    {
+      "name": "1,2-dichloroethane (DCE)",
+      "smiles": "ClCCCl",
+      "purpose": "intermediate_trap",
+      "observation": "Cl2 donor in Mn-mediated e-shuttle; absence of HCl elimination supports proposed mechanism."
+    },
+    {
+      "name": "Lindane (γ-HCH)",
+      "smiles": "C1(Cl)C(Cl)C(Cl)C(Cl)C(Cl)C1Cl",
+      "purpose": "intermediate_trap",
+      "observation": "Serves as Cl2 donor; benzene confirmed as co-product by crude NMR and GC, consistent with sequential dechlorination/extrusion."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Br2 shuttle proceeds without a transition-metal mediator (direct anodic oxidation of Br- to Br+/bromonium). Cl2 shuttle requires a Mn(II)/Mn(III) redox mediator because direct anodic oxidation of Cl- is too high in potential. The irreversibility of the second cathodic reduction is attributed to fast chemical follow-up (loss of ethylene + bromide), and N2 sparging removes ethylene to prevent reverse reaction. A representative intramolecular Br2 transfer experiment supports the proposed two-electron shuttle picture; HX elimination pathway was explicitly ruled out across multiple donors."
+}

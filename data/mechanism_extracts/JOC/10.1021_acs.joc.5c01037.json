@@ -1,0 +1,76 @@
+{
+  "doi": "10.1021_acs.joc.5c01037",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical tandem radical addition/cyclization of para-quinone methides with haloacetonitriles to construct spiro[cyclohexane-1,2'-indene]-2,5-dien-4-one derivatives",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_anodic",
+    "paired_electrolysis",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic reduction of chloroacetonitrile generates a cyanomethyl radical and chloride anion; the chloride anion is then oxidized at the anode to a chlorine radical that couples with the carbon-centered intermediate",
+  "key_intermediates": [
+    {
+      "name": "cyanomethyl radical (·CH2CN) from cathodic reduction of ClCH2CN",
+      "smiles": "[CH2]C#N",
+      "role": "reactive"
+    },
+    {
+      "name": "Radical intermediate A from addition of ·CH2CN to alkyne of p-QM 1a",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Indene-type C-centered radical B after 5-endo-dig cyclization (favored)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Alternative radical B' (disfavored due to steric hindrance)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "Chlorine radical from anodic oxidation of Cl-",
+      "smiles": "[Cl]",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Chloroacetonitrile is reduced at the cathode to give a cyanomethyl radical plus chloride; the cyanomethyl radical adds to the alkyne of the p-quinone methide and undergoes 5-endo-dig cyclization to vinyl radical B; meanwhile chloride is oxidized at the anode to a chlorine radical, which couples with B to deliver the (Z)-spiro product 3aa.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO (2,2,6,6-tetramethyl-1-piperidinyloxy)",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited with 2.0 equiv TEMPO, indicating radical intermediates"
+    },
+    {
+      "name": "BHT (2,6-di-tert-butyl-4-methylphenol)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited with 2.0 equiv BHT, supporting radical pathway"
+    },
+    {
+      "name": "Cyclic voltammetry of chloroacetonitrile 2a",
+      "smiles": "ClCC#N",
+      "purpose": "redox_probe",
+      "observation": "Cathodic reduction peak at -0.992 V shows 2a can accept electrons at the cathode"
+    },
+    {
+      "name": "Cyclic voltammetry of NaCl",
+      "smiles": "[Na+].[Cl-]",
+      "purpose": "redox_probe",
+      "observation": "Anodic oxidation peak at +1.23 V shows chloride can lose electrons at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Z-selectivity rationalized by preferred formation of intermediate B over sterically disfavored B'; the (E)-isomer pathway via B' is suppressed by steric hindrance. X-ray of product 3af confirms structure. Scaled-up reaction (8 mmol) gave 3ca in 62% yield; product can be elaborated by Sonogashira coupling."
+}

@@ -1,0 +1,101 @@
+{
+  "doi": "10.1021_jacs.4c08290",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Photosensitized de novo deracemization synthesis of azaarene-functionalized cyclobutanes via enantioselective [2+2] photocycloaddition/photocycloreversion catalyzed by a chiral pyrenyl Brønsted acid",
+  "mechanism_family": [
+    "photoredox_combined",
+    "biradical",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "racemic cyclobutane (±)-cycloadduct from [2+2] cycloaddition of azaarene-substituted alkene and vinylpyridine",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "diastereomeric complex *Cat-P_R (chiral Brønsted acid C7 H-bonded to one cyclobutane enantiomer, higher excitation energy)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "diastereomeric complex *Cat-P_S (chiral Brønsted acid C7 H-bonded to the other cyclobutane enantiomer; bathochromically shifted, lower excitation energy, undergoes faster cycloreversion)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "excited-state pyrenyl chromophore of C7 (*pyr) acting as photosensitizer/energy donor",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "regenerated olefin feedstocks (indolyl enone 1a and 2-vinylpyridine 2a) after cycloreversion of the matched diastereomer",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "The chiral pyrenyl Brønsted acid C7 hydrogen-bonds to the racemic cyclobutane to form two diastereomeric ground-state complexes with different absorption energies; selective photoexcitation of the matched (lower-energy) complex drives [2+2] photocycloreversion back to the olefins, while the mismatched complex persists, enriching one enantiomer. SET between *pyr and the cyclobutane is thermodynamically feasible but ruled out as the productive pathway; energy-transfer/sensitized cycloreversion via a biradical-like excited cyclobutane is invoked.",
+  "rate_determining_step": "Photocycloreversion of the matched *Cat-P_S diastereomeric complex (kinetic differentiation between the two diastereomeric excited complexes)",
+  "probe_reagents": [
+    {
+      "name": "(PhO)2P(O)OH (achiral phosphoric acid in place of C7)",
+      "smiles": "O=P(O)(Oc1ccccc1)Oc1ccccc1",
+      "purpose": "other",
+      "observation": "64% yield of (±)-3a with 17% 1a and 18% 2a; no enantioenrichment, showing chirality of catalyst is required"
+    },
+    {
+      "name": "pyrene (in place of C7)",
+      "smiles": "c1cc2ccc3cccc4ccc(c1)c2c34",
+      "purpose": "other",
+      "observation": "63% (±)-3a, 20% 1a, 20% 2a; pyrene alone enables cycloreversion but without enantiocontrol"
+    },
+    {
+      "name": "(±)-C7 (racemic catalyst with enantiopure 3a)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only 12% yield of (±)-3a from optically pure 3a, confirming matched-enantiomer cyclobutane is preferentially cleaved"
+    },
+    {
+      "name": "ent-3a vs 3a UV/vis with C7",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Larger bathochromic shift for C7·ent-3a than C7·3a complex, evidencing thermodynamic differentiation of the two diastereomeric H-bonded complexes"
+    },
+    {
+      "name": "Stern–Volmer quenching of *pyr by 3a and by 3zm",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "3a quenches *pyr (consistent with feasible SET, E*(S*/S•+) = -1.86 V vs E_p(3a) = -1.68 V), but 3zm (E_p = -2.46 V) does not quench yet still undergoes deracemization, arguing against SET as the productive cycloreversion pathway"
+    },
+    {
+      "name": "O2 tolerance test",
+      "smiles": "O=O",
+      "purpose": "other",
+      "observation": "Deracemization proceeds under O2 (E_red = -1.23 V), which would outcompete 3a for *pyr reduction if SET were operative — supporting energy-transfer/sensitization mechanism"
+    },
+    {
+      "name": "ee(C7) vs ee(3a) linear correlation",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Linear correlation indicates a single molecule of C7 is involved in the stereocenter-ablating step"
+    },
+    {
+      "name": "Time-course / three-path kinetic study (1a+2a, (±)-3a, 3a 95% ee)",
+      "smiles": null,
+      "purpose": "kinetic_order",
+      "observation": "All three entry points converge to the same enantioenriched 3a, confirming reversible [2+2]/cycloreversion with kinetic differentiation"
+    }
+  ],
+  "evidence_types_used": [
+    "UV_vis",
+    "kinetic_order",
+    "redox_probe",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly consider and disfavor a SET-based cycloreversion mechanism (*pyr oxidizing the cyclobutane) in favor of an energy-transfer/sensitization pathway operating through two diastereomeric H-bonded chiral-acid·cyclobutane complexes with distinct excitation energies (thermodynamic differentiation) and distinct cycloreversion rates (kinetic differentiation). Achiral phosphoric acid and free pyrene both promote racemic cycloreversion but give no ee, underscoring that the chiral pyrenyl Brønsted acid couples chromophore and chiral H-bond donor in one catalyst. Deracemization differs from classical photochemical deracemization in that two C(sp3)–C(sp3) bonds are simultaneously broken/reformed, enabling control of ≥2 stereocenters."
+}

@@ -1,0 +1,117 @@
+{
+  "doi": "10.1021_acs.orglett.5c01237_sup_1",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical three-component coupling of 1,3-dicarbonyls (e.g., dibenzoylmethane) with styrenes and water to give β-functionalized γ-acyloxy ketones via radical-polar crossover and an oxocarbenium intermediate",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "carbocation"
+  ],
+  "electrochemical_role": "Anodic oxidation of the deprotonated 1,3-dicarbonyl enolate to a C-centered radical that adds to styrene; subsequent anodic oxidation of the benzylic radical to a benzylic cation. Cathode reduces H2O to OH- + H2, providing base and the oxygen nucleophile.",
+  "key_intermediates": [
+    {
+      "name": "1,3-dicarbonyl enolate anion (I)",
+      "smiles": "[O-]C(=C(C(=O)c1ccccc1)C(=O)c1ccccc1)",
+      "role": "transient"
+    },
+    {
+      "name": "1,3-dicarbonyl C-centered radical (II)",
+      "smiles": "O=C(c1ccccc1)[CH]C(=O)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical adduct after styrene addition (III)",
+      "smiles": "O=C(c1ccccc1)C(C(=O)c1ccccc1)C[CH]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation (IV)",
+      "smiles": "O=C(c1ccccc1)C(C(=O)c1ccccc1)C[CH+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "cyclic oxocarbenium intermediate (V)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "hemiketal/lactol (VI) after OH- addition",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ring-opened benzoate carboxylate (VII)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "γ-benzoyloxy ketone product 3aa",
+      "smiles": "O=C(OC(c1ccccc1)CCC(=O)c1ccccc1)c1ccccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces H2O to OH- + H2; OH- deprotonates the 1,3-dicarbonyl, the resulting enolate is oxidized at the anode to a C-radical that adds to styrene; the benzylic radical is oxidized again at the anode to a benzylic cation, which is trapped intramolecularly by a carbonyl oxygen to give an oxocarbenium that is opened by water/OH- to deliver the γ-acyloxy ketone.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "TEMPO-adduct of the 1,3-dicarbonyl radical isolated in 55%; product 3aa formed only in trace amounts, supporting a radical pathway"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "BHT-adduct 1a'' detected by HRMS; product 3aa not observed, supporting radical intermediate"
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "Product formed with 99% deuterium incorporation, confirming moisture (H2O) is the proton/O-H source"
+    },
+    {
+      "name": "H2-18O",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "18O incorporation into the benzoate oxygen of product detected by HRMS (m/z 369.1369, calcd 369.1353 for C23H20-16O2-18O1Na), confirming water as the oxygen source"
+    },
+    {
+      "name": "ethyl benzoylacetate 1a1 + α-methylstyrene 2p (H2O)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "γ-butyrolactone d1 (C18H17O3, [M+H]+ 281.1172) detected by NMR/HRMS, consistent with OH- opening of the proposed oxocarbenium"
+    },
+    {
+      "name": "MeOH (in place of H2O) with 1a + 2p",
+      "smiles": "CO",
+      "purpose": "intermediate_trap",
+      "observation": "Methyl ether adduct d2 (C25H25O3, [M+H]+ 372.1784) detected by HRMS, confirming nucleophilic trapping of the oxocarbenium intermediate"
+    },
+    {
+      "name": "divided cell experiment",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Case 1 gave 3aa in 60%; Case 2 gave no product, indicating both anodic and cathodic processes are required"
+    },
+    {
+      "name": "cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "CV of 1a and 2a in CH3CN:H2O with Bu4PF6 used to establish oxidation potentials and order of electron transfer"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "product_isotope_distribution",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "An alternative pathway shown in the proposed cycle leads to allylic/olefinic product 5aa via HAT/elimination from intermediate III' (formed when the dicarbonyl radical adds to a terminal alkene 4a instead of styrene), suggesting competing oxocarbenium ring-closure (V') vs β-H elimination depending on substrate. The favored pathway for styrenes goes through benzylic cation IV → cyclic oxocarbenium V → lactol VI → ring-opened benzoate VII → product 3aa."
+}

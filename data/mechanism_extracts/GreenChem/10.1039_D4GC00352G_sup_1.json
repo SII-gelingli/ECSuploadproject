@@ -1,0 +1,95 @@
+{
+  "doi": "10.1039_D4GC00352G_sup_1",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Photoelectrochemical radical cyclization of N-alkenyl quinazolinones with diethyl malonate to form pyrroloquinazolinones via malonyl radical addition/cyclization",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation (assisted by photoexcited Ir(ppy)3) generates a malonyl radical from diethyl malonate, which adds to the pendant alkene; subsequent oxidation/cyclization furnishes the pyrroloquinazolinone",
+  "key_intermediates": [
+    {
+      "name": "malonyl C-radical from diethyl malonate",
+      "smiles": "CCOC(=O)[CH]C(=O)OCC",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical after malonyl addition to pendant alkene of 1a",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "photoexcited *Ir(ppy)3",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Photoexcited Ir(ppy)3 and/or the anode oxidizes deprotonated diethyl malonate to a malonyl radical, which adds to the alkene tether of 1a; the resulting carbon radical cyclizes onto the quinazolinone and is further oxidized/deprotonated to yield 3a. Both light and current are required.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3a not formed (0%), consistent with radical intermediate"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "3a suppressed (0%)"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C(c1ccccc1)c1ccccc1)",
+      "purpose": "radical_trap",
+      "observation": "Trapping product 4 (diethyl 2-(2,2-diphenylvinyl)malonate) isolated in 66%, confirming malonyl radical generation"
+    },
+    {
+      "name": "p-dinitrobenzene (pDNB)",
+      "smiles": "O=[N+]([O-])c1ccc(cc1)[N+](=O)[O-]",
+      "purpose": "radical_trap",
+      "observation": "3a not formed (0%)"
+    },
+    {
+      "name": "CuCl2",
+      "smiles": "[Cl-].[Cl-].[Cu+2]",
+      "purpose": "radical_trap",
+      "observation": "3a not formed (0%)"
+    },
+    {
+      "name": "CCl4",
+      "smiles": "ClC(Cl)(Cl)Cl",
+      "purpose": "radical_trap",
+      "observation": "3a not formed (0%)"
+    },
+    {
+      "name": "DPE (1,1-diphenylethylene)",
+      "smiles": "C=C(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Radical trapping affords 4 in 66% yield"
+    },
+    {
+      "name": "no current control (light only, stoich. Ir(ppy)3)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "0% 3a — current required"
+    },
+    {
+      "name": "pre-electrolysis then dark/light without current",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "0% 3a — continuous electrolysis required, rules out solely photoredox pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "on/off_light_or_current",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Multiple radical scavengers (TEMPO, BHT, pDNB, CuCl2, CCl4) all shut down the reaction, and DPE intercepts the malonyl radical to give 4 (66%), supporting a radical pathway. Control experiments confirm that both blue light and electrolysis are required; neither photoredox alone (Eq 1, no current) nor pre-electrolyzed catalyst in absence of current (Eq 2) delivers product, suggesting cooperative photoelectrochemical generation of the malonyl radical."
+}

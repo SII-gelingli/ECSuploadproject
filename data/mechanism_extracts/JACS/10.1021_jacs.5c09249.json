@@ -1,0 +1,116 @@
+{
+  "doi": "10.1021_jacs.5c09249",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Visible-light energy-transfer-catalyzed dearomative [2π+2σ] cycloaddition of thiophenes with bicyclo[1.1.0]butanes (BCBs) and dearomative [2π+2π] cycloaddition of oxazoles/thiazoles with electron-deficient alkenes",
+  "mechanism_family": [
+    "photoredox_combined",
+    "biradical",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "triplet excited state of 2-benzoylthiophene (1a*) with spin density highest at C5 (0.69) and C2 (0.51)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "triplet 1,4-diradical I from C5 addition of 1a* to BCB 2a (cyclobutyl radical + thiophene-centered radical)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ring-opened diradical II after thiophene C-S/C-C cleavage at C4",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "singlet diene intermediate III formed after ISC and radical-radical recombination",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "tricyclic product 3a from disrotatory photochemical 4π-electrocyclization of III",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "triplet excited state of 2-phenyloxazole (5a*) with spin density at C5 (0.61) and C4 (0.34)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "triplet 1,4-diradical IV from C5 addition of 5a* to acrylonitrile",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "2-oxa-4-azabicyclo[3.2.0]hept-3-ene cycloadduct 6a after ISC and radical-radical recombination",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "No net electron transfer: photoexcited Ir photocatalyst (*fac-Ir(dFppy)3 or Ir-F) transfers triplet energy to the azole/thiophene substrate, generating a triplet biradical that adds across the alkene/BCB; the resulting triplet 1,4-diradical undergoes ISC and radical-radical recombination (with optional ring opening and 4π-electrocyclization for thiophenes) to deliver the cycloadduct.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "thioxanthone (low triplet-energy photocatalyst control)",
+      "smiles": "O=C1c2ccccc2Sc2ccccc21",
+      "purpose": "other",
+      "observation": "No product formation with TXT for thiophene substrate, consistent with required ET > 60 kcal/mol; only partial activity (39%) in oxazole series"
+    },
+    {
+      "name": "4-fluorophenyl-substituted thiophene 1ab",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Reaction stops at the diene stage giving 3ab, confirming intermediate III"
+    },
+    {
+      "name": "quantum yield measurement",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Φ = 0.13 (thiophene) and Φ = 0.09 (oxazole), ruling out radical chain mechanism"
+    },
+    {
+      "name": "cyclic voltammetry of 1a, 1b, 5a, 7a vs Ir photocatalyst potentials",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Substrate oxidation (~1.9 V vs SCE) and reduction (~ -2.36 V vs SCE) are not thermodynamically accessible to excited Ir-F (PC*/PC- = +1.21, PC+/PC* = -0.89 V), ruling out photoredox/SET pathway"
+    },
+    {
+      "name": "Stern-Volmer luminescence quenching",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Thiophene 1a (Ksv ≈ 150) and oxazole 5a (Ksv ≈ 13.9) quench *Ir; BCB 2a and acrylonitrile 4b do not, supporting substrate activation via energy transfer"
+    },
+    {
+      "name": "UV-vis absorption",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only the Ir photocatalyst absorbs at 405/450 nm; direct excitation of substrate gives no product, ruling out direct photoexcitation"
+    },
+    {
+      "name": "Mulliken spin-population (DFT) analysis on 1a* and 5a*",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Highest spin density at C5 (0.69 in 1a*, 0.61 in 5a*) rationalizes regioselectivity of radical addition"
+    },
+    {
+      "name": "X-ray crystallography of 6a, 8a', 8c",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Confirms exo-diastereomer connectivity of cycloadducts"
+    }
+  ],
+  "evidence_types_used": [
+    "UV_vis",
+    "cyclic_voltammetry",
+    "DFT",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Photocatalyst triplet energy threshold (>60 kcal/mol) correlates with yield; thioxanthone (ET = 65.5) inactive for thiophenes but partially active for oxazoles. For thiophenes, the diradical I undergoes thiophene ring cleavage (C4-radical drives C-S cleavage) to diene III, then disrotatory 4π-electrocyclization gives the 2-thiabicyclo[3.2.0] product; for oxazoles, no ring-opening, direct biradical closure gives [2π+2π] cycloadduct. An unusual product 3j from 4-phenyl-2-acetothiophene is proposed to form via photochemically allowed suprafacial 1,3-sigmatropic shift or stepwise 1,3-migration of the styrenic cyclobutene. Esters and Weinreb amides on thiophene are unreactive (insufficient ET lowering)."
+}

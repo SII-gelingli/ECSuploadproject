@@ -1,0 +1,85 @@
+{
+  "doi": "10.1002_adsc.201901262",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intramolecular oxy-chalcogenation of N-allylbenzamides and allyl oximes with diaryl dichalcogenides to form selenylated/thiolated oxazolines and isoxazolines via tandem C-O and C-chalcogen bond formation",
+  "mechanism_family": [
+    "radical_anodic",
+    "cation_initiated",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of PhSeSePh (peak 1.66 V vs Ag/AgCl) to PhSe+ cation and PhSe radical; also direct anodic oxidation of the amide substrate (1.32 V) to a delocalized N/O-centered radical; cathodic reduction generates H2 and reduces PhSeSePh (-1.44 V) to PhSe radical + PhSe anion (oxidized back to PhSe radical)",
+  "key_intermediates": [
+    {
+      "name": "phenylselenium cation (PhSe+) A",
+      "smiles": "[Se+](c1ccccc1)",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenium radical (PhSe•) B",
+      "smiles": "[Se](c1ccccc1)",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenium anion (PhSe-) D",
+      "smiles": "[Se-]c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "seleniranium/β-selenyl carbocation C from PhSe+ addition to allyl alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "delocalized amidyl/oxy radical E from oxidation of N-allylbenzamide 1a",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "TEMPO adduct 13 from trapping of allyl/carbon radical of oxime 6a",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "PhSeSePh radical cation",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, PhSeSePh is oxidized to PhSe+ (cation) and PhSe• (radical), while the amide/oxime substrate can also be directly oxidized to a heteroatom-centered radical; PhSe+ adds to the allyl alkene to give a cation cyclized by the amide/oxime oxygen (ionic pathway I), or the substrate-derived radical cyclizes and couples with PhSe• (radical pathway II); the cathode reduces protons to H2 and PhSeSePh to PhSe•/PhSe-.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO (with amide 1a)",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3aa formation diminished to 21% yield, indicating partial radical pathway"
+    },
+    {
+      "name": "TEMPO (with oxime 6a)",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Selenylation shut down (only trace of 7aa); TEMPO-carbon adduct 13 isolated in 78% yield, supporting radical intermediate for oxime"
+    },
+    {
+      "name": "Controlled potential electrolysis at 1.00, 1.55, 1.77 V (0.5 F/mol)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No product at 1.00 V; 27% 3aa at 1.55 V (only reduction of 2a + oxidation of 1a feasible → radical pathway active); 39% at 1.77 V exceeds the 33% maximum for pathway II alone, indicating ionic pathway I also operates"
+    },
+    {
+      "name": "Cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "PhSeSePh oxidation peak at 1.66 V and reduction peak at -1.44 V vs Ag/AgCl; amide 1a oxidation at 1.32 V; oxime 6a oxidation at 1.13 V (lower, consistent with dominant radical pathway for isoxazolines)"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "kinetic_order"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two parallel mechanisms proposed: Pathway I (ionic, PhSe+ addition then O-cyclization, 1.0 F/mol) and Pathway II (radical, substrate oxidation/cyclization then PhSe• coupling, 1.5 F/mol). For oxazolines from amides both pathways operate; for isoxazolines from oximes the radical pathway dominates as evidenced by the high yield of TEMPO adduct 13 and the lower oxidation potential of the oxime. Only sub-stoichiometric diselenide is needed because PhSe is recycled between anode and cathode."
+}

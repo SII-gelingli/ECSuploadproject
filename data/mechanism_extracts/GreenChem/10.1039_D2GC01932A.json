@@ -1,0 +1,79 @@
+{
+  "doi": "10.1039_D2GC01932A",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical thiocyanation of enamides with NH4SCN to afford E-configured vinyl thiocyanates",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of SCN- (from NH4SCN) generates the thiocyanate radical (·SCN), which adds to the enamide; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "thiocyanate radical (·SCN, in equilibrium with NCS-SCN)",
+      "smiles": "[S]C#N",
+      "role": "reactive"
+    },
+    {
+      "name": "Intermediate A: N-centered radical cation from SCN addition to enamide alpha-carbon",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Intermediate B: alpha-SCN iminium after H loss/tautomer (rotational isomer)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Intermediate C: rotational isomer of B (precursor to [1,5]-H shift)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Intermediate D: enol/iminium after [1,5]-H sigmatropic rearrangement",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "E-vinyl thiocyanate product (3aa)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "SCN- is anodically oxidized to ·SCN (in equilibrium with NCS-SCN), which adds to the enamide alkene to give a nitrogen-stabilized radical/iminium intermediate A; loss of a proton and bond rotation gives isomers B/C, and a [1,5]-H sigmatropic rearrangement (path I) followed by deprotonation delivers the E-vinyl thiocyanate, while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "DPE-SCN adduct 9 formed and only trace 3aa observed, supporting a free ·SCN radical intermediate"
+    },
+    {
+      "name": "Cyclic enamide 10 (mechanistic probe)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Thiocyanation of cyclic enamide 10 gave 11 as E/Z = 10:1 mixture (E confirmed by X-ray), consistent with [1,5]-H sigmatropic rearrangement (path I) controlling E-selectivity"
+    },
+    {
+      "name": "NH4SCN (2a) — cyclic voltammetry",
+      "smiles": "[NH4+].[S-]C#N",
+      "purpose": "redox_probe",
+      "observation": "Quasi-reversible oxidation at Epa = 1.12 V vs Ag/AgCl, much lower than enamide 1a (2.28 V), indicating SCN- is oxidized first to generate ·SCN"
+    },
+    {
+      "name": "Enamide 1a — cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Irreversible oxidation at 2.28 V vs Ag/AgCl, higher than NH4SCN, so 1a is not the species oxidized at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "crossover"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two pathways considered for E-selectivity: path I via [1,5]-H sigmatropic rearrangement of rotamer C (favored, consistent with E-selectivity of cyclic enamide 10 product 11), and path II via direct deprotonation of rotamer B where steric clash between N-benzyl and SCN would favor the E-isomer. Authors favor path I for acyclic enamides based on the cyclic substrate experiment."
+}

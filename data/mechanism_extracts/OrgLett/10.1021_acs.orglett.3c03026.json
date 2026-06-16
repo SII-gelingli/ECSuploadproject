@@ -1,0 +1,65 @@
+{
+  "doi": "10.1021_acs.orglett.3c03026",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative [3+2] cycloaddition of styrenes with 4-N-Boc-aminophenols to construct 5-aminocoumarans (2,3-dihydrobenzofurans) in an undivided cell",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of 4-N-Boc-aminophenol generates a phenoxyl/aryl-N radical (delocalized); cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "Phenoxyl radical from 2a (after -e-, -H+)",
+      "smiles": "[O]c1ccc(NC(=O)OC(C)(C)C)cc1",
+      "role": "transient"
+    },
+    {
+      "name": "Delocalized carbon-centered (ortho) radical / quinone-imine-like radical II",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic radical adduct III after addition to styrene 1a",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic carbocation IV after second SET oxidation",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes 4-N-Boc-aminophenol (2a) by SET (with H+ loss) to a phenoxyl radical I that delocalizes to ortho-C radical II; II adds to styrene 1a to give benzylic radical III, which undergoes a second anodic SET to cation IV; intramolecular O-attack closes the dihydrobenzofuran (loss of H+), while H+ is reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction fully inhibited; HRMS adducts 4a/4b corresponding to intermediates II and III detected"
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction fully inhibited; HRMS adducts 5a/5b corresponding to intermediates II and III detected"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a and 2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Onset oxidation potentials ~+1.15 V (1a) vs ~+0.55 V (2a); 2a is preferentially oxidized at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Unsuccessful substrates (electron-poor vinylarenes 1A-1D, 2-halo aminophenols 2A/2B, N-unprotected/NMe2/NHAc aminophenols 2C-2E, and p-methoxyphenol 2F) support the requirement for an easily oxidized N-protected aminophenol that generates a stabilized delocalized radical. No catalyst, oxidant, or sacrificial reagent needed; H2 is the only byproduct."
+}

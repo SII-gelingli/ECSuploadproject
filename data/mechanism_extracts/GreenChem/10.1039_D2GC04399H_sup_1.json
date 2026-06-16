@@ -1,0 +1,37 @@
+{
+  "doi": "10.1039_D2GC04399H_sup_1",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,2-diacyloxylation of styrenes with carboxylic acids to give vicinal diesters in acetone with nBu4NOAc electrolyte",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation generates carboxyl/styrene-derived radical species; carboxylate is oxidized at the anode and the styrene is converted via radical addition/oxidation to a benzylic cation that is trapped by carboxylate",
+  "key_intermediates": [
+    {
+      "name": "styrene-derived benzylic radical/cation after carboxyl radical addition",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "acyloxy radical from anodic oxidation of carboxylate",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "hydroxy ester by-product (32, 33) from water/hydroxide trapping",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the carboxylate (1b) to an acyloxy radical that adds to the styrene (1a) giving a benzylic radical; further anodic oxidation yields a benzylic cation trapped by a second carboxylate to deliver the 1,2-diester, with cathodic H2 evolution balancing charge.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "EPR",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Page shows solvent/co-solvent screen (acetone best, 72%; MIBK, cyclopentanone, diethyl carbonate alone fail due to voltage overload or no reaction; aqueous co-solvent suppresses yield, consistent with hydroxy ester by-products 32 and 33). Mechanistic section indicates EPR experiments were performed but spectra/details are not on this page."
+}

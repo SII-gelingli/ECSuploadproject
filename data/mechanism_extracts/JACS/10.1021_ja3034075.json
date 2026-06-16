@@ -1,0 +1,80 @@
+{
+  "doi": "10.1021_ja3034075",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Copper-catalyzed enantioselective intramolecular alkene carboetherification (and hydroetherification) of pentenols to form fused tetrahydrofurans via oxycupration/radical aryl addition.",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "radical_polar_crossover",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Cu(II)-bisoxazoline alkene complex (cis-oxycupration TS-E)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkyl-Cu(II) tetrahydrofuran intermediate (28)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "primary carbon radical from C-Cu(II) homolysis (29)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclohexadienyl/aryl radical after ipso/ortho addition (30)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cu(I) species (released after homolysis)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "2,3-trans tetrahydrofuranyl radical (ring-opening/closing equilibrium partner)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cu(II)-bisoxazoline binds the alkene of the pentenol and undergoes cis-oxycupration to give an alkyl-Cu(II) THF intermediate; homolysis of the C-Cu(II) bond releases Cu(I) and a primary carbon radical, which adds to the tethered arene to give an aryl/cyclohexadienyl radical that is reoxidized (MnO2 reoxidizes Cu(I) to Cu(II)) and rearomatized to yield the fused bicyclic product.",
+  "rate_determining_step": "C-C bond formation (radical addition of primary C-radical to the arene) is implicated as slow relative to H-atom abstraction by 1,4-cyclohexadiene",
+  "probe_reagents": [
+    {
+      "name": "1,4-cyclohexadiene (H-atom donor)",
+      "smiles": "C1=CCC=CC1",
+      "purpose": "radical_trap",
+      "observation": "Intercepts the carbon radical to give 2,3-trans tetrahydrofuran 27 in 82% yield (and 26 in 85% yield, 76% ee) instead of carboetherification product, confirming a carbon radical intermediate and that HAT is faster than C-C bond formation."
+    },
+    {
+      "name": "Deuterium-labeled 3-p-methoxybenzyl-4-penten-1-ol (10a-D)",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "Carboetherification gave 1.8:1 trans/cis 11a-D:12a-D, each as 1:1 diastereomeric mixture at the deuterated carbon, indicating loss of alkene stereochemistry consistent with an sp2 (radical) intermediate."
+    },
+    {
+      "name": "Regiochemical probe (ortho vs para arene addition)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Ortho-substituted product formed as major (ortho:para = 1.9:1), consistent with radical (not electrophilic/Friedel-Crafts) addition to the arene."
+    },
+    {
+      "name": "Chiral Cu(OTf)2/(R,R)-Ph-Box catalyst variation",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Enantioselectivity (up to ~75% ee carboetherification, 76% ee hydroetherification) supports Cu involvement in the alkene oxycupration step."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_other",
+    "product_isotope_distribution",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors considered alternative C-C bond-forming mechanisms: (i) radical addition to arene (favored), (ii) electrophilic aromatic substitution via organocopper(III) (direct or via reductive elimination), and (iii) Friedel-Crafts on a primary carbocation (rejected as too high energy). The 2,3-trans selectivity in hydroetherification is rationalized via TS-D placing the allylic substituent pseudo-equatorial; diminished ee in carboetherification is attributed to reversible ring-opening/ring-closing of the carbon radical prior to C-C bond formation. MnO2 serves as terminal oxidant to regenerate Cu(II) from Cu(I)."
+}

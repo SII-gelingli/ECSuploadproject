@@ -1,0 +1,81 @@
+{
+  "doi": "10.1039_D3GC00837A_sup_1",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical vicinal aminoselenation and oxyselenation of alkenes (e.g., cyclohexene, styrene) using saccharin or carboxylic acids as N/O nucleophiles and diphenyl diselenide as the Se source",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of bromide (from VBImBr/Et4NBr) generates Br radical/Br2 which oxidizes PhSeSePh to PhSe radical/PhSe+; the seleniranium-type cation (alkene + PhSe+) is then opened by the N- or O-nucleophile",
+  "key_intermediates": [
+    {
+      "name": "phenylselenyl radical (PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "diphenyl-substituted seleniranium cation from styrene (b')",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "vinyl selenide byproduct (c')",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "cyclohexene-derived seleniranium cation (d')",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "TEMPO-trapped β-selenyl cyclohexyl adduct (e')",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Br- to Br•/Br2, which oxidizes PhSeSePh to PhSe• and/or PhSe+; addition to the alkene gives a seleniranium (or β-selenyl carbon radical that is further oxidized to a cation), which is opened by saccharin N–H or carboxylic acid to give the vicinal aminoselenation/oxyselenation product. Cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Little effect on yield (styrene 98%; cyclohexene aminoselenation 91%; oxyselenation 92%) — minor radical involvement in early steps"
+    },
+    {
+      "name": "activated carbon",
+      "smiles": null,
+      "purpose": "radical_trap",
+      "observation": "Modest decrease (83% cyclohexene aminoselenation; 75% oxyselenation) — partial radical character"
+    },
+    {
+      "name": "1,1-diphenylethylene",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Yield drops to 87% (aminoselenation) and 84% (oxyselenation); HRMS detected vinyl selenide c' (C20H17Se, 337.0485), consistent with PhSe• addition to DPE"
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Strong inhibition: styrene aminoselenation 79%, cyclohexene aminoselenation drops to 20% (0.4 mmol) and trace (0.8 mmol); oxyselenation trace. HRMS detected TEMPO–cyclohexyl–SePh adduct e', confirming a β-selenyl carbon radical intermediate"
+    },
+    {
+      "name": "HRMS detection of seleniranium b'/d'",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Seleniranium cations b' (from styrene, m/z 261.017) and d' (from cyclohexene, C12H15Se+ calcd 239.0334, found 239.0329) directly observed by HRMS"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two mechanistic regimes are supported: (i) a radical pathway in which PhSe• adds to the alkene to give a β-selenyl carbon radical (trapped by TEMPO as adduct e'), which is oxidized to a cation and captured by N/O nucleophile; (ii) an ionic pathway via a seleniranium cation (b', d' detected by HRMS) opened by the nucleophile. The strong TEMPO inhibition and isolation of e' favor the radical-then-cation (radical polar crossover) route, while seleniranium detection indicates the cationic pathway may operate in parallel. Bromide acts as a redox mediator."
+}

@@ -1,0 +1,103 @@
+{
+  "doi": "10.1039_d0gc03890c_si1",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical anti-Markovnikov hydroboration of styrenes with HBpin using Pt electrodes, nBu4NBF4 electrolyte and DIEA in CH3CN/THF",
+  "mechanism_family": [
+    "radical_anodic",
+    "direct_SET",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of CH3CN and/or HBpin generates radical cations that, after deprotonation, yield .CH2CN and .Bpin radicals; the .Bpin radical adds to the styrene, and the resulting benzylic C-radical is reduced at the cathode to a carbanion that is protonated by DIEA-H+ (or THF-H+) to give the hydroboration product",
+  "key_intermediates": [
+    {
+      "name": "acetonitrile radical cation [CH3CN]+.",
+      "smiles": "[CH3:1][C:2]#[N:3].[+]",
+      "role": "transient"
+    },
+    {
+      "name": "HBpin radical cation [HBpin]+.",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyanomethyl radical .CH2CN",
+      "smiles": "[CH2]C#N",
+      "role": "transient"
+    },
+    {
+      "name": "boryl radical .Bpin",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-radical PhCH(.)CH2Bpin",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbanion PhCH(-)CH2Bpin",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "DIEA radical cation [iPr2NEt]+.",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "2-phenethyl-Bpin (3a)",
+      "smiles": "c1ccccc1CCB2OC(C)(C)C(C)(C)O2",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, CH3CN (and/or HBpin, or DIEA when present) is oxidized by SET to a radical cation; deprotonation/H-atom loss gives .CH2CN and .Bpin radicals. .Bpin adds to the terminal carbon of styrene to give a benzylic radical, which is reduced at the cathode to a carbanion and protonated by [DIEA-H]+/[THF-H]+ to deliver the anti-Markovnikov hydroboration product, while H+ reduction at the cathode releases H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "THF-d8 (solvent label)",
+      "smiles": "[2H]C1([2H])C([2H])([2H])C([2H])([2H])C1([2H])[2H]O",
+      "purpose": "isotope_label",
+      "observation": "No deuterium incorporation into 3a, indicating THF is not the proton source for the benzylic position under standard conditions"
+    },
+    {
+      "name": "CD3CN (solvent label)",
+      "smiles": "[2H]C([2H])([2H])C#N",
+      "purpose": "isotope_label",
+      "observation": "Partial D incorporation at benzylic position, d1-3a:3a = 84:16 (47% yield), implicating CH3CN as the proton/H source for the benzylic C-H"
+    },
+    {
+      "name": "d8-styrene",
+      "smiles": "[2H]C([2H])=C([2H])c1c([2H])c([2H])c([2H])c([2H])c1[2H]",
+      "purpose": "isotope_label",
+      "observation": "1H NMR shows a single new H at the benzylic methine (1.22 ppm), confirming the H delivered to benzylic carbon comes from an external proton source (CH3CN/DIEA), Bpin goes to terminal CH2"
+    },
+    {
+      "name": "galvinoxyl radical",
+      "smiles": null,
+      "purpose": "radical_trap",
+      "observation": "Galvinoxyl-Bpin adduct (8) detected by MS, supporting formation of .Bpin radical"
+    },
+    {
+      "name": "DMPO",
+      "smiles": "CC1(C)CCC=[N+]1[O-]",
+      "purpose": "radical_trap",
+      "observation": "EPR shows DMPO-H adduct under standard conditions; in absence of HBpin or styrene, DMPO-CH2CN (10) is also observed, confirming .CH2CN radical formation by anodic oxidation of CH3CN"
+    },
+    {
+      "name": "H2 detection by GC",
+      "smiles": "[H][H]",
+      "purpose": "other",
+      "observation": "H2 evolution monitored by SHIMADZU GC-2014 in various omission experiments, consistent with cathodic proton reduction"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_other",
+    "EPR",
+    "product_isotope_distribution",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two mechanistic cycles are proposed: (i) standard conditions with DIEA, where anodic SET on DIEA gives [DIEA]+. that mediates generation of .Bpin and .CH2CN; the benzylic radical from .Bpin addition to styrene is reduced cathodically and protonated by [DIEA-H]+; (ii) in the absence of DIEA, direct anodic oxidation of CH3CN and HBpin produces the same radicals, with THF/[THF2-H]+ acting as proton shuttle. A separate cycle for diboration (with 2-vinylnaphthalene, 7r) shows that a second .Bpin radical traps the benzylic C-radical before cathodic reduction; control experiments rule out B2pin2 involvement, so the diboronate ester is not formed from hydroboration product."
+}

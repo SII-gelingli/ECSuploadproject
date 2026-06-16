@@ -1,0 +1,80 @@
+{
+  "doi": "10.1038_s42004-022-00697-1_si1",
+  "journal": "CommunChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical hydrodifluoromethylation of alkenes (and double hydrodifluoromethylation of alkynes) using PhSO2CF2H as a CF2H radical source with a sacrificial Zn anode and carbon cathode in MeCN/piperidine with H2O as proton source.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "direct_SET",
+    "sacrificial_anode"
+  ],
+  "electrochemical_role": "Cathodic single-electron reduction of the (hetero)aryl sulfone PhSO2CF2H (E_red = -2.3 V vs Fc/Fc+) generates a CF2H radical with extrusion of ArSO2-; the Zn anode is sacrificially oxidized (E_ox = +0.01 V). A second cathodic SET reduces the benzylic radical adduct (E_red = -2.1 V) to a carbanion, which is protonated by H2O (or piperidinium).",
+  "key_intermediates": [
+    {
+      "name": "CF2H radical (from sulfone fragmentation after SET)",
+      "smiles": "[CH](F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-radical from CF2H addition to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbanion (after second SET at cathode)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "arenesulfinate (PhSO2- / 2-pySO2-) byproduct",
+      "smiles": "[O-]S(=O)c1ccccc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "vinyl radical (in alkyne variant, after first CF2H addition)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Zn(II) from sacrificial anode",
+      "smiles": "[Zn+2]",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode reduces PhSO2CF2H by SET to release sulfinate and a CF2H radical, which adds to the alkene to give a benzylic radical; a second cathodic SET reduces this radical to a benzylic carbanion that is protonated by H2O (or piperidine/PhSH HAT in the alkyne case). The Zn anode is oxidized to Zn2+ to balance charge.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "D2O (10 equiv) instead of H2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "58% D incorporation at the benzylic (proton-quench) position of product 3-d, consistent with carbanion protonation by water."
+    },
+    {
+      "name": "Radical clock 6a (1-phenyl-1-vinylcyclopropane, R1=Ph)",
+      "smiles": "C(=C)(c1ccccc1)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 8a obtained in 36%; closed product 7a not observed (k_Ph ~ 10^8 s^-1), indicating a C-radical intermediate fast enough to ring-open."
+    },
+    {
+      "name": "Radical clock 6b (vinylcyclopropane, R1=H)",
+      "smiles": "C(=C)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "Closed cyclopropane product 7b in 99%; ring-opened 8b not observed (k_H ~ 10^5 s^-1), consistent with radical addition but slower clock not outrunning trapping."
+    },
+    {
+      "name": "Cyclic voltammetry / voltammetric profile",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Anode plateaus at ~ +0.01 V (Zn0 -> Zn2+); cathode operates near -2.1 to -2.3 V, matching reduction of PhSO2CF2H (-2.3 V) and of the benzylic radical (-2.1 V)."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "cyclic_voltammetry",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "strong",
+  "notes": "For the alkyne double hydrodifluoromethylation (Supplementary Figure 7), PhSH is invoked as a HAT mediator to convert the initial vinyl radical to an alkene that undergoes a second CF2H radical addition before cathodic reduction/protonation; this HAT step is specific to the alkyne variant and not required in the alkene case. The 58% (not 100%) D incorporation suggests competing proton sources (piperidine/piperidinium) in addition to D2O."
+}

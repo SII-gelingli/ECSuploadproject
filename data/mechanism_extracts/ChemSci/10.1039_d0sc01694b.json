@@ -1,0 +1,145 @@
+{
+  "doi": "10.1039_d0sc01694b",
+  "journal": "ChemSci",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical tin-free radical addition of alkyl halides (iodides/bromides) to electron-deficient alkenes and alkynes, mediated by a catalytic O2-derived redox relay generating hydroxyl radicals.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "mediator_cathodic",
+    "electrocatalysis_outer_sphere"
+  ],
+  "electrochemical_role": "Cathodic reduction of O2 (around -0.7 to -0.8 V vs Ag QRE) generates superoxide; O2/ROS act as a redox mediator that activates the C-X bond rather than direct SET to the alkyl halide (which is not reduced within the solvent window).",
+  "key_intermediates": [
+    {
+      "name": "superoxide radical anion (O2•-)",
+      "smiles": "[O-][O]",
+      "role": "transient"
+    },
+    {
+      "name": "hydroperoxyl radical (HOO•, pKa 4.88, dominant under acidic pH)",
+      "smiles": "O[O]",
+      "role": "transient"
+    },
+    {
+      "name": "hydroxyl radical (•OH)",
+      "smiles": "[OH]",
+      "role": "reactive"
+    },
+    {
+      "name": "hypoiodous acid (IOH)",
+      "smiles": "OI",
+      "role": "reactive"
+    },
+    {
+      "name": "hypervalent alkyl iodine(II) species R-I(II)-OH (proposed transient activated halide)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkyl carbon-centered radical (R•)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "adduct radical after addition to alkene (R-CH2-CHR'• with EWG)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbanion from cathodic reduction of adduct radical",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkyl iodane R-I(III) (mCPBA-generated; tested and ruled out as major intermediate)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "vinyl radical intermediate (from alkyne addition, leads to ATRA)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces O2 to superoxide/HOO•, which via Haber-Weiss-type chemistry (with trace H2O2 or I-) yields •OH; •OH abstracts/activates the halogen of R-X to give IOH and R•, which adds to the alkene; the resulting α-EWG radical is further reduced at the cathode to a carbanion that is protonated by H2O (or, for unstabilised vinyl radicals from alkynes, abstracts I from R-I in an ATRA pathway). O2 is regenerated (catalytic, ~0.57 mol%) and only ~2 e- per R-I are consumed overall.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of all components",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Only O2 is redox-active in the applied window (reduced at -0.7 to -0.8 V); alkyl iodide is not reduced, ruling out direct SET / superoxide-mediated reduction of C-I."
+    },
+    {
+      "name": "charge integration during electrolysis",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "~300 C passed for 1.44 mmol R-I (≈2 F/mol), demonstrating high Faradaic efficiency and catalytic role of O2."
+    },
+    {
+      "name": "inert (Ar) atmosphere control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction without O2; injection of ~0.2 mL O2 (~0.57 mol%) restored full conversion, showing O2 is a sub-stoichiometric mediator."
+    },
+    {
+      "name": "methanol as solvent (•OH scavenger)",
+      "smiles": "CO",
+      "purpose": "intermediate_trap_other",
+      "observation": "No reaction in pure MeOH; partial recovery only on adding water, supporting involvement of •OH."
+    },
+    {
+      "name": "H2O2 substitution for O2",
+      "smiles": "OO",
+      "purpose": "intermediate_trap_other",
+      "observation": "No product formed, arguing H2O2 is not the principal active oxidant (though traces may initiate)."
+    },
+    {
+      "name": "FeSO4 (Fenton catalyst) addition",
+      "smiles": "[Fe+2].[O-]S(=O)(=O)[O-]",
+      "purpose": "intermediate_trap_other",
+      "observation": "No rate enhancement, further disfavoring H2O2 as main reservoir of •OH."
+    },
+    {
+      "name": "D2O-MeCN solvent",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "Deuterium incorporated α to sulfone, consistent with carbanion intermediate protonated by water (no exchange of product under reaction conditions for 72 h)."
+    },
+    {
+      "name": "mCPBA pre-oxidation of iPr-I to iodane in Ar",
+      "smiles": "O=C(OO)c1cccc(Cl)c1",
+      "purpose": "stoichiometric_intermediate",
+      "observation": "Only 9% product on subsequent electrolysis with PhSO2-vinyl, indicating I(III) iodane is not a major on-cycle intermediate (low yield also rationalised by peracid generating •OH)."
+    },
+    {
+      "name": "ethyl propiolate (alkyne acceptor)",
+      "smiles": "C#CC(=O)OCC",
+      "purpose": "other",
+      "observation": "Gave α-iodo alkene (E/Z 1.2:1) — ATRA product — because unstabilised vinyl radical abstracts I faster than it is reduced."
+    },
+    {
+      "name": "4-methylphenyl ethynyl sulfone",
+      "smiles": "Cc1ccc(S(=O)(=O)C#C)cc1",
+      "purpose": "other",
+      "observation": "Mixture of ATRA and reduction products, reflecting partial n→σ* stabilisation of vinyl radical/anion."
+    },
+    {
+      "name": "1-(4-iodobutyl)-1H-indole-3-carbaldehyde (intramolecular probe)",
+      "smiles": "O=Cc1cn(CCCCI)c2ccccc12",
+      "purpose": "other",
+      "observation": "Smooth redox-neutral oxidative cyclisation (89%) without excess O2, consistent with a self-propagating pseudo-SRN1 cycle in which the cyclised radical activates another R-I."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "H/D_labeling",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "on/off_light_or_current",
+    "kinetic_order"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly contrast two proposals: Pathway 1 (superoxide directly reduces C-I via SET, O2 as electron shuttle) is disfavored because CV shows R-I is not reduced in the window and water is essential. Favored Pathway 2 (Scheme 4) is a redox-relay where superoxide/HOO• + H2O2/I- generate •OH that activates R-I to a transient hypervalent R-I(II)-OH, fragmenting to R• and IOH; IOH + HOO• regenerates •OH. Initiation likely via trace H2O2 (Haber-Weiss) or trace iodide. For aryl/intramolecular cyclisations, a Bowman/Moody-type pseudo-SRN1 chain (cyclohexadienyl-type radical reduces another R-I) is invoked to explain redox-neutral oxidative cyclisation without stoichiometric O2."
+}

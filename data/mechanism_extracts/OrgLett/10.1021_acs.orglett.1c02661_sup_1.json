@@ -1,0 +1,37 @@
+{
+  "doi": "10.1021_acs.orglett.1c02661_sup_1",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical Y(OTf)3-catalyzed selenofunctionalization of styrenes and thiophenes with diphenyl diselenide to give 1,1-diaryl-2-phenylselenyl products (4a) and 2-phenylselenyl thiophenes (5a)",
+  "mechanism_family": [
+    "radical_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of PhSeSePh (or PhSe-) to generate an electrophilic PhSe+ species (or PhSe radical), which is activated/Lewis-acid-promoted by Y(CF3CO2)3 to engage the styrene/thiophene",
+  "key_intermediates": [
+    {
+      "name": "phenylselenyl cation (PhSe+) / Y-activated PhSeSePh",
+      "smiles": "[Se+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "seleniranium ion from styrene + PhSe+",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbocation after thiophene attack on seleniranium",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes PhSeSePh (assisted by Y(CF3CO2)3 as Lewis acid) to an electrophilic PhSe+ equivalent, which adds to styrene forming a seleniranium ion; nucleophilic attack by 2-ethylthiophene at the benzylic position opens the seleniranium to give 4a, while direct electrophilic selenylation of 2-methylthiophene affords 5a. Protons are reduced at the Pt cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [],
+  "evidence_types_used": [
+    "kinetic_order",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Only the gram-scale procedure and a time-course (kinetic) study were shown on this page; mechanistic probes (radical traps, CV, intermediate isolation) are not visible here, so the mechanism is inferred from the reaction setup (electrochemistry, Y(III) Lewis acid, diselenide, styrene/thiophene). A radical pathway via PhSe• cannot be excluded from this page alone."
+}

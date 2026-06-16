@@ -1,0 +1,82 @@
+{
+  "doi": "10.1007_s11426-022-1410-6",
+  "journal": "SciChinaChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical synthesis of Z-selective 2-alkylidene-tetrahydrofurans via sequential paired electrolysis coupling activated organochlorides (trichloro esters/amides) with olefins, enabled by halogen-bond (XB) activation using dtbbpy as the XB acceptor",
+  "mechanism_family": [
+    "paired_electrolysis",
+    "radical_polar_crossover",
+    "radical_cathodic",
+    "electrocatalysis_outer_sphere"
+  ],
+  "electrochemical_role": "Cathodic reduction of the noncovalent XB complex (dtbbpy···Cl-CCl2-) lowers the SET barrier, generating a C-centered radical after C-Cl fragmentation; the resulting alkyl radical (after addition to olefin) is then oxidized at the anode to a cation (radical-polar crossover)",
+  "key_intermediates": [
+    {
+      "name": "Noncovalent halogen-bond complex IV between dtbbpy (N lone pair) and the C-Cl bond of trichloro ester/amide I",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α,α-Dichloro carbon radical V generated after cathodic SET and Cl- loss from complex IV",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Alkyl radical VI from addition of V to alkene II",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cation VII formed by anodic oxidation of radical VI (radical-polar crossover)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "2-Alkylidene-tetrahydrofuran III formed by keto-enol tautomerization and intramolecular O-cyclization onto cation VII",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "dtbbpy halogen-bonds to a C-Cl of the trichloro substrate forming complex IV, which is cathodically reduced and fragments to Cl- and α,α-dichloro radical V; V adds to the alkene to give radical VI, which migrates to the anode and is oxidized to cation VII; the pendant carbonyl tautomerizes to an enol and cyclizes intramolecularly to deliver Z-2-alkylidene-tetrahydrofuran III.",
+  "rate_determining_step": "Cathodic SET reduction of the C-Cl bond, whose activation barrier is lowered by XB complexation with dtbbpy (reduction potential shifted positively by 220 mV)",
+  "probe_reagents": [
+    {
+      "name": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine) as XB acceptor",
+      "smiles": "CC(C)(C)c1ccnc(-c2cc(C(C)(C)C)ccn2)c1",
+      "purpose": "redox_probe",
+      "observation": "CV showed +220 mV positive shift of the C-Cl reduction potential upon adding dtbbpy, evidencing XB-mediated activation"
+    },
+    {
+      "name": "UV-vis titration of dtbbpy with trichloro substrate",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "UV-vis changes consistent with formation of noncovalent XB complex IV"
+    },
+    {
+      "name": "NiCl2(dtbbpy) control catalyst",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Use of 20 mol% NiCl2(dtbbpy) with Pt cathode gave only 9% of 3, excluding Ni-catalyzed C-Cl activation from Ni-leached species"
+    },
+    {
+      "name": "Less polar solvent screen (PhCN, 1,2-DCE)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Trace or much lower yields in solvents known to disrupt noncovalent interactions, supporting XB being essential"
+    },
+    {
+      "name": "Alternative XB-acceptor analogs (bpy, 1,10-phen derivatives, 1,4-dicyanobenzene, tetrathiafulvalene)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "All gave decreased or trace yield, highlighting unique reactivity of dtbbpy as XB acceptor"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "UV_vis",
+    "redox_probe",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Alternative mechanism considered and excluded: in situ formation of a Ni-dtbbpy complex from the nickel foam cathode acting as an inner-sphere catalyst for C-Cl activation; control with NiCl2(dtbbpy)/Pt gave only 9% product, ruling this out. Key challenges noted by the authors: (1) low stability of weakly bound XB complex IV (XB-donor strength F<<Cl<<Br<I makes Cl weak); (2) potential 2e- overreduction of electron-deficient radicals V and VI at the cathode; (3) lifetime/diffusion of V and VI must be sufficient for sequential paired electrolysis (anode trip for radical-polar crossover). Exclusive Z-selectivity of the alkylidene tetrahydrofuran is a notable stereochemical outcome but its origin is not mechanistically dissected on these pages."
+}

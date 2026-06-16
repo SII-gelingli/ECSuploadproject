@@ -1,0 +1,76 @@
+{
+  "doi": "10.1039_d2sc07045f",
+  "journal": "ChemSci",
+  "is_review": false,
+  "rxn_class_summary": "Electrooxidative radical cascade annulation of 1,6-enynes with sulfinates to access 7- and 9-membered sulfonamide-containing bridged/fused heterocycles via sulfonyl radical addition.",
+  "mechanism_family": [
+    "radical_anodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic oxidation of p-toluenesulfinate (TolSO2Na, 1a) generates the sulfonyl radical (Ts·); a subsequent anodic SET oxidation of the cyclized C-radical intermediate (C or F) followed by deprotonation furnishes the aromatic product.",
+  "key_intermediates": [
+    {
+      "name": "tosyl (sulfonyl) radical Ts·",
+      "smiles": "[O]S(=O)(=O)c1ccc(C)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "vinyl radical A from Ts· addition to alkyne of 1,6-enyne (R=Ph)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexadienyl/cyclized radical B (after 6-exo-trig)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "aryl/spiro radical C (after intramolecular cyclization to bridged system)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkyl radical D from Ts· addition to alkene of 2 (R=H)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "vinyl radical E (after 5-exo-dig cyclization)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexadienyl radical F (after intramolecular aromatic cyclization)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TEMPO-like cyclopropylvinyl radical trap adduct 9 (Ts–CH2–C(adduct))",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes sulfinate 1a to sulfonyl radical Ts·, which chemoselectively adds to the alkyne (Path B, R=Ph) or alkene (Path A, R=H) of the 1,6-enyne; the resulting C-radical undergoes intramolecular radical cyclization (6-exo-trig or 5-exo-dig) and then aromatic cyclization, after which a second anodic SET oxidation and deprotonation yield the bridged (4a) or fused (3aa) sulfonamide product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "(1-cyclopropylvinyl)benzene",
+      "smiles": "C(=C)(c1ccccc1)C1CC1",
+      "purpose": "radical_trap",
+      "observation": "Trapped Ts· to give adduct 9 in 60% yield; benzyl radical formed was oxidized without cyclopropyl ring-opening, supporting Ts· generation and fast SET oxidation of the benzyl radical."
+    },
+    {
+      "name": "Preformed medium-sized ring substrate 5",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Under standard conditions with 1a, no 4k was formed (0%), indicating that Ts· addition does not occur after formation of the medium-sized ring; Ts· must add before cyclization."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two divergent pathways are proposed depending on alkyne substitution: Path B (R=Ph, internal alkyne) — Ts· adds to the alkyne, 6-exo-trig cyclization, then intramolecular cyclization to give bridged tricyclic sulfonamide 4a (6-7-5 system not formed here, instead bridged); Path A (R=H, terminal alkyne) — Ts· adds chemoselectively to the alkene, 5-exo-dig cyclization gives vinyl radical E, intramolecular aromatic cyclization to F, SET oxidation/deprotonation affords fused 6-7-5 product 3aa. Selectivity is rationalized by different activation barriers for Ts· addition to C=C vs C≡C depending on alkyne substitution. CV was referenced (ref 19) to support sulfinate oxidation potential."
+}

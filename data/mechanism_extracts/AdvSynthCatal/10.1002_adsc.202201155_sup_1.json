@@ -1,0 +1,55 @@
+{
+  "doi": "10.1002_adsc.202201155_sup_1",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Cobalt-catalyzed electrochemical C–H/N–H annulation of 8-aminoquinoline benzamides with alkenes/alkynes to form isoquinolinones",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation regenerates the active high-valent Co(III)/Co(IV) species from Co(II) after C–H metalation, enabling catalytic turnover",
+  "key_intermediates": [
+    {
+      "name": "Co(III)-amide complex from 8-aminoquinoline benzamide coordination",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "five-membered cobaltacycle from C–H activation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkene-inserted Co(III) alkyl intermediate",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Co(II) species after reductive elimination",
+      "smiles": null,
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "Co(II)(acac)2 coordinates the benzamide N–H (deprotonated by NaOPiv) and undergoes CMD-type ortho C–H metalation; alkene insertion and C–N reductive elimination give the isoquinolinone with release of Co(I/II), which is reoxidized at the GF anode to regenerate the active Co(III) catalyst.",
+  "rate_determining_step": "Not the C–H cleavage step (kH/kD = 1.2 indicates C–H activation is not rate-limiting)",
+  "probe_reagents": [
+    {
+      "name": "[D5]-benzamide 1a",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "Parallel reactions gave 3aa (86%) and [D4]-3aa (80%) with kH/kD = 1.2, indicating C–H cleavage is not rate-determining"
+    },
+    {
+      "name": "D-labeled substrate (H/D exchange)",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "H/D exchange experiment performed to probe reversibility of C–H metalation"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism inferred from standard Co(III)/8-aminoquinoline-directed C–H activation paradigm combined with anodic reoxidation; only KIE and H/D exchange probes shown in the provided pages. No radical traps or CV data presented here."
+}

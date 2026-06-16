@@ -1,0 +1,76 @@
+{
+  "doi": "10.1021_jacs.8b12965",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Visible-light-promoted intramolecular [2+2] cycloaddition of indole-tethered terminal olefins via energy transfer to give cyclobutane-fused angular tetracyclic spiroindolines.",
+  "mechanism_family": [
+    "photoredox_combined",
+    "biradical",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Triplet excited state of indole substrate (1a-T1, 56.0 kcal/mol)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Triplet 1,4-biradical INT1-T1 (spiro [4.4], tail-to-tail cyclization, 55.1 kcal/mol)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Triplet 1,4-biradical INT1'-T1 (bridged [5.3.0], head-to-head cyclization, 54.7 kcal/mol)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "Open-shell singlet biradical INT1-OSS (54.4 kcal/mol)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Open-shell singlet biradical INT1'-OSS (55.2 kcal/mol)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Photosensitizer V (Ir-based, triplet sensitizer)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Photoexcited Ir-photosensitizer V transfers triplet energy to indole substrate 1a, populating its T1 state (single electrons at C2/C3 of indole); the C3 (or C2) radical attacks the tethered terminal olefin in a tail-to-tail fashion to give a triplet 1,4-biradical, which crosses to an open-shell singlet via MECP and closes by radical-radical combination to the cyclobutane-fused spiroindoline.",
+  "rate_determining_step": "Tail-to-tail C–C bond formation via TS1 (12.7 kcal/mol barrier relative to 1a-T1).",
+  "probe_reagents": [
+    {
+      "name": "2,5-dimethylhexa-2,4-diene",
+      "smiles": "CC(C)=CC=C(C)C",
+      "purpose": "intermediate_trap",
+      "observation": "Triplet quencher; standard reaction significantly inhibited (2a obtained in only 26% yield), supporting triplet intermediates."
+    },
+    {
+      "name": "Stern–Volmer quenching with substrate 1a",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Linear quenching of photoexcited V luminescence by 1a (R^2 = 0.95), confirming excited-state interaction."
+    },
+    {
+      "name": "Cyclic voltammetry of 1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "E1/2(ox) = +1.16 V, E1/2(red) = -0.44 V vs Ag/AgCl; no correlation between sensitizer redox potentials and reactivity, disfavoring SET mechanism."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "DFT",
+    "isolation_of_intermediate",
+    "UV_vis",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Favored pathway is triplet energy transfer with tail-to-tail cyclization via TS1 (68.7 kcal/mol) giving spiro[4.4] biradical INT1, then ISC through MECP1 to open-shell singlet INT1-OSS, then radical–radical combination (TS2, 59.1 kcal/mol) to product 2a. Alternative head-to-head pathway via TS1' (72.9 kcal/mol) leading to bridged [3.1.1] iso-2a (52.3 kcal/mol) is computed but not observed; head-to-tail TS could not be located. SET (photoinduced single-electron transfer) mechanism was considered but ruled out because reactivity does not correlate with photosensitizer redox potentials. Thermal [2+2] (TS3, 80.7 kcal/mol) is prohibited. ΔG(T1–S0) of substrate vs sensitizer correlates with yields, further supporting energy-transfer mechanism. X-ray structures of derivatives 6 and 8 confirm product connectivity."
+}

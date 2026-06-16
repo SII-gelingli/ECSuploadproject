@@ -1,0 +1,80 @@
+{
+  "doi": "10.1016_j.cclet.2023.109058",
+  "journal": "ChinChemLett",
+  "is_review": false,
+  "rxn_class_summary": "electrochemical 8-endo selenocyclization of N-tosyl-arylalkene-tethered butenyl amines with diselenides to give seleno-benzo[b]azocines",
+  "mechanism_family": [
+    "radical_anodic",
+    "direct_SET"
+  ],
+  "electrochemical_role": "anodic oxidation of diaryl diselenide (PhSe)2 to generate seleno-radical and seleno-cation; the cyclized carbon radical intermediate B is further anodically oxidized to a cation that is deprotonated to yield product; cathode reduces DCM (or H+) to balance charge",
+  "key_intermediates": [
+    {
+      "name": "phenylselanyl radical (PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenyl cation (PhSe+)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "carbon-centered radical A (PhSe added to terminal carbon of butenyl group)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "8-endo cyclized carbon radical B (benzylic radical on benzo[b]azocine ring)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cation Int4 (post-oxidation of B, prior to deprotonation)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Int5 / Int3' (alternative radical isomers, off-pathway for 6-endo cyclization)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes (PhSe)2 to PhSe+/PhSe•; the seleno-radical adds to the terminal alkene of the butenyl group giving carbon radical A, which undergoes intramolecular 8-endo cyclization onto the styryl alkene to give benzylic radical B; B is then oxidized at the anode to a cation and deprotonated to give the benzo[b]azocine product, while the cathode reduces DCM (or H+) for charge balance.",
+  "rate_determining_step": "intramolecular 8-endo radical cyclization via TS3-4 (ΔG‡ = 10.7 kcal/mol), favored over 6-endo TS3-4' by 3.5 kcal/mol",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "reaction completely inhibited; 0% of 3a"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "reaction completely inhibited; 0% of 3a, 1a recovered"
+    },
+    {
+      "name": "stilbene",
+      "smiles": "C(=C/c1ccccc1)\\c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "only 17% 3a; radical-trapping adduct 5 (PhCH=CHSePh) detected by HRMS, supporting seleno-radical intermediate"
+    },
+    {
+      "name": "divided cell experiment",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "3a obtained in 43% yield, indicating reaction proceeds at the anode without cathodic involvement in product-forming step"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "DFT"
+  ],
+  "evidence_strength": "strong",
+  "notes": "DFT (Fig. 3) compared four radical-addition transition states; addition at terminal butenyl carbon (TS1-2) and diphenylethylene (TS1-2a) had lower barriers, with TS1-2b/c disfavored due to geometric distortion of sp2 to pseudo-sp3 carbon centers. Competing 6-endo cyclization to a thermodynamically favorable quinoline (via TS3-4', Int4') is kinetically and thermodynamically disfavored relative to 8-endo (Int4 more stable by 18.7 kcal/mol). Cyclization of alternative isomer Int5 to Int6 was found to be kinetically and thermodynamically unfavorable. CV showed similar oxidation potentials for 1a (2.00 V) and 2a (1.98 V), but mechanism favors oxidation of diselenide first based on control experiments."
+}

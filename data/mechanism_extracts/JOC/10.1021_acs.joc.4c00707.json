@@ -1,0 +1,63 @@
+{
+  "doi": "10.1021_acs.joc.4c00707",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical 1,2-dithiocyanation of alkynes and alkenes with NH4SCN to give vicinal bis(thiocyanato) vinyl/alkyl arenes",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of SCN- to thiocyanogen radical (•SCN, in equilibrium with (SCN)2); cathodic reduction of TFA protons to H2",
+  "key_intermediates": [
+    {
+      "name": "thiocyanate radical •SCN (in equilibrium with (SCN)2)",
+      "smiles": "[S]C#N",
+      "role": "reactive"
+    },
+    {
+      "name": "β-thiocyanato vinyl/alkyl carbon radical (intermediate A from alkene/alkyne addition of •SCN)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-thiocyanato vinyl/alkyl cation (intermediate B, from further anodic oxidation of A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,2-dithiocyanato product (2a or 4a)",
+      "smiles": "N#CSC(c1ccccc1)=C(SC#N)",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "SCN- is oxidized at the anode to •SCN, which adds to the alkyne/alkene to give a carbon-centered radical (A); Path A: a second •SCN couples with A to give the bis-thiocyanate; Path B: A is further oxidized at the anode to a vinyl/alkyl cation (B) that is trapped by SCN-. At the cathode, TFA is reduced to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction of 1a suppressed to trace 2a; TEMPO-SCN/vinyl adduct detected by HRMS [M+H]+ = 317.1682. For styrene 3a, 4a yield dropped to 16%."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield of 2a reduced to 23%; 4a only trace, supporting radical pathway"
+    },
+    {
+      "name": "Cyclic voltammetry (NH4SCN, 1a, TFA in MeCN/DCM)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation wave observed for NH4SCN; mixture with 1a+NH4SCN+TFA+MeCN+DCM shows enhanced current consistent with anodic SCN- oxidation initiating the reaction"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors propose two parallel pathways from radical intermediate A: Path A (radical-radical coupling with a second •SCN) is presented alongside Path B (radical-polar crossover via further anodic oxidation to vinyl cation B, then SCN- attack). The paper does not definitively distinguish A vs B. A derivatization experiment (2a + Ph2P(O)H/DBU → 6a) demonstrates synthetic utility but is not mechanistically diagnostic."
+}

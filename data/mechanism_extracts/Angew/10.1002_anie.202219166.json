@@ -1,0 +1,72 @@
+{
+  "doi": "10.1002_anie.202219166",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical regioselective 1,2-diarylation of alkenes with cyanoarenes and aryl halides via cathodic reduction without transition-metal catalyst",
+  "mechanism_family": [
+    "radical_cathodic",
+    "mediator_cathodic",
+    "electrocatalysis_outer_sphere",
+    "sacrificial_anode",
+    "radical_anion"
+  ],
+  "electrochemical_role": "Cathodic single-electron reduction of dicyanobenzene (1aa) to its radical anion (DCA), which acts as a redox mediator to reduce aryl halide (ArX) to aryl radical via outer-sphere electron transfer; sacrificial Zn anode is oxidized to Zn(II)",
+  "key_intermediates": [
+    {
+      "name": "dicyanobenzene radical anion (DCA, R1)",
+      "smiles": "[O-]... ",
+      "role": "reactive"
+    },
+    {
+      "name": "aryl halide radical anion (R2, e.g. iodobenzene radical anion)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "aryl radical (R3, e.g. phenyl radical)",
+      "smiles": "[c]1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl radical adduct (13) from anti-Markovnikov addition of aryl radical to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "radical/radical-anion cross-coupling adduct (14) bearing cyano group prior to CN- loss",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "1,2-diaryl product 4aa",
+      "smiles": "N#Cc1ccc(C(c2ccc(C)cc2)Cc2ccccc2)cc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces dicyanobenzene 1aa to its persistent radical anion (DCA); DCA transfers an electron (OSET) to ArX, which fragments to halide and aryl radical; the aryl radical adds anti-Markovnikov to the styrene to give a benzyl radical, which couples with a second DCA and ejects cyanide to give the 1,2-diarylated product. Zn anode is sacrificially oxidized to Zn(2+).",
+  "rate_determining_step": "Outer-sphere electron transfer from dicyanobenzene radical anion to aryl iodide (ΔG‡ = 6.0 kcal/mol) followed by aryl radical addition to alkene (ΔG‡ = 8.0 kcal/mol via TS-3); radical addition is likely turnover-limiting in the productive cycle",
+  "probe_reagents": [
+    {
+      "name": "(1-phenyl-2,2-diphenyl)cyclopropyl alkene (radical clock 8)",
+      "smiles": "C(=C)(c1ccccc1)C1CC1(c1ccccc1)c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "ring-opened diarylation product 9 formed in 56% yield, confirming radical intermediate"
+    },
+    {
+      "name": "DMPO (5,5-dimethyl-1-pyrroline N-oxide)",
+      "smiles": "CC1(C)CCC=[N+]1[O-]",
+      "purpose": "radical_trap",
+      "observation": "DMPO-phenyl adduct detected by EPR (g=2.0072, A_N=14.4 G, A_H=20.9 G) and confirmed by HR-MS (190.12202)"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_other",
+    "EPR",
+    "cyclic_voltammetry",
+    "DFT",
+    "kinetic_order"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Alternative pathway via radical addition of DCA itself to the alkene (TS-1, ΔG‡=33.5 kcal/mol) and subsequent CN- dissociation (TS-2) was computationally ruled out due to steric repulsion and instability of intermediate benzyl radical 11. CV studies show 1aa is easier to reduce than 2aa, and constant-potential experiments at -1.6/-1.7 V (where only 1aa is reducible) still give diarylation, supporting the mediator role of DCA over direct ArX reduction. Final C-C bond formation proceeds via radical/radical-anion cross-coupling between benzyl radical and DCA with loss of CN-."
+}

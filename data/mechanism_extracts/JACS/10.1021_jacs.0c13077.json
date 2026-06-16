@@ -1,0 +1,125 @@
+{
+  "doi": "10.1021_jacs.0c13077",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Photoredox/nickel dual-catalyzed three-component HAT-mediated dicarbofunctionalization (DCF) of alkenes, coupling an aryl halide, an activated alkene, and a C-H precursor (ether/alcohol/amide) via a diaryl ketone HAT catalyst.",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_polar_crossover",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Excited triplet diaryl ketone (benzophenone derivative) diradical II",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ketyl radical III (from HAT)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Carbon-centered alkyl radical IV (alpha to heteroatom from C-H precursor)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Giese radical adduct VI (alkyl radical after addition to activated alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(0) complex VII (with dtbbpy ligand)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Ni(I)-alkyl complex VIII (from radical capture)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(III)(aryl)(alkyl)(Br) complex IX (after oxidative addition)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Singlet square-planar Ni(II)(aryl)(Br) complex 1C",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Triplet tetrahedral Ni(II)(aryl)(Br) complex 3C",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(III) intermediate X/E (productive tetrahedral, after radical capture)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(I)-Br complex XI/F (after reductive elimination)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "DCF product XII",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Photoexcited diaryl ketone (triplet) abstracts a hydrogen atom from the C-H precursor to give a ketyl radical and an alpha-heteroatom alkyl radical; this radical undergoes Giese addition to the activated alkene, and the resulting stabilized radical is captured by a Ni(0)/Ni(II) species, oxidative addition/isomerization gives a Ni(III) aryl-alkyl intermediate that reductively eliminates the DCF product, and SET from the ketyl radical to Ni(I) regenerates both ground-state catalysts.",
+  "rate_determining_step": "Selectivity-determining (kinetic) step is the competition between radical metalation to tetrahedral 3C (A-TS-B', 11.5 kcal/mol) versus Giese addition to the acrylate (A-TS-D, ~isoenergetic); HAT from C-H precursor by triplet ketone is the productive radical-forming step.",
+  "probe_reagents": [
+    {
+      "name": "i-PrOH-d7 (deuterated isopropanol)",
+      "smiles": "[2H]C([2H])([2H])C(O[2H])([2H])C([2H])([2H])[2H]",
+      "purpose": "KIE",
+      "observation": "Intermolecular competition i-PrOH vs i-PrOH-d7 gave 3.6:1 ratio of 40 to 40-d6, consistent with exothermic radical C-H abstraction"
+    },
+    {
+      "name": "Irradiation control without benzophenone catalyst 1",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No DCF product formed at 390 or 300 nm in absence of 1, ruling out direct alkene photoexcitation or bromide photolysis"
+    },
+    {
+      "name": "Ni(dtbbpy)(NO3)2 with 4-iodobenzonitrile (no Br source)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Good yield of DCF product obtained, ruling out bromide-radical-mediated HAT"
+    },
+    {
+      "name": "1-Cyclopropylethanol (radical clock)",
+      "smiles": "OC(C)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "Major product (77, 44%) is two-component ring-opened cross-coupling with acrylonitrile; with t-Bu acrylate, cyclopropane-containing DCF 75 (38%) and [3+2] adduct 76 (15%) observed, evidencing alpha-cyclopropyl radical ring opening competitive with Giese addition"
+    },
+    {
+      "name": "CPME (cyclopentyl methyl ether) selectivity probe",
+      "smiles": "COC1CCCC1",
+      "purpose": "other",
+      "observation": "Innate HAT selectivity favors secondary alpha-alkoxy radical; minor primary alpha-alkoxy radical CC byproduct observed"
+    },
+    {
+      "name": "MgCl2 (chaotrope to disrupt H-bonding)",
+      "smiles": "[Cl-].[Cl-].[Mg+2]",
+      "purpose": "other",
+      "observation": "Addition of MgCl2 restored high selectivity for hydroalkylation of acrylonitrile vs adamantyl acrylate with i-PrOH, attributed to disruption of H-bond between i-PrOH and acrylate"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "radical_clock",
+    "DFT",
+    "on/off_light_or_current",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two competing Ni pathways were computed: blue pathway (radical addition to singlet square-planar 1C at axial position, A-TS-B, 12.8 kcal/mol) versus favored green pathway (radical addition to triplet tetrahedral 3C at equatorial position, A-TS-B', 11.5 kcal/mol). Alternative Ni(0)/Ni(I)/Ni(III) and Ni(0)/Ni(II)/Ni(III) cycles are both energetically feasible and converge on singlet 1C. DCF vs two-component CC selectivity is kinetically controlled by the relative energies of metalation (A-TS-B') vs Giese addition (A-TS-D), strongly modulated by hydrogen bonding between alpha-hydroxy radicals and acrylate carbonyl (locks hydroxyl orientation in Ni(III) intermediate 66 toward C=O, favoring reductive elimination/DCF). Tertiary radicals favor exclusive Giese/DCF (no direct metalation). DLPNO-CCSD(T)/def2-TZVPP//(U)B3LYP-D3/def2-SVP-CPCM(benzene) used for energetics."
+}

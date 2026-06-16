@@ -1,0 +1,137 @@
+{
+  "doi": "10.26434_chemrxiv-2024-vz46b",
+  "journal": "ChemRxiv",
+  "is_review": false,
+  "rxn_class_summary": "Enantioselective three-component alkylarylation of acrylates with aliphatic C(sp3)-H (alkanes) and aryl halides via asymmetric paired oxidative (Fe/LMCT photocatalysis) and reductive (chiral Ni) electrocatalysis in an undivided cell",
+  "mechanism_family": [
+    "paired_electrolysis",
+    "photoredox_combined",
+    "radical_polar_crossover",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anode oxidizes Fe(II) to Fe(III) to regenerate [FeCl4]- which under light undergoes LMCT to give Cl radical (HAT agent); cathode reduces Ni(II) precatalyst to Ni(I) to initiate the Ni cross-coupling cycle and reduces Ni(III)-alkyl back to Ni(I) after reductive elimination",
+  "key_intermediates": [
+    {
+      "name": "[FeIIICl4]- (ground state, species A)",
+      "smiles": "[Cl-].[Cl-].[Cl-].[Cl-].[Fe+3]",
+      "role": "resting_state"
+    },
+    {
+      "name": "photoexcited *[FeIIICl4]- (species B)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "[FeIICl3]- after LMCT (species C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "chlorine radical (species D)",
+      "smiles": "[Cl]",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical from HAT on alkane (species E, e.g. cyclohexyl)",
+      "smiles": "[CH]1CCCCC1",
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-ester carbon radical after Giese addition to acrylate (species F)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "LnNi(I) species G (chiral BiIm-Ni(I))",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "LnNi(III)-Ar (species H) from oxidative addition of Ar-X",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "LnNi(II)-Ar (species I) after cathodic reduction",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "LnNi(III)(aryl)(alkyl) species J after radical capture",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "LnNi(I) (species K) after reductive elimination",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ac-C6H4-Ni(II)-Br stoichiometric complex (probe)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, Fe(II) is oxidized to Fe(III) generating [FeCl4]- which is photoexcited and undergoes LMCT to release a Cl radical that abstracts H from the alkane to give an alkyl radical; this radical adds to the acrylate, and the resulting alpha-ester radical is captured by a chiral aryl-Ni(II) species (formed by cathodic reduction of Ni(II) and oxidative addition of Ar-X to Ni(I)) to give Ni(III)(aryl)(alkyl), which reductively eliminates the product and the Ni(I) catalyst is regenerated/refreshed by cathodic reduction.",
+  "rate_determining_step": "Electron transfer at the electrodes (reaction is first-order in current)",
+  "probe_reagents": [
+    {
+      "name": "1-methylnaphthalene (no Ni, radical trap by chlorination)",
+      "smiles": "Cc1cccc2ccccc12",
+      "purpose": "radical_trap",
+      "observation": "1-(chloromethyl)naphthalene 29 isolated in 27% yield, indicating Cl-radical mediated HAT generates a benzylic radical that is chlorinated"
+    },
+    {
+      "name": "chlorocyclohexane (replacing alkane)",
+      "smiles": "ClC1CCCCC1",
+      "purpose": "intermediate_trap",
+      "observation": "no desired product formed, excluding alkyl chloride as a key intermediate"
+    },
+    {
+      "name": "chlorocycloheptane + cyclohexane competition",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "only cyclohexane-derived product 1 observed, alkyl chloride is not an intermediate"
+    },
+    {
+      "name": "Ac-C6H4-Ni(II)-Br stoichiometric complex",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "with cyclohexane, tert-butyl acrylate and FeCl3 under light gave product 1 in 31% yield, 91% ee — supports aryl-Ni(II) as productive intermediate"
+    },
+    {
+      "name": "L1 with varying ee (nonlinear effect study)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "positive nonlinear effect — at least two chiral BiIm ligands involved in the enantio-determining step"
+    },
+    {
+      "name": "ee vs time monitoring",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "ee of product 1 constant throughout reaction — stereo-convergent, not deracemization"
+    },
+    {
+      "name": "current variation kinetics",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "first-order dependence of rate on current (R^2=0.985), confirming electron transfer is rate-limiting"
+    },
+    {
+      "name": "electrode potential monitoring",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "anode held ~+0.28 V vs Ag/AgCl (Fe(II)/Fe(III)); cathode ~-0.83 V vs Ag/AgCl, sufficient to reduce ArNi(III) to ArNi(II) but not ArNi(II) to ArNi(I)"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "kinetic_order",
+    "isolation_of_intermediate",
+    "on/off_light_or_current",
+    "crossover"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Mechanism is a dual Fe/Ni paired electrocatalytic cycle: anodic Fe-LMCT photocatalysis activates the C(sp3)-H bond of the alkane (HAT by Cl•), while cathodic chiral Ni catalysis controls enantioselective C(sp3)-C(sp2) bond formation. Positive NLE suggests aggregation of >=2 chiral BiIm ligands on Ni in the stereo-determining step. Alternative pathway via alkyl chloride intermediates was explicitly ruled out by competition and substitution experiments. Single-crystal X-ray confirmed absolute configuration of product 7."
+}

@@ -1,0 +1,69 @@
+{
+  "doi": "10.1002_celc.202101013",
+  "journal": "ChemElectroChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative selenocyclization of N-(2-vinylphenyl)benzamides with diaryl/dialkyl diselenides to afford selenium-containing benzoxazines.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of diphenyl diselenide (PhSeSePh) to a cationic radical that fragments into PhSe• and PhSe+; further anodic oxidation of a carbon-centered radical intermediate to a benzylic carbocation; cathodic reduction of H+ to H2 and PhSe+ back to diselenide.",
+  "key_intermediates": [
+    {
+      "name": "PhSeSePh radical cation",
+      "smiles": "[Se+](c1ccccc1)[Se](c1ccccc1)",
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl radical (PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenyl cation (PhSe+)",
+      "smiles": "[Se+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbon radical from PhSe• addition to styrene",
+      "smiles": "O=C(c1ccccc1)Nc1ccccc1C([CH2][Se]c1ccccc1)",
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbocation after anodic oxidation",
+      "smiles": "O=C(c1ccccc1)Nc1ccccc1[CH+]C[Se]c1ccccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes PhSeSePh (Eox ~1.70 V, lower than substrate 1a at 1.90 V) to a radical cation that splits into PhSe• and PhSe+; PhSe• adds to the styrenyl alkene of 1a giving a benzylic C-radical, which is further oxidized at the anode to a carbocation, then intramolecular O-nucleophilic attack by the amide oxygen and deprotonation furnishes the benzoxazine; at the cathode, H+ is reduced to H2 and PhSe+ is reduced back to ½ PhSeSePh.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Only trace product formed; reaction inhibited, supporting radical pathway."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Only trace product; reaction significantly inhibited."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Only trace product; reaction inhibited, consistent with radical intermediate."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "CV shows PhSeSePh is oxidized preferentially over substrate 1a, supporting selenide-first oxidation rather than direct alkene oxidation. Mechanism is a radical-polar crossover with paired electrochemistry (productive anodic oxidations and H2-evolving cathode)."
+}

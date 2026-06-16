@@ -1,0 +1,116 @@
+{
+  "doi": "10.1039_D4CC00843J",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative C-C bond cleavage/ring-opening of arylmethylenecyclopropanes with alcohols to give alkyl 4-alkoxy-4-arylbutanoates without external oxidant or metal catalyst",
+  "mechanism_family": [
+    "radical_cation",
+    "direct_SET",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the styryl C=C of the methylenecyclopropane to a radical cation; cathode reduces methanol/protons to H2 and generates methoxide that serves as the nucleophile",
+  "key_intermediates": [
+    {
+      "name": "aryl-stabilized MCP radical cation (I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-methoxy benzylic carbocation after ring opening (II/II')",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "ring-opened γ-methoxy alcohol intermediate III (detected by GC-MS and HRMS)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "aldehyde intermediate IV (γ-methoxy-γ-aryl aldehyde, detected by GC-MS/HRMS)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "acylium cation V from SET oxidation and H-loss of aldehyde IV",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode removes one electron from the styryl double bond of the MCP to give a radical cation I; methoxide (generated at cathode) attacks, and a second anodic oxidation gives benzylic cation II which opens the cyclopropane to give carbocation II'; water traps it to alcohol III, which undergoes sequential two-electron anodic oxidation/loss of 2 H2O to aldehyde IV; further SET oxidation and H-loss yields acylium V, trapped by methoxide to give ester 2b.",
+  "rate_determining_step": "Initial anodic single-electron oxidation of the styryl C=C (Eox ≈ 1.55 V vs Ag/AgCl)",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely shut down with 2 equiv TEMPO; only trace 2b"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "BHT-adduct 2b' detected by HRMS (M+Na 433.2719 calc / 433.2724 found), supporting radical pathway"
+    },
+    {
+      "name": "divided cell experiment",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Product forms only when substrate is in the anodic chamber (50% yield); no reaction in cathodic chamber, confirming anodic oxidation is key"
+    },
+    {
+      "name": "substrate 1y (no C=C, only aryl ring)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No reaction, confirming the double bond is required for initiation"
+    },
+    {
+      "name": "substrate 1z (alkyl MCP without aryl ring)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No reaction, showing aryl ring is needed to lower oxidation potential of the alkene"
+    },
+    {
+      "name": "dicyclopropyl substrate giving 2u",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Only one cyclopropane opens; the other remains intact, supporting ring opening via alkene oxidation rather than radical at cyclopropyl"
+    },
+    {
+      "name": "independently prepared intermediate III",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "Subjecting III to standard conditions delivers 2b, confirming III is on-pathway"
+    },
+    {
+      "name": "CH3OH/D2O labeling",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "Deuterated intermediate III' detected by GC-MS, confirming H2O incorporation in the ring-opening step"
+    },
+    {
+      "name": "electricity on/off",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction halts when current is off; continuous current required (ESI Fig. S1)"
+    },
+    {
+      "name": "cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Eox(1b) = 1.55 V; Eox(1v, no C=C) = 2.2 V vs Ag/AgCl, assigning the 1.55 V wave to the styryl alkene"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "H/D_labeling",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "An alternative pathway (Scheme S1) was considered in which ring opening occurs directly from radical cation I before the second oxidation; the authors favor the cation-mediated ring opening of II→II' due to β-silyl/β-methoxy stabilization. Cathodic methoxide generation and H2 evolution make this effectively a paired electrolysis."
+}

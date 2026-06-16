@@ -1,0 +1,67 @@
+{
+  "doi": "10.1039_D1CC04813A",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical vicinal fluorosulfonylation of styrenes using arylsulfonyl hydrazides and Et3N·3HF via a radical-polar crossover pathway",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of arylsulfonyl hydrazide to arylsulfonyl radical (with loss of N2, 3H+, 3e-); subsequent anodic oxidation of the benzyl radical adduct to a benzyl cation",
+  "key_intermediates": [
+    {
+      "name": "arylsulfonyl hydrazide (A)",
+      "smiles": "ClC1=CC=C(C=C1)S(=O)(=O)NN",
+      "role": "reactive"
+    },
+    {
+      "name": "arylsulfonyl radical (B)",
+      "smiles": "ClC1=CC=C(C=C1)S(=O)(=O)[*]",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl radical adduct (C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzyl cation intermediate (D)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-fluorosulfone product (E)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "The anode oxidizes the arylsulfonyl hydrazide through consecutive SET (losing 3H+, 3e-, N2) to form an arylsulfonyl radical, which adds to the styrene to give a benzyl radical; this radical is further oxidized at the anode to a benzyl cation that is captured by fluoride from Et3N·3HF, while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "(1-(2-phenylcyclopropyl)-vinyl)benzene (radical clock)",
+      "smiles": "C(=C)(c1ccccc1)C1CC1c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened fluorosulfonylation product (40) obtained in 15% yield, supporting a radical intermediate"
+    },
+    {
+      "name": "N-methyl-N-phenylmethacrylamide",
+      "smiles": "CN(c1ccccc1)C(=O)C(=C)C",
+      "purpose": "radical_trap",
+      "observation": "Radical cyclization product (42) obtained in 42% yield in absence of Et3N·3HF, supporting arylsulfonyl radical generation"
+    },
+    {
+      "name": "Cyclic voltammetry of ArSO2NHNH2 and styrene",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak of arylsulfonyl hydrazide at 1.70 V (vs Ag/AgCl); styrene at 2.52 V (shifted to 2.36 V with (NH4)2HPO4), indicating sulfonyl hydrazide is preferentially oxidized"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_other",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors propose that anode-adsorbed HPO4^2- may H-bond with hydrofluoride to enhance nucleophilic fluorination, accounting for the beneficial additive effect of (NH4)2HPO4. Unactivated olefins (cyclohexene, 1-octene) fail, attributed to instability of the corresponding carbocation, further supporting the radical-polar crossover (cation) pathway over a pure radical chain."
+}

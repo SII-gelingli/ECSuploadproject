@@ -1,0 +1,98 @@
+{
+  "doi": "10.1002_anie.201809454",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical aerobic functionalization of styrenes using O2, where Pt anode gives oxidative C=C cleavage to carbonyls and carbon anode gives oxidative dimerization to 2,5-diaryl tetrahydrofurans.",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_anodic",
+    "radical_cathodic",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of styrene to its radical cation; cathodic single-electron reduction of O2 to superoxide (O2•-); electrode material dictates which species (O2•- vs neutral styrene) traps the styrene radical cation.",
+  "key_intermediates": [
+    {
+      "name": "styrene radical cation (2a•+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "superoxide anion radical (O2•-)",
+      "smiles": "[O-][O]",
+      "role": "reactive"
+    },
+    {
+      "name": "1,2-dioxetane (2d, major path for cleavage)",
+      "smiles": "O1OCC1c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "styrene oxide / epoxide (2e, minor path for cleavage)",
+      "smiles": "C1OC1c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "styrene radical-cation dimer (2aa•+, THF pathway)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "peroxy radical/zwitterion (Ph-CH(OO-)-CH2-CH(Ph)+ type, THF pathway)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "acetophenone (2b, cleavage product)",
+      "smiles": "CC(=O)c1ccccc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "formaldehyde (HCHO, cleavage co-product detected by GC-MS)",
+      "smiles": "C=O",
+      "role": "off_pathway"
+    },
+    {
+      "name": "2,5-diphenyl tetrahydrofuran (2c)",
+      "smiles": "O1C(c2ccccc2)CCC1c1ccccc1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At Pt anode, styrene is oxidized to a radical cation that is trapped by cathodically generated O2•- to give a dioxetane (major) or epoxide (minor), which fragments to aryl ketone + HCHO. At carbon anode, O2•- adsorption is poor, so the styrene radical cation is intercepted by a second neutral styrene to form a distonic dimer cation, which then combines with O2•- and cyclizes to the 2,5-diaryl THF.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "18O2 isotope labeling",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "18O incorporated into both the ketone (81%) and the THF (93%, cis/trans 1:1.1), confirming O2 as the oxygen source in both reactions"
+    },
+    {
+      "name": "isolated epoxide 2e as substrate",
+      "smiles": "C1OC1c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Electrolysis of 2e gave only 88% acetophenone with incomplete conversion, indicating epoxide is a minor (not main) intermediate on the cleavage path"
+    },
+    {
+      "name": "GC-MS detection of HCHO",
+      "smiles": "C=O",
+      "purpose": "other",
+      "observation": "Formaldehyde detected, consistent with dioxetane fragmentation"
+    },
+    {
+      "name": "DFT (B3LYP/6-31G+(d,p)) spin density",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Highest spin density of styrene radical cation localized at β-position, rationalizing β-attack by O2•- or by neutral styrene"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "DFT",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors do not rule out that on Pt the electrode itself adsorbs O2/O2•- and thereby delivers it to the radical cation; a radical–radical coupling pathway is also considered possible for the THF-forming step. Selectivity is explained by Pt favoring O2•- capture of the radical cation while carbon anode favors capture by neutral styrene due to raised HOMO of adsorbed styrene."
+}

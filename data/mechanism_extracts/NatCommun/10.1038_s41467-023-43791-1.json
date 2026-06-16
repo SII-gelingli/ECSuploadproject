@@ -1,0 +1,128 @@
+{
+  "doi": "10.1038_s41467-023-43791-1",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Paired electrophotocatalytic C(sp3)-H arylation (two-component) or C(sp3)-H alkylation (three-component, with alkene linker) of alkanes with aryl bromides, using Fe/Ni dual catalysis under blue/purple light",
+  "mechanism_family": [
+    "paired_electrolysis",
+    "photoredox_combined",
+    "radical_anodic",
+    "radical_cathodic",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anodic LMCT-driven oxidation of [FeIIICl4]- (photoexcited) regenerates FeIII from FeII while releasing Cl• that performs HAT on the alkane to give an alkyl radical; cathodic reduction generates and turns over the Ni(I)/Ni(II)/Ni(III) catalytic cycle that couples the alkyl radical with ArBr",
+  "key_intermediates": [
+    {
+      "name": "[FeIIICl4]- (ground state, species A)",
+      "smiles": "[Cl-].[Cl-].[Cl-].[Cl-].[Fe+3]",
+      "role": "resting_state"
+    },
+    {
+      "name": "photoexcited *[FeIIICl4]- (species B)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "[FeIICl3]- after LMCT (species C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "chlorine radical Cl• (species D)",
+      "smiles": "[Cl]",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical R• (species E) from HAT on alkane",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical adduct onto EWG-alkene (Giese adduct, species F)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(I) species (LnNiI, species I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "LnNiII-Ar (aryl-NiII, species G/K, complex 73)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "LnNiIII(Ar)(alkyl) (species H/L/M)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "LnNiIII-Ar after oxidative addition (species J)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Under irradiation, anodic oxidation regenerates FeIII from FeII while a photoexcited [FeIIICl4]- undergoes LMCT to release Cl•, which abstracts H from the alkane to form an alkyl radical (optionally adding to an electron-poor alkene first). The cathode reduces NiII to NiI, which oxidatively adds ArBr to give NiIII-Ar; the alkyl radical is captured by aryl-NiII (or NiIII) to give a NiIII(Ar)(alkyl) intermediate that reductively eliminates the C(sp3)-C(sp2) product.",
+  "rate_determining_step": "Matching of the anodic rate of alkyl radical generation (LMCT/HAT) with cathodic aryl-NiII speciation; selectivity is controlled by rate-matching rather than by a single elementary step",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited; cyclohexyl-TEMPO adduct (72) detected by 1H NMR, supporting alkyl radical formation via anodic HAT"
+    },
+    {
+      "name": "Cycloheptyl chloride (alkyl chloride competition)",
+      "smiles": "ClC1CCCCCC1",
+      "purpose": "intermediate_trap",
+      "observation": "Reductive coupling product from alkyl chloride + ArBr (1') not detected; only cyclohexyl arylation product 1 formed (77%), excluding alkyl chloride as a key intermediate"
+    },
+    {
+      "name": "Ni(COD)2 as Ni(0) source",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Only 9% yield, suggesting Ni(0) is not the operative species in the catalytic cycle"
+    },
+    {
+      "name": "Stoichiometric aryl-NiII complex 73 (with 6,6'-Me2-bpy)",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "With cyclohexane + FeCl3·6H2O under light gave product 1 in 37%; Ni(I) detected by HRMS, confirming aryl-NiII as catalytic species and Ni(I) intermediate"
+    },
+    {
+      "name": "Aryl-NiII complex 73 as catalyst (10 mol%)",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "Delivered product 23 in 46% yield, supporting catalytic competence of Ar-NiII"
+    },
+    {
+      "name": "Light on/off and intensity variation",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No product without light; higher light intensity gives higher rate and selectivity (Fig. 7), consistent with photoinduced LMCT controlling radical generation rate"
+    },
+    {
+      "name": "Cyclic voltammetry of NiBr2·3H2O + bpy",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Shows NiII/NiI reduction wave around -1.1 V vs Ag/AgCl, matching the observed cathode potential during electrolysis"
+    },
+    {
+      "name": "Chronopotentiometry during electrolysis",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Anode held ~0.23 V and cathode ~-1.1 V vs Ag/AgCl, consistent with FeII/FeIII anodic and NiII/NiI cathodic cycles"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "isolation_of_intermediate",
+    "kinetic_order"
+  ],
+  "evidence_strength": "strong",
+  "notes": "The authors emphasize 'rate-matching modulation': current (4 mA for arylation vs 25 mA for three-component alkylation) and light intensity independently tune anodic radical generation vs cathodic Ni speciation to switch selectivity between two- and three-component products. A direct anodic oxidation of Cl-/Br- to halogen radical (without LMCT photoexcitation) is explicitly excluded because the anode potential (~0.23 V) is too low. Alkyl chloride pathway and Ni(0) pathway are excluded by control experiments. The alkyl radical is proposed to be captured either by aryl-NiII (giving NiIII(Ar)(alkyl)) or by NiI followed by oxidative addition of ArBr; the favored radical-chain coupling proceeds via Ar-NiII."
+}

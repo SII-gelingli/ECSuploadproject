@@ -1,0 +1,69 @@
+{
+  "doi": "10.1016_j.tet.2016.10.058",
+  "journal": "Tetrahedron",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical asymmetric oxidative dimerization of cinnamic acid L-proline amides to furofuran bislactones, precursors of natural lignans (yangambin, sesamin, eudesmin).",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_cation"
+  ],
+  "electrochemical_role": "Anodic oxidation (Pt anode) of the electron-rich aryl alkene of the cinnamoyl-proline substrate to an aryl/alkene radical cation, which dimerizes and cyclizes to the furofuran bislactone.",
+  "key_intermediates": [
+    {
+      "name": "aryl-substituted cinnamate radical cation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "dimeric bis(radical cation)/cyclized cationic intermediate leading to furofuran bislactone",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "furofuran bislactone 2a-d (chiral proline auxiliary)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the Pt anode, the electron-rich arylcinnamate is oxidized by SET to a radical cation; radical-cation coupling/dimerization followed by intramolecular trapping of the carboxylate oxygens onto the resulting cationic centers builds the furofuran bislactone with the proline auxiliary controlling stereochemistry. Aldehyde 3 (ArCHO) is a competing fragmentation product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "L-proline t-butyl ester auxiliary",
+      "smiles": "CC(C)(C)OC(=O)[C@@H]1CCCN1",
+      "purpose": "other",
+      "observation": "Acts as chiral auxiliary; bislactones 2a-d obtained with up to >95% e.e., demonstrating diastereoselective radical-cation coupling."
+    },
+    {
+      "name": "temperature variation (rt, 0, -20, -40 °C)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Lower temperature gave higher yield and e.e. (52% yield, 91% e.e. at -40 °C for 1a)."
+    },
+    {
+      "name": "supporting electrolyte screen (Et4NClO4, Et4NOTFA, n-Bu4NPF6, n-Bu4NHSO4, halide salts)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Halide-containing electrolytes were ineffective; non-coordinating salts gave comparable modest yields with 1c."
+    },
+    {
+      "name": "protic acid screen (TFA, TfOH, HSO3F, MsOH, HClO4, HBF4·Et2O)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only TFA (and trace with TfOH) afforded bislactone, implicating need for a non-nucleophilic Brønsted acid co-solvent to stabilize cationic intermediates."
+    },
+    {
+      "name": "PbO2/TFA chemical oxidation control",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "PbO2 in TFA/CH2Cl2 at -78 °C also produced 2a (64%, >95% e.e.), supporting a SET/radical-cation pathway analogous to the anodic process."
+    }
+  ],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism is proposed by analogy to Ronlan-type anodic phenolic/styrene oxidative coupling; no TEMPO/BHT trapping, KIE, CV, or DFT reported. Aldehyde 3 (ArCHO) is observed as a C-C cleavage side product, consistent with fragmentation of the radical-cation/dimeric cation manifold. More electron-rich arenes (trimethoxy, methylenedioxy) gave better yields, consistent with easier anodic SET, opposite to a prior racemic chemical synthesis by Yuzikhin."
+}

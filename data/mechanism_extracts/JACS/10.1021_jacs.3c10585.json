@@ -1,0 +1,87 @@
+{
+  "doi": "10.1021_jacs.3c10585",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Membrane-free electrochemical epoxidation of chloropropene (and other alkenes) to epichlorohydrin via bromide-mediated bromohydrin intermediate over NiCo2O4 nanotip anode",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_anodic",
+    "paired_electrolysis",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anode oxidizes Br- to Br radical (one-electron) which adds to alkene; anode also generates *OH from water oxidation; cathode reduces water to H2 generating OH- that deprotonates/eliminates HBr from bromohydrin",
+  "key_intermediates": [
+    {
+      "name": "bromine radical (Br•)",
+      "smiles": "[Br]",
+      "role": "reactive"
+    },
+    {
+      "name": "beta-bromo carbon radical from Br• addition to chloropropene (ClCH2-CHBr-CH2• dominant; also ClCH2-CH•-CH2Br)",
+      "smiles": "ClCC([CH2])Br",
+      "role": "transient"
+    },
+    {
+      "name": "surface hydroxyl radical (*OH) from water oxidation",
+      "smiles": "[OH]",
+      "role": "reactive"
+    },
+    {
+      "name": "bromohydrin (1-chloro-3-bromo-2-hydroxypropane and 1-chloro-2-bromo-3-hydroxypropane, ~2:1)",
+      "smiles": "ClCC(O)CBr",
+      "role": "reactive"
+    },
+    {
+      "name": "epichlorohydrin (product after HBr elimination)",
+      "smiles": "ClCC1CO1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the NiCo2O4 nanotip anode, Br- is oxidized by SET to Br•, which adds to the C=C of chloropropene to give a carbon radical; coupling with *OH (from anodic water oxidation) yields a bromohydrin. OH- generated at the cathode (from H2O reduction to H2) eliminates HBr from the bromohydrin to deliver the epoxide and regenerate Br-.",
+  "rate_determining_step": "Anodic one-electron oxidation of Br- to Br• and its addition to the alkene (Br•/alkene radical addition step) over the nanotip anode",
+  "probe_reagents": [
+    {
+      "name": "BHT (butylated hydroxytoluene)",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "ECH yield in 0.1 M KBr dropped by >42%; yield in KCl essentially unchanged, supporting Br radical pathway"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "ECH yield in KBr fell by >50%; DPE-Br adduct detected by HR-MS (m/z 259.0112/261.0091)"
+    },
+    {
+      "name": "N,N-diallyl-4-methylbenzenesulfonamide",
+      "smiles": "Cc1ccc(S(=O)(=O)N(CC=C)CC=C)cc1",
+      "purpose": "radical_trap",
+      "observation": "Br•-trapped cyclized adduct detected by HR-MS (m/z 332.0137/334.0116), confirming Br radical"
+    },
+    {
+      "name": "DMPO (5,5-dimethyl-1-pyrroline-N-oxide)",
+      "smiles": "CC1(C)CCC=[N+]1[O-]",
+      "purpose": "intermediate_trap",
+      "observation": "EPR signals of DMPO-OH and DMPO-C adducts observed; HR-MS confirms DMPO-OH (m/z 130.0876) and DMPO-C with both [ClCH2C•(H)CH2Br] and [ClCH2CHBrCH2•] (m/z 270.1363/271.9733)"
+    },
+    {
+      "name": "H2-18O",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "Only 18O-labeled ECH detected by HR-MS, confirming water as sole oxygen source"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "EPR",
+    "DFT",
+    "cyclic_voltammetry",
+    "UV_vis",
+    "H/D_labeling",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Alternative previously reported mechanism (Br/O redox synergistic, involving Br2/HBrO) is ruled out here: UV-vis shows no BrO- signal in KBr electrolyte, while ClO- is observed in KCl (consistent with Cl2/HOCl pathway). High-curvature NiCo2O4 nanotips enhance the local electric field to concentrate Br- and OH- at the anode; isolated Br adsorption sites suppress Br• coupling to Br2 (suppresses BER) and a high barrier for *OH further oxidation suppresses OER. NMR of bromohydrin intermediate shows ClCH2CHBrCH2OH : ClCH2CH(OH)CH2Br ≈ 2:1, indicating the ClCH2CHBrCH2• carbon radical is dominant."
+}

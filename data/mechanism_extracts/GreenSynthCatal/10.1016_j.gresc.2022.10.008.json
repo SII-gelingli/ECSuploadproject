@@ -1,0 +1,99 @@
+{
+  "doi": "10.1016_j.gresc.2022.10.008",
+  "journal": "GreenSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical trifunctionalization of styrenes with diaryl disulfides (or thiophenols), NCS, and water to install two C-Cl bonds, one C-S bond, and one S=O bond (chloro-sulfoxidation/chlorination) in one pot.",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_cathodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Cathodic reduction of NCS generates chloride and succinimidyl anion; anodic oxidation of disulfide/thiophenol generates thiyl radical and also oxidizes chloride to Cl• and the chlorothiolation intermediate 4b to a radical cation that is trapped by water.",
+  "key_intermediates": [
+    {
+      "name": "thiyl radical (ArS•) from anodic oxidation of disulfide/thiophenol",
+      "smiles": "[S]c1ccc(C)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbon radical II from ArS• addition to styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "chlorothiolation intermediate 4b (β-chloro sulfide)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "sulfur radical cation III from anodic oxidation of 4b",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-chloro sulfoxide intermediate 5 (after water addition/oxidation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "second benzylic C-radical IV from anodic oxidation of 5",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "chloride anion / Cl• (from NCS reduction and anodic oxidation)",
+      "smiles": "[Cl-]",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the cathode NCS is reduced to Cl– (and succinimidyl anion → succinimide); at the anode disulfide/thiophenol is oxidized to ArS• which adds to the styrene to give a benzylic radical trapped by Cl• to form chlorothioether 4b; anodic oxidation of 4b's sulfur generates a radical cation that is captured by H2O to give α-chloro sulfoxide 5, which is further anodically oxidized to a benzylic radical IV and coupled with Cl• to deliver the trifunctionalized product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction (both initial trifunctionalization from 1h and second chlorination of 5) suppressed; TEMPO-adduct 7 with intermediate 5 detected by HRMS, consistent with C-radical IV; supported by EPR."
+    },
+    {
+      "name": "H2-18O",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "18O-labeled product 3aa obtained in 69% yield (HRMS confirmed), proving the S=O oxygen originates from water."
+    },
+    {
+      "name": "dry MeCN (water exclusion)",
+      "smiles": "CC#N",
+      "purpose": "other",
+      "observation": "No trifunctionalization or 5 formed from 1h+2a in anhydrous MeCN, confirming water is required for the first sulfoxidation; however, second chlorination of pre-formed 5 still proceeds in dry MeCN (64%)."
+    },
+    {
+      "name": "chlorothioether 4a",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Under standard conditions 4a gave 3ad in 67%, supporting chlorothiolation as an early intermediate."
+    },
+    {
+      "name": "α-chloro sulfoxide 5",
+      "smiles": null,
+      "purpose": "stoichiometric_intermediate",
+      "observation": "Treatment of 5 with NCS under standard conditions gave 3ha in 91%, confirming 5 as a key on-cycle intermediate."
+    },
+    {
+      "name": "NBS (replacing NCS)",
+      "smiles": "O=C1CCC(=O)N1Br",
+      "purpose": "intermediate_trap",
+      "observation": "Bromination product 6 obtained in 70% yield (d.r. 3:1), supporting the halogen-radical pathway for the second halogenation."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_TEMPO",
+    "stoichiometric_intermediate",
+    "EPR",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Water serves both as solvent and as the oxygen source for the sulfoxide S=O; the mechanism proceeds via sequential bifunctionalization (chlorothiolation) then anodic oxidation/water addition then radical chlorination, i.e., a stepwise radical/radical-cation (radical-polar crossover) sequence rather than concerted trifunctionalization."
+}

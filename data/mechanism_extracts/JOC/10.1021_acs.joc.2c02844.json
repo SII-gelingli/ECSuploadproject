@@ -1,0 +1,95 @@
+{
+  "doi": "10.1021_acs.joc.2c02844",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical four-component 1,2-difunctionalization of alkenes with diaryl diselenides, CS2, and secondary amines to give beta-selenyl dithiocarbamates via simultaneous C-Se and C-S bond formation",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anode oxidizes PhSeSePh to a radical cation that cleaves to PhSe radical (II) and PhSe cation (III); anode also oxidizes the in-situ generated dithiocarbamate anion (VI) to dithiocarbamate cation (VII), which couples to disulfide 3g. Cathode reduces PhSe+ back to 1/2 PhSeSePh and reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "diphenyl diselenide radical cation (I)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl radical (II, PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenium cation (III, PhSe+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "beta-phenylselenyl benzylic carbon radical (IV)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "seleniranium / cyclic selenium intermediate (V)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "dithiocarbamate anion (VI)",
+      "smiles": "CCN(CC)C(=S)[S-]",
+      "role": "reactive"
+    },
+    {
+      "name": "dithiocarbamate cation (VII)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "bis(dithiocarbamoyl) disulfide (3g)",
+      "smiles": "CCN(CC)C(=S)SSC(=S)N(CC)CC",
+      "role": "reactive"
+    },
+    {
+      "name": "beta-phenylselenyl benzylic cation (VIII)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, PhSeSePh is oxidized (-1e) to a radical cation that fragments into PhSe• and PhSe+; PhSe• adds to styrene to give a benzylic C-radical (IV) that is either trapped by 3g (path a) or further anodically oxidized to benzylic cation VIII which is captured by dithiocarbamate anion VI (path b), while PhSe+ alternatively forms seleniranium V that opens with VI (path c). In parallel, CS2 + amine form dithiocarbamate VI, which is anodically oxidized (-2e) to cation VII coupling to give disulfide 3g; the cathode reduces protons to H2 and PhSe+ back to PhSeSePh.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Addition of 3.0 equiv TEMPO completely suppressed formation of 4a (0% yield), indicating a radical pathway involving PhSe• and/or benzylic C-radical"
+    },
+    {
+      "name": "PhSeCl (1d) without electricity",
+      "smiles": "Cl[Se]c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Stoichiometric PhSeCl with CS2/amine/K2CO3 and no current gave 4a in 18% yield, supporting involvement of an electrophilic Se / seleniranium intermediate"
+    },
+    {
+      "name": "bis(dithiocarbamoyl) disulfide 3g",
+      "smiles": "CCN(CC)C(=S)SSC(=S)N(CC)CC",
+      "purpose": "intermediate_trap",
+      "observation": "Using preformed 3g instead of CS2 + amine under electrolysis gave 4a in 71% yield, supporting 3g as a key intermediate"
+    },
+    {
+      "name": "sodium diethyldithiocarbamate (3h)",
+      "smiles": "CCN(CC)C(=S)[S-].[Na+]",
+      "purpose": "intermediate_trap",
+      "observation": "Using preformed dithiocarbamate salt 3h gave 4a in 42% yield, consistent with dithiocarbamate anion VI as an on-cycle species"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Three competing product-forming pathways are proposed: (path a) radical IV + disulfide 3g; (path b) anodic oxidation of IV to benzylic cation VIII trapped by dithiocarbamate VI; (path c) PhSe+ forms seleniranium V which is opened by VI. The authors do not definitively distinguish among them. CV data (Ep = 0.09 and 1.13 V for dithiocarbamate; 1.90 and 1.64 V for PhSeSePh vs Ag/AgCl) support the order of anodic oxidations."
+}

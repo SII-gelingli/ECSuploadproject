@@ -1,0 +1,94 @@
+{
+  "doi": "10.1039_d2gc02134j",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical chlorosulfuration or chlorosulfoxidation of unactivated olefins with thiophenols and HCl, with selectivity switched by operating conditions",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of thiophenol to thiyl radical and subsequent anodic oxidation of carbon radical to carbocation (and sulfide to sulfonium/oxonium for sulfoxide formation); cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "thiyl radical (ArS•) from anodic oxidation of p-toluenethiol",
+      "smiles": "[S]c1ccc(C)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical from thiyl addition to cyclohexene",
+      "smiles": "Cc1ccc(SC2CCCCC2[CH2])cc1",
+      "role": "transient"
+    },
+    {
+      "name": "carbocation from anodic oxidation of carbon radical",
+      "smiles": "Cc1ccc(SC2CCCCC2[CH+])cc1",
+      "role": "transient"
+    },
+    {
+      "name": "sulfonium intermediate (IV, resonance form of III)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-chloro sulfide 3a (chlorosulfuration product)",
+      "smiles": "Cc1ccc(SC2CCCCC2Cl)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "cationic sulfur radical V from anodic oxidation of sulfide",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "oxonium intermediate VI (H2O-trapped)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "sulfonium VII after further anodic oxidation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-chloro sulfoxide 4a (chlorosulfoxidation product)",
+      "smiles": "Cc1ccc(S(=O)C2CCCCC2Cl)cc1",
+      "role": "reactive"
+    },
+    {
+      "name": "diaryl disulfide 6 (homocoupling of thiyl radicals)",
+      "smiles": "Cc1ccc(SSc2ccc(C)cc2)cc1",
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "Anode oxidizes ArSH to thiyl radical I (−H+), which adds to cyclohexene to give C-radical II; II is further oxidized at the anode to carbocation III (≡ sulfonium IV), which is trapped by Cl− to give sulfide 3a. Under prolonged electrolysis, 3a is anodically oxidized to a sulfur-centered cation radical V, trapped by H2O to oxonium VI, then oxidized to VII and deprotonated to sulfoxide 4a; cathode reduces 2H+ to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction shut down; TEMPO–sulfide adduct 5 detected by HRMS, indicating radical intermediates"
+    },
+    {
+      "name": "Bis(4-methylphenyl) disulfide (6)",
+      "smiles": "Cc1ccc(SSc2ccc(C)cc2)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "Isolated in 60% after 3 h; when used in place of ArSH gave 4a in 82%, supporting thiyl radical formation via disulfide"
+    },
+    {
+      "name": "H2 18O",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "18O-labeled sulfoxide 7 obtained (7:4a = 69:31, 76%), showing the sulfoxide oxygen comes from H2O (in concentrated HCl), not O2"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "isotope_label",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Selectivity between chlorosulfuration (3) and chlorosulfoxidation (4) is controlled by electrolysis time/conditions: shorter time gives sulfide 3a, longer time leads to further anodic oxidation to sulfoxide 4a with H2O as the oxygen source. Carbocation III and sulfonium IV are presented as resonance forms of the same intermediate."
+}

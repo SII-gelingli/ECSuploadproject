@@ -1,0 +1,56 @@
+{
+  "doi": "10.1021_acs.joc.1c02069",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical [3+2] cycloaddition between N-benzyl-N,N-bis(trimethylsilylmethyl)amine precursors and electron-poor alkenes to form 3- and 3,4-disubstituted pyrrolidines via in situ anodic generation of a nonstabilized azomethine ylide.",
+  "mechanism_family": [
+    "radical_anodic",
+    "direct_SET",
+    "paired_electrolysis",
+    "radical_cation",
+    "concerted"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the bis(silylmethyl)amine 1a to its aminium radical cation, followed by a second SET after desilylation to give an iminium cation; cathode reduces water to H2 and hydroxide, which traps the TMS+ cation as silanol.",
+  "key_intermediates": [
+    {
+      "name": "Aminium radical cation A from 1a",
+      "smiles": "[CH2]([Si](C)(C)C)[N+]([CH2][Si](C)(C)C)Cc1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "Iminium cation B (after first desilylation)",
+      "smiles": "C(=[N+](Cc1ccccc1)C[Si](C)(C)C)",
+      "role": "reactive"
+    },
+    {
+      "name": "Nonstabilized azomethine ylide C",
+      "smiles": "[CH2-][N+](=C)Cc1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Trimethylsilyl cation",
+      "smiles": "[Si+](C)(C)C",
+      "role": "transient"
+    },
+    {
+      "name": "Trimethylsilanol byproduct",
+      "smiles": "C[Si](C)(C)O",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the anode, amine 1a undergoes SET to give aminium radical cation A; loss of TMS+ yields neutral α-amino radical that is further oxidized (second SET) to iminium cation B; a second desilylation generates the nonstabilized azomethine ylide C, which undergoes concerted [3+2] cycloaddition with the electron-poor alkene 2a to give pyrrolidine 3aa. At the cathode, water is reduced to H2 and HO–, which quenches TMS+ to silanol.",
+  "rate_determining_step": "Initial anodic SET oxidation of the amine 1a (E_ox = 0.75 V vs Ag/AgCl), as 2a shows no oxidation peak.",
+  "probe_reagents": [
+    {
+      "name": "Cyclic voltammetry of 1a, 2a, and 1a+2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "1a oxidizes at 0.75 V vs Ag/AgCl; 2a shows no oxidation peak, supporting selective anodic oxidation of the amine precursor."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism is proposed based on CV studies and literature precedent; no radical traps, KIE, or DFT reported. The TMS+ byproduct is quenched by cathodically generated hydroxide to give trimethylsilanol, consistent with a paired-electrolysis scenario. Gram-scale synthesis (38 h, 70%) supports robustness but is not mechanistic evidence."
+}

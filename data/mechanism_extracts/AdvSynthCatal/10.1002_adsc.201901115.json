@@ -1,0 +1,83 @@
+{
+  "doi": "10.1002_adsc.201901115",
+  "journal": "AdvSynthCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical iodide-mediated intramolecular selenocyclization of unsaturated alcohols (and acids) with diaryl diselenides to give selenomethyl-substituted cyclic ethers and lactones",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (I-) to I+ (via 2e- loss), which acts as electrophilic mediator generating an iodonium ion on the alkene; cathode reduces I2 back to I- and protons to H2, closing the redox cycle",
+  "key_intermediates": [
+    {
+      "name": "iodonium cation on alkene (intermediate A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "iodo-cyclic ether intermediate B (after intramolecular O-attack and deprotonation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "I+ (electrophilic iodine mediator)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "I2 (regenerated, reduced at cathode)",
+      "smiles": "II",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes I- to I+ (2e- loss); I+ activates the alkene of the unsaturated alcohol to form an iodonium cation (A), which undergoes intramolecular O-cyclization with loss of H+ to give iodo-ether B; B is displaced by PhSe- (from PhSeSePh, releasing 1/2 I2) to deliver the selenoether product, and the cathode reduces I2 to I- and H+ to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3b obtained in 75% yield under standard conditions; no inhibition, arguing against a radical pathway"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Product 3b obtained in 74% yield; no inhibition, arguing against a radical pathway"
+    },
+    {
+      "name": "I2 (no current)",
+      "smiles": "II",
+      "purpose": "intermediate_trap",
+      "observation": "With I2 (1 equiv) and no current, 3b formed in 50% yield, supporting I+ as the active electrophilic species"
+    },
+    {
+      "name": "NH4I without current",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "No reaction between 1b and 2a with NH4I in the absence of current — confirms electrochemical activation needed"
+    },
+    {
+      "name": "divided cell experiment",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only trace 3b in divided cell, proving cathodic reduction of I2 back to I- is essential for catalytic turnover"
+    },
+    {
+      "name": "Cyclic voltammetry of NH4I, 1a, 2a and mixtures",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "NH4I shows two oxidation peaks at 0.38 V (I-/I2) and 0.67 V (I3-/I2); curves unchanged upon addition of 1a or 2a, indicating I- is oxidized first and substrates are not directly oxidized"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "A radical mechanism was explicitly considered but excluded based on TEMPO/BHT non-inhibition and the I2-only control giving product. The divided-cell experiment establishes paired electrolysis: anodic I- oxidation coupled with cathodic I2/H+ reduction is required for catalytic turnover."
+}

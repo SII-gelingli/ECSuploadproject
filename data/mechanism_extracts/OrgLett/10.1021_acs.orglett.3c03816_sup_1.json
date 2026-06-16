@@ -1,0 +1,56 @@
+{
+  "doi": "10.1021_acs.orglett.3c03816_sup_1",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical alkoxycarbonyl-alkoxylation of styrenes with potassium ethyl oxalate and alcohols via a radical-polar crossover pathway",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (from NH4I mediator) generates I2/I• which oxidatively decarboxylates the oxalate to an ethoxycarbonyl radical; this carbon radical adds to the styrene and the resulting benzylic radical is further oxidized at the anode to a benzylic cation trapped by EtOH",
+  "key_intermediates": [
+    {
+      "name": "ethoxycarbonyl radical (•CO2Et) from decarboxylation of ethyl oxalate",
+      "smiles": "[CH2]C(=O)OCC",
+      "role": "transient"
+    },
+    {
+      "name": "benzylic C-radical after addition to styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation after anodic oxidation of benzyl radical",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclopropylcarbinyl radical / ring-opened homoallyl radical (from radical clock substrate 13)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anodic oxidation of iodide regenerates an I-based mediator that oxidizes potassium ethyl oxalate, releasing CO2 and an ethoxycarbonyl radical; this radical adds to the styrene to give a benzylic radical, which is oxidized at the anode to a benzylic cation and trapped by ethanol, while the cathode reduces protons/NH4+ to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Addition of 2 equiv TEMPO completely suppressed formation of product 3a (no 3a detected by GC-MS/1H NMR), consistent with a radical intermediate"
+    },
+    {
+      "name": "(1-cyclopropylvinyl)-4-methylbenzene (radical clock substrate 13)",
+      "smiles": "Cc1ccc(C(=C)C2CC2)cc1",
+      "purpose": "radical_clock",
+      "observation": "Gave both the unopened cyclopropyl product 14 (63%) and the ring-opened homoallylic ether 15 (10%), indicating a carbon-centered radical intermediate that partially undergoes cyclopropylcarbinyl ring opening"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "radical_clock"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanistic studies shown include only TEMPO trapping and a radical clock; the radical-polar crossover (oxidation of benzylic radical to cation, trapped by alcohol) is inferred from the alkoxylation outcome rather than directly probed on these pages. NH4I acts as a redox mediator and Et4NBF4 as supporting electrolyte."
+}

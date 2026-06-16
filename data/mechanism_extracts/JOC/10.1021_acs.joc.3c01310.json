@@ -1,0 +1,76 @@
+{
+  "doi": "10.1021_acs.joc.3c01310",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical cascade trifluoromethylation/sulfonylation-cyclization of N-allylamides with CF3SO2Na or arylsulfonyl hydrazines to access trifluoromethylated or sulfonylated 4,5-dihydrooxazoles.",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "direct_SET",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of CF3SO2- to CF3SO2 radical (which loses SO2 to give CF3 radical); subsequent second anodic SET oxidizes the alkyl radical intermediate I to cation II. At the cathode, water is reduced to H2 and OH-.",
+  "key_intermediates": [
+    {
+      "name": "CF3SO2 radical (from anodic oxidation of triflinate)",
+      "smiles": "[O]S(=O)C(F)(F)F",
+      "role": "transient"
+    },
+    {
+      "name": "CF3 radical (after SO2 extrusion)",
+      "smiles": "[C](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon-centered radical I (CF3 addition adduct to allylamide alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic/tertiary carbocation II (after second anodic SET)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Dihydrooxazole 3a (product after intramolecular O-cyclization and deprotonation)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- to CF3SO2 radical, which loses SO2 to give CF3 radical; CF3 radical adds regioselectively to the alkene of the N-allylamide to form C-radical I, which is oxidized at the anode a second time to carbocation II; K2CO3-assisted intramolecular attack of the amide oxygen on II with loss of H+ delivers the dihydrooxazole 3a. The cathode reduces water to H2 and hydroxide.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "With CF3SO2Na: 3a only trace, CF3-DPE-OH adduct 6 detected by GC-MS. With sulfonyl source 4a: 5a 18%, Ts-DPE adduct 8 detected by GC-MS; confirms CF3 and sulfonyl radicals."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "With 2a: 3a yield reduced to 23%, BHT-CF3 adduct 7 detected by GC-MS. With 4a: 5a 25%, BHT-Ts adduct 9 detected; supports radical pathway."
+    },
+    {
+      "name": "Cyclic voltammetry of 1a, 2a, 4a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "E_ox(2a) = 1.16 V and E_ox(4a) = 1.33 V vs SCE, both lower than E_ox(1a) = 1.89–1.90 V vs SCE, indicating triflinate/sulfinate is oxidized first at the anode."
+    },
+    {
+      "name": "No-electricity control (entry 15)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction without applied current, confirming electrochemical initiation."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism is supported by radical trapping with BHT and DPE plus CV showing preferential oxidation of the sulfinate/triflinate over the N-allylamide. No DFT or KIE studies were performed. The cyclization step (II → 3a) is depicted as a polar intramolecular electrophilic O-cyclization promoted by K2CO3."
+}

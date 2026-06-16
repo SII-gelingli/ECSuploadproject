@@ -1,0 +1,106 @@
+{
+  "doi": "10.1021_jacs.1c06700",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Copper-catalyzed diazidation of enamides, enecarbamates, aminocyclopropanes, and aminocyclobutanes with PIDA/TMSN3 (or Selectfluor/TMSN3), followed by one-pot nucleophilic substitution of the α-amino azide (masked iminium) to access orthogonally protected 1,2-, 1,3-, and 1,4-diamines.",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "electrocatalysis_inner_sphere",
+    "cation_initiated"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "Cu(III) species formed by oxidation of CuTc with Selectfluor (or PIDA)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "aminium radical cation (I) from SET oxidation of aminocyclopropane",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "distal carbon radical (II) after β-scission/ring-opening of cyclopropane",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cu(II)-N3 azide-transfer complex",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "iminium ion (III) after azidation of II and further oxidation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-amino azide / 1,3-diazide product (e.g., 6, 13a, 18) acting as masked iminium",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "[(BPhen)Cu(II)(N3)(μ-N3)]2 (Stahl complex) demonstrated as competent azide-transfer species with CuTc",
+      "smiles": null,
+      "role": "stoichiometric_intermediate"
+    }
+  ],
+  "electron_flow": "CuTc is oxidized by Selectfluor (or PIDA) to a high-valent Cu(III), which performs SET oxidation of the aminocyclopropane to an aminium radical; β-scission opens the ring to a distal C-radical that is azidated by a Cu(II)-N3 complex, regenerating Cu(I); a second oxidation gives an iminium that is trapped by azide (or by an added C-nucleophile in the one-pot variant). For enamides, an azide radical addition to the electron-rich alkene is proposed instead.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "With 5b, 6% TEMPO adduct 15 isolated and 94% 5b recovered; even without TMSN3 a TEMPO-water adduct forms, showing azide is not required for ring-opening."
+    },
+    {
+      "name": "Methyl acrylate",
+      "smiles": "C=CC(=O)OC",
+      "purpose": "radical_trap",
+      "observation": "Radical relay gave 1,5-diazide 16 in 9%, consistent with a free carbon radical intermediate after β-scission."
+    },
+    {
+      "name": "Cyclopropyl/cinnamyl substrate 17 (radical clock + alkene)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "With PIDA/TMSN3, 92% alkene 1,2-diazidation (18) with no cyclopropane ring-opening; redox potential of the alkene is lower than that of the aminocyclopropane, so π-bond is oxidized preferentially."
+    },
+    {
+      "name": "Cyclic voltammetry of 5b, 5m, 5p, 5r and CuTc",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "E1/2red of aminocyclopropanes (+1.67 to +2.23 V vs SCE) exceeds Selectfluor (+0.33, +0.79 V), so direct oxidation by Selectfluor is unfeasible; CuTc shows Cu(I)/Cu(II) at 0.86 V and Cu(II)/Cu(III) at 2.28 V, and a mixture of 5b+CuTc shows a new oxidation feature supporting Cu-mediated oxidation."
+    },
+    {
+      "name": "Chiral CN-BOX ligand with 5xb",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No asymmetric induction observed, suggesting a freely diffusing radical intermediate."
+    },
+    {
+      "name": "Selectfluor (variation of CuTc loading)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Increasing CuTc loading raised 6xa:20 (azide vs fluoride) ratio from 85:15 to 96:4, implicating copper in azide group transfer rather than free F/N3 radicals."
+    },
+    {
+      "name": "[(BPhen)Cu(II)(N3)(μ-N3)]2 (Stahl complex)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Not catalytically competent alone, but transferred azide in the presence of CuTc, supporting a Cu-N3 azide transfer step."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "UV_vis",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Favored mechanism for aminocyclopropanes: Cu(III)-mediated SET oxidation → aminium radical → β-scission → C-radical → Cu(II)-N3 azide transfer → iminium → azide trapping. Alternatives considered but not preferred: (i) rebound mechanism in which Cu(III)-N3 oxidizes substrate and directly delivers N3; (ii) free azide radical recombination with carbon radical. For enamide/enecarbamate substrates, the mechanism is proposed to differ — addition of an azidyl radical to the electron-rich enamide alkene rather than substrate SET, as in prior styrene diazidation work."
+}

@@ -1,0 +1,101 @@
+{
+  "doi": "10.1002_ejoc.202301246",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical dehydrogenative regioselective cyclization of 3-aza-1,5-dienes with 1,3-dicarbonyl compounds to construct 4-pyrrolin-2-ones via anodic generation of 1,3-dicarbonyl radicals.",
+  "mechanism_family": [
+    "radical_anodic",
+    "direct_SET",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of the 1,3-dicarbonyl compound (Eox p/2 = 1.49 V vs Ag/AgCl) to a 1,3-dicarbonyl radical; a second anodic SET oxidizes the cyclized C-radical to a cation; concomitant cathodic reduction of protons evolves H2.",
+  "key_intermediates": [
+    {
+      "name": "1,3-dicarbonyl radical (A) from anodic oxidation of 2a",
+      "smiles": "[CH](C(=O)OC)C(=O)OC",
+      "role": "reactive"
+    },
+    {
+      "name": "open-chain radical adduct (B) from radical addition onto the acryloyl C=C of the 3-aza-1,5-diene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclized C-radical (C) after intramolecular radical trapping by the enaminic double bond",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cationic intermediate (D) from SET oxidation of C at the anode",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "4-pyrrolin-2-one product (3a) after deprotonation of D",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "The anode oxidizes the 1,3-dicarbonyl compound to a C-centered radical (A), which adds regioselectively to the acryloyl alkene of the 3-aza-1,5-diene to give radical B; intramolecular cyclization onto the enaminic C=C gives radical C, which is further oxidized at the anode to cation D, and deprotonation delivers the pyrrolinone while protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3a suppressed to <1%, indicating a radical intermediate."
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Yield <1%, consistent with radical pathway."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C(c1ccccc1)c1ccccc1)",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely suppressed (0% yield)."
+    },
+    {
+      "name": "p-dinitrobenzene (pDNB)",
+      "smiles": "O=[N+]([O-])c1ccc(cc1)[N+](=O)[O-]",
+      "purpose": "redox_probe",
+      "observation": "SET scavenger; 0% yield, supporting single-electron transfer."
+    },
+    {
+      "name": "CuCl2",
+      "smiles": "[Cl-].[Cl-].[Cu+2]",
+      "purpose": "redox_probe",
+      "observation": "<1% yield, single-electron scavenging suppresses reaction."
+    },
+    {
+      "name": "CCl4",
+      "smiles": "ClC(Cl)(Cl)Cl",
+      "purpose": "redox_probe",
+      "observation": "0% yield; single-electron quencher inhibits reaction."
+    },
+    {
+      "name": "current on/off experiment",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Reaction halts during off cycles, excluding a radical chain mechanism."
+    },
+    {
+      "name": "H2 headspace detection",
+      "smiles": "[H][H]",
+      "purpose": "intermediate_trap",
+      "observation": "H2 concentration increases over time, confirming cathodic proton reduction paired with anodic oxidation."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "on/off_light_or_current",
+    "cyclic_voltammetry",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Regioselectivity favors radical addition onto the acryloyl alkene rather than the aryl-substituted enaminic alkene, with cyclization closing through the enaminic double bond rather than via aryl radical attack. On/off current experiments rule out a radical chain propagation; instead a stepwise anodic SET / radical addition / cyclization / second anodic SET / deprotonation sequence is invoked, paired with cathodic H2 evolution."
+}

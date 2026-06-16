@@ -1,0 +1,83 @@
+{
+  "doi": "10.1002_anie.202110616_sup_1",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical Ru/Os-catalyzed C-H activation/annulation of benzoic acids with n-butyl acrylate to form isobenzofuranone (phthalide) products via Heck-type insertion and lactonization",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation regenerates the active high-valent Ru(II)/Os(II) catalyst (reoxidation of reduced metal species after C-H metalation/migratory insertion/β-H elimination); the metal carboxylate mediates C-H cleavage via CMD",
+  "key_intermediates": [
+    {
+      "name": "Ru(II)/Os(II) p-cymene carboxylate complex (substrate-bound)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "5-membered ruthenacycle/osmacycle from ortho C-H metalation (CMD)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl-metal intermediate after migratory insertion of acrylate",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "lactone product 4 (phthalide with CH2CO2nBu sidechain)",
+      "smiles": "O=C1OC(CC(=O)OCCCC)c2cc(C(F)(F)F)ccc12",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Metal carboxylate performs concerted metalation-deprotonation of the ortho C-H, then migratory insertion into n-butyl acrylate gives an alkyl-metal species which lactonizes to give the phthalide; the reduced metal is reoxidized at the anode (graphite felt) with H2 evolution at the Pt cathode.",
+  "rate_determining_step": "C-H metalation is not rate-limiting (KIE ~1.1-1.2 from intermolecular competition and parallel experiments)",
+  "probe_reagents": [
+    {
+      "name": "D2O (H/D exchange on substrate IV)",
+      "smiles": "[2H]O[2H]",
+      "purpose": "isotope_label",
+      "observation": "Significant ortho-aryl H/D incorporation (8-10%D) on recovered benzoic acid IV and high D incorporation at benzylic/α positions of product 4 (47%D, 31%D, 11%D), indicating reversible C-H metalation"
+    },
+    {
+      "name": "Product 4 resubjected with D2O under electro-Ru catalysis",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "0%D incorporation; [D]n-4 recovered 99% - product is not re-activated, ruling out post-catalysis exchange and confirming on-cycle C-H activation"
+    },
+    {
+      "name": "Product 4 resubjected with D2O under electro-Os catalysis",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "0%D, [D]n-4 99% - same conclusion for Os system"
+    },
+    {
+      "name": "[D]7-I (perdeuterated substrate) intermolecular competition with I",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "KIE = 1.1, suggesting C-H cleavage is not rate-determining"
+    },
+    {
+      "name": "I vs [D]7-I parallel kinetic experiments",
+      "smiles": null,
+      "purpose": "KIE",
+      "observation": "kH/kD = 0.3033/0.26 ≈ 1.2; consistent with non-rate-limiting C-H activation"
+    },
+    {
+      "name": "HR-ESI-MS detection of organometallic intermediates",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Detected Os-p-cymene species bound to carboxylate and with cyclometalated naphthoate/alkyne adducts ([M+Na] = 519.0976, 725.2071, 761.2799, and lactone product at 399.1361), supporting metallacycle pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "KIE",
+    "H/D_labeling",
+    "intermediate_trap_other",
+    "product_isotope_distribution",
+    "kinetic_order",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Both Ru and Os catalysts probed in parallel and give analogous mechanistic behavior (reversible ortho C-H metalation, low KIE, no product re-exchange). High-resolution MS identifies plausible metallacyclic intermediates including carboxylate-bound and alkyne/alkenyl-inserted species (drawn for a related naphthoic acid/alkyne system in Fig S12). Electrochemistry (CCE 4.0 mA, GF anode / Pt cathode) serves to reoxidize the metal rather than to generate substrate-centered radicals, consistent with inner-sphere electrocatalysis."
+}

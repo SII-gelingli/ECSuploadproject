@@ -1,0 +1,70 @@
+{
+  "doi": "10.1021_acs.orglett.3c03936",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Nickel-catalyzed electrochemical 1,2-diarylation of 1,3-dienes with aryl iodides under mild conditions without chemical reductants",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "mediator_cathodic"
+  ],
+  "electrochemical_role": "Cathodic reduction regenerates low-valent Ni(I) species from Ni(III) (and Ni(II)) intermediates in the Ni(I)/Ni(III) catalytic cycle, replacing the need for a stoichiometric chemical reductant",
+  "key_intermediates": [
+    {
+      "name": "Ni(I)X-Ln (species A, active catalyst generated in situ from Ni(II))",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ar-Ni(III)X-Ln (species B, oxidative addition adduct)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ar-Ni(I)-Ln (species C, after cathodic reduction of B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "allyl/homoallyl Ar-substituted Ni(I) species D (after migratory insertion of 1,3-diene into Ar-Ni bond)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ar-Ni(III)(Ar')-Ln species E (second oxidative addition with aryl iodide)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(I)X-Ln species F (post-reductive-elimination Ni)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(0) species A' (alternative Ni(0)/Ni(II) cycle)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Ni(II) precatalyst is cathodically reduced to Ni(I) (A); A undergoes oxidative addition with ArI to give Ni(III) (B), which is cathodically reduced to Ar-Ni(I) (C); migratory insertion of the 1,3-diene gives allyl-Ni(I) (D), a second oxidative addition with Ar'I gives Ni(III) intermediate E, and reductive elimination delivers the 1,2-diarylated product while regenerating Ni(I) for the next cycle.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "chiral PyOx/BiOx ligands (L1-L7) for asymmetric control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Up to 56% ee for diarylation (L6); ligand L7 switches chemoselectivity from diarylation to hydroarylation (5a, 35%, 1% ee), implicating divergent Ni-allyl reactivity"
+    },
+    {
+      "name": "solvent (DMA) as putative H-atom source in hydroarylation",
+      "smiles": "CC(=O)N(C)C",
+      "purpose": "isotope_label",
+      "observation": "Authors state the hydrogen of hydroarylation product may originate from the solvent (no explicit D-labeling reported on this page)"
+    }
+  ],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism is proposed based on literature precedent and ligand-controlled chemoselectivity (diarylation vs hydroarylation) rather than direct mechanistic probes on these pages. Authors explicitly do not rule out an alternative Ni(0)/Ni(II) pathway (cycle through A', B', C') shown in Scheme 5. Regioselectivity is exclusively 1,2- (>20:1 vs 1,4-) and E/Z >20:1 for diarylation products."
+}

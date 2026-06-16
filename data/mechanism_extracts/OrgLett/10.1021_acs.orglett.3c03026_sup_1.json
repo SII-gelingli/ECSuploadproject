@@ -1,0 +1,50 @@
+{
+  "doi": "10.1021_acs.orglett.3c03026_sup_1",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical [3+2] oxidative annulation of 4-methoxystyrene with N-Boc-4-hydroxyaniline to form a 2,3-dihydrobenzofuran via radical intermediates",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of the para-hydroxyaniline (and/or styrene) to generate phenoxyl/aryl radical and quinone-imine type intermediates that couple with the styrene",
+  "key_intermediates": [
+    {
+      "name": "phenoxyl/aminyl radical from N-Boc-4-hydroxyaniline (species II, oxidized aryloxy radical with N-Boc)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-radical adduct from styrene addition to phenoxyl radical (species III)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "ortho-quinone-imine/methide-like electrophile leading to cyclization to dihydrobenzofuran 3a",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes N-Boc-4-hydroxyaniline 2a to a phenoxyl/N-centered radical (II); this radical adds to the terminal carbon of 4-methoxystyrene 1a, generating a stabilized benzylic radical (III); further oxidation and intramolecular O-attack closes the 2,3-dihydrobenzofuran ring of 3a, with H2 evolution at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely suppressed (only trace 3); BHT adducts 4a (with aryloxy/aminyl radical, HRMS [M+Na]+ 450.2617) and 4b (with benzylic radical from styrene, HRMS [M+Na]+ 584.3335) detected"
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely suppressed (only trace 3); TEMPO adducts 5a (HRMS [M+Na]+ 387.2271) and 5b (HRMS [M+H]+ 499.3166) detected, supporting both aryloxy radical and benzylic radical intermediates"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Current screening (Table S6) identified 10 mA as optimal (93% yield, 2 h). Mechanism proposal is supported only by radical trapping with HRMS detection of adducts; no KIE, CV, or DFT data shown on these pages."
+}

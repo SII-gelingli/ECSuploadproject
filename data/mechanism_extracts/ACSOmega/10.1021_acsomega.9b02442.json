@@ -1,0 +1,54 @@
+{
+  "doi": "10.1021_acsomega.9b02442",
+  "journal": "ACSOmega",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical alkoxysulfonylation of α-substituted styrenes with sodium arenesulfinates and alcohols to give β-alkoxysulfones via radical-polar crossover",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of sodium 4-methylbenzenesulfinate to a sulfonyl radical; subsequent anodic oxidation of the benzylic C-radical adduct to a benzylic cation; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "sulfinate-centered O-radical (A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "sulfonyl radical (B, ArSO2•)",
+      "smiles": "O=S(=O)(c1ccc(C)cc1)[*]",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-radical adduct (C) from sulfonyl radical addition to styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation (D) after anodic oxidation of C",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "protonated β-alkoxysulfone (E) after MeOH attack on D",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes ArSO2Na to a sulfonyl radical (via O-radical tautomer), which adds to the styrene C=C to give a benzylic radical; this radical is further oxidized at the anode to a benzylic cation that is trapped by methanol, while the cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Addition of 3 equiv TEMPO completely inhibited the reaction (0% yield of 3a) with α-methylstyrene 1a largely recovered, indicating a radical pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Competing hydroxysulfonylation (with water as nucleophile) is observed when isopropanol is used, lowering yield to 29%. Mechanism is proposed based on TEMPO inhibition plus literature precedent (refs 13b, 14, 15); no DFT, CV, or KIE reported."
+}

@@ -1,0 +1,110 @@
+{
+  "doi": "10.1039_D2SC05423J",
+  "journal": "ChemSci",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical multicomponent reaction for C-H tetrazolation of alkyl arenes and vicinal azidotetrazolation of alkenes using acetonitrile and TMSN3",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_polar_crossover",
+    "direct_SET",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation: for alkyl arenes, anode oxidizes the arene to a radical cation that loses a proton to form a benzyl radical, which is further oxidized to a benzyl cation; for alkenes, anode oxidizes azide (from TMSN3) to azido radical which adds to alkene, then anodic oxidation gives β-azido carbocation. Cathode reduces protons to H2.",
+  "key_intermediates": [
+    {
+      "name": "ethylbenzene radical cation (phenyl radical cation intermediate)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzyl radical (A)",
+      "smiles": "[CH](C)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl carbocation (B)",
+      "smiles": "[CH+](C)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Ritter-type nitrilium ion (C)",
+      "smiles": "CC(c1ccccc1)[N+]#CC",
+      "role": "reactive"
+    },
+    {
+      "name": "azido radical (N3•)",
+      "smiles": "[N]=[N+]=[N-]",
+      "role": "reactive"
+    },
+    {
+      "name": "β-azido carbon radical (I, from alkene)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-azido carbocation (II)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-azido nitrilium ion (path a intermediate)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "diazide (III, from radical-radical coupling)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "For alkyl arenes: anode oxidizes the arene (SET) to a radical cation, deprotonation gives a benzyl radical, a second anodic SET forms the benzyl cation, MeCN traps it as a Ritter nitrilium ion, and azide closes the ring to give the tetrazole; protons are reduced to H2 at the Pt cathode. For alkenes: anodic oxidation of TMSN3-derived azide gives N3•, which adds to the alkene, the resulting C-radical is further oxidized to a β-azido cation, trapped by MeCN/azide to form the vicinal azidotetrazole.",
+  "rate_determining_step": "Anodic single-electron oxidation of the alkyl arene (transition state bears positive charge build-up, ρ = -2.97)",
+  "probe_reagents": [
+    {
+      "name": "(1-cyclopropyl-1-phenyl)ethylene (radical clock 54)",
+      "smiles": "C(=C)(c1ccccc1)C1CC1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened azidotetrazole 55 obtained (21%, 7.5:1), confirming involvement of an azido radical that adds to the alkene"
+    },
+    {
+      "name": "p-substituted ethylbenzenes (Hammett series)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Hammett ρ = -2.97 (vs σp+), much more negative than typical HAT (ρ > -1), indicating positive charge build-up in TS, consistent with radical cation/SET mechanism rather than HAT"
+    },
+    {
+      "name": "selectivity probe 21' (two benzylic C-H of different BDE: 88 vs 83.3 kcal/mol)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Sites of similar BDE but different electronic properties were well distinguished, disproving HAT pathway"
+    },
+    {
+      "name": "benzyltrimethylsilane (56)",
+      "smiles": "C[Si](C)(C)Cc1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Gave tetrazole 7 (34%) exclusively via C-Si cleavage of the radical cation, supporting radical cation (not HAT) mechanism"
+    },
+    {
+      "name": "omission of TMSN3 (control)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Ritter-type acetamide product 57 isolated in 27%, confirming benzyl carbocation/nitrilium intermediate"
+    },
+    {
+      "name": "cyclic voltammetry of substrates and TMSN3",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Ep/2 (ethylbenzene) = 2.43 V; with HFIP drops to 2.01 V; TMSN3 Ep/2 = 0.92 V; styrene Ep/2 = 2.21 V — for alkene case TMSN3 is oxidized preferentially, generating N3•"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry",
+    "kinetic_order",
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly disfavor a HAT pathway (via electrogenerated azido radical abstracting benzylic C-H) based on Hammett ρ = -2.97, BDE-insensitive selectivity in 21', and selective C-Si cleavage of benzyl-TMS 56 — favoring instead stepwise ET/PT (radical cation → deprotonation → benzyl radical → second SET → cation). For the alkene azidotetrazolation, an alternative diazide pathway (III) via radical-radical coupling (path b) or polar TMSN3 trapping of cation (path c) is considered disfavored because excess MeCN outcompetes low-concentration TMSN3 at the anode. HFIP is crucial as a radical-cation-stabilizing co-solvent that lowers the substrate oxidation potential."
+}

@@ -1,0 +1,97 @@
+{
+  "doi": "10.1039_D4OB01626B",
+  "journal": "OrgBiomolChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical cascade synthesis of five- and six-membered thiazolidine-2-imines via C–S/C–S(Se) bond formation from isothiocyanates, N-2-en-1-amines, and KSCN/KSeCN",
+  "mechanism_family": [
+    "radical_anodic",
+    "anion_initiated",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of SCN- (or SeCN-) anion to thiocyanyl radical (and its dimer (SCN)2); cathodic reduction of protons to H2",
+  "key_intermediates": [
+    {
+      "name": "N-alkylurea (unsaturated N-allyl thiourea III, from amine addition to isothiocyanate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Thiocyanyl radical SCN•",
+      "smiles": "[S]C#N",
+      "role": "reactive"
+    },
+    {
+      "name": "(SCN)2 dimer",
+      "smiles": "N#CSSC#N",
+      "role": "reactive"
+    },
+    {
+      "name": "Carbon-centered radical IV (thiocyanyl-added to olefin of III)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cationic intermediate V (after anodic SET of IV)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cationic intermediate VI (from III + (SCN)2, ionic path b)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "N-alkylurea intermediate 41 (1-allyl-1-methyl-3-phenylthiourea, isolated)",
+      "smiles": "CN(CC=C)C(=S)Nc1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Thiazolidine-2-imine product VII",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Amine adds to isothiocyanate to form N-allyl thiourea III; at the anode, SCN- is oxidized to SCN• (and dimerizes to (SCN)2). Path a: SCN• adds to the pendant olefin of III to give C-radical IV, which is further anodically oxidized to cation V and cyclized by intramolecular S-attack with deprotonation to product VII. Path b: (SCN)2 acts as electrophile on III to give cation VI plus SCN-, then cyclization. Cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Yield dropped to 12%, indicating involvement of radical pathway"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield dropped to 31%, supporting radical intermediate"
+    },
+    {
+      "name": "Cinnamyl-type aryl-substituted N-2-en-1-amine (42)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Six-membered thiazolidine-2-imine 43 obtained in 76% yield, consistent with stabilized benzylic radical intermediate"
+    },
+    {
+      "name": "Isolated N-alkylurea 41",
+      "smiles": "CN(CC=C)C(=S)Nc1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Isolated in 92% under standard conditions in 5 min, confirming initial amine + isothiocyanate addition"
+    },
+    {
+      "name": "KSCN (CV probe)",
+      "smiles": "[K+].[S-]C#N",
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak at 1.40 V vs Ag/AgCl, attributed to SCN- → SCN• then dimerization to (SCN)2; thiourea 41 showed no oxidation peak"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "isolation_of_intermediate",
+    "cyclic_voltammetry",
+    "radical_clock"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors propose two parallel pathways: a radical path a (SCN• addition then anodic oxidation to cation) and an ionic path b ((SCN)2 acting as electrophile). Both are stated to operate; favored description in scheme starts with path a. Reaction is metal-, oxidant-, and electrolyte-free, undivided cell with graphite electrodes."
+}

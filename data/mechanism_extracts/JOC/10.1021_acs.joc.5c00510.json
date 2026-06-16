@@ -1,0 +1,86 @@
+{
+  "doi": "10.1021_acs.joc.5c00510",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical nitroindolylation bifunctionalization of arylalkenes using NaNO2 as nitro radical source, LiBr as mediator, and indoles to install -NO2 and indolyl groups across styrenes",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of nitrite (NO2-) to nitro free radical (NO2•), facilitated by Cu(I)/Cu(II) and B(C6F5)3; bromide is also oxidized to Br• which traps the benzylic radical; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "nitro free radical (•NO2)",
+      "smiles": "[N+](=O)[O]",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbon radical Int I from NO2 addition to styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbocation Int II from Cu(II) oxidation of Int I",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "bromonitro intermediate 5 (PhC6H4-CH(Br)-CH2NO2)",
+      "smiles": "BrC(c1ccc(-c2ccccc2)cc1)C[N+](=O)[O-]",
+      "role": "reactive"
+    },
+    {
+      "name": "Cu(I)/Cu(II) redox couple from CuOTf",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "3-nitroindole side product pathway intermediate",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "nitrostyrene side product (path d, H elimination)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes NO2- to •NO2 (mediated by Cu(I)→Cu(II) and B(C6F5)3); •NO2 adds to styrene 1a giving benzylic radical Int I, which Cu(II) further oxidizes to benzylic cation Int II; Br- captures Int II to form bromonitro intermediate 5, which undergoes SN2 by N-methylindole at C3 to deliver 4aa, while the cathode reduces H+ to H2.",
+  "rate_determining_step": "SN2 displacement of bromide in intermediate 5 by C3 of N-methylindole to form the C-C bond",
+  "probe_reagents": [
+    {
+      "name": "step-by-step loading (1a + NaNO2 first, then indole 3a)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Product 4aa obtained in 82% yield, supporting stepwise formation of a bromonitro intermediate before indole addition"
+    },
+    {
+      "name": "independently prepared bromonitro compound 5",
+      "smiles": "BrC(c1ccc(-c2ccccc2)cc1)C[N+](=O)[O-]",
+      "purpose": "stoichiometric_intermediate",
+      "observation": "5 + indole 3a with B(C6F5)3 gave 4aa in 97% yield, confirming 5 as on-cycle intermediate; structure verified by 1H/13C NMR"
+    },
+    {
+      "name": "NaNO3 additive",
+      "smiles": "[Na+].[O-][N+](=O)=O",
+      "purpose": "redox_probe",
+      "observation": "CV shows strong oxidation peak at 0.62 V for NaNO2+NaNO3 vs 0.64 V for NaNO2 alone, indicating nitrate enhances Faradaic efficiency of nitrite oxidation"
+    },
+    {
+      "name": "B(C6F5)3",
+      "smiles": "FC1=C(F)C(F)=C(B(C2=C(F)C(F)=C(F)C(F)=C2F)C2=C(F)C(F)=C(F)C(F)=C2F)C(F)=C1F",
+      "purpose": "other",
+      "observation": "Lewis acid promotes nitrite oxidation to •NO2 (synergistic effect seen in CV); 0.5 equiv used in standard conditions"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "intermediate_trap_other",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "EIS (impedance spectroscopy) data also support the role of NaNO3 in lowering charge-transfer resistance. Two competing side pathways are noted: path b giving 3-nitroindole (direct nitration of indole) and path d giving β-nitrostyrene via H-elimination from Int II; these must be suppressed. No TEMPO/BHT radical trap or KIE experiments were reported; mechanism is supported mainly by CV/EIS, stepwise loading, and isolation of bromonitro intermediate 5."
+}

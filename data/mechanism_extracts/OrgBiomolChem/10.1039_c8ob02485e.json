@@ -1,0 +1,61 @@
+{
+  "doi": "10.1039_c8ob02485e",
+  "journal": "OrgBiomolChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical Co-catalyzed oxidative radical annulation of N-arylacrylamides with phenylhydrazines or potassium alkyltrifluoroborates to give 3,3-disubstituted oxindoles.",
+  "mechanism_family": [
+    "radical_anodic",
+    "electrocatalysis_inner_sphere",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation generates phenyl or alkyl radicals from PhNHNH2 or R-BF3K with Co(II)/Co(III) redox mediation; cathodic reduction of protons gives H2.",
+  "key_intermediates": [
+    {
+      "name": "phenyl or benzyl radical from anodic oxidation of PhNHNH2 or R-BF3K",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Co(III)(OPiv)3 / Co(II)(OPiv)2 redox mediator",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "A1/A2: tertiary C-radical from addition of Ph/benzyl radical to acrylamide alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "B1/B2: cyclohexadienyl (aryl) radical after intramolecular ipso/ortho cyclization onto N-aryl ring",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "C1/C2: cyclohexadienyl cation after anodic SET oxidation of B",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "molecular N2 and H2 byproducts",
+      "smiles": "N#N",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Co(II) to Co(III), which oxidizes phenylhydrazine (losing N2 and H+) or R-BF3K to a carbon radical; this radical adds to the acrylamide alkene to give radical A, which cyclizes onto the N-aryl ring to give cyclohexadienyl radical B; B is oxidized at the anode (via Co(III)) to cation C, which loses H+ to give the oxindole, while protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO (TMEPO)",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Only trace product formed with 1.5 equiv TEMPO in both PhNHNH2 and BnBF3K reactions, indicating radical intermediates."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "product_isotope_distribution",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Headspace GC analysis confirmed N2 + H2 byproducts for the phenylhydrazine route and H2 byproduct for the benzyltrifluoroborate route, supporting anodic oxidation/cathodic proton reduction. Co(OAc)2/NaOPiv act as an inner-sphere redox mediator (Co(II)/Co(III) cycle) at the anode."
+}

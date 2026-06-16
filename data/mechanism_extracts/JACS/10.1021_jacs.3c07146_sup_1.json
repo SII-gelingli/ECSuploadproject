@@ -1,0 +1,51 @@
+{
+  "doi": "10.1021_jacs.3c07146_sup_1",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical coupling involving anodic oxidation of arenes/thiophenes/styrenes, studied by cyclic voltammetry to establish oxidation potentials of substrates",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_cation",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of electron-rich (hetero)arenes and styrenes to their radical cations at a glassy carbon electrode (E_p/2 ranging from 1.26 V to 2.19 V vs SCE)",
+  "key_intermediates": [
+    {
+      "name": "2-methoxythiophene-derived radical cation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "2-methylthiophene-derived radical cation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "2-methoxystyrene radical cation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical (post-deprotonation/fragmentation)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "The anode performs single-electron oxidation of the electron-rich (hetero)aromatic substrate to a radical cation; subsequent chemistry (e.g., deprotonation to a benzylic radical) is probed by radical trapping experiments.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "benzylic radical trap (TEMPO or similar, as indicated by 'Benzylic radical trapping experiment' section)",
+      "smiles": null,
+      "purpose": "radical_trap",
+      "observation": "Section header indicates a benzylic radical trapping experiment was performed to evidence a benzylic radical intermediate (details on subsequent pages not shown)"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_other",
+    "redox_probe"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Only the CV portion and the header of a benzylic radical trapping experiment are visible. CV data (E_p/2: compound 49 = 1.26 V; compound 2 = 1.70 V; compound 47 = 1.46 V; compound 1 = 2.00 V; compound 3 = 1.71 V; 2-acetylthiophene = 2.19 V) rank substrate oxidation potentials, supporting that electron-rich heteroaromatics/styrenes are oxidized first under anodic conditions. Probe reagent identity for the benzylic radical trapping experiment is not visible on this page."
+}

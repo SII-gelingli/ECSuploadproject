@@ -1,0 +1,116 @@
+{
+  "doi": "10.1021_jacs.4c06207",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Copper-electrocatalyzed vicinal 1,2-bis(difluoromethylation) of alkenes using Zn(CF2H)2(DMPU)2 as a dichotomous CF2H radical and anion source",
+  "mechanism_family": [
+    "radical_anodic",
+    "electrocatalysis_inner_sphere",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of Zn(CF2H)2(DMPU)2 (Eonset = 0.25 V vs Fc/Fc+) generates a CF2H radical; a second anodic oxidation (Eonset = 0.20 V) converts alkyl-Cu(II)(CF2H) to alkyl-Cu(III)(CF2H)X intermediate; cathode reduces Zn(II) to Zn(0) (Eonset = -1.8 V) to balance charge",
+  "key_intermediates": [
+    {
+      "name": "CF2H radical (10)",
+      "smiles": "[CH](F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "secondary benzylic alkyl radical from alkene addition (11)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cu(II)-CF2H complex (13, L1CuII(CF2H)X)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl-Cu(III)(CF2H)(X) complex (14, X = OTf or ClO4)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cu(I)-X complex (15)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Cu(I)-CF2H complex (16, L1Cu(I)CF2H)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cu(II)(OTf)2 precatalyst (12)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "benzylic carbocation (off-pathway, gives hydroxydifluoromethyl byproduct 3a')",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Zn(CF2H)2(DMPU)2 to release a CF2H radical that adds to the alkene terminus, giving a secondary benzylic radical; this radical is captured by an in-situ-formed Cu(II)-CF2H species to form an alkyl-Cu(III)(CF2H)(X) intermediate that undergoes reductive elimination to install the second CF2H group. The resulting Cu(I)-X is re-transmetalated by Zn(CF2H)2(DMPU)2 (the resulting Cu(I)-CF2H is reoxidized anodically to Cu(II)-CF2H), while at the cathode Zn(II) is reduced to Zn(0).",
+  "rate_determining_step": "Reductive elimination from alkyl-Cu(III)(CF2H)(X) intermediate (TS-RE, ΔG‡ ≈ 18.18 kcal/mol from DFT); radical combination with Cu(II) is barrierless",
+  "probe_reagents": [
+    {
+      "name": "vinylcyclopropane radical clock (substrate 4)",
+      "smiles": "C(=C)(c1ccccc1)C2CC2c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 6 obtained as major product (42%) vs cyclopropane-retained 7 (8%), confirming benzylic radical intermediate (k ~ 10^8 s^-1)"
+    },
+    {
+      "name": "unactivated terminal alkene 8",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Gave bis(difluoromethylation) product 9 in 42%, ruling out direct alkene oxidation pathway (path B) since unactivated alkene has higher oxidation potential"
+    },
+    {
+      "name": "Zn(SO2CF2H)2",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Conventional radical CF2H source — gave only hydroxydifluoromethylated 3a' (40%), no vicinal bis product, showing need for dichotomous reagent"
+    },
+    {
+      "name": "NaSO2CF2H",
+      "smiles": "O=S(=O)([CH]F)[Na]",
+      "purpose": "other",
+      "observation": "Only 3a' (42%); no bis(difluoromethylation)"
+    },
+    {
+      "name": "TMSCF2H",
+      "smiles": "C[Si](C)(C)C(F)F",
+      "purpose": "other",
+      "observation": "No product detected"
+    },
+    {
+      "name": "no current (control)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "n.d./n.d. — verifies electrochemical input required"
+    },
+    {
+      "name": "no Cu catalyst (control)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only 3a' (28%); no vicinal bis-CF2H — Cu essential for second CF2H delivery"
+    },
+    {
+      "name": "Zn(CF3)2(DMPU)2 / Zn(C3F7)2(DMPU)2 / ZnEt2",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "None gave vicinal bis(alkylation), highlighting unique dual role of Zn(CF2H)2(DMPU)2"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry",
+    "DFT",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Alternative mechanism considered: direct anodic oxidation of alkene to radical cation followed by nucleophilic CF2H addition (path B) — disfavored because (i) unactivated alkene 8 still reacts, (ii) Ep of alkene (2.2 V) ≫ Ep of 2 (0.75 V). Off-pathway: in absence of Cu, benzylic radical is further oxidized to carbocation and trapped by trace water to give hydroxydifluoromethyl product 3a' (radical-polar crossover). DFT shows alkyl-Cu(III)(CF2H)(X) with X = ClO4/OTf has ΔΔG‡ 8–10 kcal/mol lower than bis-CF2H Cu(III), explaining role of counteranion. 19F NMR verified Cu-CF2H intermediates 13 and 16. Cathodic event is Zn(II)→Zn(0) deposition confirmed by EDX."
+}

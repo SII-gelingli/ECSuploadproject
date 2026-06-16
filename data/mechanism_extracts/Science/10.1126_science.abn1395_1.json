@@ -1,0 +1,99 @@
+{
+  "doi": "10.1126_science.abn1395_1",
+  "journal": "Science",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical decarboxylative sp2-sp3 cross-coupling of NHPI redox-active esters with vinyl iodides using a Ni/bpy catalyst on Ag-nanoparticle-functionalized RVC cathode with sacrificial Mg anode",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "radical_cathodic",
+    "sacrificial_anode",
+    "mediator_cathodic"
+  ],
+  "electrochemical_role": "Cathodic reduction of Ag(I) (from AgNO3 + halide) deposits Ag nanoparticles on RVC; the Ag-NP-modified cathode then reduces Ni(II)(bpy) to lower-valent Ni species that activates the NHPI redox-active ester (RAE) to an alkyl radical (with loss of CO2 and phthalimide), which is captured by a Ni-alkenyl species formed from oxidative addition of the vinyl iodide; sacrificial Mg anode is oxidized to Mg(2+)",
+  "key_intermediates": [
+    {
+      "name": "Ag nanoparticles on RVC cathode (functionalized electrode)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(I)(bpy) halide",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(III)(bpy)(alkenyl)(alkyl) intermediate prior to reductive elimination",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ni(II)(bpy)(alkenyl) halide (after oxidative addition of vinyl iodide)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Alkyl radical from NHPI-RAE decarboxylation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Phthalimide-N-oxyl / phthalimide byproduct",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "Over-reduced Ni(0) / aggregated Ni(I) (catalyst deactivation, passivating film)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Initial cathodic charge (0–0.3 F/mol) reduces Ag(I) (generated in situ from AgNO3 + halide) to Ag(0) nanoparticles on the RVC cathode; subsequently the Ag-NP cathode reduces Ni(II)(bpy) to Ni(I), which fragments the NHPI redox-active ester into an alkyl radical, CO2, and phthalimide, while a separate Ni(II)-alkenyl (from oxidative addition of vinyl iodide) intercepts the radical and undergoes reductive elimination to forge the sp2-sp3 bond; Mg(0) anode supplies the balancing oxidation.",
+  "rate_determining_step": "Not explicitly identified; induction period is governed by Ag(I) reduction/deposition prior to productive cross-coupling",
+  "probe_reagents": [
+    {
+      "name": "AgNO3 omission control",
+      "smiles": "[Ag+].[O-][N+](=O)[O-]",
+      "purpose": "other",
+      "observation": "Without AgNO3, yield drops to 20%; with 0.3 equiv AgNO3 yield rises to 52%, confirming Ag-NP role"
+    },
+    {
+      "name": "LiCl additive / halide source control",
+      "smiles": "[Li+].[Cl-]",
+      "purpose": "other",
+      "observation": "Halide required to form photosensitive AgCl; without LiCl, NiCl2 can serve as halide donor; prolonged stir before electrolysis decomposes AgCl photochemically and lowers yield to 17%"
+    },
+    {
+      "name": "Pure Ag electrode / Ag-plated electrode substitution",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Bulk Ag electrodes performed poorly; Ag-NP on RVC was essential, indicating nanoparticulate Ag (not bulk) is the active surface"
+    },
+    {
+      "name": "Stoichiometric Mg reductant (no current)",
+      "smiles": "[Mg]",
+      "purpose": "other",
+      "observation": "Reaction does not proceed efficiently without electrolysis even with Mg reductant; electrochemistry is essential"
+    },
+    {
+      "name": "Benzyl chloride redox probe at Ag-NP vs bare GC electrode",
+      "smiles": "ClCc1ccccc1",
+      "purpose": "redox_probe",
+      "observation": "370 mV positive shift of BnCl reduction on Ag-NP-modified electrode, confirming Ag-NP lowers overpotential"
+    },
+    {
+      "name": "Methyl ester vinyl iodide 40 vs free-acid vinyl iodide 5 (RDE comparison)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "ECcat current observed with 40 (no passivation in presence of RAE); with acid 5, a second reduction wave at -1.48 V persists even with RAE, attributed to Ni(II/III)-alkenyl reduction to Ni(I)-alkenyl that deactivates via dimerization"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "redox_probe_via_BnCl",
+    "UV_vis",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors propose four distinct roles for the Ag-NP layer: (I) prevents catalyst adsorption/passivation, (II) lowers cathode overpotential (-1.15 V vs -1.66 V without AgNO3, a 510 mV shift) keeping it above Ni-catalyst decomposition potential, (III) slows diffusion of RAE to the electrode (Levich analysis shows 2x lower diffusion coefficient on Ag-NP electrode), and (IV) prevents sequential over-reduction of Ni(II/III)-alkenyl to deactivated Ni(I)-alkenyl. Electrode surface characterized by SEM/TEM/EDS showing 10–100 nm Ag nanoparticles. Alternative role of bulk silver was ruled out by control with pure Ag electrodes. A comproportionation pathway between Ni(III) and Ni(I) species is also drawn in the proposed cycle."
+}

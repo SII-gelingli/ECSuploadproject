@@ -1,0 +1,44 @@
+{
+  "doi": "10.1038_s41467-023-36000-6_sup_1",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical synthesis of a DABCO-derived bromine complex (PTC1-Br2) from a benzyl-DABCO chloride salt via anodic oxidation of bromide in an undivided cell with HBr additive",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of Br- (from NaBr) at the Pt anode generates Br2, which is sequestered by the DABCO nitrogen of PTC1 to form the PTC1-Br2 charge-transfer/N-Br2 complex; HBr additive is required to enable formation of the isolable yellow solid",
+  "key_intermediates": [
+    {
+      "name": "PTC1 (benzyl-DABCO chloride salt)",
+      "smiles": "[Cl-].FC(F)(F)c1cc(CN2(CC3)CCN3CC2)cc(C(F)(F)F)c1",
+      "role": "reactive"
+    },
+    {
+      "name": "Br2 (anodically generated)",
+      "smiles": "BrBr",
+      "role": "transient"
+    },
+    {
+      "name": "PTC1-Br2 complex (DABCO·Br2 adduct, yellow solid)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the Pt anode, Br- is oxidized to Br2; the tertiary amine of the DABCO-based PTC1 binds Br2 to give the PTC1-Br2 complex, with HBr additive protonating/balancing the system to enable productive complex isolation (without it only trace product forms).",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "HBr additive (control: no additive vs 2 equiv HBr)",
+      "smiles": "Br",
+      "purpose": "other",
+      "observation": "Without additive only trace PTC1-Br2 was obtained; with 2 equiv HBr the complex was isolated in 81% yield as a yellow solid"
+    }
+  ],
+  "evidence_types_used": [
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "This page documents the stoichiometric electrochemical preparation and isolation/characterization (1H, 13C NMR) of the proposed bromenium/Br2-DABCO intermediate (PTC1-Br2) implicated as the active brominating species in the parent catalytic reaction; HBr appears essential to stabilize/form the isolable complex."
+}

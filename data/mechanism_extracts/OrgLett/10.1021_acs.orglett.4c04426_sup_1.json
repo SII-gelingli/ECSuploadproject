@@ -1,0 +1,62 @@
+{
+  "doi": "10.1021_acs.orglett.4c04426_sup_1",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical carboxylative cyclization of 2-isocyano-styrenes with CO2 using a sacrificial Mg anode to give 2-oxindole-3-acetic acids.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "sacrificial_anode",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Cathodic reduction generates a CO2 radical anion (and/or substrate-derived radical) while the Mg anode is sacrificially oxidized to Mg(II); the CO2 radical anion adds to the vinyl isocyanide, triggering radical cyclization onto the isocyano carbon.",
+  "key_intermediates": [
+    {
+      "name": "CO2 radical anion",
+      "smiles": "[O-]C(=O)[O]",
+      "role": "reactive"
+    },
+    {
+      "name": "alpha-carboxyl benzyl radical from CO2 addition to vinyl group",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "imidoyl radical from cyclization onto isocyanide carbon",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "imidoyl anion / Mg-amide after further reduction",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "2-(1-formyl-5-methyl-2-oxo-3-phenylindolin-3-yl)acetic acid (2a)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the Fe cathode, CO2 is reduced to CO2 radical anion which adds to the terminal alkene of the 2-isocyanostyrene; the resulting benzylic radical cyclizes onto the isocyanide to form an imidoyl radical, which is further reduced and protonated/formylated, while the Mg anode is consumed to balance charge.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely suppressed; starting material 1a recovered in 86% yield, indicating a radical intermediate is intercepted."
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Reaction partially proceeds, giving the desired acid 2a (22%) and the deformyl/desaturated byproduct 3a (3,5-dimethyl-2-oxo-3-phenylindoline-1-carbaldehyde, 21%), consistent with a radical pathway not fully quenched by BHT."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Only the radical trapping experiments and a cyclic voltammetry section are visible on this page; CV data details and any DFT support are not shown. The formation of byproduct 3a under BHT conditions hints at a competing pathway lacking the CO2-derived carboxymethyl group, suggesting CO2 incorporation occurs after initial radical generation."
+}

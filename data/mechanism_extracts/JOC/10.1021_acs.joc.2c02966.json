@@ -1,0 +1,89 @@
+{
+  "doi": "10.1021_acs.joc.2c02966",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical transition-metal-free sulfonylative cycloetherification/cycloesterification of unsaturated alcohols (and acids) with sulfonyl hydrazides to give saturated sulfonyl-substituted 5- to 8-membered O-heterocycles",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of sulfonyl hydrazide to its radical cation, which loses H+/N2/H2 to generate the sulfonyl radical; the resulting alkyl radical adduct is further oxidized at the anode to a carbocation that is trapped intramolecularly by the tethered hydroxyl; protons are reduced to H2 at the cathode",
+  "key_intermediates": [
+    {
+      "name": "sulfonyl hydrazide radical cation (A)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "sulfonyl radical (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered alkyl radical from sulfonyl radical addition to alkene (C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl carbocation after second anodic oxidation (D)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "The anode oxidizes the sulfonyl hydrazide to a radical cation that loses H+, N2, and H2 to give a sulfonyl radical; this radical adds to the alkene of the unsaturated alcohol to give a benzylic C-radical, which is oxidized again at the anode to a carbocation that is captured by the pendant OH (with loss of H+) to form the cyclic ether; cathode reduces H+ to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "N-phenyl tosylhydrazide (2d-1)",
+      "smiles": "Cc1ccc(S(=O)(=O)N(Nc2ccccc2))cc1",
+      "purpose": "other",
+      "observation": "Gave 3ad in 62% yield, showing the terminal N-H is not essential"
+    },
+    {
+      "name": "N-morpholinyl tosylhydrazide (2d-2)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Gave 3ad in 54% yield, confirming N-H bonds in hydrazide are non-essential"
+    },
+    {
+      "name": "N-benzoyl-N-morpholinyl tosylhydrazide (2d-3)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Gave 3ad in 35% yield, further supporting non-essential N-H"
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3ad not detected; TEMPO-alkyl adduct detected by HRMS, indicating an alkyl radical intermediate"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "3ad only in trace; BHT-sulfonyl adduct 7e isolated in 27%, supporting sulfonyl radical"
+    },
+    {
+      "name": "1,1-diphenylethylene",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "3ad in trace; Ts-CH2-C(Ph)=CHPh adduct detected by GC-MS, supporting sulfonyl radical generation"
+    },
+    {
+      "name": "cyclic voltammetry of 1a and 2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peak of 2a at 1.67 V and of 1a at 2.52 V (vs Ag/AgCl) shows the sulfonyl hydrazide is preferentially oxidized at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Alternative pathway where the C-radical C is intercepted by another oxidant rather than oxidized at the anode to a cation cannot be fully excluded, but CV and trapping experiments favor the radical/cation (radical-polar crossover) sequence depicted in Scheme 4. Method is catalyst- and oxidant-free, undivided cell, n-Bu4NClO4 electrolyte, carbon fiber anode / Pt cathode, 10 mA, MeCN, 70 °C."
+}

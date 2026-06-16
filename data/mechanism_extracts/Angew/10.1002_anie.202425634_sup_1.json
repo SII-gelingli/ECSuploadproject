@@ -1,0 +1,56 @@
+{
+  "doi": "10.1002_anie.202425634_sup_1",
+  "journal": "Angew",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical cyclopropanation of alkenes with diethyl malonate using a ferrocene mediator to form aryl-substituted cyclopropane-1,1-dicarboxylates",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "electrocatalysis_outer_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation mediated by ferrocene (Fc/Fc+) generates a malonyl radical from diethyl malonate; the radical adds to the tethered alkene and after further oxidation the resulting carbanion (Int3) undergoes intramolecular SN2-type ring closure displacing iodide",
+  "key_intermediates": [
+    {
+      "name": "malonyl radical (from diethyl malonate)",
+      "smiles": "CCOC(=O)[CH]C(=O)OCC",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical adduct after addition to alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "TEMPO adduct (compound 91) of the C-radical intermediate",
+      "smiles": null,
+      "role": "intermediate_trap"
+    },
+    {
+      "name": "iodinated malonate intermediate Int3 (anion after deprotonation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclopropane product 1",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Ferrocene is oxidized at the anode to Fc+, which oxidizes diethyl malonate to a malonyl radical; this radical adds across the tethered alkene to give a C-radical that is further oxidized/iodinated and deprotonated to Int3, which closes via SN2-type displacement of iodide to form the cyclopropane.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "TEMPO adduct 91 (C16H29NO5, HRMS m/z 316.2124) was detected, and TEMPO-malonate adduct 92 was also observed; desired cyclopropane product was not detected, supporting a radical intermediate"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "DFT",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "DFT (SMD(DMA/H2O)/ωB97M-V/def2-QZVPP//IEFPCM/M06-2X-D3/ma-SVP) supports an SN2-type ring closure from Int3 (ΔG = -29.7 kcal/mol, ΔG‡ = 7.3 kcal/mol) as thermodynamically and kinetically facile. Theoretical oxidation potentials were calculated to justify the Fc mediator (vs. SHE, with E_SHE^abs = 4.280 V). Alternative non-mediated direct anodic oxidation pathway was considered but mediator pathway is favored."
+}

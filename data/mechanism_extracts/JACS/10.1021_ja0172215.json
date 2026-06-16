@@ -1,0 +1,62 @@
+{
+  "doi": "10.1021_ja0172215",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical aziridination of olefins using N-aminophthalimide as nitrene precursor under metal-free anodic oxidation conditions",
+  "mechanism_family": [
+    "nitrene",
+    "direct_SET",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of N-aminophthalimide to a nitrogen-centered species that transfers to olefin; protons reduced at platinum cathode to H2",
+  "key_intermediates": [
+    {
+      "name": "N-aminophthalimide radical/oxidized species (formal nitrene precursor)",
+      "smiles": "O=C1N(N)C(=O)c2ccccc12",
+      "role": "reactive"
+    },
+    {
+      "name": "phthalimido-nitrene (formal nitrene transferred to olefin)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclohexene substrate",
+      "smiles": "C1CCC=CC1",
+      "role": "reactive"
+    },
+    {
+      "name": "N-cyclohexyl phthalimide aziridine product",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At +1.80 V (vs Ag wire) on platinum anode, N-aminophthalimide undergoes one-electron oxidation (CV shows anodic peaks at +1.35 and +1.68 V) generating an N-centered oxidized intermediate that, with assistance of NEt3/AcOH, transfers a nitrene-equivalent to the olefin; protons are reduced at the cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of N-aminophthalimide",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Two irreversible one-electron oxidations at +1.35 V and +1.68 V vs Ag/AgCl"
+    },
+    {
+      "name": "cyclic voltammetry of cyclohexene",
+      "smiles": "C1CCC=CC1",
+      "purpose": "redox_probe",
+      "observation": "Only -1.0 μA anodic current at +1.68 V vs -152 μA for N-aminophthalimide, indicating olefin oxidation is kinetically disfavored (overpotential)"
+    },
+    {
+      "name": "cyclic voltammetry of Pb(OAc)2",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Pb(II)/Pb(IV) oxidation at +1.60 V vs Ag/AgCl, enabling catalytic Pb variant as control"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "weak",
+  "notes": "A related Pb(OAc)4-catalyzed (10 mol%) electrochemical variant was demonstrated, where Pb(II) is reoxidized to Pb(IV) at +1.60 V and acts as mediator; the metal-free pathway is favored as the main contribution and proceeds at slightly higher potential (+1.80 V) where direct N-aminophthalimide oxidation dominates over olefin background oxidation. Exact nature of the transferred nitrogen species (free singlet/triplet nitrene vs metal-free aminyl radical) is not definitively assigned."
+}

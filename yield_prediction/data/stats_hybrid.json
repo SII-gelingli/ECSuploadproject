@@ -1,0 +1,12 @@
+{
+  "atom_feat_dim": 42,
+  "bond_feat_dim": 10,
+  "xtb_feat_dim": 11,
+  "num_electrode_types": 19,
+  "num_cell_types": 6,
+  "current_mean": 0.0,
+  "current_std": 0.0,
+  "n_train": 6754,
+  "n_val": 844,
+  "n_test": 845
+}

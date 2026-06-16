@@ -1,0 +1,71 @@
+{
+  "doi": "10.1038_s41467-019-13024-5",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Diastereoselective electrocatalytic 1,2-diamination of di- and tri-substituted alkenes with sulfamides using a triarylamine redox mediator, producing cyclic sulfamides with H2 evolution at the cathode",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_cation",
+    "radical_polar_crossover",
+    "electrocatalysis_outer_sphere",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anode oxidizes tris(2,4-dibromophenyl)amine mediator to its aminium radical cation, which performs outer-sphere SET oxidation of the alkene to a radical cation; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "triarylaminium radical cation (NAr3•+) mediator",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkene radical cation (II•+)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-amino carbon radical (IV) from sulfamide addition to alkene radical cation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-amino carbocation (V) after second SET oxidation",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclic sulfamide product (VI)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes triarylamine 1 to NAr3•+, which performs SET oxidation of the alkene to a radical cation; the sulfamide N–H adds to give a β-amino C-radical, which is oxidized by a second equivalent of NAr3•+ to a carbocation that cyclizes diastereoselectively to the 5-membered cyclic sulfamide. Protons released are reduced at the Pt cathode to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "triarylamine redox catalysts of varying Ep/2 (1, 6, 7, 8)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Higher-potential mediator 1 (Ep/2 = 1.48 V vs SCE) gave product; lower-potential analogs 6–8 (1.06–1.33 V) were less effective, consistent with need to oxidize alkene (Ep/2 = 1.66–1.80 V)"
+    },
+    {
+      "name": "pure E- vs Z-isomer of alkene 2",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Both isomers converged to the same trans diastereomer 5 (>20:1 dr; 65% and 69% yield) supporting a stepwise radical-cation pathway with stereochemistry set during cyclization"
+    },
+    {
+      "name": "cyclic voltammetry of 1, 2, 3 (and mixtures)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Catalytic current enhancement upon mixing 1 with alkenes 2 and 3 confirms mediator-based electrocatalytic oxidation of the alkenes"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "redox_probe",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Stereoselectivity is rationalized by cyclization of cationic intermediate V placing R1/R2 trans on the nascent 5-membered ring; no radical traps (TEMPO/BHT), KIE, or DFT are explicitly shown on these pages. Alternative direct anodic oxidation of alkene is disfavored because of self-dimerization and electrode-surface reactivity, motivating the indirect (mediated) electrolysis."
+}

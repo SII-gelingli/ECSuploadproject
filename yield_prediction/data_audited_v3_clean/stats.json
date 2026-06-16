@@ -1,0 +1,59 @@
+{
+  "source_root": "/inspire/hdd/global_user/gelingli-253114010248/WDproject2/reactions_by_journal_alkene_ec_audited",
+  "test_year_threshold": 2025,
+  "reaction_split": {
+    "train": 19124,
+    "val": 2234,
+    "test": 2947
+  },
+  "feature_dim": 6144,
+  "num_classes": {
+    "anode": 23,
+    "cathode": 23,
+    "cell_type": 4,
+    "solvent": 79,
+    "electrolyte": 309,
+    "catalyst": 526,
+    "reagent": 545,
+    "ligand": 176,
+    "additive": 104,
+    "anode_fine": 43,
+    "cathode_fine": 49
+  },
+  "absent_index": {
+    "anode": 22,
+    "cathode": 22,
+    "cell_type": 5,
+    "solvent": 0,
+    "electrolyte": 0,
+    "catalyst": 0,
+    "reagent": 0,
+    "ligand": 0,
+    "additive": 0
+  },
+  "amount_fields": [
+    "catalyst_equiv",
+    "reagent_equiv",
+    "ligand_equiv",
+    "additive_equiv",
+    "electrolyte_M",
+    "current_mA",
+    "current_density",
+    "potential_V",
+    "temperature_C",
+    "time_h"
+  ],
+  "num_classes_v3": {
+    "reagent_class_v3": 103,
+    "catalyst_class_v3": 49,
+    "catalyst_mech_tags": 4,
+    "ligand_class_v3": 20,
+    "solvent_class_v3": 27,
+    "electrolyte_cation": 23,
+    "electrolyte_anion": 26,
+    "additive_class_v3": 105,
+    "anode_material": 15,
+    "cathode_material": 15,
+    "cell_class_v3": 4
+  }
+}

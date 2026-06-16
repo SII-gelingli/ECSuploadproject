@@ -1,0 +1,76 @@
+{
+  "doi": "10.1021_acs.joc.3c02001",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical difluoromethylation-carboxylation and -deuteration of alkenes using difluoromethyltriphenylphosphonium bromide as a CF2H radical precursor with CO2 or D2O as electrophile",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_polar_crossover",
+    "sacrificial_anode"
+  ],
+  "electrochemical_role": "Cathodic reduction of [Ph3PCF2H]+Br- generates a CF2H radical; the benzylic radical adduct is further cathodically reduced to a benzyl anion which traps CO2 or D2O; Al anode is sacrificially oxidized to Al3+",
+  "key_intermediates": [
+    {
+      "name": "CF2H radical from cathodic reduction of phosphonium salt",
+      "smiles": "[CH](F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic radical A from CF2H addition to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Benzyl anion B from further cathodic reduction of A",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Alkene radical anion C (minor pathway)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Triphenylphosphine byproduct",
+      "smiles": "c1ccc(P(c2ccccc2)c2ccccc2)cc1",
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Cathode reduces [Ph3PCF2H]+ to give CF2H radical (extruding PPh3); the CF2H radical adds to the alkene to form a benzylic radical, which is reduced again at the cathode to a benzyl anion that attacks CO2 (then esterified with TMSCHN2) or D2O. Al anode is oxidized sacrificially.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "(1-cyclopropylvinyl)benzene radical clock with D2O",
+      "smiles": "C(=C)(C1CC1)c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened HF2C-CH=CH-CH2-CH(Ph)-D product detected by HRMS, supporting CF2H radical intermediate"
+    },
+    {
+      "name": "(1-cyclopropylvinyl)benzene radical clock with CO2",
+      "smiles": "C(=C)(C1CC1)c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product with CF2H and COOH groups detected by HRMS, supporting radical intermediate"
+    },
+    {
+      "name": "1,1-Diphenylethylene with D2O",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "isotope_label",
+      "observation": "Product formed in 63% yield with 86% D incorporation, consistent with benzyl anion intermediate trapped by D2O"
+    },
+    {
+      "name": "Cyclic voltammetry of phosphonium salt and DPE",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "[Ph3PCF2H]+Br- is more easily reduced (-1.640 V) than 1,1-diphenylethylene (-2.562 V); mixture shows new wave suggesting radical anion of alkene possible at more negative potentials"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "H/D_labeling",
+    "cyclic_voltammetry",
+    "product_isotope_distribution",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors propose a minor pathway where the alkene is reduced to its radical anion C, which couples with CF2H radical to give anion B (radical-radical coupling); the major pathway is sequential CF2H radical addition followed by second cathodic reduction to the benzyl anion. X-ray structure (CCDC 2281142) of carboxylation product A-1 confirms regiochemistry. Monosubstituted alkenes give low yields due to instability of intermediate relative to diphenyl-stabilized anions."
+}

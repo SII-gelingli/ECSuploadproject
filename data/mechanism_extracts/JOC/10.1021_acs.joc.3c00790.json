@@ -1,0 +1,91 @@
+{
+  "doi": "10.1021_acs.joc.3c00790",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical (or photoelectrochemical) polyfluoroalkylative cyclization of 3-aza-1,5-dienes with sodium fluoroalkanesulfinates to give 3-polyfluoroalkyl-4-pyrrolin-2-ones",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "photoredox_combined",
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of CF3SO2Na (2a, Eox = 1.20 V vs Ag/AgCl) generates CF3 radical with loss of SO2; a second anodic oxidation converts the cyclized C-radical B into cation C; cathode reduces protons to H2. Under photoelectrochemical conditions, Mes-Acr+ is anodically oxidized to Mes-Acr•, whose excited state (Ered* = 1.78 V) oxidizes 2a and intermediate B.",
+  "key_intermediates": [
+    {
+      "name": "trifluoromethyl radical (CF3•)",
+      "smiles": "[CH](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "intermediate A: alpha-amido carbon radical after CF3 addition to acryloyl moiety",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "intermediate B: ring-closed C-centered radical after intramolecular addition onto enaminic C=C",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "intermediate C: cationic pyrrolinone after anodic oxidation of B",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Mes-Acr• / Mes-Acr•* (photoredox mediator, excited state)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes CF3SO2- to CF3• (+ SO2); CF3• regioselectively adds to the acryloyl alkene of the 3-aza-1,5-diene giving C-radical A, which undergoes 5-exo intramolecular addition onto the enaminic C=C to give cyclized radical B; B is oxidized at the anode (or by Mes-Acr•*) to cation C, which loses a proton to furnish the 4-pyrrolin-2-one; cathode reduces H+ to 1/2 H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction shut down (0% yield of 3a), supporting radical intermediates"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction shut down (0% yield)"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C(c1ccccc1)c1ccccc1)",
+      "purpose": "radical_trap",
+      "observation": "Only trace 3a; DPE-CF3 adduct 4 isolated in 86%, confirming CF3• generation"
+    },
+    {
+      "name": "p-dinitrobenzene (pDNB)",
+      "smiles": "O=[N+]([O-])c1ccc([N+](=O)[O-])cc1",
+      "purpose": "redox_probe",
+      "observation": "Reaction suppressed (0%), implicating single-electron transfer"
+    },
+    {
+      "name": "CuCl2",
+      "smiles": "[Cl-].[Cl-].[Cu+2]",
+      "purpose": "redox_probe",
+      "observation": "Reaction shut down (0%), single-electron scavenger"
+    },
+    {
+      "name": "CCl4",
+      "smiles": "ClC(Cl)(Cl)Cl",
+      "purpose": "radical_trap",
+      "observation": "Only trace product, consistent with radical pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Electricity on/off experiments show reaction stops without current, arguing against a long radical chain. CV shows 2a (1.20 V) is oxidized preferentially over 1a (1.81 V). H2 evolution at cathode confirmed by gas detection. Photoelectrochemical variant uses Mes-Acr+/Mes-Acr• as homogeneous mediator (excited-state Ered = 1.78 V) for sensitive substrates; this is a parallel mechanism rather than an alternative for the standard reaction."
+}

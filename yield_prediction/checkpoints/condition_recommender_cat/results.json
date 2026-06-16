@@ -1,0 +1,40 @@
+{
+  "model": "ConditionRecommenderXTB+Catalyst",
+  "best_epoch": 7,
+  "test_acc": {
+    "anode": 86.22920517560074,
+    "cathode": 83.27171903881701,
+    "cell_type": 86.41404805914972,
+    "electrolyte": 54.62107208872459,
+    "solvent": 79.39001848428835,
+    "reagent": 83.27171903881701,
+    "catalyst": 89.46395563770795
+  },
+  "test_top3_acc": {
+    "anode": 98.52125693160814,
+    "cathode": 99.07578558225508,
+    "cell_type": 100.0,
+    "electrolyte": 86.13678373382625,
+    "solvent": 95.19408502772643,
+    "reagent": 94.45471349353049,
+    "catalyst": 98.79852125693161
+  },
+  "avg_test_acc": 80.38024821758647,
+  "avg_test_top3_acc": 96.02587800369686,
+  "num_params": 3509220,
+  "training_time": "0:02:24.487563",
+  "use_catalyst": true,
+  "args": {
+    "data_dir": "/inspire/hdd/global_user/gelingli-253114010248/WDproject2/condition_agent/yield_prediction/data",
+    "output_dir": null,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "epochs": 100,
+    "patience": 20,
+    "hidden_dim": 256,
+    "dropout": 0.3,
+    "device": "cuda",
+    "use_catalyst": true
+  }
+}

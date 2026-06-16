@@ -1,0 +1,82 @@
+{
+  "doi": "10.1039_d5cc00744e",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electroreductive dual-radical tri-/difluoromethylarylation of alkenes coupling cyanoarenes with (di/tri)fluoromethylsulfones using a sacrificial Zn anode and a naphthalene-type mediator (Med-1)",
+  "mechanism_family": [
+    "radical_cathodic",
+    "mediator_cathodic",
+    "sacrificial_anode",
+    "radical_anion",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic reduction generates two radicals: cyanoarene (2) is reduced to its radical anion (I), which then mediates SET to the fluoroalkylsulfone (3aa) to release CF3 radical; in parallel, Med-1 is cathodically reduced to its radical anion which provides an alternative SET pathway to 3aa. Zn sacrificial anode supplies electrons by oxidation.",
+  "key_intermediates": [
+    {
+      "name": "cyanoarene radical anion (I)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "trifluoromethyl radical (II, CF3•)",
+      "smiles": "[CH0](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "benzyl radical adduct from CF3• + alkene (III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Med-1 radical anion (reduced naphthalene mediator)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "sulfinate anion (ArSO2-) released as byproduct",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyanide anion released upon radical/radical-anion coupling",
+      "smiles": "[C-]#N",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the cathode, cyanoarene 2 (and/or Med-1) is reduced by one electron to a persistent radical anion, which performs SET to the fluoroalkylsulfone 3aa to fragment it into ArSO2- and CF3•; CF3• adds to alkene 1 forming a benzyl radical (III) that undergoes radical/radical-anion cross-coupling with the cyanoarene radical anion (I), expelling CN- to give the arylated product. Electrons originate from oxidation of the sacrificial Zn anode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Products 4aa and 7aa were not obtained in its presence, consistent with radical intermediates"
+    },
+    {
+      "name": "HRMS detection of CF2H adduct",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Difluoromethyl radical captured and detected by HRMS; aryl radical and CF3 radical not observed directly"
+    },
+    {
+      "name": "radical clock substrate",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring-opened products 10 and 11 formed in 56% and 43% yield, supporting a dual-radical mechanism"
+    },
+    {
+      "name": "cyclic voltammetry of 1aa/2aa/3aa/Med-1",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "1aa not reduced in window; 2aa reversible Ered = -1.86 V; 3aa irreversible Ered = -2.05 V; Med-1 reversible Ered = -2.86 V; addition of 3aa enhances catalytic current of 2aa and suppresses oxidation, indicating SET from 2aa•- to 3aa; 3aa/Med-1 mixture shows decreased oxidation and increased catalytic current of Med-1, confirming SET; 2aa charge consumption 6.9 F/mol indicates multi-step SET chain"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "kinetic_order"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two cathodic SET pathways operate in parallel: (a) direct reduction of cyanoarene 2 to its radical anion, which reduces sulfone 3aa to CF3•; (b) Med-1-mediated pathway in which the naphthalene mediator radical anion reduces 3aa. Multi-step SET chain mechanism is invoked given charge consumption far exceeds 1 F/mol. Final C–C bond formation is proposed as radical/radical-anion cross-coupling with extrusion of CN-, rather than radical addition followed by rearomatization."
+}

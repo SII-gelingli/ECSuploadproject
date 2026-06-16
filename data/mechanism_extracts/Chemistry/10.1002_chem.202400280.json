@@ -1,0 +1,149 @@
+{
+  "doi": "10.1002_chem.202400280",
+  "journal": "Chemistry",
+  "is_review": false,
+  "rxn_class_summary": "Electrophotocatalytic and electrochemical cascade selenylation/cyclization of 3-aza-1,5-dienes with diaryl diselenides to give 3-selenomethyl-4-pyrrolin-2-ones under three protocols (4CzIPN photoelectrocatalysis, PC-free direct photolysis, or NHPI-mediated electrolysis).",
+  "mechanism_family": [
+    "photoredox_combined",
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Method A: anode oxidizes the cyclized C-radical II to cation III (with EnT from 4CzIPN* generating PhSe• from (PhSe)2); Method B: anode oxidizes radical II while 395 nm light homolyzes (PhSe)2 directly; Method C: anode oxidizes NHPI to NHPI•+ which oxidizes (PhSe)2 to PhSe• and PhSe+; cathode reduces H+ to H2 in all cases.",
+  "key_intermediates": [
+    {
+      "name": "Phenylselenyl radical (PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Phenylselenonium cation (PhSe+)",
+      "smiles": "[Se+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "Triplet excited diselenide (PhSeSePh)*",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "4CzIPN excited state (4CzIPN*)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "NHPI radical cation (NHPI•+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-selenyl carbon radical I (from PhSe• addition to acrylamide alkene)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cyclized α-amido C-centered radical II (pyrrolinone radical)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Seleniranium ion IV (from PhSe+ + alkene)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Cyclized cation III (4-pyrrolin-2-one cation)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "In method A, 4CzIPN* transfers triplet energy to (PhSe)2 giving 2a* which homolyzes to PhSe•; PhSe• adds to the acrylamide alkene of 1a, the resulting C-radical cyclizes onto the enamide to give radical II, which is oxidized to cation III by 4CzIPN•+/anode/NHPI•+ depending on method, followed by deprotonation to product and cathodic H+→H2. A parallel ionic pathway proceeds via PhSe+ + alkene → seleniranium IV → cation III.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction not fully suppressed (yields 60/40/37% under A/B/C), indicating radical pathway is operative but not exclusive."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Product 3a completely suppressed under all three conditions."
+    },
+    {
+      "name": "1,1-Diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Partial inhibition; phenylselanyl-DPE adduct 10 isolated in 9–15%, confirming PhSe• generation."
+    },
+    {
+      "name": "4-Iodoanisole",
+      "smiles": "COc1ccc(I)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "PhSe-anisole adduct detected by GC-MS upon 395 nm irradiation of 2a, confirming PhSe• under PC-free photolysis."
+    },
+    {
+      "name": "Azulene",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Triplet quencher; suppresses reaction under A and B, supporting EnT/triplet involvement."
+    },
+    {
+      "name": "Ferrocene (Fc)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Triplet quencher; trace product under A and B."
+    },
+    {
+      "name": "Biisobutenyl",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Triplet quencher; trace under A, 31% under B."
+    },
+    {
+      "name": "Parbenate",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Triplet quencher; 16% (A), 18% (B), partial inhibition."
+    },
+    {
+      "name": "Benzil",
+      "smiles": "O=C(c1ccccc1)C(=O)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Triplet quencher; 15% (A), 46% (B)."
+    },
+    {
+      "name": "PhSeCl",
+      "smiles": "Cl[Se]c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Reacts with 1a in absence of light/electricity to give 3a in 88%, supporting PhSe+ / seleniranium ionic pathway."
+    },
+    {
+      "name": "PhSeH",
+      "smiles": "[SeH]c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Affords 3a under A/B/C in 24/60/8% over 9 h, supporting selenolate/radical pathways."
+    },
+    {
+      "name": "Diselenide scrambling ((PhSe)2 + (MeSe)2)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Greatly accelerated under 395 nm vs dark, supporting photohomolysis of Se–Se bond."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "UV_vis",
+    "DFT",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Three mechanisms proposed in parallel for methods A/B/C. Favored pathway under A is triplet–triplet energy transfer from 4CzIPN* to (PhSe)2 rather than SET (SET from 2a to 4CzIPN* is thermodynamically unfavorable: E_red*(4CzIPN*) = 1.51 V vs Ep/2(2a) = 1.52 V). DFT triplet energies (4CzIPN 46.1, 2a 32.7 kcal/mol) support exergonic EnT. Both radical (PhSe• addition/cyclization/oxidation) and ionic (PhSe+/seleniranium) pathways may operate concurrently, as TEMPO does not fully suppress reaction and PhSeCl directly gives product. NHPI in method C functions as anodic electron shuttle (not cathodic) based on CV. Cathodic H2 evolution detected by gas detector closes the redox balance."
+}

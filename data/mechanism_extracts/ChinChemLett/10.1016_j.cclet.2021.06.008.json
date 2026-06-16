@@ -1,0 +1,59 @@
+{
+  "doi": "10.1016_j.cclet.2021.06.008",
+  "journal": "ChinChemLett",
+  "is_review": false,
+  "rxn_class_summary": "Catalyst- and oxidant-free electrochemical trifluoromethylation/cyclization of N-arylacrylamides to 3-CF3-substituted oxindoles using TfNHNHBoc (CF3SO2NHNHBoc) as the CF3 source",
+  "mechanism_family": [
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of TfNHNHBoc (reagent 1) to a diazene intermediate I that fragments to release •CF3; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "diazene CF3SO2-N=N-Boc (I) from 2e- anodic oxidation of TfNHNHBoc",
+      "smiles": "O=S(=O)(C(F)(F)F)/N=N/C(=O)OC(C)(C)C",
+      "role": "transient"
+    },
+    {
+      "name": "trifluoromethyl radical (•CF3) generated after loss of SO2, N2, tBu•",
+      "smiles": "[CH](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl C-centered radical II from •CF3 addition to acrylamide alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclohexadienyl radical III from intramolecular ipso/ortho radical cyclization onto arene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclohexadienyl cation IV from anodic oxidation of III",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "trifluoromethylated oxindole product 3 after deprotonation of IV",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "TfNHNHBoc is oxidized at the graphite anode (2e-) to diazene I, which fragments (loss of SO2, N2, tBu•) to give •CF3; the radical adds to the acrylamide alkene to form C-radical II that undergoes intramolecular cyclization onto the aryl ring to give cyclohexadienyl radical III; III is further anodically oxidized to cation IV, which loses a proton to give oxindole 3, while H+ is reduced to H2 at the Pt cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "3 equiv. BHT fully suppressed product formation, indicating a free-radical intermediate"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "CV showed reagent 1 oxidizes at 1.45 V vs SCE, lower than substrate 2a (~2.03 V), supporting that 1 is oxidized first at the anode. Control with no electricity gave 0% yield. Gram-scale (7 mmol) reaction gave 3a in 55% yield. No oxindole product was observed without electricity."
+}

@@ -1,0 +1,49 @@
+{
+  "doi": "10.1002_ejoc.202200857_sup_1",
+  "journal": "EurJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical bromination of limonene (olefin) via anodic oxidation of bromide to bromine, which adds across the alkene",
+  "mechanism_family": [
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of bromide to bromine (Br2), which then reacts with the olefin; tribromide (Br3-) serves as a reservoir in equilibrium with Br2",
+  "key_intermediates": [
+    {
+      "name": "bromine (Br2)",
+      "smiles": "BrBr",
+      "role": "reactive"
+    },
+    {
+      "name": "tribromide complex (Br3-)",
+      "smiles": "[Br-].BrBr",
+      "role": "resting_state"
+    },
+    {
+      "name": "bromonium ion / bromiranium of limonene",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Br- to Br2 (E ~0.49 V); Br2 either equilibrates with excess Br- to form Br3- (resting state) or is consumed by the olefin via electrophilic addition. In the presence of substrate the Br3- oxidation wave diminishes and no reduction wave is observed, indicating Br2 is trapped by the alkene.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "NaBr (bromide source) CV",
+      "smiles": "[Na+].[Br-]",
+      "purpose": "redox_probe",
+      "observation": "Quasi-reversible oxidation at 0.49 V (Br-/Br2) and second oxidation at 0.86 V (Br3-/Br2); reduction wave at -0.21 V"
+    },
+    {
+      "name": "(S)-(-)-limonene with NaBr CV",
+      "smiles": "CC(=C)[C@@H]1CCC(=CC1)C",
+      "purpose": "intermediate_trap",
+      "observation": "First oxidation shifts from 0.49 V to 0.58 V, second oxidation wave reduced, and reduction wave absent — consistent with electrogenerated Br2 being consumed by the olefin"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism supported solely by CV experiments comparing NaBr alone vs NaBr + limonene; Br3-/Br2 equilibrium acts as a bromine reservoir. No radical traps, KIE, or DFT reported on this page."
+}

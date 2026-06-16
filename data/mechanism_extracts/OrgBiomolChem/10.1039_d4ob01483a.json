@@ -1,0 +1,87 @@
+{
+  "doi": "10.1039_d4ob01483a",
+  "journal": "OrgBiomolChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical intramolecular oxyselenenylation of alkenyl alcohols with diaryl diselenides to access selenium-functionalized oxygen-containing heterocycles (benzoxepines/benzodioxepines)",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_cation",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of diphenyl diselenide (2a) to a diselenide radical cation that fragments to PhSe• and PhSe+; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "diphenyl diselenide radical cation [PhSeSePh]•+",
+      "smiles": "[Se+]([Se]c1ccccc1)c1ccccc1",
+      "role": "transient"
+    },
+    {
+      "name": "phenylselanyl radical PhSe•",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered radical adduct (Int II) from PhSe• addition to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbocation (Int III) after anodic oxidation of C-radical",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclized oxocarbenium/protonated ether prior to deprotonation",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, PhSeSePh is oxidized to its radical cation and fragments to PhSe• (and PhSe+/half equiv PhSeSePh); PhSe• adds to the pendant alkene of the alkenyl alcohol to give a C-radical, which is further oxidized at the anode to a carbocation that is trapped intramolecularly by the tethered hydroxyl, followed by deprotonation; the cathode reduces H+ to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Only trace 3aa; TEMPO–SePh adduct detected by HRMS, supporting PhSe• radical intermediate"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Only trace 3aa formed, indicating radical pathway"
+    },
+    {
+      "name": "H2O (added)",
+      "smiles": "O",
+      "purpose": "other",
+      "observation": "Excess water suppresses product formation"
+    },
+    {
+      "name": "PhSSPh (2f)",
+      "smiles": "c1ccc(SSc2ccccc2)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "No reaction — PhS• not generated under these conditions"
+    },
+    {
+      "name": "PhTeTePh (2g)",
+      "smiles": "c1ccc([Te][Te]c2ccccc2)cc1",
+      "purpose": "intermediate_trap",
+      "observation": "No reaction — PhTe• not generated"
+    },
+    {
+      "name": "Cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Diselenide 2a oxidizes at lower potential than substrate 1a, indicating 2a is the species oxidized at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "cyclic_voltammetry",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors propose alkene functionalization is initiated by anodically generated PhSe• (not by direct oxidation of substrate), supported by CV showing 2a is more easily oxidized than 1a. Alternative S- and Te-based analogues fail, consistent with selectivity for Se radical generation. Water content critically influences yield, suggesting competing hydrolysis/oxidation side pathways."
+}

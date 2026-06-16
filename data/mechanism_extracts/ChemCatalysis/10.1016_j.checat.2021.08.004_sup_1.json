@@ -1,0 +1,87 @@
+{
+  "doi": "10.1016_j.checat.2021.08.004_sup_1",
+  "journal": "ChemCatalysis",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical (3+2) cyclization between primary amides and olefins to give 2-oxazolines, using 1,2-dichloroethane (DCE) as both solvent and chloride source via paired electrolysis",
+  "mechanism_family": [
+    "paired_electrolysis",
+    "mediator_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Cathodic reduction of DCE generates chloride anion (with ethylene + Cl- released); chloride is then oxidized at the anode to a Cl+ equivalent (chlorine radical/cation) that activates the alkene as a chloronium intermediate; protons are reduced at the cathode to H2",
+  "key_intermediates": [
+    {
+      "name": "chloride anion (from cathodic reduction of DCE)",
+      "smiles": "[Cl-]",
+      "role": "reactive"
+    },
+    {
+      "name": "chlorine radical / Cl+ equivalent (anodic oxidation of Cl-)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "chloronium ion (3-membered chloriranium from alkene + Cl+)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "beta-chloro amide (N-attack on chloronium, e.g., 5bc/5bc')",
+      "smiles": "O=C(N[CH](c1ccccc1)CCl)c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "2-oxazoline product (e.g., 3aa)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkene radical cation A (alternative pathway)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the cathode, DCE is reduced (2 e-) to release ethylene and 2 Cl-; at the anode, Cl- is oxidized to Cl+/Cl• which forms a chloronium with the alkene. The amide nitrogen opens the chloronium to give a beta-chloro amide, and intramolecular O-attack with loss of HCl furnishes the oxazoline; H+ is reduced at the cathode to H2.",
+  "rate_determining_step": "Electrochemical redox step (first-order dependence on current; zero-order in indene and benzamide)",
+  "probe_reagents": [
+    {
+      "name": "AgNO3 (chloride detection)",
+      "smiles": "[Ag+].[O-][N+](=O)=O",
+      "purpose": "intermediate_trap",
+      "observation": "White AgCl precipitate formed from the electrolyzed solution, confirming Cl- generation; solution pH dropped to 3.19"
+    },
+    {
+      "name": "styrene (alkene without intramolecular bias)",
+      "smiles": "C=Cc1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Base-free electrolysis gave beta-chloro amides 5bc (40%) and 5bc' (41%); resubjection with CH3COONa converted them to oxazolines 4bc/4bc' (35%/33%), supporting them as on-cycle intermediates"
+    },
+    {
+      "name": "HCl (alternative chloride source)",
+      "smiles": "Cl",
+      "purpose": "other",
+      "observation": "In THF (no DCE), 10 mol% HCl raised yield of 3aa from 11% to 51% and improved site selectivity (r.r. 10:1), confirming the essential role of Cl-"
+    },
+    {
+      "name": "current variation",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Initial rate is first-order in current; zero-order in indene and benzamide -> electrochemical step is rate-controlling"
+    },
+    {
+      "name": "cyclic voltammetry",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "DCE reduction at -1.5 V vs Ag/AgCl; Cl- oxidation at 1.5 V, below 1a (1.8 V) and 2a, so Cl- is preferentially oxidized at the anode"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "cyclic_voltammetry",
+    "kinetic_order",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "An alternative mechanism (Figure S9) cannot be excluded: direct anodic oxidation of the alkene to a radical cation A, trapped by the amide to give benzyl radical B, further oxidized to benzyl cation C, then cyclization/deprotonation to the oxazoline. An induction period was observed in the time-monitored conversion. Thiophene-, furan-, 4-vinylpyridine-, cyclohexene-, cyclohexenone-, p-nitro/p-cyanostyrene-, and urea-type substrates were unsuitable (N.D.)."
+}

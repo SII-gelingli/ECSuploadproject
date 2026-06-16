@@ -1,0 +1,100 @@
+{
+  "doi": "10.1016_j.cclet.2025.110822",
+  "journal": "ChinChemLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative 2,1-difunctionalization (azolation/hydroxyazolation, diamination, oxoamination, fluoroamination) of alkenes using N-mesyl-1,2,3-triazole as triazole radical precursor and various nucleophiles",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of in situ generated NH-1,2,3-triazole (from hydrolysis of N-mesyl-triazole) to an N-centered triazolyl radical; concomitant cathodic reduction of protons evolves H2; the relayed C-radical is further anodically oxidized to a carbocation",
+  "key_intermediates": [
+    {
+      "name": "N-mesyl-1,2,3-triazole (precursor A)",
+      "smiles": "O=S(=O)(C)N1C=C(c2ccccc2)N=N1",
+      "role": "reactive"
+    },
+    {
+      "name": "1H-1,2,3-triazole B (after hydrolysis)",
+      "smiles": "c1cc(-c2cn[nH]n2)cc1",
+      "role": "transient"
+    },
+    {
+      "name": "2H-1,2,3-triazole B' (major tautomer, controls N2-regioselectivity)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "N-centered triazolyl radical C",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "C-centered benzylic radical E (after addition to alkene)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbocation F (after second anodic oxidation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkene radical cation (E', Path A, disfavored)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "N-mesyl-triazole hydrolyzes to NH-triazole (2H-tautomer dominant); the anode oxidizes the deprotonated triazole to an N-centered radical that adds to the alkene, generating a benzylic C-radical that is further oxidized at the anode to a carbocation, which is trapped by the nucleophile (H2O, ROH, NH3, AcOH, Py·HF); protons are reduced at the cathode to H2.",
+  "rate_determining_step": "anodic oxidation of NH-1,2,3-triazole to the N-centered radical (CV onset ~2.18 V vs SCE, matching anode potential ~2.25 V)",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely suppressed; no desired product formed"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed; BHT-triazolyl adduct 53 isolated in 76% yield, confirming triazole N-radical"
+    },
+    {
+      "name": "DMPO",
+      "smiles": "CC1(C)CCC=[N+]1[O-]",
+      "purpose": "intermediate_trap",
+      "observation": "EPR signals (AN1=13.23 G, AN2=4.58 G, AH=14.70 G, g=2.0060) consistent with N-centered triazolyl radical spin adduct 53a"
+    },
+    {
+      "name": "(E)- and (Z)-β-methylstyrene 54",
+      "smiles": "C/C=C/c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Both stereoisomers gave product 55 with identical dr ~1:1, indicating a free carbocation intermediate trapped by water"
+    },
+    {
+      "name": "1H-1,2,3-triazole 56 / 2H-1,2,3-triazole 57",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Both gave N2-selective product 4 in 81% and 78% yield, confirming NH-triazole as the key intermediate and 2H-tautomer as the productive form"
+    },
+    {
+      "name": "Michael addition test on alkenyl product 47",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product formed with any nucleophile, excluding nucleophile-first radical pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "EPR",
+    "cyclic_voltammetry",
+    "isolation_of_intermediate",
+    "radical_clock",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Two pathways were considered (Fig. 6): Path A invokes alkene radical cation (E') as the initial oxidized species followed by triazole radical/nucleophile addition; this is disfavored because alkene 2 has a higher oxidation potential than NH-triazole. Path B (favored) starts with anodic oxidation of NH-triazole to N-centered radical, addition to alkene, second anodic oxidation of the C-radical to a carbocation, and nucleophilic trapping. The 2H-tautomer (B') is responsible for the high N2-regioselectivity via steric effects. Reaction is highly sensitive to potential window (2.5 V optimal; <2.2 V gives only trace, >2.6 V gives decomposition on Pt)."
+}

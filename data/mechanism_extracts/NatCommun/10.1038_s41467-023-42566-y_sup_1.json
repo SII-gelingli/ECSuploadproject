@@ -1,0 +1,101 @@
+{
+  "doi": "10.1038_s41467-023-42566-y_sup_1",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical halogen-atom transfer (e-XAT) alkylation of alkyl iodides with electron-deficient alkenes, mediated by anodically generated α-aminoalkyl radicals from Et3N",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic one-electron oxidation of trialkylamine (Et3N) to its aminium radical cation, which deprotonates to an α-aminoalkyl radical that performs XAT on alkyl iodide; cathode reduces the alkene/arene radical acceptor or protons in the productive cycle",
+  "key_intermediates": [
+    {
+      "name": "alkylamine radical cation (II)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-aminoalkyl radical (III) from Et3N (Et2N-CH•-CH3)",
+      "smiles": "CCN(CC)[CH]C",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical (from R-I after XAT)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "iminium cation (V) / enamine-like (VI) from second oxidation",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "1,4-dicyanobenzene radical anion (cathodic, trapping probe)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Et3N by one electron to its radical cation, which loses an α-H to give an α-aminoalkyl radical; this radical performs halogen-atom transfer with R-I to release an alkyl radical that adds to the electron-deficient alkene, and the resulting α-acceptor radical is reduced at the cathode and protonated by H2O to give the alkylation product.",
+  "rate_determining_step": "Anodic one-electron oxidation/deprotonation of the alkylamine to generate the α-aminoalkyl radical (XAT step is fast and exothermic per DFT)",
+  "probe_reagents": [
+    {
+      "name": "TMSCN (iminium trap)",
+      "smiles": "C[Si](C)(C)C#N",
+      "purpose": "intermediate_trap",
+      "observation": "No cyanation product observed with Et3N, i-Pr2NEt, or 1-methylpiperidine in absence of R-I — argues against free iminium V"
+    },
+    {
+      "name": "CH3OH (iminium trap)",
+      "smiles": "CO",
+      "purpose": "intermediate_trap",
+      "observation": "No α-methoxyamine product observed — argues against iminium intermediate V"
+    },
+    {
+      "name": "acrylonitrile (radical acceptor without R-I)",
+      "smiles": "C=CC#N",
+      "purpose": "radical_trap",
+      "observation": "No α-aminoalkyl radical addition product; ascribed to inefficient cathodic reduction/protonation of adduct"
+    },
+    {
+      "name": "Boc-protected dehydroalanine",
+      "smiles": "C=C(C(=O)OC)N(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+      "purpose": "radical_trap",
+      "observation": "No trapping product"
+    },
+    {
+      "name": "1,4-dicyanobenzene",
+      "smiles": "N#Cc1ccc(C#N)cc1",
+      "purpose": "radical_trap",
+      "observation": "Without H2O and without R-I: α-aminoalkyl radical from Et3N/i-Pr2NEt is captured by cathodically generated radical anion of 1,4-DCB to give cross-coupled products 92–94 (72–86%); with R-I added, alkyl-DCB product 95 (42%) is obtained and 92 is not observed, indicating XAT outcompetes direct radical trapping"
+    },
+    {
+      "name": "Et3N omission control",
+      "smiles": "CCN(CC)CC",
+      "purpose": "other",
+      "observation": "Reaction completely abolished without Et3N across all anode materials"
+    },
+    {
+      "name": "Amines lacking α-H (Ph2N-PMP, 2,2,6,6-tetramethylpiperidine)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reactivity — confirms α-H/α-aminoalkyl radical is essential"
+    },
+    {
+      "name": "2,2,6,6-tetramethyl-N-methylpiperidine (only primary α-H)",
+      "smiles": "CN1C(C)(C)CCCC1(C)C",
+      "purpose": "other",
+      "observation": "Gave product in 32% yield, supporting α-aminoalkyl radical pathway and selectivity for secondary α-H"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "DFT",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Alternative mechanism considered and disfavored: classical Shono-type two-electron oxidation to iminium V then nucleophilic addition. Control trapping with TMSCN/CH3OH gave no addition products, and dedicated radical-trapping with 1,4-dicyanobenzene confirmed α-aminoalkyl radical generation and rapid XAT with alkyl iodides. RVC anode is optimal but not essential (other carbon anodes also work), so the amine—not the electrode material—is the key XAT mediator."
+}

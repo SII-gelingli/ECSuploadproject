@@ -1,0 +1,68 @@
+{
+  "doi": "10.1055_a-2006-1285",
+  "journal": "Synthesis",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical reductive alkylation of buta-1,3-dienes with alkyl halides using a sacrificial iron anode and nickel cathode to deliver trans-olefins with high stereoselectivity",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_polar_crossover",
+    "sacrificial_anode",
+    "direct_SET"
+  ],
+  "electrochemical_role": "Cathodic single-electron reduction of alkyl halide to aliphatic C-centered radical; subsequent cathodic reduction of allyl radical intermediate to allyl carbanion; iron plate serves as sacrificial anode",
+  "key_intermediates": [
+    {
+      "name": "aliphatic carbon-centered radical (A) from R-X reduction",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "allyl radical adduct (B) from radical addition to 1,3-diene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "resonance allyl radical (C)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "allyl carbanion (D) after second cathodic reduction",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Fe(II) from sacrificial anode oxidation",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the cathode, the alkyl halide undergoes SET to give an aliphatic C-radical (A), which adds to the 1,3-diene to form an allyl radical (B/C); a second cathodic SET reduces this allyl radical to an allyl carbanion (D), which nucleophilically displaces halide from a second R-X (or is protonated) to deliver the trans-olefin, while the Fe anode is oxidized to Fe(II) as the sacrificial counter-process.",
+  "rate_determining_step": "cathodic SET reduction of the alkyl halide to the carbon-centered radical (Ep = -2.58 V vs SCE for 4-iodotetrahydro-2H-pyran)",
+  "probe_reagents": [
+    {
+      "name": "cyclic voltammetry of 4-iodotetrahydro-2H-pyran",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Ep = -2.58 V vs SCE, consistent with cathodic reduction generating an aliphatic C-radical"
+    },
+    {
+      "name": "divided-cell experiment",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Product 3a formed in 70% yield in cathode chamber (and 5a in 64%), confirming the productive chemistry occurs at the Ni cathode while Fe anode acts only as sacrificial anode"
+    },
+    {
+      "name": "alkyl halide leaving group variation (I vs Br vs Cl)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Iodides give highest yields, bromides moderate, chlorides typically 0%, consistent with ease of SET reduction tracking C-X BDE"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Phenyl-substituted 1,3-dienes (4) incorporate only a single alkyl group (giving 5) because the benzylic allyl carbanion D is stabilized by the aryl group and is protonated rather than alkylated by a second R-X; unsubstituted buta-1,3-diene incorporates two alkyl groups (giving 3). The trans-selectivity (>20:1) is rationalized by the thermodynamically favored E-allyl carbanion/radical geometry. No TEMPO/BHT radical trapping experiments are reported; mechanism is supported primarily by CV and divided-cell experiments plus literature precedent."
+}

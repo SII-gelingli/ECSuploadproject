@@ -1,0 +1,70 @@
+{
+  "doi": "10.1039_D5CC03082J_sup_1",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical Ni-catalyzed allylation/alkenylation of β-ketoesters with 1,1-diphenylethylene (and allyl-TMS) via anodic oxidation generating carbon radical intermediates",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "electrocatalysis_inner_sphere",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of Ni(II)-enolate complex generates an α-carbonyl radical (radical cation intermediate); cathode reduces protons to H2 and assists desilylation/turnover",
+  "key_intermediates": [
+    {
+      "name": "Ni(II)-enolate of methyl 1-oxo-indane-2-carboxylate (A')",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Anodically oxidized Ni-bound α-carbonyl radical cation (B')",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(II)-bound C-C coupled alkyl intermediate after addition to allyl-TMS (C')",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-silyl carbocation (D') after second anodic oxidation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Allyl-substituted β-ketoester product 31 (after desilylation)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Ni(II) binds the β-ketoester enolate and is oxidized at the anode to a Ni-stabilized α-carbonyl radical/radical cation; this carbon radical adds to the alkene (1,1-diphenylethylene or allyl-TMS), and a second anodic oxidation yields a β-silyl carbocation that loses TMS+ (as TMSOH/TMS2O) to give the alkenylated product, while the cathode reduces protons to H2.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Product 3 not formed; TEMPO-adduct 50 isolated in 82% yield (HRMS [M+Na]+ 368.1831), supporting a carbon radical intermediate"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Product 3 not formed; BHT-adduct 51 isolated in 75% yield (HRMS [M+Na]+ 431.2183), consistent with radical trapping"
+    },
+    {
+      "name": "No current control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Without electrolysis under otherwise standard conditions, product 3 was not detected (0% yield), confirming requirement for anodic oxidation"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "on/off_light_or_current",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism (Scheme S3) is specifically proposed for the allyl-TMS variant forming product 31, invoking a radical-polar crossover where a β-silyl cation D' is intercepted by desilylation. For the 1,1-diphenylethylene case, only radical trapping evidence is shown; no DFT, CV, or KIE data provided. Cathodic chemistry includes H2 evolution and assistance in TMS removal via TMSOH/TMS2O."
+}

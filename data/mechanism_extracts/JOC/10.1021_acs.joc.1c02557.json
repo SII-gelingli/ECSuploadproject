@@ -1,0 +1,74 @@
+{
+  "doi": "10.1021_acs.joc.1c02557",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative oxysulfonylation of o-vinyl benzoic acids with sulfonyl hydrazides to form γ-sulfonylated phthalide lactones",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic oxidation of sulfonyl hydrazide to sulfonyl radical (via diazo intermediate, loss of N2); second anodic oxidation of benzylic C-radical adduct to a benzylic carbocation; cathodic reduction of protons to H2",
+  "key_intermediates": [
+    {
+      "name": "Sulfonyl diazo intermediate A (R-SO2-N=N•/H)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Sulfonyl radical B (ArSO2•)",
+      "smiles": "Cc1ccc(cc1)S(=O)(=O)[*]",
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic carbon radical C from sulfonyl radical addition to o-vinyl benzoic acid",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Benzylic carbocation D (after anodic oxidation of C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "γ-Sulfonylated phthalide product 3 (after intramolecular carboxylate cyclization and deprotonation)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes sulfonyl hydrazide (−3e−, −3H+) to a diazo species that extrudes N2 to give a sulfonyl radical; this radical adds to the vinyl group of the o-vinyl benzoic acid to form a benzylic C-radical, which is further oxidized at the anode to a benzylic cation that is captured intramolecularly by the ortho-carboxyl oxygen, with cathodic H+ reduction to H2 closing the circuit.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1,1-Diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Only trace 3a formed; radical trapping adduct 5 (Ph2C=CH-Ts type) detected by LC-MS, supporting a sulfonyl radical intermediate"
+    },
+    {
+      "name": "Triethyl phosphite P(OEt)3",
+      "smiles": "CCOP(OCC)OCC",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3a reduced from 96% to 66%, consistent with a radical pathway"
+    },
+    {
+      "name": "No-current control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product 3a formed without electric current, confirming electrochemical activation is essential"
+    },
+    {
+      "name": "Cyclic voltammetry of 1a and 2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peaks at 1.78 V (1a) and 1.39 V (2a) vs Ag/AgCl, indicating sulfonyl hydrazide 2a is preferentially oxidized at the anode to generate the sulfonyl radical"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism is consistent with literature precedent (refs 18–20). Radical–polar crossover (oxidation of C-radical to cation D) is invoked rather than direct radical cyclization; ortho-substituted substrates (4n, 4o) failed, attributed to steric hindrance rather than electronic effects."
+}

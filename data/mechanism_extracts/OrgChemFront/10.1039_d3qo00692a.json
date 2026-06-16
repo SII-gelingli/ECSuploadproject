@@ -1,0 +1,112 @@
+{
+  "doi": "10.1039_d3qo00692a",
+  "journal": "OrgChemFront",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical four-component aminochlorination of alkenes/dienes using benzimidazole as a redox modulator to generate an in situ N-chlorobenzimidazole chlorinating agent",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of Cl- to Cl radical and concurrent PCET oxidation of benzimidazole 1a to an N-centered radical; the two radicals couple to give N-chlorobenzimidazole (INT-1), the active ionic chlorinating mediator. Cathode reduces HFIP/H+ to H2.",
+  "key_intermediates": [
+    {
+      "name": "chlorine radical (C)",
+      "smiles": "[Cl]",
+      "role": "transient"
+    },
+    {
+      "name": "N-centered benzimidazolyl radical (D) from PCET oxidation of 1a",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "N-chlorobenzimidazole (INT-1), slow-releasing Cl+ mediator",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "chloriranium/chloronium ion (E) from styrene + INT-1",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "nitrilium ion (F) from MeCN attack on E (Ritter-type)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "HFIP alkoxide (B) generated at cathode",
+      "smiles": "[O-]C(C(F)(F)F)C(F)(F)F",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, Cl- is oxidized by SET to Cl radical while benzimidazole 1a is oxidized by PCET to an N-radical; their cross-coupling (or Cl radical dimerization + coupling with 1a, path B) furnishes ionic N-chlorobenzimidazole INT-1. INT-1 transfers Cl+ to styrene giving a chloriranium ion, which is opened by MeCN (Ritter) to a nitrilium that is trapped by a second benzimidazole 1a to yield product 3a; protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3a eroded to 22%"
+    },
+    {
+      "name": "triethyl phosphite P(OEt)3",
+      "smiles": "P(OCC)(OCC)OCC",
+      "purpose": "radical_trap",
+      "observation": "Yield dropped to 20%"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield reduced to 35%"
+    },
+    {
+      "name": "alpha-phenylsulfonyl acrylate",
+      "smiles": "C(=C)(C(=O)OCC)S(=O)(=O)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Yield 59%; partial suppression"
+    },
+    {
+      "name": "N,N-diallyl tosylamide (8)",
+      "smiles": "C=CCN(Cc=C)S(=O)(=O)c1ccc(C)cc1",
+      "purpose": "radical_clock",
+      "observation": "No radical cyclization product observed; linear aminochlorinated product 9 obtained (39%)"
+    },
+    {
+      "name": "vinylcyclopropane dibenzyl malonate (10)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "No ring-opening product observed; cyclopropane retained in product 11 (49%)"
+    },
+    {
+      "name": "cyclic voltammetry of MgCl2, 1a, styrene 2a, 4-methoxystyrene",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Cl- and 1a oxidize earlier (~1.0 V) than styrene; failed substrate 4-methoxystyrene overlaps with Cl-/1a oxidation, indicating Cl- and 1a oxidation initiate the reaction"
+    },
+    {
+      "name": "anode potential monitoring",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Anode held below styrene oxidation potential (1.68 V) for first 2 h, confirming alkene is not directly oxidized"
+    },
+    {
+      "name": "INT-1 as substrate",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Preliminary reaction with isolated INT-1 supports its intermediacy and Ritter-type ionic pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "radical_clock",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "isolation_of_intermediate",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors favor path A (direct cross-coupling of Cl radical C with N-radical D to give INT-1); an alternative path B invokes dimerization of Cl radical to Cl2 followed by reaction with 1a to give the same INT-1. Radical scavengers attenuate but do not fully shut down the reaction, and radical clocks show no cyclization/ring-opening, indicating radicals are formed but rapidly converted to an ionic (Ritter-type) chlorination pathway via N-chlorobenzimidazole."
+}

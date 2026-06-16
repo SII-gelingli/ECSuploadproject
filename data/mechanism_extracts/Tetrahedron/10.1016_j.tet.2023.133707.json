@@ -1,0 +1,63 @@
+{
+  "doi": "10.1016_j.tet.2023.133707",
+  "journal": "Tetrahedron",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical diazolation of multisubstituted alkenes with pyrazoles to form N,N'-ethylene-bridged bispyrazoles, with H2 as the sole byproduct",
+  "mechanism_family": [
+    "radical_cation",
+    "radical_polar_crossover",
+    "direct_SET",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic single-electron oxidation of the alkene to an alkene radical cation; cathodic reduction of protons to H2",
+  "key_intermediates": [
+    {
+      "name": "alkenyl radical cation A (from one-electron oxidation of alkene 1)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-pyrazolyl carbon radical B (after nucleophilic addition of pyrazole to A and deprotonation)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbocation intermediate C (from second anodic oxidation of B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "N,N'-ethylene-bridged bispyrazole product 3 (after second pyrazole addition and deprotonation)",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "The anode first oxidizes the alkene to a radical cation A, which is trapped by pyrazole and deprotonated to give C-radical B; a second anodic oxidation converts B to cation C, which is captured by a second pyrazole and deprotonated to deliver the bispyrazole, while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": "Initial anodic oxidation of the alkene (suggested by CV: oxidation peak of alkene 1a shifts from ~1.5 V to ~1.1–1.3 V vs SCE in presence of pyrazole)",
+  "probe_reagents": [
+    {
+      "name": "1,1-diphenylethylene (1r)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "other",
+      "observation": "No reaction, indicating a second substituent / specific substitution pattern on the alkene is required"
+    },
+    {
+      "name": "stilbene (1q)",
+      "smiles": "C(=C/c1ccccc1)\\c1ccccc1",
+      "purpose": "other",
+      "observation": "Only trace product, supporting substrate-scope/mechanistic constraints"
+    },
+    {
+      "name": "cyclic voltammetry of 1a, 2a, and 1a+2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "2a alone inert; 1a oxidizes at Ep/2 ≈ +1.5 V vs SCE; mixture shifts onset to ~1.1 V and Ep/2 to +1.3 V, indicating pyrazole promotes alkene oxidation"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "weak",
+  "notes": "Mechanism is proposed based mainly on CV and literature precedent; no radical-trap (TEMPO/BHT), KIE, or DFT studies were reported. Gram-scale experiment (0.865 g, 55%) demonstrates scalability. Alternative pathways (e.g., direct two-electron oxidation to a vinyl cation, or initial pyrazole oxidation) are not explicitly ruled out, though CV shows pyrazole 2a is inert in the operating window."
+}

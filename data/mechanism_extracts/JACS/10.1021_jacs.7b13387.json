@@ -1,0 +1,83 @@
+{
+  "doi": "10.1021_jacs.7b13387",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical chlorotrifluoromethylation (and bromotrifluoromethylation) of alkenes via anodically coupled electrolysis combining two parallel oxidative events",
+  "mechanism_family": [
+    "radical_anodic",
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anode performs two parallel oxidations: direct oxidation of CF3SO2- (Langlois reagent) to generate transient CF3 radical, and oxidation of Mn(II)-Cl to a persistent [Mn(III)]-Cl radical chlorinating species; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "CF3 radical (transient, free)",
+      "smiles": "[C](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "[Mn(III)]-Cl persistent metal-bound chlorine radical",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic/alkyl C-centered radical (I) after CF3 addition to alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "[Mn(II)]-Cl resting Mn species",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "CF3SO2- (Langlois reagent anion)",
+      "smiles": "[O-]S(=O)C(F)(F)F",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the anode, CF3SO2- is oxidized (Ep/2 = 800 mV) losing SO2 to give CF3 radical, while in parallel Mn(II)-Cl is oxidized (E = 780 mV) to persistent [Mn(III)]-Cl; CF3 radical (transient) rapidly adds to the alkene to give a C-centered radical (I), which is then trapped by the persistent [Mn(III)]-Cl via atom transfer to deliver the chloro-trifluoromethylated product and regenerate Mn(II). Protons are reduced to H2 at the Pt cathode.",
+  "rate_determining_step": "Likely the anodic oxidation events (cell potential rises to 1.3-1.6 V to oxidize both CF3SO2- and Mn(II)-Cl); product-forming radical addition (path A) is fast and not rate-limiting",
+  "probe_reagents": [
+    {
+      "name": "vinyl cyclopropane (25)",
+      "smiles": "C=CC1(C(=O)OCc2ccccc2)CC1C(=O)OCc1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 26 obtained (40%, E/Z 10:1), consistent with C-radical intermediate after CF3 addition and before chlorination"
+    },
+    {
+      "name": "bisallyl tosylamine (27)",
+      "smiles": "C=CCN(CC=C)S(=O)(=O)c1ccc(C)cc1",
+      "purpose": "radical_clock",
+      "observation": "5-exo-trig cyclized pyrrolidine 28 (82%, dr 3.5:1), confirming radical intermediate, excluding cationic ECEC pathway"
+    },
+    {
+      "name": "MgCl2 vs LiCl swap",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "LiCl gave diminished 2a yield with substantial dichloride 2d (12%), indicating chemoselectivity depends on solubility/Mn coordination"
+    },
+    {
+      "name": "Mn omission control",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "No 2a formed without Mn(OAc)2, demonstrating essential role of Mn-Cl persistent radical"
+    },
+    {
+      "name": "cyclic voltammetry of [Mn(III)]-Cl/[Mn(II)]-Cl",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Reversible redox waves indicate lifetime of [Mn(III)]-Cl >10^2 s (persistent radical character)"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism leverages persistent-radical effect: transient CF3 radical (spin on C) adds to alkene faster than the persistent [Mn(III)]-Cl (path A > path C), and cross-coupling of C-radical with persistent Mn-Cl (path D) outcompetes radical-radical homocoupling (path B), giving selective hetero-difunctionalization. Alternative ECEC (carbocation) mechanism ruled out by radical clock results since required carbocations would be primary/destabilized. Side product 2d (vicinal dichloride) arises from competing Mn-mediated dichlorination pathway; dimerization of I suppressed by high local concentration of [Mn(III)]-Cl in the anodic diffusion layer."
+}

@@ -1,0 +1,80 @@
+{
+  "doi": "10.1039_D1CC03389A_sup_1",
+  "journal": "ChemCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical trifluoromethylation/cyclization of N-aryl methacrylamides using an N-triflyl benzimidazolium salt as the CF3 radical source to form CF3-bearing oxindoles/isoquinolinediones",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation generates the trifluoromethyl radical from the N-triflyl benzimidazolium reagent (1); the C-centered radical formed after CF3 addition to the acrylamide undergoes further anodic oxidation to a cation that is trapped by intramolecular arene cyclization",
+  "key_intermediates": [
+    {
+      "name": "trifluoromethyl radical (CF3•) released from N-triflyl benzimidazolium salt",
+      "smiles": "[CH0](F)(F)F",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical from CF3 addition to methacrylamide alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic/alkyl cation after anodic oxidation of alkyl radical",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "1,1-diphenyl-3,3,3-trifluoropropene-type CF3 trapping adduct (DPE capture)",
+      "smiles": "FC(F)(F)C=C(c1ccccc1)c1ccccc1",
+      "role": "off_pathway"
+    },
+    {
+      "name": "benzimidazole byproduct from reagent 1 after CF3 loss",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "At the anode, the N-triflyl benzimidazolium cation (1) is oxidized/fragmented to release a CF3 radical, which adds to the alkene of the methacrylamide; the resulting carbon radical is further oxidized at the anode to a cation that undergoes intramolecular Friedel–Crafts-type cyclization onto the N-aryl ring, followed by rearomatization to give the CF3-substituted heterocycle.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Only trace 5a formed, indicating radical intermediate involvement"
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Only trace 5a formed; reaction suppressed"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Product 5a trace; CF3-DPE adduct detected by HRMS ([M]+ found 248.0807, calc 248.0812), confirming CF3 radical"
+    },
+    {
+      "name": "CF3SO3Na (sodium triflinate/triflate) as alternative CF3 source",
+      "smiles": "[Na+].[O-]S(=O)(=O)C(F)(F)F",
+      "purpose": "other",
+      "observation": "No 5a obtained, indicating CF3 radical does not arise from triflate fragment"
+    },
+    {
+      "name": "Benzimidazolium BF4 salt 1b (instead of OTf counterion)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "5a obtained in 63% yield, confirming that the CF3 radical originates from the N-triflyl benzimidazolium cation portion of reagent 1"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Counterion-swap experiment (OTf- vs BF4-) combined with CF3SO3Na control elegantly localizes the CF3 source to the N-Tf group on the benzimidazolium cation rather than the triflate counterion. Solvent screen identifies MeCN as optimal (44%); concentration has little effect (42-44% over 0.025-0.1 M). Subsequent anodizing verification experiment (section 3.3) likely supports anodic initiation but details not shown on these pages."
+}

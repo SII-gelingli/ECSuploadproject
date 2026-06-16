@@ -1,0 +1,95 @@
+{
+  "doi": "10.1021_acs.joc.4c02530_sup_1",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Photoelectrochemical radical thiocyanation/cyclization of N-allyl pyrazoles with NaSCN to afford SCN-functionalized pyrazolo-fused heterocycles via radical pathway",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of SCN- (assisted by photoexcited TPPT acting as single-electron oxidant) generates thiocyanate radical (and/or (SCN)2); the radical adds to the alkene, triggering radical cyclization onto the arene followed by rearomatization",
+  "key_intermediates": [
+    {
+      "name": "thiocyanate radical (SCN•)",
+      "smiles": "[S]C#N",
+      "role": "reactive"
+    },
+    {
+      "name": "thiocyanogen (SCN)2",
+      "smiles": "N#CSSC#N",
+      "role": "transient"
+    },
+    {
+      "name": "carbon-centered radical from SCN addition to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "cyclohexadienyl radical after intramolecular arene attack",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "photoexcited TPPT (2,4,6-triphenylpyrylium) excited state",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Photoexcited TPPT* oxidizes SCN- to SCN• (TPPT is regenerated at the anode); SCN• adds to the terminal alkene of 1a to give a tertiary C-radical that cyclizes onto the pendant arene, and rearomatization (H loss/oxidation) delivers product 3a.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3a dropped to 0% (vs 70% without quencher)"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Yield <1%, reaction suppressed"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Yield <1%; (2-thiocyanatoethene-1,1-diyl)dibenzene 6 isolated in 75%, confirming SCN• generation"
+    },
+    {
+      "name": "p-dinitrobenzene (pDNB)",
+      "smiles": "O=[N+]([O-])c1ccc(cc1)[N+](=O)[O-]",
+      "purpose": "redox_probe",
+      "observation": "Yield 0%, consistent with SET inhibition"
+    },
+    {
+      "name": "CuCl2",
+      "smiles": "Cl[Cu]Cl",
+      "purpose": "redox_probe",
+      "observation": "Yield 0%, single electron pathway blocked"
+    },
+    {
+      "name": "CCl4",
+      "smiles": "ClC(Cl)(Cl)Cl",
+      "purpose": "radical_trap",
+      "observation": "Yield 50%, partial inhibition"
+    },
+    {
+      "name": "(SCN)2 (NCS-SCN, thiocyanogen)",
+      "smiles": "N#CSSC#N",
+      "purpose": "intermediate_trap",
+      "observation": "Used in place of NaSCN gave 3a in 64% NMR yield, indicating (SCN)2 can serve as a competent but less reactive intermediate; alternative pathways not via (SCN)2 may also operate"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "on/off_light_or_current",
+    "stoichiometric_intermediate",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "On-off experiments show both light AND current are required for sustained reactivity (light-off with continuous electrolysis stalls; electricity-off with continuous irradiation also stalls), consistent with a photoelectrochemical cycle where TPPT must be both photoexcited and electrochemically regenerated. (SCN)2 is shown to be a competent intermediate but is less reactive than NaSCN, so an alternative (non-(SCN)2) pathway involving direct anodic/photoredox oxidation of SCN- to SCN• is likely operative in parallel."
+}

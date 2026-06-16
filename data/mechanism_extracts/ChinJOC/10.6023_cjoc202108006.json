@@ -1,0 +1,89 @@
+{
+  "doi": "10.6023_cjoc202108006",
+  "journal": "ChinJOC",
+  "is_review": false,
+  "rxn_class_summary": "Ni-catalyzed electrochemical reductive cross-coupling of trifluoromethyl alkenes with alkyl halides or alkyl-substituted redox-active esters to give gem-difluoroalkenes via allylic defluorinative alkylation",
+  "mechanism_family": [
+    "radical_cathodic",
+    "electrocatalysis_inner_sphere",
+    "sacrificial_anode"
+  ],
+  "electrochemical_role": "Cathodic reduction of NiBr2(diglyme) to Ni(0) active catalyst; cathode also reduces alkyl-Ni(II) species (or benzylic radical) to enable β-fluoride elimination; Zn serves as sacrificial anode",
+  "key_intermediates": [
+    {
+      "name": "Ni(0) active catalyst (with Pybox ligand)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Ni(I)X species",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "alkyl radical (R•) from SET to alkyl halide or RAE",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α-trifluoromethyl benzylic radical (after radical addition to CF3-alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl-Ni(II)X species (benzylic radical captured by Ni(I))",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic anion (from cathodic reduction, Pathway II)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "F-Ni(II)X after β-fluoride elimination",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "gem-difluoroalkene product",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Cathode reduces Ni(II) precatalyst to Ni(0), which undergoes SET to alkyl halide/RAE generating R• and Ni(I)X; R• adds to the CF3-alkene to form an α-CF3 benzylic radical that is either captured by Ni(I) to form alkyl-Ni(II) (Pathway I) or further cathodically reduced to a benzylic anion (Pathway II); β-fluoride elimination then delivers the gem-difluoroalkene, with Zn anode supplying the balancing oxidation.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction strongly inhibited (yield drops from 77% to <2% with 0.5–3.0 equiv TEMPO); R-TEMPO adduct (0.076 mmol) isolated, confirming alkyl radical intermediate"
+    },
+    {
+      "name": "(Bromomethyl)cyclopropane (2u)",
+      "smiles": "BrCC1CC1",
+      "purpose": "radical_clock",
+      "observation": "Only ring-opened product 4bu (25%) obtained, consistent with cyclopropylcarbinyl radical ring-opening"
+    },
+    {
+      "name": "6-iodohex-1-ene (alkenyl iodide 2v)",
+      "smiles": "ICCCCC=C",
+      "purpose": "radical_clock",
+      "observation": "Cyclized product 4bva and acyclic 4bvb obtained in 5:1 ratio (61% yield), supporting a 5-exo-trig radical cyclization"
+    },
+    {
+      "name": "Acrylamide-containing CF3-alkene 1l (competition)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Mono- and dialkylation products formed at the CF3-alkene site; acrylamide untouched, showing higher reactivity of trifluoromethyl alkene toward the alkyl radical"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors propose two divergent pathways after radical addition: (Pathway I) capture of α-CF3 benzylic radical by Ni(I) to form an alkylnickel that undergoes β-F elimination, or (Pathway II) cathodic reduction of the benzylic radical to a carbanion followed by β-F elimination. A Ni(I)/Ni(III) catalytic manifold cannot be excluded. Chemoselectivity observed: alkyl-RAE > alkyl bromide in competition (substrate 4am), but aliphatic (non-aryl) CF3-alkenes are unreactive under standard conditions."
+}

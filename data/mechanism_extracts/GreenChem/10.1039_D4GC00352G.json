@@ -1,0 +1,113 @@
+{
+  "doi": "10.1039_D4GC00352G",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Photoelectrocatalytic dehydrogenative carbocyclization of unactivated alkene-tethered quinazolin-4-ones with diethyl malonate to give polycyclic pyrroloquinazolinones, with H2 as sole byproduct",
+  "mechanism_family": [
+    "radical_anodic",
+    "photoredox_combined",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anodic PCET oxidation of base-activated diethyl malonate generates a malonate radical; cathode reduces protons to H2; photoexcited Ir(ppy)3* (via oxidative quenching) reoxidizes the cyclized N-centered radical to a nitranion (electron shuttle anchoring an EC intermediate)",
+  "key_intermediates": [
+    {
+      "name": "malonate radical (A) from PCET of diethyl malonate",
+      "smiles": "CCOC(=O)[CH]C(=O)OCC",
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl radical B from addition of malonate radical to tethered alkene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "N-centered cyclohexadienyl-type radical C from intramolecular amidine radical trapping",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "nitranion D from SET reduction of C by excited Ir(ppy)3*",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "tetrahydropyrroloquinazolinone E (protonated D, detected by HRMS)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Ir(ppy)3 / Ir(ppy)3* / Ir(IV) photocatalyst states (oxidative quenching cycle)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Base-activated diethyl malonate is oxidized at the anode via PCET to a malonate radical that adds to the tethered alkene; the resulting alkyl radical cyclizes onto the quinazolinone amidine to give an N-centered radical C, which is oxidized by photoexcited Ir(ppy)3* to a nitranion D (regenerating Ir(III) at the cathode); protonation, anodic oxidation, and deprotonation deliver the aromatized product while protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed (0% 3a)"
+    },
+    {
+      "name": "BHT",
+      "smiles": "CC(C)(C)c1cc(C)cc(C(C)(C)C)c1O",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed (0% 3a)"
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Malonate–DPE adduct 5 isolated in 66%, implicating malonate radical"
+    },
+    {
+      "name": "p-dinitrobenzene (pDNB)",
+      "smiles": "O=[N+]([O-])c1ccc(cc1)[N+](=O)[O-]",
+      "purpose": "redox_probe",
+      "observation": "SET inhibitor suppresses the reaction"
+    },
+    {
+      "name": "CuCl2",
+      "smiles": "Cl[Cu]Cl",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed (0%)"
+    },
+    {
+      "name": "CCl4",
+      "smiles": "ClC(Cl)(Cl)Cl",
+      "purpose": "radical_trap",
+      "observation": "Reaction suppressed (0%)"
+    },
+    {
+      "name": "IrCl4 (as alternative oxidant)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "No reaction without current, ruling out Ir(IV) as key oxidant of substrate (path c)"
+    },
+    {
+      "name": "Electrochemically generated Ir(IV) (no light control)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Failed to promote carbocyclization without electricity, ruling out oxidative quenching shuttle (path b)"
+    },
+    {
+      "name": "UVA LEDs (365/385 nm, no PC)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only 35–38% (vs 36% dark) — no triplet sensitization of 1b operative (path d excluded)"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors explicitly rule out four alternative pathways: (a) reductive quenching photocatalytic cycle alone, (b) Ir(IV) as electron shuttle between anode and substrate, (c) highly oxidized excited-state Ir(IV)* acting as photooxidant, and (d) energy-transfer triplet sensitization of the quinazolinone 1b. Favored proposal is anodic generation of malonate radical (paths f/g) with Ir(ppy)3 oxidative quenching cycle reoxidizing the cyclohexadienyl N-radical C to nitranion D. H2 evolution at cathode confirmed by detection experiments (Fig. S24). Intermediate E detected by HRMS."
+}

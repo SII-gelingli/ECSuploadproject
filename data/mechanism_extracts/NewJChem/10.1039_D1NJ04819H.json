@@ -1,0 +1,48 @@
+{
+  "doi": "10.1039_D1NJ04819H",
+  "journal": "NewJChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative iodocyclization of N-allylcarboxamides to 2-aryl-4-(iodomethyl)oxazolines using LiI as both electrolyte and halogen source",
+  "mechanism_family": [
+    "mediator_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of iodide (I-) to molecular iodine (I2), which acts as the active halogenating mediator; cathodic reduction of H2O generates H2 and hydroxide",
+  "key_intermediates": [
+    {
+      "name": "molecular iodine (I2) generated in situ from anodic oxidation of iodide",
+      "smiles": "II",
+      "role": "reactive"
+    },
+    {
+      "name": "iodonium/iodiranium intermediate I from alkene + I2 addition on N-allylbenzamide",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "cyclized oxazolinium cation (post intramolecular O-attack, pre-deprotonation)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "2-phenyl-4-(iodomethyl)-4,5-dihydrooxazoline (product 2a)",
+      "smiles": "O=C1OCC(CI)N1c1ccccc1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "At the graphite anode, iodide is oxidized to I2, which adds to the alkene of the N-allylamide to form an iodiranium-type intermediate; the amide oxygen attacks intramolecularly to deliver the oxazoline with loss of H+, while the Pt cathode reduces water to H2 and OH-.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Addition of 2.0 equiv TEMPO decreased conversion to 53%; authors infer formation of a TEMPO-iodine adduct that suppresses I2 availability"
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "intermediate_trap_TEMPO"
+  ],
+  "evidence_strength": "medium",
+  "notes": "CV experiments show a clear oxidation feature only when LiI is present (not with substrate 1a alone), supporting iodide oxidation as the key anodic event rather than direct substrate oxidation. The mechanism is described as ionic (iodonium / nucleophilic cyclization) rather than radical; the TEMPO effect is attributed to scavenging of iodine/I2 rather than a carbon radical intermediate."
+}

@@ -1,0 +1,57 @@
+{
+  "doi": "10.1039_D4GC01127A_sup_1",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative [3+2] annulation of 1,3-dicarbonyl indanones with styrenes/alkenes to form spirocyclic dihydrofuranones via radical intermediates",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of the 1,3-dicarbonyl (methyl 1-oxo-2,3-dihydro-1H-indene-2-carboxylate) to generate an α-carbonyl C-centered radical that adds to the alkene",
+  "key_intermediates": [
+    {
+      "name": "α-carbonyl C-centered radical from indanone-2-carboxylate (1a)",
+      "smiles": "O=C1c2ccccc2C[C]1C(=O)OC",
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic C-radical after addition to styrene/diphenylethylene",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic carbocation (radical-polar crossover intermediate)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "spirocyclic dihydrofuranone 3a (cyclized product incorporating 18O from H2-18O)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes the enolizable 1,3-dicarbonyl substrate 1a to an α-carbonyl radical, which adds across the alkene to give a benzylic C-radical; further single-electron oxidation at the anode yields a benzylic cation that is trapped by H2-18O / carbonyl oxygen to close the spirofuran ring.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "H2-18O",
+      "smiles": "[18OH2]",
+      "purpose": "isotope_label",
+      "observation": "18O incorporation into product 3a (and downstream 4-18O), confirming water as the oxygen source in ring closure"
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "TEMPO-adduct 6 isolated in 89.6% yield from reaction of 1a with styrene + TEMPO, trapping the α-carbonyl radical (and a styrene-derived adduct 7 also observed), supporting a radical pathway"
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_TEMPO",
+    "isolation_of_intermediate",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Two TEMPO adducts (6 and 7) are described: 6 corresponds to trapping of the α-carbonyl radical from 1a directly, while 7 corresponds to trapping after addition to styrene — together consistent with stepwise radical addition followed by oxidation (radical-polar crossover) and water-assisted cyclization."
+}

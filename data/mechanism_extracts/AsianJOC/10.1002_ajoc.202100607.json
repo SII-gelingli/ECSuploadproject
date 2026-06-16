@@ -1,0 +1,98 @@
+{
+  "doi": "10.1002_ajoc.202100607",
+  "journal": "AsianJOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical oxidative selenylation/cyclization of 4-arylpent-4-enoic acids with diaryl (or dialkyl) diselenides to afford selenated gamma-lactones in an undivided cell with Pt electrodes and LiClO4/MeCN.",
+  "mechanism_family": [
+    "radical_anodic",
+    "cation_initiated",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of PhSeSePh to its radical cation, which fragments into PhSe+ and PhSe radical; the alkenoic acid is also oxidizable (Eox = 2.4 V) and a radical-addition intermediate is further oxidized at the anode to a carbocation. Protons are reduced to H2 at the cathode.",
+  "key_intermediates": [
+    {
+      "name": "diphenyl diselenide radical cation (I)",
+      "smiles": "[Se+](c1ccccc1)([Se]c1ccccc1)",
+      "role": "transient"
+    },
+    {
+      "name": "phenylselenyl radical (II, PhSe•)",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "phenylselenyl cation (III, PhSe+)",
+      "smiles": "[Se+]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "seleniranium ion (IV) from PhSe+ addition to alkene of 1a",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "beta-selenyl carbon radical (V) from PhSe• addition to alkene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "beta-selenyl carbocation (VI) from anodic oxidation of V",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "selenated gamma-lactone product 3a",
+      "smiles": "O=C1OC(c2ccccc2)(C[Se]c2ccccc2)CC1",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Path a (ionic): anode oxidizes PhSeSePh to a radical cation that fragments to PhSe+ and PhSe•; PhSe+ forms a seleniranium with the alkene, and intramolecular carboxylate attack closes the gamma-lactone. Path b (radical): PhSe• adds to the alkene to give a C-radical, which is anodically oxidized to a carbocation, then trapped by the pendant carboxylate with deprotonation; protons are reduced to H2 at the cathode.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3a decreased to 44% but reaction not fully inhibited, implicating a partial radical pathway."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3a reduced to 67%; partial inhibition consistent with radical involvement."
+    },
+    {
+      "name": "1,1-diphenylethene",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Yield of 3a reduced to 65%; partial inhibition consistent with radical involvement."
+    },
+    {
+      "name": "cyclopropyl-substituted styrene (16)",
+      "smiles": "C(=C)(C1CC1)c1ccccc1",
+      "purpose": "radical_clock",
+      "observation": "Ring-opened/rearranged product 17 obtained in 41% (E:Z = 1.3:1), supporting a radical addition pathway."
+    },
+    {
+      "name": "cyclic voltammetry of 1a and 2a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Oxidation peaks at 2.4 V (1a) and 1.7 V (2a), indicating diselenide is preferentially oxidized at the anode."
+    },
+    {
+      "name": "PhSSPh (disulfide 14) in place of diselenide",
+      "smiles": "S(c1ccccc1)Sc1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Only trace lactone 15 formed, showing the chemistry is specific to Se radical/cation chemistry."
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly propose two parallel pathways (path a, ionic via seleniranium from PhSe+; path b, radical via PhSe• addition then anodic oxidation to a cation). They state they cannot rule out the radical pathway; both converge on the same carbocation-like intermediate trapped by the carboxylate. Control with disulfide failed (only trace product), and substrate scope shows alkyl diselenides also work, supporting a general Se electrophile/radical mechanism."
+}

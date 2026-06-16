@@ -1,0 +1,90 @@
+{
+  "doi": "10.1021_jacs.8b00391",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Ferrocene-mediated electrochemical difluoromethylarylation of alkynes using CF2HSO2NHNHBoc to construct fluorinated dibenzazepines via a 7-membered ring homolytic aromatic substitution",
+  "mechanism_family": [
+    "mediator_anodic",
+    "radical_anodic"
+  ],
+  "electrochemical_role": "Anodic oxidation of Cp2Fe to Cp2Fe+ which acts as a single-electron-transfer mediator to oxidize the deprotonated sulfonyl hydrazide (I) to an N-radical (II) and then diazene (III); MeOH is reduced at the cathode to H2 and MeO-",
+  "key_intermediates": [
+    {
+      "name": "Cp2Fe+ (ferrocenium mediator)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Conjugate base of CF2HSO2NHNHBoc (anion I)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "N-centered sulfonyl hydrazide radical (II)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Diazene CF2HSO2-N=NBoc (III)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "CF2H radical",
+      "smiles": "[CH]F.F",
+      "role": "reactive"
+    },
+    {
+      "name": "Vinyl radical IV (from CF2H addition to alkyne)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Cyclohexadienyl C-radical V (after 7-ortho cyclization onto arene)",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Cp2Fe to Cp2Fe+, which oxidizes the deprotonated sulfonyl hydrazide to give an N-radical and then a diazene that fragments to CF2H radical with loss of SO2/N2; CF2H radical adds to the alkyne to give a vinyl radical, which undergoes 7-ortho cyclization onto the pendant arene, and the cyclohexadienyl radical is reoxidized (by Cp2Fe+) and deprotonated to give the dibenzazepine product.",
+  "rate_determining_step": "7-ortho vinyl-radical cyclization onto the arene (HAS, kinetically favored over 6-ipso and 1,5-HAT by DFT)",
+  "probe_reagents": [
+    {
+      "name": "Vinylcyclopropane radical clock (alkene 49)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring-opened product 50 bearing CF2H group obtained in 69% yield, evidencing CF2H radical intermediacy"
+    },
+    {
+      "name": "Cyclic voltammetry of reagent 1 with base",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Cp2Fe+ oxidizes reagent 1 in presence of Na2HPO4 or LiOMe (more efficient with LiOMe)"
+    },
+    {
+      "name": "Control: no Cp2Fe",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Yield drops to 18% (<5% isolated); mediator essential"
+    },
+    {
+      "name": "Control: no electricity",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No reaction; electrochemistry required"
+    },
+    {
+      "name": "Alternative oxidants (tBuOOH/CuSO4; K2S2O8; Ir(ppy)3/hv)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "0% of product 3 under non-electrochemical oxidative conditions, demonstrating necessity of electrochemical mediation"
+    }
+  ],
+  "evidence_types_used": [
+    "radical_clock",
+    "cyclic_voltammetry",
+    "DFT",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "strong",
+  "notes": "DFT compared three cyclization modes of vinyl radical IV: path a (7-ortho HAS, ΔG = -9.2, ΔG‡ = 10.7), path b (6-ipso, ΔG = -5.4, ΔG‡ = 14.4), and path c (1,5-HAT, ΔG = -13.5, ΔG‡ = 15.6); 7-ortho is kinetically favored. In an undivided cell, Cp2Fe+ may be partially reduced at the cathode, lowering current efficiency. Reagent 1 (CF2HSO2NHNHBoc) is introduced as a new air-stable CF2H radical precursor."
+}

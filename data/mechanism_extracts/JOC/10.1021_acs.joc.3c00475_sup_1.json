@@ -1,0 +1,50 @@
+{
+  "doi": "10.1021_acs.joc.3c00475_sup_1",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Photo/electrochemical radical selenocyclization of N-tosyl allyl-(2-vinylaryl)amines with diphenyl diselenide to form selenated heterocycles",
+  "mechanism_family": [
+    "photoredox_combined",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic/photoexcited oxidation enables single-electron transfer from substrate (alkene 2a) to the excited acridinium photocatalyst, generating a PhSe radical from (PhSe)2 that adds to the styrenyl alkene",
+  "key_intermediates": [
+    {
+      "name": "PhSe radical",
+      "smiles": "[Se]c1ccccc1",
+      "role": "reactive"
+    },
+    {
+      "name": "alkene-derived radical cation of 2a",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "benzylic C-radical after PhSe addition to styrene",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "excited [Acr-Mes]+* photocatalyst",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Photoexcited [Acr-Mes]+* is quenched by substrate 2a (Stern-Volmer linear, Ksv ~115 M^-1), generating an oxidized intermediate; (PhSe)2 provides PhSe radical that adds to the styrene, and cyclization onto the tethered N-allyl group followed by further SET/oxidation yields the selenated heterocycle 3a. Continuous irradiation is required (light on/off experiment).",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Complete suppression of product (0% 3a) with both starting materials recovered; no TEMPO-SePh adduct detected by HRMS; authors suggest TEMPO interferes with electron transfer to diselenide"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "on/off_light_or_current",
+    "UV_vis"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Fluorescence quenching is by substrate 2a (the alkene), not by (PhSe)2, indicating the photocatalyst initiates by oxidizing the alkene rather than the diselenide. TEMPO trap was inconclusive for identifying the PhSe radical since no adduct was observed; authors propose TEMPO instead blocks SET to diselenide, which is an alternative interpretation."
+}

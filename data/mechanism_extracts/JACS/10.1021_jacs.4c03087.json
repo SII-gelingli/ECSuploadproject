@@ -1,0 +1,72 @@
+{
+  "doi": "10.1021_jacs.4c03087",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Photoenzyme-catalyzed enantioselective [2+2] cycloaddition of indoles using a thioxanthone-based photosensitizer embedded in an engineered protein scaffold (CMP4.0)",
+  "mechanism_family": [
+    "photoredox_combined",
+    "biradical",
+    "other"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "thioxanthone photosensitizer 3c triplet excited state (T1, nπ*/ππ* mixed)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "triplet biradical from energy transfer to indole substrate 1a",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "CMP4.0·1a ground-state complex (π–π stacked at 3.9 Å, enantioface-selective)",
+      "smiles": null,
+      "role": "resting_state"
+    }
+  ],
+  "electron_flow": "Visible-light excitation of the protein-bound thioxanthone (3c) produces a long-lived triplet state whose nπ* character disfavors H-abstraction; triplet–triplet energy transfer to the π-stacked indole 1a generates an excited indole/biradical that undergoes enantioselective [2+2] cycloaddition within the chiral active site.",
+  "rate_determining_step": "Unimolecular photochemical step on bound substrate (kcat linearly dependent on light intensity); Michaelis–Menten kinetics with KM = 36.69 µM and kcat = 11.28 min⁻¹",
+  "probe_reagents": [
+    {
+      "name": "Michaelis–Menten kinetic analysis",
+      "smiles": null,
+      "purpose": "kinetic_order",
+      "observation": "Saturation kinetics for CMP1.0 (kcat/KM = 209.47) and CMP4.0 (kcat/KM = 306.88 mM⁻¹ min⁻¹); kcat linear in light intensity → unimolecular photochemical RDS"
+    },
+    {
+      "name": "Photosensitizer comparison (CMP4.0 405 nm vs CMP4.0′ 365 nm vs free 3c 405 nm)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Bound 3c in CMP4.0 gives much higher yield than free 3c, confirming active-site catalysis"
+    },
+    {
+      "name": "UV-vis and photoluminescence spectroscopy",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "PL of CMP4.0 at 451 nm vs free 3c at 471 nm; quantum yield 17% vs 7%; longer τ2 (6144 ns vs 536 ns) indicating stabilized excited state in the protein"
+    },
+    {
+      "name": "Time-resolved emission decay (kinetic traces)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Double-exponential fit: CMP4.0 τ1=139.95 ns, τ2=6144.62 ns vs 3c τ1=2.95 ns, τ2=536.54 ns — protein matrix dramatically lengthens triplet lifetime"
+    },
+    {
+      "name": "X-ray crystallography (PDB 8ZF1) + docking",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Two photosensitizers 5.8 Å apart; substrate 1a π-stacked at 3.9 Å with one face shielded, rationalizing enantioinduction"
+    }
+  ],
+  "evidence_types_used": [
+    "UV_vis",
+    "kinetic_order",
+    "isolation_of_intermediate",
+    "on/off_light_or_current",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors invoke energy transfer rather than SET; the nπ*-character triplet of thioxanthone is invoked to explain higher photostability vs benzophenone-based photoenzymes (which suffer H-abstraction via ππ* triplets). Alternative SET/radical-cation pathway is not explicitly probed by TEMPO/BHT trapping or EPR; mechanism inferred largely from photophysics, crystal structure, docking, and kinetics. Loading reduced to 0.25 mol% with >350 turnovers and ≥95:5 e.r."
+}

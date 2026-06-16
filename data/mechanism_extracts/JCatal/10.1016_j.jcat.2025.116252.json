@@ -1,0 +1,91 @@
+{
+  "doi": "10.1016_j.jcat.2025.116252",
+  "journal": "JCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical epoxidation of styrene catalyzed by a Mn-based MOF (FICN-24) using bromide as a redox mediator in aqueous acetonitrile.",
+  "mechanism_family": [
+    "mediator_anodic",
+    "electrocatalysis_inner_sphere"
+  ],
+  "electrochemical_role": "Anodic oxidation cycles Mn(III)→Mn(IV)→Mn(V)=O at the FICN-24 MOF; bromide is co-oxidized to Br radical/Br2 which assists in forming a Mn(V)=O(Br) active species that transfers oxygen to the alkene.",
+  "key_intermediates": [
+    {
+      "name": "L-Mn(III)-OH resting state",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "L-Mn(IV)=O",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "L-Mn(V)=O(Br) active oxidant",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "L-Mn(III)-OOH / Mn-peroxo",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Bromine radical (Br•)",
+      "smiles": "[Br]",
+      "role": "reactive"
+    },
+    {
+      "name": "Molecular bromine (Br2)",
+      "smiles": "BrBr",
+      "role": "transient"
+    },
+    {
+      "name": "Styrene oxide product",
+      "smiles": "C1OC1c1ccccc1",
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the anode, L-Mn(III)-OH is oxidized stepwise (−e−/−H+) to L-Mn(IV)=O and then to L-Mn(V)=O; concurrently Br− is anodically oxidized to Br•/Br2, which binds Mn to give an L-Mn(V)=O(Br) species that delivers oxygen to styrene, releasing the epoxide and regenerating L-Mn(III)-Br/OH with H2O.",
+  "rate_determining_step": "Oxygen-atom transfer from L-Mn(V)=O(Br) to styrene C=C",
+  "probe_reagents": [
+    {
+      "name": "No-catalyst control",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "With NaBr but no FICN-24, 45% yield/45% selectivity — bromide mediation alone gives partial conversion, confirming MOF accelerates and improves selectivity."
+    },
+    {
+      "name": "FICN-24-l (alternate catalyst)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Gave 75% yield, supporting Mn-MOF involvement."
+    },
+    {
+      "name": "TBAPF6 (non-bromide electrolyte)",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "0% yield — bromide mediator is essential."
+    },
+    {
+      "name": "NaClO4 / TBAClO4 / TBACl",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "<1–18% yield; only Br− supports the catalytic cycle, ruling out generic anion effects."
+    },
+    {
+      "name": "Anhydrous MeCN (no water)",
+      "smiles": "CC#N",
+      "purpose": "other",
+      "observation": "0% epoxide — water is required as the oxygen source for Mn=O regeneration."
+    }
+  ],
+  "evidence_types_used": [
+    "cyclic_voltammetry",
+    "UV_vis",
+    "intermediate_trap_other",
+    "stoichiometric_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Mechanism is supported by CV showing Mn(III/IV) and Mn(IV/V) redox waves, in-situ Raman detecting Br-Br stretches (175, 269 cm−1) indicating Br2/polybromide formation, and in-situ FT-IR detecting an 880 cm−1 Mn-O-OH band plus C-O-C epoxide bands (1067, 1230 cm−1). Direct O-atom transfer from Mn(V)=O to alkene (via a putative Mn-oxo-alkene or radical-rebound) is proposed; an alternative purely Br•/Br2 (bromohydrin then base-closure) pathway is implicitly excluded because non-Mn controls give much lower selectivity."
+}

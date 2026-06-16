@@ -1,0 +1,56 @@
+{
+  "doi": "10.1021_acs.orglett.4c03922_sup_1",
+  "journal": "OrgLett",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical radical addition of Meldrum's acid-derived C-radicals to 1,3-dienes (e.g., 2,4-dimethyl-1,3-pentadiene) to give allylic methoxy-functionalized adducts",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover"
+  ],
+  "electrochemical_role": "Anodic oxidation of Meldrum's acid (1A) generates a C-centered radical that adds to the 1,3-diene; the resulting allyl radical is further oxidized to an allyl cation which is trapped by MeOH",
+  "key_intermediates": [
+    {
+      "name": "Meldrum's acid C-centered radical (after anodic SET/deprotonation of 1A)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "BHT-trapped Meldrum's acid radical adduct 9 (C22H32O5, cyclohexadienone-type)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Allyl radical from radical addition to diene 2a",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Allyl cation (post second SET) trapped by MeOH",
+      "smiles": null,
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anode oxidizes Meldrum's acid 1A to a C-centered radical (via SET/deprotonation); this radical adds to the 1,3-diene to give an allyl radical, which undergoes a second anodic oxidation to an allyl cation that is trapped by methanol to deliver the methoxylated adduct 3Aa.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "With diene + BHT: 3Aa formation completely inhibited (0% yield); BHT-Meldrum's acid radical adduct 9 detected by HRMS (m/z 376.2265, calc 376.2250 for C22H32O5). Without diene + BHT under electrolysis: adduct 9 also detected by HRMS. Without electricity (BHT, 5h30, no current): adduct 9 NOT detected, confirming current is required to generate the radical."
+    },
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely inhibited in presence of TEMPO; product 3Aa not obtained"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "on/off_light_or_current"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Control experiment without electricity but with electrodes immersed showed no BHT adduct, demonstrating that radical generation is electrochemically driven (not from background chemistry). The BHT adduct 9 is a cyclohexadienone arising from radical addition of the Meldrum's acid radical to BHT's aromatic ring."
+}

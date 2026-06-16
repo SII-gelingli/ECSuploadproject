@@ -1,0 +1,73 @@
+{
+  "doi": "10.1039_D2GC01909D",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical three-component coupling of alkenes (α-methyl styrenes), potassium metabisulfite (SO2 source), and alcohols to afford β-alkoxyl sulfonate esters",
+  "mechanism_family": [
+    "radical_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of potassium metabisulfite generates SO2 radical cation A; cathode reduces protons to H2",
+  "key_intermediates": [
+    {
+      "name": "SO2 radical cation (A)",
+      "smiles": "[O]=[S+]=O",
+      "role": "reactive"
+    },
+    {
+      "name": "β-sulfonyl carbon radical from addition of A to α-methyl styrene terminal carbon (B)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic cation bearing CH2-SO2 group (C) after second anodic oxidation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "methanol-trapped oxocarbenium/protonated ether adduct (D)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "β-methoxy sulfonyl cation intermediate (E) after deprotonation",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "β-alkoxyl sulfonate ester product 3aa",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "α,β-unsaturated sulfonate ester 4 (from bulky alcohol, evidence of cation at α-position)",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Anode oxidizes K2S2O5-derived SO2 to a SO2 radical cation (A), which adds to the terminal carbon of α-methyl styrene to give β-sulfonyl C-radical B; a second anodic oxidation converts B into a benzylic cation C, which is trapped by methanol (D→E) with proton release (reduced to H2 at cathode), and a second methanol addition/deprotonation furnishes the β-alkoxyl sulfonate ester.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "5.0 equiv TEMPO fully suppressed formation of 3aa; starting alkene 1a largely recovered, indicating radical intermediates"
+    },
+    {
+      "name": "1-adamantanemethanol (2g, bulky alcohol)",
+      "smiles": "OCC12CC3CC(C1)CC(C2)C3",
+      "purpose": "intermediate_trap",
+      "observation": "Gave α,β-unsaturated sulfonate ester 4 in 26% yield, indicating SO2 adds at less hindered terminal carbon and a carbocation forms at the α-position"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "cyclic_voltammetry",
+    "intermediate_trap_other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Cyclic voltammetry showed oxidation peak of K2S2O5 at 1.97 V (lower than α-methyl styrene at 2.2 V), supporting initial oxidation of metabisulfite rather than the alkene. Mechanism postulated based on ref 11 analogous reports. Cathode role is proton reduction to H2 (paired electrolysis, no productive cathodic chemistry on substrate)."
+}

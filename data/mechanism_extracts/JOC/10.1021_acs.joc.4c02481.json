@@ -1,0 +1,77 @@
+{
+  "doi": "10.1021_acs.joc.4c02481",
+  "journal": "JOC",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical reductive bimolecular cycloaddition of 2-arylidene-1,3-indanediones to give spirocyclopentanol indane-1,3-diones with five contiguous stereocenters.",
+  "mechanism_family": [
+    "radical_cathodic",
+    "radical_anion",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Cathodic single-electron reduction of 2-arylidene-1,3-indanedione (1a) to a radical anion (A) on the Pt cathode; the anode performs counter oxidation of hydroxide to O2/H2O.",
+  "key_intermediates": [
+    {
+      "name": "radical anion A of 2-benzylidene-1,3-indanedione (ketyl-type, radical on benzylic C)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "tautomerized radical anion A' (radical on the indanedione enolate carbon)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "radical adduct B from C-C coupling of A' with a second molecule of 1a",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "anion C / C' from second cathodic reduction of B",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkoxide/enolate D after intramolecular aldol cyclization",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "At the Pt cathode, 1a is reduced by one electron to radical anion A (Ered = -1.06 V vs Ag/AgCl in the combined electrolyte, lower than with either electrolyte alone); A tautomerizes to A' which adds to a second 1a to give radical B; a second cathodic SET reduces B to anion C/C', which undergoes intramolecular aldol closure to D and is protonated by water to deliver 2a, while hydroxide is oxidized at the carbon anode to O2 + H2O.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Reaction completely shut down (0% of 2a), indicating radical intermediates."
+    },
+    {
+      "name": "BHT",
+      "smiles": "Cc1cc(C(C)(C)C)c(O)c(C(C)(C)C)c1",
+      "purpose": "radical_trap",
+      "observation": "Yield of 2a dramatically decreased to 27%."
+    },
+    {
+      "name": "1,1-diphenylethylene (DPE)",
+      "smiles": "C(=C)(c1ccccc1)c1ccccc1",
+      "purpose": "radical_trap",
+      "observation": "Yield of 2a decreased to 19%."
+    },
+    {
+      "name": "cyclic voltammetry of 1a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Reduction peak at -1.06 V under standard conditions (Bu4NBF4 + Bu4NOTs), versus -1.25 V with only Bu4NBF4 and -1.38 V with only Bu4NOTs, showing combined electrolytes lower the reduction potential of 1a."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_BHT",
+    "intermediate_trap_other",
+    "cyclic_voltammetry",
+    "on/off_light_or_current",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Control experiments confirm both current and electrolyte are required (0% without either). Water modestly improves yield (60% without water vs 72% standard), attributed to conductivity/solubility and serving as proton source for D -> 2a. X-ray (CCDC 2383755) confirms the spirocyclic product structure. No DFT or KIE studies were reported; mechanism is proposed by analogy to prior electroreductive radical-radical/radical-anion couplings (refs 12,13)."
+}

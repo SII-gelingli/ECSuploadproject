@@ -1,0 +1,50 @@
+{
+  "doi": "10.1039_D3GC04109C_sup_1",
+  "journal": "GreenChem",
+  "is_review": false,
+  "rxn_class_summary": "Ni/Fe dual-catalyzed three-component radical 1,2-acylalkylation of alkenes with acyl chlorides and C(sp3)-H alkanes via HAT and radical addition",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "electrocatalysis_inner_sphere",
+    "direct_SET"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "cyclohexyl radical (alkyl C-radical from HAT on cyclohexane)",
+      "smiles": "[CH]1CCCCC1",
+      "role": "reactive"
+    },
+    {
+      "name": "TEMPO-cyclohexyl adduct (47, detected by GCMS)",
+      "smiles": "O(C1CCCCC1)N1C(C)(C)CCCC1(C)C",
+      "role": "transient"
+    },
+    {
+      "name": "acyl radical / Ni-acyl species from p-toluoyl chloride",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl-Ni intermediate after radical addition to acrylate",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Fe/Cl-based HAT abstracts a C-H from the alkane to give an alkyl radical, which adds to the acrylate; the resulting α-ester radical is captured by a Ni-acyl species (from oxidative addition of the acyl chloride) and reductive elimination delivers the 1,2-acylalkylated product.",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Desired product 4 not detected (n.d.); TEMPO-cyclohexyl adduct 47 detected by GCMS, indicating a free cyclohexyl radical intermediate"
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_TEMPO",
+    "product_isotope_distribution"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Page shows only the TEMPO trapping experiment from the Mechanistic Investigations section; the trapped alkyl radical (cyclohexyl) supports a HAT-generated C(sp3) radical pathway. Standard conditions employ NiBr2·DME / dtbbpy, FeCl3·6H2O, LiCl in acetone/MeCN. Further mechanistic details (e.g., role of Ni vs Fe, acyl radical generation pathway) not visible on this page."
+}

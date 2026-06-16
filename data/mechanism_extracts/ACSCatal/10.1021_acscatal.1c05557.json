@@ -1,0 +1,94 @@
+{
+  "doi": "10.1021_acscatal.1c05557",
+  "journal": "ACSCatal",
+  "is_review": false,
+  "rxn_class_summary": "Electrocatalytic oxidative hydrofunctionalization of alkenes (hydroalkoxylation, hydroacyloxylation, hydroarylation, semipinacol rearrangement, deallylation) via a CoSalen-mediated Co(II/III/IV) HAT cycle.",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "mediator_anodic",
+    "radical_polar_crossover",
+    "paired_electrolysis"
+  ],
+  "electrochemical_role": "Anode oxidizes Co(II) to Co(III) (and later alkyl-Co(III) to alkyl-Co(IV)); cathode reduces MeOH to H2 and methoxide, which activates the silane to generate Co(III)-H for HAT to the alkene.",
+  "key_intermediates": [
+    {
+      "name": "Co(II) Salen resting state (19)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "Co(III) Salen cation (20)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "Co(III)-H species (21)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carbon-centered alkyl radical from HAT (22)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "alkyl-Co(III) complex (23)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "electrophilic alkyl-Co(IV) cation (24)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "methoxide (cathodically generated)",
+      "smiles": "[O-]C",
+      "role": "reactive"
+    }
+  ],
+  "electron_flow": "Anodic oxidation of Co(II) gives Co(III), which is converted to Co(III)-H by silane/methoxide; Co-H performs HAT to the alkene to give a C-radical that is trapped by Co(II) to form an alkyl-Co(III); a second anodic oxidation gives an electrophilic alkyl-Co(IV) that is intercepted by a nucleophile (alcohol, carboxylate, arene) near the anode, releasing product and regenerating Co(II).",
+  "rate_determining_step": null,
+  "probe_reagents": [
+    {
+      "name": "CD3OD solvent labeling",
+      "smiles": "[2H]OC([2H])([2H])[2H]",
+      "purpose": "isotope_label",
+      "observation": "Very low D incorporation in product (<2% D) when CD3OD used vs Ph2SiD2 (70-80% D), confirming hydride comes from silane and indicating H/D scrambling via reversible HAT."
+    },
+    {
+      "name": "aryl cyclopropane radical clock (14)",
+      "smiles": null,
+      "purpose": "radical_clock",
+      "observation": "Ring-opened trapping product (15) observed in 40% yield, supporting a discrete C-radical intermediate from HAT."
+    },
+    {
+      "name": "Chiral CoSalen (3b, 3d)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Catalyst-controlled enantioselectivity (8% ee with 3b; -31% ee with 3d; up to -20% ee with RVC anode) indicates C-Nu bond formation occurs at a Co-bound intermediate (Co(IV)) rather than a free cation."
+    },
+    {
+      "name": "Electrolyte variation (n-Bu4NBF4 vs LiClO4)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "More hydrophobic NBu4BF4 gives lower methanol-trapping selectivity (1.9:1) vs LiClO4 (>20:1), consistent with Co(IV) trapping near the electrode within the EDL."
+    },
+    {
+      "name": "Cyclic voltammetry of 3a",
+      "smiles": null,
+      "purpose": "redox_probe",
+      "observation": "Reversible oxidation at E1/2 = -0.17 V vs Fc+/Fc; reduction wave disappears upon addition of KOMe, indicating methoxide is needed for silane activation/Co-H formation."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "radical_clock",
+    "cyclic_voltammetry",
+    "stoichiometric_intermediate",
+    "product_isotope_distribution",
+    "other"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Authors favor an ECEC mechanism with a discrete cationic Co(IV)-alkyl (24) trapped by nucleophile near the anode. Catalyst-controlled stereoselectivity and electrolyte (EDL) effects rule out a free carbocation diffusing into bulk. Side pathways include alkene isomerization and hydrogenation, attributed to back-HAT from the alkyl radical to Co(II) or deprotonation of Co(IV) complex 24. 1,1-disubstituted alkenes give predominantly isomerization, ascribed to disfavored Co(IV) formation."
+}

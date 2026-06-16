@@ -1,0 +1,105 @@
+{
+  "doi": "10.1038_s41467-023-44025-0",
+  "journal": "NatCommun",
+  "is_review": false,
+  "rxn_class_summary": "Electrochemical gold-catalyzed intramolecular aminoarylation/oxyarylation of unactivated alkenes using aryl hydrazines as aryl electrophile surrogates, achieved through an oxidation-relay strategy that enables gold pi-acid activation under anodic conditions.",
+  "mechanism_family": [
+    "electrocatalysis_inner_sphere",
+    "radical_anodic",
+    "cation_initiated"
+  ],
+  "electrochemical_role": "Anodic oxidation of aryl hydrazine (ArNHNH2.HOTf) generates an aryl radical/cation that oxidizes L-Au(I)Cl directly to [L-Au(III)-Ar], bypassing the L-Au(I)-Ar transmetalation intermediate; cathode performs proton reduction to H2 under acidic conditions (or O2 reduction to HO- under basic conditions).",
+  "key_intermediates": [
+    {
+      "name": "Ph3P-Au(I)Cl (gold catalyst resting state under acidic conditions)",
+      "smiles": null,
+      "role": "resting_state"
+    },
+    {
+      "name": "aryl radical (from oxidative denitrogenation of ArNHNH2)",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "[L-Au(III)-Ar] (key pi-acid active species formed via oxidation relay)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "Au(III)-alkene pi-complex (after coordination of pendant alkene)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "L-Au(I)-Ar (transmetalation intermediate, deliberately bypassed)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "beta-aryl-Au(III) alkyl intermediate after nucleophilic anti-attack on pi-complex",
+      "smiles": null,
+      "role": "transient"
+    }
+  ],
+  "electron_flow": "Anode oxidizes ArNHNH2.HOTf via denitrogenation to give an aryl radical (or aryl cation), which converts Ph3P-Au(I)Cl directly into [Ph3P-Au(III)-Ar]; the Au(III) species then pi-activates the pendant alkene of the substrate, intramolecular NuH (NHTs or OH) attacks anti to gold, and C(sp3)-C(sp2) reductive elimination delivers the aminoarylation/oxyarylation product while regenerating Au(I); the cathode reduces H+ to H2.",
+  "rate_determining_step": "Oxidation of Au(I) to Au(III) (turnover-limiting in the related diaryl-coupling system); in the relay design, oxidation of hydrazine to aryl radical initiates the cycle.",
+  "probe_reagents": [
+    {
+      "name": "aryl boronic acid (ArB(OH)2) under EAO conditions",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Under standard EAO conditions gives only diaryl coupling product 4aa (>95%) with 0% alkene aminoarylation, confirming fast transmetalation to L-Au(I)-Ar followed by reductive elimination and no pi-activation pathway."
+    },
+    {
+      "name": "1:1 mixture of p-tBu-C6H4-B(OH)2 and p-COOMe-C6H4-B(OH)2",
+      "smiles": null,
+      "purpose": "crossover",
+      "observation": "Dominant homo-coupling of electron-rich p-tBu substrate (60% tBu-tBu, <5% cross, 0% COOMe-COOMe) indicates Au(I)-Ar transmetalation is much faster than Au(III)-Ar transmetalation and is turnover-limiting."
+    },
+    {
+      "name": "31P NMR monitoring of catalyst",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Identifies Ph3P-Au(I)-C (alkynyl or aryl) as the gold(I) resting state under EAO conditions."
+    },
+    {
+      "name": "Ph3P-Au-C6H4-F under MeCN:HOAc, no current",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "100% conversion to H-C6H4-F within 30 min, demonstrating rapid protodemetalation of L-Au(I)-Ar under acidic conditions (rationale for switching to basic conditions for Ar-Ar coupling)."
+    },
+    {
+      "name": "Hydrazine salts with different counterions (HCl, HBF4, HOTf)",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "Only the OTf- salt (5a-HOTf) gave the desired aminoarylation 3a (16% then optimized to 92%); HCl and HBF4 salts gave only trace product, indicating the critical role of non-coordinating OTf- anion."
+    },
+    {
+      "name": "Control without Au catalyst or without current",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No product formation, confirming both gold catalyst and electrochemistry are required."
+    },
+    {
+      "name": "1,2-disubstituted E-alkene substrate",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No cyclization observed; alkene recovered unreacted, attributed to steric hindrance blocking Au(III) pi-coordination."
+    },
+    {
+      "name": "4-Pyridinyl hydrazine",
+      "smiles": null,
+      "purpose": "other",
+      "observation": "No alkene conversion, attributed to rapid decomposition of the in-situ formed pyridinyl radical, supporting an aryl-radical-based initiation."
+    }
+  ],
+  "evidence_types_used": [
+    "intermediate_trap_other",
+    "crossover",
+    "on/off_light_or_current",
+    "isolation_of_intermediate",
+    "other"
+  ],
+  "evidence_strength": "medium",
+  "notes": "Authors explicitly contrast two mechanistic regimes under EAO gold catalysis: (i) the conventional Au(I)/Au(III) transmetalation/reductive-elimination pathway (acidic for alkyne or basic for aryl C-C coupling) which proceeds via [L-Au(I)-Ar] and gives only coupling products with no pi-activation; and (ii) the new 'oxidation relay' in which aryl hydrazine is oxidized first to an aryl radical that directly forges [L-Au(III)-Ar] without going through [L-Au(I)-Ar], thereby unlocking pi-acid reactivity. Aryl cation as the relay species is mentioned as an alternative to aryl radical. A concurrent report by Xie using aryl hydrazines under different conditions gave only C-C coupling without pi-activation, highlighting that bypassing transmetalation is the key design element."
+}

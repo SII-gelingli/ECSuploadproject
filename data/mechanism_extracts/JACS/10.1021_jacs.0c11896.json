@@ -1,0 +1,116 @@
+{
+  "doi": "10.1021_jacs.0c11896",
+  "journal": "JACS",
+  "is_review": false,
+  "rxn_class_summary": "Visible-light photoredox-catalyzed redox-neutral carbocarboxylation of activated alkenes using α-amino acids (or alkyl carboxylic acids) as bifunctional reagents that provide both the alkyl radical and, via in situ released CO2, the carboxyl group to access γ-aminobutyric acids (GABAs).",
+  "mechanism_family": [
+    "radical_polar_crossover",
+    "photoredox_combined",
+    "direct_SET"
+  ],
+  "electrochemical_role": null,
+  "key_intermediates": [
+    {
+      "name": "carboxylate of N-Cbz α-amino acid (2a')",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "photoexcited *[Ir(III)] photocatalyst",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "reduced [Ir(II)] photocatalyst",
+      "smiles": null,
+      "role": "transient"
+    },
+    {
+      "name": "α-amino radical D (after decarboxylation of 2a')",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic radical E (from radical addition of D to styrene 1a)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "benzylic carbanion F (after SET reduction of E by [Ir(II)])",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "carboxylate G (after nucleophilic addition of F to in situ CO2)",
+      "smiles": null,
+      "role": "reactive"
+    },
+    {
+      "name": "protodecarboxylation byproduct 3aa' (benzylic C–H product)",
+      "smiles": null,
+      "role": "off_pathway"
+    },
+    {
+      "name": "α-amino radical–TEMPO adduct 7",
+      "smiles": null,
+      "role": "off_pathway"
+    }
+  ],
+  "electron_flow": "Photoexcited *[Ir(III)] oxidizes the in situ–formed carboxylate 2a' (SET) to give an α-amino radical D and CO2 plus [Ir(II)]; D adds to the styrene 1a forming a stabilized benzylic radical E, which is reduced by [Ir(II)] back to [Ir(III)] (closing the cycle) to give a benzylic carbanion F that nucleophilically attacks the in situ–released CO2, furnishing carboxylate G and, upon workup, GABA product 3aa.",
+  "rate_determining_step": "Not explicitly assigned; kinetic and Stern–Volmer data indicate that productive carboxylation competes with irreversible protodecarboxylation of 3aa to 3aa' (3aa is quenched ~5× more slowly than 2a, favoring decarboxylation of 2a).",
+  "probe_reagents": [
+    {
+      "name": "TEMPO",
+      "smiles": "CC1(C)CCCC(C)(C)N1[O]",
+      "purpose": "radical_trap",
+      "observation": "Formation of 3aa and 3aa' strongly suppressed; α-amino radical–TEMPO adduct 7 detected by HRMS, supporting an α-amino radical intermediate."
+    },
+    {
+      "name": "D2O",
+      "smiles": "[2H]O[2H]",
+      "purpose": "intermediate_trap",
+      "observation": "Up to 93% deuterium incorporation at the benzylic position of 3aa', consistent with a benzylic carbanion intermediate F."
+    },
+    {
+      "name": "Aryl aldehydes (R-C6H4-CHO, R = CN, CF3, COOMe)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Three-component coupling delivers β-hydroxy products 8–10 in 86–92% yield, trapping the benzylic carbanion."
+    },
+    {
+      "name": "α-(Trifluoromethyl)styrene 11",
+      "smiles": "FC(F)(F)C(=C)c1ccccc1",
+      "purpose": "intermediate_trap",
+      "observation": "Radical/polar crossover defluorinative alkylation gives gem-difluoroalkene 12 (43%), consistent with carbanion-mediated β-fluoride elimination."
+    },
+    {
+      "name": "13C-labeled 2b (13COOH)",
+      "smiles": null,
+      "purpose": "isotope_label",
+      "observation": "[13C]-3ab formed with 92% 13C incorporation, demonstrating that the carboxyl C of the product originates from the carboxylic acid starting material (via decarboxylation/CO2 reuptake)."
+    },
+    {
+      "name": "3aa' as substrate (control)",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "Subjecting 3aa' + 2a to standard conditions gives no 3aa (only 3% rsm), excluding 3aa' as a productive intermediate for 3aa formation."
+    },
+    {
+      "name": "3aa decarboxylation control",
+      "smiles": null,
+      "purpose": "intermediate_trap",
+      "observation": "3aa decarboxylates to 3aa' (41%) under standard conditions in absence of 2a; presence of 2a strongly inhibits this decarboxylation (rsm 3aa = 90%)."
+    }
+  ],
+  "evidence_types_used": [
+    "H/D_labeling",
+    "intermediate_trap_TEMPO",
+    "intermediate_trap_other",
+    "product_isotope_distribution",
+    "kinetic_order",
+    "UV_vis",
+    "isolation_of_intermediate"
+  ],
+  "evidence_strength": "strong",
+  "notes": "Stern–Volmer quenching of Ir[dF(CF3)(ppy)]2(dtbbpy)PF6 (λmax = 470 nm) shows carboxylate 2a' (formed with CsF) quenches much faster than 3aa, establishing the carboxylate (not the carboxylic acid) as the SET partner and rationalizing chemoselective decarboxylation of 2a over product 3aa. The CO2 in the productive step is in situ–generated and present at low concentration; the irreversible decarboxylation of 2a' and slower decarboxylation of carboxylate G are invoked to explain net productive carboxylation despite reversible CO2 addition to F. An alternative pathway in which 3aa' is the precursor to 3aa was explicitly excluded by control experiment (Scheme 2E)."
+}
